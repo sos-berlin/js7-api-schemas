@@ -1,0 +1,2 @@
+For initial commit of folder structure folders are required to not empty
+Remove this file if new files are added to this folder. [SP] 
