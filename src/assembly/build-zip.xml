@@ -1,0 +1,12 @@
+<assembly>
+  <id>make-zip</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>src/main</directory>
+    </fileSet>
+  </fileSets>
+</assembly>

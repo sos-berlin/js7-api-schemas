@@ -7,6 +7,7 @@
     <groupId>com.sos-berlin</groupId>
     <artifactId>js7-api-schemas</artifactId>
     <version>2.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -282,7 +283,26 @@
 -->          	
           </executions>
       </plugin>
-		</plugins>
+        <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>3.1.0</version>
+					<executions> 
+					  <execution>
+					    <id>make-zip</id>
+					    <phase>validate</phase>
+					    <goals>
+					      <goal>single</goal>
+					    </goals>
+		          <configuration>
+		            <descriptors>
+		              <descriptor>src/assembly/build-zip.xml</descriptor>
+		            </descriptors>
+		            <appendAssemblyId>false</appendAssemblyId>
+		          </configuration>
+					  </execution>
+					</executions>
+        </plugin>
+   		</plugins>
 	</build>
 
 	<dependencies>
