@@ -1,0 +1,15 @@
+{
+	"title": "Order Template Edit configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.webservices.order.initiator.model.ScheduleEdit",
+	"type": "object",
+	"extends": {
+		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+	},
+	"properties": {
+		"configuration": {
+			"$ref": "../orderManagement/orders/schedule-schema.json"
+		}
+	}
+}
+

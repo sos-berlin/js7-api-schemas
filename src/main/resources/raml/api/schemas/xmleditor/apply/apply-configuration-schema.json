@@ -1,0 +1,30 @@
+{
+	"title": "xmleditor apply configuration in",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.apply.ApplyConfiguration",
+	"type": "object",
+	"description": "id, name, schemaIdentifier only for OTHER",
+	"required": [
+		"controllerId"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/filename100-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/object-type-schema.json"
+		},
+		"configuration": {
+			"$ref": "../../common/noScript-schema.json"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"name": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"schemaIdentifier": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	}
+}

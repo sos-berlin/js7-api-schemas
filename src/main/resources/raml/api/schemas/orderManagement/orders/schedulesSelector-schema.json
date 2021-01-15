@@ -1,0 +1,17 @@
+{
+	"title": "Order Template Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.webservices.order.initiator.model.ScheduleSelector",
+	"type": "object",
+	"description": "The filter for the list of order template for scheduling orders to JobScheduler",
+	 
+	"properties": {
+       	"controllerId": {
+			"type": "string"
+		},
+		"selector": {
+			"$ref": "schedulesSelectorDef-schema.json"
+		}	
+	}
+}
+ 

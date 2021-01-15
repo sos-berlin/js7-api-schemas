@@ -1,0 +1,46 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="10%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <<description1>>
+    <<description2>>
+    <<description3>>
+    <<description4>>
+    <<description5>>
+    <<description6>>
+    <<description7>>
+    <<description8>>
+    <<description9>>
+    <<description10>>
+    </tbody></table>
+
+  body:
+    application/json:
+      schema: <<schema>>
+      example: <<example>>
+  responses:
+    200:
+      description: <<description200>>
+      body:
+        application/json:
+          schema: <<schema200>>
+          example: <<example200>>
+    420:
+      body:
+        application/json:
+    440:
+      body:
+        application/json:

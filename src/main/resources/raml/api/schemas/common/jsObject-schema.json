@@ -1,0 +1,14 @@
+{
+  "title": "JobScheduler object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.JobSchedulerObject",
+  "type": "object",
+  "properties": {
+    "type" : {
+      "$ref": "../inventory/common/configurationType-schema.json"
+    },
+    "path" : {
+      "$ref": "../common/path-schema.json"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+	"title": "xmleditor validate configuration error answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.validate.ErrorMessage",
+	"type": "object",
+	"properties": {
+		"code": {
+			"type": "string"
+		},
+		"message": {
+			"type": "string"
+		},
+		"line": {
+			"type": "integer"
+		},
+		"column": {
+			"type": "integer"
+		},
+		"elementName": {
+			"type": "string"
+		},
+		"elementPosition": {
+			"type": "string"
+		}
+	}
+}

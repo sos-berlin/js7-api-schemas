@@ -1,0 +1,20 @@
+{
+  "title": "History Collection Of Deployment Items",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.DepHistory",
+  "type": "object",
+  "required": [
+    "depHistory"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "depHistory": {
+      "type": "array",
+      "items": {
+        "$ref": "depHistoryItem-schema.json"
+      }
+    }
+  }
+}

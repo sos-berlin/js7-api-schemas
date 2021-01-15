@@ -1,0 +1,17 @@
+{
+  "title": "configurationsDeleteFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.configuration.ConfigurationsDeleteFilter",
+  "type": "object",
+  "required": [
+    "accounts"
+  ],
+  "properties": {
+    "accounts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

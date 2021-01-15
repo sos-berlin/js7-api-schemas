@@ -1,0 +1,77 @@
+type: error
+get?:
+  is: [ accessToken, jobschedulerController ]
+    
+  description: |
+    <h2>Documentation</h2>
+    <<description>>
+    ___
+  queryParameters:
+    <<jsObjectParam>>:
+      type: string
+      description: |
+        Path of a <<jsObject>>
+      pattern: /([^/]+/)*[^/]+
+      required: true
+  responses:
+    200:
+      description: Content of documentation or its resources.
+      headers:
+        Content-Type:
+          type: string
+          required: false
+      body:
+        application/octet-stream:
+        application/xml:
+        text/html:
+        text/plain:
+        image/gif:
+        image/jpeg:
+        image/png:
+post?:
+  description: |
+    <h2>Documentation</h2>
+    <<description>>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="10%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>scheduler</td><td></td></tr>
+    <<description1>>
+    <<description2>>
+    </tbody></table>
+
+  body:
+    application/json:
+      schema: <<schema>>
+      example: <<example>>
+  responses:
+    200:
+      description: Content of documentation.
+      headers:
+        Content-Type:
+          type: string
+          required: false
+      body:
+        application/octet-stream:
+        application/xml:
+        text/html:
+        text/plain:
+        image/gif:
+        image/jpeg:
+        image/png:
+    420:
+      body:
+        application/json:
+    440:
+      body:
+        application/json:

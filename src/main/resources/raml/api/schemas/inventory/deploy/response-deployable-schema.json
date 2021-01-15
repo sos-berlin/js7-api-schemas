@@ -1,0 +1,14 @@
+{
+	"title": "ResponseDeployable",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.deploy.ResponseDeployable",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"deployable": {
+			"$ref": "response-deployableTreeItem-schema.json"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "title": "running task filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.job.RunningTaskLogFilter",
+  "type": "object",
+  "required": [
+    "taskId",
+    "eventId"
+  ],
+  "properties": {
+    "taskId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "eventId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

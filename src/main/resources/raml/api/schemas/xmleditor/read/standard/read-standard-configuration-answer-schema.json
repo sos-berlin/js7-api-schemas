@@ -1,0 +1,38 @@
+{
+	"title": "xmleditor read standard configuration (YADE, NOTIFICATION) answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.read.standard.ReadStandardConfigurationAnswer",
+	"type": "object",
+	"description": "",
+	"required": [
+		"configuration",
+		"schema",
+		"state"
+	],
+	"properties": {
+		"configuration": {
+			"type": "string"
+		},
+		"configurationJson": {
+			"type": "string"
+		},
+		"recreateJson": {
+			"type": "boolean"
+		},
+		"schema": {
+			"type": "string"
+		},
+		"schemaIdentifier": {
+			"type": "string"
+		},
+		"state": {
+			"$ref": "read-standard-configuration-answer-state-schema.json"
+		},
+		"warning": {
+			"$ref": "../../common/answer-message-schema.json"
+		},
+		"modified": {
+			"$ref": "../../../common/timestamp-schema.json"
+		}
+	}
+}

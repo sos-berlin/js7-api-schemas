@@ -1,0 +1,21 @@
+{
+  "title": "feedback after save, delete configuration",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.configuration.ConfigurationOk",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "id"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

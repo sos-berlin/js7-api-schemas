@@ -1,0 +1,23 @@
+{
+	"title": "login logo",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.configuration.LoginLogo",
+	"type": "object",
+	"required": ["name"],
+	"properties": {
+		"name": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"height": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"position": {
+		    "javaType": "com.sos.joc.model.configuration.LoginLogoPosition",
+			"type": "string",
+			"enum": [
+                "TOP",
+                "BOTTOM"
+            ]
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "title": "yade files",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.TransferFiles",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "files"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "$ref": "file-schema.json"
+      }
+    }
+  }
+}

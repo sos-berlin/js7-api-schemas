@@ -1,0 +1,20 @@
+{
+  "title": "yade summary",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.TransfersSummary",
+  "type": "object",
+  "properties": {
+    "running": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "suspended": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "setback": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "waitingForResource": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    }
+  }
+}

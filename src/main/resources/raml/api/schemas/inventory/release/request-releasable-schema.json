@@ -1,0 +1,37 @@
+{
+	"title": "filter for release",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.release.ReleasableFilter",
+	"type": "object",
+	"description": "",
+  	"extends" : {
+    	"$ref": "../common/request-filter-schema.json"
+  	},
+	"anyOf": [
+        {
+            "required": [
+                "id"
+            ]
+        },
+        {
+            "required": [
+                "path",
+                "objectType"
+            ]
+        }
+    ],
+	"properties": {
+		"onlyValidObjects": {
+			"type": "boolean",
+			"default": false
+		},
+		"withoutDrafts": {
+			"type": "boolean",
+			"default": false
+		},
+		"withoutReleased": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

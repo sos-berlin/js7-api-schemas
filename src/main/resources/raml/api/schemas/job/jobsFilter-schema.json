@@ -1,0 +1,86 @@
+{
+  "title": "jobsFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.job.JobsFilter",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "type": "string"
+    },
+    "jobs": {
+      "type": "array",
+      "items": {
+        "$ref": "jobPath-schema.json"
+      }
+    },
+    "excludeJobs": {
+      "type": "array",
+      "items": {
+        "$ref": "jobPath-schema.json"
+      }
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "$ref": "orderPath-schema.json"
+      }
+    },
+    "compact": {
+      "$ref": "../common/compactParam-schema.json"
+    },
+    "compactView": {
+      "type": "boolean",
+  	  "default": false
+    },
+    "regex": {
+      "$ref": "../common/regexFilter-schema.json"
+    },
+    "dateFrom": {
+      "type": "string",
+      "pattern": "^(0|([0-9-]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(,\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+    },
+    "dateTo": {
+      "type": "string",
+      "pattern": "^(0|([0-9-]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(,\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+    },
+    "timeZone": {
+      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+      "type": "string"
+    },
+    "folders": {
+      "$ref": "../common/folders-schema.json"
+    },
+    "limit": {
+      "description": "only for db history urls to restrict the number of responsed records; -1=unlimited",
+      "type": "integer",
+      "default": 10000
+    },
+    "historyStates": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/historyStateText-schema.json"
+      }
+    },
+    "criticalities": {
+      "type": "array",
+      "items": {
+        "$ref": "../inventory/common/jobCriticality-schema.json"
+      }
+    },
+    "taskIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/nonNegativeLong-schema.json"
+      }
+    },
+    "historyIds": {
+      "type": "array",
+      "items": {
+        "$ref": "taskIdOfOrder-schema.json"
+      }
+    }
+  }
+}

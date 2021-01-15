@@ -1,0 +1,14 @@
+{
+  "title": "switch joc cluster node",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.cluster.ClusterSwitchMember",
+  "type": "object",
+  "required": [
+    "memberId"
+  ],
+  "properties": {
+    "memberId": {
+      "$ref": "../common/string255-schema.json"
+    }
+  }
+}

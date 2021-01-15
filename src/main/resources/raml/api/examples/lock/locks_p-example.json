@@ -1,0 +1,20 @@
+{
+  "deliveryDate": "2016-05-05T21:13:35Z",
+  "surveyDate": "2016-05-05T21:11:25Z",
+  "locks": [
+    {
+      "path": "/sos/dailyschedule/JID"
+    },
+    {
+      "path": "/test1/testLock",
+      "maxNonExclusive": "2"
+    },
+    {
+      "path": "/test2/testLock",
+      "maxNonExclusive": "2"
+    },
+    {
+      "path": "/test3/testLock"
+    }
+  ]
+}

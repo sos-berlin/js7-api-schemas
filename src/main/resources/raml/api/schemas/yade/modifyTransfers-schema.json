@@ -1,0 +1,24 @@
+{
+  "title": "modify tranfers",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.ModifyTransfers",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "transfers"
+  ],
+  "properties": {
+    "controllerId": {
+      "type": "string"
+    },
+    "transfers": {
+      "type": "array",
+      "items": {
+        "$ref": "modifyTransfer-schema.json"
+      }
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

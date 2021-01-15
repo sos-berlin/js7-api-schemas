@@ -1,0 +1,32 @@
+{
+  "title": "jobscheduler custom event for YADE",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.jobscheduler.model.event.YadeEvent",
+  "type": "object",
+  "properties": {
+    "TYPE": {
+      "type": "string",
+      "default": "VariablesCustomEvent"
+    },
+    "key": {
+      "description" : "YADETransferStarted, YADETransferFinished, YADEFileStateChanged",
+      "type": "string"
+    },
+    "eventId": {
+      "type": "string"
+    },
+    "variables": {
+      "javaType": "com.sos.jobscheduler.model.event.YadeVariables",
+      "type": "object",
+      "properties": {
+        "transferId": {
+          "type": "string"
+        },
+        "fileId": {
+          "description" : "for YADEFileStateChanged",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

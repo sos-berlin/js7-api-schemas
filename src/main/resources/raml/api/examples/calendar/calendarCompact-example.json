@@ -1,0 +1,10 @@
+{
+	"calendar": {
+		"id": 7,
+		"path": "path/to/myCalendar",
+		"type": "WORKING_DAYS",
+		"category": "",
+		"title": "every Monday and Tuesday",
+		"to": "2017-12-31"
+	}
+}

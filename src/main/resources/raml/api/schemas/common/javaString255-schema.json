@@ -1,0 +1,8 @@
+{
+  "title": "string according java variable names",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "string",
+  "description": "letters without control, connect and punctuation chars (except _ $) and without digits as first letter",
+  "pattern": "^[^\\x00-\\x1F\\x7F\\x20-\\x23\\x25-\\x2F\\x30-\\x40\\x5B-\\x5E\\x60\\x7B-\\x7E\\x80-\\x9F\\xA0\\xA1\\xA6-\\xB4\\xB6-\\xBF\\xD7\\xF7][^\\x00-\\x1F\\x7F\\x20-\\x23\\x25-\\x2F\\x3A-\\x40\\x5B-\\x5E\\x60\\x7B-\\x7E\\x80-\\x9F\\xA0\\xA1\\xA6-\\xB4\\xB6-\\xBF\\xD7\\xF7]*$",
+  "maxLength": 255
+}

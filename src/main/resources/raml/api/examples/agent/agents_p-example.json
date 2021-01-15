@@ -1,0 +1,20 @@
+{
+    "agents": [
+        {
+            "agentId": "agent_primary",
+            "agentName": "agent-primary",
+            "disabled": false,
+            "isClusterWatcher": true,
+            "url": "https://agent-2-0-primary:4443"
+        },
+        {
+            "agentId": "agent_secondary",
+            "agentName": "agent-secondary",
+            "disabled": false,
+            "isClusterWatcher": false,
+            "url": "https://agent-2-0-secondary:4443"
+        }
+    ],
+    "controllerId": "testsuite",
+    "deliveryDate": "2020-11-19T15:17:19.346Z"
+}

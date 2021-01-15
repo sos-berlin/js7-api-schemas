@@ -1,0 +1,46 @@
+{
+  "title": "events",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.event.Events",
+  "type": "object",
+  "required": [
+    "events",
+    "deliveryDate"
+  ],
+  "properties": {
+    "events": {
+      "type": "array",
+      "items": {
+        "javaType": "com.sos.joc.model.event.Event",
+        "type": "object",
+        "properties": {
+          "controllerId": {
+            "$ref": "../common/filename100-schema.json"
+          },
+          "error": {
+            "description": "contains error message",
+            "$ref": "../common/error-schema.json"
+          },
+          "eventId": {
+            "$ref": "../common/nonNegativeLong-schema.json"
+          },
+          "eventSnapshots": {
+            "type": "array",
+            "items": {
+              "$ref": "eventSnapshot-schema.json"
+            }
+          },
+          "notifications": {
+            "type": "array",
+            "items": {
+              "$ref": "eventSnapshot-schema.json"
+            }
+          }
+        }
+      }
+    },
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    }
+  }
+}

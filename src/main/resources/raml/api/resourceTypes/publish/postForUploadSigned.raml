@@ -1,0 +1,41 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+  body:
+    multipart/form-data:
+      formParameters:
+        file:
+          description: The file to be uploaded
+          required: true
+          type: file
+        importKeyFilter:
+          description: The algorithm of the key, possible values are - PGP, RSA, ECDSA
+          required: true
+          example: <div>{</br>&nbsp;&nbsp;"keyAlgorithm"&#58; "RSA"</br>}</div>
+          type: string
+        comment:
+          description: for auditLog
+          required: false
+          type: string
+        timeSpent:
+          description: for auditLog
+          required: false
+          type: string
+        ticketLink:
+          description: for auditLog
+          required: false
+          type: string  
+  responses:
+    200:
+      description: |
+        **Confirm <span style="text-transform: capitalize;"><<resourcePathName>></span> successfully**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate":"2016-05-05T21:13:35Z",
+              "ok":true
+            }
+          schema: ok

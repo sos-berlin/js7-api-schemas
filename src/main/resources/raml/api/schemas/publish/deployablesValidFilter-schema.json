@@ -1,0 +1,30 @@
+{
+	"title": "Filter for valid Deployable Objects only",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.DeployablesValidFilter",
+	"type": "object",
+  "anyOf": [{
+    "required": [
+        "draftConfigurations"
+      ]
+    }, {
+      "required": [
+        "deployConfigurations"
+      ]
+    }
+  ],
+  "properties": {
+    "draftConfigurations": {
+      "type" : "array",
+      "items" : {
+        "$ref": "config-schema.json"
+      }
+    },
+    "deployConfigurations": {
+      "type" : "array",
+      "items" : {
+        "$ref": "config-schema.json"
+      }
+    }
+  }
+}

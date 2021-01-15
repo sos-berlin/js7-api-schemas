@@ -1,0 +1,24 @@
+{
+    "deliveryDate": "2020-12-01T16:46:34.673Z",
+    "history": [
+        {
+            "controllerId": "js7.x",
+            "endTime": "2020-12-01T16:45:21Z",
+            "historyId": 587031,
+            "orderId": "workflow_fork@33",
+            "orderState": {
+                "_text": "FINISHED",
+                "severity": 0
+            },
+            "plannedTime": "2020-12-01T16:45:19Z",
+            "sequence": 0,
+            "startTime": "2020-12-01T16:45:20Z",
+            "state": {
+                "_text": "SUCCESSFUL",
+                "severity": 0
+            },
+            "surveyDate": "2020-12-01T16:45:22Z",
+            "workflow": "/workflow_fork"
+        }
+    ]
+}

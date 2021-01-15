@@ -1,0 +1,34 @@
+{
+	"title": "Filter for Releasable Objects",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.ReleasablesFilter",
+	"type": "object",
+  "anyOf": [{
+    "required": [
+        "draftConfigurations"
+      ]
+    }, {
+      "required": [
+        "releasedConfigurations"
+      ]
+    }
+  ],
+ 	"properties": {
+    "draftConfigurations": {
+      "type" : "array",
+      "items" : {
+        "$ref": "config-schema.json"
+      }
+    },
+    "releasedConfigurations": {
+      "type" : "array",
+      "items" : {
+        "$ref": "config-schema.json"
+      }
+    },
+    "withoutInvalid": {
+      "type": "boolean",
+      "default": false
+    }
+	}
+}

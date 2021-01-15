@@ -1,0 +1,28 @@
+{
+	"title": "xmleditor rename configuration in",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.rename.RenameConfiguration",
+	"type": "object",
+	"description": "id, name, schemaIdentifier only for OTHER",
+	"required": [
+		"controllerId",
+		"objectType"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/filename100-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/object-type-schema.json"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"name": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"schemaIdentifier": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	}
+}

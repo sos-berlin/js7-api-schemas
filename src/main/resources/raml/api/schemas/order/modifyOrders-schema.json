@@ -1,0 +1,43 @@
+{
+  "title": "modify order commands",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.ModifyOrders",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "orderIds"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "orderIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    },
+    "workflowIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+      }
+    },
+    "orderType": {
+      "$ref": "../../../controller/schemas/order/orderModeType-schema.json"
+    },
+    "kill": {
+      "type": "boolean",
+      "default": false
+    },
+    "position": {
+      "$ref": "../../../controller/schemas/common/position-schema.json"
+    },
+    "arguments": {
+      "$ref": "../../../controller/schemas/common/variables-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

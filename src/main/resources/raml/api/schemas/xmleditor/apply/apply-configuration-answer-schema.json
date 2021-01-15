@@ -1,0 +1,36 @@
+{
+	"title": "xmleditor apply configuration answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.apply.ApplyConfigurationAnswer",
+	"type": "object",
+	"description": "",
+	"properties": {
+		"id" : {
+		  "type" : "integer"
+		},
+		"name": {
+			"type": "string"
+		},
+		"schemaIdentifier": {
+			"type": "string"
+		},
+		"configuration": {
+			"type": "string"
+		},
+		"configurationJson": {
+			"type": "string"
+		},
+		"recreateJson": {
+			"type": "boolean"
+		},
+		"modified": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"validationError": {
+			"$ref": "../validate/error-message-schema.json"
+		},
+		"message": {
+			"$ref": "../common/answer-message-schema.json"
+		}
+	}
+}

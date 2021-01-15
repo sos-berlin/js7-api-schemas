@@ -1,0 +1,26 @@
+{
+  "title": "store agents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.StoreAgents",
+  "type": "object",
+  "required": [
+  	"controllerId",
+  	"agents"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "agents": {
+    	"type": "array",
+    	"minItems": 1,
+    	"items": {
+    		"$ref": "agent-schema.json"
+    	}
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

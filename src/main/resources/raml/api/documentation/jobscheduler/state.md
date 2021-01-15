@@ -1,0 +1,1 @@
+<tr><td>``state``</td><td>optional, integer</td><td><ul><li>0=all Agents of the cluster are running</li><li>1=some Agents of the cluster are unreachable but not all</li><li>2=all Agents of the cluster are unreachable</li></ul></td><td>2</td><td></td></tr>

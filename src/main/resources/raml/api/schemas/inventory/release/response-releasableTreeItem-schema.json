@@ -1,0 +1,39 @@
+{
+	"title": "ResponseReleasableTreeItem",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.release.ResponseReleasableTreeItem",
+	"type": "object",
+	"properties": {
+		"id": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"folder": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"objectName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"account": {
+			"$ref": "../../common/string100-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/configurationType-schema.json"
+		},
+		"valid": {
+			"type": "boolean"
+		},
+		"deleted": {
+			"type": "boolean"
+		},
+		"released": {
+			"type": "boolean"
+		},
+		"releasableVersions": {
+			"type": "array",
+			"items": {
+				"$ref": "response-releasableVersion-schema.json"
+			},
+			"uniqueItems": true
+		}
+	}
+}

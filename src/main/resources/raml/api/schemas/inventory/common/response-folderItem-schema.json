@@ -1,0 +1,55 @@
+{
+	"title": "folder item",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.ResponseFolderItem",
+	"type": "object",
+	"description": "the field 'orders' is only relevant for Workflows",
+	"required": [
+		"name",
+		"path",
+		"objectType"
+	],
+	"properties": {
+		"id": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"name": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"objectType": {
+			"$ref": "configurationType-schema.json"
+		},
+		"title": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"valid": {
+			"type": "boolean"
+		},
+		"deleted": {
+			"type": "boolean"
+		},
+		"deployed": {
+			"type": "boolean"
+		},
+		"released": {
+			"type": "boolean"
+		},
+		"hasDeployments": {
+			"type": "boolean"
+		},
+		"hasReleases": {
+			"type": "boolean"
+		},
+		"orders": {
+			"description": "only relevant for Workflows",
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		}
+	}
+}

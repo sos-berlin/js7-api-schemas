@@ -1,0 +1,32 @@
+{
+	"title": "order object in history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.order.OrderHistoryItemChilds",
+	"type": "object",
+	"required": [
+		"deliveryDate"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"states": {
+			"type": "array",
+			"items": {
+				"$ref": "orderHistoryStateItem-schema.json"
+			}
+		},
+		"hasTasks": {
+			"type": "boolean"
+		},
+		"hasOrders": {
+			"type": "boolean"
+		},
+		"children": {
+			"type": "array",
+			"items": {
+				"$ref": "orderHistoryItemChildItem-schema.json"
+			}
+		}
+	}
+}

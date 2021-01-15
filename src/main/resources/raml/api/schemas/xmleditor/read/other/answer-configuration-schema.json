@@ -1,0 +1,39 @@
+{
+	"title": "xmleditor read configuration answer OTHER",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.read.other.AnswerConfiguration",
+	"type": "object",
+	"description": "",
+	"required": [
+		"name"
+	],
+	"properties": {
+		"id" : {
+		  "type" : "integer"
+		},
+		"name": {
+			"type": "string"
+		},
+		"schema": {
+			"type": "string"
+		},
+		"schemaIdentifier": {
+			"type": "string"
+		},
+		"configuration": {
+			"type": "string"
+		},
+		"configurationJson": {
+			"type": "string"
+		},
+		"recreateJson": {
+			"type": "boolean"
+		},
+		"state": {
+			"$ref": "answer-configuration-state-schema.json"
+		},
+		"modified": {
+			"$ref": "../../../common/timestamp-schema.json"
+		}
+	}
+}

@@ -1,0 +1,44 @@
+type: error
+post:
+  description: |
+    <h2>Send user and password for authentication in ``Authorization`` header</h2>
+  headers:
+    Authorization:
+      description: String consisting of "Basic " and base64 encoded "user:password"
+      type: string
+      example: Basic cm9vdpzZWNNyZXQ=
+  responses:
+    200:
+      description: Returns access token
+      headers:
+        X-Access-Token:
+          type: string
+          required: true
+          example: 550e8400-e29b-11d4-a716-446655440000
+      body:
+        application/json:
+          schema: security
+          example: |
+            {
+              "user": "root",
+              "accessToken": "550e8400-e29b-11d4-a716-446655440000",
+              "message": "",
+              "hasRole": false,
+              "isAuthenticated": true,
+              "isPermitted": false,
+              "sessionTimeout": 1800,
+              "enableTouch": true
+            }
+    401:
+      description: Unauthorized!
+      body:
+        application/json:
+          schema: security
+          example: |
+            {
+              "user": "root",
+              "hasRole": false,
+              "message": "User or password are invalid",
+              "isAuthenticated": false,
+              "isPermitted": false
+            }

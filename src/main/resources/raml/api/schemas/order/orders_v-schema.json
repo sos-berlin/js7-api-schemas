@@ -1,0 +1,24 @@
+{
+  "title": "orders with delivery date (volatile part)",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrdersV",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "orders"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "$ref": "order_v-schema.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"title": "xmleditor delete other draft configuration answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.delete.all.DeleteAllAnswer",
+	"type": "object",
+	"description": "",
+	"properties": {
+		"deleted": {
+			"$ref": "../../../common/timestamp-schema.json"
+		}
+	}
+}

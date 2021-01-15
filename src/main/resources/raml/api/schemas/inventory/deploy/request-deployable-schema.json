@@ -1,0 +1,46 @@
+{
+	"title": "filter for deploy",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.deploy.DeployableFilter",
+	"type": "object",
+	"description": "",
+  	"extends" : {
+    	"$ref": "../common/request-filter-schema.json"
+  	},
+	"anyOf": [
+        {
+            "required": [
+                "id"
+            ]
+        },
+        {
+            "required": [
+                "path",
+                "objectType"
+            ]
+        }
+    ],
+	"properties": {
+		"onlyValidObjects": {
+			"type": "boolean",
+			"default": false
+		},
+		"withRemovedObjects": {
+			"type": "boolean",
+			"default": false
+		},
+		"withoutDrafts": {
+			"type": "boolean",
+			"default": false
+		},
+		"withoutDeployed": {
+			"type": "boolean",
+			"default": false
+		},
+		"latest": {
+			"description": "only relevant for deployed objects",
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

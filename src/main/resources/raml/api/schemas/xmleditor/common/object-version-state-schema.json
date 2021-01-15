@@ -1,0 +1,13 @@
+{
+	"title": "xmleditor object version state text",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.common.ObjectVersionState",
+	"type": "string",
+	"enum": [
+		"LIVE_IS_NEWER",
+		"DRAFT_IS_NEWER",
+		"LIVE_NOT_EXIST",
+		"DRAFT_NOT_EXIST",
+		"NO_CONFIGURATION_EXIST"
+	]
+}

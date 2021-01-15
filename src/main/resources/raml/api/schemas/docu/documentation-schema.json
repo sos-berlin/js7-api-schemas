@@ -1,0 +1,26 @@
+{
+  "title": "documentation",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.Documentation",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "path": {
+      "$ref": "../common/path-schema.json"
+    },
+    "name": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "type": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "modified": {
+      "$ref": "../common/timestamp-schema.json"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+	"title": "joc cockpit",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.joc.Cockpit",
+	"required": [
+		"id",
+		"memberId",
+		"version",
+		"current",
+		"connectionState",
+		"componentState",
+		"clusterNodeState",
+		"controllerConnectionStates"
+	],
+
+	"properties": {
+    	"id": {
+      		"$ref": "../common/nonNegativeLong-schema.json"
+    	},
+    	"memberId": {
+      		"type": "string"
+    	},
+    	"title": {
+      		"type": "string"
+    	},
+    	"current": {
+    		"description": "true if joc is that joc which sends this response",
+      		"type": "boolean"
+    	},
+    	"host": {
+      		"type": "string"
+    	},
+    	"url": {
+      		"type": "string"
+    	},
+    	"startedAt": {
+      		"$ref": "../common/timestamp-schema.json"
+    	},
+    	"version": {
+			"type": "string"
+		},
+		"connectionState": {
+			"$ref": "connectionState-schema.json"
+		},
+		"componentState": {
+			"$ref": "componentState-schema.json"
+		},
+		"clusterNodeState": {
+			"$ref": "clusterNodeState-schema.json"
+		},
+		"controllerConnectionStates": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.joc.ControllerConnectionState",
+				"required": [
+					"role",
+					"state"
+				],
+				"properties": {
+					"role": {
+						"$ref": "role-schema.json"
+					},
+					"state": {
+						"$ref": "connectionState-schema.json"
+					}
+				}
+			}
+		},
+    	"os": {
+      		"$ref": "os-schema.json"
+    	},
+    	"securityLevel": {
+      		"$ref": "../common/jocSecurityLevel-schema.json"
+    	},
+    	"lastHeartbeat": {
+      		"$ref": "../common/timestamp-schema.json"
+    	}
+	}
+}

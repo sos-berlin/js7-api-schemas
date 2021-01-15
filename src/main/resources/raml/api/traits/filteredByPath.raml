@@ -1,0 +1,12 @@
+queryParameters:
+  path:
+    type: string
+    description: |
+      Path of a documentation
+      One of ``path`` or ``id`` is required. The ``path`` beats the ``id``
+    pattern: /([^/]+/)*[^/]+
+    required: false
+  id:
+    type: integer
+    description: Id of a documentation
+    required: false

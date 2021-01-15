@@ -1,0 +1,167 @@
+get?:
+  headers:
+    X-Access-Token:
+      description: Request requires authentication!
+      type: string
+      required: true
+      example: 550e8400-e29b-11d4-a716-446655440000
+  responses:
+    401:
+      description: |
+        **Unauthorized!**
+      body:
+        application/json:
+          schema: security
+          example: |
+            {
+              "user": "root",
+              "message": "Oops!",
+              "hasRole": false,
+              "isAuthenticated": false,
+              "isPermitted": false
+            }
+    403:
+      description: |
+        **Forbidden!**<br/>
+        The user doesn't have sufficient permissions for '<<resourcePathName>>'
+      body:
+        application/json:
+          schema: security
+          example: |
+            {
+              "user": "root",
+              "message": "You don't have sufficient permissions for ...",
+              "hasRole": false,
+              "isAuthenticated": true,
+              "isPermitted": false
+            }
+    420:
+      description: |
+        **<span style="text-transform: capitalize;"><<resourcePathName>></span> failed!**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate": "2016-05-05T21:13:35Z",
+              "surveyDate": "2016-05-05T21:13:33Z",
+              "error": {
+                "code": "JOC-420",
+                "message": "<<resourcePathName>> failed!"
+              }
+            }
+          schema: error420
+        #text/html:
+        #  example: |
+        #    <html><head><title></title></head><body>
+        #    <div class="error code">JOC-420</div>
+        #    <div class="error message"><<resourcePathName>>  failed!</div>
+        #    </body></html>
+    440:
+      description: |
+        **Login Timeout!**<br/>
+        The client's session has expired and must log in again.
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate": "2016-05-05T21:13:35Z",
+              "error": {
+                "code": "AUTH-440",
+                "message": "Session has expired! Please log in again."
+              }
+            }
+          schema: error420
+        #text/html:
+        #  example: |
+        #    <html><head><title></title></head><body>
+        #    <div class="error code">AUTH-440</div>
+        #    <div class="error message">Session has expired! Please log in again.</div>
+        #    </body></html>
+post?:
+  headers:
+    X-Access-Token:
+      description: Request requires authentication!
+      type: string
+      required: true
+      example: 550e8400-e29b-11d4-a716-446655440000
+  responses:
+    401:
+      description: |
+        **Unauthorized!**
+      body:
+        application/json:
+          schema: security
+          example: |
+            {
+              "user": "root",
+              "message": "Oops!",
+              "hasRole": false,
+              "isAuthenticated": false,
+              "isPermitted": false
+            }
+    403:
+      description: |
+        **Forbidden!**<br/>
+        The user doesn't have sufficient permissions for '<<resourcePathName>>'
+      body:
+        application/json:
+          schema: security
+          example: |
+            {
+              "user": "root",
+              "message": "You don't have sufficient permissions for ...",
+              "hasRole": false,
+              "isAuthenticated": true,
+              "isPermitted": false
+            }
+    419?:
+      description: It returns an array of _error_ items for each failed command at bulk operations.
+      body:
+        application/json:
+          schema: errors
+    420:
+      description: |
+        **'<span style="text-transform: capitalize;"><<resourcePathName>></span>' failed!**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate": "2016-05-05T21:13:35Z",
+              "surveyDate": "2016-05-05T21:13:33Z",
+              "error": {
+                "code": "JOC-420",
+                "message": "<<resourcePathName>>  failed!"
+              }
+            }
+          schema: error420
+    440:
+      description: |
+        **Login Timeout!**<br/>
+        The client's session has expired and must log in again.
+      body:
+        application/json:
+          schema: security
+          example: |
+            {
+              "user": "root",
+              "message": "Session has expired. Please log in again",
+              "hasRole": false,
+              "isAuthenticated": false,
+              "isPermitted": false
+            }
+    434?:
+      description: |
+        **'<span style="text-transform: capitalize;"><<resourcePathName>></span>' failed!**
+        <h3 style="color:red;">JOC GUI doesn't alert this exception</h3>
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate": "2016-05-05T21:13:35Z",
+              "surveyDate": "2016-05-05T21:13:33Z",
+              "error": {
+                "code": "JOC-420",
+                "message": "<<resourcePathName>>  failed!"
+              }
+            }
+          schema: error420

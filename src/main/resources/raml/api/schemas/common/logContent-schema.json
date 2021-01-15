@@ -1,0 +1,15 @@
+{
+  "title": "log content",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.LogContent",
+  "type": "object",
+  "description": "The parameter 'mime' can specify if the content is plain or html. Either 'plain' or 'html' is required. 'plain' is default.",
+  "properties": {
+    "plain": {
+      "type": "string"
+    },
+    "html": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+type: error
+post:
+  description: |
+    <h2>Add orders - <b>IN PROGRESS</b></h2>
+    <p>this resource can be used in the GUI for three functions</p>
+    <ul>
+    <li><i>start immediatly</i></li>
+    <li><i>start at</i> (with ``scheduledFor``)</li>
+    <li><i>start at parametrised</i> (with ``scheduledFor`` and ``arguments``)</li>
+    </ul>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="16%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>jobscheduler</td><td></td></tr>
+    <tr><td>``orders``</td><td>required, array</td>
+    <td>Specified the orders which should be modified.</td>
+    <td> [{
+      <div style="padding-left:10px;">"workflowPath":"/myWorkflow",</div>
+      <div style="padding-left:10px;">"orderName":"daily"</div>
+      <div style="padding-left:10px;">"scheduledFor":"now+10"</div>
+      }]</td>
+    <td></td></tr>
+    <tr><td style="padding-left:20px;">``orderName``</td><td>required, string (max. 30 characters)<br/>field of each ``orders`` item</td><td>``orderName`` is only a part of the orderId in the form &quot;#&lt;date&gt;#T&lt;uniqueId&gt;-&lt;orderName&gt;&quot;</td><td></td></tr>
+    <tr><td style="padding-left:20px;">``workflowPath``</td><td>required, string<br/>field of each ``orders`` item</td><td></td><td></td></tr>
+    <tr><td style="padding-left:20px;">``scheduledFor``</td><td>optional, string<br/>field of each ``orders`` item</td>
+    <td>start time in ISO format &quot;yyyy-mm-dd HH:MM[:SS]&quot; or &quot;now&quot; or &quot;now + HH:MM[:SS]&quot; or &quot;now + SECONDS&quot; or &quot;never&quot;</td>
+    <td>now+10</td><td>now</td></tr>
+    <tr><td style="padding-left:20px;">``timeZone``</td><td>optional, string<br/>field of each ``orders`` item</td><td><ul>
+       <li>This parameter set the time zone for an absolute time stamp in the ``scheduledFor`` parameter.</li>
+       <li>This parameter is ignored for relative times in ``scheduledFor`` such as "now+10"</li>
+       <li>See here the list for <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="wiki">available time zones</a>.</li>
+    </ul></td><td>Europe/Berlin</td><td>Etc/UTC</td></tr>
+    <tr><td style="padding-left:20px;">``arguments``</td><td>optional, object<br/>field of each ``orders`` item</td><td>Arguments</td><td>{"key1":"value1","key2":"value2"}</td><td></td></tr>
+    <<audit>>
+    </tbody></table>
+
+  body:
+    application/json:
+      schema: addOrders
+      example: |
+        {
+          "controllerId": "jobscheduler",
+          "orders": [{
+            "orderId": "order1",
+            "workflowPath": "/test/testWorkflow",
+            "scheduledFor": "now + 60"
+          }, {
+            "orderId": "order2",
+            "workflowPath": "/test/testWorkflow"
+          }, {
+            "orderId": "order3",
+            "workflowPath": "/test/testWorkflow"
+          }, {
+            "orderId": "order4",
+            "workflowPath": "/test/testWorkflow"
+          }, {
+            "orderId": "order5",
+            "workflowPath": "/test/testWorkflow"
+          }]
+        }
+  responses:
+    200:
+      description: Returns the orderIds that are tried to add.
+      body:
+        application/json:
+          schema: orderIds
+          example: |
+            {
+              "deliveryDate":"2020-11-20T21:13:35Z",
+              "orderIds": [
+                "#2020-11-20#T835857946-Test0000000055"
+              ]
+            }
+    419:

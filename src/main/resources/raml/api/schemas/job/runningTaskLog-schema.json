@@ -1,0 +1,22 @@
+{
+  "title": "running task log",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.job.RunningTaskLog",
+  "type": "object",
+  "extends" : {
+    "$ref": "runningTaskLogFilter-schema.json"
+  },
+  "required": [
+    "taskId",
+    "complete"
+  ],
+  "properties": {
+    "complete": {
+      "type": "boolean",
+      "default": false
+    },
+    "log": {
+      "type": "string"
+    }
+  }
+}

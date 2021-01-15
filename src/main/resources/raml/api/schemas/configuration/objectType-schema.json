@@ -1,0 +1,24 @@
+{
+  "title": "configuration object type",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.configuration.ConfigurationObjectType",
+  "type": "string",
+  "enum": [
+    "JOB",
+    "JOBCHAIN",
+    "ORDER",
+    "PROCESSCLASS",
+    "AGENTCLUSTER",
+    "LOCK",
+    "SCHEDULE",
+    "FOLDER",
+    "JOBSCHEDULER",
+    "DAILYPLAN",
+    "TASK_HISTORY",
+    "ORDER_HISTORY",
+    "YADE", 
+    "YADE_HISTORY",
+    "EVENT",
+    "AUDITLOG"
+  ]
+}

@@ -1,0 +1,50 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="10%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>scheduler</td><td></td></tr>
+    <tr><td>``transfers``</td><td>required; array</td><td>Collection of YADE transfers which contains ``transferId`` and ``fileIds``<br/>
+      If ``fileIds`` undefined or empty then all files of the transfer are considered</td>
+    <td> [{
+      <div style="padding-left:10px;">"transferId": 42,</div>
+      <div style="padding-left:10px;">"fileIds": [3,5,81]</div>
+      }]</td>
+    <td></td></tr>
+    <!--tr><td>``transferId``</td><td>required; integer</td><td>The id of a YADE transfer </td><td>42</td><td></td></tr
+    <tr><td>``fileIds``</td><td>optional; array</td>
+    <td>The ids of files. If this parameter undefined or empty then all files of the transfer are considered</td>
+    <td>[3,5,81]</td><td></td></tr-->
+    <<audit>>
+    </tbody></table>
+  body:
+    application/json:
+      schema: <<schema>>
+      example: <<example>>
+  responses:
+    200:
+      description: |
+        **Confirm <span style="text-transform: capitalize;"><<resourcePathName>></span> successfully**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate":"2016-05-05T21:13:35Z",
+              "ok":true
+            }
+          schema: ok
+    419:
+      body:
+        application/json:

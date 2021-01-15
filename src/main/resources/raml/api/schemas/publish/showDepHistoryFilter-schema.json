@@ -1,0 +1,24 @@
+{
+  "title": "Filter For The Deployment History",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.ShowDepHistoryFilter",
+  "type": "object",
+  "oneOf": [{
+    "required": [
+        "compactFilter"
+      ]
+    }, {
+      "required": [
+        "detailFilter"
+      ]
+    }
+  ],
+  "properties": {
+    "compactFilter": {
+      "$ref": "depHistoryCompactFilter-schema.json"
+    },
+    "detailFilter": {
+      "$ref": "depHistoryDetailFilter-schema.json"
+    }
+  }
+}

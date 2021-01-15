@@ -1,0 +1,78 @@
+{
+  "title": "save and response configuration",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.Transfer",
+  "type": "object",
+  "description": "compact=true -> required fields + possibly profile, mandator, target",
+  "required": [
+    "_operation",
+    "start",
+    "source"
+  ],
+  "properties": {
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "parent_id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "mandator": {
+      "type": "string"
+    },
+    "state": {
+      "$ref": "transferState-schema.json"
+    },
+    "_operation": {
+      "$ref": "operation-schema.json"
+    },
+    "start": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "end": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "error": {
+      "$ref": "../common/error-schema.json"
+    },
+    "source": {
+      "$ref": "protocolFragment-schema.json"
+    },
+    "target": {
+      "$ref": "protocolFragment-schema.json"
+    },
+    "jump": {
+      "$ref": "protocolFragment-schema.json"
+    },
+    "numOfFiles": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "hasIntervention": {
+      "type": "boolean",
+      "default": "false"
+    },
+    "controllerId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "jobChain": {
+      "$ref": "../common/path-schema.json"
+    },
+    "jobChainNode": {
+      "type": "string"
+    },
+    "job": {
+      "$ref": "../common/path-schema.json"
+    },
+    "taskId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

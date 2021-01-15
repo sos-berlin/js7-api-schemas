@@ -1,0 +1,21 @@
+{
+  "title": "workflowFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowFilter",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "workflowId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "workflowId": {
+      "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+    },
+    "compact": {
+      "$ref": "../common/compactParam-schema.json"
+    }
+  }
+}

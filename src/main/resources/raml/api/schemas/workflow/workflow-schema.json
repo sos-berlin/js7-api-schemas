@@ -1,0 +1,18 @@
+{
+  "title": "workflow",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.Workflow",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "workflow": {
+      "$ref": "../../../controller/schemas/workflow/workflow-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

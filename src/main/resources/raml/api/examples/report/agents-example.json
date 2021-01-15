@@ -1,0 +1,70 @@
+{
+	"agents": [{
+		"agent": "http://oh2:4445",
+		"cause": "PERIOD_SINGLE",
+		"controllerId": "scheduler.1.11",
+		"numOfSuccessfulTasks": 2
+	},
+	{
+		"agent": "http://oh2:4445",
+		"cause": "QUEUE_AT",
+		"controllerId": "scheduler.1.11",
+		"numOfSuccessfulTasks": 16
+	},
+	{
+		"agent": "http://galadriel.sos:4454",
+		"cause": "QUEUE_AT",
+		"controllerId": "scheduler.1.11-reporting",
+		"numOfSuccessfulTasks": 1
+	},
+	{
+		"agent": "http://localhost:4441",
+		"cause": "ORDER",
+		"controllerId": "scheduler.1.11-reporting",
+		"numOfSuccessfulTasks": 21
+	},
+	{
+		"agent": "http://oh.sos:4447",
+		"cause": "ORDER",
+		"controllerId": "scheduler.1.11-reporting",
+		"numOfSuccessfulTasks": 936
+	},
+	{
+		"agent": "http://oh.sos:4447",
+		"cause": "QUEUE_AT",
+		"controllerId": "scheduler.1.11-reporting",
+		"numOfSuccessfulTasks": 1
+	},
+	{
+		"agent": "http://galadriel:4445",
+		"cause": "QUEUE_AT",
+		"controllerId": "scheduler.1.11.oh",
+		"numOfSuccessfulTasks": 15
+	},
+	{
+		"agent": "http://oh:4445",
+		"cause": "ORDER",
+		"controllerId": "scheduler.1.11.oh",
+		"numOfSuccessfulTasks": 3
+	},
+	{
+		"agent": "http://oh:4445",
+		"cause": "PERIOD_SINGLE",
+		"controllerId": "scheduler.1.11.oh",
+		"numOfSuccessfulTasks": 20
+	},
+	{
+		"agent": "http://oh:4445",
+		"cause": "QUEUE_AT",
+		"controllerId": "scheduler.1.11.oh",
+		"numOfSuccessfulTasks": 58
+	},
+	{
+		"agent": "http://oh2:4445",
+		"cause": "QUEUE_AT",
+		"controllerId": "scheduler.1.11.oh",
+		"numOfSuccessfulTasks": 4
+	}],
+	"deliveryDate": "2017-11-02T12:17:43.326Z",
+	"totalNumOfSuccessfulTasks": 1077
+}

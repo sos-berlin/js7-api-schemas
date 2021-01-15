@@ -1,0 +1,23 @@
+{
+	"title": "response Delete Draft",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.delete.ResponseItem",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+        	"$ref": "../../common/timestamp-schema.json"
+    	},
+		"updated": {
+			"type": "array",
+			"items": {
+			  "$ref": "../common/request-filter-schema.json"
+			}
+		},
+		"deleted": {
+		    "type": "array",
+			"items": {
+			  "$ref": "../common/request-filter-schema.json"
+			}
+		}
+	}
+}

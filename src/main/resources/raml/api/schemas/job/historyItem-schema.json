@@ -1,0 +1,69 @@
+{
+  "title": "task in history collection",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.job.TaskHistoryItem",
+  "type": "object",
+  "required": [
+    "surveyDate",
+    "workflow",
+    "job",
+    "startTime",
+    "position",
+    "sequence",
+    "retryCounter",
+    "state",
+    "criticality",
+    "taskId", 
+    "agentUrl"
+  ],
+  "properties": {
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "controllerId": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "workflow": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "startTime": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "endTime": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "position": {
+      "type": "string"
+    },
+    "sequence": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "retryCounter": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "state": {
+      "$ref": "../common/historyState-schema.json"
+    },
+	"criticality": {
+      "type": "string"
+    },
+    "taskId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "agentUrl": {
+      "type": "string"
+    },
+    "exitCode": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "error": {
+      "$ref": "../common/error-schema.json"
+    }
+  }
+}

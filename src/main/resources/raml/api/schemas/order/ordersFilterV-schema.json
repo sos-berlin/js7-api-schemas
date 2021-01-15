@@ -1,0 +1,41 @@
+{
+  "title": "orders filter for volatile information",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrdersFilterV",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "orderIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    },
+    "workflowIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+      }
+    },
+    "compact": {
+      "$ref": "../common/compactParam-schema.json"
+    },
+    "regex": {
+      "$ref": "../common/regexFilter-schema.json"
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "$ref": "orderStateText-schema.json"
+      }
+    },
+    "folders": {
+      "$ref": "../common/folders-schema.json"
+    }
+  }
+}

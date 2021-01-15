@@ -1,0 +1,15 @@
+{
+	"title": "NonWorkingDays Calendar Edit configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.calendar.NonWorkingDaysCalendarEdit",
+	"type": "object",
+	"extends": {
+		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+	},
+	"properties": {
+		"configuration": {
+			"$ref": "../calendar/calendar-schema.json"
+		}
+	}
+}
+

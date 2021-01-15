@@ -1,0 +1,23 @@
+{
+	"title": "Import Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.ImportFilter",
+	"type": "object",
+	"required": [
+		"overwrite"
+	],
+	"properties": {
+		"overwrite": {
+			"type": "boolean"
+		}, 
+    "targetFolder": {
+      "$ref": "../common/path-schema.json"
+    },
+    "format": {
+      "$ref": "archiveFormat-schema.json"
+    },
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	}
+}

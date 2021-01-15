@@ -1,0 +1,33 @@
+{
+  "deliveryDate": "2016-05-05T21:13:35Z",
+  "agents": [
+    {
+      "surveyDate": "2016-05-05T21:13:23Z",
+      "url": "http://galadriel:4445",
+      "startedAt": "2016-04-20T23:55:00Z",
+      "state": {
+        "severity": 0,
+        "_text": "running"
+      },
+      "runningTasks": 1
+    },
+    {
+      "surveyDate": "2016-05-05T21:13:22Z",
+      "url": "http://frodo.proxy",
+      "startedAt": "2016-04-20T23:50:22Z",
+      "state": {
+        "severity": 0,
+        "_text": "running"
+      },
+      "runningTasks": 0
+    },
+    {
+      "surveyDate": "2016-05-05T21:13:25Z",
+      "url": "http://gandalf:4447",
+      "state": {
+        "severity": 2,
+        "_text": "unreachable"
+      }
+    }
+  ]
+}

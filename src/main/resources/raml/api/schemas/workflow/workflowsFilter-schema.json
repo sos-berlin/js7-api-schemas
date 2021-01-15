@@ -1,0 +1,29 @@
+{
+  "title": "workflowsFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowsFilter",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "workflowIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+      }
+    },
+    "compact": {
+      "$ref": "../common/compactParam-schema.json"
+    },
+    "folders": {
+      "$ref": "../common/folders-schema.json"
+    },
+    "regex": {
+      "$ref": "../common/regexFilter-schema.json"
+    }
+  }
+}

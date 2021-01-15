@@ -1,0 +1,37 @@
+{
+  "title": "jobs overview summary",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.job.JobsOverView",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "surveyDate",
+    "jobs"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "jobs": {
+      "javaType": "com.sos.joc.model.job.JobsHistoricSummary",
+      "type": "object",
+      "required": [
+        "successful",
+        "failed"
+      ],
+      "properties": {
+        "successful": {
+          "description": "number of successful orders in the past specified by a time parameter",
+          "$ref": "../common/nonNegativeLong-schema.json"
+        },
+        "failed": {
+          "description": "number of failed orders in the past specified by a time parameter",
+          "$ref": "../common/nonNegativeLong-schema.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+	"title": "Daily Plan  Submissions Filter Definition",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanSubmissionsFilterDef",
+	"type": "object",
+	"description": "Define the filter To get submissions from the daily plan",
+	"properties": {	
+		
+		"dateFrom": {
+			"type": "string",
+			"pattern": "^(0|([0-9-]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(,\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+		},
+		"dateTo": {
+			"type": "string",
+			"pattern": "^(0|([0-9-]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(,\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+		},
+		"controllerIds": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}
+ 

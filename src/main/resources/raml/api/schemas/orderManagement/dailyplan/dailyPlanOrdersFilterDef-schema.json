@@ -1,0 +1,58 @@
+{
+	"title": "Daily Plan  Order Filter Definition",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderFilterDef",
+	"type": "object",
+	"description": "Define the filter To get orders from the daily plan",
+	"properties": {
+		"submissionHistoryIds": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/nonNegativeLong-schema.json"
+			}
+		},
+		"folders": {
+			"$ref": "../../common/folders-schema.json"
+		},
+		"schedulePaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"workflowPaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"orderIds": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"controllerIds": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"states": {
+			"type": "array",
+			"items": {
+				"$ref": "../../order/orderStateText-schema.json"
+			}
+		},
+		"late": {
+			"type": "boolean"
+		},
+		"dailyPlanDate": {
+			"$ref": "../../common/date-schema.json"
+		},
+		"schedulesFolder": {
+			"$ref": "../../common/path-schema.json"
+		}
+	}
+}
+ 

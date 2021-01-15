@@ -1,0 +1,20 @@
+{
+  "title": "version",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.Version",
+  "type": "object",
+  "required": [
+    "version"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "gitHash": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    }
+  }
+}

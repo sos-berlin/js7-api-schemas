@@ -1,0 +1,15 @@
+{
+	"title": "xmleditor rename configuration answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.rename.RenameConfigurationAnswer",
+	"type": "object",
+	"description": "",
+	"properties": {
+		"id": {
+			"type": "integer"
+		},
+		"modified": {
+			"$ref": "../../common/timestamp-schema.json"
+		}
+	}
+}

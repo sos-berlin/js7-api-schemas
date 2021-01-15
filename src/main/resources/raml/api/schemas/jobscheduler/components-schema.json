@@ -1,0 +1,57 @@
+{
+  "title": "components",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.Components",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "joc",
+    "database",
+    "controllers"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "jocs": {
+      "type": "array",
+      "items": {
+        "$ref": "joc-schema.json"
+      }
+    },
+    "database": {
+      "type": "object",
+      "javaType": "com.sos.joc.model.joc.DB",
+      "required": [
+        "dbms",
+        "version",
+        "componentState",
+        "connectionState"
+      ],
+      "properties": {
+        "dbms": {
+          "description": "possible values 'SQL Server', 'MySQL', 'Oracle', 'PostgreSQL'",
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "componentState": {
+          "$ref": "componentState-schema.json"
+        },
+        "connectionState": {
+          "$ref": "connectionState-schema.json"
+        }
+      }
+    },
+    "controllers": {
+      "type": "array",
+      "items": {
+        "$ref": "master-schema.json"
+      }
+    },
+    "clusterState": {
+      "$ref": "clusterState-schema.json"
+    }
+  }
+}

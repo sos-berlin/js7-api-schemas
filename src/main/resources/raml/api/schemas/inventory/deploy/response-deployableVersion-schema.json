@@ -1,0 +1,33 @@
+{
+	"title": "ResponseDeployableVersion",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.deploy.ResponseDeployableVersion",
+	"type": "object",
+	"properties": {
+		"id": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"commitId": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"deploymentId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"deploymentPath": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"deploymentOperation": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"versionDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"versions": {
+			"type": "array",
+			"items": {
+				"$ref": "../common/response-itemDeployment-schema.json"
+			},
+			"uniqueItems": true
+		}
+	}
+}

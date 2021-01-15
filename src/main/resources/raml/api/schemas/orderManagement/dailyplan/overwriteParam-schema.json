@@ -1,0 +1,7 @@
+{
+  "title": "overwrite parameter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "controls if the order should be overwritten",
+  "type": "boolean",
+  "default": false
+}

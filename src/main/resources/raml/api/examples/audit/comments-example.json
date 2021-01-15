@@ -1,0 +1,17 @@
+{
+  "comments":
+  [
+    "System maintenance",
+    "Repeat execution",
+    "Business requirement",
+    "Restart failed execution",
+    "Re-instantiate stopped object",
+    "Temporary stop",
+    "Change of JobScheduler object",
+    "Rerun with parameter changes",
+    "Change of external dependency",
+    "Application deployment and upgrade"
+  ],
+  "deliveryDate": "2017-02-02T00:27:32.374Z",
+  "forceCommentsForAuditLog": false
+}

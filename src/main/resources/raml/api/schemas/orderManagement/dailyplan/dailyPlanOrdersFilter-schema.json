@@ -1,0 +1,26 @@
+{
+	"title": "Daily Plan  Order Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderFilter",
+	"type": "object",
+	"description": "To get orders from the daily plan",
+	
+	"properties": {
+		"controllerId": {
+			"type": "string"
+		},
+		"overwrite": {
+			"$ref": "overwriteParam-schema.json"
+		},
+		"withSubmit": {
+			"$ref": "withSubmitParam-schema.json"
+		},
+		"filter": {
+			"$ref": "dailyPlanOrdersFilterDef-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
+ 

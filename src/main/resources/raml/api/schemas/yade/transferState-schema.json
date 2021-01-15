@@ -1,0 +1,19 @@
+{
+  "title": "transfer state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.TransferState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=SUCCESSFUL, 1=INCOMPLETE, 2=FAILED",
+      "type": "integer"
+    },
+    "_text": {
+      "$ref": "transferStateText-schema.json"
+    }
+  }
+}

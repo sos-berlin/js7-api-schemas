@@ -1,0 +1,19 @@
+{
+  "title": "cluster state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.ClusterState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=ClusterCoupled, 1=ClusterNodesAppointed,ClusterPassiveLost,ClusterSwitchedOver,ClusterFailOver 2=ClusterPreparedToBeCoupled,ClusterEmpty 3=ClusterUnknown",
+      "type": "integer"
+    },
+    "_text": {
+      "type": "string"
+    }
+  }
+}

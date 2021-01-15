@@ -1,0 +1,19 @@
+{
+  "title": "jobscheduler state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.JobSchedulerState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=running, 1=waiting_for_activation, 2=unreachable",
+      "type": "integer"
+    },
+    "_text": {
+      "$ref": "stateText-schema.json"
+    }
+  }
+}

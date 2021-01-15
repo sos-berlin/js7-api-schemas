@@ -1,0 +1,109 @@
+{
+  "title": "order log item",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderLogItem",
+  "type": "object",
+  "required": [
+    "controllerDatetime",
+    "logLevel",
+    "logEvent",
+    "position"
+  ],
+  "properties": {
+    "controllerDatetime": {
+      "description": "datetime with timeOffset: format \"yyyy-MM-dd' 'HH:mm:ss.SSSZ\"",
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "logLevel": {
+      "type": "string"
+    },
+    "logEvent": {
+      "type": "string",
+      "enum": [
+        "OrderAdded",
+        "OrderStarted",
+        "OrderFailed",
+        "OrderFailedinFork",
+        "OrderFinished",
+        "OrderCancelled",
+        "OrderForked",
+        "OrderProcessingStarted",
+        "OrderRetrying",
+        "OrderAwaiting",
+        "OrderOffered",
+        "OrderProcessed",
+        "OrderResumed",
+        "OrderMoved",
+        "OrderCatched",
+        "OrderAwoke",
+        "OrderJoined",
+        "OrderSuspended",
+        "OrderBroken"
+      ],
+      "javaEnumNames": [
+        "OrderAdded",
+        "OrderStarted",
+        "OrderFailed",
+        "OrderFailedinFork",
+        "OrderFinished",
+        "OrderCancelled",
+        "OrderForked",
+        "OrderProcessingStarted",
+        "OrderRetrying",
+        "OrderAwaiting",
+        "OrderOffered",
+        "OrderProcessed",
+        "OrderResumed",
+        "OrderMoved",
+        "OrderCatched",
+        "OrderAwoke",
+        "OrderJoined",
+        "OrderSuspended",
+        "OrderBroken" 
+      ]
+    },
+    "position": {
+      "type": "string"
+    },
+    "agentDatetime": {
+      "description": "datetime with timeOffset: format \"yyyy-MM-dd' 'HH:mm:ss.SSSZ\"",
+      "type": "string"
+    },
+    "agentPath": {
+      "type": "string"
+    },
+    "agentUrl": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "taskId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "returnCode": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "error": {
+      "type": "object",
+      "javaType": "com.sos.joc.model.order.OrderLogItemError",
+      "properties": {
+        "errorState": {
+      	  "type": "string"
+        },
+        "errorCode": {
+          "type": "string"
+        },
+        "errorReason": {
+          "type": "string"
+        },
+        "errorText": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

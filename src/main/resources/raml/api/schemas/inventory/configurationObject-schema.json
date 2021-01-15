@@ -1,0 +1,72 @@
+{
+	"title": "JS Object configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.ConfigurationObject",
+	"type": "object",
+	"anyOf": [
+        {
+            "required": [
+                "id"
+            ]
+        },
+        {
+            "required": [
+                "path",
+                "objectType"
+            ]
+        }
+    ],
+	"properties": {
+		"id": {
+			"$ref": "../common/nonNegativeLong-schema.json"
+		},
+		"path": {
+			"$ref": "../common/path-schema.json"
+		},
+		"objectType": {
+			"$ref": "common/configurationType-schema.json"
+		},
+		"configuration": {
+			"description": "interface for different json representations of a configuration item",
+      		"type": "object",
+      		"javaType": "com.sos.joc.model.common.IConfigurationObject"
+		},
+		"state": {
+			"$ref": "common/itemStateEnum-schema.json"
+		},
+		"valid": {
+			"type": "boolean"
+		},
+		"invalidMsg": {
+			"type": "string"
+		},
+		"deleted": {
+			"type": "boolean"
+		},
+		"deployed": {
+			"type": "boolean"
+		},
+		"released": {
+			"type": "boolean"
+		},
+		"hasDeployments": {
+			"type": "boolean"
+		},
+		"hasReleases": {
+			"type": "boolean"
+		},
+		"deployments": {
+			"type": "array",
+			"items": {
+				"$ref": "deploy/response-deployableVersion-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"configurationDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		}
+	}
+}

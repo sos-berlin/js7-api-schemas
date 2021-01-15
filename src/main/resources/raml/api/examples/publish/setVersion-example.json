@@ -1,0 +1,34 @@
+{
+  "version" : "myTestVersion-1.0.0",
+  "deployConfigurations" : [{
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_10",
+      "objectType" : "WORKFLOW",
+      "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+    }
+  }, {
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_12",
+      "objectType" : "WORKFLOW",
+      "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+    }
+  }, {
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_14",
+      "objectType" : "WORKFLOW",
+      "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+    }
+  }, {
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_16",
+      "objectType" : "WORKFLOW",
+      "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+    }
+  }, {
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_18",
+      "objectType" : "WORKFLOW",
+      "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+    }
+  }]
+}

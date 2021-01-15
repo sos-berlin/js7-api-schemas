@@ -1,0 +1,21 @@
+{
+	"title": "login",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.configuration.Login",
+	"type": "object",
+	"properties": {
+		"defaultProfileAccount": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"title": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"enableRememberMe": {
+			"type": "boolean",
+			"default": true
+		},
+		"customLogo": {
+			"$ref": "loginLogo-schema.json"
+		}
+	}
+}

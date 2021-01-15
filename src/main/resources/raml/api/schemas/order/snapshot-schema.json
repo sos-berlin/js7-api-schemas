@@ -1,0 +1,21 @@
+{
+  "title": "orders overview snapshot",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrdersSnapshot",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "surveyDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "orders": {
+      "$ref": "../order/ordersSummary-schema.json"
+    }
+  }
+}

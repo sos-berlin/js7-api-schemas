@@ -1,0 +1,16 @@
+{
+  "title": "order object in history collection",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderHistoryItemChildItem",
+  "type": "object",
+  "required": [
+  ],
+  "properties": {
+    "task": {
+      "$ref": "../job/historyItem-schema.json"
+    },
+    "order": {
+      "$ref": "orderHistoryItem-schema.json"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "title": "compact Filter For The Deployment History",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.DepHistoryCompactFilter",
+  "type": "object",
+  "properties": {
+    "account": {
+      "type": "string"
+    },
+    "folder": {
+      "type": "string"
+    },
+    "controllerId": {
+      "type": "string"
+    },
+    "deployType" : {
+      "type": "string"
+    },
+    "operation" : {
+      "type": "string"
+    },
+    "state" : {
+      "type": "string"
+    },
+    "deploymentDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "deleteDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "from": {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "to": {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "timeZone": {
+      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+      "type": "string"
+    }, 
+    "limit": {
+        "description": "Only for db history URIs. Restricts the number of delivered items; -1=unlimited",
+        "type": "integer",
+        "default": 10000
+    }
+  }
+}

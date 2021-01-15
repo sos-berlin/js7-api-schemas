@@ -1,0 +1,27 @@
+{
+	"title": "Order Template Dates Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.order.ScheduleDatesFilter",
+	"type": "object",
+	"required": [
+		"timeZone"
+	],
+	"properties": {
+		"calendars": {
+			"$ref": "../calendar/calendars-list-schema.json"
+		},
+		"nonWorkingCalendars": {
+			"$ref": "../calendar/calendars-list-non-working-schema.json"
+		},
+    	"dateFrom": {
+      		"$ref": "../common/date-schema.json"
+    	},
+    	"dateTo": {
+      		"$ref": "../common/date-schema.json"
+    	},
+    	"timeZone": {
+      		"$ref": "../common/timezone-schema.json"
+    	}
+	}
+}
+ 

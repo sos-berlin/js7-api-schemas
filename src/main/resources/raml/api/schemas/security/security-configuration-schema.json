@@ -1,0 +1,140 @@
+{
+	"title": "Authentication configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.SecurityConfiguration",
+	"type": "object",
+	"required": ["deliveryDate"],
+
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		
+		"main":{
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.security.SecurityConfigurationMainEntry",
+				"properties": {			
+					"entryName": {
+						"type": "string"
+					},
+					"entryValue": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					},
+					"entryComment": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		},
+
+		"users": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.security.SecurityConfigurationUser",
+				"properties": {
+					"user": {
+						"type": "string"
+					},
+
+					"password": {
+						"type": "string"
+					},
+
+					"roles": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		},
+		
+		"profiles": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.configuration.Profile",
+				"properties": {
+					"account": {
+						"type": "string"
+					},
+
+					"lastLogin": {
+						"type": "string",
+						"format": "date-time"
+					}
+				}
+			}
+		},
+
+		"masters": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.security.SecurityConfigurationMaster",
+				"properties": {
+					"master": {
+						"type": "string"
+					},
+
+					"roles": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"javaType": "com.sos.joc.model.security.SecurityConfigurationRole",
+							"properties": {
+								"role": {
+									"type": "string"
+								},
+
+								"permissions": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"javaType": "com.sos.joc.model.security.SecurityConfigurationPermission",
+										"properties": {
+											"path": {
+												"type": "string"
+											},
+
+											"excluded": {
+												"type": "boolean"
+											}
+										}
+									}
+								},
+
+								"folders": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"javaType": "com.sos.joc.model.security.SecurityConfigurationFolder",
+										"properties": {
+											"folder": {
+												"type": "string"
+											},
+
+											"recursive": {
+												"type": "boolean"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "title": "protocol, host, port, account",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.ProtocolFragment",
+  "type": "object",
+  "description": "compact=true -> only required fields",
+  "required": [
+    "protocol",
+    "host"
+  ],
+  "properties": {
+    "host": {
+      "type": "string"
+    },
+    "protocol": {
+      "$ref": "protocol-schema.json"
+    },
+    "port": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "account": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "JobScheduler object type",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.JobSchedulerObjectType",
+  "type": "string",
+  "enum": [
+    "INVENTORY",
+    "WORKFLOW",
+    "JOB",
+    "JOBCLASS",
+    "AGENTCLUSTER",
+    "LOCK",
+    "JUNCTION",
+    "ORDER",
+    "CALENDAR",
+    "CONTROLLER",
+    "DOCUMENTATION",
+    "FOLDER",
+    "WORKINGDAYSCALENDAR",
+    "NONWORKINGDAYSCALENDAR",
+    "OTHER"
+  ]
+}

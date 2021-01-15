@@ -1,0 +1,51 @@
+{
+  "title": "audit",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.audit.AuditLogItem",
+  "type": "object",
+  "required": [
+    "account",
+    "request",
+    "created"
+  ],
+  "properties": {
+    "account": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "request": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "created": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "parameters": {
+      "description": "JSON object as string, parameter of request",
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "workflow": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "calendar": {
+      "type": "string"
+    },
+    "timeSpent": {
+      "description": "in minutes",
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "ticketLink": {
+      "type": "string"
+    }
+  }
+}

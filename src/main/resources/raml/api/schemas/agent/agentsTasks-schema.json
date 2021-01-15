@@ -1,0 +1,24 @@
+{
+  "title": "agents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentsTasks",
+  "type": "object",
+  "required": [
+  	"deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "agents": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "agentTasks-schema.json"
+    	}
+    }
+  },
+  "additionalProperties": false
+}

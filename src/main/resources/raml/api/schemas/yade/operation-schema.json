@@ -1,0 +1,14 @@
+{
+  "title": " yade operation",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.Operation",
+  "type": "string",
+  "enum": [
+    "COPY",
+    "MOVE",
+    "GETLIST",
+    "RENAME",
+    "COPYTOINTERNET",
+    "COPYFROMINTERNET"
+  ]
+}

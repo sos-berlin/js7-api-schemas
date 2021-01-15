@@ -1,0 +1,12 @@
+{
+  "deliveryDate": "2016-05-05T21:13:45Z",
+  "configuration": {
+    "surveyDate": "2016-05-05T21:13:45Z",
+    "path": "/sos/dailyschedule/JID",
+    "configurationDate": "2015-12-11T10:06:39Z",
+    "content": {
+      "xml": "<lock/>",
+      "html": "<span class=\"bracket\" style=\"padding-left:20px;\">&lt;</span><span class=\"element_name\">lock</span><span class=\"bracket\">/&gt;</span>"
+    }
+  }
+}

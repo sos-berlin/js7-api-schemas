@@ -1,0 +1,11 @@
+{
+  "title": "jobscheduler role",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.Role",
+  "type": "string",
+  "enum": [
+    "STANDALONE",
+    "PRIMARY",
+    "BACKUP"
+  ]
+}

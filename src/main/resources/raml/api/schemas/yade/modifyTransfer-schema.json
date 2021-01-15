@@ -1,0 +1,24 @@
+{
+  "title": "modify transfer",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.ModifyTransfer",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "transferId"
+  ],
+  "properties": {
+    "controllerId": {
+      "type": "string"
+    },
+    "transferId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "fileIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/nonNegativeLong-schema.json"
+      }
+    }
+  }
+}

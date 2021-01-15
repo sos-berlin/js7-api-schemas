@@ -1,0 +1,21 @@
+{
+  "title": "Documentations",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.Documentations",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "documentations"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "documentations": {
+      "type": "array",
+      "items": {
+        "$ref": "documentation-schema.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "title": "uri",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "URI of a Controller",
+  "type": "string",
+  "format": "uri"
+}

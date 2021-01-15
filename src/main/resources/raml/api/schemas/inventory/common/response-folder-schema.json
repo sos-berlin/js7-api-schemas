@@ -1,0 +1,74 @@
+{
+	"title": "folder content",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.ResponseFolder",
+	"type": "object",
+	"required": [
+		"deliveryDate",
+		"path"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"workflows": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"jobs": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"jobClasses": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"locks": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"junctions": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"schedules": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"calendars": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"folders": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		}
+	}
+}

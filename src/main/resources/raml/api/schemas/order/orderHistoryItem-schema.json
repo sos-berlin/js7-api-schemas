@@ -1,0 +1,62 @@
+{
+	"title": "order object in history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.order.OrderHistoryItem",
+	"type": "object",
+	"required": [
+		"surveyDate",
+		"orderId",
+		"workflow",
+		"startTime",
+		"plannedTime",
+		"position",
+		"sequence",
+		"state",
+		"orderState",
+		"historyId"
+	],
+	"properties": {
+		"surveyDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"controllerId": {
+			"type": "string"
+		},
+		"orderId": {
+			"type": "string"
+		},
+		"workflow": {
+			"$ref": "../common/path-schema.json"
+		},
+		"startTime": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"plannedTime": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"endTime": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"position": {
+			"type": "string"
+		},
+		"sequence": {
+			"$ref": "../common/nonNegativeInteger-schema.json"
+		},
+		"state": {
+			"$ref": "../common/historyState-schema.json"
+		},
+		"orderState": {
+			"$ref": "orderState-schema.json"
+		},
+		"historyId": {
+			"$ref": "../common/nonNegativeLong-schema.json"
+		},
+		"children": {
+			"type": "array",
+			"items": {
+				"$ref": "orderHistoryItem-schema.json"
+			}
+		}
+	}
+}

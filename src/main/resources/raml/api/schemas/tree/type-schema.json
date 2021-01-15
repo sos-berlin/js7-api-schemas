@@ -1,0 +1,19 @@
+{
+  "title": "Tree object type",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.tree.TreeType",
+  "type": "string",
+  "enum": [
+    "INVENTORY",
+    "FOLDER",
+    "WORKFLOW",
+    "JOB",
+    "JOBCLASS",
+    "LOCK",
+    "JUNCTION",
+    "SCHEDULE",
+    "DOCUMENTATION",
+    "WORKINGDAYSCALENDAR",
+    "NONWORKINGDAYSCALENDAR"
+  ]
+}

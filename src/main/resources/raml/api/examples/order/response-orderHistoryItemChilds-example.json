@@ -1,0 +1,98 @@
+{
+    "children": [
+        {
+            "task": {
+                "agentUrl": "http://localhost:4445",
+                "controllerId": "js7.x",
+                "criticality": "normal",
+                "endTime": "2020-12-01T16:45:20Z",
+                "exitCode": 0,
+                "job": "job1",
+                "orderId": "workflow_fork@33",
+                "position": "0",
+                "retryCounter": 0,
+                "sequence": 0,
+                "startTime": "2020-12-01T16:45:20Z",
+                "state": {
+                    "_text": "SUCCESSFUL",
+                    "severity": 0
+                },
+                "surveyDate": "2020-12-01T16:45:21Z",
+                "taskId": 2157857,
+                "workflow": "/workflow_fork"
+            }
+        },
+        {
+            "order": {
+                "children": [],
+                "controllerId": "js7.x",
+                "endTime": "2020-12-01T16:45:20Z",
+                "historyId": 587032,
+                "orderId": "workflow_fork@33/branch1",
+                "orderState": {
+                    "_text": "FINISHED",
+                    "severity": 0
+                },
+                "plannedTime": "2020-12-01T16:45:20Z",
+                "position": "1",
+                "sequence": 1,
+                "startTime": "2020-12-01T16:45:20Z",
+                "state": {
+                    "_text": "SUCCESSFUL",
+                    "severity": 0
+                },
+                "surveyDate": "2020-12-01T16:45:21Z",
+                "workflow": "/workflow_fork"
+            }
+        },
+        {
+            "order": {
+                "children": [],
+                "controllerId": "js7.x",
+                "endTime": "2020-12-01T16:45:20Z",
+                "historyId": 587033,
+                "orderId": "workflow_fork@33/branch2",
+                "orderState": {
+                    "_text": "FINISHED",
+                    "severity": 0
+                },
+                "plannedTime": "2020-12-01T16:45:20Z",
+                "position": "1",
+                "sequence": 1,
+                "startTime": "2020-12-01T16:45:20Z",
+                "state": {
+                    "_text": "SUCCESSFUL",
+                    "severity": 0
+                },
+                "surveyDate": "2020-12-01T16:45:21Z",
+                "workflow": "/workflow_fork"
+            }
+        },
+        {
+            "task": {
+                "agentUrl": "http://localhost:4445",
+                "controllerId": "js7.x",
+                "criticality": "normal",
+                "endTime": "2020-12-01T16:45:21Z",
+                "exitCode": 0,
+                "job": "job3",
+                "orderId": "workflow_fork@33",
+                "position": "2",
+                "retryCounter": 0,
+                "sequence": 2,
+                "startTime": "2020-12-01T16:45:20Z",
+                "state": {
+                    "_text": "SUCCESSFUL",
+                    "severity": 0
+                },
+                "surveyDate": "2020-12-01T16:45:22Z",
+                "taskId": 2157860,
+                "workflow": "/workflow_fork"
+            }
+        }
+    ],
+    "deliveryDate": "2020-12-01T16:47:35.08Z",
+    "hasOrders": true,
+    "hasTasks": true,
+    "states": []
+}

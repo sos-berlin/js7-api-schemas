@@ -1,0 +1,20 @@
+{
+	"title": "ResponseReleasableVersion",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.release.ResponseReleasableVersion",
+	"type": "object",
+	"properties": {
+		"id": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"releaseId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"releasePath": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"versionDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"title": "Daily Plan  Order Filter Definition",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderSelectorDef",
+	"type": "object",
+	"description": "Define the selector to generate orders for the daily plan",
+	"properties": {
+		"folders": {
+			"$ref": "../../common/folders-schema.json"
+		},
+		"schedulePaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"workflowPaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		}
+	}
+}
+ 

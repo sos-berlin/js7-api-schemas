@@ -1,0 +1,32 @@
+{
+	"title": "ExportFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.ExportFilter",
+	"type": "object",
+  "oneOf": [{
+    "required": [
+        "forSigning",
+        "exportFile"
+      ]
+    }, {
+      "required": [
+        "shallowCopy",
+        "exportFile"
+      ]
+    }
+  ],
+ 	"properties": {
+    "forSigning": {
+      "$ref": "exportForSigningFilter-schema.json"
+    },
+    "shallowCopy": {
+      "$ref": "exportShallowCopyFilter-schema.json"
+    },
+    "exportFile": {
+      "$ref": "exportFile-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "title": "read agents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.ReadAgentsV",
+  "type": "object",
+  "required": [
+  	"controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json",
+      "minLength": 1
+    },
+    "agentIds": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../common/string255-schema.json"
+    	}
+    },
+    "urls": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../common/string255-schema.json"
+    	}
+    },
+    "states": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "agentStateText-schema.json"
+    	}
+    },
+    "onlyEnabledAgents": {
+    	"type": "boolean",
+    	"default": false
+    },
+    "compact": {
+    	"$ref": "../common/compactParam-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

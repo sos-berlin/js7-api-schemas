@@ -1,0 +1,24 @@
+{
+  "title": "jobscheduler platform",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.OperatingSystem",
+  "type": "object",
+  "required": [
+    "name",
+    "architecture",
+    "distribution"
+  ],
+  "properties": {
+    "name": {
+      "description": "Windows, Linux, AIX, Solaris, other",
+      "type": "string"
+    },
+    "architecture": {
+      "type": "string"
+    },
+    "distribution": {
+      "description": "e.g. Windows 2012, CentOS Linux release 7.2.1511 (Core)",
+      "type": "string"
+    }
+  }
+}

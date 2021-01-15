@@ -1,0 +1,34 @@
+{
+  "title": "folder",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.tree.Tree",
+  "type": "object",
+  "properties": {
+    "path": {
+      "$ref": "../common/path-schema.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "lockedBy": {
+      "type": "string"
+    },
+    "lockedSince": {
+	  "$ref": "../common/timestamp-schema.json"
+	},
+	"folders": {
+      "type": "array",
+      "items": {
+        "$ref": "tree-schema.json"
+      }
+    }
+  },
+  "required": [
+    "path",
+    "name"
+  ]
+
+}

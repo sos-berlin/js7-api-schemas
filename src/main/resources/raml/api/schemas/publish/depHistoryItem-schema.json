@@ -1,0 +1,49 @@
+{
+  "title": "History Item Of A Deployment",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.DepHistoryItem",
+  "type": "object",
+  "properties": {
+    "account": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "path": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "folder": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "controllerId": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "commitId" : {
+      "$ref": "../common/string255-schema.json"
+    },
+    "version" : {
+      "$ref": "../common/string255-schema.json"
+    },
+    "deployType" : {
+      "$ref": "../common/string255-schema.json"
+    },
+    "operation" : {
+      "$ref": "../common/string255-schema.json"
+    },
+    "state" : {
+      "$ref": "../common/string255-schema.json"
+    },
+    "deploymentDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "deleteDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "invConfigurationId" : {
+        "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "deploymentId" : {
+        "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

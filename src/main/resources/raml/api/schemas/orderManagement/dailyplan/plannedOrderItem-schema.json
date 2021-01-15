@@ -1,0 +1,88 @@
+{
+	"title": "dailyPlannedOrderItem",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.dailyplan.PlannedOrderItem",
+	"required": [
+		"surveyDate",
+		"workflow",
+		"orderId",
+		"plannedStartTime",
+		"expectedEndTime",
+		"startMode"
+	],
+	"properties": {
+		"surveyDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"workflowPath": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"schedulePath": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"orderId": {
+			"type": "string"
+		},
+		"plannedStartTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"expectedEndTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"startTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"endTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"historyId": {
+			"type": "string"
+		},
+		"node": {
+			"description": "only for orders",
+			"type": "string"
+		},
+		"exitCode": {
+			"description": "only for standalone jobs",
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
+		"error": {
+			"$ref": "../../common/error-schema.json"
+		},
+		"startMode": {
+			"description": "0=single_start, 1=start_start_repeat",
+			"type": "integer",
+			"default": 0
+		},
+		"period": {
+			"description": "undefined for startMode=0",
+			"required": [
+				"begin",
+				"end",
+				"repeat"
+			],
+			"type": "object",
+			"properties": {
+				"begin": {
+					"$ref": "../../common/timestamp-schema.json"
+				},
+				"end": {
+					"$ref": "../../common/timestamp-schema.json"
+				},
+				"repeat": {
+					"$ref": "../../common/nonNegativeLong-schema.json"
+				}
+			}
+		},
+		"late": {
+			"type": "boolean"
+		},   
+		"submitted": {
+			"type": "boolean"
+		},
+		"state": {
+			"$ref": "../../order/orderState-schema.json"
+		}
+	}
+}

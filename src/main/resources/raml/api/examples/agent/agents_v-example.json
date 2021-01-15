@@ -1,0 +1,31 @@
+{
+	"agents": [{
+		"agentId": "agent_primary",
+		"agentName": "agent-primary",
+		"controllerId": "testsuite",
+		"isClusterWatcher": true,
+		"orders": [],
+        "runningTasks": 0,
+		"state": {
+			"_text": "COUPLED",
+			"severity": 0
+		},
+		"url": "https://agent-2-0-primary:4443"
+	},
+	{
+		"agentId": "agent_secondary",
+		"agentName": "agent-secondary",
+		"controllerId": "testsuite",
+		"errorMessage": "Connection refused",
+		"isClusterWatcher": false,
+		"orders": [],
+        "runningTasks": 0,
+		"state": {
+			"_text": "COUPLINGFAILED",
+			"severity": 2
+		},
+		"url": "http://agent-2-0-secondary:4444"
+	}],
+	"deliveryDate": "2020-12-04T15:42:40.185Z",
+	"surveyDate": "2020-12-04T15:24:20.744Z"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "documentation",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.DeployDocumentations",
+  "type": "object",
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "documentations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "javaType": "com.sos.joc.model.docu.DeployDocumentation",
+        "properties": {
+          "documentation": {
+            "$ref": "../common/string255-schema.json"
+          },
+          "objects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "$ref": "../common/jsObject-schema.json"
+            }
+          }
+        }
+      }
+    }
+  }
+}

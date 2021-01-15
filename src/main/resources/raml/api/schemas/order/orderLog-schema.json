@@ -1,0 +1,26 @@
+{
+  "title": "order log",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderLog",
+  "type": "array",
+  "required": [
+    "complete",
+    "eventId",
+    "logEvents"
+  ],
+  "properties": {
+    "complete": {
+      "type": "boolean",
+      "default": false
+    },
+    "eventId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "logEvents": {
+      "type": "array",
+      "items": {
+        "$ref": "orderLogItem-schema.json"
+      }
+    }
+  }
+}

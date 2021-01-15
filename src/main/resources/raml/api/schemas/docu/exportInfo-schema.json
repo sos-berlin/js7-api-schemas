@@ -1,0 +1,15 @@
+{
+  "title": "export info",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.ExportInfo",
+  "type": "object",
+  "properties": {
+    "filename": {
+      "description": "name of temporary file. Can be used as parameter for GET Method of ./documentations/export",
+      "$ref": "../common/string255-schema.json"
+    },
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    }
+  }
+}

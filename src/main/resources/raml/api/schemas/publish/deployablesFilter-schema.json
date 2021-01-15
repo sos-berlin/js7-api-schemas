@@ -1,0 +1,34 @@
+{
+	"title": "Filter for valid and invalid Deployable Objects",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.DeployablesFilter",
+	"type": "object",
+  "anyOf": [{
+    "required": [
+        "draftConfigurations"
+      ]
+    }, {
+      "required": [
+        "deployConfigurations"
+      ]
+    }
+  ],
+  "properties": {
+    "draftConfigurations": {
+      "type" : "array",
+      "items" : {
+        "$ref": "config-schema.json"
+      }
+    },
+    "deployConfigurations": {
+      "type" : "array",
+      "items" : {
+        "$ref": "config-schema.json"
+      }
+    },
+    "withoutInvalid": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

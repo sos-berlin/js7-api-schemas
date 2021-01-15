@@ -1,0 +1,12 @@
+{
+  "title": "Mime Type of the Docu",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The documentation can be a HTML, XML or MarkDown(MD).",
+  "javaType": "com.sos.joc.model.docu.MimeType",
+  "type": "string",
+  "enum": [
+    "HTML",
+    "XML",
+    "MD"
+  ]
+}

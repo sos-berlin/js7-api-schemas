@@ -1,0 +1,18 @@
+{
+  "title": "signature string of a signed object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.sign.Signature",
+  "type": "object",
+  "required": [
+    "TYPE",
+    "signatureString"
+  ],
+  "properties": {
+    "signatureType": {
+      "$ref": "signatureType-schema.json"
+    },
+    "signatureString": {
+      "type": "string"
+    }
+  }
+}

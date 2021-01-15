@@ -1,0 +1,40 @@
+{
+	"title": "Filter Releasables",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.release.ReleasablesFilter",
+	"type": "object",
+	"required": [
+		"folder"
+	],
+	"properties": {
+		"folder": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"recursive": {
+		   "type": "boolean",
+		   "default": false
+		},
+		"objectTypes": {
+			"type": "array",
+			"items": {
+				"$ref": "../common/configurationType-schema.json"
+			}
+		},
+		"onlyValidObjects": {
+			"type": "boolean",
+			"default": false
+		},
+		"withRemovedObjects": {
+			"type": "boolean",
+			"default": false
+		},
+		"withoutDrafts": {
+			"type": "boolean",
+			"default": false
+		},
+		"withoutReleased": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

@@ -1,0 +1,51 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+  body:
+    multipart/form-data:
+      formParameters:
+        file:
+          description: The file to be uploaded
+          required: true
+          type: file
+        controllerId:
+          required: true
+          type: string
+          description: JobScheduler Controller ID
+          example: scheduler
+        accessToken:
+          required: false
+          type: string
+          description: is used if the header doesn't contain ``X-Access-Token``
+          example: 550e8400-e29b-11d4-a716-446655440000
+        folder:
+          required: false
+          type: string
+          description: Folder where is file should be stored in JOC
+          default: /
+        comment:
+          description: for auditLog
+          required: false
+          type: string
+        timeSpent:
+          description: for auditLog
+          required: false
+          type: string
+        ticketLink:
+          description: for auditLog
+          required: false
+          type: string  
+  responses:
+    200:
+      description: |
+        **Confirm <span style="text-transform: capitalize;"><<resourcePathName>></span> successfully**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate":"2016-05-05T21:13:35Z",
+              "ok":true
+            }
+          schema: ok

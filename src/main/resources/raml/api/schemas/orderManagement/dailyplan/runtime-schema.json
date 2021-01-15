@@ -1,0 +1,21 @@
+{
+  "title": "run time",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.dailyplan.RunTime",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "periods"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../../common/timestamp-schema.json"
+    },
+    "periods": {
+      "type": "array",
+      "items": {
+        "$ref": "../../calendar/period-schema.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "title": "orders overview summary",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrdersOverView",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "surveyDate",
+    "orders"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "orders": {
+      "javaType": "com.sos.joc.model.order.OrdersHistoricSummary",
+      "type": "object",
+      "required": [
+        "successful",
+        "failed"
+      ],
+      "properties": {
+        "successful": {
+          "description": "number of successful orders in the past specified by a time parameter",
+          "$ref": "../common/nonNegativeLong-schema.json"
+        },
+        "failed": {
+          "description": "number of failed orders in the past specified by a time parameter",
+          "$ref": "../common/nonNegativeLong-schema.json"
+        }
+      }
+    }
+  }
+}

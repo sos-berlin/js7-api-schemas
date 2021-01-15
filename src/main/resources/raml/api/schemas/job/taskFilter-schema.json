@@ -1,0 +1,20 @@
+{
+  "title": "task filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.job.TaskFilter",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "taskId"
+  ],
+  "properties": {
+    "controllerId": {
+      "type": "string"
+    },
+    "taskId": {
+      "type": "number",
+      "format": "utc-millisec",
+      "minimum": 0
+    }
+  }
+}

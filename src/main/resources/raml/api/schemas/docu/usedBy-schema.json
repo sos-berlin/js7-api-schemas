@@ -1,0 +1,20 @@
+{
+  "title": "collections of objects which use documentation",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.UsedBy",
+  "type": "object",
+  "required": [
+    "deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "objects": {
+	  "type": "array",
+	  "items": {
+	    "$ref": "../common/jsObject-schema.json"
+	  }
+	}
+  }
+}

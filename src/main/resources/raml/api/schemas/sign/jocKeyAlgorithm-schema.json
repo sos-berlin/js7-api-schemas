@@ -1,0 +1,17 @@
+{
+  "title": "JOC Key Algorithm type",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.sign.JocKeyAlgorithm",
+  "type": "integer",
+  "enum": [
+    0,
+    1,
+    2
+  ],
+  "javaEnumNames": [
+    "PGP",
+    "RSA",
+    "ECDSA"
+  ]
+  
+}

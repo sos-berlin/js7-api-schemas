@@ -1,0 +1,14 @@
+{
+	"title": "Config",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.Config",
+	"type": "object",
+  "required": [
+    "configuration"
+  ],
+  "properties": {
+    "configuration": {
+      "$ref": "configuration-schema.json"
+    }
+  }
+}

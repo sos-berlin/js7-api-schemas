@@ -1,0 +1,25 @@
+{
+	"title": "Import Deploy Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.ImportDeployFilter",
+	"type": "object",
+	"required": [
+		"controllerId",
+		"signatureAlgorithm",
+		"format"
+	],
+	"properties": {
+    "controllerId": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "signatureAlgorithm" : {
+      "type": "string"
+    },
+    "format": {
+      "$ref": "archiveFormat-schema.json"
+    },
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	}
+}

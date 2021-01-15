@@ -1,0 +1,88 @@
+type: error
+get?:
+  is: [ accessToken ]
+    
+  description: |
+    <h2><<description>></h2>
+    ___
+  queryParameters:
+    filename:
+      type: string
+      description: |
+        Name of the file to download.
+      example: joc-configuration-bundle.zip
+      required: true
+    configurations:
+      type: string
+      description: |
+        ids of configuration objects, comma separated
+      example: 3,4,5
+      required: false
+    deployments:
+      type: string
+      description: |
+        ids of already deployed objects, comma separated
+      example: 1,2,3
+      required: false
+    comment:
+      type: string
+      description: for auditLog
+      required: false
+    timeSpent:
+      type: string
+      description: for auditLog
+      required: false
+    ticketLink:
+      type: string  
+      description: for auditLog
+      required: false
+  responses:
+    200:
+      description: Content for download
+      headers:
+        Content-Disposition:
+          type: string
+          required: true
+          example: attachment;filename=xxx
+        Content-Type:
+          type: string
+          required: true
+          default: application/octet-stream
+      body:
+        application/octet-stream:
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="10%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <<description1>>
+    </tbody></table>
+  body:
+    application/json:
+      schema: <<schema>>
+      example: <<example>>
+  responses:
+    200:
+      description: Content for download
+      headers:
+        Content-Disposition:
+          type: string
+          required: true
+          example: attachment;filename=xxx
+        Content-Type:
+          type: string
+          required: true
+          default: application/octet-stream
+      body:
+        application/octet-stream:

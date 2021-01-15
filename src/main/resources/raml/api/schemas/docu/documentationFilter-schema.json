@@ -1,0 +1,18 @@
+{
+  "title": "DocumentationFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.DocumentationFilter",
+  "type": "object",
+  "required": [
+     "controllerId",
+     "documentation"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "documentation": {
+      "$ref": "../common/path-schema.json"
+    }
+  }
+}

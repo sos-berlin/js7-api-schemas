@@ -1,0 +1,24 @@
+{
+  "title": "inventory statistics",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.Statistics",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "surveyDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "numOfJobs": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfWorkflows": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

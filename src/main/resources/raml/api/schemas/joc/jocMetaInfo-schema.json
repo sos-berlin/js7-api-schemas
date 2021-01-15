@@ -1,0 +1,22 @@
+{
+  "title": "JOC Meta Information",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.JocMetaInfo",
+  "type": "object",
+  "required": [
+      "joc_version",
+      "inventory_schema_version",
+      "api_version"
+  ],
+  "properties": {
+    "jocVersion": {
+      "type": "string"
+    },
+    "inventorySchemaVersion": {
+      "type": "string"
+    },
+    "apiVersion": {
+      "type": "string"
+    }
+  }
+}

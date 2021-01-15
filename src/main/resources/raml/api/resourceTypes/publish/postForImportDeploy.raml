@@ -1,0 +1,47 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+  body:
+    multipart/form-data:
+      formParameters:
+        controllerId:
+          description: The controllerId of the controller the imported objects should be deployed to.
+          example: testsuite
+          required: true
+          type: string
+        signatureAlgorithm:
+          description: The signature algorithm the objects where signed with.
+          example: SHA512withECDSA
+          required: true
+          type: string
+        format:
+          description: Specifies the archive format (tar.gz or zip) of the import file. The enum archiveFormat for the value consist of ZIP and TAR_GZ.
+          example: ZIP
+          required: true
+          type: string
+        comment:
+          description: for auditLog
+          required: false
+          type: string
+        timeSpent:
+          description: for auditLog
+          required: false
+          type: string
+        ticketLink:
+          description: for auditLog
+          required: false
+          type: string  
+  responses:
+    200:
+      description: |
+        **Confirm <span style="text-transform: capitalize;"><<resourcePathName>></span> successfully**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate":"2016-05-05T21:13:35Z",
+              "ok":true
+            }
+          schema: ok

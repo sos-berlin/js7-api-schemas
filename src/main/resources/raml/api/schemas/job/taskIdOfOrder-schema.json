@@ -1,0 +1,19 @@
+{
+  "title": "taskId of Order",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Only relevant for order jobs; cause=order resp.",
+  "javaType": "com.sos.joc.model.job.TaskIdOfOrder",
+  "type": "object",
+  "required": [
+    "historyId",
+    "position"
+  ],
+  "properties": {
+    "historyId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

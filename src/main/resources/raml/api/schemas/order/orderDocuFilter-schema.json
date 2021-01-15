@@ -1,0 +1,29 @@
+{
+  "title": "OrderDocuFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderDocuFilter",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "workflow",
+    "orderId",
+    "documentation"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "workflow": {
+      "$ref": "../common/path-schema.json"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "documentation": {
+      "$ref": "../common/path-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

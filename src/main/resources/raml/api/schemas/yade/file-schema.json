@@ -1,0 +1,52 @@
+{
+  "title": "yade file",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.TransferFile",
+  "type": "object",
+  "description": "compact=true -> required fields + possibly targetPath",
+  "required": [
+    "transferId",
+    "sourcePath"
+  ],
+  "properties": {
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "transferId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "interventionTransferId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "state": {
+      "$ref": "fileTransferState-schema.json"
+    },
+    "integrityHash": {
+      "type": "string"
+    },
+    "modificationDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "size": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "error": {
+      "$ref": "../common/error-schema.json"
+    },
+    "sourcePath": {
+      "type": "string"
+    },
+    "sourceName": {
+      "type": "string"
+    },
+    "targetPath": {
+      "type": "string"
+    },
+    "targetName": {
+      "type": "string"
+    }
+  }
+}

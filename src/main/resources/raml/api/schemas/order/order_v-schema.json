@@ -1,0 +1,53 @@
+{
+  "title": "order with delivery date (volatile part)",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderV",
+  "type": "object",
+  "required": [
+    "orderId",
+    "workflowId",
+    "state"
+  ],
+  "properties": {
+    "deliveryDate": {
+        "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+        "$ref": "../common/timestamp-schema.json"
+    },
+    "orderId": {
+        "$ref": "../common/string255-schema.json"
+    },
+    "arguments":{
+		"$ref": "../../../controller/schemas/common/variables-schema.json"
+	},
+	"workflowId": {
+		"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+	},
+	"state": {
+		"$ref": "orderState-schema.json"
+	},
+	"attachedState": {
+		"$ref": "../../../controller/schemas/order/orderAttachedState-schema.json"
+	},
+	"agentId": {
+		"type": "string"
+	},
+	"position": {
+     	"$ref": "../../../controller/schemas/common/position-schema.json"
+    },
+    "scheduledFor": {
+      	"$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "lastOutcome": {
+      	"$ref": "../../../controller/schemas/common/outcome-schema.json"
+    },
+    "historicOutcome": {
+    	"description": "only for compact parameter is false",
+    	"type": "array",
+  			"items": {
+				"$ref": "../../../controller/schemas/workflow/historicOutcome-schema.json"
+			}
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+	"timeZone": "Europe/Berlin",
+	"dateFrom": "2020-01-01",
+	"dateTo": "2020-12-31",
+	"calendars": [{
+		"calendarPath": "/test/eachFriday",
+		"includes": {
+			"monthdays": [{
+				"weeklyDays": [{
+					"day": 5,
+					"weekOfMonth": 1
+				}]
+			}]
+		},
+		"periods": [{
+			"singleStart": "00:00:00",
+			"whenHoliday": "SUPPRESS"
+		}]
+	},
+	{
+		"calendarPath": "/test/eachFriday",
+		"includes": {
+			"monthdays": [{
+				"weeklyDays": [{
+					"day": 5,
+					"weekOfMonth": 4
+				}]
+			}]
+		},
+		"periods": [{
+			"begin": "02:00:00",
+			"end": "11:00:00",
+			"repeat": "01:00:00",
+			"whenHoliday": "PREVIOUSNONWORKINGDAY"
+		}]
+	}],
+	"nonWorkingCalendars": [{
+		"calendarPath": "/test/holidays1"
+	}]
+}

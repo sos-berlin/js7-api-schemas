@@ -1,0 +1,38 @@
+{
+  "title": "Documentations filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.DocumentationsFilter",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "documentations": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    },
+    "compact": {
+      "$ref": "../common/compactParam-schema.json"
+    },
+    "regex": {
+      "$ref": "../common/regexFilter-schema.json"
+    },
+    "folders": {
+      "$ref": "../common/folders-schema.json"
+    },
+    "types": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

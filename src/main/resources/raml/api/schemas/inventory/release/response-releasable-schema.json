@@ -1,0 +1,14 @@
+{
+	"title": "ResponseReleasable",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.release.ResponseReleasable",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"releasable": {
+			"$ref": "response-releasableTreeItem-schema.json"
+		}
+	}
+}

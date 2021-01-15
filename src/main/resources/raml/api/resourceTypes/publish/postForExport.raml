@@ -1,0 +1,83 @@
+type: error
+get?:
+  is: [ accessToken ]
+    
+  description: |
+    <h2><<description>></h2>
+    ___
+  queryParameters:
+    exportFilter:
+      type: string
+      description: |
+        URL encoded json string of the export filter. Line breaks and spaces are stripped from the json string. See also POST example.
+      example: |
+        {"shallowCopy":{"deployables":{"draftConfigurations":[{"configuration":{"path":"/myWorkflows/ifElseWorkflow/workflow_10", "objectType":"WORKFLOW"}}, {"configuration":{"path":"/myWorkflows/ifElseWorkflow/workflow_16", "objectType":"WORKFLOW"}}], "deployConfigurations":[{"configuration":{"path":"/myWorkflows/ifElseWorkflow/workflow_12", "objectType":"WORKFLOW", "commitId":"4273b6c6-c354-4fcd-afdb-2758088abe4a"}}]}, "releasables":{"draftConfigurations":[{"configuration":{"path":"mySchedules/newSchedules/mySchedule", "objectType":"SCHEDULE"}}], "releasedConfigurations":[{"configuration":{"path":"/myCalendars/newCalendars/myCalendar", "objectType":"WORKINGDAYSCALENDAR"}}]}}, "exportFile":{"filename":"test_export.zip", "format":"ZIP"}}
+      required: true
+    comment:
+      type: string
+      description: for auditLog
+      required: false
+    timeSpent:
+      type: string
+      description: for auditLog
+      required: false
+    ticketLink:
+      type: string  
+      description: for auditLog
+      required: false
+  responses:
+    200:
+      description: Content for download
+      headers:
+        Content-Disposition:
+          type: string
+          required: true
+          example: attachment;filename=xxx
+        Content-Type:
+          type: string
+          required: true
+          default: application/octet-stream
+      body:
+        application/octet-stream:
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="10%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <<description1>>
+    </tbody></table>
+  headers:
+    X-Access-Token:
+      description: Request requires authentication!
+      type: string
+      required: true
+      example: 550e8400-e29b-11d4-a716-446655440000
+  body:
+    application/json:
+      schema: <<schema>>
+      example: <<example>>
+  responses:
+    200:
+      description: Content for download
+      headers:
+        Content-Disposition:
+          type: string
+          required: true
+          example: attachment;filename=xxx
+        Content-Type:
+          type: string
+          required: true
+          default: application/octet-stream
+      body:
+        application/octet-stream:

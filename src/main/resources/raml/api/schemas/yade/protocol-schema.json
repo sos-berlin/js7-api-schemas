@@ -1,0 +1,17 @@
+{
+  "title": "protocol",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.Protocol",
+  "type": "string",
+  "enum": [
+    "LOCAL",
+    "FTP",
+    "FTPS",
+    "SFTP",
+    "HTTP",
+    "HTTPS",
+    "WEBDAV",
+    "WEBDAVS",
+    "SMB"
+  ]
+}

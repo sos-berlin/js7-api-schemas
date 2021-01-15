@@ -1,0 +1,21 @@
+{
+  "title": "ok answer",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.Ok",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "ok"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "ok": {
+      "type": "boolean"
+    }
+  }
+}

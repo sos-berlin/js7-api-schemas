@@ -1,0 +1,35 @@
+{
+	"title": "deploy",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.DeployFilter",
+	"type": "object",
+  "anyOf": [{
+    "required": [
+        "controllerIds",
+        "store"
+      ]
+    }, {
+      "required": [
+        "controllerIds",
+        "delete"
+      ]
+    }
+  ],
+	"properties": {
+		"controllerIds": {
+		  "type" : "array",
+	    "items": {
+        "type":  "string"
+      }
+		},
+		"store": {
+			"$ref": "deployablesValidFilter-schema.json"
+		},
+		"delete": {
+			"$ref": "deployDelete-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"title": "dailyPlanSubmissionHistoryItem",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanSubmissionHistoryItem",
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"submissionHistoryId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"dailyPlanDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"submissionTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"title": "JS Junction Edit configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.jobscheduler.model.junction.JunctionEdit",
+	"type": "object",
+	"extends": {
+		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+	},
+	"properties": {
+		"configuration": {
+			"$ref": "../../../controller/schemas/junction/junction-schema.json"
+		}
+	}
+}
+

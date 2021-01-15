@@ -1,0 +1,19 @@
+{
+  "title": "orderHistory status",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.HistoryState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=successful, 1=incomplete, 2=failed with a green/yellow/red representation",
+      "type": "integer"
+    },
+    "_text": {
+      "$ref": "historyStateText-schema.json"
+    }
+  }
+}

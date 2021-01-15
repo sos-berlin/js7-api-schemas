@@ -1,0 +1,19 @@
+{
+	"title": "plans submission history filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanSubmissionHistoryFilter",
+	"type": "object",
+	
+	"properties": {
+		"controllerId": {
+			"type": "string"
+		},
+		"filter": {
+			"$ref": "dailyPlanSubmissionsFilterDef-schema.json"
+		},	
+		"timeZone": {
+			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+			"type": "string"
+		}
+	}
+}

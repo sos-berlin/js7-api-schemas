@@ -1,0 +1,18 @@
+{
+  "title": "save and response configuration",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.configuration.Configuration200",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "configuration"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "configuration": {
+      "$ref": "configuration-schema.json"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+post:
+  description: |
+    <h2>Logout</h2>
+  headers:
+    X-Access-Token:
+      description: Request requires authentication!
+      type: string
+      required: true
+      example: 550e8400-e29b-11d4-a716-446655440000
+  responses:
+    200:
+      description: |
+        **Confirm '<span style="text-transform: capitalize;"><<resourcePathName>></span>' successfully**
+      body:
+        application/json:
+          schema: security
+          example: |
+            {
+              "user": "root",
+              "message": "",
+              "hasRole": false,
+              "isAuthenticated": false,
+              "isPermitted": false
+            }

@@ -1,0 +1,35 @@
+{
+  "controllerIds" : [{
+    "controllerId" : "js7-cluster"
+  }, {
+    "controllerId" : "standalone"
+  }],
+  "store" : {
+    "draftConfigurations" : [{
+      "draftConfiguration" : {
+        "path" : "/myWorkflows/ifElseWorkflow/workflow_10",
+        "objectType" : "WORKFLOW"
+      }
+    }, {
+      "draftConfiguration" : {
+        "path" : "/myWorkflows/ifElseWorkflow/workflow_16",
+        "objectType" : "WORKFLOW"
+      }
+    } ],
+    "deployConfigurations" : [{
+      "deployConfiguration" : {
+        "path" : "/myWorkflows/ifElseWorkflow/workflow_12",
+        "objectType" : "WORKFLOW",
+        "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+      }
+    }]
+  },
+  "delete" : {
+    "deployConfigurations" : [{
+      "deployConfiguration" : {
+        "path" : "/myWorkflows/forkJoinWorkflows/workflow_88",
+        "objectType" : "WORKFLOW"
+      }
+    }]
+  }
+}

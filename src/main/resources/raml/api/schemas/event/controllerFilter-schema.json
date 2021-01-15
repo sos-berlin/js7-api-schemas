@@ -1,0 +1,17 @@
+{
+  "title": "Controller filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.event.Controller",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "eventId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "comments",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.audit.Comments",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "forceCommentsForAuditLog",
+    "comments"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "forceCommentsForAuditLog": {
+      "type": "boolean",
+      "default": false
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    }
+  }
+}

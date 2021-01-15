@@ -1,0 +1,18 @@
+{
+  "title": "Order Variables",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.webservices.order.initiator.model.OrderVariables",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "variables"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../../common/timestamp-schema.json"
+    },
+    "variables": {
+        "$ref": "../../common/nameValuePairs-schema.json" 
+    }
+  }
+}

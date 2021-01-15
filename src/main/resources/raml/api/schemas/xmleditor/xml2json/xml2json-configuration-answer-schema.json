@@ -1,0 +1,12 @@
+{
+	"title": "xmleditor xml2json configuration answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.xml2json.Xml2JsonConfigurationAnswer",
+	"type": "object",
+	"description": "",
+	"properties": {
+		"configurationJson": {
+			"type": "string"
+		}
+	}
+}

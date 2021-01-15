@@ -1,0 +1,387 @@
+{
+    "deliveryDate":  "2016-09-23T11:14:29Z",
+    "folders":  [
+                    {
+                        "path":  "/",
+                        "name":  "",
+                        "folders":  [
+                                        {
+                                            "path":  "/Support",
+                                            "name":  "Support",
+                                            "folders":  [
+                                                            {
+                                                                "path":  "/Support/Ticket#2016030910000028",
+                                                                "name":  "Ticket#2016030910000028"
+                                                            },
+                                                            {
+                                                                "path":  "/Support/Ticket#2016050410000015",
+                                                                "name":  "Ticket#2016050410000015"
+                                                            },
+                                                            {
+                                                                "path":  "/Support/Ticket#2016070710000015",
+                                                                "name":  "Ticket#2016070710000015"
+                                                            },
+                                                            {
+                                                                "path":  "/Support/Ticket#2016080410000019",
+                                                                "name":  "Ticket#2016080410000019"
+                                                            },
+                                                            {
+                                                                "path":  "/Support/Ticket#2016090210000011",
+                                                                "name":  "Ticket#2016090210000011"
+                                                            }
+                                                        ]
+                                        },
+                                        {
+                                            "path":  "/sos",
+                                            "name":  "sos",
+                                            "folders":  [
+                                                            {
+                                                                "path":  "/sos/housekeeping",
+                                                                "name":  "housekeeping"
+                                                            },
+                                                            {
+                                                                "path":  "/sos/operations",
+                                                                "name":  "operations",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/sos/operations/criticalpath",
+                                                                                    "name":  "criticalpath"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/sos/jade",
+                                                                "name":  "jade"
+                                                            },
+                                                            {
+                                                                "path":  "/sos/dailyschedule",
+                                                                "name":  "dailyschedule"
+                                                            },
+                                                            {
+                                                                "path":  "/sos/notification",
+                                                                "name":  "notification"
+                                                            },
+                                                            {
+                                                                "path":  "/sos/events",
+                                                                "name":  "events"
+                                                            },
+                                                            {
+                                                                "path":  "/sos/jitl",
+                                                                "name":  "jitl"
+                                                            },
+                                                            {
+                                                                "path":  "/sos/reporting",
+                                                                "name":  "reporting"
+                                                            }
+                                                        ]
+                                        },
+                                        {
+                                            "path":  "/examples",
+                                            "name":  "examples",
+                                            "folders":  [
+                                                            {
+                                                                "path":  "/examples/37_JobChainExitCodeHandling",
+                                                                "name":  "37_JobChainExitCodeHandling"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/common_settings",
+                                                                "name":  "common_settings",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/common_settings/database",
+                                                                                    "name":  "database"
+                                                                                },
+                                                                                {
+                                                                                    "path":  "/examples/common_settings/lib",
+                                                                                    "name":  "lib",
+                                                                                    "folders":  [
+                                                                                                    {
+                                                                                                        "path":  "/examples/common_settings/lib/javascripts",
+                                                                                                        "name":  "javascripts"
+                                                                                                    }
+                                                                                                ]
+                                                                                },
+                                                                                {
+                                                                                    "path":  "/examples/common_settings/jade_conf",
+                                                                                    "name":  "jade_conf"
+                                                                                },
+                                                                                {
+                                                                                    "path":  "/examples/common_settings/credential_store",
+                                                                                    "name":  "credential_store"
+                                                                                },
+                                                                                {
+                                                                                    "path":  "/examples/common_settings/ssh_connection",
+                                                                                    "name":  "ssh_connection"
+                                                                                },
+                                                                                {
+                                                                                    "path":  "/examples/common_settings/email_settings",
+                                                                                    "name":  "email_settings"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/exec",
+                                                                "name":  "exec"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/49_CriticalPath",
+                                                                "name":  "49_CriticalPath"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/19_NonExclusiveLocks",
+                                                                "name":  "19_NonExclusiveLocks"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/56_NestedJobChains",
+                                                                "name":  "56_NestedJobChains"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/30_OrderManagement",
+                                                                "name":  "30_OrderManagement"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/15_Setback",
+                                                                "name":  "15_Setback",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/15_Setback/15_helper",
+                                                                                    "name":  "15_helper"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/47_SyncJobChainExecution",
+                                                                "name":  "47_SyncJobChainExecution"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/57_BankCalendar",
+                                                                "name":  "57_BankCalendar"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/Holidays",
+                                                                "name":  "Holidays"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/10_RemoteExecutionUniversalAgent",
+                                                                "name":  "10_RemoteExecutionUniversalAgent",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/10_RemoteExecutionUniversalAgent/10_03_helper",
+                                                                                    "name":  "10_03_helper"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/17_DynamicProcessRouting",
+                                                                "name":  "17_DynamicProcessRouting"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/include_files",
+                                                                "name":  "include_files"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/58_MultipleParametersOrders",
+                                                                "name":  "58_MultipleParametersOrders"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/params",
+                                                                "name":  "params"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/55_JobSchedulerLaunchQueue",
+                                                                "name":  "55_JobSchedulerLaunchQueue",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/55_JobSchedulerLaunchQueue/01_JQLJobChain1",
+                                                                                    "name":  "01_JQLJobChain1"
+                                                                                },
+                                                                                {
+                                                                                    "path":  "/examples/55_JobSchedulerLaunchQueue/01_JQLJobChain2",
+                                                                                    "name":  "01_JQLJobChain2"
+                                                                                },
+                                                                                {
+                                                                                    "path":  "/examples/55_JobSchedulerLaunchQueue/common_jobs",
+                                                                                    "name":  "common_jobs"
+                                                                                },
+                                                                                {
+                                                                                    "path":  "/examples/55_JobSchedulerLaunchQueue/01_JobSchedulerLaunchQueue",
+                                                                                    "name":  "01_JobSchedulerLaunchQueue"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/34_ParameterFile",
+                                                                "name":  "34_ParameterFile"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/08_FileWatchingRemoteFileProcessing",
+                                                                "name":  "08_FileWatchingRemoteFileProcessing"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/23_SchedulingOrder",
+                                                                "name":  "23_SchedulingOrder"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/18_ExclusiveLockJobChains",
+                                                                "name":  "18_ExclusiveLockJobChains"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/02_FileWatcher",
+                                                                "name":  "02_FileWatcher",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/02_FileWatcher/02_helper",
+                                                                                    "name":  "02_helper"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/09_VersionControl",
+                                                                "name":  "09_VersionControl",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/09_VersionControl/01_Process01",
+                                                                                    "name":  "01_Process01"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/03_DatabaseStatement",
+                                                                "name":  "03_DatabaseStatement"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/51_SendEmails",
+                                                                "name":  "51_SendEmails",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/51_SendEmails/helper",
+                                                                                    "name":  "helper"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/52_JavaScriptAPI",
+                                                                "name":  "52_JavaScriptAPI"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/20_SchedulingJobChains",
+                                                                "name":  "20_SchedulingJobChains"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/11_RemoteExecutionSSH",
+                                                                "name":  "11_RemoteExecutionSSH"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/06_YADEFileTransfer",
+                                                                "name":  "06_YADEFileTransfer",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/06_YADEFileTransfer/06_05_helper",
+                                                                                    "name":  "06_05_helper"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/59_ParallelTableExport",
+                                                                "name":  "59_ParallelTableExport"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/50_ResourcePoolManagement",
+                                                                "name":  "50_ResourcePoolManagement",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/50_ResourcePoolManagement/helper",
+                                                                                    "name":  "helper"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/examples/48_JobChainReturnCodeHandling",
+                                                                "name":  "48_JobChainReturnCodeHandling"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/04_ExecuteOraclePLSQL",
+                                                                "name":  "04_ExecuteOraclePLSQL"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/14_JobChainsEvents",
+                                                                "name":  "14_JobChainsEvents"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/01_JobChainShellJobs",
+                                                                "name":  "01_JobChainShellJobs"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/16_SplitAndSync",
+                                                                "name":  "16_SplitAndSync"
+                                                            },
+                                                            {
+                                                                "path":  "/examples/31_Monitoring",
+                                                                "name":  "31_Monitoring",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/examples/31_Monitoring/31_01_helper",
+                                                                                    "name":  "31_01_helper"
+                                                                                }
+                                                                            ]
+                                                            }
+                                                        ]
+                                        },
+                                        {
+                                            "path":  "/Demo",
+                                            "name":  "Demo",
+                                            "folders":  [
+                                                            {
+                                                                "path":  "/Demo/HPCC",
+                                                                "name":  "HPCC"
+                                                            },
+                                                            {
+                                                                "path":  "/Demo/HMRC",
+                                                                "name":  "HMRC",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/Demo/HMRC/SchedulerManagedMailExample",
+                                                                                    "name":  "SchedulerManagedMailExample"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/Demo/Rosenberger",
+                                                                "name":  "Rosenberger",
+                                                                "folders":  [
+                                                                                {
+                                                                                    "path":  "/Demo/Rosenberger/InboundFileInterfaceWorkflow",
+                                                                                    "name":  "InboundFileInterfaceWorkflow"
+                                                                                }
+                                                                            ]
+                                                            },
+                                                            {
+                                                                "path":  "/Demo/RBCCM",
+                                                                "name":  "RBCCM"
+                                                            },
+                                                            {
+                                                                "path":  "/Demo/Accenture",
+                                                                "name":  "Accenture"
+                                                            },
+                                                            {
+                                                                "path":  "/Demo/Quanam",
+                                                                "name":  "Quanam"
+                                                            },
+                                                            {
+                                                                "path":  "/Demo/MCEBankEU",
+                                                                "name":  "MCEBankEU"
+                                                            },
+                                                            {
+                                                                "path":  "/Demo/Airbus",
+                                                                "name":  "Airbus"
+                                                            }
+                                                        ]
+                                        },
+                                        {
+                                            "path":  "/test",
+                                            "name":  "test"
+                                        }
+                                    ]
+                    }
+                ]
+}

@@ -1,0 +1,7 @@
+{
+    "privateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\n\nlQOYBF6NaHkBCADV+7R21JQ2PEM5u60D/AFe45k+CbNN6owO5iszLN7fc+uWmDEG\nbiykEo56k6uifLDAF...",
+    "publicKey": "-----BEGIN PGP PUBLIC KEY BLOCK-----\r\nVersion: BCPG v1.65\r\n\r\nmQENBF6NaHkBCADV+7R21JQ2PEM5u60D/AFe45k+CbNN6owO5iszLN7fc+uWm...",
+    "keyID" : "C10EFE498ABABC3F",
+    "validUntil": "2022-03-03T11:00:00Z",
+    "keyAlgorithm": "PGP"
+}

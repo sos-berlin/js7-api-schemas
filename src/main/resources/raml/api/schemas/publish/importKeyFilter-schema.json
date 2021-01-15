@@ -1,0 +1,17 @@
+{
+	"title": "Import Key Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.ImportKeyFilter",
+	"type": "object",
+	"required": [
+		"keyAlgorithm"
+	],
+	"properties": {
+		"keyAlgorithm": {
+			"type": "string"
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	}
+}

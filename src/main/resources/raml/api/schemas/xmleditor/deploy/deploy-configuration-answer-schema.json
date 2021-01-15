@@ -1,0 +1,18 @@
+{
+	"title": "xmleditor deploy configuration answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.deploy.DeployConfigurationAnswer",
+	"type": "object",
+	"description": "",
+	"properties": {
+		"deployed": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"validationError": {
+			"$ref": "../validate/error-message-schema.json"
+		},
+		"message": {
+			"$ref": "../common/answer-message-schema.json"
+		}
+	}
+}

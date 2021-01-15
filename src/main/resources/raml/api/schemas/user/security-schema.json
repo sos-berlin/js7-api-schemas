@@ -1,0 +1,38 @@
+{
+  "title": "authentication",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "isAuthenticated"
+  ],
+  "properties": {
+    "user": {
+      "type": "string"
+    },
+    "accessToken": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "hasRole": {
+      "type": "boolean",
+      "default": false
+    },
+    "isAuthenticated": {
+      "type": "boolean"
+    },
+    "isPermitted": {
+      "type": "boolean",
+      "default": false
+    },
+    "sessionTimeout": {
+      "type": "integer",
+      "default": 1800
+    },
+    "enableTouch": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

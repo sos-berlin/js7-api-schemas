@@ -1,0 +1,26 @@
+{
+  "title": "configurationsFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.configuration.ConfigurationsFilter",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "account": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "configurationType": {
+      "$ref": "type-schema.json"
+    },
+    "objectType": {
+      "$ref": "objectType-schema.json"
+    },
+    "shared": {
+      "type": "boolean"
+    }
+  }
+}

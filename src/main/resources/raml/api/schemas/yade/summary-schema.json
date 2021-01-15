@@ -1,0 +1,37 @@
+{
+  "title": "yade files summary",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.TransferFilesOverView",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "surveyDate",
+    "orders"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "files": {
+      "javaType": "com.sos.joc.model.yade.TransferFilesSummary",
+      "type": "object",
+      "required": [
+        "successful",
+        "failed"
+      ],
+      "properties": {
+        "successful": {
+          "description": "number of successful yade files in the past specified by a time parameter",
+          "$ref": "../common/nonNegativeInteger-schema.json"
+        },
+        "failed": {
+          "description": "number of failed  yade files in the past specified by a time parameter",
+          "$ref": "../common/nonNegativeInteger-schema.json"
+        }
+      }
+    }
+  }
+}

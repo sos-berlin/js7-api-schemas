@@ -1,0 +1,15 @@
+{
+  "title": "version state text",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.common.ItemStateEnum",
+  "type": "string",
+  "enum": [
+    "DEPLOYMENT_IS_NEWER",
+    "RELEASE_IS_NEWER",
+    "DRAFT_IS_NEWER",
+    "DEPLOYMENT_NOT_EXIST",
+    "RELEASE_NOT_EXIST",
+    "DRAFT_NOT_EXIST",
+    "NO_CONFIGURATION_EXIST"
+  ]
+}

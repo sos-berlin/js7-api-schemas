@@ -1,0 +1,58 @@
+{
+  "title": "yade filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.FilesFilter",
+  "type": "object",
+  "properties": {
+    "controllerId": {
+      "type": "string"
+    },
+    "fileIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/nonNegativeLong-schema.json"
+      }
+    },
+    "transferIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/nonNegativeLong-schema.json"
+      }
+    },
+    "interventionTransferIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/nonNegativeLong-schema.json"
+      }
+    },
+    "compact": {
+      "$ref": "../common/compactParam-schema.json"
+    },
+    "regex": {
+      "$ref": "../common/regexFilter-schema.json"
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "$ref": "fileTransferStateText-schema.json"
+      }
+    },
+    "sourceFiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "targetFiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limit": {
+      "description": "only for db history urls to restrict the number of responsed records; -1=unlimited",
+      "type": "integer",
+      "default": 10000
+    }
+  }
+}

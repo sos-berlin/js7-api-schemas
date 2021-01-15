@@ -1,0 +1,21 @@
+{
+  "title": "order filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderFilter",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "orderId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "orderId": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "compact": {
+      "$ref": "../common/compactParam-schema.json"
+    }
+  }
+}

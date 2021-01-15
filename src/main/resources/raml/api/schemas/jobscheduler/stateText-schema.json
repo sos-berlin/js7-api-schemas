@@ -1,0 +1,11 @@
+{
+  "title": "jobscheduler state text",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.JobSchedulerStateText",
+  "type": "string",
+  "enum": [
+    "RUNNING",
+    "WAITING_FOR_ACTIVATION",
+    "UNREACHABLE"
+  ]
+}

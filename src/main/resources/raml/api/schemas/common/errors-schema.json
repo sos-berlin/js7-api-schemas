@@ -1,0 +1,21 @@
+{
+  "title": "errors",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.Errs",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "errors"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/error419-schema.json"
+      }
+    }
+  }
+}

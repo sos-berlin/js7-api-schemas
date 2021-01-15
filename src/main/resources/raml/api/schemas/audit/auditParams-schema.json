@@ -1,0 +1,18 @@
+{
+  "title": "auditParams",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.audit.AuditParams",
+  "type": "object",
+  "properties": {
+    "comment": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "timeSpent": {
+      "description": "in minutes",
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "ticketLink": {
+      "$ref": "../common/string255-schema.json"
+    }
+  }
+}

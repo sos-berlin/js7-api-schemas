@@ -1,0 +1,18 @@
+{
+	"title": "xmleditor store configuration answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.store.StoreConfigurationAnswer",
+	"type": "object",
+	"description": "",
+	"properties": {
+		"id": {
+			"type": "integer"
+		},
+		"modified": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"message": {
+			"$ref": "../common/answer-message-schema.json"
+		}
+	}
+}

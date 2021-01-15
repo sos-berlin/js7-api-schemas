@@ -1,0 +1,12 @@
+{
+  "title": "signature type of a signed object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.sign.SignatureType",
+  "type": "string",
+  "enum": [
+    "PGP",
+    "X509",
+    "Silly"
+  ],
+  "default": "X509"
+}

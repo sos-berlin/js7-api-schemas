@@ -1,0 +1,22 @@
+{
+	"title": "xmleditor read OTHER configuration answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.read.other.ReadOtherConfigurationAnswer",
+	"type": "object",
+	"description": "",
+	"properties": {
+		"configuration": {
+			"$ref": "answer-configuration-schema.json"
+		},
+		"configurations": {
+			"items": {
+        		"$ref": "answer-configuration-schema.json"
+      		}
+		},
+		"schemas": {
+			"items": {
+        		"type": "string"
+      		}
+		}
+	}
+}

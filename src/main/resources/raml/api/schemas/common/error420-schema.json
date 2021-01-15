@@ -1,0 +1,21 @@
+{
+  "title": "error object with delivery date",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.Err420",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "error"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "error": {
+      "$ref": "error-schema.json"
+    }
+  }
+}

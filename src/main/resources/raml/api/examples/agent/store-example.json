@@ -1,0 +1,10 @@
+{
+    "controllerId": "testsuite",
+    "agents": [
+        {
+            "agentId": "agent_primary",
+            "agentName": "agent-primary",
+            "url" : "https://agent-2-0-primary:4443"
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+2019-09-09 14:16:17.733Z [Europe/Berlin][INFO][start][/test-agent-1][http://OH:41420][test1]
+2019-09-09 14:16:17.925Z [Europe/Berlin][STDOUT]TEST1 running
+2019-09-09 14:16:17.935Z [Europe/Berlin][INFO][end][/test-agent-1][http://OH:41420][test1][returnCode=5][success]

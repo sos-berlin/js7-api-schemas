@@ -1,0 +1,17 @@
+{
+	"title": "JS Object configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.Validate",
+	"type": "object",
+	"properties": {
+		"valid": {
+			"type": "boolean"
+		},
+		"invalidMsg": {
+			"type": "string"
+		},
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		}
+	}
+}

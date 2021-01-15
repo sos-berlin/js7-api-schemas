@@ -1,0 +1,11 @@
+{
+	"title": "xmleditor object type",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.common.ObjectType",
+	"type": "string",
+	"enum": [
+		"YADE",
+		"NOTIFICATION",
+		"OTHER"
+	]
+}

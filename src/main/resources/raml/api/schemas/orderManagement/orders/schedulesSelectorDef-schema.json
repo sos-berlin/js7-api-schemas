@@ -1,0 +1,31 @@
+{
+	"title": "Daily Plan  Order Filter Definition",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.webservices.order.initiator.model.SchedulesSelector",
+	"type": "object",
+	"description": "Define the selector to get schedules",
+	"properties": {
+		"controllerIds": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"schedulePaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"workflowPaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"folders": {
+			"$ref": "../../common/folders-schema.json"
+		}
+	}
+}
+ 

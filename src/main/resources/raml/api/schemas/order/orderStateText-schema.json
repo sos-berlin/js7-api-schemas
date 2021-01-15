@@ -1,0 +1,24 @@
+{
+  "title": "order state text",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderStateText",
+  "type": "string",
+  "enum": [
+    "PLANNED",
+    "PENDING",
+    "RUNNING",
+    "INPROGRESS",
+    "SUSPENDED",
+    "FAILED",
+    "WAITING",
+    "BLOCKED",
+    "CANCELLED",
+    "FINISHED",
+    "RESUMED",
+    "SUSPENDMARKED",
+    "RESUMEMARKED",
+    "BROKEN",
+    "UNKNOWN"
+  ]
+}
+

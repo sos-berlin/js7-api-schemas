@@ -1,0 +1,32 @@
+{
+  "title": "component state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.ComponentState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=operational, 1=limited, 2=inoperable, 3=unknown",
+      "type": "integer"
+    },
+    "_text": {
+      "javaType": "com.sos.joc.model.jobscheduler.ComponentStateText",
+      "type": "string",
+      "enum": [
+        "operational",
+        "limited",
+        "inoperable",
+        "unknown"
+      ],
+      "javaEnumNames": [
+        "operational",
+        "limited",
+        "inoperable",
+        "unknown"
+      ]
+    }
+  }
+}

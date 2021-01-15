@@ -1,0 +1,43 @@
+{
+  "title": "agent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.Agent",
+  "type": "object",
+  "required": [
+  	"agentId",
+  	"agentName",
+  	"url"
+  ],
+  "properties": {
+    "controllerId": {
+    	"$ref": "../common/filename100-schema.json"
+    },
+    "agentId": {
+    	"minLength": 1,
+    	"$ref": "../common/string255-schema.json"
+    },
+    "agentName": {
+    	"minLength": 1,
+    	"$ref": "../common/string255-schema.json"
+    },
+    "agentNameAliases": {
+    	"type": "array",
+    	"uniqueItems": true,
+    	"items": {
+    		"$ref": "../common/string255-schema.json"
+    	}
+    },
+    "url": {
+    	"minLength": 1,
+    	"$ref": "../common/string255-schema.json"
+    },
+    "isClusterWatcher": {
+    	"type": "boolean",
+    	"default": false
+    },
+    "disabled": {
+    	"type": "boolean",
+    	"default": false
+    }
+  }
+}

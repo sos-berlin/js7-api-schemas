@@ -1,0 +1,17 @@
+{
+	"title": "Filter for Deploy-delete operation",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.DeployDeleteFilter",
+	"type": "object",
+  "required": [
+    "deployConfigurations"
+  ],
+  "properties": {
+    "deployConfigurations": {
+      "type" : "array",
+      "items" : {
+        "$ref": "config-schema.json"
+      }
+    }
+  }
+}

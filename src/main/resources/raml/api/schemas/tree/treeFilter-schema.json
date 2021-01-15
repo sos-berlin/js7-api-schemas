@@ -1,0 +1,28 @@
+{
+	"title": "treeFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.tree.TreeFilter",
+	"type": "object",
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/filename100-schema.json"
+		},
+		"types": {
+			"type": "array",
+  			"items": {
+    			"$ref": "type-schema.json"
+  			}
+		},
+		"folders": {
+			"$ref": "../common/folders-schema.json"
+		},
+		"onlyValidObjects": {
+			"type": "boolean",
+			"default": false
+		},
+		"forInventory": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "title": "component state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=COUPLED, 1=DECOUPLED, 2=COUPLINGFAILED, 3=UNKNOWN",
+      "type": "integer"
+    },
+    "_text": {
+      "$ref": "agentStateText-schema.json"
+    }
+  }
+}

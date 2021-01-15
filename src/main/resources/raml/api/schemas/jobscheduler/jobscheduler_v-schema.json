@@ -1,0 +1,21 @@
+{
+  "title": "jobscheduler",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.JobScheduler",
+  "type": "object",
+  "extends" : {
+  	"$ref": "jobscheduler_p-schema.json"
+  },
+  "required": [
+        "id",
+        "controllerId",
+        "url",
+    	"role",
+    	"state"
+  ],
+  "properties": {
+    "state": {
+      "$ref": "state-schema.json"
+    }
+  }
+}

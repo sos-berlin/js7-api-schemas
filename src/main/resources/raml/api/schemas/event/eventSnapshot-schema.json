@@ -1,0 +1,41 @@
+{
+  "title": "event snapshot",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.event.EventSnapshot",
+  "type": "object",
+  "required": [
+    "eventId",
+    "eventType",
+    "objectType"
+  ],
+  "properties": {
+    "eventId": {
+      "description": "eventId/1000=milliseconds of UTC time",
+      "type": "number",
+      "format":"utc-millisec",
+      "minimum": 0
+    },
+    "path": {
+      "$ref": "../common/path-schema.json"
+    },
+    "eventType": {
+      "description": "e.g. OrderStateChanged, OrderAdded, OrderTerminated, JOCStateChanged, ControllerStateChanged, WorkflowStateChanged, JobStateChanged",
+      "type": "string"
+    },
+    "objectType": {
+      "$ref": "eventType-schema.json"
+    },
+    "workflow": {
+    	"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+    },
+    "accessToken": {
+      "type": "string",
+      "pattern": "^[1-9a-fA-F_]{32}$",
+  	  "maxLength": 32,
+  	  "minLength": 32
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+	"agents": [{
+		"agentId": "agent_primary",
+		"agentName": "agent-primary",
+		"disabled": false,
+		"isClusterWatcher": true,
+		"url": "https://agent-2-0-primary:4443"
+	},
+	{
+		"agentId": "agent_secondary",
+		"agentName": "agent-secondary",
+		"disabled": false,
+		"isClusterWatcher": false,
+		"url": "https://agent-2-0-secondary:4443"
+	}],
+	"controllers": [{
+		"clusterUrl": "https://controller-2-0-primary:4443",
+		"controllerId": "testsuite",
+		"host": "controller-2-0-primary",
+		"id": 1,
+		"isCoupled": false,
+		"os": {
+			"architecture": "amd64",
+			"distribution": "3.10.0-957.1.3.el7.x86_64",
+			"name": "Linux"
+		},
+		"role": "PRIMARY",
+		"securityLevel": "LOW",
+		"startedAt": "2020-11-20T15:09:41Z",
+		"surveyDate": "2020-11-22T22:15:04Z",
+		"title": "PRIMARY",
+		"url": "https://controller-2-0-primary:4443",
+		"version": "2.0.0-SNAPSHOT"
+	},
+	{
+		"clusterUrl": "https://controller-2-0-backup:4443",
+		"controllerId": "testsuite",
+		"host": "controller-2-0-backup",
+		"id": 2,
+		"isCoupled": false,
+		"os": {
+			"architecture": "amd64",
+			"distribution": "3.10.0-957.1.3.el7.x86_64",
+			"name": "Linux"
+		},
+		"role": "BACKUP",
+		"securityLevel": "LOW",
+		"startedAt": "2020-11-20T15:09:41Z",
+		"surveyDate": "2020-11-22T15:03:03Z",
+		"title": "BACKUP",
+		"url": "https://controller-2-0-backup:4443",
+		"version": "2.0.0-SNAPSHOT"
+	}],
+	"deliveryDate": "2020-11-22T22:15:07.038Z"
+}

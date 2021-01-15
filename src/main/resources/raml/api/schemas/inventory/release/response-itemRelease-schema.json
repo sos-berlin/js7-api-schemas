@@ -1,0 +1,20 @@
+{
+	"title": "include",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.release.ResponseItemRelease",
+	"type": "object",
+	"properties": {
+		"releaseId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"controllerId": {
+			"$ref": "../../common/filename100-schema.json"
+		},
+		"releaseDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		}
+	}
+}

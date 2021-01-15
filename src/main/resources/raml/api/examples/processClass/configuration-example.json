@@ -1,0 +1,12 @@
+{
+  "deliveryDate": "2016-05-05T21:13:45Z",
+  "configuration": {
+    "surveyDate": "2016-05-05T21:13:45Z",
+    "path": "/test/processClass",
+    "configurationDate": "2015-12-11T10:06:39Z",
+    "content": {
+      "xml": "<process_class max_processes=\"10\"/>",
+      "html": "<span class=\"bracket\" style=\"padding-left:20px;\">&lt;</span><span class=\"element_name\">process_class</span><span class=\"attribute_name\">max_processes=</span><span class=\"attribute_val\">\"10\"</span><span class=\"bracket\">/&gt;</span>"
+    }
+  }
+}

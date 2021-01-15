@@ -1,0 +1,32 @@
+{
+  "title": "JobScheduler Controllers",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.Controllers",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "controllers"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "controllers": {
+      "type": "array",
+      "items": {
+        "$ref": "master-schema.json"
+      }
+    },
+    "agents": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../agent/agent-schema.json"
+    	}
+    },
+    "currentSecurityLevel": {
+    	"type": {
+    	  "$ref": "../common/jocSecurityLevel-schema.json"
+    	}
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "agent names",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentNames",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "agentNames": {
+    	"type": "array",
+    	"uniqueItems": true,
+    	"items": {
+    		"$ref": "../common/string255-schema.json"
+    	}
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Documentation import",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.DocumentationImport",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "file": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "folder": {
+      "$ref": "../common/path-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

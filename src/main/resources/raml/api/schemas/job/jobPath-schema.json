@@ -1,0 +1,18 @@
+{
+  "title": "jobPath",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.job.JobPath",
+  "type": "object",
+  "required": [
+    "workflowPath"
+  ],
+  "properties": {
+    "workflowPath": {
+      "$ref": "../common/path-schema.json"
+    },
+    "job": {
+      "description": "if job undefined or empty then all jobs of specified workflow are requested",
+      "type": "string"
+    }
+  }
+}

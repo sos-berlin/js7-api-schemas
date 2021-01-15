@@ -1,0 +1,47 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    <p>.<<resourcePath>> can be used in the GUI for two functions
+    <ul>
+    <li><i><<resourcePathName>></i></li>
+    <li><i><<resourcePathName>></i> within (with ``timeout``)</li>
+    </ul>
+    </p>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="10%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>scheduler</td><td></td></tr>
+    <tr><td>``timeout``</td><td>optional, integer</td><td>timeout in seconds</td><td>60</td><td></td></tr>
+    <<audit>>
+    </tbody></table>
+  body:
+    application/json:
+      schema: jsFilterWithTimeout
+      example: |
+        {
+          "controllerId":"scheduler",
+          "timeout": 60
+        }
+  responses:
+    200:
+      description: |
+        **Confirm <span style="text-transform: capitalize;"><<resourcePathName>></span> successfully**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate":"2016-05-05T21:13:35Z",
+              "ok":true
+            }
+          schema: ok

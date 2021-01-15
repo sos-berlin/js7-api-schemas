@@ -1,0 +1,8 @@
+{
+  "title": "string without < and >",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+  "type": "string",
+  "pattern": "^[^<>]*$",
+  "maxLength": 255
+}

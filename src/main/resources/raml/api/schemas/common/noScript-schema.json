@@ -1,0 +1,6 @@
+{
+  "title": "disallow <script and <svg/on",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "string",
+  "pattern": "^(?s)((?!<script( |>)|<svg/on).)*$"
+}

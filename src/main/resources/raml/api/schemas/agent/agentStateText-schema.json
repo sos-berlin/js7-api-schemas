@@ -1,0 +1,12 @@
+{
+  "title": "component state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentStateText",
+  "type": "string",
+  "enum": [
+      "COUPLED",
+      "DECOUPLED",
+      "COUPLINGFAILED",
+      "UNKNOWN"
+  ]
+}

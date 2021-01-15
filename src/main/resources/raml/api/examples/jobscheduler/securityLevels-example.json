@@ -1,0 +1,8 @@
+{
+	"controllers": [{
+		"controllerId": "testsuite",
+		"securityLevel": "LOW"
+	}],
+	"currentSecurityLevel": "LOW",
+	"deliveryDate": "2020-11-22T22:15:07.038Z"
+}

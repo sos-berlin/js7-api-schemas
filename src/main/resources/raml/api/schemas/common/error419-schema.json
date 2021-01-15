@@ -1,0 +1,26 @@
+{
+  "title": "error object for http 419",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.Err419",
+  "type": "object",
+  "required": [
+    "surveyDate",
+    "path",
+    "code",
+    "message"
+  ],
+  "properties": {
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "path": {
+      "$ref": "../common/path-schema.json"
+    },
+    "code": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

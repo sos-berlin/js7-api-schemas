@@ -1,0 +1,11 @@
+{
+  "title": "Archive Format of the archive file",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.ArchiveFormat",
+  "type": "string",
+  "enum": [
+    "ZIP",
+    "TAR_GZ"
+  ],
+  "default": "ZIP"
+}

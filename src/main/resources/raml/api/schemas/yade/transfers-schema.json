@@ -1,0 +1,21 @@
+{
+  "title": "yade history",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.Transfers",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "transfers"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "transfers": {
+      "type": "array",
+      "items": {
+        "$ref": "transfer-schema.json"
+      }
+    }
+  }
+}

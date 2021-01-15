@@ -1,0 +1,21 @@
+{
+  "title": "order object in history collection",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderHistoryStateItem",
+  "type": "object",
+  "required": [
+    "state",
+    "stateTime"
+  ],
+  "properties": {
+    "state": {
+      "$ref": "orderState-schema.json"
+    },
+    "stateTime": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "stateText": {
+      "type": "string"
+    }
+  }
+}

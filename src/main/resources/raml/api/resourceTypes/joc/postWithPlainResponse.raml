@@ -1,0 +1,56 @@
+type: error
+get:
+  is: [accessToken, filename]
+  description: |
+    <h2><<description>></h2>
+  responses:
+    200:
+      description: <<description200>>
+      headers:
+        Content-Disposition:
+          type: string
+          required: true
+          example: attachment;filename=joc.log
+        Content-Type:
+          type: string
+          required: true
+          default: application/octet-stream
+      body:
+        application/octet-stream:
+        text/plain:
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="10%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <<description1>>
+    </tbody></table>
+  body:
+    application/json:
+      schema: <<schema>>
+  responses:
+    200:
+      description: <<description200>>
+      headers:
+        Content-Disposition:
+          type: string
+          required: true
+          example: attachment;filename=main.log
+        Content-Type:
+          type: string
+          required: true
+          default: application/octet-stream
+      body:
+        application/octet-stream:
+        text/plain:

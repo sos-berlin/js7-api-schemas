@@ -1,0 +1,32 @@
+{
+  "title": "order summary",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrdersSummary",
+  "type": "object",
+  "properties": {
+    "pending": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "inProgress": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "running": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "suspended": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "calling": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "waiting": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "blocked": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "failed": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    }
+  }
+}

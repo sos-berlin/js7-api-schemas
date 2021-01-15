@@ -1,0 +1,263 @@
+{
+	"SOSPermissionJocCockpitController": [{
+		"JS7Controller": "",
+		"SOSPermissionJocCockpit": {
+			"isAuthenticated": true,
+			"user": "root",
+			"accessToken": "0128e453-a3a2-4fc5-a6ac-d7ebef3709f9",
+			"precedence": -1,
+			"JS7Controller": {
+				"view": {
+					"status": true,
+					"mainlog": true,
+					"parameter": true
+				},
+				"execute": {
+					"restart": {
+						"terminate": true,
+						"abort": true
+					},
+					"pause": true,
+					"continue": true,
+					"terminate": true,
+					"abort": true
+				},
+				"administration": {
+					"removeOldInstances": true,
+					"manageCategories": true,
+					"editPermissions": true
+				}
+			},
+			"JS7ControllerCluster": {
+				"view": {
+					"status": true
+				},
+				"execute": {
+					"restart": true,
+					"terminate": true,
+					"terminateFailSafe": true
+				}
+			},
+			"JS7UniversalAgent": {
+				"view": {
+					"status": true
+				},
+				"execute": {
+					"restart": {
+						"terminate": true,
+						"abort": true
+					},
+					"terminate": true,
+					"abort": true
+				}
+			},
+			"DailyPlan": {
+				"view": {
+					"status": true
+				}
+			},
+			"History": {
+				"view": {
+					"status": true
+				}
+			},
+			"Order": {
+				"view": {
+					"configuration": true,
+					"orderLog": true,
+					"status": true,
+					"documentation": true
+				},
+				"change": {
+					"startAndEndNode": true,
+					"timeForAdhocOrder": true,
+					"runTime": true,
+					"state": true,
+					"parameter": true
+				},
+				"delete": {
+					"temporary": true,
+					"permanent": true
+				},
+				"execute": {
+					"start": true,
+					"update": true,
+					"suspend": true,
+					"resume": true,
+					"reset": true,
+					"removeSetback": true
+				},
+				"assignDocumentation": true
+			},
+			"Workflow": {
+				"view": {
+					"configuration": true,
+					"history": true,
+					"status": true,
+					"documentation": true
+				},
+				"execute": {
+					"stop": true,
+					"unstop": true,
+					"addOrder": true,
+					"skipWorkflowNode": true,
+					"processWorkflowNode": true,
+					"stopWorkflowNode": true
+				},
+				"assignDocumentation": true
+			},
+			"Job": {
+				"view": {
+					"status": true,
+					"taskLog": true,
+					"configuration": true,
+					"history": true,
+					"documentation": true
+				},
+				"change": {
+					"runTime": true
+				},
+				"execute": {
+					"start": true,
+					"stop": true,
+					"unstop": true,
+					"terminate": true,
+					"kill": true,
+					"endAllTasks": true,
+					"suspendAllTasks": true,
+					"continueAllTasks": true
+				},
+				"assignDocumentation": true
+			},
+			"ProcessClass": {
+				"view": {
+					"status": true,
+					"configuration": true,
+					"documentation": true
+				},
+				"assignDocumentation": true
+			},
+			"Lock": {
+				"view": {
+					"status": true,
+					"configuration": true,
+					"documentation": true
+				},
+				"assignDocumentation": true
+			},
+			"HolidayCalendar": {
+				"view": {
+					"status": true
+				}
+			},
+			"MaintenanceWindow": {
+				"view": {
+					"status": true
+				},
+				"enableDisableMaintenanceWindow": true
+			},
+			"AuditLog": {
+				"view": {
+					"status": true
+				}
+			},
+			"JOCConfigurations": {
+				"share": {
+					"change": {
+						"editContent": true,
+						"delete": true,
+						"sharedStatus": {
+							"makePrivate": true,
+							"makeShared": true
+						}
+					},
+					"view": {
+						"status": true
+					}
+				}
+			},
+			"SOSPermissionRoles": {
+				"SOSPermissionRole": ["all"]
+			},
+			"YADE": {
+				"view": {
+					"status": true,
+					"files": true
+				},
+				"execute": {
+					"transferStart": true
+				},
+				"configurations": {
+					"view": true,
+					"deploy": true,
+					"edit": true,
+					"delete": true
+				}
+			},
+			"Inventory": {
+				"configurations": {
+					"edit": true,
+					"delete": true,
+					"view": true,
+					"publish": {
+						"deploy": true,
+						"setVersion": true,
+						"import": true,
+						"export": true,
+						"generateKey": true,
+						"importKey": true,
+						"showKey": true
+					}
+				}
+			},
+			"Calendar": {
+				"view": {
+					"status": true,
+					"documentation": true
+				},
+				"edit": {
+					"create": true,
+					"change": true,
+					"delete": true,
+					"assign": {
+						"runtime": true,
+						"nonworking": true,
+						"change": true
+					}
+				},
+				"assignDocumentation": true
+			},
+			"Runtime": {
+				"execute": {
+					"editXml": true
+				}
+			},
+			"Joc": {
+				"view": {
+					"log": true
+				}
+			},
+			"Documentation": {
+				"view": true,
+				"import": true,
+				"export": true,
+				"delete": true
+			},
+			"JobStream": {
+				"view": {
+					"status": true,
+					"graph": true,
+					"eventlist": true
+				},
+				"change": {
+					"conditions": true,
+					"jobStream": true,
+					"events": {
+						"add": true,
+						"remove": true
+					}
+				}
+			}
+		}
+	}]
+}

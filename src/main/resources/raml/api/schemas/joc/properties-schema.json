@@ -1,0 +1,77 @@
+{
+  "title": "properties",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.Properties",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "forceCommentsForAuditLog",
+    "comments",
+    "showViews",
+    "securityLevel",
+    "defaultProfileAccount"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "title": {
+      "type": "string"
+    },
+    "securityLevel": {
+      "$ref": "../common/jocSecurityLevel-schema.json"
+    },
+    "defaultProfileAccount": {
+      "type": "string"
+    },
+    "forceCommentsForAuditLog": {
+      "type": "boolean",
+      "default": false
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "showViews": {
+      "javaType": "com.sos.joc.model.ShowViewProperties",
+      "type": "object",
+      "properties": {
+        "dashboard": {
+          "type": "boolean"
+        },
+        "dailyPlan": {
+          "type": "boolean"
+        },
+        "workflows": {
+          "type": "boolean"
+        },
+        "orders": {
+          "type": "boolean"
+        },
+        "jobStreams": {
+          "type": "boolean"
+        },
+        "fileTransfers": {
+          "type": "boolean"
+        },
+        "resources": {
+          "type": "boolean"
+        },
+        "history": {
+          "type": "boolean"
+        },
+        "auditLog": {
+          "type": "boolean"
+        },
+        "conditions": {
+          "type": "boolean"
+        },
+        "configuration": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

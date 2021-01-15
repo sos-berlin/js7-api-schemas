@@ -1,0 +1,18 @@
+{
+  "title": "ExportFile",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.ExportFile",
+  "type": "object",
+  "required": [
+      "filename",
+      "format"
+  ],
+  "properties": {
+    "filename": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "format": {
+      "$ref": "archiveFormat-schema.json"
+    }
+  }
+}

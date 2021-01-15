@@ -1,0 +1,98 @@
+{
+  "deliveryDate": "2016-05-05T20:34:51Z",
+  "agentClusters": [
+    {
+      "surveyDate": "2016-05-05T20:34:51Z",
+      "path": "/agents/galadriel",
+      "state": {
+        "severity": 1,
+        "_text": "only_some_agents_are_running"
+      },
+      "numOfAgents": {
+        "any": 2,
+        "running": 1
+      },
+      "agents": [
+        {
+          "surveyDate": "2016-05-05T20:34:51Z",
+          "version": "1.11.0",
+          "host": "galadriel",
+          "port": 4445,
+          "url": "http://galadriel:4445",
+          "os": {
+            "name": "linux",
+            "architecture": 64,
+            "distribution": "CentOS Linux release 7.2.1511"
+          },
+          "state": {
+            "severity": 0,
+            "_text": "running"
+          },
+          "startedAt": "2016-04-20T23:55:00Z",
+          "runningTasks": 2
+        },
+        {
+          "surveyDate": "2016-05-05T20:34:51Z",
+          "url": "http://galadriel:4447",
+          "state": {
+            "severity": 2,
+            "_text": "unreachable"
+          }
+        }
+      ]
+    },
+    {
+      "surveyDate": "2016-05-05T20:34:51Z",
+      "path": "/agents/galadriel-4445",
+      "state": {
+        "severity": 0,
+        "_text": "all_agents_are_running"
+      },
+      "numOfAgents": {
+        "any": 1,
+        "running": 1
+      },
+      "agents": [
+        {
+          "surveyDate": "2016-05-05T20:34:51Z",
+          "version": "1.11.0",
+          "host": "galadriel",
+          "port": 4445,
+          "url": "http://galadriel:4445",
+          "os": {
+            "name": "linux",
+            "architecture": 64,
+            "distribution": "CentOS Linux release 7.2.1511"
+          },
+          "state": {
+            "severity": 0,
+            "_text": "running"
+          },
+          "startedAt": "2016-04-20T23:55:00Z",
+          "runningTasks": 0
+        }
+      ]
+    },
+    {
+      "surveyDate": "2016-05-05T20:34:51Z",
+      "path": "/agents/frodo-4445",
+      "state": {
+        "severity": 2,
+        "_text": "all_agents_are_unreachable"
+      },
+      "numOfAgents": {
+        "any": 1,
+        "running": 0
+      },
+      "agents": [
+        {
+          "url": "http://frodo.proxy",
+          "state": {
+            "severity": 2,
+            "_text": "unreachable"
+          }
+        }
+      ]
+    }
+  ]
+}

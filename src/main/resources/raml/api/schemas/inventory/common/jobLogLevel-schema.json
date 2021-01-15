@@ -1,0 +1,11 @@
+{
+  "title": "log levels",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.common.JobLogLevel",
+  "type": "string",
+  "enum": [
+    "INFO",
+    "DEBUG",
+    "TRACE"
+  ]
+}

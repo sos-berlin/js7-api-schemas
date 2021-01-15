@@ -1,0 +1,25 @@
+{
+  "title": "add order commands",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.AddOrders",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "orders"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "orders": {
+      "type": "array",
+      "minLength": 1,
+      "items": {
+        "$ref": "addOrder-schema.json"
+      }
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

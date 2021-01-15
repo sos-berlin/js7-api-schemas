@@ -1,0 +1,34 @@
+get:
+  description: |
+    <h2>Send custom logo settings and default profile account if configured</h2>
+  responses:
+    200:
+      body:
+        application/json:
+          schema: loginConfiguration
+          example: |
+            {
+              "defaultProfileAccount": "root",
+              "customLogo": {
+                "name": "myLogo.png",
+                "height": "100%",
+                "position": "BOTTOM"
+              }
+            }
+post:
+  description: |
+    <h2>Send custom logo settings and default profile account if configured</h2>
+  responses:
+    200:
+      body:
+        application/json:
+          schema: loginConfiguration
+          example: |
+            {
+              "defaultProfileAccount": "root",
+              "customLogo": {
+                "name": "myLogo.png",
+                "height": "100%",
+                "position": "BOTTOM"
+              }
+            }

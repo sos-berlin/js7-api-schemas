@@ -1,0 +1,18 @@
+{
+  "title": "transferId",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.yade.TransferId",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "transferId"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "transferId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "treeView",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collections of Controller objects besides folder tree structure.",
+  "javaType": "com.sos.joc.model.tree.TreeView",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "folders"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "folders": {
+      "type": "array",
+      "items": {
+        "$ref": "tree-schema.json"
+      }
+    }
+  }
+}

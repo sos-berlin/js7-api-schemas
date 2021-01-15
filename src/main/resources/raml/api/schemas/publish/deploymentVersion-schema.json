@@ -1,0 +1,18 @@
+{
+  "title": "JS Object Filter configuration",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.DeploymentVersion",
+  "type": "object",
+  "required": [
+    "configuration",
+    "version"
+  ],
+  "properties": {
+    "configuration": {
+        "$ref": "configuration-schema.json"
+    },
+    "version": {
+      "$ref": "../common/string255-schema.json"
+    }
+  }
+}

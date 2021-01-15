@@ -1,0 +1,25 @@
+{
+	"title": "Configuration Filter. Identifies a configuration by its path and objectType",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.Configuration",
+	"type": "object",
+  "required": [
+    "path",
+    "objectType"
+  ],
+  "properties": {
+    "path": {
+      "$ref": "../common/path-schema.json"
+    },
+    "objectType": {
+      "$ref": "../inventory/common/configurationType-schema.json"
+    },
+    "commitId": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "recursive": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

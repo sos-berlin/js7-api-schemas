@@ -1,0 +1,25 @@
+{
+  "title": "restart joc service such as cluster, history, dailyplan",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.cluster.ClusterRestart",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "javaType": "com.sos.joc.model.cluster.common.ClusterServices",
+      "type": "string",
+      "enum": [
+        "cluster",
+        "history",
+        "dailyplan"
+      ],
+      "javaEnumNames": [
+        "cluster",
+        "history",
+        "dailyplan"
+      ]
+    }
+  }
+}

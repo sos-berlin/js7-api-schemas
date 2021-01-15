@@ -1,0 +1,59 @@
+{
+  "title": "auditLogFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.audit.AuditLogFilter",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "jobs": {
+      "type": "array",
+      "items": {
+        "$ref": "../job/jobPath-schema.json"
+      }
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "$ref": "../order/orderPath-schema.json"
+      }
+    },
+    "calendars": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/path-schema.json"
+      }
+    },
+    "folders": {
+      "$ref": "../common/folders-schema.json"
+    },
+    "account": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "regex": {
+      "$ref": "../common/regexFilter-schema.json"
+    },
+    "dateFrom": {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "dateTo": {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "timeZone": {
+      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+      "$ref": "../common/string255-schema.json"
+    },
+    "limit": {
+      "description": "restricts the number of responsed records; -1=unlimited",
+      "type": "integer",
+      "default": 10000
+    },
+    "ticketLink": {
+      "$ref": "../common/string255-schema.json"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+type: error
+get:
+  is: [accessToken, jobschedulerController]
+  queryParameters:
+    url:
+      required: false
+      type: string
+      description: |
+        host of the JobScheduler Controller<br/><b>This parameter is required for a specific JobScheduler in a cluster</b>
+  description: |
+    <h2><<description>></h2>
+  responses:
+    200:
+      description: <<description200>>
+      headers:
+        Content-Disposition:
+          type: string
+          required: true
+          example: attachment;filename=controller.log
+        Content-Type:
+          type: string
+          required: true
+          default: application/octet-stream
+      body:
+        application/octet-stream:
+        text/plain:
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="10%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>scheduler</td><td></td></tr>
+    <tr><td>``url``</td><td>optional, string</td><td>URL of the JobScheduler Controller<br/><b>This parameter is required for a specific JobScheduler in a cluster</b></td><td></td><td></td></tr>
+    </tbody></table>
+  body:
+    application/json:
+      schema: jsFilterWithUrl
+      example: |
+        {
+          "controllerId": "scheduler"
+        }
+  responses:
+    200:
+      description: <<description200>>
+      headers:
+        Content-Disposition:
+          type: string
+          required: true
+          example: attachment;filename=controller.log
+        Content-Type:
+          type: string
+          required: true
+          default: application/octet-stream
+      body:
+        application/octet-stream:
+        text/plain:

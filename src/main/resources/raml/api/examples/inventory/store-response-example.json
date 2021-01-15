@@ -1,0 +1,11 @@
+{
+	"id": 2,
+	"path": "/agent-cluster1",
+	"objectType": "AGENTCLUSTER",
+	"state": "DRAFT_IS_NEWER",
+	"valid": false,
+	"deployed": false,
+	"deployments": [],
+	"configurationDate": "2020-09-11T09:37:24.836+0000",
+	"deliveryDate": "2020-09-11T09:37:24.838+0000"
+}

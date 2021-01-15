@@ -1,0 +1,19 @@
+{
+  "title": "folder",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.folder.Folder",
+  "type": "object",
+  "javaInterfaces" : [
+    "com.sos.joc.model.common.IConfigurationObject"
+  ],
+  "properties": {
+    "path": {
+      "description": "path is only part as dummy for IConfigurationObject interface",
+      "$ref": "../common/path-schema.json"
+    },
+    "title": {
+      "description": "title is only part as dummy for IConfigurationObject interface",
+      "$ref": "../common/string255-schema.json"
+    }
+  }
+}

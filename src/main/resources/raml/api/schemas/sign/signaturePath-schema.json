@@ -1,0 +1,23 @@
+{
+  "title": "Signature of a JS object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.sign.SignaturePath",
+  "type": "object",
+  "required": [
+    "objectPath",
+    "objectType",
+    "signature"
+  ],
+  "properties": {
+    "objectPath": {
+      "$ref": "../common/path-schema.json"
+    },
+    "objectType": {
+      "$ref": "../inventory/common/configurationType-schema.json"
+    },
+    "signature": {
+      "$ref": "signature-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

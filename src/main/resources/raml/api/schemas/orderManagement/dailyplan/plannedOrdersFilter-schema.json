@@ -1,0 +1,59 @@
+{
+	"title": "plannedOrders filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.PlannedOrdersFilter",
+	"type": "object",
+	 
+	"properties": {
+		"controllerId": {
+			"type": "string"
+		},
+		"calendarId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"dailyPlanSubmissionHistoryIds": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/nonNegativeLong-schema.json"
+			}
+		},
+		"states": {
+			"type": "array",
+			"items": {
+				"$ref": "../../order/orderStateText-schema.json"
+			}
+		},
+		"late": {
+			"type": "boolean"
+		},
+		"withSubmit": {
+			"$ref": "withSubmitParam-schema.json"
+		},
+		"dailyPlanDate": {
+			"type": "string",
+			"pattern": "^(0|([0-9]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(,\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+		},
+		"timeZone": {
+			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+			"type": "string"
+		},
+		"folders": {
+			"$ref": "../../common/folders-schema.json"
+		},
+		"schedulePaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"workflowPaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"orderId": {
+			"type": "string"
+		}
+	}
+}

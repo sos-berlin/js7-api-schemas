@@ -1,0 +1,22 @@
+{
+  "title": "order filter with history id",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderRunningLogFilter",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "historyId",
+    "eventId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "historyId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "eventId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

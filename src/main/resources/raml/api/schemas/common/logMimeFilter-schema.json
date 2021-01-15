@@ -1,0 +1,12 @@
+{
+  "title": "log mime filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The log can have a HTML representation where the HTML gets a highlighting via CSS classes.",
+  "javaType": "com.sos.joc.model.common.LogMime",
+  "type": "string",
+  "enum": [
+    "PLAIN",
+    "HTML"
+  ],
+  "default": "PLAIN"
+}

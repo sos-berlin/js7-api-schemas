@@ -1,0 +1,21 @@
+type: error
+get:
+  description: |
+    <h2>Documentation</h2>
+    <<description>>
+    ___
+  responses:
+    200:
+      description: Content of documentation or its resources.
+      headers:
+        Content-Type:
+          type: string
+          required: false
+      body:
+        application/octet-stream:
+        application/xml:
+        text/html:
+        text/plain:
+        image/gif:
+        image/jpeg:
+        image/png:

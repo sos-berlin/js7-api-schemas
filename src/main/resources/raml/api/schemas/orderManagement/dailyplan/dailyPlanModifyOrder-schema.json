@@ -1,0 +1,28 @@
+{
+	"title": "Daily Plan Change Startime",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanModifyOrder",
+	"type": "object",
+	"description": "To change the starttime of given order",
+	"properties": {
+		"controllerId": {
+			"type": "string"
+		},
+		"startTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"variables": {
+			"$ref": "../../common/nameValuePairs-schema.json"
+		},
+		"orderIds": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
+ 

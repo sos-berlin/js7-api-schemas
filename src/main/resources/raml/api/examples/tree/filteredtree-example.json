@@ -1,0 +1,9 @@
+{
+  "controllerId":"scheduler",
+  "folders": [
+    {
+      "path": "/",
+      "recursive": true
+    }
+  ]
+}

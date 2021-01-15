@@ -1,0 +1,30 @@
+{
+  "title": "active state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.ClusterNodeState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=active, 1=inactive, 3=unknown",
+      "type": "integer"
+    },
+    "_text": {
+      "javaType": "com.sos.joc.model.jobscheduler.ClusterNodeStateText",
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive",
+        "unknown" 
+      ],
+      "javaEnumNames": [
+        "active",
+        "inactive",
+        "unknown" 
+      ]
+    }
+  }
+}

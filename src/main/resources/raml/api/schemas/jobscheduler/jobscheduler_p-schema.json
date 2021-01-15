@@ -1,0 +1,50 @@
+{
+  "title": "jobscheduler",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.JobSchedulerP",
+  "type": "object",
+  "required": [
+        "id",
+        "controllerId",
+        "url",
+    	"role"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "controllerId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "host": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "clusterUrl": {
+      "type": "string"
+    },
+    "role": {
+      "$ref": "role-schema.json"
+    },
+    "startedAt": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "version": {
+      "type": "string"
+    },
+    "os": {
+      "$ref": "os-schema.json"
+    },
+    "timeZone": {
+      "type": "string"
+    }
+  }
+}

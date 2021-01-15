@@ -1,0 +1,21 @@
+{
+  "title": "set generate Key filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.GenerateKeyFilter",
+  "type": "object",
+  "required": [
+    "keyAlgorithm"
+  ],
+  "properties": {
+    "validUntil": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyAlgorithm" : {
+      "type" : "string"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

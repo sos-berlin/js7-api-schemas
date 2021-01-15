@@ -1,0 +1,38 @@
+{
+  "deployConfigurations" : [{
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_10",
+      "objectType" : "WORKFLOW",
+      "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+    },
+    "version" : "myTestVersion-1.0.0"
+  }, {
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_12",
+      "objectType" : "WORKFLOW",
+      "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+    },
+    "version" : "myTestVersion-1.0.0"
+  }, {
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_14",
+      "objectType" : "WORKFLOW",
+      "commitId" : "2a6487a7-091c-446a-b799-67c87b4db6c2"
+    },
+    "version" : "myTestVersion-1.1.0"
+  }, {
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_16",
+      "objectType" : "WORKFLOW",
+      "commitId" : "2a6487a7-091c-446a-b799-67c87b4db6c2"
+    },
+    "version" : "myTestVersion-1.1.0"
+  }, {
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_18",
+      "objectType" : "WORKFLOW",
+      "commitId" : "17cd67d9-37cb-4d28-8596-c88eab6a755d"
+    },
+    "version" : "myTestVersion-1.1.12"
+  }]
+}

@@ -1,0 +1,9 @@
+{
+  "controllers" : [{
+    "controller" : "myFirstControllerCluster"
+    }, {
+    "controller" : "mySecondController"
+    }
+  ],
+  "signatureAlgorithm" : "SHA256withRSA"
+}

@@ -1,0 +1,32 @@
+{
+  "title": "connection state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobscheduler.ConnectionState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=established, 1=unstable, 2=unreachable, 3=unknown",
+      "type": "integer"
+    },
+    "_text": {
+      "javaType": "com.sos.joc.model.jobscheduler.ConnectionStateText",
+      "type": "string",
+      "enum": [
+        "established",
+        "unstable",
+        "unreachable",
+        "unknown"
+      ],
+      "javaEnumNames": [
+        "established",
+        "unstable",
+        "unreachable",
+        "unknown"
+      ]
+    }
+  }
+}

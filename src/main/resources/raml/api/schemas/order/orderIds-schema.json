@@ -1,0 +1,20 @@
+{
+  "title": "OrderIds",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderIds",
+  "type": "object",
+  "required": [
+    "deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "orderIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json" 
+      }
+    }
+  }
+}

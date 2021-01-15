@@ -1,0 +1,23 @@
+{
+    "deliveryDate":  "2016-09-14T00:44:12Z",
+    "processClasses":  [
+                           {
+                               "surveyDate":  "2016-09-14T00:44:12Z",
+                               "path":  "/(default)",
+                               "name":  "(default)",
+                               "maxProcesses":  30
+                           },
+                           {
+                               "surveyDate":  "2016-09-14T00:44:12Z",
+                               "path":  "/single",
+                               "name":  "single",
+                               "maxProcesses":  10
+                           },
+                           {
+                               "surveyDate":  "2016-09-14T00:44:12Z",
+                               "path":  "/multi",
+                               "name":  "multi",
+                               "maxProcesses":  10
+                           }
+                       ]
+}

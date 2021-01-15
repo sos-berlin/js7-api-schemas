@@ -1,0 +1,70 @@
+{
+  "examples": [
+    {
+      "account" : "root",
+      "path" : "/myWorkflows/myIfElseWorkflows/workflow_01",
+      "folder" : "/myWorkflows/myIfElseWorkflows",
+      "controllerId" : "testsuite",
+      "commitId" : "4cbb095d-b998-4091-92f2-4fb8efb58805",
+      "version" : "0.0.1",
+      "deployType" : "WORKFLOW",
+      "operation" : "UPDATE",
+      "state" : "DEPLOYED",
+      "deploymentDate" : "2020-11-09T08:41:14.099Z",
+      "deleteDate" : "2020-11-09T08:41:14.099Z",
+      "from" : "-10d",
+      "to" : "-5d",
+      "timeZone" : "Europe/Berlin"
+    },
+    {
+      "account" : "root",
+      "path" : "/myWorkflows/myIfElseWorkflows/workflow_01",
+      "folder" : "/myWorkflows/myIfElseWorkflows",
+      "controllerId" : "testsuite",
+      "version" : "0.0.1",
+      "deployType" : "WORKFLOW",
+      "operation" : "UPDATE",
+      "state" : "DEPLOYED",
+      "from" : "-10d",
+      "to" : "-5d",
+      "timeZone" : "Europe/Berlin"
+    },
+    {
+      "account" : "root",
+      "path" : "/myWorkflows/myIfElseWorkflows/workflow_01",
+      "folder" : "/myWorkflows/myIfElseWorkflows",
+      "controllerId" : "testsuite",
+      "version" : "0.0.1",
+      "deployType" : "WORKFLOW",
+      "operation" : "UPDATE",
+      "state" : "DEPLOYED",
+      "deploymentDate" : "2020-11-09T08:41:14.099Z"
+    },
+    {
+      "account" : "root",
+      "path" : "/myWorkflows/myIfElseWorkflows/workflow_01",
+      "folder" : "/myWorkflows/myIfElseWorkflows",
+      "controllerId" : "testsuite",
+      "version" : "0.0.1",
+      "deployType" : "WORKFLOW",
+      "operation" : "DELETE",
+      "state" : "DEPLOYED",
+      "deleteDate" : "2020-11-09T08:41:14.099Z"
+    },
+    {
+      "account" : "root",
+      "path" : "/myWorkflows/myIfElseWorkflows/workflow_01",
+      "folder" : "/myWorkflows/myIfElseWorkflows",
+      "controllerId" : "testsuite",
+      "version" : "0.0.1",
+      "deployType" : "WORKFLOW",
+      "operation" : "DELETE",
+      "state" : "DEPLOYED"
+    },
+    {
+      "account" : "root",
+      "folder" : "/myWorkflows/myIfElseWorkflows",
+      "commitId" : "4cbb095d-b998-4091-92f2-4fb8efb58805"
+    }
+  ]
+}

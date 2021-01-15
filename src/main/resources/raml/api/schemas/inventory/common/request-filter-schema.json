@@ -1,0 +1,30 @@
+{
+	"title": "common inventory request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.RequestFilter",
+	"type": "object",
+	"anyOf": [
+        {
+            "required": [
+                "id"
+            ]
+        },
+        {
+            "required": [
+                "path",
+                "objectType"
+            ]
+        }
+    ],
+	"properties": {
+		"id": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/configurationType-schema.json"
+		}
+	}
+}

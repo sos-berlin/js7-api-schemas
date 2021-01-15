@@ -1,0 +1,24 @@
+{
+  "title": "set version",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.SetVersionFilter",
+  "type": "object",
+  "required": [
+    "version",
+    "deployConfigurations"
+  ],
+  "properties": {
+    "version": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "deployConfigurations": {
+      "type" : "array",
+      "items" : {
+        "$ref": "config-schema.json"
+      }
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+	"title": "xmleditor validate configuration in",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.validate.ValidateConfiguration",
+	"type": "object",
+	"description": "schemaIdentifier only for OTHER",
+	"required": [
+		"controllerId",
+		"objectType"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/filename100-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/object-type-schema.json"
+		},
+		"configuration": {
+			"$ref": "../../common/noScript-schema.json"
+		},
+		"schemaIdentifier": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	}
+}

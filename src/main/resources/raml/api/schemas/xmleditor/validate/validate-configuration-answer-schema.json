@@ -1,0 +1,15 @@
+{
+	"title": "xmleditor validate configuration answer",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.validate.ValidateConfigurationAnswer",
+	"type": "object",
+	"description": "",
+	"properties": {
+		"validated": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"validationError": {
+			"$ref": "error-message-schema.json"
+		}
+	}
+}

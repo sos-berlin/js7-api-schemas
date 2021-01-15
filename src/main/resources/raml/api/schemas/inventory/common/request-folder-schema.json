@@ -1,0 +1,28 @@
+{
+	"title": "Filter Delete Draft",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.RequestFolder",
+	"type": "object",
+	"required": [
+		"path"
+	],
+	"properties": {
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"recursive": {
+			"type": "boolean",
+			"default": false
+		},
+		"objectTypes": {
+		    "type": "array",
+		    "items": {
+				"$ref": "configurationType-schema.json"
+			}
+		},
+		"onlyValidObjects": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

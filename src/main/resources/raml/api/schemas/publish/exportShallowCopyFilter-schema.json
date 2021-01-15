@@ -1,0 +1,24 @@
+{
+	"title": "Shallow Copy Export Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.ExportShallowCopy",
+	"type": "object",
+  "anyOf": [{
+    "required": [
+        "deployables"
+      ]
+    }, {
+      "required": [
+        "releasables"
+      ]
+    }
+  ],
+ 	"properties": {
+    "deployables": {
+        "$ref": "deployablesFilter-schema.json"
+    },
+    "releasables": {
+        "$ref": "releasablesFilter-schema.json"
+    }
+	}
+}

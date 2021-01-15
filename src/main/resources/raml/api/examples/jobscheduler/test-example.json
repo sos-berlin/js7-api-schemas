@@ -1,0 +1,11 @@
+{
+    "deliveryDate": "2020-04-02T12:03:09.998Z",
+    "jobscheduler": {
+        "connectionState": {
+            "_text": "established",
+            "severity": 0
+        },
+        "controllerId": "scheduler.2.0",
+        "url": "http://someHost:40444"
+    }
+}
