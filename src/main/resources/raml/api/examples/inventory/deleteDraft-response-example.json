@@ -1,0 +1,36 @@
+{
+    "deleted": [
+        {
+            "id": 30,
+            "objectType": "WORKFLOW",
+            "path": "/a/b/workflow1"
+        },
+        {
+            "id": 35,
+            "objectType": "WORKINGDAYSCALENDAR",
+            "path": "/a/b/calendar1"
+        },
+        {
+            "id": 9,
+            "objectType": "WORKFLOW",
+            "path": "/a/b/workflow2"
+        },
+        {
+            "id": 29,
+            "objectType": "WORKFLOW",
+            "path": "/a/b/c/workflow3"
+        },
+        {
+            "id": 28,
+            "objectType": "FOLDER",
+            "path": "/a/b/c"
+        },
+        {
+            "id": 27,
+            "objectType": "FOLDER",
+            "path": "/a/b"
+        }
+    ],
+    "deliveryDate": "2021-01-15T12:27:08.98Z",
+    "updated": []
+}
