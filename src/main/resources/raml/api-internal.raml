@@ -1,0 +1,305 @@
+#%RAML 0.8
+title: JOC API Internal
+version: 2.0.0
+protocols: [ HTTP, HTTPS ]
+#baseUri: http://test.sos-berlin.com:3001/joc/api
+#mediaType: application/json
+
+#documentation:
+# TODO VERSIONS file for internal API
+#  - title: VERSIONS
+#    content: !include api/documentation/common/versions.md
+
+
+schemas:
+  - errors: !include api/schemas/common/errors-schema.json
+  - error420: !include api/schemas/common/error420-schema.json
+  - ok: !include api/schemas/common/ok-schema.json
+  - orders: !include api/schemas/order/orders_v-schema.json
+  - jsFilter: !include api/schemas/common/controllerId-schema.json
+  - jsFilterWithTimeout: !include api/schemas/jobscheduler/urlParam-schema.json
+  - jsFilterWithUrl: !include api/schemas/jobscheduler/urlParam-schema.json
+  - jsRegister: !include api/schemas/jobscheduler/registerParam-schema.json
+  - taskFilter: !include api/schemas/job/taskFilter-schema.json
+  - orderHistoryFilter: !include api/schemas/order/orderHistoryFilter-schema.json
+  - addOrders: !include api/schemas/order/addOrders-schema.json
+  - orderIds: !include api/schemas/order/orderIds-schema.json
+  - modifyOrders: !include api/schemas/order/modifyOrders-schema.json
+  - modifyCalendars: !include api/schemas/calendar/calendarsFilter-schema.json
+  - security: !include api/schemas/user/security-schema.json
+  - loginConfiguration: !include api/schemas/configuration/login-schema.json
+
+
+resourceTypes:
+  - error: !include api/resourceTypes/common/error.raml
+  - postWithPlainResponse: !include api/resourceTypes/joc/postWithPlainResponse.raml
+  - postCalendarWithOkResponse: !include api/resourceTypes/calendar/postJSONWithOkResponse.raml
+  - postDocuWithOkResponse: !include api/resourceTypes/docu/postJSONWithOkResponse.raml
+  - postTimeoutWithOkResponse: !include api/resourceTypes/common/postTimeoutWithOkResponse.raml
+  - postWithOkResponse: !include api/resourceTypes/jobscheduler/postWithOkResponse.raml
+  - registerControllerWithOkResponse: !include api/resourceTypes/jobscheduler/registerControllerWithOkResponse.raml
+  - postURLWithPlainResponse: !include api/resourceTypes/jobscheduler/postWithPlainResponse.raml
+  - postStateResponse: !include api/resourceTypes/jobscheduler/postStateResponse.raml
+  - postJSON: !include api/resourceTypes/common/postJSON.raml
+  - postJSONWithOptionalJSId: !include api/resourceTypes/common/postJSONWithOptionalJSId.raml
+  - postJSONWithOkAndOnlyOptionalIdResponse: !include api/resourceTypes/common/postJSONWithOkAndOnlyOptionalIdResponse.raml
+  - postJSONWithoutJSId: !include api/resourceTypes/common/postJSONWithoutJSId.raml
+  - postWithoutJSONandJSId: !include api/resourceTypes/common/postWithoutJSONandJSId.raml
+  - postJSONWithOkWithoutJSId: !include api/resourceTypes/common/postJSONWithOkWithoutJSId.raml
+  - postJSON18: !include api/resourceTypes/common/postJSON18.raml
+  - postYADEJSONWithOkResponse: !include api/resourceTypes/yade/postJSONWithOkResponse.raml
+  - postOnlyAccessToken: !include api/resourceTypes/common/postOnlyAccessToken.raml
+  - postOnlyId: !include api/resourceTypes/common/postOnlyId.raml
+  - postOnlyOptionalId: !include api/resourceTypes/common/postOnlyOptionalId.raml
+  - postJSONWithOkResponse: !include api/resourceTypes/common/postJSONWithOkResponse.raml
+  - postJSONWithoutExample: !include api/resourceTypes/common/postJSONWithoutExample.raml
+  - postForDownload: !include api/resourceTypes/common/postForDownload.raml
+  - postForUpload: !include api/resourceTypes/common/postForUpload.raml
+  - postLog: !include api/resourceTypes/common/postLog.raml
+  - postDocu: !include api/resourceTypes/docu/postDocu.raml
+  - getDocu: !include api/resourceTypes/docu/getDocu.raml
+  - login: !include api/resourceTypes/user/login.raml
+  - logout: !include api/resourceTypes/user/logout.raml
+  - postEvent: !include api/resourceTypes/common/postEvent.raml
+  - postTaskLogWithPlainResponse: !include api/resourceTypes/job/postWithPlainResponse.raml
+  - modifyOrder: !include api/resourceTypes/order/modify.raml
+  - addOrder: !include api/resourceTypes/order/add.raml
+  - postOrderLogWithPlainResponse: !include api/resourceTypes/order/postWithPlainResponse.raml
+  - modifyCalendar: !include api/resourceTypes/calendar/modify.raml
+  - loginConfiguration: !include api/resourceTypes/configuration/login.raml
+  - postForDownloadUnsigned: !include api/resourceTypes/publish/postForDownloadUnsigned.raml
+  - postForUploadSigned: !include api/resourceTypes/publish/postForUploadSigned.raml
+  - postForUploadUnsigned: !include api/resourceTypes/publish/postForUploadUnsigned.raml
+  - postForGenerateKey: !include api/resourceTypes/publish/postForGenerateKey.raml
+  - postForExport: !include api/resourceTypes/publish/postForExport.raml
+  - postForImportDeploy: !include api/resourceTypes/publish/postForImportDeploy.raml
+  - postForShowDepHistory: !include api/resourceTypes/publish/postForShowDepHistory.raml
+  
+
+traits:
+  - jobschedulerController: !include api/traits/jobschedulerController.raml
+  - filteredByPath: !include api/traits/filteredByPath.raml
+  - filteredByOrderId: !include api/traits/filteredByOrderId.raml
+  - filteredByJSType: !include api/traits/filteredByJSType.raml
+  - filteredByTransferFileId: !include api/traits/filteredByTransferFileId.raml
+  - accessToken: !include api/traits/accessToken.raml
+  - filename: !include api/traits/filename.raml
+
+       
+/configuration:
+  type:
+     postJSON:
+       description: Responds a configuration from the server (database)
+#       description1: !include api/documentation/configuration/userRequiredParam.md
+#       description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
+#       description3: !include api/documentation/configuration/objectTypeRequiredParam.md
+#       description4: !include api/documentation/configuration/nameParam.md
+       description1: " "
+       description2: " "
+       description3: " "
+       description4: " "
+       description5: !include api/documentation/configuration/configurationIdRequiredParam.md
+       description6: " "
+       description7: " "
+       description8: " "
+       description9: " "
+       description10: " "
+       description200: " "
+       schema: !include api/schemas/configuration/configuration-schema.json
+       schema200: !include api/schemas/configuration/configuration200-schema.json
+       example: " "
+       example200: " "
+  /delete:
+    type:
+       postJSON:
+         description: Deletes a configuration on the server (database)
+#         description1: !include api/documentation/configuration/userRequiredParam.md
+#         description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
+#         description3: !include api/documentation/configuration/objectTypeRequiredParam.md
+#         description4: !include api/documentation/configuration/nameParam.md
+         description1: " "
+         description2: " "
+         description3: " "
+         description4: " "
+         description5: !include api/documentation/configuration/configurationIdRequiredParam.md
+         description6: " "
+         description7: " "
+         description8: " "
+         description9: " "
+         description10: " "
+         description200: " "
+         schema: !include api/schemas/configuration/configuration-schema.json
+         schema200: !include api/schemas/configuration/configurationOk-schema.json
+         example: " "
+         example200: |
+           {
+             "deliveryDate":"2016-05-05T21:13:35Z",
+             "id":4711
+           }
+  /make_private:
+    type:
+       postJSON:
+         description: set a configuration as unshared
+#         description1: !include api/documentation/configuration/userRequiredParam.md
+#         description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
+#         description3: !include api/documentation/configuration/objectTypeRequiredParam.md
+#         description4: !include api/documentation/configuration/nameParam.md
+         description1: " "
+         description2: " "
+         description3: " "
+         description4: " "
+         description5: !include api/documentation/configuration/configurationIdRequiredParam.md
+         description6: " "
+         description7: " "
+         description8: " "
+         description9: " "
+         description10: " "
+         description200: " "
+         schema: !include api/schemas/configuration/configuration-schema.json
+         schema200: !include api/schemas/configuration/configurationOk-schema.json
+         example: " "
+         example200: |
+           {
+             "deliveryDate":"2016-05-05T21:13:35Z",
+             "id":4711
+           }
+  /login:
+    type: loginConfiguration
+  
+  /save:
+    type:
+       postJSON:
+         description: Stores a configuration on the server (database)
+         description1: !include api/documentation/configuration/userRequiredParam.md
+         description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
+         description3: !include api/documentation/configuration/objectTypeRequiredParam.md
+         description4: !include api/documentation/configuration/nameParam.md
+         description5: !include api/documentation/configuration/sharedParam.md
+         description6: !include api/documentation/configuration/itemParam.md
+         description7: !include api/documentation/configuration/configurationIdRequiredParam.md
+         description8: " "
+         description9: " "
+         description10: " "
+         description200: |
+             *Response contains the ``id`` of the customization.*<br/>
+             It seems to be unnecessary but if a new customization is saved
+             (with ``id=0`` in the request) then you get the new id.
+         schema: !include api/schemas/configuration/configuration-schema.json
+         schema200: !include api/schemas/configuration/configurationOk-schema.json
+         example: " "
+         example200: |
+           {
+             "deliveryDate":"2016-05-05T21:13:35Z",
+             "id":4711
+           }
+  /share:
+    type:
+       postJSON:
+         description: set a configuration as shared
+#         description1: !include api/documentation/configuration/userRequiredParam.md
+#         description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
+#         description3: !include api/documentation/configuration/objectTypeRequiredParam.md
+#         description4: !include api/documentation/configuration/nameParam.md
+         description1: " "
+         description2: " "
+         description3: " "
+         description4: " "
+         description5: !include api/documentation/configuration/configurationIdRequiredParam.md
+         description6: " "
+         description7: " "
+         description8: " "
+         description9: " "
+         description10: " "
+         description200: " "
+         schema: !include api/schemas/configuration/configuration-schema.json
+         schema200: !include api/schemas/configuration/configurationOk-schema.json
+         example: " "
+         example200: |
+           {
+             "deliveryDate":"2016-05-05T21:13:35Z",
+             "id":4711
+           }
+  
+/configurations:
+  type:
+     postJSON:
+       description: Get collection of configuration items
+       description1: !include api/documentation/configuration/userParam.md
+       description2: !include api/documentation/configuration/configurationTypeParam.md
+       description3: !include api/documentation/configuration/objectTypeParam.md
+       description4: !include api/documentation/configuration/sharedParam.md
+       description5: " "
+       description6: " "
+       description7: " "
+       description8: " "
+       description9: " "
+       description10: " "
+       description200: " "
+       schema: !include api/schemas/configuration/configurationsFilter-schema.json
+       schema200: !include api/schemas/configuration/configurations-schema.json
+       example: " "
+       example200: " "
+  /delete:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Deletes all configuration items (profile, settings, customizations, ignore lists) of specified accounts 
+        description1: !include api/documentation/configuration/usersParam.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        schema: !include api/schemas/configuration/configurationsDeleteFilter-schema.json
+        example: " "
+#  /shared:
+#    type:
+#       postOnlyId:
+#         description: Sends collection of all shared configuration items
+#         description200: " "
+#         schema200: !include api/schemas/configuration/configurations-schema.json
+#         example200: " "
+
+/events:
+  type:
+    postEvent:
+      description200: TODO
+      schema: !include api/schemas/event/register-schema.json
+      schema200: !include api/schemas/event/events-schema.json
+      example: TODO
+      example200: TODO
+
+      
+/joc/properties:
+  type:
+    postOnlyAccessToken:
+      description: |
+        Response contains some settings from joc.properties file such as 
+        * pre-defined audit log comments
+        * flag to force audit log comments
+        * show/hide views 
+      description200: " "
+      schema200: !include api/schemas/joc/properties-schema.json
+      example200: !include api/examples/joc/properties-example.json
+
+
+/tree:
+  type:
+    postJSON:
+      description: Collections of specified object with folders information in a tree structure
+      description1: " "
+      description2: " "
+      description3: " "
+      description4: " "
+      description5: " "
+      description6: !include api/documentation/common/folders.md
+      description7: !include api/documentation/common/typesParam.md
+      description8: !include api/documentation/inventory/onlyValidObjects.md
+      description9: " "
+      description10: " "
+      description200: !include api/documentation/tree/tree.md
+      schema: !include api/schemas/tree/treeFilter-schema.json
+      schema200: !include api/schemas/tree/treeView-schema.json
+      example: !include api/examples/tree/filteredtree-example.json
+      example200: !include api/examples/tree/tree-example.json
+
+
+        
