@@ -2,7 +2,7 @@
 <p>supported JSON:
 <ul>
 	<li><a href="../../../../../controller/schemas/workflow/workflow-schema.json" target="workflow">Workflow JSON schema</a></li>
-	<li><a href="../../../../../controller/schemas/lock/lock-schema.json" target="jobclass">Lock JSON schema - IN PROGRESS</a></li>
+	<li><a href="../../../../../controller/schemas/lock/lock-schema.json" target="jobclass">Lock JSON schema</a></li>
 	<li><a href="../../../../../controller/schemas/jobclass/jobClass-schema.json" target="jobclass">JobClass JSON schema - IN PROGRESS</a></li>
 	<li><a href="../../../../../controller/schemas/junction/junction-schema.json" target="junction">Junction JSON schema - IN PROGRESS</a></li>
 	<li><a href="../../../../../api/schemas/orderManagement//orders/schedule-schema.json" target="order">Schedule JSON schema</a></li>
