@@ -9,6 +9,7 @@
     "CONTROLLERCLUSTER",
     "AGENT",
     "PROBLEM",
+    "FOLDER",
     "WORKFLOW",
     "ORDER",
     "LOCK",
