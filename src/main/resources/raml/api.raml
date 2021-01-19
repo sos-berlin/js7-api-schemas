@@ -1237,7 +1237,7 @@ traits:
         description4: " "
         description5: " "
         schema: !include api/schemas/inventory/common/request-filter-schema.json
-        example: TODO
+        example: !include api/examples/inventory/pathType-examle.json
   
   /rename:
     type:
@@ -1292,7 +1292,19 @@ traits:
         description4: " "
         description5: " "
         schema: !include api/schemas/inventory/common/request-filter-schema.json
-        example: TODO
+        example: !include api/examples/inventory/pathType-examle.json
+        
+  /validate/path:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Checks the path of a configuration item
+        description1: !include api/documentation/inventory/path.md
+        description2: !include api/documentation/inventory/objectType-required.md
+        description3: " "
+        description4: " "
+        description5: " "
+        schema: !include api/schemas/inventory/rename/request-filter-schema.json
+        example: !include api/examples/inventory/pathType-examle.json
         
   /validate/predicate:
     type: error
