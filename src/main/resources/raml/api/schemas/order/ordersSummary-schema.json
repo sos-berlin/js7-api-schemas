@@ -27,6 +27,9 @@
     },
     "failed": {
       "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "terminated": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
     }
   }
 }
