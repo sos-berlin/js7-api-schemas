@@ -4,7 +4,7 @@
 	"javaType": "com.sos.jobscheduler.model.jobclass.JobClassPublish",
 	"type": "object",
 	"extends": {
-		"javaType": "com.sos.joc.model.publish.JSObject"
+		"javaType": "com.sos.joc.model.publish.ControllerObject"
 	},
 	"properties": {
 		"content": {

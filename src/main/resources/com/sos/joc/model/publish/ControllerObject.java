@@ -17,7 +17,7 @@ import com.sos.joc.model.common.IDeployObject;
 
 
 /**
- * JS Object configuration
+ * Controller Object configuration
  * <p>
  * 
  * 
@@ -41,7 +41,7 @@ import com.sos.joc.model.common.IDeployObject;
 	@JsonSubTypes.Type(value = com.sos.jobscheduler.model.jobclass.JobClassPublish.class, name = "JobClass"),
 	@JsonSubTypes.Type(value = com.sos.jobscheduler.model.junction.JunctionPublish.class, name = "Junction"),
 	@JsonSubTypes.Type(value = com.sos.jobscheduler.model.lock.LockPublish.class, name = "Lock")})
-public class JSObject {
+public class ControllerObject {
 
     /**
      * non negative long
@@ -197,10 +197,10 @@ public class JSObject {
         if (other == this) {
             return true;
         }
-        if ((other instanceof JSObject) == false) {
+        if ((other instanceof ControllerObject) == false) {
             return false;
         }
-        JSObject rhs = ((JSObject) other);
+        ControllerObject rhs = ((ControllerObject) other);
         return new EqualsBuilder().appendSuper(super.equals(other)).append(id, rhs.id).append(account, rhs.account).append(path, rhs.path)
                 .append(objectType, rhs.objectType).append(content, rhs.content).append(signedContent, rhs.signedContent).append(version, rhs.version)
                 .append(commitId, rhs.commitId).append(comment, rhs.comment).append(modified, rhs.modified).isEquals();

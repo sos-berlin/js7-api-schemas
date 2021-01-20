@@ -4,7 +4,7 @@
 	"javaType": "com.sos.jobscheduler.model.workflow.WorkflowPublish",
 	"type": "object",
 	"extends": {
-		"javaType": "com.sos.joc.model.publish.JSObject"
+		"javaType": "com.sos.joc.model.publish.ControllerObject"
 	},
 	"properties": {
 		"content": {
