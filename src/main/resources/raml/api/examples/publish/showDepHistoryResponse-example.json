@@ -1,0 +1,19 @@
+{
+    "deliveryDate": "2021-01-21T08:05:27.301Z",
+    "depHistory": [
+        {
+            "account": "root",
+            "commitId": "57e43906-61fb-4bea-ba2d-09a9d1012124",
+            "controllerId": "js7-cluster",
+            "deployType": "Workflow",
+            "deploymentDate": "2021-01-20T15:42:12Z",
+            "deploymentId": 2098,
+            "errorMessage": "JSON DecodingFailure at .path: WorkflowPath must be an absolute path, not: test_wf",
+            "folder": "/_2021_01_18",
+            "invConfigurationId": 234,
+            "operation": "UPDATE",
+            "path": "/_2021_01_18/test_wf",
+            "state": "NOT_DEPLOYED"
+        }
+    ]
+}
