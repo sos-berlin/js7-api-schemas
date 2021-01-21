@@ -1,0 +1,17 @@
+{
+  "title": "calendarImportFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.calendar.CalendarImportFilter",
+  "type": "object",
+  "properties": {
+    "calendars": {
+      "type": "array",
+      "items": {
+        "$ref": "calendar-schema.json"
+      }
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

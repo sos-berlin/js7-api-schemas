@@ -1,0 +1,21 @@
+{
+  "title": "calendars",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.calendar.Calendars",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "calendars"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "calendars": {
+      "type": "array",
+      "items": {
+        "$ref": "calendar-schema.json"
+      }
+    }
+  }
+}

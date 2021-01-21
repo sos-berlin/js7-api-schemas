@@ -1,0 +1,41 @@
+{
+  "title": "calendarDatesFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.calendar.CalendarDatesFilter",
+  "type": "object",
+  "description": "one of the fields: calendar, id or path is required.",
+  "anyOf": [
+        {
+            "required": [
+                "id"
+            ]
+        },
+        {
+            "required": [
+                "path"
+            ]
+        },
+        {
+            "required": [
+                "calendar"
+            ]
+        }
+  ],
+  "properties": {
+    "calendar": {
+      "$ref": "calendar-schema.json"
+    },
+    "id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "path": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "dateFrom": {
+      "$ref": "../common/date-schema.json"
+    },
+    "dateTo": {
+      "$ref": "../common/date-schema.json"
+    }
+  }
+}

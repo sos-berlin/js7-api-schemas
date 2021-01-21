@@ -1,0 +1,26 @@
+{
+  "title": "dates",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.calendar.Dates",
+  "type": "object",
+  "required": [
+    "dates"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "dates": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/date-schema.json"
+      }
+    },
+    "withExcludes": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/date-schema.json"
+      }
+    }
+  }
+}

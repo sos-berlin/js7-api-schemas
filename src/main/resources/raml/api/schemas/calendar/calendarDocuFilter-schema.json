@@ -1,0 +1,21 @@
+{
+  "title": "calendarDocuFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.calendar.CalendarDocuFilter",
+  "type": "object",
+  "required": [
+    "calendar",
+    "documentation"
+  ],
+  "properties": {
+    "calendar": {
+      "$ref": "../common/path-schema.json"
+    },
+    "documentation": {
+      "$ref": "../common/path-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}
