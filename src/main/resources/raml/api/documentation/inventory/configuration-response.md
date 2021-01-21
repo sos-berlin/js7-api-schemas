@@ -4,7 +4,7 @@
     * objectType
     * configuration (object item according)
     	* <a href="../../../../../controller/schemas/workflow/workflow-schema.json" target="workflow">Workflow JSON schema</a>
-    	* <a href="../../../../../controller/schemas/lock/lock-schema.json" target="jobclass">Lock JSON schema - IN PROGRESS</a>
+    	* <a href="../../../../../controller/schemas/lock/lock-schema.json" target="jobclass">Lock JSON schema</a>
     	* <a href="../../../../../controller/schemas/jobclass/jobClass-schema.json" target="jobclass">JobClass JSON schema - IN PROGRESS</a>
     	* <a href="../../../../../controller/schemas/junction/junction-schema.json" target="junction">Junction JSON schema - IN PROGRESS</a>
     	* <a href="../../../../../controller/schemas/job/job-schema.json" target="job">Job JSON schema</a>
