@@ -31,6 +31,9 @@
     "state" : {
       "$ref": "../common/string255-schema.json"
     },
+    "errorMessage" : {
+      "type": "string"
+    },
     "deploymentDate": {
       "type": "string",
       "format": "date-time"
