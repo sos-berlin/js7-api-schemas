@@ -14,6 +14,12 @@
                 "path",
                 "objectType"
             ]
+        },
+        {
+            "required": [
+                "name",
+                "objectType"
+            ]
         }
     ],
 	"properties": {
@@ -22,6 +28,9 @@
 		},
 		"path": {
 			"$ref": "../../common/path-schema.json"
+		},
+		"name": {
+			"$ref": "../../common/string255-schema.json"
 		},
 		"objectType": {
 			"$ref": "../common/configurationType-schema.json"
