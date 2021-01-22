@@ -21,7 +21,6 @@ schemas:
   - jsRegister: !include api/schemas/jobscheduler/registerParam-schema.json
   - taskFilter: !include api/schemas/job/taskFilter-schema.json
   - orderHistoryFilter: !include api/schemas/order/orderHistoryFilter-schema.json
-  - addOrders: !include api/schemas/order/addOrders-schema.json
   - orderIds: !include api/schemas/order/orderIds-schema.json
   - modifyOrders: !include api/schemas/order/modifyOrders-schema.json
   - modifyCalendars: !include api/schemas/calendar/calendarsFilter-schema.json
@@ -768,6 +767,25 @@ traits:
           description200: " "
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanModifyOrder-schema.json
           schema200: ok
+          example: " "
+          example200: " "
+    /relativedates:
+      type:
+        postJSON:
+          description: To convert a relative date like +1d to a date yyyy-mm-dd
+          description1: !include api/documentation/dailyplan/relativeDates.md
+          description2:  
+          description3:  
+          description4: 
+          description5: 
+          description6: 
+          description7: 
+          description9: 
+          description10: 
+          audit:  
+          description200: " "
+          schema: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
+          schema200: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
           example: " "
           example200: " "
   /submissions:

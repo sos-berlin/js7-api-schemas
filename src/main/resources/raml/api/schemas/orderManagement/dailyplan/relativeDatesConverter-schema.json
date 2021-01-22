@@ -5,6 +5,9 @@
 	"type": "object",
 	"description": "To convert a relative date like +1d to a date yyyy-mm-dd",
 	"properties": {
+    	"timeZone": {
+      		"$ref": "../../common/timezone-schema.json"
+    	},
  		"relativDates": {
 			"type": "array",
 			"items": {
