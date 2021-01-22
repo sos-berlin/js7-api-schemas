@@ -1,0 +1,22 @@
+{
+	"title": "Daily Plan Relative Dates Converter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.RelativeDatesConverter",
+	"type": "object",
+	"description": "To convert a relative date like +1d to a date yyyy-mm-dd",
+	"properties": {
+ 		"relativDates": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+ 		"absoluteDates": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		} 
+	}
+}
+ 
