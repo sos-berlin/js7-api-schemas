@@ -1,0 +1,26 @@
+{
+  "title": "agent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.agent.AgentRef",
+  "type": "object",
+  "required": [
+    "id",
+    "uri"
+  ],
+  
+  "properties": {
+    "id": {
+      "$ref": "../../../api/schemas/common/string255-schema.json"
+    },
+    "uri": {
+      "$ref": "../../../api/schemas/common/string255-schema.json"
+    },
+    "maxProcesses": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

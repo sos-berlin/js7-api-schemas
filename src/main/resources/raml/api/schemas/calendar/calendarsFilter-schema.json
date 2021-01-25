@@ -20,7 +20,7 @@
       "$ref": "../common/compactParam-schema.json"
     },
     "type": {
-      "$ref": "../inventory/common/calendarType-schema.json"
+      "$ref": "../../../inventory/schemas/calendar/calendarType-schema.json"
     },
     "regex": {
       "$ref": "../common/regexFilter-schema.json"

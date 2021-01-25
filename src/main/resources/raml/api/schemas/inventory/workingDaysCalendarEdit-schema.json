@@ -8,7 +8,7 @@
 	},
 	"properties": {
 		"configuration": {
-			"$ref": "../calendar/calendar-schema.json"
+			"$ref": "../../../inventory/schemas/calendar/calendar-schema.json"
 		}
 	}
 }

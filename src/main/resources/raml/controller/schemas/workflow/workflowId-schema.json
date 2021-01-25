@@ -1,0 +1,18 @@
+{
+  "title": "workflowId",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.WorkflowId",
+  "type": "object",
+  "required": [
+	"path"
+  ],
+  "properties": {
+    "path": {
+	  "$ref": "../../../api/schemas/common/string255-schema.json"
+	},
+	"versionId": {
+	  "$ref": "../../../api/schemas/common/string255-schema.json"
+	}
+  },
+  "additionalProperties": false
+}

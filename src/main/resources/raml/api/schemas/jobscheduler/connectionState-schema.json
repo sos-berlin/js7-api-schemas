@@ -1,7 +1,7 @@
 {
   "title": "connection state",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.jobscheduler.ConnectionState",
+  "javaType": "com.sos.joc.model.controller.ConnectionState",
   "type": "object",
   "required": [
     "severity",
@@ -13,7 +13,7 @@
       "type": "integer"
     },
     "_text": {
-      "javaType": "com.sos.joc.model.jobscheduler.ConnectionStateText",
+      "javaType": "com.sos.joc.model.controller.ConnectionStateText",
       "type": "string",
       "enum": [
         "established",

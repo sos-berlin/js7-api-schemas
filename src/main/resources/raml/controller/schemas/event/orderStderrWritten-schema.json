@@ -1,0 +1,18 @@
+{
+  "title": "OrderStderrWritten event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderStderrWritten",
+  "type": "object",
+  "required": [
+  	"chunk"
+  ],
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "properties": {
+    "chunk": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

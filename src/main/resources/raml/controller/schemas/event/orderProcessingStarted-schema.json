@@ -1,0 +1,10 @@
+{
+  "title": "OrderProcessingStarted event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderProcessingStarted",
+  "type": "object",
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "additionalProperties": false
+}

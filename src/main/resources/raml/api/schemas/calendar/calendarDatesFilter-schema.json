@@ -23,7 +23,7 @@
   ],
   "properties": {
     "calendar": {
-      "$ref": "calendar-schema.json"
+      "$ref": "../../../inventory/schemas/calendar/calendar-schema.json"
     },
     "id": {
       "$ref": "../common/nonNegativeLong-schema.json"

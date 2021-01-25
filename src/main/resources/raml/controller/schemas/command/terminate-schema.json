@@ -1,0 +1,36 @@
+{
+  "title": "terminate (and restart)",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.command.Terminate",
+  "type": "object",
+  "extends" : {
+    "javaType": "Command"
+  },
+  "propertyOrder": [
+    "TYPE",
+    "restart",
+    "clusterAction"
+  ],
+  "properties": {
+    "restart": {
+      "type": "boolean"
+    },
+    "clusterAction": {
+      "type": "object",
+      "javaType": "com.sos.controller.model.command.ClusterAction",
+      "properties": {
+        "TYPE": {
+          "type": "string",
+          "javaType": "com.sos.controller.model.command.ClusterActionType",
+          "enum": [
+            "Switchover",
+            "Failover"
+          ],
+          "default": "Switchover"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,28 @@
+{
+  "title": "delete lock",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.lock.DeleteLock",
+  "type": "object",
+  "javaInterfaces" : [
+    "com.sos.joc.model.common.IDeleteObject"
+  ],
+  "required": [
+    "id"
+  ],
+  "propertyOrder": [
+    "TYPE",
+    "id"
+  ],
+  
+  "description": "delete object with fixed property 'TYPE':'LockId'",
+  "properties": {
+    "TYPE": {
+      "$ref": "../common/deleteType-schema.json",
+      "default": "LockId" 
+    },
+    "id": {
+      "$ref": "../../../api/schemas/common/string255-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

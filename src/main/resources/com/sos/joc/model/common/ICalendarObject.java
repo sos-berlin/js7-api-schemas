@@ -1,6 +1,6 @@
 package com.sos.joc.model.common;
 
-import com.sos.joc.model.inventory.common.CalendarType;
+import com.sos.inventory.model.calendar.CalendarType;
 
 public interface ICalendarObject {
     

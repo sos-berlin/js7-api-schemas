@@ -1,0 +1,50 @@
+{
+	"title": "Super of Cancel or Suspend Order",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.command.CancelSuspendOrder",
+	"type": "object",
+	"extends": {
+		"javaType": "Command"
+	},
+	"required": [
+		"orderId"
+	],
+	"propertyOrder": [
+    	"TYPE",
+    	"orderIds",
+    	"mode"
+  	],
+  	"properties": {
+		"orderIds": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"mode": {
+			"type": "object",
+			"javaType": "com.sos.controller.model.order.OrderMode",
+			"properties": {
+				"TYPE": {
+					"$ref": "../order/orderModeType-schema.json"
+				},
+				"kill": {
+				  "type": "object",
+				  "properties": {
+				    "immediately": {
+				        "type": "boolean",
+				        "default": false
+				    },
+				    "position": {
+				        "$ref": "../common/position-schema.json"
+				    }
+				  },
+				  "additionalProperties": false
+				}
+			},
+			"default": "new com.sos.controller.model.order.OrderMode()",
+			"additionalProperties": false
+		}
+	},
+	"additionalProperties": false
+}

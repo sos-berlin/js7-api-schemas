@@ -1,0 +1,12 @@
+{
+  "title": "orderPayload",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.order.OrderPayload",
+  "type": "object",
+  "properties": {
+    "variables": {
+      "$ref": "../common/variables-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,16 @@
+{
+  "title": "CLuster Watcher",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "javaType": "com.sos.controller.model.cluster.ClusterWatcher",
+  "required": [
+    "uri"
+  ],
+  "properties": {
+  	"uri": {
+    	"type": "string",
+    	"format": "uri"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,28 @@
+{
+  "title": "delete junction",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.junction.DeleteJunction",
+  "type": "object",
+  "javaInterfaces" : [
+    "com.sos.joc.model.common.IDeleteObject"
+  ],
+  "required": [
+    "path"
+  ],
+  "propertyOrder": [
+    "TYPE",
+    "path"
+  ],
+  
+  "description": "delete object with fixed property 'TYPE':'JunctionPath'",
+  "properties": {
+    "TYPE": {
+      "$ref": "../common/deleteType-schema.json",
+      "default": "JunctionPath" 
+    },
+    "path": {
+      "$ref": "../../../api/schemas/common/string255-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

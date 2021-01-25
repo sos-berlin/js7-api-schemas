@@ -1,14 +1,14 @@
 {
 	"title": "JS Workflow Edit configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.jobscheduler.model.workflow.WorkflowEdit",
+	"javaType": "com.sos.joc.model.inventory.workflow.WorkflowEdit",
 	"type": "object",
 	"extends": {
 		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
 	},
 	"properties": {
 		"configuration": {
-			"$ref": "../../../controller/schemas/workflow/workflow-schema.json"
+			"$ref": "../../../inventory/schemas/workflow/workflow-schema.json"
 		}
 	}
 }

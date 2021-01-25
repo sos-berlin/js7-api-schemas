@@ -1,0 +1,19 @@
+{
+	"title": "event",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.event.Event",
+	"type": "object",
+	"required": [
+	  "TYPE",
+	  "eventId"
+	],
+	"properties": {
+		"TYPE": {
+		  "$ref": "eventType-schema.json"
+		},
+		"eventId": {
+		  "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

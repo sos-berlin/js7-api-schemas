@@ -1,7 +1,7 @@
 {
   "title": "jobscheduler with delivery date",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.jobscheduler.JobSchedulerP200",
+  "javaType": "com.sos.joc.model.controller.JobSchedulerP200",
   "type": "object",
   "required": [
     "deliveryDate",

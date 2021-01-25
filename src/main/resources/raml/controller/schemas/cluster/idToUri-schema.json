@@ -1,0 +1,9 @@
+{
+  "title": "IdToUri",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.cluster.IdToUri",
+  "type": "object",
+  "additionalProperties": {
+    "type": "string"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "title": "OrderItem",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.order.OrderItem",
+  "type": "object",
+    "properties": {
+		"id": {
+			"type": "string"
+		},
+		"arguments":{
+			"$ref": "../common/variables-schema.json"
+		},
+		"workflowPosition": {
+			"$ref": "../workflow/workflowPosition-schema.json"
+		},
+		"state": {
+			"$ref": "orderState-schema.json"
+		},
+		"attachedState": {
+			"$ref": "orderAttachedState-schema.json"
+		},
+		"historicOutcomes": {
+			"type": "array",
+  			"items": {
+				"$ref": "../workflow/historicOutcome-schema.json"
+			}
+		},
+		"isSuspended": {
+			"type": "boolean"
+		},
+        "removeWhenTerminated": {
+			"type": "boolean"
+		}
+	},
+  "additionalProperties": false
+}
+

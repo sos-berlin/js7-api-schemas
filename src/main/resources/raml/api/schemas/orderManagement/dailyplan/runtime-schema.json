@@ -14,7 +14,7 @@
     "periods": {
       "type": "array",
       "items": {
-        "$ref": "../../calendar/period-schema.json"
+        "$ref": "../../../../inventory/schemas/calendar/period-schema.json"
       }
     }
   }

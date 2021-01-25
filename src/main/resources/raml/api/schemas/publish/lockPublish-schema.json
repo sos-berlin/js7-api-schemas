@@ -1,14 +1,14 @@
 {
 	"title": "JS Lock Edit configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.jobscheduler.model.lock.LockPublish",
+	"javaType": "com.sos.joc.model.inventory.lock.LockPublish",
 	"type": "object",
 	"extends": {
 		"javaType": "com.sos.joc.model.publish.ControllerObject"
 	},
 	"properties": {
 		"content": {
-			"$ref": "../../../controller/schemas/lock/lock-schema.json"
+			"$ref": "../../../inventory/schemas/lock/lock-schema.json"
 		}
 	}
 }

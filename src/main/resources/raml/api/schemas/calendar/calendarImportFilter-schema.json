@@ -7,7 +7,7 @@
     "calendars": {
       "type": "array",
       "items": {
-        "$ref": "calendar-schema.json"
+        "$ref": "../../../inventory/schemas/calendar/calendar-schema.json"
       }
     },
     "auditLog": {

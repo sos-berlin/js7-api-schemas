@@ -1,0 +1,10 @@
+{
+  "title": "ClusterSwitchOver",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.command.ClusterSwitchOver",
+  "type": "object",
+  "extends" : {
+    "javaType": "Command"
+  },
+  "additionalProperties": false
+}

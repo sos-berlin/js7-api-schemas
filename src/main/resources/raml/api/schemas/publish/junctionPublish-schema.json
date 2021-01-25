@@ -1,14 +1,14 @@
 {
 	"title": "JS Junction Edit configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.jobscheduler.model.junction.JunctionPublish",
+	"javaType": "com.sos.joc.model.inventory.junction.JunctionPublish",
 	"type": "object",
 	"extends": {
 		"javaType": "com.sos.joc.model.publish.ControllerObject"
 	},
 	"properties": {
 		"content": {
-			"$ref": "../../../controller/schemas/junction/junction-schema.json"
+			"$ref": "../../../inventory/schemas/junction/junction-schema.json"
 		}
 	}
 }

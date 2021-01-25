@@ -1,7 +1,7 @@
 {
   "title": "component state",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.jobscheduler.ComponentState",
+  "javaType": "com.sos.joc.model.controller.ComponentState",
   "type": "object",
   "required": [
     "severity",
@@ -13,7 +13,7 @@
       "type": "integer"
     },
     "_text": {
-      "javaType": "com.sos.joc.model.jobscheduler.ComponentStateText",
+      "javaType": "com.sos.joc.model.controller.ComponentStateText",
       "type": "string",
       "enum": [
         "operational",

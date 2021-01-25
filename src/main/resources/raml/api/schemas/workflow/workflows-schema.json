@@ -13,7 +13,7 @@
     "workflows": {
       "type": "array",
       "items": {
-      	"$ref": "../../../controller/schemas/workflow/workflow-schema.json"
+      	"$ref": "../../../inventory/schemas/workflow/workflow-schema.json"
       }
     }
   },

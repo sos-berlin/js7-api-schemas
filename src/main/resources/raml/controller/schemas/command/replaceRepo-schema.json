@@ -1,0 +1,26 @@
+{
+	"title": "Replace Repository",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.command.ReplaceRepo",
+	"type": "object",
+	"extends": {
+		"javaType": "Command"
+	},
+	"propertyOrder": [
+    	"TYPE",
+    	"versionId",
+    	"objects"
+  	],
+	"properties": {
+		"versionId": {
+			"type": "string"
+		},
+		"objects": {
+			"type": "array",
+			"items": {
+			  "$ref": "../../../api/schemas/sign/signedObject-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}

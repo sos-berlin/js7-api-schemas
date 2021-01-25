@@ -15,7 +15,7 @@
 		},
 		"objectType": {
 			"type": "object",
-			"javaType": "com.sos.jobscheduler.model.deploy.DeployType"
+			"javaType": "com.sos.joc.model.inventory.deploy.DeployType"
 		},
     	"content": {
       		"type": "object",

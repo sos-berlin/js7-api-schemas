@@ -1,0 +1,22 @@
+{
+	"title": "ReleaseEvents",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.command.ReleaseEvents",
+	"type": "object",
+	"extends" : {
+		"javaType": "Command"
+	},
+	"required": [
+		"untilEventId"
+	],
+	"propertyOrder": [
+    	"TYPE",
+    	"untilEventId"
+  	],
+  	"properties": {
+		"untilEventId": {
+			"$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

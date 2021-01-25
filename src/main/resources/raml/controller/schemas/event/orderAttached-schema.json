@@ -1,0 +1,33 @@
+{
+  "title": "OrderAttached event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderAttached",
+  "type": "object",
+  "required": [
+  	"workflowPosition",
+  	"state",
+  	"parent",
+  	"agentId"
+  ],
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "properties": {
+    "workflowPosition": {
+      "$ref": "../workflow/workflowPosition-schema.json"
+    },
+    "state": {
+      "$ref": "../order/orderState-schema.json"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "agentName": {
+      "type": "string"
+    },
+    "payload": {
+      "$ref": "../order/orderPayload-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

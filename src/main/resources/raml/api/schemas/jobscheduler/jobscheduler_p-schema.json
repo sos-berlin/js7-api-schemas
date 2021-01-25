@@ -1,7 +1,7 @@
 {
   "title": "jobscheduler",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.jobscheduler.JobSchedulerP",
+  "javaType": "com.sos.joc.model.controller.JobSchedulerP",
   "type": "object",
   "required": [
         "id",

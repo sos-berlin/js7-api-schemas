@@ -1,0 +1,21 @@
+{
+  "title": "OrderJoined event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderJoined",
+  "type": "object",
+  "required": [
+  	"outcome"
+  ],
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "properties": {
+    "variablesDiff": {
+      "$ref": "../common/variablesDiff-schema.json"
+    },
+    "outcome": {
+      "$ref": "../common/outcome-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

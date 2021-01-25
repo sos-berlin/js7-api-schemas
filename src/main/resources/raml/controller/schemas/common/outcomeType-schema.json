@@ -1,0 +1,18 @@
+{
+  "title": "outcomeType",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.common.OutcomeType",
+  "type": "string",
+  "enum": [
+    "Succeeded",
+    "Failed",
+    "Disrupted",
+    "Cancelled"
+  ],
+  "javaEnumNames": [
+    "Succeeded",
+    "Failed",
+    "Disrupted",
+    "Cancelled"
+  ]
+}

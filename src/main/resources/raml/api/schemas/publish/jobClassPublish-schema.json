@@ -1,14 +1,14 @@
 {
 	"title": "JS JobClass configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.jobscheduler.model.jobclass.JobClassPublish",
+	"javaType": "com.sos.joc.model.inventory.jobclass.JobClassPublish",
 	"type": "object",
 	"extends": {
 		"javaType": "com.sos.joc.model.publish.ControllerObject"
 	},
 	"properties": {
 		"content": {
-			"$ref": "../../../controller/schemas/jobClass/jobClass-schema.json"
+			"$ref": "../../../inventory/schemas/jobClass/jobClass-schema.json"
 		}
 	}
 }

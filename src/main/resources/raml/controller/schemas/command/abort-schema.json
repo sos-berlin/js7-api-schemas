@@ -1,0 +1,19 @@
+{
+  "title": "abort (and restart)",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.command.Abort",
+  "type": "object",
+  "extends" : {
+    "javaType": "Command"
+  },
+  "propertyOrder": [
+    "TYPE",
+    "restart"
+  ],
+  "properties": {
+    "restart": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

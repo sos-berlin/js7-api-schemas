@@ -1,0 +1,21 @@
+{
+  "title": "OrderForked event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderForked",
+  "type": "object",
+  "required": [
+  	"children"
+  ],
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "properties": {
+    "children": {
+      "type": "array",
+      "items": {
+        "$ref": "../order/childOrder-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

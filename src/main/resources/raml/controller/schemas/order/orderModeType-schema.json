@@ -1,0 +1,12 @@
+{
+  "title": "orderModeType",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.order.OrderModeType",
+  "type": "string",
+  "description": "relevant for cancel or suspend order",
+  "enum": [
+    "FreshOnly",
+    "FreshOrStarted" 
+  ],
+  "default": "FreshOrStarted"
+}

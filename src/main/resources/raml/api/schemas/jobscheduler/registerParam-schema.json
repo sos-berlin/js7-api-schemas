@@ -1,7 +1,7 @@
 {
   "title": "register params",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.jobscheduler.RegisterParameters",
+  "javaType": "com.sos.joc.model.controller.RegisterParameters",
   "type": "object",
   "required": [
     "controllers"
@@ -16,7 +16,7 @@
       "maxItems": 2,
       "items": {
         "type" : "object",
-        "javaType": "com.sos.joc.model.jobscheduler.RegisterParameter",
+        "javaType": "com.sos.joc.model.controller.RegisterParameter",
         "required": [
           "url",
           "role"
@@ -35,7 +35,7 @@
             "$ref": "../common/uri-schema.json"
           },
           "role": {
-            "javaType": "com.sos.joc.model.jobscheduler.Role",
+            "javaType": "com.sos.joc.model.controller.Role",
             "type": "string",
             "enum": [
     	      "STANDALONE",

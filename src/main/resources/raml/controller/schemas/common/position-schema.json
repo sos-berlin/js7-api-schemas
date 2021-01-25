@@ -1,0 +1,12 @@
+{
+  "title": "position",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Actually, each even item is a string, each odd item is an integer",
+  "type": "array",
+  "items": {
+    "anyOf": [
+    	{"type": "integer"},
+    	{"type": "string"}
+    ]
+  }
+}

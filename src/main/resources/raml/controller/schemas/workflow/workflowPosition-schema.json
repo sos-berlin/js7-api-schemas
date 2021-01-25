@@ -1,0 +1,19 @@
+{
+  "title": "WorkflowPosition",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.WorkflowPosition",
+  "type": "object",
+  "required": [
+    "workflowId",
+    "position"
+  ],
+  "properties": {
+    "workflowId": {
+      "$ref": "workflowId-schema.json"
+    },
+    "position": {
+      "$ref": "../common/position-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

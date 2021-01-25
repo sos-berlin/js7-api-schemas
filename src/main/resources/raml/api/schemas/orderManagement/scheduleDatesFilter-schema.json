@@ -8,10 +8,10 @@
 	],
 	"properties": {
 		"calendars": {
-			"$ref": "../calendar/calendars-list-schema.json"
+			"$ref": "../../../inventory/schemas/calendar/calendars-list-schema.json"
 		},
 		"nonWorkingCalendars": {
-			"$ref": "../calendar/calendars-list-non-working-schema.json"
+			"$ref": "../../../inventory/schemas/calendar/calendars-list-non-working-schema.json"
 		},
     	"dateFrom": {
       		"$ref": "../common/date-schema.json"

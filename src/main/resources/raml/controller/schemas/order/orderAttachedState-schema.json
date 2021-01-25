@@ -1,0 +1,16 @@
+{
+	"title": "OrderAttachedState",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.order.OrderAttachedState",
+	"type": "object",
+	"properties": {
+		"TYPE": {
+			"description": "Attaching, Attached, ...",
+			"type": "string"
+		},
+		"agentName": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

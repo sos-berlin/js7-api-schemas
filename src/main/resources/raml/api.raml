@@ -21,6 +21,7 @@ schemas:
   - jsRegister: !include api/schemas/jobscheduler/registerParam-schema.json
   - taskFilter: !include api/schemas/job/taskFilter-schema.json
   - orderHistoryFilter: !include api/schemas/order/orderHistoryFilter-schema.json
+  - addOrders: !include api/schemas/order/addOrders-schema.json
   - orderIds: !include api/schemas/order/orderIds-schema.json
   - modifyOrders: !include api/schemas/order/modifyOrders-schema.json
   - modifyCalendars: !include api/schemas/calendar/calendarsFilter-schema.json
@@ -1943,7 +1944,7 @@ traits:
       description10: " "
       description200: Send singles starts or repeat intervals in UTC
       schema: !include api/schemas/orderManagement/scheduleDatesFilter-schema.json
-      schema200: !include api/schemas/calendar/period-schema.json
+      schema200: !include inventory/schemas/calendar/period-schema.json
       example: !include api/examples/orderManagement/runtime-example.json
       example200: !include api/examples/orderManagement/runtime200-example.json
 

@@ -1,0 +1,21 @@
+{
+  "title": "OrderAdded event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderAdded",
+  "type": "object",
+  "required": [
+  	"workflowId"
+  ],
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "properties": {
+    "workflowId": {
+      "$ref": "../workflow/workflowId-schema.json"
+    },
+    "variables": {
+      "$ref": "../common/variables-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

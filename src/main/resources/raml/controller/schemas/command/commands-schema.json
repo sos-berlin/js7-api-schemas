@@ -1,0 +1,23 @@
+{
+	"title": "commands",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.command.JSBatchCommands",
+	"type": "object",
+	"extends": {
+		"javaType": "Command"
+	},
+	"propertyOrder": [
+    	"TYPE",
+    	"commands"
+  	],
+  	"properties": {
+		"commands": {
+			"type": "array",
+			"items": {
+			    "javaType": "Command"
+			}
+		}
+	},
+	"additionalProperties": false
+}
+

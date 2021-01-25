@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import com.sos.jobscheduler.model.deploy.DeployType;
+import com.sos.inventory.model.deploy.DeployType;
 import com.sos.joc.model.common.IDeployObject;
 
 
@@ -37,10 +37,10 @@ import com.sos.joc.model.common.IDeployObject;
 })
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "objectType", visible = true)
 @JsonSubTypes({ 
-	@JsonSubTypes.Type(value = com.sos.jobscheduler.model.workflow.WorkflowPublish.class, name = "Workflow"),
-	@JsonSubTypes.Type(value = com.sos.jobscheduler.model.jobclass.JobClassPublish.class, name = "JobClass"),
-	@JsonSubTypes.Type(value = com.sos.jobscheduler.model.junction.JunctionPublish.class, name = "Junction"),
-	@JsonSubTypes.Type(value = com.sos.jobscheduler.model.lock.LockPublish.class, name = "Lock")})
+	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.workflow.WorkflowPublish.class, name = "Workflow"),
+	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobclass.JobClassPublish.class, name = "JobClass"),
+	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.junction.JunctionPublish.class, name = "Junction"),
+	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.lock.LockPublish.class, name = "Lock")})
 public class ControllerObject {
 
     /**

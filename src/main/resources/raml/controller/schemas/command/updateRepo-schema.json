@@ -1,0 +1,34 @@
+{
+	"title": "Update Repository",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.command.UpdateRepo",
+	"type": "object",
+	"extends": {
+		"javaType": "Command"
+	},
+	"propertyOrder": [
+    	"TYPE",
+    	"versionId",
+    	"change",
+    	"delete"
+  	],
+	"properties": {
+		"versionId": {
+			"type": "string"
+		},
+		"change": {
+			"type": "array",
+			"items": {
+			  "$ref": "../../../api/schemas/sign/signedObject-schema.json"
+			}
+		},
+		"delete": {
+			"type": "array",
+			"items": {
+			  "javaType": "com.sos.joc.model.common.IDeployObject",
+			  "additionalProperties": false
+			}
+		}
+	},
+	"additionalProperties": false
+}

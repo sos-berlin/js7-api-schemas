@@ -1,0 +1,19 @@
+{
+	"title": "orderIdsList",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.order.OrderIdsList",
+	"type": "object",
+	"properties": {
+		"eventId": {
+			"type": "string"
+		},
+		"array": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		}
+	},
+	"additionalProperties": false
+}
+		 

@@ -1,0 +1,13 @@
+{
+  "title": "deleteType",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.inventory.model.deploy.DeleteType",
+  "type": "string",
+  "enum": [
+    "WorkflowPath",
+    "LockId",
+    "JobClassPath",
+    "JunctionPath"
+  ],
+  "default": "WorkflowPath"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "childOrder",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.order.ChildOrder",
+  "type": "object",
+  "required": [
+    "branchId",
+    "orderId"
+  ],
+  "properties": {
+    "branchId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "variablesDiff": {
+      "$ref": "../common/variablesDiff-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

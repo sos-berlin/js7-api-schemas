@@ -1,0 +1,16 @@
+{
+  "title": "OrderState",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.order.OrderState",
+  "type": "object",
+   "properties": {
+		"TYPE": {
+			"type": "string"
+		},
+		"scheduledFor": {
+			"$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+		}
+	},
+  "additionalProperties": false
+}
+ 

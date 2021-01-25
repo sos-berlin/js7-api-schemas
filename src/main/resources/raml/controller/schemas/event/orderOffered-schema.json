@@ -1,0 +1,21 @@
+{
+  "title": "OrderOffered event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderOffered",
+  "type": "object",
+  "required": [
+  	"orderId"
+  ],
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "properties": {
+    "orderId": {
+      "type": "string"
+    },
+    "until": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

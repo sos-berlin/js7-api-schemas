@@ -1,0 +1,58 @@
+{
+  "title": "overview",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.cluster.ClusterState",
+  "type": "object",
+  "required": [
+  	"TYPE"
+  ],
+  "properties": {
+    "TYPE": {
+      "javaType": "com.sos.controller.model.cluster.ClusterType",
+      "type": "string",
+      "enum": [
+        "Empty",
+        "NodesAppointed",
+        "PreparedToBeCoupled",
+        "Coupled",
+        "PassiveLost",
+        "SwitchedOver",
+        "FailedOver",
+        "ActiveShutDown" 
+      ]
+    },
+    "setting": {
+      "type": "object",
+      "javaType": "com.sos.controller.model.cluster.ClusterSetting",
+      "properties": {
+        "idToUri": {
+          "$ref": "idToUri-schema.json"
+        },
+        "activeId": {
+          "type": "string"
+        },
+        "clusterWatches": {
+          "type": "array",
+          "items": {
+        	"$ref": "clusterWatcher-schema.json"
+          }
+        },
+        "timing": {
+          "type": "object",
+      	  "javaType": "com.sos.controller.model.cluster.ClusterTiming",
+      	  "properties": {
+      	    "heartbeat": {
+      	      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+      	    },
+      	    "heartbeatTimeout": {
+      	      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+      	    }
+      	  },
+      	  "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

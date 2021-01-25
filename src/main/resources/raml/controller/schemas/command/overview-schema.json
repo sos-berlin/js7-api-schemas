@@ -1,0 +1,126 @@
+{
+  "title": "overview",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.command.Overview",
+  "type": "object",
+  "required": [
+  	"version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "buildId": {
+      "type": "string"
+    },
+    "startedAt": {
+      "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+    },
+    "totalRunningTime": {
+      "type": "number"
+    },
+    "orderCount": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "system": {
+      "type": "object",
+      "javaType": "com.sos.controller.model.command.overview.System",
+      "properties": {
+        "hostname": {
+          "type": "string"
+        },
+        "cpuModel": {
+          "type": "string"
+        },
+        "mxBeans": {
+          "type": "object",
+          "javaType": "com.sos.controller.model.command.overview.MxBeans",
+          "properties": {
+            "operatingSystem": {
+              "type": "object",
+              "javaType": "com.sos.controller.model.command.overview.CpuMemory",
+              "properties": {
+                "processCpuLoad": {
+                  "type": "number"
+                },
+                "availableProcessors": {
+                  "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+                },
+                "freePhysicalMemorySize": {
+                  "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+                },
+                "systemCpuLoad": {
+                  "type": "number"
+                },
+                "systemLoadAverage": {
+                  "type": "number"
+                },
+                "committedVirtualMemorySize": {
+                  "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+                },
+                "totalPhysicalMemorySize": {
+                  "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "java": {
+      "type": "object",
+      "javaType": "com.sos.controller.model.command.overview.Java",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "systemProperties": {
+          "type": "object",
+          "javaType": "com.sos.controller.model.command.overview.SystemProperties",
+          "properties": {
+            "java.vendor": {
+              "type": "string"
+            },
+            "os.arch": {
+              "type": "string"
+            },
+            "os.version": {
+              "type": "string"
+            },
+            "os.name": {
+              "type": "string"
+            },
+            "java.version": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "memory": {
+          "type": "object",
+          "javaType": "com.sos.controller.model.command.overview.JavaMemory",
+          "properties": {
+            "maximum": {
+              "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+            },
+            "total": {
+              "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+            },
+            "free": {
+              "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

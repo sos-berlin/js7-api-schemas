@@ -1,7 +1,7 @@
 {
   "title": "url params",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.jobscheduler.UrlParameter",
+  "javaType": "com.sos.joc.model.controller.UrlParameter",
   "type": "object",
   "required": [
     "controllerId"

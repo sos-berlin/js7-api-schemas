@@ -1,0 +1,20 @@
+{
+  "title": "changes of key-value pairs",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.common.VariablesDiff",
+  "type": "object",
+  "properties": {
+    "changed": {
+      "$ref": "../common/variables-schema.json"
+    },
+    "deleted" : {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": {
+    "type": "string"
+  }
+}

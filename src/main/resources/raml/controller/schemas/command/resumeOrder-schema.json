@@ -1,0 +1,30 @@
+{
+	"title": "Resume Order",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.command.ResumeOrder",
+	"type": "object",
+	"extends": {
+		"javaType": "Command"
+	},
+	"required": [
+		"orderId"
+	],
+	"propertyOrder": [
+    	"TYPE",
+    	"orderId",
+    	"position",
+    	"arguments"
+  	],
+  	"properties": {
+		"orderId": {
+			"type": "string"
+		},
+		"position": {
+	        "$ref": "../common/position-schema.json"
+		},
+		"arguments": {
+	        "$ref": "../common/variables-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

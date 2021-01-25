@@ -1,0 +1,19 @@
+{
+  "title": "outcome",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.common.Outcome",
+  "type": "object",
+  "properties": {
+  	"required": [
+  		"TYPE"
+  	],
+  	"TYPE": {
+  		"description": "Succeeded or Failed",
+  		"$ref": "outcomeType-schema.json"
+  	},
+  	"namedValues": {
+  		"$ref": "variables-schema.json"
+  	}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,37 @@
+{
+    "title": "ClusterAppointNodes",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.controller.model.command.ClusterAppointNodes",
+    "type": "object",
+    "extends" : {
+    	"javaType": "Command"
+    },
+    "required": [
+  		"TYPE",
+    	"idToUri",
+    	"activeId",
+    	"clusterWatches"
+    ],
+	"propertyOrder": [
+    	"TYPE",
+    	"idToUri",
+    	"activeId",
+    	"clusterWatches"
+  	],
+	"properties": {
+		"idToUri": {
+			"$ref": "../cluster/idToUri-schema.json"
+		},
+		"activeId": {
+			"type": "string"
+		},
+		"clusterWatches": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+        	"$ref": "../cluster/clusterWatcher-schema.json"
+          }
+        }
+	},
+	"additionalProperties": false
+}

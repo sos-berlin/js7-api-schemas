@@ -1,0 +1,28 @@
+{
+  "title": "delete workflow",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.DeleteWorkflow",
+  "type": "object",
+  "javaInterfaces" : [
+    "com.sos.joc.model.common.IDeleteObject"
+  ],
+  "required": [
+    "path"
+  ],
+  "propertyOrder": [
+    "TYPE",
+    "path"
+  ],
+  
+  "description": "delete object with fixed property 'TYPE':'WorkflowPath'",
+  "properties": {
+    "TYPE": {
+      "$ref": "../common/deleteType-schema.json",
+      "default": "WorkflowPath" 
+    },
+    "path": {
+      "$ref": "../../../api/schemas/common/string255-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

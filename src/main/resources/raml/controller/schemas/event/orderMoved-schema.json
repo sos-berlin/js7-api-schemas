@@ -1,0 +1,18 @@
+{
+  "title": "OrderMoved event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderMoved",
+  "type": "object",
+  "required": [
+  	"to"
+  ],
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "properties": {
+    "to": {
+      "$ref": "../common/position-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

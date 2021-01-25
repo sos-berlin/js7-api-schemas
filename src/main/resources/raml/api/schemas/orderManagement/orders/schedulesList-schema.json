@@ -11,7 +11,7 @@
     "schedules": {
       "type": "array",
       "items": {
-        "$ref": "schedule-schema.json"
+        "$ref": "../../../../inventory/schemas/schedule/schedule-schema.json"
       }
     }
   }

@@ -8,7 +8,7 @@
 	},
 	"properties": {
 		"configuration": {
-			"$ref": "../orderManagement/orders/schedule-schema.json"
+			"$ref": "../../../inventory/schemas/schedule/schedule-schema.json"
 		}
 	}
 }

@@ -87,7 +87,7 @@
             </goals>
             <inherited>false</inherited>
             <configuration>
-              <outputDirectory>${project.basedir}/src/main/resources</outputDirectory>
+              <outputDirectory>${project.basedir}/target/main/resources</outputDirectory>
               <resources>
                 <resource>
                   <directory>${project.basedir}/src/templates</directory>

@@ -1,0 +1,18 @@
+{
+  "title": "OrderTransferredToAgent event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.event.OrderTransferredToAgent",
+  "type": "object",
+  "required": [
+  	"agentId"
+  ],
+  "extends" : {
+    "$ref": "event-schema.json"
+  },
+  "properties": {
+    "agentName": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

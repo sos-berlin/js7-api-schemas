@@ -1,7 +1,7 @@
 {
   "title": "jobscheduler custom event for YADE",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.jobscheduler.model.event.YadeEvent",
+  "javaType": "com.sos.joc.model.event.YadeEvent",
   "type": "object",
   "properties": {
     "TYPE": {
@@ -16,7 +16,7 @@
       "type": "string"
     },
     "variables": {
-      "javaType": "com.sos.jobscheduler.model.event.YadeVariables",
+      "javaType": "com.sos.joc.model.event.YadeVariables",
       "type": "object",
       "properties": {
         "transferId": {
