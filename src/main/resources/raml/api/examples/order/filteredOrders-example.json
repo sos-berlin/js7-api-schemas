@@ -2,15 +2,15 @@
   "controllerId":"scheduler",
   "orders": [
     {
-      "workflowPath": "/test/chain1",
+      "workflowPath": "chain1",
       "orderId": "foo1"
     },
     {
-      "workflowPath": "/test/chain1",
+      "workflowPath": "chain1",
       "orderId": "foo2"
     },
     {
-      "workflowPath": "/test/chain2"
+      "workflowPath": "chain2"
     }
   ]
 }
