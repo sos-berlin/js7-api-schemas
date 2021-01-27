@@ -1,0 +1,14 @@
+{
+  "title": "delivers path of an inventory object by name and object type",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.path.PathResponse",
+  "type": "object",
+  "properties": {
+    "path": {
+      "$ref": "../../common/string255-schema.json"
+    },
+    "deliveryDate": {
+        "$ref": "../../common/timestamp-schema.json"
+    }
+  }
+}

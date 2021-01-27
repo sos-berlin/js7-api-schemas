@@ -1145,6 +1145,25 @@ traits:
         schema: !include api/schemas/publish/importFilter-schema.json
         example: !include api/examples/publish/publishImport-example.json
 
+  /path:
+    type:
+      postJSONWithoutJSId:
+        description: Delivers the path of an object, specified by its name and object type
+        description1: !include api/documentation/inventory/pathFilter.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/path/pathFilter-schema.json
+        example: !include api/examples/inventory/pathFilter-example.json
+        schema200: !include api/schemas/inventory/path/pathResponse-schema.json
+        example200: !include api/examples/inventory/pathResponse-example.json
   /read/configuration:
     type:
       postJSONWithoutJSId:

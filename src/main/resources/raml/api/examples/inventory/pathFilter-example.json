@@ -1,0 +1,5 @@
+{
+  "name" : "test_wf",
+  "objectType" : "WORKFLOW",
+  "useDrafts" : true
+}
