@@ -5,7 +5,7 @@
 	"javaType": "com.sos.joc.model.dailyplan.PlannedOrderItem",
 	"required": [
 		"surveyDate",
-		"workflow",
+		"workflowPath",
 		"orderId",
 		"plannedStartTime",
 		"expectedEndTime",

@@ -11,6 +11,18 @@
 				"type": "string"
 			}
 		},
+		"scheduleNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/javaString255-schema.json"
+			}
+		},
+		"workflowNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/javaString255-schema.json"
+			}
+		},
 		"schedulePaths": {
 			"type": "array",
 			"items": {

@@ -3,7 +3,6 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.dailyplan.PlannedOrdersFilter",
 	"type": "object",
-	 
 	"properties": {
 		"controllerId": {
 			"type": "string"
@@ -50,6 +49,18 @@
 			"type": "array",
 			"items": {
 				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"scheduleNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/javaString255-schema.json"
+			}
+		},
+		"workflowNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/javaString255-schema.json"
 			}
 		},
 		"orderId": {
