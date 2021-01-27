@@ -2,7 +2,7 @@
 	"title": "dailyPlanSubmissionHistoryItem",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"type": "object",
-	"javaType": "com.sos.joc.model.dailyplan.DailyPlanSubmissionHistoryItem",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanSubmissionsItem",
 	"properties": {
 		"controllerId": {
 			"$ref": "../../common/path-schema.json"

@@ -770,25 +770,6 @@ traits:
           schema200: ok
           example: " "
           example200: " "
-    /relativedates:
-      type:
-        postJSON:
-          description: To convert a relative date like +1d to a date yyyy-mm-dd
-          description1: !include api/documentation/dailyplan/relativeDates.md
-          description2:  
-          description3:  
-          description4: 
-          description5: 
-          description6: 
-          description7: 
-          description9: 
-          description10: 
-          audit:  
-          description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
-          schema200: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
-          example: " "
-          example200: " "
   /submissions:
      type:
       postJSON:
@@ -2084,6 +2065,30 @@ traits:
 #      schema200: !include api/schemas/tree/treeView-schema.json
 #      example: !include api/examples/tree/filteredtree-example.json
 #      example200: !include api/examples/tree/tree-example.json
+
+/utilities:
+  /convert_relative_dates:
+    type:
+      postJSONWithoutJSId:
+        description: To convert a relative date like +1d to a date yyyy-mm-dd
+        description1: !include api/documentation/dailyplan/relativeDates.md
+        description2:  
+        description3:  
+        description4: 
+        description5: 
+        description6: 
+        description7: 
+        description9: 
+        description10: 
+        audit:  
+        description200: " "
+        schema: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
+        schema200: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
+        example: " "
+        example200: " "
+
+
+
 
 /workflow:
   type:

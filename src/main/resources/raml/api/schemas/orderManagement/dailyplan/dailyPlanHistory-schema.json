@@ -1,7 +1,7 @@
 {
   "title": "dailyPlanSubmissionHistory",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.dailyplan.DailyPlanSubmissionHistory",
+  "javaType": "com.sos.joc.model.dailyplan.DailyPlanHistory",
   "type": "object",
   "required": [
     "deliveryDate",
@@ -11,10 +11,10 @@
     "deliveryDate": {
       "$ref": "../../common/timestamp-schema.json"
     },
-    "submissionHistoryItems": {
+    "dailyPlanHistoryItems": {
       "type": "array",
       "items": {
-        "$ref": "dailyPlanSubmissionHistoryItem-schema.json"
+        "$ref": "dailyPlanHistoryItem-schema.json"
       }
     }
   }

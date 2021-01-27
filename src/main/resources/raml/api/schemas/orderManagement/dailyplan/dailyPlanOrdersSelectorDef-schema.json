@@ -19,6 +19,18 @@
 			"items": {
 				"$ref": "../../common/string255-schema.json"
 			}
+		},
+		"scheduleNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/javaString255-schema.json"
+			}
+		},
+		"workflowNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/javaString255-schema.json"
+			}
 		}
 	}
 }
