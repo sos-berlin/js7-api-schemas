@@ -46,7 +46,7 @@
 		},
 		"returnCode": {
 			"type": "number",
-	        "format": "utc-millisec"
+			"format": "utc-millisec"
 		},
 		"error": {
 			"type": "object",
@@ -62,6 +62,37 @@
 				},
 				"errorText": {
 					"type": "string"
+				}
+			}
+		},
+		"lock": {
+			"type": "object",
+			"required": [
+				"lockId",
+				"limit"
+			],
+			"properties": {
+				"lockId": {
+					"type": "string"
+				},
+				"limit": {
+					"type": "integer",
+					"minimum": 0,
+					"default": 1
+				},
+				"count": {
+					"type": "integer"
+				},
+				"lockState": {
+					"type": "object",
+					"properties": {
+						"orderIds": {
+							"type": "string"
+						},
+						"queuedOrderIds": {
+							"type": "string"
+						}
+					}
 				}
 			}
 		}

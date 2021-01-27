@@ -8,7 +8,7 @@
   ],
   "properties": {
     "workflowPath": {
-		"$ref": "../common/path-schema.json"
+		"$ref": "../common/string255-schema.json"
 	},
     "orderId": {
       "description": "if orderId undefined or empty then all orders of specified workflow are requested",

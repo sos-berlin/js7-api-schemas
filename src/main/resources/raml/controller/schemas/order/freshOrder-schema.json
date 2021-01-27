@@ -12,7 +12,7 @@
       "type": "string"
     },
     "workflowPath": {
-      "$ref": "../../../api/schemas/common/path-schema.json"
+      "$ref": "../../../api/schemas/common/string255-schema.json"
     },
     "scheduledFor": {
       "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"

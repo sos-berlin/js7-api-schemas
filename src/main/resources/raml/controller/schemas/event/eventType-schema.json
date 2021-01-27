@@ -34,7 +34,10 @@
 		"OrderSuspendMarked",
 		"OrderBroken",
 		"OrderCancelled",
-		"OrderFinished"
+		"OrderFinished",
+		"OrderLockAcquired",
+		"OrderLockQueued",
+		"OrderLockReleased"
 	],
 	"javaEnumNames": [
 		"VersionAdded",
@@ -67,6 +70,9 @@
 		"OrderSuspendMarked",
 		"OrderBroken",
 		"OrderCancelled",
-		"OrderFinished"
+		"OrderFinished",
+		"OrderLockAcquired",
+		"OrderLockQueued",
+		"OrderLockReleased"
 	]
 }
