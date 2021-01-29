@@ -1,0 +1,12 @@
+{
+  "title": "orderHistory state text",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.dailyplan.DailyPlanHistoryCategories",
+  "type": "string",
+  "enum": [
+    "SUBMITTED",
+    "CANCELED",
+    "ERROR",
+    "WARN"
+  ]
+}

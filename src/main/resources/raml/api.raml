@@ -692,84 +692,105 @@ traits:
         schema200: !include api/schemas/orderManagement/dailyplan/plannedOrders-schema.json
         example: " "
         example200: " "
-    /generate:
-      type:
-        postJSON:
-          description: Generates orders for a given daily plan 
-          description1: !include api/documentation/dailyplan/generate/dailyPlanOrdersSelectorDef.md
-          description2: !include api/documentation/dailyplan/dailyPlanDate.md
-          description3: !include api/documentation/dailyplan/generate/schedules.md
-          description4: !include api/documentation/dailyplan/generate/folders.md
-          description5: !include api/documentation/dailyplan/generate/workflowPaths.md
-          description6: !include api/documentation/dailyplan/generate/controllerIds.md
-          description7: !include api/documentation/dailyplan/generate/overwrite.md
-          description8: !include api/documentation/dailyplan/generate/withSubmit.md
-          description10: !include api/documentation/audit/auditLog.md
-          audit: !include api/documentation/audit/auditLog.md
-          description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersSelector-schema.json
-          schema200: ok
-          example: " "
-          example200: " "
-    /submit:
-      type:
-        postJSON:
-          description: Submit planned orders for a given daily plan. The orders to be submitted will be read with the given filter.
-          description1: !include api/documentation/dailyplan/submit/dailyPlanOrdersFilterDef.md
-          description2: !include api/documentation/dailyplan/dailyPlanDate.md
-          description3: !include api/documentation/dailyplan/orders/schedules.md
-          description4: !include api/documentation/dailyplan/orders/folders.md
-          description5: !include api/documentation/dailyplan/orders/workflowPaths.md
-          description6: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
-          description7: !include api/documentation/dailyplan/submit/controllerIds.md
-          description8: !include api/documentation/dailyplan/orders/orderIds.md
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          audit: !include api/documentation/audit/auditLog.md
-          description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
-          schema200: ok
-          example: " "
-          example200: " "
-    /delete:
-      type:
-        postJSON:
-          description: Delete planned orders for a given daily plan 
-          description1: !include api/documentation/dailyplan/delete/dailyPlanOrdersFilterDef.md
-          description2: !include api/documentation/dailyplan/dailyPlanDate.md
-          description3: !include api/documentation/dailyplan/orders/schedules.md
-          description4: !include api/documentation/dailyplan/orders/folders.md
-          description5: !include api/documentation/dailyplan/orders/workflowPaths.md
-          description6: !include api/documentation/dailyplan/orders/late.md
-          description7: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
-          description8: !include api/documentation/dailyplan/orders/controllerIds.md
-          description9: !include api/documentation/dailyplan/orders/orderIds.md
-          description10: !include api/documentation/audit/auditLog.md
-          audit: !include api/documentation/audit/auditLog.md
-          description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
-          schema200: ok
-          example: " "
-          example200: " "
-    /modify:
-      type:
-        postJSON:
-          description: Modify orders for the daily plan 
-          description1: !include api/documentation/dailyplan/modify/startTime.md
-          description2: !include api/documentation/dailyplan/modify/variables.md
-          description3: !include api/documentation/dailyplan/orders/orderIds.md
-          description4: 
-          description5: 
-          description6: 
-          description7: 
-          description9: 
-          description10: 
-          audit: !include api/documentation/audit/auditLog.md
-          description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanModifyOrder-schema.json
-          schema200: ok
-          example: " "
-          example200: " "
+  /generate:
+    type:
+      postJSON:
+        description: Generates orders for a given daily plan 
+        description1: !include api/documentation/dailyplan/generate/dailyPlanOrdersSelectorDef.md
+        description2: !include api/documentation/dailyplan/dailyPlanDate.md
+        description3: !include api/documentation/dailyplan/generate/schedules.md
+        description4: !include api/documentation/dailyplan/generate/folders.md
+        description5: !include api/documentation/dailyplan/generate/workflowPaths.md
+        description6: !include api/documentation/dailyplan/generate/controllerIds.md
+        description7: !include api/documentation/dailyplan/generate/overwrite.md
+        description8: !include api/documentation/dailyplan/generate/withSubmit.md
+        description10: !include api/documentation/audit/auditLog.md
+        audit: !include api/documentation/audit/auditLog.md
+        description200: " "
+        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersSelector-schema.json
+        schema200: ok
+        example: " "
+        example200: " "
+  /submit:
+    type:
+      postJSON:
+        description: Submit planned orders for a given daily plan. The orders to be submitted will be read with the given filter.
+        description1: !include api/documentation/dailyplan/submit/dailyPlanOrdersFilterDef.md
+        description2: !include api/documentation/dailyplan/dailyPlanDate.md
+        description3: !include api/documentation/dailyplan/orders/schedules.md
+        description4: !include api/documentation/dailyplan/orders/folders.md
+        description5: !include api/documentation/dailyplan/orders/workflowPaths.md
+        description6: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
+        description7: !include api/documentation/dailyplan/submit/controllerIds.md
+        description8: !include api/documentation/dailyplan/orders/orderIds.md
+        description9: !include api/documentation/audit/auditLog.md
+        description10: " "
+        audit: !include api/documentation/audit/auditLog.md
+        description200: " "
+        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
+        schema200: ok
+        example: " "
+        example200: " "
+  /delete:
+    type:
+      postJSON:
+        description: Delete planned orders for a given daily plan 
+        description1: !include api/documentation/dailyplan/delete/dailyPlanOrdersFilterDef.md
+        description2: !include api/documentation/dailyplan/dailyPlanDate.md
+        description3: !include api/documentation/dailyplan/orders/schedules.md
+        description4: !include api/documentation/dailyplan/orders/folders.md
+        description5: !include api/documentation/dailyplan/orders/workflowPaths.md
+        description6: !include api/documentation/dailyplan/orders/late.md
+        description7: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
+        description8: !include api/documentation/dailyplan/orders/controllerIds.md
+        description9: !include api/documentation/dailyplan/orders/orderIds.md
+        description10: !include api/documentation/audit/auditLog.md
+        audit: !include api/documentation/audit/auditLog.md
+        description200: " "
+        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
+        schema200: ok
+        example: " "
+        example200: " "
+  /history:
+    type:
+      postJSON:
+        description: Lists daily plan history entries grouped by daily plan date and submission time
+        description1: !include api/documentation/dailyplan/history/dailyPlanHistoryFilterDef.md
+        description2: !include api/documentation/dailyplan/history/dateFrom.md
+        description3: !include api/documentation/dailyplan/history/dateTo.md
+        description5: !include api/documentation/dailyplan/history/timeZone.md
+        description4: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/orderManagement/dailyplan/dailyplanHistoryFilter-schema.json
+        schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanHistory-schema.json 
+        example: " "
+        example200: " "
+                  
+  /modify:
+    type:
+      postJSON:
+        description: Modify orders for the daily plan 
+        description1: !include api/documentation/dailyplan/modify/startTime.md
+        description2: !include api/documentation/dailyplan/modify/variables.md
+        description3: !include api/documentation/dailyplan/orders/orderIds.md
+        description4: 
+        description5: 
+        description6: 
+        description7: 
+        description9: 
+        description10: 
+        audit: !include api/documentation/audit/auditLog.md
+        description200: " "
+        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanModifyOrder-schema.json
+        schema200: ok
+        example: " "
+        example200: " "
+  
   /submissions:
      type:
       postJSON:
@@ -785,11 +806,11 @@ traits:
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/orderManagement/dailyplan/dailyplanSubmissionHistoryFilter-schema.json
-        schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanSubmissionHistory-schema.json 
+        schema: !include api/schemas/orderManagement/dailyplan/dailyplanSubmissionsFilter-schema.json
+        schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanSubmissions-schema.json 
         example: " "
         example200: " "
-        
+                
 #/documentation:
 #  description: |
 #    This is not an API call. Use its children!!

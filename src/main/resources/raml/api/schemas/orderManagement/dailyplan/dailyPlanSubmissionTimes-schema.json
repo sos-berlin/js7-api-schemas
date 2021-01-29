@@ -1,0 +1,35 @@
+{
+	"title": "dailyPlanSubmissionTimes",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanSubmissionTimes",
+	"properties": {
+		"submissionTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"submittedOrders": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"canceledOrders": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"warnMessages": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"errorMessages": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}
