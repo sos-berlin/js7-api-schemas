@@ -14,9 +14,6 @@
     "BLOCKED",
     "CANCELLED",
     "FINISHED",
-    "RESUMED",
-    "SUSPENDMARKED",
-    "RESUMEMARKED",
     "BROKEN",
     "CALLING",
     "UNKNOWN"
