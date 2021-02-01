@@ -18,6 +18,9 @@
      "fileTransfers": false
   },
   "securityLevel": "LOW",
+  "jocVersion": "2.0.0",
+  "apiVersion": "2.0.0",
+  "inventoryVersion": "1.0.0",
   "defaultProfileAccount": "root",
   "title": "My primary JOC"
 }

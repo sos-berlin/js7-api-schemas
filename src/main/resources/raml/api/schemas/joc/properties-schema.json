@@ -9,7 +9,10 @@
     "comments",
     "showViews",
     "securityLevel",
-    "defaultProfileAccount"
+    "defaultProfileAccount",
+    "apiVersion",
+    "inventoryVersion",
+    "jocVersion"
   ],
   "properties": {
     "deliveryDate": {
@@ -22,6 +25,15 @@
       "$ref": "../common/jocSecurityLevel-schema.json"
     },
     "defaultProfileAccount": {
+      "type": "string"
+    },
+    "apiVersion": {
+      "type": "string"
+    },
+    "inventoryVersion": {
+      "type": "string"
+    },
+    "jocVersion": {
       "type": "string"
     },
     "forceCommentsForAuditLog": {
