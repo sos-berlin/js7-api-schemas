@@ -1570,95 +1570,45 @@ traits:
         schema200: !include api/schemas/joc/properties-schema.json
         example200: !include api/examples/joc/properties-example.json
 
-#/lock:
-#  description: |
-#    This is not an API call. Use its children!!
-#  /configuration:
-#    type:
-#      postJSON:
-#        description: !include api/documentation/common/configuration.md
-#        description1: include documentation/lock/lockRequired.md
-#        description2: !include api/documentation/common/configurationFileMimeParam.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: Returns the lock configuration in XML or HTML format
-#        schema: !include api/schemas/lock/lockConfigurationFilter-schema.json
-#        schema200: !include api/schemas/common/configuration-schema.json
-#        example: !include api/examples/lock/filteredLock-example.json
-#        example200: !include api/examples/lock/configuration-example.json
-#  /documentation:
-#    get:
-#    type:
-#      postDocu:
-#        description: Show documentation
-#        jsObjectParam: lock
-#        jsObject: Lock
-#    /assign:
-#      type:
-#        postDocuWithOkResponse:
-#          description: Assigns a Documentation to the Lock
-#          description1: !include api/documentation/docu/docPath.md
-#          description2: " "
-#          description3: !include api/documentation/lock/lockRequired.md
-#          description4: " "
-#          schema: !include api/schemas/lock/lockDocuFilter-schema.json
-#          example: TODO
-#          audit: !include api/documentation/audit/auditLog.md
-#    /unassign:
-#      type:
-#        postDocuWithOkResponse:
-#          description: Unassigns a Documentation of the Lock
-#          description1: " "
-#          description2: " "
-#          description3: !include api/documentation/lock/lockRequired.md
-#          description4: " "
-#          schema: !include api/schemas/lock/lockDocuFilter-schema.json
-#          example: TODO
-#          audit: !include api/documentation/audit/auditLog.md
-#/locks:
-#  type:
-#    postJSON:
-#      description: Collection of lock objects
-#      description1: !include api/documentation/lock/filteredByLocks.md
-#      description2: !include api/documentation/common/regex.md
-#      description3: !include api/documentation/common/folders.md
-#      description4: " "
-#      description5: " "
-#      description6: " "
-#      description7: " "
-#      description8: " "
-#      description9: " "
-#      description10: " "
-#      description200: TODO
-#      schema: !include api/schemas/lock/locksFilter-schema.json
-#      schema200: !include api/schemas/lock/locks_v-schema.json
-#      example: TODO
-#      example200: !include api/examples/lock/locks_v-example.json
-#  /p:
-#    type:
-#      postJSON:
-#        description: Collection of lock objects
-#        description1: !include api/documentation/lock/filteredByLocks.md
-#        description2: !include api/documentation/common/regex.md
-#        description3: !include api/documentation/common/folders.md
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: !include api/documentation/lock/locks_p.md
-#        schema: !include api/schemas/lock/locksFilter-schema.json
-#        schema200: !include api/schemas/lock/locks_p-schema.json
-#        example: TODO
-#        example200: !include api/examples/lock/locks_p-example.json
+/lock:
+  type:
+    postJSON:
+      description: Returns a deployed lock
+      description1: " "
+      description2: " "
+      description3: !include api/documentation/lock/lockPath.md
+      description4: " "
+      description5: " "
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: TODO
+      schema: !include api/schemas/lock/lockFilter-schema.json
+      schema200: !include api/schemas/lock/lock-schema.json
+      example: TODO
+      example200: TODO
+
+/locks:
+  type:
+    postJSON:
+      description: Returns the deployed locks
+      description1: " "
+      description2: " "
+      description3: !include api/documentation/common/folders.md
+      description4: !include api/documentation/lock/lockPaths.md
+      description5: " "
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: TODO
+      schema: !include api/schemas/lock/locksFilter-schema.json
+      schema200: !include api/schemas/lock/locks-schema.json
+      example: TODO
+      example200: TODO      
 
 /order:
   type:
