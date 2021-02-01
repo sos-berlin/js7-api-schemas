@@ -5,7 +5,7 @@
 	"type": "object",
 	"required": [
 		"controllerId",
-		"lockId"
+		"lockPath"
 	],
 	"properties": {
 		"controllerId": {
