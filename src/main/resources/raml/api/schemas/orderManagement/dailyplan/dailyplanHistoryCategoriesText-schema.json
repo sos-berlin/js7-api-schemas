@@ -5,6 +5,7 @@
   "type": "string",
   "enum": [
     "SUBMITTED",
+    "NOT-SUBMITTED",
     "CANCELED",
     "ERROR",
     "WARN"

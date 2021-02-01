@@ -811,6 +811,26 @@ traits:
         example: " "
         example200: " "
                 
+  /submissions/delete:
+     type:
+      postJSON:
+        description: Deletes submissions of daily plans 
+        description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
+        description2: !include api/documentation/dailyplan/submissions/dateFrom.md
+        description3: !include api/documentation/dailyplan/submissions/dateTo.md
+        description5: !include api/documentation/dailyplan/submissions/controllerIds.md
+        description4: !include api/documentation/dailyplan/submissions/timeZone.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/orderManagement/dailyplan/dailyplanSubmissionsFilter-schema.json
+        schema200: ok
+        example: " "
+        example200: " "
+                
 #/documentation:
 #  description: |
 #    This is not an API call. Use its children!!

@@ -9,7 +9,8 @@
 			"type": "string"
 		},
 		"filter": {
-			"$ref": "dailyPlanSubmissionsFilterDef-schema.json"
+			"$ref": "dailyPlanHistoryFilterDef-schema.json"
+			
 		},	
 		"timeZone": {
 			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
