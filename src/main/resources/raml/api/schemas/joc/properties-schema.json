@@ -33,9 +33,6 @@
     "inventoryVersion": {
       "type": "string"
     },
-    "jocVersion": {
-      "type": "string"
-    },
     "forceCommentsForAuditLog": {
       "type": "boolean",
       "default": false
