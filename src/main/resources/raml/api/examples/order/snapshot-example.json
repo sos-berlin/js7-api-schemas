@@ -7,7 +7,9 @@
     "inProgress": 0,
     "suspended": 1,
     "waiting": 1,
+    "calling": 0,
     "failed": 0,
-    "blocked": 0
+    "blocked": 0,
+    "terminated": 0
   }
 }

@@ -1,9 +1,8 @@
 type: error
 post:
   description: |
-    <h2>Register Controller objects for collecting events</h2>
-    <p>Events can be sent for multiple Controller.
-    The request remains open until a requested event has been received or a timeout of ~6min is reached.
+    <h2>Collects events</h2>
+    <p>The request remains open until a requested event has been received or a timeout of ~3min is reached.
     Only one ./event request should be active per browser tab.
     </p>
     ___
@@ -19,18 +18,11 @@ post:
     <thead>
     <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
     </thead><tbody>
-    <tr><td>``controllers``</td><td>required, array</td>
-    <td>This collection contains a required ``controllerId`` and its objects of interest<br/>
-    The first item of the collection has to be the current controllerId.</td>
-    <td> [{
-      <div style="padding-left:10px;">"controllerId":"scheduler",</div>
-      <div style="padding-left:10px;">"eventId":1480088631000000,</div>
-      <!-- div style="padding-left:10px;">"objects":[{...objects...}]</div -->
-      }]</td><td></td></tr>
-    <tr><td style="padding-left:20px;">``eventId``</td><td>optional, string</td>
-    <td>Every response contains for each Controller a new eventId for the next call.<br/>
+    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>scheduler</td><td></td></tr>
+    <tr><td>``eventId``</td><td>optional, string</td>
+    <td>The response contains a new eventId for the next call.<br/>
     If the eventId is empty then the web service calculates the eventId.</td>
-    <td>"eventId":"1480088631000000"</td><td>Milliseconds of current timestamp * 1000</td></tr>
+    <td>"eventId":"1612225325"</td><td>Seconds of current timestamp</td></tr>
     </tbody></table>
   body:
     application/json:

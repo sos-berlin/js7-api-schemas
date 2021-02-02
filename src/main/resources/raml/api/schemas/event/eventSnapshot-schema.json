@@ -4,22 +4,15 @@
   "javaType": "com.sos.joc.model.event.EventSnapshot",
   "type": "object",
   "required": [
-    "eventId",
     "eventType",
     "objectType"
   ],
   "properties": {
-    "eventId": {
-      "description": "eventId/1000=milliseconds of UTC time",
-      "type": "number",
-      "format":"utc-millisec",
-      "minimum": 0
-    },
     "path": {
       "$ref": "../common/path-schema.json"
     },
     "eventType": {
-      "description": "e.g. OrderStateChanged, OrderAdded, OrderTerminated, JOCStateChanged, ControllerStateChanged, WorkflowStateChanged, JobStateChanged",
+      "description": "e.g. JOCStateChanged, ControllerStateChanged, WorkflowStateChanged, JobStateChanged, InventoryUpdated",
       "type": "string"
     },
     "objectType": {
