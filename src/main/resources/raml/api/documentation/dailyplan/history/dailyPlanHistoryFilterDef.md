@@ -18,6 +18,9 @@ dateTo
 <li>
 haveMessage
 </li>
+<li>
+categories
+</li>
    
 </ul> 
 
