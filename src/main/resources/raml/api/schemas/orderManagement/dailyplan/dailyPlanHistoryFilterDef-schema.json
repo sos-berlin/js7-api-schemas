@@ -5,9 +5,8 @@
 	"type": "object",
 	"description": "Define the filter To get the daily plan history",
 	"properties": {
-		"notSubmitted": {
-			"type": "boolean",
-			"default": "false"
+		"submitted": {
+			"type": "boolean"
 		},
 		"dateFrom": {
 			"type": "string",
