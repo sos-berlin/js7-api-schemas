@@ -12,7 +12,7 @@
 			"$ref": "../../common/timestamp-schema.json"
 		},
 		"variables": {
-			"$ref": "../../common/nameValuePairs-schema.json"
+			"$ref": "../../../../inventory/schemas/common/nameValuePairs-schema.json"
 		},
 		"orderIds": {
 			"type": "array",
