@@ -1,0 +1,19 @@
+{
+	"title": "lock order",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.lock.common.LockOrder",
+	"type": "object",
+	"required": [
+		"lock",
+		"order"
+	],
+	"properties": {
+		"lock": {
+			"$ref": "workflowLock-schema.json"
+		},
+		"order": {
+			"$ref": "../../order/order_v-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

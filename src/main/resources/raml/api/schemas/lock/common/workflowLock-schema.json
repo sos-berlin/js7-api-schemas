@@ -1,0 +1,22 @@
+{
+	"title": "lock in a workflow",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.lock.common.WorkflowLock",
+	"type": "object",
+	"required": [
+		"id",
+		"type"
+	],
+	"properties": {
+		"id": {
+			"$ref": "../../../../inventory/schemas/common/string255-schema.json"
+		},
+		"type": {
+			"$ref": "workflowLockType-schema.json"
+		},
+		"count": {
+			"$ref": "../../../../inventory/schemas/common/nonNegativeInteger-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

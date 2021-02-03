@@ -1,0 +1,33 @@
+{
+	"title": "lock entry",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.lock.common.LockEntry",
+	"type": "object",
+	"required": [
+		"lock",
+		"acquiredLockCount",
+		"ordersHoldingLocksCount",
+		"ordersWaitingForLocksCount"
+	],
+	"properties": {
+		"lock": {
+			"$ref": "../../../../inventory/schemas/lock/lock-schema.json"
+		},
+		"acquiredLockCount": {
+			"$ref": "../../../../inventory/schemas/common/nonNegativeInteger-schema.json"
+		},
+		"ordersHoldingLocksCount": {
+			"$ref": "../../../../inventory/schemas/common/nonNegativeInteger-schema.json"
+		},
+		"ordersWaitingForLocksCount": {
+			"$ref": "../../../../inventory/schemas/common/nonNegativeInteger-schema.json"
+		},
+		"workflows": {
+			"type": "array",
+			"items": {
+				"$ref": "lockWorkflow-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}
