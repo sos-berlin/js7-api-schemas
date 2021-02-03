@@ -1,5 +1,5 @@
 {
-	"title": "workflow",
+	"title": "lock response",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.lock.Lock",
 	"type": "object",
@@ -11,7 +11,7 @@
 			"$ref": "../common/timestamp-schema.json"
 		},
 		"lock": {
-			"$ref": "../../../inventory/schemas/lock/lock-schema.json"
+			"$ref": "common/lockEntry-schema.json"
 		}
 	},
 	"additionalProperties": false

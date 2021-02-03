@@ -1,0 +1,12 @@
+{
+	"title": "lock type",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.lock.common.WorkflowLockType",
+	"type": "string",
+	"enum": [
+		"EXCLUSIVE",
+		"SHARED",
+		"UNKNOWN"
+	]
+}
+

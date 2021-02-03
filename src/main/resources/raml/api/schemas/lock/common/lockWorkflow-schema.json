@@ -1,0 +1,31 @@
+{
+	"title": "lock workflow",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.lock.common.LockWorkflow",
+	"type": "object",
+	"required": [
+		"path",
+		"versionId"
+	],
+	"properties": {
+		"path": {
+			"$ref": "../../../../inventory/schemas/common/string255-schema.json"
+		},
+		"versionId": {
+			"$ref": "../../../../inventory/schemas/common/string255-schema.json"
+		},
+		"ordersHoldingLocks": {
+			"type": "array",
+			"items": {
+				"$ref": "lockOrder-schema.json"
+			}
+		},
+		"ordersWaitingForLocks": {
+			"type": "array",
+			"items": {
+				"$ref": "lockOrder-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}
