@@ -7,13 +7,7 @@
 		"submissionTime": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
-		"submittedOrders": {
-			"type": "array",
-			"items": {
-				"type": "string"
-			}
-		},
-		"canceledOrders": {
+		"orderIds": {
 			"type": "array",
 			"items": {
 				"type": "string"

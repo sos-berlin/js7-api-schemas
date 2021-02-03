@@ -16,10 +16,7 @@ dateFrom
 dateTo
 </li>
 <li>
-haveMessage
-</li>
-<li>
-categories
+notSubmitted
 </li>
    
 </ul> 
