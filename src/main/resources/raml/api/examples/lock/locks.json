@@ -1,0 +1,89 @@
+{
+	"deliveryDate": "2021-02-03T15:51:58.274+0000",
+	"locks": [
+		{
+			"lock": {
+				"TYPE": "Lock",
+				"id": "my_lock_1",
+				"limit": 1,
+				"path": "/my_lock_1",
+				"title": "my_lock_1 title"
+			},
+			"acquiredLockCount": 0,
+			"ordersHoldingLocksCount": 0,
+			"ordersWaitingForLocksCount": 0,
+			"workflows": []
+		},
+		{
+			"lock": {
+				"TYPE": "Lock",
+				"id": "my_lock_2",
+				"limit": 10,
+				"path": "/my_lock_2",
+				"title": ""
+			},
+			"acquiredLockCount": 10,
+			"ordersHoldingLocksCount": 1,
+			"ordersWaitingForLocksCount": 1,
+			"workflows": [
+				{
+					"path": "/my_workflow",
+					"versionId": "6c877a23-eca6-443f-a8c1-4f925aa6999f",
+					"ordersHoldingLocks": [
+						{
+							"lock": {
+								"id": "my_lock_2",
+								"type": "SHARED",
+								"count": 10
+							},
+							"order": {
+								"orderId": "#2021-02-03#T367510249-x",
+								"workflowId": {
+									"path": "/my_workflow",
+									"versionId": "6c877a23-eca6-443f-a8c1-4f925aa6999f"
+								},
+								"state": {
+									"severity": 0,
+									"_text": "RUNNING"
+								},
+								"attachedState": {
+									"TYPE": "Attached"
+								},
+								"agentId": "agent",
+								"position": [
+									0,
+									"lock",
+									0
+								],
+								"historicOutcome": []
+							}
+						}
+					],
+					"ordersWaitingForLocks": [
+						{
+							"lock": {
+								"id": "my_lock_2",
+								"type": "UNKNOWN"
+							},
+							"order": {
+								"orderId": "#2021-02-03#T367514933-xx",
+								"workflowId": {
+									"path": "/my_workflow",
+									"versionId": "6c877a23-eca6-443f-a8c1-4f925aa6999f"
+								},
+								"state": {
+									"severity": 8,
+									"_text": "WAITING"
+								},
+								"position": [
+									0
+								],
+								"historicOutcome": []
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
