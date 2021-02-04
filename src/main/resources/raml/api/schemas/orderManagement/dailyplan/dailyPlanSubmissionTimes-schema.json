@@ -10,7 +10,7 @@
 		"orderIds": {
 			"type": "array",
 			"items": {
-				"type": "string"
+			"$ref": "dailyplanHistoryOrderItem-schema.json"
 			}
 		},
 		"warnMessages": {

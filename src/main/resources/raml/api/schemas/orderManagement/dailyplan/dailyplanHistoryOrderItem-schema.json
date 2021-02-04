@@ -1,0 +1,20 @@
+{
+	"title": "DailyplanHistoryOrderItem",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.dailyplan.DailyplanHistoryOrderItem",
+	"properties": {
+		"scheduledFor": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"workflowPath": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"orderId": {
+			"type": "string"
+		},
+		"submitted": {
+			"type": "boolean"
+		}
+	}
+}
