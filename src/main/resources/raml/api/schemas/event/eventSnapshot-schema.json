@@ -11,6 +11,9 @@
     "path": {
       "$ref": "../common/path-schema.json"
     },
+    "eventId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
     "eventType": {
       "description": "e.g. JOCStateChanged, ControllerStateChanged, WorkflowStateChanged, JobStateChanged, InventoryUpdated",
       "type": "string"
