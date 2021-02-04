@@ -1,10 +1,7 @@
-<tr><td>``variables``</td>
-	
-<td>optional, Array</td>
-<td> 
-An array with name value pairs for the variables for the order. 	
-<td>"variables":[{"name":"y","value":"333"},{"name":"x","value":"222"}]</td>
-	
-<td></td>
-	
-</tr>
+<tr><td>``variables``</td><td>optional, object</td><td> 
+An object with key-value pairs for the order. The value can be a string, number or boolean.	
+<td><pre>"variables":{
+  "myString": "stringValue",
+  "myNumber": 3.14,
+  "myBoolean": true
+}</pre></td><td></td></tr>
