@@ -27,7 +27,7 @@
 			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"path": {
-			"$ref": "../../common/path-schema.json"
+			"$ref": "../../common/string255-schema.json"
 		},
 		"name": {
 			"$ref": "../../common/string255-schema.json"
