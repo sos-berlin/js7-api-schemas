@@ -15,5 +15,6 @@ It depends on the parameter ``compact``.<br/>
     	* returnCode
     	* keyValues
     * scheduledFor
+    * requirements if state is PENDING, BLOCKED or SUSPENDED
 * The detailed view has the following optional fields in addition to the compact view
 	* historicOutcome

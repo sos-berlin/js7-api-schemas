@@ -48,6 +48,9 @@
   			"items": {
 				"$ref": "../../../controller/schemas/workflow/historicOutcome-schema.json"
 			}
+    },
+    "requirements": {
+      	"$ref": "../../../inventory/schemas/workflow/orderRequirements-schema.json"
     }
   }
 }
