@@ -1,0 +1,16 @@
+{
+  "title": "workflow",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.Workflow",
+  "type": "object",
+  "extends" : {
+    "$ref": "../../../inventory/schemas/workflow/workflow-schema.json"
+  },
+  "properties": {
+    "isCurrentVersion": {
+      "type": "boolean",
+      "default": true 
+    }
+  },
+  "additionalProperties": false
+}
