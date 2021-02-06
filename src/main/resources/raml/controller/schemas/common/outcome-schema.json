@@ -12,7 +12,7 @@
   		"$ref": "outcomeType-schema.json"
   	},
   	"namedValues": {
-  		"$ref": "variables-schema.json"
+  		"$ref": "../../../inventory/schemas/common/variables-schema.json"
   	}
   },
   "additionalProperties": false

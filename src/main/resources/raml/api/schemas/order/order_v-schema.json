@@ -19,7 +19,7 @@
         "$ref": "../common/string255-schema.json"
     },
     "arguments":{
-		"$ref": "../../../controller/schemas/common/variables-schema.json"
+		"$ref": "../../../inventory/schemas/common/variables-schema.json"
 	},
 	"workflowId": {
 		"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"

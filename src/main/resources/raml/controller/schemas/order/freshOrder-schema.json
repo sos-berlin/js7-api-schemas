@@ -18,7 +18,7 @@
       "$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
     },
     "arguments": {
-      "$ref": "../common/variables-schema.json"
+      "$ref": "../../../inventory/schemas/common/variables-schema.json"
     }
   },
   "additionalProperties": false

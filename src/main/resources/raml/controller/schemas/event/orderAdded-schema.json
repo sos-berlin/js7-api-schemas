@@ -14,7 +14,7 @@
       "$ref": "../workflow/workflowId-schema.json"
     },
     "variables": {
-      "$ref": "../common/variables-schema.json"
+      "$ref": "../../../inventory/schemas/common/variables-schema.json"
     }
   },
   "additionalProperties": false

@@ -8,7 +8,7 @@
 			"type": "string"
 		},
 		"arguments":{
-			"$ref": "../common/variables-schema.json"
+			"$ref": "../../../inventory/schemas/common/variables-schema.json"
 		},
 		"workflowPosition": {
 			"$ref": "../workflow/workflowPosition-schema.json"

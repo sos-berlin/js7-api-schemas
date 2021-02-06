@@ -5,7 +5,7 @@
   "type": "object",
   "properties": {
     "changed": {
-      "$ref": "../common/variables-schema.json"
+      "$ref": "../../../inventory/schemas/common/variables-schema.json"
     },
     "deleted" : {
       "type": "array",

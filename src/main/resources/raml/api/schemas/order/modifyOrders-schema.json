@@ -34,7 +34,7 @@
       "$ref": "../../../controller/schemas/common/position-schema.json"
     },
     "arguments": {
-      "$ref": "../../../controller/schemas/common/variables-schema.json"
+      "$ref": "../../../inventory/schemas/common/variables-schema.json"
     },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"

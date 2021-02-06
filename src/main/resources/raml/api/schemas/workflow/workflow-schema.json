@@ -11,7 +11,7 @@
       "$ref": "../common/timestamp-schema.json"
     },
     "workflow": {
-      "$ref": "../../../inventory/schemas/workflow/workflow-schema.json"
+      "$ref": "../../../controller/schemas/workflow/workflow-schema.json"
     }
   },
   "additionalProperties": false
