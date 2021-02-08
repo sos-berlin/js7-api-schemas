@@ -1,0 +1,18 @@
+{
+  "title": "JOC PGP Key Type, based on the Security Level of JOC Cockpit",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.common.VariableType",
+  "type": "integer",
+  "enum": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "javaEnumNames": [
+    "STRING",
+    "BOOLEAN",
+    "INTEGER",
+    "DOUBLE"
+  ]
+}
