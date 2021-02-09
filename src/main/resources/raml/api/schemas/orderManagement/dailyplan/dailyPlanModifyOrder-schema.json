@@ -6,7 +6,7 @@
 	"description": "To change the starttime of given order",
 	"properties": {
 		"controllerId": {
-			"type": "string"
+			"$ref": "../../common/filename100-schema.json"
 		},
 		"startTime": {
 			"$ref": "../../common/timestamp-schema.json"

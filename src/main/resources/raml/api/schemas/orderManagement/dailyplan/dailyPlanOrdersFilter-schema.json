@@ -7,7 +7,7 @@
 	
 	"properties": {
 		"controllerId": {
-			"type": "string"
+			"$ref": "../../common/filename100-schema.json"
 		},
 		"overwrite": {
 			"$ref": "overwriteParam-schema.json"

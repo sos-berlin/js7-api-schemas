@@ -5,7 +5,7 @@
 	"type": "object",
 	"properties": {
 		"controllerId": {
-			"type": "string"
+			"$ref": "../../common/filename100-schema.json"
 		},
 		"calendarId": {
 			"$ref": "../../common/nonNegativeLong-schema.json"
@@ -29,12 +29,10 @@
 			"$ref": "withSubmitParam-schema.json"
 		},
 		"dailyPlanDate": {
-			"type": "string",
-			"pattern": "^(0|([0-9]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(,\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+			"$ref": "../../common/dateFromTo-schema.json"
 		},
 		"timeZone": {
-			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-			"type": "string"
+			"$ref": "../../common/timezone-schema.json"
 		},
 		"folders": {
 			"$ref": "../../common/folders-schema.json"
@@ -54,13 +52,13 @@
 		"scheduleNames": {
 			"type": "array",
 			"items": {
-				"$ref": "../../common/javaString255-schema.json"
+				"$ref": "../../common/string255-schema.json"
 			}
 		},
 		"workflowNames": {
 			"type": "array",
 			"items": {
-				"$ref": "../../common/javaString255-schema.json"
+				"$ref": "../../common/string255-schema.json"
 			}
 		},
 		"orderId": {
