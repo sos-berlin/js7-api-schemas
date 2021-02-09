@@ -4,8 +4,7 @@
   "javaType": "com.sos.joc.model.dailyplan.DailyPlanHistory",
   "type": "object",
   "required": [
-    "deliveryDate",
-    "planItems"
+    "dailyPlans"
   ],
   "properties": {
     "deliveryDate": {
