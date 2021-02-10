@@ -5,7 +5,7 @@
 	"javaType": "com.sos.joc.model.dailyplan.DailyPlanHistoryItem",
 	"properties": {
 		"controllerId": {
-			"$ref": "../../common/path-schema.json"
+			"$ref": "../../common/filename100-schema.json"
 		},
 		"dailyPlanDate": {
 			"$ref": "../../common/timestamp-schema.json"

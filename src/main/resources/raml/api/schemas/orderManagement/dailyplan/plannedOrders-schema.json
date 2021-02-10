@@ -5,7 +5,7 @@
   "type": "object",
   "required": [
     "deliveryDate",
-    "planItems"
+    "plannedOrderItems"
   ],
   "properties": {
     "deliveryDate": {

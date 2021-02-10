@@ -9,17 +9,15 @@
 			"type": "boolean"
 		},
 		"dateFrom": {
-			"type": "string",
-			"pattern": "^(0|([0-9-]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(,\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+			"$ref": "../../common/dateFromTo-schema.json"
 		},
 		"dateTo": {
-			"type": "string",
-			"pattern": "^(0|([0-9-]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(,\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+			"$ref": "../../common/dateFromTo-schema.json"
 		},
 		"controllerIds": {
 			"type": "array",
 			"items": {
-				"type": "string"
+				"$ref": "../../common/filename100-schema.json"
 			}
 		}
 	}

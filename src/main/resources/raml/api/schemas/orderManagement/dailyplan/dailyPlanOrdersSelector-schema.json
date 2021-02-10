@@ -7,7 +7,7 @@
 	
 	"properties": {
 		"controllerId": {
-			"type": "string"
+			"$ref": "../../common/filename100-schema.json"
 		},
 		"dailyPlanDate": {
 			"$ref": "../../common/date-schema.json"
@@ -21,7 +21,7 @@
 		"controllerIds": {
 			"type": "array",
 			"items": {
-				"type": "string"
+				"$ref": "../../common/filename100-schema.json"
 			}
 		},
 		"selector": {
