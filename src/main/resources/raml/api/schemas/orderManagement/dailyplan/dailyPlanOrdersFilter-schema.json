@@ -15,6 +15,9 @@
 		"withSubmit": {
 			"$ref": "withSubmitParam-schema.json"
 		},
+		"expandCycleOrders": {
+			"$ref": "expandCycleOrdersParam-schema.json"
+		},
 		"filter": {
 			"$ref": "dailyPlanOrdersFilterDef-schema.json"
 		},
