@@ -8,6 +8,13 @@
     <li>YYYY-MM-DDThh:mm:ss[.s][+01]</li>
   </ul>
 </li>
+<li>a time offset is optional
+  <ul>
+    <li>it can be also specify with the parameter ``timeZone``</li>
+    <li>if ``timeZone`` undefined then UTC is used</li>
+    <li>``timeZone`` affects only absolute dates</li>
+  </ul>
+</li>
 <li>a format for a time period in relative to the current time, e.g. 6h, 12h, 1d, 1w can specify in addition with a time offset 0 or digits followed by a letter are expected where the letter has to be:
   <ul>
     <li>s (seconds)</li>
@@ -17,12 +24,6 @@
     <li>w (weeks)</li>
     <li>M (months)</li>
     <li>y (years)</li>
-  </ul>
-</li>
-<li>a time offset is optional
-  <ul>
-    <li>it can be also specify with the parameter ``timeZone``</li>
-    <li>if ``timeZone`` undefined then UTC is used</li>
   </ul>
 </li>
 <li>The value 0 means the current time</li>
