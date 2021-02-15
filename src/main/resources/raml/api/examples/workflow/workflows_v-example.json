@@ -1,0 +1,130 @@
+{
+    "deliveryDate": "2021-02-15T15:17:44.585+0000",
+    "surveyDate": "2021-02-15T14:33:47.184+0000",
+    "workflows": [
+        {
+            "TYPE": "Workflow",
+            "isCurrentVersion": true,
+            "path": "/test/w2",
+            "versionId": "da98900e-21dd-4fae-b4da-6d21aefa5209",
+            "orderRequirements": {
+                "parameters": {
+                    "myString": {
+                        "type": "String"
+                    },
+                    "myString2": {
+                        "type": "String"
+                    },
+                    "myNumber": {
+                        "type": "Number",
+                        "default": 3.14
+                    }
+                }
+            },
+            "instructions": [
+                {
+                    "TYPE": "Execute.Named",
+                    "jobName": "job1",
+                    "label": "step1",
+                    "position": [
+                        0
+                    ]
+                },
+                {
+                    "TYPE": "Execute.Named",
+                    "jobName": "job1",
+                    "label": "step2",
+                    "position": [
+                        1
+                    ]
+                },
+                {
+                    "TYPE": "ImplicitEnd",
+                    "position": [
+                        2
+                    ]
+                }
+            ],
+            "jobs": {
+                "job1": {
+                    "agentId": "agent_primary",
+                    "executable": {
+                        "TYPE": "ScriptExecutable",
+                        "script": "echo \"A=$A\"\necho \"B=$B\"\necho \"C=$C\"\necho \"D=$D\"\necho \"E=$E\"\nsleep 20",
+                        "env": {
+                            "A": "$myString",
+                            "B": "$myNumber",
+                            "C": "'hello world'",
+                            "D": "$myString ++ ' and ' ++ $myString2",
+                            "E": "$myNumber + 1"
+                        },
+                        "v1Compatible": false
+                    },
+                    "taskLimit": 1
+                }
+            }
+        },
+        {
+            "TYPE": "Workflow",
+            "isCurrentVersion": false,
+            "path": "/test/w2",
+            "versionId": "a041dbdb-bc38-450e-ba29-262f2a035346",
+            "orderRequirements": {
+                "parameters": {
+                    "myString": {
+                        "type": "String"
+                    },
+                    "myString2": {
+                        "type": "String"
+                    },
+                    "myNumber": {
+                        "type": "Number",
+                        "default": 3.14
+                    }
+                }
+            },
+            "instructions": [
+                {
+                    "TYPE": "Execute.Named",
+                    "jobName": "job1",
+                    "label": "step1",
+                    "position": [
+                        0
+                    ]
+                },
+                {
+                    "TYPE": "Execute.Named",
+                    "jobName": "job1",
+                    "label": "step2",
+                    "position": [
+                        1
+                    ]
+                },
+                {
+                    "TYPE": "ImplicitEnd",
+                    "position": [
+                        2
+                    ]
+                }
+            ],
+            "jobs": {
+                "job1": {
+                    "agentId": "agent_primary",
+                    "executable": {
+                        "TYPE": "ScriptExecutable",
+                        "script": "echo \"A=$A\"\necho \"B=$B\"\necho \"C=$C\"\necho \"D=$D\"\necho \"E=$E\"\nsleep 30",
+                        "env": {
+                            "A": "$myString",
+                            "B": "$myNumber",
+                            "C": "'hello world'",
+                            "D": "$myString ++ ' and ' ++ $myString2",
+                            "E": "$myNumber + 1"
+                        },
+                        "v1Compatible": false
+                    },
+                    "taskLimit": 1
+                }
+            }
+        }
+    ]
+}

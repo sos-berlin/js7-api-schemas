@@ -1,6 +1,11 @@
 {
-	"deliveryDate": "2020-12-03T11:06:54.144Z",
-	"numOfJobs": 23,
-	"numOfWorkflows": 10,
-	"surveyDate": "2020-12-03T11:06:54.095Z"
+    "deliveryDate": "2021-02-15T13:19:32.655Z",
+    "numOfCalendars": 2,
+    "numOfFileWatches": 0,
+    "numOfJobs": 36,
+    "numOfJunctions": 0,
+    "numOfLocks": 1,
+    "numOfSchedules": 20,
+    "numOfWorkflows": 20,
+    "surveyDate": "2021-02-15T13:19:32.529Z"
 }

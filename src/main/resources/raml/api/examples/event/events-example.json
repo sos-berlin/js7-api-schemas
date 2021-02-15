@@ -1,0 +1,29 @@
+{
+	"controllerId": "testsuite",
+	"deliveryDate": "2021-02-15T13:35:12.296Z",
+	"eventId": 1613396110,
+	"eventSnapshots": [{
+		"eventType": "WorkflowStateChanged",
+		"objectType": "WORKFLOW",
+		"workflow": {
+			"path": "/test4/w2",
+			"versionId": "da98900e-21dd-4fae-b4da-6d21aefa5209"
+		}
+	},
+	{
+		"eventType": "HistoryTaskTerminated",
+		"objectType": "TASKHISTORY"
+	},
+	{
+		"eventType": "HistoryOrderTerminated",
+		"objectType": "ORDERHISTORY"
+	},
+	{
+		"eventType": "JobStateChanged",
+		"objectType": "JOB",
+		"workflow": {
+			"path": "/test4/w2",
+			"versionId": "da98900e-21dd-4fae-b4da-6d21aefa5209"
+		}
+	}]
+}

@@ -27,7 +27,11 @@ post:
   body:
     application/json:
       schema: <<schema>>
-      example: <<example>>
+      example: |
+          {
+            "controllerId":"myController",
+            "eventId":1613396090
+          }
   responses:
     200:
       description: <<description200>>
