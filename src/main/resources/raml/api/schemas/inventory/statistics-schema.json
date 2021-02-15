@@ -19,6 +19,21 @@
     },
     "numOfWorkflows": {
       "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfLocks": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfJunctions": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfFileWatches": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfSchedules": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfCalendars": {
+      "$ref": "../common/nonNegativeLong-schema.json"
     }
   }
 }
