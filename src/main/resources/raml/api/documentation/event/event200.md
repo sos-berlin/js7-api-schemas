@@ -1,12 +1,12 @@
 Different events trigger the following different actions:
 
 * Update ``Dashboard Widgets``
-	* ``JS7 Cluster Status``: once for any of the following events
+	* ``Components Status``: once for any of the following events
 		* **JOCStateChanged**
 		* **ControllerStateChanged**
 		* **ProxyCoupled**
 		* **ProxyDecoupled**
-	* ``JS7 Controller Status``: once for any of the following events
+	* ``Controller Status``: once for any of the following events
 		* **ControllerStateChanged**
 		* **ProxyCoupled**
 		* **ProxyDecoupled**
@@ -14,17 +14,20 @@ Different events trigger the following different actions:
 		* **AgentStateChanged**
 		* **ProxyCoupled**
 		* **ProxyDecoupled**
-		* **ItemAdded** (with "objectype": "AGENT")
-		* **ItemDeleted** (with "objectype": "AGENT")
-		* **ItemChanged** (with "objectype": "AGENT")
+		* **ItemAdded** (with "objectType": "AGENT")
+		* **ItemDeleted** (with "objectType": "AGENT")
+		* **ItemChanged** (with "objectType": "AGENT")
 	* ``Agent Running Tasks``: once for the following event
 		* **JobStateChanged**
+		* **AgentStateChanged**
+		* **ProxyCoupled**
+		* **ProxyDecoupled**
 	* ``Order Summary``: once for the following event
 		* **WorkflowStateChanged**
-	* ``Order History``: once for the following event
-		* **HistoryOrderTerminated**
-	* ``Task History``: once for the following event
-		* **HistoryTaskTerminated**
+	* ``History`` (failed/successful Orders): once for the following event
+		* **HistoryOrderTerminated** (is sent only in an active JOC node)
+	* ``History`` (failed/successful Jobs): once for the following event
+		* **HistoryTaskTerminated** (is sent only in an active JOC node)
 * Update ``Inventory View``: for each following event
 	* **InventoryUpdated**
 		* It contains the changed folder in the "path" field
@@ -32,18 +35,18 @@ Different events trigger the following different actions:
 	* **WorkflowStateChanged**
 		* It contains the changed Workflow in the "path" field
 		* The Workflow itself is not changed but its Orders -> only the Orders need to update 
-	* **ItemAdded** (with "objectype": "WORKFLOW")
-	* **ItemDeleted** (with "objectype": "WORKFLOW")
-	* **ItemChanged** (with "objectype": "WORKFLOW") 
+	* **ItemAdded** (with "objectType": "WORKFLOW")
+	* **ItemDeleted** (with "objectType": "WORKFLOW")
+	* **ItemChanged** (with "objectType": "WORKFLOW") 
 		* They contain the added/deleted/changed Workflow in the "path" field
 		* The Workflow itself is changed -> the tree and the list need to update
 * Update ``Lock View``: for each following event
 	* **LockStateChanged**
 		* It contains the changed Lock in the "path" field
 		* The Lock itself is not changed -> only numbers of waiting/holding orders need to update
-	* **ItemAdded** (with "objectype": "LOCK")
-	* **ItemDeleted** (with "objectype": "LOCK")
-	* **ItemChanged** (with "objectype": "LOCK") 
+	* **ItemAdded** (with "objectType": "LOCK")
+	* **ItemDeleted** (with "objectType": "LOCK")
+	* **ItemChanged** (with "objectType": "LOCK") 
 		* They contain the added/deleted/changed Lock in the "path" field
 		* The Lock itself is changed -> the tree and the list need to update
 * Update ``Calendar View``: for each following event
@@ -56,5 +59,5 @@ Different events trigger the following different actions:
 * Alert ``Problem``: for each following event
 	* **ProblemEvent** 
 		* but only in that browser window where the accesstoken of the event equals the window's accesstoken.
-		* It contains a message in the message" field 
+		* It contains a message in the "message" field 
 		
