@@ -24,10 +24,6 @@
 	"properties": {
 		"newPath": {
 			"$ref": "../../common/string255-schema.json"
-		},
-		"overwrite": {
-			"type": "boolean",
-			"default": false
 		}
 	}
 }
