@@ -15,7 +15,7 @@
     <li>``timeZone`` affects only absolute dates</li>
   </ul>
 </li>
-<li>a format for a time period in relative to the current time, e.g. 6h, 12h, 1d, 1w can specify in addition with a time offset 0 or digits followed by a letter are expected where the letter has to be:
+<li>a format for a time period in relative to the current time, e.g. 6h, 12h, 1d, 1w can specify with digits followed by a letter where the letter has to be:
   <ul>
     <li>s (seconds)</li>
     <li>m (minutes)</li>
