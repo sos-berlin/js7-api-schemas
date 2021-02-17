@@ -12,6 +12,9 @@
 		"dateTo": {
 			"$ref": "../../common/dateFromTo-schema.json"
 		},
+		"dateFor": {
+			"$ref": "../../common/dateFromTo-schema.json"
+		},
 		"controllerIds": {
 			"type": "array",
 			"items": {
