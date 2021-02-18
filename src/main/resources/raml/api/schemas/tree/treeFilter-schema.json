@@ -23,6 +23,10 @@
 		"forInventory": {
 			"type": "boolean",
 			"default": false
+		},
+		"forInventoryTrash": {
+			"type": "boolean",
+			"default": false
 		}
 	}
 }
