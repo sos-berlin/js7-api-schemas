@@ -1,0 +1,41 @@
+{
+	"title": "filter for copy",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.copy.RequestFilter",
+	"type": "object",
+	"extends" : {
+    	"$ref": "../common/request-filter-schema.json"
+  	},
+	"anyOf": [
+        {
+            "required": [
+                "id",
+                "newPath"
+            ]
+        },
+        {
+            "required": [
+                "path",
+                "objectType",
+                "newPath"
+            ]
+        }
+    ],
+	"properties": {
+		"newPath": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"suffix": {
+			"description": "default: '-copy<number>'",
+			"$ref": "../../common/string100-schema.json"
+		},
+		"prefix": {
+			"description": "default: empty",
+			"$ref": "../../common/string100-schema.json"
+		},
+		"shallowCopy": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

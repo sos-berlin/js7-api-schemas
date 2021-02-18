@@ -9,7 +9,8 @@
   ],
   "properties": {
     "orderName": {
-      "$ref": "../common/javaString30-schema.json"
+      "type": "string",
+      "maxLength": 30
     },
     "workflowPath": {
       "$ref": "../common/string255-schema.json"
