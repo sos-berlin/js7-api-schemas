@@ -1,0 +1,24 @@
+{
+	"title": "Cyclic Order",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.dailyplan.CyclidOrder",
+	"properties": {
+		"count": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
+		"firstOrderId": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"lastOrderId": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"firstStart": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"lastStart": {
+		 	"$ref": "../../common/timestamp-schema.json"
+
+		}
+	}
+}
