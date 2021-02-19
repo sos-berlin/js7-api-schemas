@@ -1,24 +1,29 @@
 {
-    "deliveryDate": "2020-12-01T16:46:34.673Z",
-    "history": [
-        {
-            "controllerId": "js7.x",
-            "endTime": "2020-12-01T16:45:21Z",
-            "historyId": 587031,
-            "orderId": "workflow_fork@33",
-            "orderState": {
-                "_text": "FINISHED",
-                "severity": 0
-            },
-            "plannedTime": "2020-12-01T16:45:19Z",
-            "sequence": 0,
-            "startTime": "2020-12-01T16:45:20Z",
-            "state": {
-                "_text": "SUCCESSFUL",
-                "severity": 0
-            },
-            "surveyDate": "2020-12-01T16:45:22Z",
-            "workflow": "/workflow_fork"
-        }
-    ]
+	"deliveryDate": "2020-12-01T16:46:34.673Z",
+	"history": [
+		{
+			"surveyDate": "2020-12-01T16:45:22Z",
+			"controllerId": "jobscheduler.js7",
+			"workflow": "/workflow_fork",
+			"plannedTime": "2020-12-01T16:45:19Z",
+			"startTime": "2020-12-01T16:45:20Z",
+			"endTime": "2020-12-01T16:45:21Z",
+			"historyId": 587031,
+			"orderId": "workflow_fork@33",
+			"orderState": {
+				"_text": "FINISHED",
+				"severity": 0
+			},
+			"sequence": 0,
+			"state": {
+				"_text": "SUCCESSFUL",
+				"severity": 0
+			},
+			"arguments": {
+				"my_string_var": "my_value",
+				"my_boolean_var": false,
+				"my_numeric_var": 123
+			}
+		}
+	]
 }
