@@ -57,6 +57,9 @@
 			"items": {
 				"$ref": "orderHistoryItem-schema.json"
 			}
+		},
+		"arguments": {
+			"$ref": "../../../inventory/schemas/common/variables-schema.json"
 		}
 	}
 }
