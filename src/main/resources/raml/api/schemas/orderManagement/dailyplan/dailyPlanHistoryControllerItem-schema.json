@@ -1,14 +1,11 @@
 {
-	"title": "DailyPlanHistoryItem",
+	"title": "DailyPlanHistoryControllerItem",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"type": "object",
-	"javaType": "com.sos.joc.model.dailyplan.DailyPlanHistoryItem",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanHistoryControllerItem",
 	"properties": {
 		"controllerId": {
 			"$ref": "../../common/filename100-schema.json"
-		},
-		"dailyPlanDate": {
-			"$ref": "../../common/timestamp-schema.json"
 		},
 		"submissions": {
 			"type": "array",

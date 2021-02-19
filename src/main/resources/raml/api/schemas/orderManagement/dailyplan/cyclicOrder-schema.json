@@ -2,7 +2,7 @@
 	"title": "Cyclic Order",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"type": "object",
-	"javaType": "com.sos.joc.model.dailyplan.CyclidOrder",
+	"javaType": "com.sos.joc.model.dailyplan.CyclicOrderInfos",
 	"properties": {
 		"count": {
 			"$ref": "../../common/nonNegativeInteger-schema.json"

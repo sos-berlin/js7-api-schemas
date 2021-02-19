@@ -1,20 +1,20 @@
 {
-  "title": "DailyPlanHistory",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.dailyplan.DailyPlanHistory",
-  "type": "object",
-  "required": [
-    "dailyPlans"
-  ],
-  "properties": {
-    "deliveryDate": {
-      "$ref": "../../common/timestamp-schema.json"
-    },
-    "dailyPlans": {
-      "type": "array",
-      "items": {
-        "$ref": "dailyPlanHistoryItem-schema.json"
-      }
-    }
-  }
+	"title": "DailyPlanHistory",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanHistory",
+	"type": "object",
+	"required": [
+		"dailyPlans"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},	
+		"dailyPlans": {
+			"type": "array",
+			"items": {
+				"$ref": "dailyPlanHistoryDateItem-schema.json"
+			}
+		}
+	}
 }
