@@ -1034,6 +1034,18 @@ traits:
         schema200: !include api/schemas/calendar/dates-schema.json
         example200: TODO
         
+  /copy:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Copies inventory object
+        description1: !include api/documentation/inventory/idOrPathAndType.md
+        description2: !include api/documentation/inventory/newPath.md
+        description3: !include api/documentation/inventory/shallowCopy.md
+        description4: !include api/documentation/inventory/suffixPrefix.md
+        description5: " "
+        schema: !include api/schemas/inventory/copy/request-filter-schema.json
+        example: !include api/examples/inventory/rename-example.json
+  
   /delete_draft:
     type:
       postJSONWithoutJSId:
