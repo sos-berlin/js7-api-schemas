@@ -39,6 +39,9 @@
     "scheduledFor": {
       	"$ref": "../common/nonNegativeLong-schema.json"
     },
+    "lastCycle": {
+      	"$ref": "../common/nonNegativeLong-schema.json"
+    },
     "lastOutcome": {
       	"$ref": "../../../controller/schemas/common/outcome-schema.json"
     },
