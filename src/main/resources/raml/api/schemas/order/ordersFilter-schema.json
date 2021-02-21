@@ -12,12 +12,14 @@
     },
     "orders": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "$ref": "orderPath-schema.json"
       }
     },
     "excludeOrders": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "$ref": "orderPath-schema.json"
       }

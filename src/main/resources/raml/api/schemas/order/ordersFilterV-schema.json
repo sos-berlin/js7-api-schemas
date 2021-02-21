@@ -12,12 +12,14 @@
     },
     "orderIds": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "$ref": "../common/string255-schema.json"
       }
     },
     "workflowIds": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
       }
