@@ -1,7 +1,7 @@
 {
-  "title": "order state",
+  "title": "workflow state",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.order.OrderState",
+  "javaType": "com.sos.controller.model.workflow.WorkflowState",
   "type": "object",
   "required": [
     "severity",
@@ -12,7 +12,7 @@
       "type": "integer"
     },
     "_text": {
-      "$ref": "../order/orderStateText-schema.json"
+      "$ref": "workflowStateText-schema.json"
     }
   }
 }

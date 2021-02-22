@@ -10,6 +10,9 @@
     "isCurrentVersion": {
       "type": "boolean",
       "default": true 
+    },
+    "state": {
+      "$ref": "workflowState-schema.json"
     }
   },
   "additionalProperties": false
