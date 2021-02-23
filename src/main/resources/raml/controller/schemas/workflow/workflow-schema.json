@@ -11,6 +11,9 @@
       "type": "boolean",
       "default": true 
     },
+    "versionDate": {
+      "$ref": "../../../api/schemas/common/timestamp-schema.json" 
+    },
     "state": {
       "$ref": "workflowState-schema.json"
     }
