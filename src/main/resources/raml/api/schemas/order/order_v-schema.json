@@ -39,9 +39,6 @@
     "scheduledFor": {
       	"$ref": "../common/nonNegativeLong-schema.json"
     },
-    "lastCycle": {
-      	"$ref": "../common/nonNegativeLong-schema.json"
-    },
     "lastOutcome": {
       	"$ref": "../../../controller/schemas/common/outcome-schema.json"
     },
@@ -54,6 +51,9 @@
     },
     "requirements": {
       	"$ref": "../../../inventory/schemas/workflow/orderRequirements-schema.json"
-    }
+    },
+	"cyclicOrder": {
+		"$ref": "../orderManagement/dailyplan/cyclicOrder-schema.json"
+	}
   }
 }
