@@ -121,7 +121,7 @@
 </tr>
 <tr>
 <td style="padding-left:20px;">``deployConfigurations``</td>
-<td>required anyOf(``draftConfigurations``, ``deployConfigurations``), array</td>
+<td>required, array</td>
 <td>An array of already deployed configuration objects.</td>
 <td></td>
 <td></td>
