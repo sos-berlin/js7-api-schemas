@@ -1139,6 +1139,19 @@ traits:
           schema: !include api/schemas/publish/importDeployFilter-schema.json
           example: !include api/examples/publish/publishImportDeploy-example.json
 
+    /redeploy:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: redeploys as set of deployable objects from the deplyoment history to the given Controller
+          description1: !include api/documentation/publish/redeployFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/redeploy-schema.json
+          example: !include api/examples/publish/redeploy-example.json
+
     /set_version:
       type:
         postJSONWithOkWithoutJSId:
