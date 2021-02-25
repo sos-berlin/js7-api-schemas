@@ -1200,6 +1200,7 @@ traits:
         example: !include api/examples/inventory/pathFilter-example.json
         schema200: !include api/schemas/inventory/path/pathResponse-schema.json
         example200: !include api/examples/inventory/pathResponse-example.json
+  
   /read/configuration:
     type:
       postJSONWithoutJSId:
@@ -1240,6 +1241,18 @@ traits:
         schema200: !include api/schemas/inventory/common/response-folder-schema.json
         example200: TODO
               
+  /recover:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Undo a removal of inventory objects
+        description1: !include api/documentation/inventory/idOrPathAndType.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        schema: !include api/schemas/inventory/common/request-filter-schema.json
+        example: !include api/examples/inventory/pathType-example.json
+        
   /release:
     type:
       postJSONWithOkWithoutJSId:
@@ -1361,18 +1374,49 @@ traits:
         schema200: !include api/schemas/inventory/configurationObject-schema.json
         example200: !include api/examples/inventory/store-response-example.json
   
-  /recover:
-    type:
-      postJSONWithOkWithoutJSId:
-        description: Undo a removal of inventory objects
-        description1: !include api/documentation/inventory/idOrPathAndType.md
-        description2: " "
-        description3: " "
-        description4: " "
-        description5: " "
-        schema: !include api/schemas/inventory/common/request-filter-schema.json
-        example: !include api/examples/inventory/pathType-example.json
-        
+  /trash:
+    description: This is not an API call. Use its children!!
+    
+    /read/configuration:
+      type:
+        postJSONWithoutJSId:
+          description: Reads configuration of an inventory object
+          description1: !include api/documentation/inventory/idOrPathAndTypeOrNameAndType.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: !include api/documentation/inventory/configuration-response.md
+          schema: !include api/schemas/inventory/common/request-filter-schema.json
+          example: TODO
+          schema200: !include api/schemas/inventory/configurationObject-schema.json
+          example200: TODO
+  
+    /read/folder:
+      type:
+        postJSONWithoutJSId:
+          description: Reads folder content
+          description1: !include api/documentation/inventory/path.md
+          description2: !include api/documentation/inventory/objectTypes.md
+          description3: !include api/documentation/common/recursive.md
+          description4: !include api/documentation/inventory/onlyValidObjects.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/inventory/common/request-folder-schema.json
+          example: TODO
+          schema200: !include api/schemas/inventory/common/response-folder-schema.json
+          example200: TODO
+  
   /validate/path:
     type:
       postJSONWithOkWithoutJSId:
