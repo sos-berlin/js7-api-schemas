@@ -42,14 +42,6 @@
 		},
 		"hasReleases": {
 			"type": "boolean"
-		},
-		"orders": {
-			"description": "only relevant for Workflows",
-			"type": "array",
-			"items": {
-				"$ref": "response-folderItem-schema.json"
-			},
-			"uniqueItems": true
 		}
 	}
 }
