@@ -1,0 +1,14 @@
+{
+  "title": "suffix/prefix properties",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.SuffixPrefix",
+  "type": "object",
+  "properties": {
+    "suffix": {
+      "type": "string"
+    },
+    "prefix": {
+      "type": "string"
+    }
+  }
+}

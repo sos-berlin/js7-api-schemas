@@ -43,6 +43,12 @@
         "type": "string"
       }
     },
+    "copy": {
+      "$ref": "suffixPrefix-schema.json"
+    },
+    "restore": {
+      "$ref": "suffixPrefix-schema.json"
+    },
     "showViews": {
       "javaType": "com.sos.joc.model.ShowViewProperties",
       "type": "object",
