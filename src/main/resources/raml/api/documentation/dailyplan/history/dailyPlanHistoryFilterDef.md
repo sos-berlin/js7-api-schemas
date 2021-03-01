@@ -10,6 +10,12 @@ The filter elements are
 <ul>
  
 <li>
+controllerId
+</li>
+<li>
+controllerIds
+</li>
+<li>
 dateFrom
 </li>
 <li>
