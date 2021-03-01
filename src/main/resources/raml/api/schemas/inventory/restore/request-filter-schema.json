@@ -1,0 +1,32 @@
+{
+	"title": "filter for restore",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.restore.RequestFilter",
+	"type": "object",
+	"extends" : {
+    	"$ref": "../common/request-filter-schema.json"
+  	},
+	"anyOf": [
+        {
+            "required": [
+                "id"
+            ]
+        },
+        {
+            "required": [
+                "path",
+                "objectType"
+            ]
+        }
+    ],
+	"properties": {
+		"suffix": {
+			"description": "default: '-copy<number>'",
+			"$ref": "../../common/string100-schema.json"
+		},
+		"prefix": {
+			"description": "default: empty",
+			"$ref": "../../common/string100-schema.json"
+		}
+	}
+}
