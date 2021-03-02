@@ -14,12 +14,6 @@
                 "path",
                 "objectType"
             ]
-        },
-        {
-            "required": [
-                "name",
-                "objectType"
-            ]
         }
     ],
 	"properties": {
@@ -27,9 +21,6 @@
 			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"path": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"name": {
 			"$ref": "../../common/string255-schema.json"
 		},
 		"objectType": {

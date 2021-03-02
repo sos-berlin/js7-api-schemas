@@ -1049,8 +1049,8 @@ traits:
   /delete_draft:
     type:
       postJSONWithoutJSId:
-        description: Deletes configuration draft of an inventory object
-        description1: !include api/documentation/inventory/idOrPathAndType.md
+        description: Revert configuration draft of an inventory object
+        description1: !include api/documentation/inventory/idsOrPathsAndTypes.md
         description2: " "
         description3: " "
         description4: " "
@@ -1061,7 +1061,27 @@ traits:
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/inventory/common/request-filter-schema.json
+        schema: !include api/schemas/inventory/common/request-filters-schema.json
+        example: !include api/examples/inventory/pathsTypes-example.json
+        schema200: !include api/schemas/inventory/delete/response-item-schema.json
+        example200: !include api/examples/inventory/deleteDraft-response-example.json
+        
+  /delete_draft/folder:
+    type:
+      postJSONWithoutJSId:
+        description: Revert configuration draft of an inventory object of a folder
+        description1: !include api/documentation/inventory/path.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/common/request-folder-schema.json
         example: TODO
         schema200: !include api/schemas/inventory/delete/response-item-schema.json
         example200: !include api/examples/inventory/deleteDraft-response-example.json
@@ -1318,14 +1338,26 @@ traits:
   /remove:
     type:
       postJSONWithOkWithoutJSId:
-        description: Removes configuration of an inventory object
-        description1: !include api/documentation/inventory/idOrPathAndType.md
+        description: Removes configurations of inventory objects
+        description1: !include api/documentation/inventory/idsOrPathsAndTypes.md
         description2: " "
         description3: " "
         description4: " "
         description5: " "
-        schema: !include api/schemas/inventory/common/request-filter-schema.json
-        example: !include api/examples/inventory/pathType-example.json
+        schema: !include api/schemas/inventory/common/request-filters-schema.json
+        example: !include api/examples/inventory/pathsTypes-example.json
+  
+  /remove/folder:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Removes folder of inventory objects
+        description1: !include api/documentation/inventory/path.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        schema: !include api/schemas/inventory/common/request-folder-schema.json
+        example: TODO
   
   /rename:
     type:
@@ -1338,6 +1370,18 @@ traits:
         description5: " "
         schema: !include api/schemas/inventory/rename/request-filter-schema.json
         example: !include api/examples/inventory/rename-example.json
+        
+  /replace:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Search/replace names of inventory objects
+        description1: !include api/documentation/inventory/idOrPathAndType.md
+        description2: !include api/documentation/inventory/replace.md
+        description3: " "
+        description4: " "
+        description5: " "
+        schema: !include api/schemas/inventory/replace/request-filter-schema.json
+        example: !include api/examples/inventory/replace-example.json
         
   /statistics:
     type:
@@ -1381,14 +1425,26 @@ traits:
     /delete:
       type:
         postJSONWithOkWithoutJSId:
-          description: delete a discarded inventory object
-          description1: !include api/documentation/inventory/idOrPathAndType.md
+          description: Deletes discarded inventory objects
+          description1: !include api/documentation/inventory/idsOrPathsAndTypes.md
           description2: " "
           description3: " " 
           description4: " "
           description5: " "
-          schema: !include api/schemas/inventory/common/request-filter-schema.json
-          example: !include api/examples/inventory/pathType-example.json
+          schema: !include api/schemas/inventory/common/request-filters-schema.json
+          example: !include api/examples/inventory/pathsTypes-example.json
+    
+    /delete/folder:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes folder of discarded inventory objects
+          description1: !include api/documentation/inventory/path.md
+          description2: " "
+          description3: " " 
+          description4: " "
+          description5: " "
+          schema: !include api/schemas/inventory/common/request-folder-schema.json
+          example: TODO
     
     /read/configuration:
       type:

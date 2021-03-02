@@ -1,0 +1,19 @@
+{
+	"title": "common inventory request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.RequestFilters",
+	"type": "object",
+	"required": [
+	  "objects"
+	],
+	"properties": {
+	  "objects" : {
+		"type": "array",
+		"uniqueItems": true,
+		"minItems": 1,
+		"items": {
+		  "$ref": "request-filter-schema.json"
+		}
+	  }
+	}
+}
