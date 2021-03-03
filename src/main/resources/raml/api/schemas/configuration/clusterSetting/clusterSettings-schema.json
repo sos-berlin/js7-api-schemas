@@ -1,0 +1,19 @@
+{
+	"title": "cluster settings",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.configuration.clusterSettings.ClusterSettings",
+	"type": "object",
+	"required": [
+		"dailyplan",
+		"cleanup"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"dailyplan": {
+			"$ref": "clusterSetting-schema.json"
+		},
+		"cleanup": {
+			"$ref": "clusterSetting-schema.json"
+		}
+	}
+}

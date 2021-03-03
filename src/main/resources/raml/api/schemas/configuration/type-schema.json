@@ -1,12 +1,13 @@
 {
-  "title": "configuration type",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.configuration.ConfigurationType",
-  "type": "string",
-  "enum": [
-    "CUSTOMIZATION",
-    "IGNORELIST",
-    "PROFILE",
-    "SETTING"
-  ]
+	"title": "configuration type",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.configuration.ConfigurationType",
+	"type": "string",
+	"enum": [
+		"CUSTOMIZATION",
+		"IGNORELIST",
+		"PROFILE",
+		"SETTING",
+		"CLUSTER_SETTING"
+	]
 }
