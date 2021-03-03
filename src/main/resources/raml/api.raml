@@ -128,7 +128,7 @@ traits:
         description200: !include api/documentation/agent/agents_p.md
         schema: !include api/schemas/agent/readAgents-schema.json
         schema200: !include api/schemas/agent/agents-schema.json
-        example: !include api/examples/jobscheduler/jobschedulerParam-example.json
+        example: !include api/examples/controller/controllerParam-example.json
         example200: !include api/examples/agent/agents_p-example.json
         
   /reassign:
@@ -574,7 +574,7 @@ traits:
           body:
             application/json:
               schema: !include api/schemas/jobscheduler/controllerIds-schema.json
-              example: !include api/examples/jobscheduler/ids-example.json
+              example: !include api/examples/controller/ids-example.json
   /log:
     type:
       postURLWithPlainResponse:
@@ -637,7 +637,7 @@ traits:
         description10: " "
         description200: !include api/documentation/jobscheduler/jobschedulerTest.md
         schema200: !include api/schemas/jobscheduler/jobscheduler200_v-schema.json
-        example200: !include api/examples/jobscheduler/test-example.json
+        example200: !include api/examples/controller/test-example.json
         schema: jsFilterWithUrl
         example: |
           {
@@ -658,14 +658,14 @@ traits:
         description: Lists all JobScheduler Controllers (permanent information)
         description200: !include api/documentation/jobscheduler/controller_p.md
         schema200: !include api/schemas/jobscheduler/masters-schema.json
-        example200: !include api/examples/jobscheduler/controller_p-example.json
+        example200: !include api/examples/controller/controller_p-example.json
   /security_level:
     type:
       postOnlyAccessToken:
         description: Lists for each Controller its id and security level
         description200: !include api/documentation/jobscheduler/securityLevels.md
         schema200: !include api/schemas/jobscheduler/masters-schema.json
-        example200: !include api/examples/jobscheduler/securityLevels-example.json
+        example200: !include api/examples/controller/securityLevels-example.json
     /take_over:
       type:
         postWithOkResponse:
@@ -1951,13 +1951,13 @@ traits:
           description4: " "
           description5: " "
           description6: " "
-          description7: " "
-          description8: " "
+          description7: !include api/documentation/order/dateTo.md
+          description8: !include api/documentation/order/timeZone.md
           description9: " "
           description10: " "
           description200: " "
-          schema: !include api/schemas/workflow/workflowsFilter-schema.json
-          example: TODO
+          schema: !include api/schemas/order/ordersFilterV-schema.json
+          example: !include api/examples/controller/controllerParam-example.json
           schema200: !include api/schemas/order/snapshot-schema.json
           example200: !include api/examples/order/snapshot-example.json
   /overview/summary:
@@ -2282,7 +2282,7 @@ traits:
 /workflows:
   type:
     postJSON:
-      description: Returns workflows - <b>IN PROGRESS</b>
+      description: Returns workflows
       description1: !include api/documentation/workflow/filteredByWorkflows.md
       description2: " "
       description3: !include api/documentation/common/folders.md
