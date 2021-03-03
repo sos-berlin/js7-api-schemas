@@ -1,5 +1,4 @@
 {
-	"objectType": "FOLDER",
 	"path": "/test3",
 	"search": "-copy[0-9]*$",
 	"replace": ""

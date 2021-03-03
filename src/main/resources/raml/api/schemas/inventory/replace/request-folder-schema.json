@@ -1,0 +1,25 @@
+{
+	"title": "filter for replace",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.replace.RequestFolder",
+	"type": "object",
+	"required": [
+		"path",
+		"search",
+		"replace"
+	],
+	"properties": {
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"search": {
+			"type": "string",
+			"pattern": "^[^/]*$",
+  			"minLength": 1
+		},
+		"replace": {
+			"type": "string",
+			"pattern": "^[^/]*$"
+		}
+	}
+}

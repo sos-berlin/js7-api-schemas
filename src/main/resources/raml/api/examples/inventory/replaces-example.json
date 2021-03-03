@@ -1,0 +1,8 @@
+{
+	"objects": [{
+		"objectType": "WORKFLOW",
+		"path": "/a/b/myWorkflow"
+	}],
+	"search": "-copy[0-9]*$",
+	"replace": ""
+}

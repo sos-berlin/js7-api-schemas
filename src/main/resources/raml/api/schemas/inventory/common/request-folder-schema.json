@@ -1,5 +1,5 @@
 {
-	"title": "Filter Delete Draft",
+	"title": "Filter of a folder",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.inventory.common.RequestFolder",
 	"type": "object",

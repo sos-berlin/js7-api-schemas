@@ -1375,12 +1375,24 @@ traits:
     type:
       postJSONWithOkWithoutJSId:
         description: Search/replace names of inventory objects
-        description1: !include api/documentation/inventory/idOrPathAndType.md
+        description1: !include api/documentation/inventory/idsOrPathsAndTypes.md
         description2: !include api/documentation/inventory/replace.md
         description3: " "
         description4: " "
         description5: " "
-        schema: !include api/schemas/inventory/replace/request-filter-schema.json
+        schema: !include api/schemas/inventory/replace/request-filters-schema.json
+        example: !include api/examples/inventory/replaces-example.json
+        
+  /replace/folder:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Search/replace object names of an inventory folder content
+        description1: !include api/documentation/inventory/path.md
+        description2: !include api/documentation/inventory/replace.md
+        description3: " "
+        description4: " "
+        description5: " "
+        schema: !include api/schemas/inventory/replace/request-folder-schema.json
         example: !include api/examples/inventory/replace-example.json
         
   /statistics:
