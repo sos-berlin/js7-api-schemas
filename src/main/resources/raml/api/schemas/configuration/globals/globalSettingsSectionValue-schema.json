@@ -1,7 +1,7 @@
 {
 	"title": "cluster setting",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.configuration.clusterSettings.ClusterSettingsSectionValue",
+	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSectionValue",
 	"type": "object",
 	"required": [
 		"name",
@@ -18,7 +18,7 @@
 			"$ref": "../../common/string255-schema.json"
 		},
 		"type": {
-			"$ref": "clusterSettingsSectionValueType-schema.json"
+			"$ref": "globalSettingsSectionValueType-schema.json"
 		},
 		"default": {
 			"$ref": "../../common/string255-schema.json"

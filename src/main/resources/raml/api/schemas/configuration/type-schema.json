@@ -8,6 +8,6 @@
 		"IGNORELIST",
 		"PROFILE",
 		"SETTING",
-		"CLUSTER_SETTING"
+		"GLOBALS"
 	]
 }

@@ -1,7 +1,7 @@
 {
 	"title": "JobScheduler object type",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.configuration.clusterSettings.ClusterSettingsSectionValueType",
+	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSectionValueType",
 	"type": "string",
 	"enum": [
 		"ZONE",
