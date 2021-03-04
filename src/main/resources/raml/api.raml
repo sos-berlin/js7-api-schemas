@@ -772,6 +772,25 @@ traits:
           schema200: ok
           example: " "
           example200: " "
+    /summary:
+      type:
+        postJSON:
+          description: Get Summary order counts for the daily plan 
+          description1: !include api/documentation/dailyplan/summary/dailyPlanOrdersFilterDef.md
+          description2: !include api/documentation/dailyplan/dailyPlanDate.md
+          description3: !include api/documentation/dailyplan/orders/schedules.md
+          description4: !include api/documentation/dailyplan/orders/folders.md
+          description5: !include api/documentation/dailyplan/orders/workflowPaths.md
+          description6: !include api/documentation/dailyplan/orders/late.md
+          description7: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
+          description8: !include api/documentation/dailyplan/orders/controllerIds.md
+          description9: !include api/documentation/dailyplan/orders/orderIds.md
+          description10: 
+          description200: " "
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
+          schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanOrderSummary-schema.json
+          example: " "
+          example200: " "
         
   /history:
     type:
