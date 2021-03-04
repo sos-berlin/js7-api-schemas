@@ -1,7 +1,7 @@
 {
 	"title": "JobScheduler object type",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.configuration.clusterSettings.ClusterSettingValueType",
+	"javaType": "com.sos.joc.model.configuration.clusterSettings.ClusterSettingsSectionValueType",
 	"type": "string",
 	"enum": [
 		"ZONE",
@@ -9,6 +9,7 @@
 		"WEEKDAYS",
 		"TIME",
 		"POSITIVENUMBER",
-		"NONNEGATIVENUMBER"
+		"NONNEGATIVENUMBER",
+		"STRING"
 	]
 }
