@@ -1,21 +1,24 @@
 {
-  "title": "configurations",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.configuration.Configurations",
-  "type": "object",
-  "required": [
-    "deliveryDate",
-    "configurations"
-  ],
-  "properties": {
-    "deliveryDate": {
-      "$ref": "../common/timestamp-schema.json"
-    },
-    "configurations": {
-      "type": "array",
-      "items": {
-        "$ref": "configuration-schema.json"
-      }
-    }
-  }
+	"title": "configurations",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.configuration.Configurations",
+	"type": "object",
+	"required": [
+		"deliveryDate",
+		"configurations"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"configurations": {
+			"type": "array",
+			"items": {
+				"$ref": "configuration-schema.json"
+			}
+		},
+		"defaultGlobals": {
+			"$ref": "globals/globalSettings-schema.json"
+		}
+	}
 }

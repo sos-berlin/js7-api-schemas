@@ -4,16 +4,12 @@
 	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSectionEntry",
 	"type": "object",
 	"required": [
-		"name",
 		"value",
 		"type",
 		"default"
 	],
 	"additionalProperties": false,
 	"properties": {
-		"name": {
-			"$ref": "../../common/string255-schema.json"
-		},
 		"value": {
 			"$ref": "../../common/string255-schema.json"
 		},
@@ -23,7 +19,7 @@
 		"default": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"order": {
+		"ordering": {
 			"$ref": "../../common/nonNegativeInteger-schema.json"
 		}
 	}

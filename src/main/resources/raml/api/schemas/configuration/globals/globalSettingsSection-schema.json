@@ -5,7 +5,7 @@
 	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSection",
 	"type": "object",
 	"properties":{
-		"order": {
+		"ordering": {
 			"$ref": "../../common/nonNegativeInteger-schema.json"
 		}
 	},
