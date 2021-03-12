@@ -20,6 +20,9 @@
         }
     ],
 	"properties": {
+		"newPath": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"suffix": {
 			"description": "default: '-copy<number>'",
 			"$ref": "../../common/string100-schema.json"

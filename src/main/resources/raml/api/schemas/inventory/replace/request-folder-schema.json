@@ -20,6 +20,9 @@
 		"replace": {
 			"type": "string",
 			"pattern": "^[^/]*$"
-		}
+		},
+      	"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+      	}
 	}
 }

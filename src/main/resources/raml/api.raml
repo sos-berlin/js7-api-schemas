@@ -1061,7 +1061,7 @@ traits:
         description2: !include api/documentation/inventory/newPath.md
         description3: !include api/documentation/inventory/shallowCopy.md
         description4: !include api/documentation/inventory/suffixPrefix4copy.md
-        description5: " "
+        description5: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/copy/request-filter-schema.json
         example: !include api/examples/inventory/rename-example.json
   
@@ -1073,7 +1073,7 @@ traits:
         description2: " "
         description3: " "
         description4: " "
-        description5: " "
+        description5: !include api/documentation/audit/auditLog.md
         description6: " "
         description7: " "
         description8: " "
@@ -1093,7 +1093,7 @@ traits:
         description2: " "
         description3: " "
         description4: " "
-        description5: " "
+        description5: !include api/documentation/audit/auditLog.md
         description6: " "
         description7: " "
         description8: " "
@@ -1302,7 +1302,7 @@ traits:
         description3: !include api/documentation/inventory/releaseIdOrPathAndReleasableType.md
         description4: !include api/documentation/inventory/deleteRelease.md
         description5: !include api/documentation/inventory/releaseIdOrPathAndReleasableType.md
-        description6: " "
+        description6: !include api/documentation/audit/auditLog.md
         description7: " "
         description8: " "
         description9: " "
@@ -1362,7 +1362,7 @@ traits:
         description2: " "
         description3: " "
         description4: " "
-        description5: " "
+        description5: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/common/request-filters-schema.json
         example: !include api/examples/inventory/pathsTypes-example.json
   
@@ -1374,7 +1374,7 @@ traits:
         description2: " "
         description3: " "
         description4: " "
-        description5: " "
+        description5: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/common/request-folder-schema.json
         example: TODO
   
@@ -1386,7 +1386,7 @@ traits:
         description2: !include api/documentation/inventory/newPath.md
         description3: " "
         description4: " "
-        description5: " "
+        description5: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/rename/request-filter-schema.json
         example: !include api/examples/inventory/rename-example.json
         
@@ -1398,7 +1398,7 @@ traits:
         description2: !include api/documentation/inventory/replace.md
         description3: " "
         description4: " "
-        description5: " "
+        description5: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/replace/request-filters-schema.json
         example: !include api/examples/inventory/replaces-example.json
         
@@ -1410,7 +1410,7 @@ traits:
         description2: !include api/documentation/inventory/replace.md
         description3: " "
         description4: " "
-        description5: " "
+        description5: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/replace/request-folder-schema.json
         example: !include api/examples/inventory/replace-example.json
         
@@ -1439,7 +1439,7 @@ traits:
         description3: " "
         description4: !include api/documentation/inventory/valid.md
         description5: !include api/documentation/inventory/configuration-request.md
-        description6: " "
+        description6: !include api/documentation/audit/auditLog.md
         description7: " "
         description8: " "
         description9: " "
@@ -1461,7 +1461,7 @@ traits:
           description2: " "
           description3: " " 
           description4: " "
-          description5: " "
+          description5: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/inventory/common/request-filters-schema.json
           example: !include api/examples/inventory/pathsTypes-example.json
     
@@ -1473,7 +1473,7 @@ traits:
           description2: " "
           description3: " " 
           description4: " "
-          description5: " "
+          description5: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/inventory/common/request-folder-schema.json
           example: TODO
     
@@ -1522,10 +1522,10 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Restore a discarded inventory object
           description1: !include api/documentation/inventory/idOrPathAndType.md
-          description2: " "
+          description2: !include api/documentation/inventory/newPath.md
           description3: " " 
           description4: !include api/documentation/inventory/suffixPrefix4restore.md
-          description5: " "
+          description5: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/inventory/restore/request-filter-schema.json
           example: !include api/examples/inventory/pathType-example.json
   

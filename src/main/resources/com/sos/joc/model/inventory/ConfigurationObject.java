@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.sos.joc.model.inventory.common.ConfigurationType;
+import com.sos.joc.model.audit.AuditParams;
 import com.sos.joc.model.common.IConfigurationObject;
 import com.sos.joc.model.inventory.common.ItemStateEnum;
 import com.sos.joc.model.inventory.deploy.ResponseDeployableVersion;
@@ -40,7 +41,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "hasReleases",
     "deployments",
     "configurationDate",
-    "deliveryDate"
+    "deliveryDate",
+    "auditLog"
 })
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "objectType", visible = true)
 @JsonSubTypes({ 
@@ -130,6 +132,14 @@ public class ConfigurationObject {
     @JsonProperty("deliveryDate")
     @JsonPropertyDescription("Value is UTC timestamp in ISO 8601 YYYY-MM-DDThh:mm:ss.sZ or empty")
     private Date deliveryDate;
+    /**
+     * auditParams
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("auditLog")
+    private AuditParams auditLog;
 
     /**
      * non negative long
@@ -359,6 +369,28 @@ public class ConfigurationObject {
     @JsonProperty("deliveryDate")
     public void setDeliveryDate(Date deliveryDate) {
         this.deliveryDate = deliveryDate;
+    }
+    
+    /**
+     * auditParams
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("auditLog")
+    public AuditParams getAuditLog() {
+        return auditLog;
+    }
+
+    /**
+     * auditParams
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("auditLog")
+    public void setAuditLog(AuditParams auditLog) {
+        this.auditLog = auditLog;
     }
 
     @Override

@@ -25,6 +25,9 @@
 		},
 		"objectType": {
 			"$ref": "../common/configurationType-schema.json"
-		}
+		},
+    	"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
 	}
 }

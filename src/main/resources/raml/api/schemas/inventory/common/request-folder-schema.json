@@ -23,6 +23,9 @@
 		"onlyValidObjects": {
 			"type": "boolean",
 			"default": false
-		}
+		},
+    	"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
 	}
 }
