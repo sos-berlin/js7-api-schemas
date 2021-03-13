@@ -1,0 +1,15 @@
+{
+	"title": "File Order Source Edit configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.fileordersource.FileOrderSourceEdit",
+	"type": "object",
+	"extends": {
+		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+	},
+	"properties": {
+		"configuration": {
+			"$ref": "../../../inventory/schemas/fileordersource/fileOrderSource-schema.json"
+		}
+	}
+}
+

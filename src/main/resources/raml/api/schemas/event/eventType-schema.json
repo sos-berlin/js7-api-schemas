@@ -15,6 +15,7 @@
     "LOCK",
     "JOB",
     "JUNCTION",
+    "FILEORDERSOURCE",
     "JOBCLASS",
     "SCHEDULE",
     "CALENDAR",

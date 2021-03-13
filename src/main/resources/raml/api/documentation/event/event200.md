@@ -31,6 +31,9 @@ Different events trigger the following different actions:
 * Update ``Inventory View``: for each following event
 	* **InventoryUpdated**
 		* It contains the changed folder in the "path" field
+* Update ``Inventory Trash View``: for each following event
+	* **InventoryTrashUpdated**
+		* It contains the changed folder in the "path" field
 * Update ``Workflow View``: for each following event
 	* **WorkflowStateChanged**
 		* It contains the changed Workflow in the "path" field

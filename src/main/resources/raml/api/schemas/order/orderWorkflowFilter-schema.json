@@ -1,0 +1,22 @@
+{
+  "title": "orderId and workflowId",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderWorkflowFilter",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "workflowId",
+    "orderId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/filename100-schema.json"
+    },
+    "workflowId": {
+      "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+    },
+    "orderId": {
+      "$ref": "../common/string255-schema.json"
+    }
+  }
+}
