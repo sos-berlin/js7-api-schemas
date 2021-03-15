@@ -4,7 +4,6 @@
   "javaType": "com.sos.joc.model.order.AddOrder",
   "type": "object",
   "required": [
-    "orderName",
     "workflowPath"
   ],
   "properties": {
