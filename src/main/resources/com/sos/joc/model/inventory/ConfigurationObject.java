@@ -30,6 +30,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "id",
     "path",
     "objectType",
+    "name",
     "configuration",
     "state",
     "valid",
@@ -83,6 +84,8 @@ public class ConfigurationObject {
      */
     @JsonProperty("objectType")
     private ConfigurationType objectType;
+    @JsonProperty("name")
+    private String name;
     /**
      * interface for different json representations of a configuration item
      * 
@@ -184,6 +187,16 @@ public class ConfigurationObject {
     @JsonProperty("path")
     public void setPath(String path) {
         this.path = path;
+    }
+    
+    @JsonProperty("name")
+    public String getName() {
+        return name;
+    }
+
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**

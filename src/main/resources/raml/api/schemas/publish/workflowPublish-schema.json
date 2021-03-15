@@ -8,7 +8,7 @@
 	},
 	"properties": {
 		"content": {
-			"$ref": "../../../inventory/schemas/workflow/workflow-schema.json"
+			"$ref": "../../../sign/schemas/workflow/workflow-schema.json"
 		}
 	}
 }

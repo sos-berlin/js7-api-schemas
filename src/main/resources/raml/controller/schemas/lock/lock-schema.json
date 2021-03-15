@@ -1,10 +1,10 @@
 {
   "title": "workflow",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.controller.model.workflow.Workflow",
+  "javaType": "com.sos.controller.model.lock.Lock",
   "type": "object",
   "extends" : {
-    "$ref": "../../../inventory/schemas/workflow/workflow-schema.json"
+    "$ref": "../../../inventory/schemas/lock/lock-schema.json"
   },
   "properties": {
     "path": {
@@ -18,7 +18,7 @@
       "$ref": "../../../api/schemas/common/timestamp-schema.json" 
     },
     "state": {
-      "$ref": "workflowState-schema.json"
+      "$ref": "../workflow/workflowState-schema.json"
     }
   },
   "additionalProperties": false
