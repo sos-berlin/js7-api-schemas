@@ -11,7 +11,7 @@
 	],
 	"properties": {
 		"lock": {
-			"$ref": "../../../../inventory/schemas/lock/lock-schema.json"
+			"$ref": "../../../../controller/schemas/lock/lock-schema.json"
 		},
 		"acquiredLockCount": {
 			"$ref": "../../../../inventory/schemas/common/nonNegativeInteger-schema.json"

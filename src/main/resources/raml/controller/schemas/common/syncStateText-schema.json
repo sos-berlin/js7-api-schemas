@@ -1,7 +1,7 @@
 {
-  "title": "workflow state text",
+  "title": "sync state text",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.controller.model.workflow.WorkflowStateText",
+  "javaType": "com.sos.controller.model.common.SyncStateText",
   "type": "string",
   "enum": [
     "IN_SYNC",
