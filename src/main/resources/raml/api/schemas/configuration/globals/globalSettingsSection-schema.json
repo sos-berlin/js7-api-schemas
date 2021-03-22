@@ -1,10 +1,15 @@
 {
 	"title": "cluster setting",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"description": "a map for arbitrary key-value pairs (String, GlobalSettingsSectionValue)",
+	"description": "a map for arbitrary key-value pairs (String, GlobalSettingsSectionEntry)",
 	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSection",
 	"type": "object",
+	"properties":{
+		"ordering": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		}
+	},
 	"additionalProperties": {
-		"$ref": "globalSettingsSectionValue-schema.json"
+		"$ref": "globalSettingsSectionEntry-schema.json"
 	}
 }

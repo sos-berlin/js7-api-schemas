@@ -11,6 +11,7 @@
     "AGENTCLUSTER",
     "LOCK",
     "JUNCTION",
+    "FILEORDERSOURCE",
     "ORDER",
     "CALENDAR",
     "CONTROLLER",

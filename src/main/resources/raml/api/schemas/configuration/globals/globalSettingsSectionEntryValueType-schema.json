@@ -4,12 +4,15 @@
 	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSectionValueType",
 	"type": "string",
 	"enum": [
-		"ZONE",
-		"AGE",
+		"TIMEZONE",
+		"DURATION",
 		"WEEKDAYS",
 		"TIME",
+		"ARRAY",
 		"POSITIVENUMBER",
 		"NONNEGATIVENUMBER",
+		"POSITIVEINTEGER",
+		"NONNEGATIVEINTEGER",
 		"STRING"
 	]
 }

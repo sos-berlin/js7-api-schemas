@@ -8,7 +8,7 @@
 	},
 	"properties": {
 		"content": {
-			"$ref": "../../../inventory/schemas/lock/lock-schema.json"
+			"$ref": "../../../sign/schemas/lock/lock-schema.json"
 		}
 	}
 }

@@ -4,6 +4,10 @@
 	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderFilter",
 	"type": "object",
 	"description": "To get orders from the daily plan",
+	"required": [
+	  "controllerId",
+	  "filter"
+	],
 	
 	"properties": {
 		"controllerId": {

@@ -1,18 +1,14 @@
 {
-  "title": "workflow",
+  "title": "lock",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.controller.model.workflow.Workflow",
+  "javaType": "com.sos.controller.model.lock.Lock",
   "type": "object",
   "extends" : {
-    "$ref": "../../../inventory/schemas/workflow/workflow-schema.json"
+    "$ref": "../../../inventory/schemas/lock/lock-schema.json"
   },
   "properties": {
     "path": {
       "$ref": "../../../api/schemas/common/path-schema.json"
-    },
-    "isCurrentVersion": {
-      "type": "boolean",
-      "default": true 
     },
     "versionDate": {
       "$ref": "../../../api/schemas/common/timestamp-schema.json" 

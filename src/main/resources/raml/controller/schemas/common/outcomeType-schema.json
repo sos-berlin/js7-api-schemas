@@ -7,12 +7,14 @@
     "Succeeded",
     "Failed",
     "Disrupted",
-    "Cancelled"
+    "Cancelled",
+    "Killed"
   ],
   "javaEnumNames": [
     "Succeeded",
     "Failed",
     "Disrupted",
-    "Cancelled"
+    "Cancelled",
+    "Killed"
   ]
 }

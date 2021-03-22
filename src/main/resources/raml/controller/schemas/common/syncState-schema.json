@@ -1,7 +1,7 @@
 {
-  "title": "workflow state",
+  "title": "sync state",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.controller.model.workflow.WorkflowState",
+  "javaType": "com.sos.controller.model.common.SyncState",
   "type": "object",
   "required": [
     "severity",
@@ -12,7 +12,7 @@
       "type": "integer"
     },
     "_text": {
-      "$ref": "workflowStateText-schema.json"
+      "$ref": "syncStateText-schema.json"
     }
   }
 }

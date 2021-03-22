@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.sos.joc.model.inventory.common.ConfigurationType;
+import com.sos.joc.model.audit.AuditParams;
 import com.sos.joc.model.common.IConfigurationObject;
 import com.sos.joc.model.inventory.common.ItemStateEnum;
 import com.sos.joc.model.inventory.deploy.ResponseDeployableVersion;
@@ -29,6 +30,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "id",
     "path",
     "objectType",
+    "name",
     "configuration",
     "state",
     "valid",
@@ -40,7 +42,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "hasReleases",
     "deployments",
     "configurationDate",
-    "deliveryDate"
+    "deliveryDate",
+    "auditLog"
 })
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "objectType", visible = true)
 @JsonSubTypes({ 
@@ -49,6 +52,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobclass.JobClassEdit.class, name = "JOBCLASS"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.junction.JunctionEdit.class, name = "JUNCTION"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.lock.LockEdit.class, name = "LOCK"),
+    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.fileordersource.FileOrderSourceEdit.class, name = "FILEORDERSOURCE"),
     @JsonSubTypes.Type(value = com.sos.joc.model.calendar.WorkingDaysCalendarEdit.class, name = "WORKINGDAYSCALENDAR"),
     @JsonSubTypes.Type(value = com.sos.joc.model.calendar.NonWorkingDaysCalendarEdit.class, name = "NONWORKINGDAYSCALENDAR"),
     @JsonSubTypes.Type(value = com.sos.webservices.order.initiator.model.ScheduleEdit.class, name = "SCHEDULE"),
@@ -80,6 +84,8 @@ public class ConfigurationObject {
      */
     @JsonProperty("objectType")
     private ConfigurationType objectType;
+    @JsonProperty("name")
+    private String name;
     /**
      * interface for different json representations of a configuration item
      * 
@@ -130,6 +136,14 @@ public class ConfigurationObject {
     @JsonProperty("deliveryDate")
     @JsonPropertyDescription("Value is UTC timestamp in ISO 8601 YYYY-MM-DDThh:mm:ss.sZ or empty")
     private Date deliveryDate;
+    /**
+     * auditParams
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("auditLog")
+    private AuditParams auditLog;
 
     /**
      * non negative long
@@ -173,6 +187,16 @@ public class ConfigurationObject {
     @JsonProperty("path")
     public void setPath(String path) {
         this.path = path;
+    }
+    
+    @JsonProperty("name")
+    public String getName() {
+        return name;
+    }
+
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
@@ -359,6 +383,28 @@ public class ConfigurationObject {
     @JsonProperty("deliveryDate")
     public void setDeliveryDate(Date deliveryDate) {
         this.deliveryDate = deliveryDate;
+    }
+    
+    /**
+     * auditParams
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("auditLog")
+    public AuditParams getAuditLog() {
+        return auditLog;
+    }
+
+    /**
+     * auditParams
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("auditLog")
+    public void setAuditLog(AuditParams auditLog) {
+        this.auditLog = auditLog;
     }
 
     @Override

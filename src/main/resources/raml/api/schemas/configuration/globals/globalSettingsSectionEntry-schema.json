@@ -1,27 +1,21 @@
 {
 	"title": "cluster setting",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSectionValue",
+	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSectionEntry",
 	"type": "object",
-	"required": [
-		"name",
-		"value",
-		"type",
-		"default"
-	],
 	"additionalProperties": false,
 	"properties": {
-		"name": {
-			"$ref": "../../common/string255-schema.json"
-		},
 		"value": {
 			"$ref": "../../common/string255-schema.json"
 		},
 		"type": {
-			"$ref": "globalSettingsSectionValueType-schema.json"
+			"$ref": "globalSettingsSectionEntryValueType-schema.json"
 		},
 		"default": {
 			"$ref": "../../common/string255-schema.json"
+		},
+		"ordering": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
 		}
 	}
 }

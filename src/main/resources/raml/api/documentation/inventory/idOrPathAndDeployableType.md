@@ -6,5 +6,6 @@
     <li>"JOBCLASS"</li>
     <li>"LOCK"</li>
     <li>"JUNCTION"</li>
+    <li>"FILEORDERSOURCE"</li>
 </ul>
 </td><td></td><td></td></tr>

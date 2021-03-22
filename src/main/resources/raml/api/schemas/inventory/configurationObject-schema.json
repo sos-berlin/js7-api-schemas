@@ -26,6 +26,9 @@
 		"objectType": {
 			"$ref": "common/configurationType-schema.json"
 		},
+		"name": {
+			"$ref": "../common/string255-schema.json"
+		},
 		"configuration": {
 			"description": "interface for different json representations of a configuration item",
       		"type": "object",
@@ -67,6 +70,9 @@
 		},
 		"deliveryDate": {
 			"$ref": "../common/timestamp-schema.json"
-		}
+		},
+    	"auditLog": {
+      		"$ref": "../audit/auditParams-schema.json"
+    	}
 	}
 }

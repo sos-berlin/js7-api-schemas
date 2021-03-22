@@ -3,5 +3,6 @@
     <li>"JOBCLASS"</li>
     <li>"LOCK"</li>
     <li>"JUNCTION"</li>
+    <li>"FILEORDERSOURCE"</li>
 </ul>
 </td><td>["WORKFLOW"]</td><td></td></tr>

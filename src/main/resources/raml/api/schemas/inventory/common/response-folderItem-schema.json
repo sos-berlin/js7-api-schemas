@@ -3,7 +3,6 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.inventory.common.ResponseFolderItem",
 	"type": "object",
-	"description": "the field 'orders' is only relevant for Workflows",
 	"required": [
 		"name",
 		"path",

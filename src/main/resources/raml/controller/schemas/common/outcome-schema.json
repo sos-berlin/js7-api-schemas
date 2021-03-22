@@ -3,16 +3,19 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.controller.model.common.Outcome",
   "type": "object",
+  "required": [
+  	"TYPE"
+  ],
   "properties": {
-  	"required": [
-  		"TYPE"
-  	],
   	"TYPE": {
-  		"description": "Succeeded or Failed",
-  		"$ref": "outcomeType-schema.json"
+  		"description": "Succeeded, Failed, Disrupted, Cancelled, Killed",
+  		"type": "string"
   	},
   	"namedValues": {
   		"$ref": "../../../inventory/schemas/common/variables-schema.json"
+  	},
+  	"outcome": {
+  		"$ref": "outcome-schema.json"
   	}
   },
   "additionalProperties": false

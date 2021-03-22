@@ -49,6 +49,13 @@
 			},
 			"uniqueItems": true
 		},
+		"fileOrderSources": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
 		"schedules": {
 			"type": "array",
 			"items": {

@@ -17,7 +17,7 @@
       "$ref": "type-schema.json"
     },
     "objectType": {
-      "$ref": "objectType-schema.json"
+      "$ref": "../common/string255-schema.json"
     },
     "shared": {
       "type": "boolean"
