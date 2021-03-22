@@ -4,8 +4,7 @@
 	"javaType": "com.sos.joc.model.dailyplan.DailyPlanSubmissionsFilterDef",
 	"type": "object",
 	"description": "Define the filter To get submissions from the daily plan",
-	"properties": {	
-		
+	"properties": {
 		"dateFrom": {
 			"$ref": "../../common/dateFromTo-schema.json"
 		},

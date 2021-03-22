@@ -1,11 +1,10 @@
 {
 	"title": "modify order commands",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.order.ModifyOrders",
+	"javaType": "com.sos.joc.model.order.CancelDailyPlanOrders",
 	"type": "object",
 	"required": [
-		"controllerId",
-		"orderIds"
+		"controllerId"
 	],
 	"properties": {
 		"controllerId": {
@@ -33,9 +32,6 @@
 		"kill": {
 			"type": "boolean",
 			"default": false
-		},
-		"position": {
-			"$ref": "../../../controller/schemas/common/position-schema.json"
 		},
 		"arguments": {
 			"$ref": "../../../inventory/schemas/common/variables-schema.json"

@@ -1923,10 +1923,31 @@ traits:
   /cancel:
     type:
       modifyOrder:
-        description: Cancel orders
+        description: Cancel orders.  
         signalParam: !include api/documentation/order/signal.md
         positionParam: ""
         audit: !include api/documentation/audit/auditLog.md
+  /daily_plan/cancel:
+    type:
+      postJSON:
+        description: Cancels orders. 
+        description1: !include api/documentation/order/cancelOrderIds.md
+        description2: !include api/documentation/order/dailyPlanDate.md
+        description3: !include api/documentation/order/signal.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200:  
+        audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/order/cancelDailyPlanOrders-schema.json
+        schema200: !include api/schemas/common/ok-schema.json
+        example: 
+        example200: 
+
   /history:
     type:
       postJSONWithOptionalJSId:
