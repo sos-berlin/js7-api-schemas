@@ -14,17 +14,14 @@
     },
     "controllerIds": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
-        "type": "string"
+        "$ref": "../common/filename100-schema.json"
       }
     },
     "selected": {
       "description": "The Id from the 'controllerIds' collection which is specified in the selected field will be used for all further calls",
       "type": "string"
-    },
-    "precedence": {
-      "description": "primary (0), secondary (1), ...only relevant for passive cluster",
-      "$ref": "../common/nonNegativeInteger-schema.json"
     }
   }
 }
