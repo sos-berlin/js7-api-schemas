@@ -5,7 +5,7 @@
   "type": "object",
   "properties": {
     "filename": {
-      "type": "string"
+      "$ref": "../common/filename255-schema.json"
     }
   }
 }

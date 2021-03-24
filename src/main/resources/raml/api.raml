@@ -1059,16 +1059,22 @@ traits:
         
   /copy:
     type:
-      postJSONWithOkWithoutJSId:
+      postJSONWithoutJSId:
         description: Copies inventory object
         description1: !include api/documentation/inventory/idOrPathAndType.md
         description2: !include api/documentation/inventory/newPath.md
         description3: !include api/documentation/inventory/shallowCopy.md
         description4: !include api/documentation/inventory/suffixPrefix4copy.md
         description5: " "
-        audit: !include api/documentation/audit/auditLog.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/copy/request-filter-schema.json
         example: !include api/examples/inventory/rename-example.json
+        schema200: !include api/schemas/inventory/common/response-newPath-schema.json
+        example200: " "
   
   /delete_draft:
     type:
@@ -1382,16 +1388,22 @@ traits:
   
   /rename:
     type:
-      postJSONWithOkWithoutJSId:
+      postJSONWithoutJSId:
         description: Renames/Moves inventory object
         description1: !include api/documentation/inventory/idOrPathAndType.md
         description2: !include api/documentation/inventory/newPath.md
         description3: " "
         description4: " "
         description5: " "
-        audit: !include api/documentation/audit/auditLog.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/rename/request-filter-schema.json
         example: !include api/examples/inventory/rename-example.json
+        schema200: !include api/schemas/inventory/common/response-newPath-schema.json
+        example200: " "
         
   /replace:
     type:
@@ -1526,16 +1538,22 @@ traits:
           
     /restore:
       type:
-        postJSONWithOkWithoutJSId:
+        postJSONWithoutJSId:
           description: Restore a discarded inventory object
           description1: !include api/documentation/inventory/idOrPathAndType.md
           description2: !include api/documentation/inventory/newRestorePath.md
           description3: " " 
           description4: !include api/documentation/inventory/suffixPrefix4restore.md
           description5: " "
-          audit: !include api/documentation/audit/auditLog.md
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/inventory/restore/request-filter-schema.json
           example: !include api/examples/inventory/pathType-example.json
+          schema200: !include api/schemas/inventory/common/response-newPath-schema.json
+          example200: " "
   
   /validate/path:
     type:
@@ -1731,15 +1749,15 @@ traits:
   /log:
     type:
       postWithPlainResponse:
-        description: Provides JOC Cockpit log ([date].stderrout.log) as download
+        description: Provides JOC Cockpit log (joc.log) as download
         description1: !include api/documentation/joc/filename.md
-        description200: Content of JOC Cockpit log ([date].stderrout.log) for download
+        description200: Content of JOC Cockpit log (joc.log) for download
         schema: !include api/schemas/joc/filename-schema.json
 
   /logs:
     type: error
     post:
-      description: <h2>Returns a list of JOC Cockpit logs ([date].stderrout.log)</h2>
+      description: <h2>Returns a list of JOC Cockpit logs (joc.log)</h2>
       responses:
         200:
           description: " "

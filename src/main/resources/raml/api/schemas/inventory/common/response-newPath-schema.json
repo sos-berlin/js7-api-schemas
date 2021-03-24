@@ -1,0 +1,26 @@
+{
+	"title": "path of copied, restored or rename object/folder",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.ResponseNewPath",
+	"type": "object",
+	"description": "response of copy, rename, restore",
+	"required": [
+		"deliveryDate",
+		"path",
+		"objectType"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"id": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"path": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/configurationType-schema.json"
+		}
+	}
+}
