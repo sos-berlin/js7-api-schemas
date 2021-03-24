@@ -1,4 +1,3 @@
-
-	* id
-    * path
-    * objectType
+* id
+* path
+* objectType
