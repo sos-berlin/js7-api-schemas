@@ -9,7 +9,7 @@
 	],
 	"properties": {
 		"controllerId": {
-			"$ref": "../common/filename100-schema.json"
+			"$ref": "../common/controllerId-schema.json"
 		},
 		"orderIds": {
 			"type": "array",
@@ -17,9 +17,6 @@
 			"items": {
 				"$ref": "../common/string255-schema.json"
 			}
-		},
-		"dailyPlanDate": {
-			"$ref": "../common/date-schema.json"
 		},
 		"workflowIds": {
 			"type": "array",

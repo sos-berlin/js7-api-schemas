@@ -6,7 +6,7 @@
 	
 	"properties": {
 		"controllerId": {
-			"$ref": "../../common/filename100-schema.json"
+			"$ref": "../../common/controllerId-schema.json"
 		},
 		"filter": {
 			"$ref": "dailyPlanHistoryFilterDef-schema.json"

@@ -5,7 +5,7 @@
 	"javaType": "com.sos.joc.model.dailyplan.DailyPlanHistoryControllerItem",
 	"properties": {
 		"controllerId": {
-			"$ref": "../../common/filename100-schema.json"
+			"$ref": "../../common/controllerId-schema.json"
 		},
 		"submissions": {
 			"type": "array",

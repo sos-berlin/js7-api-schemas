@@ -15,12 +15,12 @@
 			"$ref": "../../common/dateFromTo-schema.json"
 		},
 		"controllerId": {
-			"$ref": "../../common/filename100-schema.json"
+			"$ref": "../../common/controllerId-schema.json"
 		},
 		"controllerIds": {
 			"type": "array",
 			"items": {
-				"$ref": "../../common/filename100-schema.json"
+				"$ref": "../../common/controllerId-schema.json"
 			}
 		}
 	}

@@ -8,7 +8,7 @@
   ],
   "properties": {
     "controllerId": {
-      "$ref": "../common/filename100-schema.json"
+      "$ref": "../common/controllerId-schema.json"
     },
     "account": {
       "$ref": "../common/string255-schema.json"

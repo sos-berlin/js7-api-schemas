@@ -9,7 +9,7 @@
   ],
   "properties": {
     "filename": {
-      "$ref": "../common/filename100-schema.json"
+      "$ref": "../common/filename255-schema.json"
     },
     "format": {
       "$ref": "archiveFormat-schema.json"

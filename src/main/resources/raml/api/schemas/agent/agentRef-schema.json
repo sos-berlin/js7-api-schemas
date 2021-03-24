@@ -10,10 +10,10 @@
   
   "properties": {
     "id": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/string255required-schema.json"
     },
     "uri": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/string255required-schema.json"
     },
     "maxProcesses": {
       "$ref": "../common/nonNegativeInteger-schema.json"

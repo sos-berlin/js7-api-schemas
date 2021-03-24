@@ -10,15 +10,13 @@
   ],
   "properties": {
     "controllerId": {
-    	"$ref": "../common/filename100-schema.json"
+    	"$ref": "../common/controllerId-schema.json"
     },
     "agentId": {
-    	"minLength": 1,
-    	"$ref": "../common/string255-schema.json"
+    	"$ref": "../common/string255required-schema.json"
     },
     "agentName": {
-    	"minLength": 1,
-    	"$ref": "../common/string255-schema.json"
+    	"$ref": "../common/string255required-schema.json"
     },
     "agentNameAliases": {
     	"type": "array",
@@ -28,8 +26,7 @@
     	}
     },
     "url": {
-    	"minLength": 1,
-    	"$ref": "../common/string255-schema.json"
+    	"$ref": "../common/string255required-schema.json"
     },
     "isClusterWatcher": {
     	"type": "boolean",

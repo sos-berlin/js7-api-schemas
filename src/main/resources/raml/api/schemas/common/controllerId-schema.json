@@ -1,14 +1,7 @@
 {
-  "title": "Controller id",
+  "title": "controllerId",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.common.ControllerId",
-  "type": "object",
-  "required": [
-    "controllerId"
-  ],
-  "properties": {
-    "controllerId": {
-      "$ref": "filename100-schema.json"
-    }
-  }
+  "type": "string",
+  "pattern": "^[^/\\<>?:\"|*]*$",
+  "maxLength": 100
 }

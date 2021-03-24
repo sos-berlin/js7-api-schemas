@@ -16,10 +16,10 @@ schemas:
   - error420: !include api/schemas/common/error420-schema.json
   - ok: !include api/schemas/common/ok-schema.json
   - orders: !include api/schemas/order/orders_v-schema.json
-  - jsFilter: !include api/schemas/common/controllerId-schema.json
-  - jsFilterWithTimeout: !include api/schemas/jobscheduler/urlParam-schema.json
-  - jsFilterWithUrl: !include api/schemas/jobscheduler/urlParam-schema.json
-  - jsRegister: !include api/schemas/jobscheduler/registerParam-schema.json
+  - jsFilter: !include api/schemas/common/controllerId-request-schema.json
+  - jsFilterWithTimeout: !include api/schemas/controller/urlParam-schema.json
+  - jsFilterWithUrl: !include api/schemas/controller/urlParam-schema.json
+  - jsRegister: !include api/schemas/controller/registerParam-schema.json
   - taskFilter: !include api/schemas/job/taskFilter-schema.json
   - orderHistoryFilter: !include api/schemas/order/orderHistoryFilter-schema.json
   - addOrders: !include api/schemas/order/addOrders-schema.json
@@ -36,10 +36,10 @@ resourceTypes:
   - postCalendarWithOkResponse: !include api/resourceTypes/calendar/postJSONWithOkResponse.raml
   - postDocuWithOkResponse: !include api/resourceTypes/docu/postJSONWithOkResponse.raml
   - postTimeoutWithOkResponse: !include api/resourceTypes/common/postTimeoutWithOkResponse.raml
-  - postWithOkResponse: !include api/resourceTypes/jobscheduler/postWithOkResponse.raml
-  - registerControllerWithOkResponse: !include api/resourceTypes/jobscheduler/registerControllerWithOkResponse.raml
-  - postURLWithPlainResponse: !include api/resourceTypes/jobscheduler/postWithPlainResponse.raml
-  - postStateResponse: !include api/resourceTypes/jobscheduler/postStateResponse.raml
+  - postWithOkResponse: !include api/resourceTypes/controller/postWithOkResponse.raml
+  - registerControllerWithOkResponse: !include api/resourceTypes/controller/registerControllerWithOkResponse.raml
+  - postURLWithPlainResponse: !include api/resourceTypes/controller/postWithPlainResponse.raml
+  - postStateResponse: !include api/resourceTypes/controller/postStateResponse.raml
   - postJSON: !include api/resourceTypes/common/postJSON.raml
   - postJSONWithOptionalJSId: !include api/resourceTypes/common/postJSONWithOptionalJSId.raml
   - postJSONWithOkAndOnlyOptionalIdResponse: !include api/resourceTypes/common/postJSONWithOkAndOnlyOptionalIdResponse.raml

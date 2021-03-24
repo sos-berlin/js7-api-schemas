@@ -8,7 +8,7 @@
   ],
   "properties": {
     "controllerId": {
-      "type": "string"
+      "$ref": "../common/controllerId-schema.json"
     },
     "jobs": {
       "type": "array",

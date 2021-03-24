@@ -1,7 +1,8 @@
 {
-  "title": "filename",
+  "title": "controllerId",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "string",
   "pattern": "^[^/\\<>?:\"|*]*$",
-  "maxLength": 100
+  "maxLength": 100,
+  "minLength": 1
 }

@@ -15,10 +15,10 @@ schemas:
   - error420: !include api/schemas/common/error420-schema.json
   - ok: !include api/schemas/common/ok-schema.json
   - orders: !include api/schemas/order/orders_v-schema.json
-  - jsFilter: !include api/schemas/common/controllerId-schema.json
-  - jsFilterWithTimeout: !include api/schemas/jobscheduler/urlParam-schema.json
-  - jsFilterWithUrl: !include api/schemas/jobscheduler/urlParam-schema.json
-  - jsRegister: !include api/schemas/jobscheduler/registerParam-schema.json
+  - jsFilter: !include api/schemas/common/controllerId-request-schema.json
+  - jsFilterWithTimeout: !include api/schemas/controller/urlParam-schema.json
+  - jsFilterWithUrl: !include api/schemas/controller/urlParam-schema.json
+  - jsRegister: !include api/schemas/controller/registerParam-schema.json
   - taskFilter: !include api/schemas/job/taskFilter-schema.json
   - orderHistoryFilter: !include api/schemas/order/orderHistoryFilter-schema.json
   - addOrders: !include api/schemas/order/addOrders-schema.json
@@ -35,10 +35,10 @@ resourceTypes:
   - postCalendarWithOkResponse: !include api/resourceTypes/calendar/postJSONWithOkResponse.raml
   - postDocuWithOkResponse: !include api/resourceTypes/docu/postJSONWithOkResponse.raml
   - postTimeoutWithOkResponse: !include api/resourceTypes/common/postTimeoutWithOkResponse.raml
-  - postWithOkResponse: !include api/resourceTypes/jobscheduler/postWithOkResponse.raml
-  - registerControllerWithOkResponse: !include api/resourceTypes/jobscheduler/registerControllerWithOkResponse.raml
-  - postURLWithPlainResponse: !include api/resourceTypes/jobscheduler/postWithPlainResponse.raml
-  - postStateResponse: !include api/resourceTypes/jobscheduler/postStateResponse.raml
+  - postWithOkResponse: !include api/resourceTypes/controller/postWithOkResponse.raml
+  - registerControllerWithOkResponse: !include api/resourceTypes/controller/registerControllerWithOkResponse.raml
+  - postURLWithPlainResponse: !include api/resourceTypes/controller/postWithPlainResponse.raml
+  - postStateResponse: !include api/resourceTypes/controller/postStateResponse.raml
   - postJSON: !include api/resourceTypes/common/postJSON.raml
   - postJSONWithOptionalJSId: !include api/resourceTypes/common/postJSONWithOptionalJSId.raml
   - postJSONWithOkAndOnlyOptionalIdResponse: !include api/resourceTypes/common/postJSONWithOkAndOnlyOptionalIdResponse.raml
@@ -113,7 +113,7 @@ traits:
         example200 : !include api/examples/agent/agentNames-example.json
   /p:
     type:
-      postJSON:
+      postJSONWithOptionalJSId:
         description: Get collection of Agents from database
         description1: !include api/documentation/agent/agentIds.md
         description2: " "
@@ -125,6 +125,9 @@ traits:
         description8: " "
         description9: " "
         description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
         description200: !include api/documentation/agent/agents_p.md
         schema: !include api/schemas/agent/readAgents-schema.json
         schema200: !include api/schemas/agent/agents-schema.json
@@ -509,23 +512,23 @@ traits:
   type:
     postStateResponse:
       description: Controller information such as its status
-      urlparam: !include api/documentation/jobscheduler/urlParam.md
-      description200: !include api/documentation/jobscheduler/master.md
-      schema200: !include api/schemas/jobscheduler/jobscheduler200_v-schema.json
+      urlparam: !include api/documentation/controller/urlParam.md
+      description200: !include api/documentation/controller/master.md
+      schema200: !include api/schemas/controller/jobscheduler200_v-schema.json
       example200: " "
   /abort:
     type:
       postWithOkResponse:
         description: Aborts JobScheduler Controller
-        urlparam: !include api/documentation/jobscheduler/urlParamClusterRequired.md
-        failover: !include api/documentation/jobscheduler/failover.md
+        urlparam: !include api/documentation/controller/urlParamClusterRequired.md
+        failover: !include api/documentation/controller/failover.md
         audit: !include api/documentation/audit/auditLog.md
   /abort_and_restart:
     type:
       postWithOkResponse:
         description: Aborts and restarts JobScheduler Controller
-        urlparam: !include api/documentation/jobscheduler/urlParamClusterRequired.md
-        failover: !include api/documentation/jobscheduler/failover.md
+        urlparam: !include api/documentation/controller/urlParamClusterRequired.md
+        failover: !include api/documentation/controller/failover.md
         audit: !include api/documentation/audit/auditLog.md
   
   /cleanup:
@@ -557,7 +560,7 @@ traits:
       postOnlyId:
         description: Get Controller Components
         description200: " "
-        schema200: !include api/schemas/jobscheduler/components-schema.json
+        schema200: !include api/schemas/controller/components-schema.json
         example200: " "
 
   /ids:
@@ -574,7 +577,7 @@ traits:
             all following requests
           body:
             application/json:
-              schema: !include api/schemas/jobscheduler/controllerIds-schema.json
+              schema: !include api/schemas/controller/controllerIds-schema.json
               example: !include api/examples/controller/ids-example.json
   /log:
     type:
@@ -586,9 +589,9 @@ traits:
     type:
       postStateResponse:
         description: General permanent Controller information
-        urlparam: !include api/documentation/jobscheduler/urlParam.md
-        description200: !include api/documentation/jobscheduler/jobscheduler_p.md
-        schema200: !include api/schemas/jobscheduler/jobscheduler200_v-schema.json
+        urlparam: !include api/documentation/controller/urlParam.md
+        description200: !include api/documentation/controller/jobscheduler_p.md
+        schema200: !include api/schemas/controller/jobscheduler200_v-schema.json
         example200: " "
   
   /register:
@@ -601,8 +604,8 @@ traits:
     type:
       postWithOkResponse:
         description: Restarts JobScheduler Controller
-        urlparam: !include api/documentation/jobscheduler/urlParamClusterRequired.md
-        failover: !include api/documentation/jobscheduler/failover.md
+        urlparam: !include api/documentation/controller/urlParamClusterRequired.md
+        failover: !include api/documentation/controller/failover.md
         audit: !include api/documentation/audit/auditLog.md
   
   /switch:
@@ -617,8 +620,8 @@ traits:
     type:
       postWithOkResponse:
         description: Terminates JobScheduler Controller
-        urlparam: !include api/documentation/jobscheduler/urlParamClusterRequired.md
-        failover: !include api/documentation/jobscheduler/failover.md
+        urlparam: !include api/documentation/controller/urlParamClusterRequired.md
+        failover: !include api/documentation/controller/failover.md
         audit: !include api/documentation/audit/auditLog.md
   
   /test:
@@ -627,7 +630,7 @@ traits:
         description: Test JobScheduler Controller connection
         description1: |
           <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID (can be empty if and only if a new Controller (Cluster) will be registered)</td><td>scheduler</td><td></td></tr>
-        description2: !include api/documentation/jobscheduler/urlParamRequired.md
+        description2: !include api/documentation/controller/urlParamRequired.md
         description3: " "
         description4: " "
         description5: " "
@@ -636,8 +639,8 @@ traits:
         description8: " "
         description9: " "
         description10: " "
-        description200: !include api/documentation/jobscheduler/jobschedulerTest.md
-        schema200: !include api/schemas/jobscheduler/jobscheduler200_v-schema.json
+        description200: !include api/documentation/controller/jobschedulerTest.md
+        schema200: !include api/schemas/controller/jobscheduler200_v-schema.json
         example200: !include api/examples/controller/test-example.json
         schema: jsFilterWithUrl
         example: |
@@ -650,22 +653,22 @@ traits:
   type:
     postOnlyOptionalId:
       description: Lists all JobScheduler Controllers
-      description200: !include api/documentation/jobscheduler/master.md
-      schema200: !include api/schemas/jobscheduler/masters-schema.json
+      description200: !include api/documentation/controller/master.md
+      schema200: !include api/schemas/controller/masters-schema.json
       example200: " "
   /p:
     type:
       postOnlyOptionalId:
         description: Lists all JobScheduler Controllers (permanent information)
-        description200: !include api/documentation/jobscheduler/controller_p.md
-        schema200: !include api/schemas/jobscheduler/masters-schema.json
+        description200: !include api/documentation/controller/controller_p.md
+        schema200: !include api/schemas/controller/masters-schema.json
         example200: !include api/examples/controller/controller_p-example.json
   /security_level:
     type:
       postOnlyAccessToken:
         description: Lists for each Controller its id and security level
-        description200: !include api/documentation/jobscheduler/securityLevels.md
-        schema200: !include api/schemas/jobscheduler/masters-schema.json
+        description200: !include api/documentation/controller/securityLevels.md
+        schema200: !include api/schemas/controller/masters-schema.json
         example200: !include api/examples/controller/securityLevels-example.json
     /take_over:
       type:
@@ -1667,7 +1670,7 @@ traits:
           
 /jobs/overview/summary:
   type:
-    postJSON:
+    postJSONWithOptionalJSId:
       description: |
           Summary with number of<h5>
           * successful tasks
@@ -1685,6 +1688,9 @@ traits:
       description8: " "
       description9: " "
       description10: " "
+      description11: " "
+      description12: " "
+      description13: " "
       description200: " "
       schema200: !include api/schemas/job/summary-schema.json
       schema: !include api/schemas/job/jobsFilter-schema.json
@@ -1908,7 +1914,7 @@ traits:
 /orders:
   type:
     postJSON:
-      description: Returns a collection of orders (volatile part) filtered by workflow or order state - <b>IN PROGRESS</b>
+      description: Returns a collection of orders filtered by workflow or order state
       description1: !include api/documentation/order/orderIds.md
       description2: !include api/documentation/workflow/filteredByWorkflows.md
       description3: !include api/documentation/common/folders.md
@@ -1931,14 +1937,14 @@ traits:
   /cancel:
     type:
       modifyOrder:
-        description: Cancel orders.  
+        description: Cancel orders  
         signalParam: !include api/documentation/order/signal.md
         positionParam: ""
         audit: !include api/documentation/audit/auditLog.md
   /daily_plan/cancel:
     type:
       postJSON:
-        description: Cancels orders. 
+        description: Cancels orders 
         description1: !include api/documentation/order/cancelOrderIds.md
         description2: !include api/documentation/order/dailyPlanDate.md
         description3: !include api/documentation/order/signal.md
@@ -1948,9 +1954,8 @@ traits:
         description7: " "
         description8: " "
         description9: " "
-        description10: " "
+        description10: !include api/documentation/audit/auditLog.md
         description200:  
-        audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/order/cancelDailyPlanOrders-schema.json
         schema200: !include api/schemas/common/ok-schema.json
         example: 
