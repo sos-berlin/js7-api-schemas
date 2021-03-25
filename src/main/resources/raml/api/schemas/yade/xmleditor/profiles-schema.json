@@ -1,0 +1,19 @@
+{
+	"title": "xmleditor yade read profiles in",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.yade.xmleditor.Profiles",
+	"type": "object",
+	"description": "",
+	"required": [
+		"controllerId",
+		"name"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
+		"name": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	}
+}
