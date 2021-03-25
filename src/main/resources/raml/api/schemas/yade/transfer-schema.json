@@ -66,7 +66,7 @@
 			"$ref": "../common/string255-schema.json"
 		},
 		"job": {
-			"$ref": "../common/path-schema.json"
+			"$ref": "../common/string255-schema.json"
 		},
 		"jobPosition": {
 			"$ref": "../common/string255-schema.json"
