@@ -1,0 +1,15 @@
+{
+	"title": "xmleditor yade profile",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.yade.xmleditor.common.Profile",
+	"type": "object",
+	"description": "",
+	"required": [
+		"profile"
+	],
+	"properties": {
+		"profile": {
+			"$ref": "../../../common/string255-schema.json"
+		}
+	}
+}
