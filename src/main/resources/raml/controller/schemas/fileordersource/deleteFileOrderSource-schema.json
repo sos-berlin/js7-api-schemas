@@ -14,11 +14,11 @@
     "id"
   ],
   
-  "description": "delete object with fixed property 'TYPE':'FileOrderSourceId'",
+  "description": "delete object with fixed property 'TYPE':'FileWatchId'",
   "properties": {
     "TYPE": {
       "$ref": "../common/deleteType-schema.json",
-      "default": "FileOrderSourceId" 
+      "default": "FileWatchId" 
     },
     "id": {
       "$ref": "../../../api/schemas/common/string255-schema.json"

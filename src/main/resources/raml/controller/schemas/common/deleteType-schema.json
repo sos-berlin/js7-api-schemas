@@ -8,7 +8,7 @@
     "LockId",
     "JobClassPath",
     "JunctionPath",
-    "FileOrderSourceId"
+    "FileWatchId"
   ],
   "default": "WorkflowPath"
 }
