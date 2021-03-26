@@ -16,9 +16,6 @@
     "suspended": {
       "$ref": "../common/nonNegativeInteger-schema.json"
     },
-    "calling": {
-      "$ref": "../common/nonNegativeInteger-schema.json"
-    },
     "waiting": {
       "$ref": "../common/nonNegativeInteger-schema.json"
     },
