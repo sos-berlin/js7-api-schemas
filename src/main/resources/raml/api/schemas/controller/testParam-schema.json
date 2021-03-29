@@ -1,0 +1,17 @@
+{
+  "title": "url params",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.controller.TestConnect",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerId-schema.json"
+    },
+    "url": {
+      "$ref": "../common/uri-schema.json"
+    }
+  }
+}
