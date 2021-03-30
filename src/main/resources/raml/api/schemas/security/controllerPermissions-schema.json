@@ -1,0 +1,109 @@
+{
+	"title": "Controller Permissions",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.permissions.ControllerPermissions",
+	"type": "object",
+	
+	"properties": {
+			"view": {
+				"type": "boolean",
+				"default" : false
+			},
+			"restart": {
+				"type": "boolean",
+				"default" : false
+			},
+			"terminate": {
+				"type": "boolean",
+				"default" : false
+			},
+			"switchOver": {
+				"type": "boolean",
+				"default" : false
+			},
+			"deployments": {
+				"javaType": "com.sos.joc.model.security.permissions.controller.Deployments",
+				"type": "object",
+				"properties": {
+					"view": {
+						"description": "show deployment history",
+						"type": "boolean",
+						"default" : false
+					},
+					"deploy": {
+						"description": "add/update/remove releasable and deployable objects",
+						"type": "boolean",
+						"default" : false
+					}
+				},
+				"additionalProperties": false
+			},
+			"orders": {
+				"javaType": "com.sos.joc.model.security.permissions.controller.Orders",
+				"type": "object",
+				"properties": {
+					"view": {
+						"description": "show order/task widget, overview, order/task history",
+						"type": "boolean",
+						"default" : false
+					},
+					"create": {
+					    "description": "add, generate, submit",
+						"type": "boolean",
+						"default" : false
+					},
+					"cancel": {
+						"type": "boolean",
+						"default" : false
+					},
+					"suspendResume": {
+						"description": "suspend, resume",
+						"type": "boolean",
+						"default" : false
+					},
+					"modify": {
+						"type": "boolean",
+						"default" : true
+					}
+				},
+				"additionalProperties": false
+			},
+			"agents": {
+				"javaType": "com.sos.joc.model.security.permissions.controller.Agents",
+				"type": "object",
+				"properties": {
+					"view": {
+						"description": "show resource tab 'agents'",
+						"type": "boolean",
+						"default" : false
+					}
+				},
+				"additionalProperties": false
+			},
+			"locks": {
+				"javaType": "com.sos.joc.model.security.permissions.controller.Locks",
+				"type": "object",
+				"properties": {
+					"view": {
+						"description": "show resource tab 'locks'",
+						"type": "boolean",
+						"default" : true
+					}
+				},
+				"additionalProperties": false
+			},
+			"workflows": {
+				"javaType": "com.sos.joc.model.security.permissions.controller.Workflows",
+				"type": "object",
+				"properties": {
+					"view": {
+						"description": "show tab",
+						"type": "boolean",
+						"default" : false
+					}
+				},
+				"additionalProperties": false
+			}
+	},
+	"additionalProperties": false
+}

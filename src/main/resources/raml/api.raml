@@ -228,11 +228,11 @@ traits:
   
   /joc_cockpit_permissions:
     type:
-      postOnlyId:
+      postOnlyAccessToken:
         description: Returns list of user's permissions
         description200: " "
         example200: !include api/examples/user/permissions-example.json
-        schema200: !include api/schemas/user/permissions-schema.json
+        schema200: !include api/schemas/security/permissions-schema.json
   
   /login:
     type: login

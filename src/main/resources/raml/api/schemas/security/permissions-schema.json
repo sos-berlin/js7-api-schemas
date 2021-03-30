@@ -1,0 +1,224 @@
+{
+	"title": " Permissions",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.Permissions",
+	"type": "object",
+	
+	"properties": {
+		"joc": {
+			"javaType": "com.sos.joc.model.security.permissions.JocPermissions",
+			"type": "object",
+			"properties": {
+				"administration": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.Administration",
+					"type": "object",
+					"properties": {
+						"accounts": {
+							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Accounts",
+							"type": "object",
+							"properties": {
+								"view": {
+									"type": "boolean",
+									"default" : false
+								},
+								"manage": {
+									"type": "boolean",
+									"default" : false
+								}
+							},
+							"additionalProperties": false
+						},
+						"settings": {
+							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Settings",
+							"type": "object",
+							"properties": {
+								"view": {
+									"type": "boolean",
+									"default" : false
+								},
+								"manage": {
+									"type": "boolean",
+									"default" : false
+								}
+							},
+							"additionalProperties": false
+						},
+						"controllers": {
+							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Controllers",
+							"type": "object",
+							"properties": {
+								"view": {
+									"type": "boolean",
+									"default" : false
+								},
+								"manage": {
+									"type": "boolean",
+									"default" : false
+								}
+							},
+							"additionalProperties": false
+						},
+						"certificates": {
+							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Certificates",
+							"type": "object",
+							"properties": {
+								"view": {
+									"type": "boolean",
+									"default" : false
+								},
+								"manage": {
+									"type": "boolean",
+									"default" : false
+								}
+							},
+							"additionalProperties": false
+						}
+					},
+					"additionalProperties": false
+				},
+				"cluster": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.Cluster",
+					"type": "object",
+					"properties": {
+						"manage": {
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				},
+				"inventory": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.Inventory",
+					"type": "object",
+					"properties": {
+						"view": {
+							"type": "boolean",
+							"default" : false
+						},
+						"manage": {
+							"description": "edit/restore/assign documentation",
+							"type": "boolean",
+							"default" : false
+						},
+						"deploy": {
+						    "description": "publishing depoyables and releasables",
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				},
+				"calendars": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.Calendars",
+					"type": "object",
+					"properties": {
+						"view": {
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				},
+				"documentations": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.Documentations",
+					"type": "object",
+					"properties": {
+						"view": {
+							"description": "show/export",
+							"type": "boolean",
+							"default" : false
+						},
+						"manage": {
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				},
+				"auditLog": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.AuditLog",
+					"type": "object",
+					"properties": {
+						"view": {
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				},
+				"dailyPlan": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.DailyPlan",
+					"type": "object",
+					"properties": {
+						"view": {
+							"description": "show tab, planned orders, history",
+							"type": "boolean",
+							"default" : false
+						},
+						"manage": {
+							"description": "create daily plan, delete submissions",
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				},
+				"fileTransfer": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.FileTransfer",
+					"type": "object",
+					"properties": {
+						"view": {
+							"description": "show history, configuration tab",
+							"type": "boolean",
+							"default" : false
+						},
+						"manage": {
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				},
+				"notification": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.Notification",
+					"type": "object",
+					"properties": {
+						"view": {
+							"description": "configuration tab",
+							"type": "boolean",
+							"default" : false
+						},
+						"manage": {
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				},
+				"others": {
+					"javaType": "com.sos.joc.model.security.permissions.joc.Others",
+					"type": "object",
+					"properties": {
+						"view": {
+							"description": "configuration tab",
+							"type": "boolean",
+							"default" : false
+						},
+						"manage": {
+							"type": "boolean",
+							"default" : false
+						}
+					},
+					"additionalProperties": false
+				}
+			},
+			"additionalProperties": false
+		},
+		"controllerDefaults": {
+			"$ref": "controllerPermissions-schema.json"
+		}
+	},
+	"additionalProperties":  { 
+    	"$ref": "controllerPermissions-schema.json"
+   	}
+}
