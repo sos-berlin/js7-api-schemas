@@ -1,82 +1,110 @@
 {
-    "controllerDefaults": {
-        "agents": {
+    "joc": {
+        "administration": {
+            "accounts": {
+                "view": true,
+                "manage": true
+            },
+            "settings": {
+                "view": true,
+                "manage": true
+            },
+            "controllers": {
+                "view": true,
+                "manage": true
+            },
+            "certificates": {
+                "view": true,
+                "manage": true
+            }
+        },
+        "cluster": {
+            "manage": true
+        },
+        "inventory": {
+            "view": true,
+            "manage": true,
+            "deploy": true
+        },
+        "calendars": {
             "view": true
         },
+        "documentations": {
+            "view": true,
+            "manage": true
+        },
+        "auditLog": {
+            "view": true
+        },
+        "dailyPlan": {
+            "view": true,
+            "manage": true
+        },
+        "fileTransfer": {
+            "view": true,
+            "manage": true
+        },
+        "notification": {
+            "view": true,
+            "manage": true
+        },
+        "others": {
+            "view": true,
+            "manage": true
+        }
+    },
+    "controllerDefaults": {
+        "view": true,
+        "restart": true,
+        "terminate": true,
+        "switchOver": true,
         "deployments": {
-            "deploy": true,
+            "view": true,
+            "deploy": true
+        },
+        "orders": {
+            "view": true,
+            "create": true,
+            "cancel": true,
+            "suspendResume": true,
+            "modify": true
+        },
+        "agents": {
             "view": true
         },
         "locks": {
             "view": true
         },
-        "orders": {
-            "cancel": true,
-            "create": true,
-            "modify": true,
-            "suspendResume": true,
-            "view": true
-        },
-        "restart": true,
-        "switchOver": true,
-        "terminate": true,
-        "view": true,
         "workflows": {
             "view": true
         }
     },
-    "joc": {
-        "administration": {
-            "accounts": {
-                "manage": true,
-                "view": true
+    "controllers": {
+        "standalone": {
+            "view": false,
+            "restart": false,
+            "terminate": false,
+            "switchOver": false,
+            "deployments": {
+                "view": false,
+                "deploy": false
             },
-            "certificates": {
-                "manage": true,
-                "view": true
+            "orders": {
+                "view": false,
+                "create": false,
+                "cancel": false,
+                "suspendResume": false,
+                "modify": false
             },
-            "controllers": {
-                "manage": true,
-                "view": true
+            "agents": {
+                "view": false
             },
-            "settings": {
-                "manage": true,
-                "view": true
+            "locks": {
+                "view": false
+            },
+            "workflows": {
+                "view": false
             }
-        },
-        "auditLog": {
-            "view": true
-        },
-        "calendars": {
-            "view": true
-        },
-        "cluster": {
-            "manage": true
-        },
-        "dailyPlan": {
-            "manage": true,
-            "view": true
-        },
-        "documentations": {
-            "manage": true,
-            "view": true
-        },
-        "fileTransfer": {
-            "manage": true,
-            "view": true
-        },
-        "inventory": {
-            "deploy": true,
-            "manage": true,
-            "view": true
-        },
-        "notification": {
-            "manage": true,
-            "view": true
-        },
-        "others": {
-            "manage": true,
-            "view": true
         }
     }
 }

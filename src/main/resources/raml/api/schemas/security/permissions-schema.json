@@ -216,9 +216,14 @@
 		},
 		"controllerDefaults": {
 			"$ref": "controllerPermissions-schema.json"
+		},
+		"controllers": {
+			"javaType": "com.sos.joc.model.security.permissions.Controllers",
+			"type": "object",
+			"additionalProperties":  { 
+    			"$ref": "controllerPermissions-schema.json"
+   			}
 		}
 	},
-	"additionalProperties":  { 
-    	"$ref": "controllerPermissions-schema.json"
-   	}
+	"additionalProperties": false
 }
