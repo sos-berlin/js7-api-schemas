@@ -32,6 +32,9 @@
 		"state": {
 			"$ref": "answer-configuration-state-schema.json"
 		},
+		"validation": {
+			"$ref": "../../validate/validate-configuration-answer-schema.json"
+		},
 		"modified": {
 			"$ref": "../../../common/timestamp-schema.json"
 		}

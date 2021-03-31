@@ -28,6 +28,9 @@
 		"state": {
 			"$ref": "read-standard-configuration-answer-state-schema.json"
 		},
+		"validation": {
+			"$ref": "../../validate/validate-configuration-answer-schema.json"
+		},
 		"warning": {
 			"$ref": "../../common/answer-message-schema.json"
 		},
