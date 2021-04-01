@@ -20,6 +20,7 @@
     "SCHEDULE",
     "CALENDAR",
     "ORDERHISTORY",
-    "TASKHISTORY"
+    "TASKHISTORY",
+    "FILETRANSFER"
   ]
 }
