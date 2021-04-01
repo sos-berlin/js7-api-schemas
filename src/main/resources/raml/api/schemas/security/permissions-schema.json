@@ -72,6 +72,26 @@
 								}
 							},
 							"additionalProperties": false
+						},
+						"customization": {
+							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Customization",
+							"type": "object",
+							"properties": {
+								"view": {
+									"type": "boolean",
+									"default" : false
+								},
+								"manage": {
+									"type": "boolean",
+									"default" : false
+								},
+								"share": {
+									"description": "share/makePrvate",
+									"type": "boolean",
+									"default" : false
+								}
+							},
+							"additionalProperties": false
 						}
 					},
 					"additionalProperties": false

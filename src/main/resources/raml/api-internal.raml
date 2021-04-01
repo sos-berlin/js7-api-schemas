@@ -168,9 +168,9 @@ traits:
   
   /save:
     type:
-       postJSON:
+       postJSONWithOptionalJSId:
          description: Stores a configuration on the server (database)
-         description1: !include api/documentation/configuration/userRequiredParam.md
+         description1: " "
          description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
          description3: !include api/documentation/configuration/objectTypeRequiredParam.md
          description4: !include api/documentation/configuration/nameParam.md
@@ -180,6 +180,9 @@ traits:
          description8: " "
          description9: " "
          description10: " "
+         description11: " "
+         description12: " "
+         description13: " "
          description200: |
              *Response contains the ``id`` of the customization.*<br/>
              It seems to be unnecessary but if a new customization is saved
@@ -222,7 +225,7 @@ traits:
   
 /configurations:
   type:
-     postJSON:
+     postJSONWithOptionalJSId:
        description: Get collection of configuration items
        description1: !include api/documentation/configuration/userParam.md
        description2: !include api/documentation/configuration/configurationTypeParam.md

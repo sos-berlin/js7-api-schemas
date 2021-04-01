@@ -3,9 +3,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.configuration.ConfigurationsFilter",
   "type": "object",
-  "required": [
-    "controllerId"
-  ],
   "properties": {
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
