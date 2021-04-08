@@ -17,6 +17,10 @@
 			"items": {
 				"type": "object",
 				"javaType": "com.sos.joc.model.security.SecurityConfigurationMainEntry",
+				"required": [
+					"entryName",
+					"entryValue"
+				],
 				"properties": {			
 					"entryName": {
 						"type": "string"
@@ -43,6 +47,10 @@
 			"items": {
 				"type": "object",
 				"javaType": "com.sos.joc.model.security.SecurityConfigurationUser",
+				"required": [
+					"user",
+					"roles"
+				],
 				"properties": {
 					"user": {
 						"type": "string"
@@ -54,6 +62,7 @@
 
 					"roles": {
 						"type": "array",
+						"minItems": 1,
 						"items": {
 							"type": "string"
 						}

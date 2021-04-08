@@ -3,7 +3,9 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.permissions.IniPermission",
 	"type": "object",
-	
+	"required": [
+		"path"
+	],
 	"properties": {
 		"path": {
 			"$ref": "../common/string255-schema.json"
