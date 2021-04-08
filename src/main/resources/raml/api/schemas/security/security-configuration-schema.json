@@ -3,8 +3,10 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.SecurityConfiguration",
 	"type": "object",
-	"required": ["deliveryDate"],
-
+	"required": [
+		"main"
+	],
+	
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../common/timestamp-schema.json"
@@ -31,7 +33,8 @@
 							"type": "string"
 						}
 					}
-				}
+				},
+				"additionalProperties": false
 			}
 		},
 
@@ -55,7 +58,8 @@
 							"type": "string"
 						}
 					}
-				}
+				},
+				"additionalProperties": false
 			}
 		},
 		
@@ -70,71 +74,20 @@
 					},
 
 					"lastLogin": {
-						"type": "string",
-						"format": "date-time"
+						"$ref": "../common/timestamp-schema.json"
 					}
-				}
+				},
+				"additionalProperties": false
 			}
 		},
-
-		"masters": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"javaType": "com.sos.joc.model.security.SecurityConfigurationMaster",
-				"properties": {
-					"master": {
-						"type": "string"
-					},
-
-					"roles": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"javaType": "com.sos.joc.model.security.SecurityConfigurationRole",
-							"properties": {
-								"role": {
-									"type": "string"
-								},
-
-								"permissions": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"javaType": "com.sos.joc.model.security.SecurityConfigurationPermission",
-										"properties": {
-											"path": {
-												"type": "string"
-											},
-
-											"excluded": {
-												"type": "boolean"
-											}
-										}
-									}
-								},
-
-								"folders": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"javaType": "com.sos.joc.model.security.SecurityConfigurationFolder",
-										"properties": {
-											"folder": {
-												"type": "string"
-											},
-
-											"recursive": {
-												"type": "boolean"
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+		
+		"roles": {
+			"javaType": "com.sos.joc.model.security.permissions.SecurityConfigurationRoles",
+			"type": "object",
+			"additionalProperties":  { 
+    			"$ref": "role-schema.json"
+   			}
 		}
-	}
+	},
+	"additionalProperties": false
 }

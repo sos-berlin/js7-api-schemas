@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "absolute path of an object.",
   "type": "string",
-  "pattern": "^(/|(/[^/\\<>?:\"|*]+)+)$",
+  "pattern": "^(/|(/[^/\\\\<>?:\"|*]+)+)$",
   "maxLength": 255,
   "minLength": 1
 }

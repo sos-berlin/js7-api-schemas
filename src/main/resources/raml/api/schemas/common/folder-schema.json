@@ -1,0 +1,19 @@
+{
+  "title": "folders",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "javaType": "com.sos.joc.model.common.Folder",
+  "required": [
+      "folder"
+  ],
+  "properties": {
+      "folder": {
+        "$ref": "path-schema.json"
+      },
+      "recursive": {
+        "type": "boolean",
+        "default": true
+      }
+  },
+  "additionalProperties": false
+}

@@ -3,29 +3,14 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.audit.AuditLogFilter",
   "type": "object",
-  "required": [
-    "controllerId"
-  ],
   "properties": {
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
-    },
-    "jobs": {
-      "type": "array",
-      "items": {
-        "$ref": "../job/jobPath-schema.json"
-      }
     },
     "orders": {
       "type": "array",
       "items": {
         "$ref": "../order/orderPath-schema.json"
-      }
-    },
-    "calendars": {
-      "type": "array",
-      "items": {
-        "$ref": "../common/path-schema.json"
       }
     },
     "folders": {

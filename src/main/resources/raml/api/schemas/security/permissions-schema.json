@@ -5,6 +5,13 @@
 	"type": "object",
 	
 	"properties": {
+		"roles": {
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+			  "type": "string"
+			}
+		},
 		"joc": {
 			"javaType": "com.sos.joc.model.security.permissions.JocPermissions",
 			"type": "object",

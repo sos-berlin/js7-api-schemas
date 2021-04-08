@@ -1,0 +1,32 @@
+{
+	"title": " Permissions",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.IniPermissions",
+	"type": "object",
+	
+	"properties": {
+		"joc": {
+			"type": "array",
+			"items": {
+				"$ref": "iniPermission-schema.json"
+			}
+		},
+		"controllerDefaults": {
+			"type": "array",
+			"items": {
+				"$ref": "iniPermission-schema.json"
+			}
+		},
+		"controllers": {
+			"javaType": "com.sos.joc.model.security.permissions.IniControllers",
+			"type": "object",
+			"additionalProperties":  { 
+    			"type": "array",
+				"items": {
+					"$ref": "iniPermission-schema.json"
+				}
+   			}
+		}
+	},
+	"additionalProperties": false
+}
