@@ -23,6 +23,13 @@ post:
           required: false
           example: /myImport
           type: string
+        suffix:
+          description: <ul><li>Imported objects get new names.</li><li>A ``suffix`` or ``prefix`` can be specified for objects to be imported.<ul><li>If a ``suffix`` is specified then a ``prefix`` will be ignored</li><li>A leading dash is added to a ``suffix`` programmatically</li><li>A ``prefix`` is programmatically followed by a dash at the end</li><li>If ``suffix`` and ``prefix`` are empty, the object to import will be ignored if it already exist in the current configuration.</li></ul></li></ul>
+          required: false
+          type: string
+        prefix:
+          required: false
+          type: string
         comment:
           description: for auditLog
           required: false

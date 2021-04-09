@@ -10,12 +10,20 @@
 		"overwrite": {
 			"type": "boolean"
 		}, 
-    "targetFolder": {
-      "$ref": "../common/path-schema.json"
-    },
-    "format": {
-      "$ref": "archiveFormat-schema.json"
-    },
+	    "targetFolder": {
+	      "$ref": "../common/path-schema.json"
+	    },
+	    "format": {
+	      "$ref": "archiveFormat-schema.json"
+	    },
+		"suffix": {
+			"description": "default: '-imported<number>'",
+			"$ref": "../common/string100-schema.json"
+		},
+		"prefix": {
+			"description": "default: empty",
+			"$ref": "../common/string100-schema.json"
+		},
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}
