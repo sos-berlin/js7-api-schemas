@@ -51,7 +51,6 @@ resourceTypes:
   - postOnlyId: !include api/resourceTypes/common/postOnlyId.raml
   - postOnlyOptionalId: !include api/resourceTypes/common/postOnlyOptionalId.raml
   - postJSONWithOkResponse: !include api/resourceTypes/common/postJSONWithOkResponse.raml
-  - postJSONWithoutExample: !include api/resourceTypes/common/postJSONWithoutExample.raml
   - postForDownload: !include api/resourceTypes/common/postForDownload.raml
   - postForUpload: !include api/resourceTypes/common/postForUpload.raml
   - postLog: !include api/resourceTypes/common/postLog.raml
@@ -87,7 +86,7 @@ traits:
 /agents:
   type:
     postJSON:
-      description: Get status of Agents
+      description: Get Agents
       description1: !include api/documentation/agent/agentIds.md
       description2: !include api/documentation/agent/states.md
       description3: !include api/documentation/agent/onlyEnabledAgents.md
@@ -104,17 +103,10 @@ traits:
       example: !include api/examples/agent/agents_v-request-example.json
       example200: !include api/examples/agent/agents_v-example.json
   
-  /names:
-    type:
-      postOnlyAccessToken:
-        description: Get collection of enabled Agent names and aliases
-        description200: Collection of enabled Agent names
-        schema200: !include api/schemas/agent/agentNames-schema.json
-        example200 : !include api/examples/agent/agentNames-example.json
   /p:
     type:
       postJSONWithOptionalJSId:
-        description: Get collection of Agents from database
+        description: Get persitent Agent information
         description1: !include api/documentation/agent/agentIds.md
         description2: " "
         description3: !include api/documentation/agent/onlyEnabledAgents.md
@@ -137,7 +129,7 @@ traits:
   /reassign:
     type:
       postWithOkResponse:
-        description: Reassigns all Agents
+        description: Repeats assignment of Agents to Controllers
         urlparam: " "
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
@@ -145,7 +137,7 @@ traits:
   /store:
     type:
       postJSONWithOkResponse:
-        description: Stores Agents
+        description: Stores Agents persistently and assignes Agents to Controllers
         description1: !include api/documentation/agent/agents.md
         description2: !include api/documentation/audit/auditLog.md
         description3: " "
@@ -184,7 +176,7 @@ traits:
 /audit_log:
   type:
     postJSONWithOptionalJSId:
-      description: Responds the audit log
+      description: Get the audit log
       description1: !include api/documentation/common/dateFrom.md
       description2: !include api/documentation/common/dateTo.md
       description3: !include api/documentation/common/timeZone.md
@@ -206,7 +198,7 @@ traits:
   /comments:
     type:
       postOnlyAccessToken:
-        description: Response contains pre-defined comments and force_comments_for_audit_log settings from joc.properties file
+        description: Get pre-defined comments and force_comments_for_audit_log settings
         description200: " "
         schema200: !include api/schemas/audit/comments-schema.json
         example200: !include api/examples/audit/comments-example.json
@@ -243,7 +235,7 @@ traits:
   /shiro:
     type: error
     post:
-      description: <h2>Reads security configuration from shiro.ini</h2>
+      description: <h2>Reads configuration from shiro.ini</h2>
       responses:
         200:
           body:
@@ -253,7 +245,7 @@ traits:
   /shiro/store:
     type:
       postJSONWithoutJSId:
-        description: Writes security configuration into shiro.ini
+        description: Writes configuration in shiro.ini
         description1: !include api/documentation/security/main.md
         description2: !include api/documentation/security/users.md
         description3: !include api/documentation/security/roles.md
@@ -295,7 +287,7 @@ traits:
 /calendars:
   type:
     postJSONWithoutJSId:
-      description: Get collection of calendar items
+      description: Get calendars
       description1: !include api/documentation/calendar/filteredByCalendarPaths.md
       description2: !include api/documentation/calendar/filteredByCalendarIds.md
       description3: !include api/documentation/common/compact.md
@@ -331,210 +323,37 @@ traits:
 #        schema200: !include api/schemas/calendar/calendars-schema.json
 #        example: " "
 #        example200: " "
-        
-# moved to api-internal.raml
-#/configuration:
-#  type:
-#     postJSON:
-#       description: Responds a configuration from the server (database)
-##       description1: !include api/documentation/configuration/userRequiredParam.md
-##       description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
-##       description3: !include api/documentation/configuration/objectTypeRequiredParam.md
-##       description4: !include api/documentation/configuration/nameParam.md
-#       description1: " "
-#       description2: " "
-#       description3: " "
-#       description4: " "
-#       description5: !include api/documentation/configuration/configurationIdRequiredParam.md
-#       description6: " "
-#       description7: " "
-#       description8: " "
-#       description9: " "
-#       description10: " "
-#       description200: " "
-#       schema: !include api/schemas/configuration/configuration-schema.json
-#       schema200: !include api/schemas/configuration/configuration200-schema.json
-#       example: " "
-#       example200: " "
-#  /delete:
-#    type:
-#       postJSON:
-#         description: Deletes a configuration on the server (database)
-##         description1: !include api/documentation/configuration/userRequiredParam.md
-##         description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
-##         description3: !include api/documentation/configuration/objectTypeRequiredParam.md
-##         description4: !include api/documentation/configuration/nameParam.md
-#         description1: " "
-#         description2: " "
-#         description3: " "
-#         description4: " "
-#         description5: !include api/documentation/configuration/configurationIdRequiredParam.md
-#         description6: " "
-#         description7: " "
-#         description8: " "
-#         description9: " "
-#         description10: " "
-#         description200: " "
-#         schema: !include api/schemas/configuration/configuration-schema.json
-#         schema200: !include api/schemas/configuration/configurationOk-schema.json
-#         example: " "
-#         example200: |
-#           {
-#             "deliveryDate":"2016-05-05T21:13:35Z",
-#             "id":4711
-#           }
-#  /make_private:
-#    type:
-#       postJSON:
-#         description: set a configuration as unshared
-##         description1: !include api/documentation/configuration/userRequiredParam.md
-##         description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
-##         description3: !include api/documentation/configuration/objectTypeRequiredParam.md
-##         description4: !include api/documentation/configuration/nameParam.md
-#         description1: " "
-#         description2: " "
-#         description3: " "
-#         description4: " "
-#         description5: !include api/documentation/configuration/configurationIdRequiredParam.md
-#         description6: " "
-#         description7: " "
-#         description8: " "
-#         description9: " "
-#         description10: " "
-#         description200: " "
-#         schema: !include api/schemas/configuration/configuration-schema.json
-#         schema200: !include api/schemas/configuration/configurationOk-schema.json
-#         example: " "
-#         example200: |
-#           {
-#             "deliveryDate":"2016-05-05T21:13:35Z",
-#             "id":4711
-#           }
-#  /login:
-#    type: loginConfiguration
-#  
-#  /save:
-#    type:
-#       postJSON:
-#         description: Stores a configuration on the server (database)
-#         description1: !include api/documentation/configuration/userRequiredParam.md
-#         description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
-#         description3: !include api/documentation/configuration/objectTypeRequiredParam.md
-#         description4: !include api/documentation/configuration/nameParam.md
-#         description5: !include api/documentation/configuration/sharedParam.md
-#         description6: !include api/documentation/configuration/itemParam.md
-#         description7: !include api/documentation/configuration/configurationIdRequiredParam.md
-#         description8: " "
-#         description9: " "
-#         description10: " "
-#         description200: |
-#             *Response contains the ``id`` of the customization.*<br/>
-#             It seems to be unnecessary but if a new customization is saved
-#             (with ``id=0`` in the request) then you get the new id.
-#         schema: !include api/schemas/configuration/configuration-schema.json
-#         schema200: !include api/schemas/configuration/configurationOk-schema.json
-#         example: " "
-#         example200: |
-#           {
-#             "deliveryDate":"2016-05-05T21:13:35Z",
-#             "id":4711
-#           }
-#  /share:
-#    type:
-#       postJSON:
-#         description: set a configuration as shared
-##         description1: !include api/documentation/configuration/userRequiredParam.md
-##         description2: !include api/documentation/configuration/configurationTypeRequiredParam.md
-##         description3: !include api/documentation/configuration/objectTypeRequiredParam.md
-##         description4: !include api/documentation/configuration/nameParam.md
-#         description1: " "
-#         description2: " "
-#         description3: " "
-#         description4: " "
-#         description5: !include api/documentation/configuration/configurationIdRequiredParam.md
-#         description6: " "
-#         description7: " "
-#         description8: " "
-#         description9: " "
-#         description10: " "
-#         description200: " "
-#         schema: !include api/schemas/configuration/configuration-schema.json
-#         schema200: !include api/schemas/configuration/configurationOk-schema.json
-#         example: " "
-#         example200: |
-#           {
-#             "deliveryDate":"2016-05-05T21:13:35Z",
-#             "id":4711
-#           }
-#  
-# moved to api-internal.raml
-#/configurations:
-#  type:
-#     postJSON:
-#       description: Get collection of configuration items
-#       description1: !include api/documentation/configuration/userParam.md
-#       description2: !include api/documentation/configuration/configurationTypeParam.md
-#       description3: !include api/documentation/configuration/objectTypeParam.md
-#       description4: !include api/documentation/configuration/sharedParam.md
-#       description5: " "
-#       description6: " "
-#       description7: " "
-#       description8: " "
-#       description9: " "
-#       description10: " "
-#       description200: " "
-#       schema: !include api/schemas/configuration/configurationsFilter-schema.json
-#       schema200: !include api/schemas/configuration/configurations-schema.json
-#       example: " "
-#       example200: " "
-#  /delete:
-#    type:
-#      postJSONWithOkWithoutJSId:
-#        description: Deletes all configuration items (profile, settings, customizations, ignore lists) of specified accounts 
-#        description1: !include api/documentation/configuration/usersParam.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        audit: " "
-#        schema: !include api/schemas/configuration/configurationsDeleteFilter-schema.json
-#        example: " "
-##  /shared:
-##    type:
-##       postOnlyId:
-##         description: Sends collection of all shared configuration items
-##         description200: " "
-##         schema200: !include api/schemas/configuration/configurations-schema.json
-##         example200: " "
 
 
 /controller:
   type:
     postStateResponse:
-      description: Controller information such as its status
-      urlparam: !include api/documentation/controller/urlParam.md
+      description: Get Controller status information
+      urlparam: !include api/documentation/controller/urlParamClusterRequired.md
       description200: !include api/documentation/controller/master.md
       schema200: !include api/schemas/controller/jobscheduler200_v-schema.json
       example200: " "
   /abort:
     type:
       postWithOkResponse:
-        description: Aborts JobScheduler Controller
+        description: Aborts Controller and optionally fails over
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
-        failover: !include api/documentation/controller/failover.md
+        failover: " "
         audit: !include api/documentation/audit/auditLog.md
   /abort_and_restart:
     type:
       postWithOkResponse:
-        description: Aborts and restarts JobScheduler Controller
+        description: |
+          Aborts and restarts Controller and optionally fails over
+          <h5>...</h5>
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
-        failover: !include api/documentation/controller/failover.md
+        failover: " "
         audit: !include api/documentation/audit/auditLog.md
   
   /cleanup:
     type:
       postWithOkResponse:
-        description: Clean up inventory tables from the reporting database
+        description: Unregister Controller
         urlparam: " "
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
@@ -542,7 +361,12 @@ traits:
   /cluster/appoint_nodes:
     type:
       postWithOkResponse:
-        description: Tells the Controller Cluster nodes the uri of the other node and the Agents that monitors the Cluster
+        description: |
+          Re-establish Controller Cluster roles and assign cluster-watching Agent<h5>
+          * Primary and secondary Controllers are assigned the active and standby roles. 
+          * In addition an Agent is assign the cluster-watching role. This information is persitent when registering a Controller.
+          * The resource can be used to re-established the roles in a cluster, e.g. in case that Controller journals are renewed.
+          </h5>
         urlparam: " "
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
@@ -550,24 +374,16 @@ traits:
   /cluster/switchover:
     type:
       postWithOkResponse:
-        description: Switch over Controller Cluster
+        description: Switch-over Controller Cluster
         urlparam: " "
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
-
-  /components:
-    type:
-      postOnlyId:
-        description: Get Controller Components
-        description200: " "
-        schema200: !include api/schemas/controller/components-schema.json
-        example200: " "
 
   /ids:
     type: error
     post:
       description: |
-        <h2>Returns collection of all available Controller Ids</h2>
+        <h2>Get registered Controller IDs</h2>
       responses:
         200:
           description: |
@@ -582,14 +398,14 @@ traits:
   /log:
     type:
       postURLWithPlainResponse:
-        description: Provides Controller log (controller.log) as download in gzip format
-        description200: Snapshot of current master.log for download in gzip format
+        description: Provides Controller log (controller.log) for download in gzip format
+        description200: Snapshot of current controller.log for download in gzip format
   
   /p:
     type:
       postStateResponse:
-        description: General permanent Controller information
-        urlparam: !include api/documentation/controller/urlParam.md
+        description: Get Controller persistent information
+        urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         description200: !include api/documentation/controller/jobscheduler_p.md
         schema200: !include api/schemas/controller/jobscheduler200_v-schema.json
         example200: " "
@@ -597,29 +413,25 @@ traits:
   /register:
     type: 
       registerControllerWithOkResponse:
-        description: Registers a new Controller (Cluster) or update an existing Controller (Cluster)
+        description: |
+          Registers a Controller<h5>
+          * A Controllers consists of a standalone instance or cluster with primary and standby nodes.
+          * This resource adds a Controller to JOC Cockpit. Updates Controller instance information such as the URL.
+          </h5>
         audit: !include api/documentation/audit/auditLog.md
 
   /restart:
     type:
       postWithOkResponse:
-        description: Restarts JobScheduler Controller
+        description: Restarts Controller instance
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         failover: !include api/documentation/controller/failover.md
         audit: !include api/documentation/audit/auditLog.md
   
-  /switch:
-    type:
-      postOnlyId:
-        description: Switches the current Controller (Cluster) in JOC
-        description200: " "
-        example200: !include api/examples/user/permissions-example.json
-        schema200: !include api/schemas/user/permissions-schema.json
-  
   /terminate:
     type:
       postWithOkResponse:
-        description: Terminates JobScheduler Controller
+        description: Terminates Controller instance
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         failover: !include api/documentation/controller/failover.md
         audit: !include api/documentation/audit/auditLog.md
@@ -627,9 +439,9 @@ traits:
   /test:
     type:
       postJSONWithoutJSId:
-        description: Test JobScheduler Controller connection
+        description: Tests Controller instance connection and Controller ID
         description1: |
-          <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID (can be empty if and only if a new Controller (Cluster) will be registered)</td><td>scheduler</td><td></td></tr>
+          <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID is used to check if the Controller is registered for the given Controller ID, can be empty for a connection test</td><td>scheduler</td><td></td></tr>
         description2: !include api/documentation/controller/urlParamRequired.md
         description3: " "
         description4: " "
@@ -904,7 +716,7 @@ traits:
 #      postDocu:
 #        description: Get the documentation of a Controller object
 #        jsObjectParam: path
-#        jsObject: JobScheduler object
+#        jsObject: Controller object
 #        #description1: !include api/documentation/docu/jsObject.md
 #        #description2: " "
 #        #schema: !include api/schemas/docu/documentationShow-schema.json
@@ -1875,7 +1687,7 @@ traits:
         schema: orderHistoryFilter
         schema200: !include api/schemas/order/orderLog-schema.json
         example: " "
-        example200: TODO
+        example200: !include api/examples/order/log-example.json
     /running:
       type:
         postJSON:
@@ -2532,4 +2344,4 @@ traits:
 #        schema: !include api/schemas/order/ordersFilter-schema.json
 #        schema200: !include api/schemas/order/orders_v-schema.json
 #        example: !include api/examples/order/filteredOrders-example.json
-#        example200: !include api/examples/order/orders_v-example.json
+#        example200: " "

@@ -21,7 +21,7 @@ post:
     <thead>
     <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
     </thead><tbody>
-    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>jobscheduler</td><td></td></tr>
+    <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID</td><td>myController</td><td></td></tr>
     <tr><td>``orders``</td><td>required, array</td>
     <td>Specified the orders which should be modified.</td>
     <td> [{
@@ -53,7 +53,7 @@ post:
       schema: addOrders
       example: |
         {
-          "controllerId": "jobscheduler",
+          "controllerId": "myController",
           "orders": [{
             "orderId": "order1",
             "workflowPath": "/test/testWorkflow",

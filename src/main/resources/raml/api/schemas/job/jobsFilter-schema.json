@@ -3,9 +3,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.job.JobsFilter",
   "type": "object",
-  "required": [
-    "controllerId"
-  ],
   "properties": {
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
@@ -27,13 +24,6 @@
       "items": {
         "$ref": "orderPath-schema.json"
       }
-    },
-    "compact": {
-      "$ref": "../common/compactParam-schema.json"
-    },
-    "compactView": {
-      "type": "boolean",
-  	  "default": false
     },
     "regex": {
       "$ref": "../common/regexFilter-schema.json"

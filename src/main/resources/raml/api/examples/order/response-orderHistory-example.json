@@ -1,29 +1,103 @@
 {
-	"deliveryDate": "2020-12-01T16:46:34.673Z",
-	"history": [
-		{
-			"surveyDate": "2020-12-01T16:45:22Z",
-			"controllerId": "jobscheduler.js7",
-			"workflow": "/workflow_fork",
-			"plannedTime": "2020-12-01T16:45:19Z",
-			"startTime": "2020-12-01T16:45:20Z",
-			"endTime": "2020-12-01T16:45:21Z",
-			"historyId": 587031,
-			"orderId": "workflow_fork@33",
-			"orderState": {
-				"_text": "FINISHED",
-				"severity": 0
-			},
-			"sequence": 0,
-			"state": {
-				"_text": "SUCCESSFUL",
-				"severity": 0
-			},
-			"arguments": {
-				"my_string_var": "my_value",
-				"my_boolean_var": false,
-				"my_numeric_var": 123
-			}
-		}
-	]
+	"deliveryDate": "2021-04-16T22:05:28.245+0000",
+	"history": [{
+		"surveyDate": "2021-04-16T20:12:47.000+0000",
+		"controllerId": "jobscheduler",
+		"orderId": "#2021-04-16#P0000000004-schedule24",
+		"workflow": "/Demo/MutualExclusion/demo1-pdlSharedLockSerial_002",
+		"startTime": "2021-04-16T20:12:02.000+0000",
+		"plannedTime": "2021-04-16T20:12:02.000+0000",
+		"endTime": "2021-04-16T20:12:46.000+0000",
+		"sequence": 0,
+		"state": {
+			"severity": 6,
+			"_text": "SUCCESSFUL"
+		},
+		"orderState": {
+			"severity": 6,
+			"_text": "FINISHED"
+		},
+		"historyId": 29,
+		"children": []
+	},
+	{
+		"surveyDate": "2021-04-15T20:12:23.000+0000",
+		"controllerId": "jobscheduler",
+		"orderId": "#2021-04-15#P0000000003-demoPdwForm",
+		"workflow": "/Demo/ParallelExecution/demo-pdwFork",
+		"startTime": "2021-04-15T20:12:00.000+0000",
+		"plannedTime": "2021-04-15T20:12:00.000+0000",
+		"endTime": "2021-04-15T20:12:22.000+0000",
+		"sequence": 0,
+		"state": {
+			"severity": 6,
+			"_text": "SUCCESSFUL"
+		},
+		"orderState": {
+			"severity": 6,
+			"_text": "FINISHED"
+		},
+		"historyId": 26,
+		"children": []
+	},
+	{
+		"surveyDate": "2021-04-14T20:22:42.000+0000",
+		"controllerId": "jobscheduler",
+		"orderId": "#2021-04-14#P0000000001-pdfExclusive",
+		"workflow": "/Demo/MutualExclusion/demo1-pdlExclusiveLockSerial_002",
+		"startTime": "2021-04-14T20:22:00.000+0000",
+		"plannedTime": "2021-04-14T20:22:00.000+0000",
+		"endTime": "2021-04-14T20:22:41.000+0000",
+		"sequence": 0,
+		"state": {
+			"severity": 6,
+			"_text": "SUCCESSFUL"
+		},
+		"orderState": {
+			"severity": 6,
+			"_text": "FINISHED"
+		},
+		"historyId": 23,
+		"children": []
+	},
+	{
+		"surveyDate": "2021-04-14T18:00:50.000+0000",
+		"controllerId": "jobscheduler",
+		"orderId": "#2021-04-14#T8423216948-root",
+		"workflow": "/Demo/ParallelExecution/demo-pwdForkNested",
+		"startTime": "2021-04-14T18:00:17.000+0000",
+		"plannedTime": "2021-04-14T18:00:17.000+0000",
+		"endTime": "2021-04-14T18:00:49.000+0000",
+		"sequence": 0,
+		"state": {
+			"severity": 6,
+			"_text": "SUCCESSFUL"
+		},
+		"orderState": {
+			"severity": 6,
+			"_text": "FINISHED"
+		},
+		"historyId": 2,
+		"children": []
+	},
+	{
+		"surveyDate": "2021-04-14T18:00:48.000+0000",
+		"controllerId": "jobscheduler",
+		"orderId": "#2021-04-14#T8423212514-root",
+		"workflow": "/Demo/ParallelExecution/demo-pwdForkNested",
+		"startTime": "2021-04-14T18:00:14.000+0000",
+		"plannedTime": "2021-04-14T18:00:14.000+0000",
+		"endTime": "2021-04-14T18:00:47.000+0000",
+		"sequence": 0,
+		"state": {
+			"severity": 6,
+			"_text": "SUCCESSFUL"
+		},
+		"orderState": {
+			"severity": 6,
+			"_text": "FINISHED"
+		},
+		"historyId": 1,
+		"children": []
+	}]
 }

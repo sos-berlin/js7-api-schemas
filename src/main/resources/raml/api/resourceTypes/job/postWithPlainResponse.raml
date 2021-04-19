@@ -35,7 +35,7 @@ post:
     <thead>
     <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
     </thead><tbody>
-    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>scheduler</td><td></td></tr>
+    <<tr><td>``controllerId``</td><td>required, string</td><td>Controller ID</td><td>myController</td><td></td></tr>
     <tr><td>``taskId``</td><td>required, integer</td><td>Task Id</td><td>4711</td><td></td></tr>
     </tbody></table>
   body:
@@ -43,7 +43,7 @@ post:
       schema: taskFilter
       example: |
         {
-          "controllerId": "scheduler",
+          "controllerId": "myController",
           "taskId": 4711
         }
   responses:

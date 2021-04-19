@@ -1,5 +1,5 @@
 {
-  "title": "JobScheduler object",
+  "title": "Controller object",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.common.JobSchedulerObject",
   "type": "object",

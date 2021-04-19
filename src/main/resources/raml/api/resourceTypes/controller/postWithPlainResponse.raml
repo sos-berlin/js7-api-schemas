@@ -6,7 +6,7 @@ get:
       required: false
       type: string
       description: |
-        host of the JobScheduler Controller<br/><b>This parameter is required for a specific JobScheduler in a cluster</b>
+        URL of a Controller instance<br/><b>This parameter is required for a Controller in a cluster</b>
   description: |
     <h2><<description>></h2>
   responses:
@@ -40,15 +40,15 @@ post:
     <thead>
     <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
     </thead><tbody>
-    <tr><td>``controllerId``</td><td>required, string</td><td>JobScheduler Controller ID</td><td>scheduler</td><td></td></tr>
-    <tr><td>``url``</td><td>optional, string</td><td>URL of the JobScheduler Controller<br/><b>This parameter is required for a specific JobScheduler in a cluster</b></td><td></td><td></td></tr>
+    <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID</td><td>myController</td><td></td></tr>
+    <tr><td>``url``</td><td>optional, string</td><td>URL of a Controller instance<br/><b>This parameter is required for a Controller in a cluster</b></td><td></td><td></td></tr>
     </tbody></table>
   body:
     application/json:
       schema: jsFilterWithUrl
       example: |
         {
-          "controllerId": "scheduler"
+          "controllerId": "myController"
         }
   responses:
     200:

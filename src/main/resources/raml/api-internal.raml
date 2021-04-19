@@ -52,7 +52,6 @@ resourceTypes:
   - postOnlyId: !include api/resourceTypes/common/postOnlyId.raml
   - postOnlyOptionalId: !include api/resourceTypes/common/postOnlyOptionalId.raml
   - postJSONWithOkResponse: !include api/resourceTypes/common/postJSONWithOkResponse.raml
-  - postJSONWithoutExample: !include api/resourceTypes/common/postJSONWithoutExample.raml
   - postForDownload: !include api/resourceTypes/common/postForDownload.raml
   - postForUpload: !include api/resourceTypes/common/postForUpload.raml
   - postLog: !include api/resourceTypes/common/postLog.raml
@@ -85,6 +84,15 @@ traits:
   - accessToken: !include api/traits/accessToken.raml
   - filename: !include api/traits/filename.raml
 
+
+/agents/names:
+  type:
+    postOnlyAccessToken:
+      description: Get enabled Agent names and aliases
+      description200: Collection of enabled Agent names
+      schema200: !include api/schemas/agent/agentNames-schema.json
+      example200 : !include api/examples/agent/agentNames-example.json
+  
        
 /configuration:
   type:
@@ -260,6 +268,26 @@ traits:
 #         description200: " "
 #         schema200: !include api/schemas/configuration/configurations-schema.json
 #         example200: " "
+
+/controller:
+  /components:
+    type:
+      postOnlyId:
+        description: Get Controller components
+        description200: " "
+        schema200: !include api/schemas/controller/components-schema.json
+        example200: " "
+  /switch:
+    type:
+      postOnlyId:
+        description: Switches the current Controller (Cluster) in JOC Cockpit
+        description200: " "
+        example200: |
+          {
+            "deliveryDate":"2021-05-05T21:13:35Z",
+            "ok":true
+          }
+        schema200: ok
 
 /events:
   type:

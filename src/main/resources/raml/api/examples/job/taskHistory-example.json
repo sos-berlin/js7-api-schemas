@@ -3,7 +3,7 @@
 	"history": [
 		{
 			"surveyDate": "2021-02-19T13:08:40.000+0000",
-			"controllerId": "jobscheduler.js7",
+			"controllerId": "controller.js7",
 			"job": "test1",
 			"workflow": "/my_workflow",
 			"orderId": "ORDER-ID11",

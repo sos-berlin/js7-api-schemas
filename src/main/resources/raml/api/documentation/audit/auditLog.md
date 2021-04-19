@@ -1,4 +1,4 @@
-<tr><td>``auditLog``</td><td>optional, object</td><td>Object which contains ``comment``, ``timeSpent`` and ``ticketLink``.</td>
+<tr><td>``auditLog``</td><td>optional, object</td><td>Object that contains ``comment``, ``timeSpent`` and ``ticketLink``.</td>
 <td>{
   <div style="padding-left:10px;">"comment":"It was not really necessary!",</div>
   <div style="padding-left:10px;">"timeSpent":2</div>

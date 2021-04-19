@@ -11,7 +11,7 @@
 	* established
 	* unstable
 	* unreachable
-* componentState - such as
+* componentStatus - such as
 	* operational
 	* limited
 	* inoperable

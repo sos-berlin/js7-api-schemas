@@ -1,5 +1,5 @@
 {
-  "title": "jobscheduler state text",
+  "title": "Controller state text",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.controller.JobSchedulerStateText",
   "type": "string",
