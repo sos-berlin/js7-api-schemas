@@ -1,4 +1,3 @@
-type: error
 post:
   description: |
     <h2>Authenticate account and start session</h2>
@@ -9,7 +8,7 @@ post:
       example: Basic cm9vdpzZWNNyZXQ=
   responses:
     200:
-      description: Returns access token
+      description: Get access token
       headers:
         X-Access-Token:
           type: string
@@ -22,8 +21,7 @@ post:
             {
               "user": "root",
               "accessToken": "550e8400-e29b-11d4-a716-446655440000",
-              "message": "",
-              "hasRole": false,
+              "role": "all",
               "isAuthenticated": true,
               "isPermitted": false,
               "sessionTimeout": 1800,
@@ -37,7 +35,6 @@ post:
           example: |
             {
               "user": "root",
-              "hasRole": false,
               "message": "User or password are invalid",
               "isAuthenticated": false,
               "isPermitted": false

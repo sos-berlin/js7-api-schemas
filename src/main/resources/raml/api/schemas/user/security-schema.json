@@ -15,9 +15,8 @@
     "message": {
       "type": "string"
     },
-    "hasRole": {
-      "type": "boolean",
-      "default": false
+    "role": {
+      "type": "string"
     },
     "isAuthenticated": {
       "type": "boolean"

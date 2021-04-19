@@ -16,7 +16,6 @@ get?:
             {
               "user": "root",
               "message": "Oops!",
-              "hasRole": false,
               "isAuthenticated": false,
               "isPermitted": false
             }
@@ -31,7 +30,7 @@ get?:
             {
               "user": "root",
               "message": "You don't have sufficient permissions for ...",
-              "hasRole": false,
+              "role": "all",
               "isAuthenticated": true,
               "isPermitted": false
             }
@@ -50,12 +49,6 @@ get?:
               }
             }
           schema: error420
-        #text/html:
-        #  example: |
-        #    <html><head><title></title></head><body>
-        #    <div class="error code">JOC-420</div>
-        #    <div class="error message"><<resourcePathName>>  failed!</div>
-        #    </body></html>
     440:
       description: |
         **Login Timeout!**<br/>
@@ -71,12 +64,6 @@ get?:
               }
             }
           schema: error420
-        #text/html:
-        #  example: |
-        #    <html><head><title></title></head><body>
-        #    <div class="error code">AUTH-440</div>
-        #    <div class="error message">Session has expired! Please log in again.</div>
-        #    </body></html>
 post?:
   headers:
     X-Access-Token:
@@ -95,7 +82,6 @@ post?:
             {
               "user": "root",
               "message": "Oops!",
-              "hasRole": false,
               "isAuthenticated": false,
               "isPermitted": false
             }
@@ -110,7 +96,7 @@ post?:
             {
               "user": "root",
               "message": "You don't have sufficient permissions for ...",
-              "hasRole": false,
+              "role": "all",
               "isAuthenticated": true,
               "isPermitted": false
             }
@@ -145,7 +131,7 @@ post?:
             {
               "user": "root",
               "message": "Session has expired. Please log in again",
-              "hasRole": false,
+              "role": "all",
               "isAuthenticated": false,
               "isPermitted": false
             }
