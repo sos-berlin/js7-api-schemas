@@ -1,14 +1,11 @@
 {
   "title": "Controller id",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.common.ControllerId",
+  "javaType": "com.sos.joc.model.controller.ControllerId",
   "type": "object",
-  "required": [
-    "controllerId"
-  ],
   "properties": {
     "controllerId": {
-      "$ref": "controllerIdRequired-schema.json"
+      "$ref": "../common/controllerId-schema.json"
     }
   }
 }

@@ -15,8 +15,8 @@ schemas:
   - error420: !include api/schemas/common/error420-schema.json
   - ok: !include api/schemas/common/ok-schema.json
   - orders: !include api/schemas/order/orders_v-schema.json
-  - jsFilter: !include api/schemas/common/controllerId-request-schema.json
-  - jsFilterWithTimeout: !include api/schemas/controller/urlParam-schema.json
+  - jsFilter: !include api/schemas/controller/controllerId-optional-schema.json
+  - jsFilterReq: !include api/schemas/controller/controllerId-required-schema.json
   - jsFilterWithUrl: !include api/schemas/controller/urlParam-schema.json
   - jsRegister: !include api/schemas/controller/registerParam-schema.json
   - taskFilter: !include api/schemas/job/taskFilter-schema.json
@@ -34,14 +34,12 @@ resourceTypes:
   - postWithPlainResponse: !include api/resourceTypes/joc/postWithPlainResponse.raml
   - postCalendarWithOkResponse: !include api/resourceTypes/calendar/postJSONWithOkResponse.raml
   - postDocuWithOkResponse: !include api/resourceTypes/docu/postJSONWithOkResponse.raml
-  - postTimeoutWithOkResponse: !include api/resourceTypes/common/postTimeoutWithOkResponse.raml
   - postWithOkResponse: !include api/resourceTypes/controller/postWithOkResponse.raml
   - registerControllerWithOkResponse: !include api/resourceTypes/controller/registerControllerWithOkResponse.raml
   - postURLWithPlainResponse: !include api/resourceTypes/controller/postWithPlainResponse.raml
   - postStateResponse: !include api/resourceTypes/controller/postStateResponse.raml
   - postJSON: !include api/resourceTypes/common/postJSON.raml
   - postJSONWithOptionalJSId: !include api/resourceTypes/common/postJSONWithOptionalJSId.raml
-  - postJSONWithOkAndOnlyOptionalIdResponse: !include api/resourceTypes/common/postJSONWithOkAndOnlyOptionalIdResponse.raml
   - postJSONWithoutJSId: !include api/resourceTypes/common/postJSONWithoutJSId.raml
   - postWithoutJSONandJSId: !include api/resourceTypes/common/postWithoutJSONandJSId.raml
   - postJSONWithOkWithoutJSId: !include api/resourceTypes/common/postJSONWithOkWithoutJSId.raml
@@ -203,25 +201,13 @@ traits:
         schema200: !include api/schemas/audit/comments-schema.json
         example200: !include api/examples/audit/comments-example.json
 
-#/calendar:
-#  description: This is not an API call. Use its children!!
-#          
-#  /documentation:
-#    get:
-#    type:
-#      postDocu:
-#        description: Show documentation
-#        jsObjectParam: calendar
-#        jsObject: Calendar
-
-
 /authentication:
   description: This is not an API call. Use child urls instead!
   
   /joc_cockpit_permissions:
     type:
       postOnlyAccessToken:
-        description: Returns list of user's permissions
+        description: Get permissions for current account
         description200: " "
         example200: !include api/examples/user/permissions-example.json
         schema200: !include api/schemas/security/permissions-schema.json
@@ -283,6 +269,16 @@ traits:
       example: !include api/examples/calendar/calendarDates-example.json
       schema200: !include api/schemas/calendar/dates-schema.json
       example200: TODO
+#/calendar:
+#  description: This is not an API call. Use its children!!
+#          
+#  /documentation:
+#    get:
+#    type:
+#      postDocu:
+#        description: Show documentation
+#        jsObjectParam: calendar
+#        jsObject: Calendar
                     
 /calendars:
   type:
@@ -464,35 +460,35 @@ traits:
 /controllers:
   type:
     postOnlyOptionalId:
-      description: Lists all JobScheduler Controllers
+      description: Get Controllers
       description200: !include api/documentation/controller/master.md
       schema200: !include api/schemas/controller/masters-schema.json
       example200: " "
   /p:
     type:
       postOnlyOptionalId:
-        description: Lists all JobScheduler Controllers (permanent information)
+        description: Get persistent Controllers
         description200: !include api/documentation/controller/controller_p.md
         schema200: !include api/schemas/controller/masters-schema.json
         example200: !include api/examples/controller/controller_p-example.json
   /security_level:
     type:
       postOnlyAccessToken:
-        description: Lists for each Controller its id and security level
+        description: Get Controller IDs with security level
         description200: !include api/documentation/controller/securityLevels.md
         schema200: !include api/schemas/controller/masters-schema.json
         example200: !include api/examples/controller/securityLevels-example.json
     /take_over:
       type:
         postWithOkResponse:
-          description: Current security level will be take over to already existing Controllers
+          description: Current security level will be take over to existing Controllers
           
 /daily_plan:
   description: This is not an API call. Use its children!!
   /orders:
     type: 
       postJSON:
-        description: Lists JobScheduler orders for a given daily plan 
+        description: Get daily plan Orders
         description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
         description2: !include api/documentation/dailyplan/dailyPlanDate.md
         description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -512,7 +508,7 @@ traits:
     /generate:
       type:
         postJSON:
-          description: Generates orders for a given daily plan 
+          description: Generates Orders of a given daily plan 
           description1: !include api/documentation/dailyplan/generate/dailyPlanOrdersSelectorDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/generate/schedules.md
@@ -532,7 +528,7 @@ traits:
     /submit:
       type:
         postJSON:
-          description: Submit planned orders for a given daily plan. The orders to be submitted will be read with the given filter.
+          description: Submits planned Orders of a given daily plan
           description1: !include api/documentation/dailyplan/submit/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -552,7 +548,7 @@ traits:
     /delete:
       type:
         postJSON:
-          description: Delete planned orders for a given daily plan 
+          description: Deletes planned Orders of a given daily plan 
           description1: !include api/documentation/dailyplan/delete/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -572,7 +568,7 @@ traits:
     /modify:
       type:
         postJSON:
-          description: Modify orders for the daily plan 
+          description: Modifies Orders for the daily plan 
           description1: !include api/documentation/dailyplan/modify/startTime.md
           description2: !include api/documentation/dailyplan/modify/variables.md
           description3: !include api/documentation/dailyplan/modify/removeVariables.md
@@ -611,7 +607,7 @@ traits:
   /history:
     type:
       postJSON:
-        description: Lists daily plan history entries grouped by daily plan date and submission time
+        description: Get daily plan history
         description1: !include api/documentation/dailyplan/history/dailyPlanHistoryFilterDef.md
         description2: !include api/documentation/dailyplan/history/dateFrom.md
         description3: !include api/documentation/dailyplan/history/dateTo.md
@@ -631,7 +627,7 @@ traits:
   /submissions:
     type:
       postJSON:
-        description: Lists submissions for daily plans 
+        description: Get daily plan submissions 
         description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
         description2: !include api/documentation/dailyplan/submissions/dateFrom.md
         description3: !include api/documentation/dailyplan/submissions/dateTo.md
@@ -651,7 +647,7 @@ traits:
     /delete:
       type:
         postJSON:
-          description: Deletes submissions of daily plans 
+          description: Deletes daily plan submissions 
           description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
           description2: !include api/documentation/dailyplan/submissions/dateFrom.md
           description3: !include api/documentation/dailyplan/submissions/dateTo.md
