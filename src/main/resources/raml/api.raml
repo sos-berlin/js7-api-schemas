@@ -1530,6 +1530,20 @@ traits:
 /joc:
   description: This is not an API call. Use its children!!
   /cluster:
+    /delete_member:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: |
+            Deletes a JOC cluster member from the Inventory
+            <h5>The member has to be inactive and the last heartbeat has to be older than 1 minute</h5>
+          description1: !include api/documentation/cluster/switch.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: " "
+          schema: !include api/schemas/cluster/switch-schema.json
+          example: " "
     /restart:
       type:
         postJSONWithOkWithoutJSId:
