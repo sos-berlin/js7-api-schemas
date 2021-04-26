@@ -5,6 +5,7 @@
 <tr><td style="padding-left:20px;">``objectType``</td><td>string</td><td>Object type of the inventory item. Possibly value are 
 <ul><li>"WORKFLOW"</li>
     <li>"JOBCLASS"</li>
+    <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
     <li>"JUNCTION"</li>
     <li>"FILEORDERSOURCE"</li>

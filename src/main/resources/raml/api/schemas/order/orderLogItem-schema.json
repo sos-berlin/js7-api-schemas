@@ -82,7 +82,8 @@
 			"description": "datetime with timeOffset: format \"yyyy-MM-dd' 'HH:mm:ss.SSSZ\"",
 			"type": "string"
 		},
-		"agentPath": {
+		"agentId": {
+			"alias": "agentPath",
 			"type": "string"
 		},
 		"agentUrl": {
@@ -118,11 +119,11 @@
 		"lock": {
 			"type": "object",
 			"required": [
-				"lockId",
+				"lockPath",
 				"limit"
 			],
 			"properties": {
-				"lockId": {
+				"lockPath": {
 					"type": "string"
 				},
 				"limit": {

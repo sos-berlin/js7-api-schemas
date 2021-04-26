@@ -1,0 +1,15 @@
+{
+	"title": "JobResource Edit configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.jobresource.JobResourceEdit",
+	"type": "object",
+	"extends": {
+		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+	},
+	"properties": {
+		"configuration": {
+			"$ref": "../../../inventory/schemas/jobresource/jobResource-schema.json"
+		}
+	}
+}
+

@@ -5,10 +5,11 @@
   "type": "string",
   "enum": [
     "WorkflowPath",
-    "LockId",
+    "LockPath",
     "JobClassPath",
+    "JobResourcePath",
     "JunctionPath",
-    "FileWatchId"
+    "FileWatchPath"
   ],
   "default": "WorkflowPath"
 }

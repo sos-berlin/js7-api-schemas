@@ -8,7 +8,6 @@
 		"orderId",
 		"logLevel",
 		"logEvent",
-		"orderId",
 		"position"
 	],
 	"properties": {
@@ -30,7 +29,8 @@
 		"position": {
 			"type": "string"
 		},
-		"agentPath": {
+		"agentId": {
+			"alias": "agentPath",
 			"type": "string"
 		},
 		"agentUrl": {
@@ -68,12 +68,14 @@
 		"lock": {
 			"type": "object",
 			"required": [
-				"lockId",
+				"lockName",
 				"limit"
 			],
 			"properties": {
-				"lockId": {
-					"type": "string"
+				"lockName": {
+				 	"alias": "lockId,lockPath",
+					"type": "string",
+					"javaType": "com.sos.webservices.json.jobscheduler.history.order.Lock"
 				},
 				"limit": {
 					"type": "integer",

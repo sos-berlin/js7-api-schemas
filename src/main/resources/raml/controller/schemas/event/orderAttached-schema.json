@@ -7,7 +7,7 @@
   	"workflowPosition",
   	"state",
   	"parent",
-  	"agentId"
+  	"agentPath"
   ],
   "extends" : {
     "$ref": "event-schema.json"
@@ -22,7 +22,7 @@
     "parent": {
       "type": "string"
     },
-    "agentName": {
+    "agentPath": {
       "type": "string"
     },
     "payload": {

@@ -9,7 +9,7 @@
 	},
 	{
 		"agentDatetime": "2021-04-16 20:12:02.002+0000",
-		"agentPath": "agent_001",
+		"agentId": "agent_001",
 		"agentUrl": "https://js7-agent-primary:4443",
 		"controllerDatetime": "2021-04-16 20:12:02.130+0000",
 		"job": "job1",
@@ -77,7 +77,7 @@
 	},
 	{
 		"agentDatetime": "2021-04-16 20:12:10.359+0000",
-		"agentPath": "agent_001",
+		"agentId": "agent_001",
 		"agentUrl": "https://js7-agent-primary:4443",
 		"controllerDatetime": "2021-04-16 20:12:10.463+0000",
 		"job": "job2_1a",
@@ -89,7 +89,7 @@
 	},
 	{
 		"agentDatetime": "2021-04-16 20:12:10.570+0000",
-		"agentPath": "agent_002",
+		"agentId": "agent_002",
 		"agentUrl": "https://js7-agent-secondary:4443",
 		"controllerDatetime": "2021-04-16 20:12:10.674+0000",
 		"job": "job2_2a",
@@ -112,7 +112,7 @@
 	},
 	{
 		"agentDatetime": "2021-04-16 20:12:20.373+0000",
-		"agentPath": "agent_001",
+		"agentId": "agent_001",
 		"agentUrl": "https://js7-agent-primary:4443",
 		"controllerDatetime": "2021-04-16 20:12:20.473+0000",
 		"job": "job2_1b",
@@ -135,7 +135,7 @@
 	},
 	{
 		"agentDatetime": "2021-04-16 20:12:20.588+0000",
-		"agentPath": "agent_002",
+		"agentId": "agent_002",
 		"agentUrl": "https://js7-agent-secondary:4443",
 		"controllerDatetime": "2021-04-16 20:12:20.689+0000",
 		"job": "job2_2b",
@@ -180,7 +180,7 @@
 	},
 	{
 		"agentDatetime": "2021-04-16 20:12:30.602+0000",
-		"agentPath": "agent_002",
+		"agentId": "agent_002",
 		"agentUrl": "https://js7-agent-secondary:4443",
 		"controllerDatetime": "2021-04-16 20:12:30.701+0000",
 		"job": "job2_2c",
@@ -235,7 +235,7 @@
 	},
 	{
 		"agentDatetime": "2021-04-16 20:12:40.937+0000",
-		"agentPath": "agent_001",
+		"agentId": "agent_001",
 		"agentUrl": "https://js7-agent-primary:4443",
 		"controllerDatetime": "2021-04-16 20:12:41.040+0000",
 		"job": "job3",

@@ -1,6 +1,5 @@
-<tr><td>``objectType``</td><td>required, string</td><td>Object type of the configuration item. Possibly value are 
-<ul><li>"FOLDER"</li>
-    <li>"WORKFLOW"</li>
+<tr><td>``objectTypes``</td><td>optional, array</td><td>Object types of the configuration item. Possibly value are 
+<ul><li>"WORKFLOW"</li>
     <li>"JOBCLASS"</li>
     <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
@@ -9,4 +8,4 @@
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"SCHEDULE"</li></ul>
-</td><td></td><td></td></tr>
+</td><td>["WORKINGDAYSCALENDAR", "NONWORKINGDAYSCALENDAR"]</td><td></td></tr>

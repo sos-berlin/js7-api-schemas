@@ -1,7 +1,7 @@
 {
-  "title": "delete FileOrderSource",
+  "title": "delete JobResourcePath",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.controller.model.fileordersource.DeleteFileOrderSource",
+  "javaType": "com.sos.controller.model.jobresource.DeleteJobResource",
   "type": "object",
   "javaInterfaces" : [
     "com.sos.joc.model.common.IDeleteObject"
@@ -14,11 +14,11 @@
     "path"
   ],
   
-  "description": "delete object with fixed property 'TYPE':'FileWatchPath'",
+  "description": "delete object with fixed property 'TYPE':'JobResourcePath'",
   "properties": {
     "TYPE": {
       "$ref": "../common/deleteType-schema.json",
-      "default": "FileWatchPath" 
+      "default": "JobResourcePath" 
     },
     "path": {
       "$ref": "../../../api/schemas/common/string255-schema.json"

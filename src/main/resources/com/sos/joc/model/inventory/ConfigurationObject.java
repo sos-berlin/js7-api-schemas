@@ -50,6 +50,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.workflow.WorkflowEdit.class, name = "WORKFLOW"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.job.JobEdit.class, name = "JOB"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobclass.JobClassEdit.class, name = "JOBCLASS"),
+    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobresource.JobResourceEdit.class, name = "JOBRESOURCE"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.junction.JunctionEdit.class, name = "JUNCTION"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.lock.LockEdit.class, name = "LOCK"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.fileordersource.FileOrderSourceEdit.class, name = "FILEORDERSOURCE"),

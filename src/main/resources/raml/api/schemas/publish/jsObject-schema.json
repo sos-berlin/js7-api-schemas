@@ -14,8 +14,7 @@
 			"$ref": "../common/path-schema.json"
 		},
 		"objectType": {
-			"type": "object",
-			"javaType": "com.sos.joc.model.inventory.deploy.DeployType"
+			"$ref": "../../../inventory/schemas/deploy/deployType-schema.json"
 		},
     	"content": {
       		"type": "object",

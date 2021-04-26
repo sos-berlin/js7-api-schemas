@@ -4,13 +4,13 @@
   "javaType": "com.sos.controller.model.event.OrderTransferredToAgent",
   "type": "object",
   "required": [
-  	"agentId"
+  	"agentPath"
   ],
   "extends" : {
     "$ref": "event-schema.json"
   },
   "properties": {
-    "agentName": {
+    "agentPath": {
       "type": "string"
     }
   },

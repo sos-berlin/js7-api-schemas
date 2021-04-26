@@ -35,6 +35,13 @@
 			},
 			"uniqueItems": true
 		},
+		"jobResources": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
 		"locks": {
 			"type": "array",
 			"items": {
@@ -64,13 +71,6 @@
 			"uniqueItems": true
 		},
 		"calendars": {
-			"type": "array",
-			"items": {
-				"$ref": "response-folderItem-schema.json"
-			},
-			"uniqueItems": true
-		},
-		"folders": {
 			"type": "array",
 			"items": {
 				"$ref": "response-folderItem-schema.json"
