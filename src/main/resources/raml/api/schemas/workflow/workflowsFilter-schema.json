@@ -13,7 +13,7 @@
     "workflowIds": {
       "type": "array",
       "items": {
-        "$ref": "workflowId-schema.json"
+        "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
       }
     },
     "compact": {

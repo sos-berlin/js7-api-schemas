@@ -12,7 +12,7 @@
       "$ref": "../common/controllerId-schema.json"
     },
     "workflowId": {
-      "$ref": "workflowId-schema.json"
+      "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
     },
     "compact": {
       "$ref": "../common/compactParam-schema.json"
