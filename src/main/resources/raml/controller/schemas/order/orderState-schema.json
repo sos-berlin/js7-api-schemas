@@ -6,9 +6,6 @@
    "properties": {
 		"TYPE": {
 			"type": "string"
-		},
-		"scheduledFor": {
-			"$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
 		}
 	},
   "additionalProperties": false

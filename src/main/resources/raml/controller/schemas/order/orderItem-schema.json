@@ -25,6 +25,9 @@
 				"$ref": "../workflow/historicOutcome-schema.json"
 			}
 		},
+		"scheduledFor": {
+			"$ref": "../../../api/schemas/common/nonNegativeLong-schema.json"
+		},
 		"isSuspended": {
 			"type": "boolean"
 		},
