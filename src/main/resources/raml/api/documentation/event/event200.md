@@ -54,11 +54,13 @@ Different events trigger the following different actions:
 		* The Lock itself is changed -> the tree and the list need to update
 * Update ``Calendar View``: for each following event
 	* to be continued...
-* Update ``History View``: 
+* Update ``History View`` and ``History Tabs`` in ``Workflow View``: 
 	* Order Tab: once for following event
-		* to be continued...
+		* **HistoryOrderStarted**  (is sent only in an active JOC node)
+		* **HistoryOrderTerminated**  (is sent only in an active JOC node)
 	* Task Tab: once for following event
-		* to be continued...
+		* **HistoryTaskStarted**  (is sent only in an active JOC node)
+		* **HistoryTaskTerminated**  (is sent only in an active JOC node)
 * Alert ``Problem``: for each following event
 	* **ProblemEvent** 
 		* but only in that browser window where the accesstoken of the event equals the window's accesstoken.
