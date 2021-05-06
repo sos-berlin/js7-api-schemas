@@ -1,42 +1,40 @@
 
-package com.sos.joc.model.inventory.common;
+package com.sos.joc.model.audit;
 
 import java.util.HashMap;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-public enum ConfigurationType {
+public enum CategoryType {
 
-    FOLDER(0),
-    WORKFLOW(1),
-    JOBCLASS(2),
-    LOCK(4),
-    JUNCTION(5),
-    WORKINGDAYSCALENDAR(60),
-    NONWORKINGDAYSCALENDAR(61),
-    SCHEDULE(7),
-    JOB(8),
-    FILEORDERSOURCE(9),
-    JOBRESOURCE(10),
-    ORDER(99);
+    ADMINSTRATION(1),
+    CONTROLLER(2),
+    INVENTORY(3),
+    DEPLOYMENT(4),
+    DAILYPLAN(5),
+    FILETRANSFER(6),
+    NOTIFICATION(7),
+    OTHERS(8),
+    DOCUMENTATIONS(9),
+    CERTIFICATES(10);
     private final Integer intValue;
-    private final static Map<String, ConfigurationType> CONSTANTS = new HashMap<String, ConfigurationType>();
-    private final static Map<Integer, ConfigurationType> INTCONSTANTS = new HashMap<Integer, ConfigurationType>();
+    private final static Map<String, CategoryType> CONSTANTS = new HashMap<String, CategoryType>();
+    private final static Map<Integer, CategoryType> INTCONSTANTS = new HashMap<Integer, CategoryType>();
 
     static {
-        for (ConfigurationType c: values()) {
+        for (CategoryType c: values()) {
             CONSTANTS.put(c.name(), c);
         }
     }
 
     static {
-        for (ConfigurationType c: values()) {
+        for (CategoryType c: values()) {
             INTCONSTANTS.put(c.intValue, c);
         }
     }
 
-    private ConfigurationType(Integer intValue) {
+    private CategoryType(Integer intValue) {
         this.intValue = intValue;
     }
 
@@ -55,8 +53,8 @@ public enum ConfigurationType {
     }
 
     @JsonCreator
-    public static ConfigurationType fromValue(String value) {
-        ConfigurationType constant = CONSTANTS.get(value);
+    public static CategoryType fromValue(String value) {
+        CategoryType constant = CONSTANTS.get(value);
         if (constant == null) {
             throw new IllegalArgumentException(value);
         } else {
@@ -64,8 +62,8 @@ public enum ConfigurationType {
         }
     }
 
-    public static ConfigurationType fromValue(Integer intValue) {
-        ConfigurationType constant = INTCONSTANTS.get(intValue);
+    public static CategoryType fromValue(Integer intValue) {
+        CategoryType constant = INTCONSTANTS.get(intValue);
         if (constant == null) {
             throw new IllegalArgumentException(intValue + "");
         } else {
