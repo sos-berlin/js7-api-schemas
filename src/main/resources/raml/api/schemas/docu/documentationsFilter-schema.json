@@ -3,13 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.docu.DocumentationsFilter",
   "type": "object",
-  "required": [
-    "controllerId"
-  ],
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
     "documentations": {
       "type": "array",
       "items": {

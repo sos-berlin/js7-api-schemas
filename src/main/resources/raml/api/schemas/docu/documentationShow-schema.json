@@ -4,14 +4,9 @@
   "javaType": "com.sos.joc.model.docu.DocumentationShowFilter",
   "type": "object",
   "required": [
-    "controllerId",
-    "path",
-    "type"
+    "path"
   ],
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
     "type": {
       "$ref": "../inventory/common/configurationType-schema.json"
     },

@@ -7,9 +7,6 @@
     "id": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
     "path": {
       "$ref": "../common/path-schema.json"
     },

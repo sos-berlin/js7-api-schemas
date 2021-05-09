@@ -664,84 +664,81 @@ traits:
           example: " "
           example200: " "
                
-#/documentation:
-#  description: |
-#    This is not an API call. Use its children!!
-#  
-#  /{controllerId}/{accessToken}/{path}:
-#    type:
-#      getDocu:
-#        description: " "
-#        #description1: !include api/documentation/docu/docuId.md
-#        #description2: " "
-#        #example: " "
-#  /used:
-#    type:
-#      postJSON:
-#        description: Lists Controller objects which use the documentation
-#        description1: !include api/documentation/docu/docPath.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/docu/documentationFilter-schema.json
-#        schema200: !include api/schemas/docu/usedBy-schema.json
-#        example: " "
-#        example200: " "
-#  /preview:
-#    get:
-#    type:
-#      postDocu:
-#        description: Preview the documentation
-#        jsObjectParam: documentation
-#        jsObject: documentation
-#        #description1: !include api/documentation/docu/docPath.md
-#        #description2: " "
-#        #schema: !include api/schemas/docu/documentationShow-schema.json
-#        #example: " "
-#  /show:
-#    get:
-#    is: [ filteredByJSType ]
-#    type:
-#      postDocu:
-#        description: Get the documentation of a Controller object
-#        jsObjectParam: path
-#        jsObject: Controller object
-#        #description1: !include api/documentation/docu/jsObject.md
-#        #description2: " "
-#        #schema: !include api/schemas/docu/documentationShow-schema.json
-#        #example: " "
-#  /url:
-#    post:
-#    type:
-#      postJSON:
-#        description: Get the URL of a documentation of a Controller object
-#        description1: !include api/documentation/docu/jsObject.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/docu/documentationShow-schema.json
-#        schema200: !include api/schemas/docu/url-schema.json
-#        example: " "
-#        example200: " "    
+/documentation:
+  description: |
+    This is not an API call. Use its children!!
+  
+  /{accessToken}/{path}:
+   type:
+      getDocu:
+        description: " "
+  /used:
+    type:
+      postJSONWithoutJSId:
+        description: Get Controller objects which use the documentation
+        description1: !include api/documentation/docu/docPath.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/docu/documentationFilter-schema.json
+        schema200: !include api/schemas/docu/usedBy-schema.json
+        example: " "
+        example200: " "
+  /preview:
+    get:
+    type:
+      postDocu:
+        description: Preview the documentation
+        jsObjectParam: documentation
+        jsObject: documentation
+        description1: !include api/documentation/docu/jsObject.md
+        description2: " "
+        schema: !include api/schemas/docu/documentationShow-schema.json
+        example: " "
+  /show:
+    get:
+    is: [ filteredByJSType ]
+    type:
+      postDocu:
+        description: Get the documentation of a Controller object
+        jsObjectParam: path
+        jsObject: Controller object
+        description1: !include api/documentation/docu/jsObject.md
+        description2: " "
+        schema: !include api/schemas/docu/documentationShow-schema.json
+        example: " "
+  /url:
+    post:
+    type:
+      postJSONWithoutJSId:
+        description: Get the URL of a documentation of a Controller object
+        description1: !include api/documentation/docu/jsObject.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/docu/documentationShow-schema.json
+        schema200: !include api/schemas/docu/url-schema.json
+        example: " "
+        example200: " "    
 
 
 #/documentations:
 #  type:
-#    postJSON:
+#    postJSONWithoutJSId:
 #      description: Get collection of documentations
 #      description1: !include api/documentation/docu/filteredByPaths.md
 #      description2: " "
@@ -814,15 +811,6 @@ traits:
 #        example: " "
 #        example200: " "
 
-# moved to api-internal.raml
-#/events:
-#  type:
-#    postEvent:
-#      description200: TODO
-#      schema: !include api/schemas/event/register-schema.json
-#      schema200: !include api/schemas/event/events-schema.json
-#      example: TODO
-#      example200: TODO
 
 /inventory:
   description: This is not an API call. Use its children!!
