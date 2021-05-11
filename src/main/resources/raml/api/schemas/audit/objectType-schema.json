@@ -1,0 +1,20 @@
+{
+  "title": "audit object types",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.audit.ObjectType",
+  "type": "string",
+  "enum": [
+    "FOLDER",
+    "WORKFLOW",
+    "JOBCLASS",
+    "JOBRESOURCE",
+    "LOCK",
+    "JUNCTION",
+    "FILEORDERSOURCE",
+    "WORKINGDAYSCALENDAR", 
+    "NONWORKINGDAYSCALENDAR",
+    "SCHEDULE",
+    "JOB",
+    "ORDER"
+  ]
+}
