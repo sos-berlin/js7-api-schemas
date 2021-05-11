@@ -4,7 +4,6 @@
   "javaType": "com.sos.joc.model.audit.ObjectType",
   "type": "string",
   "enum": [
-    "FOLDER",
     "WORKFLOW",
     "JOBCLASS",
     "JOBRESOURCE",

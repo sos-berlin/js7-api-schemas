@@ -6,6 +6,7 @@
   "required": [
     "account",
     "request",
+    "category",
     "created"
   ],
   "properties": {
@@ -21,23 +22,14 @@
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
     },
+    "category": {
+      "$ref": "category-schema.json"
+    },
     "comment": {
       "type": "string"
     },
     "parameters": {
       "description": "JSON object as string, parameter of request",
-      "type": "string"
-    },
-    "job": {
-      "type": "string"
-    },
-    "workflow": {
-      "type": "string"
-    },
-    "orderId": {
-      "type": "string"
-    },
-    "calendar": {
       "type": "string"
     },
     "timeSpent": {

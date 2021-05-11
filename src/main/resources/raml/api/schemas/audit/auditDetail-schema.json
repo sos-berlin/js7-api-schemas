@@ -1,0 +1,18 @@
+{
+  "title": "audit detail",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.audit.AuditLogDetailItem",
+  "type": "object",
+  "required": [
+    "path",
+    "type"
+  ],
+  "properties": {
+    "path": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "type": {
+      "$ref": "objectType-schema.json"
+    }
+  }
+}
