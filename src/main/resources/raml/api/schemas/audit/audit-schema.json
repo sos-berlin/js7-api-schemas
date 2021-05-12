@@ -4,12 +4,16 @@
   "javaType": "com.sos.joc.model.audit.AuditLogItem",
   "type": "object",
   "required": [
+    "id",
     "account",
     "request",
     "category",
     "created"
   ],
   "properties": {
+    "id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
     "account": {
       "$ref": "../common/string255-schema.json"
     },

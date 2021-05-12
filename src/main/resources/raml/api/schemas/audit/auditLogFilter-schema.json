@@ -9,18 +9,21 @@
     },
     "objectNames": {
       "type": "array",
+      "uniqueItems" : true,
       "items": {
         "$ref": "../common/string255-schema.json"
       }
     },
     "objectTypes": {
       "type": "array",
+      "uniqueItems" : true,
       "items": {
         "$ref": "objectType-schema.json"
       }
     },
     "categories": {
       "type": "array",
+      "uniqueItems" : true,
       "items": {
         "$ref": "category-schema.json"
       }
@@ -31,8 +34,8 @@
     "account": {
       "$ref": "../common/string255-schema.json"
     },
-    "regex": {
-      "$ref": "../common/regexFilter-schema.json"
+    "comment": {
+      "$ref": "../common/string255-schema.json"
     },
     "dateFrom": {
       "$ref": "../common/dateFromTo-schema.json"
