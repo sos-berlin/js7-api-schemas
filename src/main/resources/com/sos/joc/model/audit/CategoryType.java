@@ -8,14 +8,14 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum CategoryType {
 
-    ADMINSTRATION(1),
+    //ADMINSTRATION(1),
     CONTROLLER(2),
     INVENTORY(3),
     DEPLOYMENT(4),
     DAILYPLAN(5),
-    FILETRANSFER(6),
-    NOTIFICATION(7),
-    OTHERS(8),
+    //FILETRANSFER(6),
+    //NOTIFICATION(7),
+    //OTHERS(8),
     DOCUMENTATIONS(9),
     CERTIFICATES(10);
     private final Integer intValue;

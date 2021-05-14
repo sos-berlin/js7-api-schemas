@@ -200,6 +200,25 @@ traits:
         description200: " "
         schema200: !include api/schemas/audit/comments-schema.json
         example200: !include api/examples/audit/comments-example.json
+  /detail:
+    type:
+      postJSONWithoutJSId:
+        description: Get processed objects of an audit log entry
+        description1: !include api/documentation/audit/detail.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema200: !include api/schemas/audit/auditLogDetails-schema.json
+        example200: " "
+        schema: !include api/schemas/audit/auditLogDetailFilter-schema.json
+        example: " "
 
 /authentication:
   description: This is not an API call. Use child urls instead!
