@@ -13,7 +13,7 @@
     "calendarPaths": {
       "type": "array",
       "items": {
-        "$ref": "../common/path-schema.json"
+        "$ref": "../common/string255-schema.json"
       }
     },
     "compact": {
