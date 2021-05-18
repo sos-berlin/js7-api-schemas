@@ -42,6 +42,11 @@
     },
     "ticketLink": {
       "type": "string"
+    },
+    "commitId": {
+      "description": "it is only relevant for category 'DEPLOYMENT' and useful to create a link to the deployment history",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F-]+$"
     }
   }
 }
