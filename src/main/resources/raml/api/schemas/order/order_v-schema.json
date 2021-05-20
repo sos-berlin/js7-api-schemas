@@ -36,6 +36,9 @@
 	"position": {
      	"$ref": "../../../controller/schemas/common/position-schema.json"
     },
+	"positionString": {
+     	"$ref": "../common/string255-schema.json"
+    },
     "scheduledFor": {
       	"$ref": "../common/nonNegativeLong-schema.json"
     },
