@@ -752,52 +752,55 @@ traits:
         schema200: !include api/schemas/docu/usedBy-schema.json
         example: " "
         example200: " "
-  /preview:
+  /show:
     get:
     type:
       postDocu:
-        description: Preview the documentation
+        description: Show the documentation
         jsObjectParam: documentation
         jsObject: documentation
         description1: !include api/documentation/docu/jsObject.md
         description2: " "
         schema: !include api/schemas/docu/documentationShow-schema.json
         example: " "
-  /show:
-    get:
-    is: [ filteredByJSType ]
-    type:
-      postDocu:
-        description: Get the documentation of a Controller object
-        jsObjectParam: path
-        jsObject: Controller object
-        description1: !include api/documentation/docu/jsObject.md
-        description2: " "
-        schema: !include api/schemas/docu/documentationShow-schema.json
-        example: " "
-  /url:
-    post:
-    type:
-      postJSONWithoutJSId:
-        description: Get the URL of a documentation of a Controller object
-        description1: !include api/documentation/docu/jsObject.md
-        description2: " "
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        description200: " "
-        schema: !include api/schemas/docu/documentationShow-schema.json
-        schema200: !include api/schemas/docu/url-schema.json
-        example: " "
-        example200: " "    
+#  /show:
+#    get:
+#    is: [ filteredByJSType ]
+#    type:
+#      postDocu:
+#        description: Get the documentation of a Controller object
+#        jsObjectParam: path
+#        jsObject: Controller object
+#        description1: !include api/documentation/docu/jsObject.md
+#        description2: " "
+#        schema: !include api/schemas/docu/documentationShow-schema.json
+#        example: " "
+#  /url:
+#    post:
+#    type:
+#      postJSONWithoutJSId:
+#        description: Get the URL of a documentation of a Controller object
+#        description1: !include api/documentation/docu/jsObject.md
+#        description2: " "
+#        description3: " "
+#        description4: " "
+#        description5: " "
+#        description6: " "
+#        description7: " "
+#        description8: " "
+#        description9: " "
+#        description10: " "
+#        description200: " "
+#        schema: !include api/schemas/docu/documentationShow-schema.json
+#        schema200: !include api/schemas/docu/url-schema.json
+#        example: " "
+#        example200: " "    
 
 
-#/documentations:
+/documentations:
+  description: |
+    This is not an API call. Use its children!!
+    
 #  type:
 #    postJSONWithoutJSId:
 #      description: Get collection of documentations
@@ -816,61 +819,61 @@ traits:
 #      schema200: !include api/schemas/docu/documentations-schema.json
 #      example: " "
 #      example200: " "
-#  /export:
-#    get:
-#    type:
-#      postForDownload:
-#        description: Provides export file (zip) as download of documentations
-#        description1: !include api/documentation/docu/filteredByPaths.md
-#        description2: !include api/documentation/common/folders.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        infoapi: ./documentation/export
-#        schema: !include api/schemas/docu/documentationsFilter-schema.json
-#        example: " "
-#    /info:
-#      type:
-#        postJSON:
-#          description: Temp. Filename for Export 
-#          description1: !include api/documentation/docu/filteredByPaths.md
-#          description2: !include api/documentation/common/folders.md
-#          description3: " "
-#          description4: " "
-#          description5: " "
-#          description6: " "
-#          description7: " "
-#          description8: " "
-#          description9: " "
-#          description10: " "
-#          description200: !include api/documentation/docu/exportInfo.md
-#          schema: !include api/schemas/docu/documentationsFilter-schema.json
-#          schema200: !include api/schemas/docu/exportInfo-schema.json
-#          example: " "
-#          example200: " "
-#  /import:
-#    type:
-#      postForUpload:
-#        description: Import Documentations
-#  /delete:
-#    type:
-#      postJSON:
-#        description: Deletes a list of Documentations
-#        description1: !include api/documentation/docu/filteredByPaths.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/docu/documentationsFilter-schema.json
-#        schema200: ok
-#        example: " "
-#        example200: " "
+  /export:
+    get:
+    type:
+      postForDownload:
+        description: Provides export file (zip) as download of documentations
+        description1: !include api/documentation/docu/filteredByPaths.md
+        description2: !include api/documentation/common/folders.md
+        description3: " "
+        description4: " "
+        description5: " "
+        infoapi: ./documentation/export
+        schema: !include api/schemas/docu/documentationsFilter-schema.json
+        example: " "
+    /info:
+      type:
+        postJSON:
+          description: Temp. Filename for Export 
+          description1: !include api/documentation/docu/filteredByPaths.md
+          description2: !include api/documentation/common/folders.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: !include api/documentation/docu/exportInfo.md
+          schema: !include api/schemas/docu/documentationsFilter-schema.json
+          schema200: !include api/schemas/docu/exportInfo-schema.json
+          example: " "
+          example200: " "
+  /import:
+    type:
+      postForUpload:
+        description: Import Documentations
+  /delete:
+    type:
+      postJSON:
+        description: Deletes a list of Documentations
+        description1: !include api/documentation/docu/filteredByPaths.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/docu/documentationsFilter-schema.json
+        schema200: ok
+        example: " "
+        example200: " "
 
 
 /inventory:

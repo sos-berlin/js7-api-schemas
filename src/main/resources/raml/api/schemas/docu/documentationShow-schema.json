@@ -7,11 +7,14 @@
     "path"
   ],
   "properties": {
-    "type": {
+    "objectType": {
       "$ref": "../inventory/common/configurationType-schema.json"
     },
     "path": {
-      "$ref": "../common/path-schema.json"
+      "$ref": "../common/string255required-schema.json"
+    },
+    "jobName": {
+      "$ref": "../common/string255-schema.json"
     }
   }
 }
