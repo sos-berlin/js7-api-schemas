@@ -132,6 +132,29 @@ traits:
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
         
+  /report:
+    type:
+      postJSONWithOptionalJSId:
+        description: Get report of Agent tasks
+        description1: !include api/documentation/common/dateFrom.md
+        description2: !include api/documentation/common/dateTo.md
+        description3: !include api/documentation/common/timeZone.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: " "
+        schema: !include api/schemas/agent/agentReportFilter-schema.json
+        schema200: !include api/schemas/agent/agentReports-schema.json
+        example: " "
+        example200: " "
+        
   /store:
     type:
       postJSONWithOkResponse:
@@ -191,8 +214,8 @@ traits:
       description200: !include api/documentation/audit/audit.md
       schema: !include api/schemas/audit/auditLogFilter-schema.json
       schema200: !include api/schemas/audit/auditLog-schema.json
-      example: " "
-      example200: " "
+      example: !include api/examples/audit/audit-request-example.json
+      example200: !include api/examples/audit/audit-response-example.json
   /comments:
     type:
       postOnlyAccessToken:
@@ -200,7 +223,7 @@ traits:
         description200: " "
         schema200: !include api/schemas/audit/comments-schema.json
         example200: !include api/examples/audit/comments-example.json
-  /detail:
+  /details:
     type:
       postJSONWithoutJSId:
         description: Get processed objects of an audit log entry
@@ -216,9 +239,9 @@ traits:
         description10: " "
         description200: " "
         schema200: !include api/schemas/audit/auditLogDetails-schema.json
-        example200: " "
+        example200: !include api/examples/audit/auditDetail-response-example.json
         schema: !include api/schemas/audit/auditLogDetailFilter-schema.json
-        example: " "
+        example: !include api/examples/audit/auditDetail-request-example.json
 
 /authentication:
   description: This is not an API call. Use child urls instead!
@@ -504,6 +527,25 @@ traits:
           
 /daily_plan:
   description: This is not an API call. Use its children!!
+  /order/variables:
+    type:
+      postJSON:
+        description: Read the variables for a given order 
+        description1: !include api/documentation/order/orderIdRequired.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/order/orderFilter-schema.json
+        schema200: !include api/schemas/orderManagement/orders/orderVariables-schema.json
+        example: " "
+        example200: " "
   /orders:
     type: 
       postJSON:
@@ -1812,13 +1854,13 @@ traits:
   /history:
     type:
       postJSONWithOptionalJSId:
-        description: Order history from _reporting_
+        description: Order history
         description1: !include api/documentation/order/filteredByOrders.md
         description2: !include api/documentation/order/excludeOrders.md
         description3: !include api/documentation/common/dateFrom.md
         description4: !include api/documentation/common/dateTo.md
         description5: !include api/documentation/common/timeZone.md
-        description6: !include api/documentation/common/regex.md
+        description6: !include api/documentation/order/patterns.md
         description7: !include api/documentation/common/folders.md
         description8: !include api/documentation/common/limit.md
         description9: !include api/documentation/common/historyStates.md
@@ -1910,25 +1952,6 @@ traits:
         signalParam: !include api/documentation/order/signal.md
         positionParam: " "
         audit: !include api/documentation/audit/auditLog.md
-  /variables:
-    type:
-      postJSON:
-        description: Read the variables for a given order 
-        description1: !include api/documentation/order/orderIdRequired.md
-        description2: " "
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        description200: " "
-        schema: !include api/schemas/order/orderFilter-schema.json
-        schema200: !include api/schemas/orderManagement/orders/orderVariables-schema.json
-        example: " "
-        example200: " "
         
 /profile:
   description: This is not an API call. Use child urls instead!
@@ -2018,10 +2041,6 @@ traits:
         example: " "
         example200: " "
 
-
-
-
-
 /task/log:
   type:
     postLog:
@@ -2057,20 +2076,21 @@ traits:
 /tasks/history:
   type:
     postJSONWithOptionalJSId:
-      description: Task history from _reporting_ (permanent)
+      description: Task history
       description1: !include api/documentation/job/filteredByJobs.md
       description2: !include api/documentation/job/excludeJobs.md
       description3: !include api/documentation/common/dateFrom.md
       description4: !include api/documentation/common/dateTo.md
       description5: !include api/documentation/common/timeZone.md
-      description6: !include api/documentation/common/regex.md
+      description6: !include api/documentation/job/patterns.md
       description7: !include api/documentation/common/folders.md
       description8: !include api/documentation/common/limit.md
       description9: !include api/documentation/common/historyStates.md
       description10: !include api/documentation/job/criticalities.md
       description11: !include api/documentation/job/taskIds.md
-      description12: !include api/documentation/job/taskIdOfOrder.md
-      description13: !include api/documentation/job/filteredByOrders.md
+      # TODO introduce label in HISTORY_ORDER_STEPS then use label instead of workflow position: description12: !include api/documentation/job/taskIdOfOrder.md
+      description12: " "
+      description13: " "
       description200: TODO
       schema: !include api/schemas/job/jobsFilter-schema.json
       schema200: !include api/schemas/job/history-schema.json

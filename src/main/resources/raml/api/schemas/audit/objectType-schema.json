@@ -13,7 +13,6 @@
     "WORKINGDAYSCALENDAR", 
     "NONWORKINGDAYSCALENDAR",
     "SCHEDULE",
-    "JOB",
     "ORDER"
   ]
 }

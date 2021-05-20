@@ -1,0 +1,2083 @@
+{
+    "auditLog": [
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-18T12:51:52Z",
+            "id": 85941,
+            "parameters": "{\"controllerId\":\"testsuite\",\"auditLog\":{}}",
+            "request": "./controller/cluster/switchover"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-16T23:09:01Z",
+            "id": 85940,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-16T23:08:58Z",
+            "id": 85939,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T22:04:20Z",
+            "id": 85938,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecutionFromJobResource\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T22:04:00Z",
+            "id": 85937,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/DatabaseSQLExecution/dbSQLExecutionFromJobResource\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T22:03:37Z",
+            "id": 85936,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/DatabaseSQLExecution/dbSQLPlusExecutionCredentialStore\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T22:03:19Z",
+            "id": 85935,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/DatabaseSQLExecution/dbSQLPlusExecutionFromJobResource\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "ad970529-3527-4918-a9db-9f68c9f68d5a",
+            "controllerId": "-",
+            "created": "2021-05-15T22:03:06Z",
+            "id": 85934,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/DatabaseSQLExecution/dbSQLPlusExecutionFromJobResource\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T22:03:02Z",
+            "id": 85933,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"jobSQLPlus\",\"label\":\"jobSQLPlus\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-results\",\"label\":\"display-results\"}],\"jobs\":{\"jobSQLPlus\":{\"agentName\":\"apmaccsAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.db.oracle.SQLPLUSJob\",\"arguments\":{\"command_script_file\":\"\\\"./config/dbSQLPlus.sql\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"dbSQLPlusExecution\"]},\"display-results\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"Oracle SQL*Plus Execution Results\\\"\\necho \\\"\\\"\\necho \\\"BUSINESS_DATE=$BUSINESS_DATE\\\"\",\"env\":{\"BUSINESS_DATE\":\"$business_date\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":746,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "3b1080f6-a1d2-4f31-b8d3-c89140792609",
+            "controllerId": "-",
+            "created": "2021-05-15T22:02:52Z",
+            "id": 85932,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/DatabaseSQLExecution/dbSQLPlusExecutionCredentialStore\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T22:02:49Z",
+            "id": 85931,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"jobSQLPlus\",\"label\":\"jobSQLPlus\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-results\",\"label\":\"display-results\"}],\"jobs\":{\"jobSQLPlus\":{\"agentName\":\"apmaccsAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.db.oracle.SQLPLUSJob\",\"arguments\":{\"db_url\":\"\\\"xe\\\"\",\"db_user\":\"\\\"cs://jobs/oracle/minos.sos@user\\\"\",\"db_password\":\"\\\"cs://jobs/oracle/minos.sos@password\\\"\",\"shell_command\":\"\\\"sqlplus\\\"\",\"command_script_file\":\"\\\"./config/dbSQLPlus.sql\\\"\",\"credential_store_key\":\"\\\"./config/jobs.key\\\"\",\"credential_store_file\":\"\\\"./config/jobs.kdbx\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false},\"display-results\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"Oracle SQL*Plus Execution Results\\\"\\necho \\\"\\\"\\necho \\\"BUSINESS_DATE=$BUSINESS_DATE\\\"\",\"env\":{\"BUSINESS_DATE\":\"$business_date\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":747,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "37aa3b54-b752-48d0-9dcd-c2fdfc001399",
+            "controllerId": "-",
+            "created": "2021-05-15T22:02:37Z",
+            "id": 85930,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/DatabaseSQLExecution/dbSQLPlusExecution\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T22:02:34Z",
+            "id": 85929,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"jobSQLPlus\",\"label\":\"jobSQLPlus\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-results\",\"label\":\"display-results\"}],\"jobs\":{\"jobSQLPlus\":{\"agentName\":\"apmaccsAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.db.oracle.SQLPLUSJob\",\"arguments\":{\"db_url\":\"\\\"xe\\\"\",\"db_user\":\"\\\"test_reporting_1_13\\\"\",\"db_password\":\"\\\"TEST_SCHED1\\\"\",\"shell_command\":\"\\\"sqlplus\\\"\",\"command_script_file\":\"\\\"./config/dbSQLPlus.sql\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false},\"display-results\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"Oracle SQL*Plus Execution Results\\\"\\necho \\\"\\\"\\necho \\\"BUSINESS_DATE=$BUSINESS_DATE\\\"\",\"env\":{\"BUSINESS_DATE\":\"$business_date\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":745,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "ec3b1bbe-6e9e-47e9-b1c9-6f61cd9f1c73",
+            "controllerId": "-",
+            "created": "2021-05-15T22:02:23Z",
+            "id": 85928,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecutionFromJobResource\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T22:02:20Z",
+            "id": 85927,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"jobPLSQL\",\"label\":\"jobPLSQL\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-results\",\"label\":\"display-results\"}],\"jobs\":{\"jobPLSQL\":{\"agentName\":\"apmaccsAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.db.oracle.PLSQLJob\",\"arguments\":{\"command\":\"\\\"BEGIN\\n  DBMS_OUTPUT.PUT_LINE( 'SET business_date IS ' || TO_CHAR(CURRENT_DATE, 'YYYY-MM-DD') );\\nEND;\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"dbPLSQLExecution\"],\"title\":\"Run Oracle PL/SQL statements\",\"logLevel\":\"DEBUG\"},\"display-results\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"Orcle PL/SQL Execution Results\\\"\\necho \\\"\\\"\\necho \\\"BUSINESS_DATE=$BUSINESS_DATE\\\"\",\"env\":{\"BUSINESS_DATE\":\"$business_date\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"dbPLSQLExecution\"]},\"id\":740,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "0d310913-6984-4456-91c1-6f0d77e1f54b",
+            "controllerId": "-",
+            "created": "2021-05-15T22:02:11Z",
+            "id": 85926,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecutionCredentialStore\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T22:02:07Z",
+            "id": 85925,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"jobPLSQL\",\"label\":\"jobPLSQL\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-results\",\"label\":\"display-results\"}],\"jobs\":{\"jobPLSQL\":{\"agentName\":\"apmaccsAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.db.oracle.PLSQLJob\",\"arguments\":{\"db_url\":\"\\\"cs://jobs/oracle/minos.sos@url\\\"\",\"command\":\"\\\"BEGIN\\n  DBMS_OUTPUT.PUT_LINE( 'SET business_date IS ' || TO_CHAR(CURRENT_DATE, 'YYYY-MM-DD') );\\nEND;\\\"\",\"db_user\":\"\\\"cs://jobs/oracle/minos.sos@user\\\"\",\"db_password\":\"\\\"cs://jobs/oracle/minos.sos@password\\\"\",\"credential_store_file\":\"\\\"./config/jobs.kdbx\\\"\",\"credential_store_key_file\":\"\\\"./config/jobs.key\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"title\":\"Run Oracle PL/SQL statements\",\"logLevel\":\"DEBUG\"},\"display-results\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"Orcle PL/SQL Execution Results\\\"\\necho \\\"\\\"\\necho \\\"BUSINESS_DATE=$BUSINESS_DATE\\\"\",\"env\":{\"BUSINESS_DATE\":\"$business_date\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":121,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T22:01:39Z",
+            "id": 85924,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecution\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "69fc2b78-629e-48b2-8a54-5178f0cf3874",
+            "controllerId": "-",
+            "created": "2021-05-15T22:01:30Z",
+            "id": 85923,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecution\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T22:01:20Z",
+            "id": 85922,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"jobPLSQL\",\"label\":\"jobPLSQL\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-results\",\"label\":\"display-results\"}],\"jobs\":{\"jobPLSQL\":{\"agentName\":\"apmaccsAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.db.oracle.PLSQLJob\",\"arguments\":{\"db_url\":\"\\\"jdbc:oracle:thin:@//192.11.0.99:1521/xe\\\"\",\"command\":\"\\\"BEGIN\\n  DBMS_OUTPUT.PUT_LINE( 'SET business_date IS ' || TO_CHAR(CURRENT_DATE, 'YYYY-MM-DD') );\\nEND;\\\"\",\"db_user\":\"\\\"test_reporting_1_13\\\"\",\"db_password\":\"\\\"TEST_SCHED1\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"title\":\"Run Oracle PL/SQL statements\",\"logLevel\":\"DEBUG\"},\"display-results\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"Orcle PL/SQL Execution Results\\\"\\necho \\\"\\\"\\necho \\\"BUSINESS_DATE=$BUSINESS_DATE\\\"\",\"env\":{\"BUSINESS_DATE\":\"$business_date\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":76,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:52:54Z",
+            "id": 85921,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecution\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:52:49Z",
+            "id": 85920,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-15#T1114992739-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "3735be99-9a5a-451e-99cd-2cdafaf79b39",
+            "controllerId": "-",
+            "created": "2021-05-15T21:52:42Z",
+            "id": 85919,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecution\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:52:38Z",
+            "id": 85918,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"jobPLSQL\",\"label\":\"jobPLSQL\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-results\",\"label\":\"display-results\"}],\"jobs\":{\"jobPLSQL\":{\"agentName\":\"apmaccsAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.db.oracle.SOSPLSQLJob\",\"arguments\":{\"db_url\":\"\\\"jdbc:oracle:thin:@//192.11.0.99:1521/xe\\\"\",\"command\":\"\\\"BEGIN\\n  DBMS_OUTPUT.PUT_LINE( 'SET business_date IS ' || TO_CHAR(CURRENT_DATE, 'YYYY-MM-DD') );\\nEND;\\\"\",\"db_user\":\"\\\"test_reporting_1_13\\\"\",\"db_password\":\"\\\"TEST_SCHED1\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"title\":\"Run Oracle PL/SQL statements\",\"logLevel\":\"DEBUG\"},\"display-results\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"Orcle PL/SQL Execution Results\\\"\\necho \\\"\\\"\\necho \\\"BUSINESS_DATE=$BUSINESS_DATE\\\"\",\"env\":{\"BUSINESS_DATE\":\"$business_date\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":76,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:51:36Z",
+            "id": 85917,
+            "parameters": "{\"controllerId\":\"testsuite\",\"agents\":[{\"agentId\":\"agent_005\",\"agentName\":\"apmaccsAgent\",\"controllerId\":\"testsuite\",\"disabled\":false,\"isClusterWatcher\":false,\"url\":\"http://192.11.3.3:4449\",\"agentNameAliases\":[]}]}",
+            "request": "./agents/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:43:13Z",
+            "id": 85916,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecution\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "7034f6fd-6b38-4c4d-b23e-ddda0f4c18f7",
+            "controllerId": "-",
+            "created": "2021-05-15T21:42:56Z",
+            "id": 85915,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/DatabaseSQLExecution/dbPLSQLExecution\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:42:38Z",
+            "id": 85914,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"jobPLSQL\",\"label\":\"jobPLSQL\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-results\",\"label\":\"display-results\"}],\"jobs\":{\"jobPLSQL\":{\"agentName\":\"apmaccsAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.db.oracle.PLSQLJob\",\"arguments\":{\"db_url\":\"\\\"jdbc:oracle:thin:@//192.11.0.99:1521/xe\\\"\",\"command\":\"\\\"BEGIN\\n  DBMS_OUTPUT.PUT_LINE( 'SET business_date IS ' || TO_CHAR(CURRENT_DATE, 'YYYY-MM-DD') );\\nEND;\\\"\",\"db_user\":\"\\\"test_reporting_1_13\\\"\",\"db_password\":\"\\\"TEST_SCHED1\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"title\":\"Run Oracle PL/SQL statements\",\"logLevel\":\"DEBUG\"},\"display-results\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"Orcle PL/SQL Execution Results\\\"\\necho \\\"\\\"\\necho \\\"BUSINESS_DATE=$BUSINESS_DATE\\\"\",\"env\":{\"BUSINESS_DATE\":\"$business_date\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":76,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:41:07Z",
+            "id": 85913,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/pdwFork\",\"orderName\":\"add-order\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:41:04Z",
+            "id": 85912,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/PowerShell/pdPowerShellAddOrder\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:40:23Z",
+            "id": 85911,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/PowerShell/pdPowerShellGetControllerStatus\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "b65f1fd4-7405-46d8-8609-7fc848de7080",
+            "controllerId": "-",
+            "created": "2021-05-15T21:39:58Z",
+            "id": 85910,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/PowerShell/pdPowerShellAddOrder\",\"objectType\":\"WORKFLOW\"}},{\"configuration\":{\"path\":\"/ProductDemo/PowerShell/pdPowerShellGetControllerStatus\",\"objectType\":\"WORKFLOW\"}}]},\"auditLog\":{}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "b65f1fd4-7405-46d8-8609-7fc848de7080",
+            "controllerId": "-",
+            "created": "2021-05-15T21:39:58Z",
+            "id": 85910,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/PowerShell/pdPowerShellAddOrder\",\"objectType\":\"WORKFLOW\"}},{\"configuration\":{\"path\":\"/ProductDemo/PowerShell/pdPowerShellGetControllerStatus\",\"objectType\":\"WORKFLOW\"}}]},\"auditLog\":{}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:39:51Z",
+            "id": 85909,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"add-order\",\"label\":\"add_order\"}],\"jobs\":{\"add-order\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Connect-JS7Api\\n    $orderId = Add-JS7Order -WorkflowPath /ProductDemo/pdwFork -OrderName $env:JS7_JOB_NAME\\n    \\n    echo \\\"\\\"\\n    Write-Output \\\"order added: $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"],\"title\":\"Add order to workflow by JS7 PowerShell module\"},\"id\":1076,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:38:43Z",
+            "id": 85907,
+            "parameters": "{\"id\":1076,\"newPath\":\"pdPowerShellAddOrder\"}",
+            "request": "./inventory/rename"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:38:43Z",
+            "id": 85908,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"add-order\",\"label\":\"add_order\"}],\"jobs\":{\"add-order\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Connect-JS7Api\\n    $orderId = Add-JS7Order -WorkflowPath /ProductDemo/pdPrintEnv -OrderName test-api\\n    \\n    echo \\\"\\\"\\n    Write-Output \\\"order added: $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"],\"title\":\"Add order to workflow by JS7 PowerShell module\"},\"id\":1076,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:38:04Z",
+            "id": 85906,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"add-order\",\"label\":\"add_order\"}],\"jobs\":{\"add-order\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Connect-JS7Api\\n    $orderId = Add-JS7Order -WorkflowPath /ProductDemo/pdPrintEnv -OrderName test-api\\n    \\n    echo \\\"\\\"\\n    Write-Output \\\"order added: $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1076,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:36:58Z",
+            "id": 85905,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"get-controller-status\",\"label\":\"get-controller-status\"}],\"jobs\":{\"get-controller-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Connect-JS7Api\\n    Get-JS7ControllerStatus -display\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1075,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:36:07Z",
+            "id": 85904,
+            "parameters": "{\"id\":1075,\"newPath\":\"pdPowerShellGetControllerStatus\"}",
+            "request": "./inventory/rename"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:35:49Z",
+            "id": 85903,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    \\n    echo \\\"\\\"\\n    Write-Output \\\"order added: $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1075,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:35:48Z",
+            "id": 85902,
+            "parameters": "{\"shallowCopy\":false,\"suffix\":\"copy\",\"newPath\":\"/ProductDemo/PowerShell/pdPowerShellAddOrder\",\"id\":1075,\"auditLog\":{}}",
+            "request": "./inventory/copy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:35:11Z",
+            "id": 85901,
+            "parameters": "{\"shallowCopy\":false,\"newPath\":\"/ProductDemo/PowerShell/pdPowerShellAddOrder\",\"id\":1073,\"auditLog\":{}}",
+            "request": "./inventory/copy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:34:29Z",
+            "id": 85900,
+            "parameters": "{\"objectType\":\"FOLDER\",\"path\":\"/ProductDemo/PowerShell\",\"configuration\":{}}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "cb6f0f80-6559-4bfe-91a7-d42e85a4c4f2",
+            "controllerId": "-",
+            "created": "2021-05-15T21:33:35Z",
+            "id": 85899,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:33:32Z",
+            "id": 85898,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n<#\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n#>\\n\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    \\n    echo \\\"\\\"\\n    Write-Output \\\"order added: $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:32:51Z",
+            "id": 85897,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:32:47Z",
+            "id": 85896,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "84cb9312-d67c-4ec5-a27c-abe1f0a5be54",
+            "controllerId": "-",
+            "created": "2021-05-15T21:32:37Z",
+            "id": 85895,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:32:32Z",
+            "id": 85894,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n<#\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n#>\\n\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    \\n    echo \\\"hello\\\"\\n    Write-Output \\\"order added: $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:31:27Z",
+            "id": 85893,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:31:24Z",
+            "id": 85892,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "7de4cba9-efac-44e4-87aa-20e76dc1e4bb",
+            "controllerId": "-",
+            "created": "2021-05-15T21:31:11Z",
+            "id": 85891,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:31:06Z",
+            "id": 85890,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n<#\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n#>\\n\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    echo \\\"output to host: $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:29:10Z",
+            "id": 85889,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:29:07Z",
+            "id": 85888,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "50e87cbd-9888-44ec-8561-399d5134da48",
+            "controllerId": "-",
+            "created": "2021-05-15T21:28:58Z",
+            "id": 85887,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:28:53Z",
+            "id": 85886,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n<#\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n#>\\n\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n    echo \\\"hello world: $orderId\\\"\\n    Write-Host \\\"output to host: $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:26:10Z",
+            "id": 85885,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:26:07Z",
+            "id": 85884,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:25:14Z",
+            "id": 85883,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:25:11Z",
+            "id": 85882,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:24:00Z",
+            "id": 85881,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:23:57Z",
+            "id": 85880,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "72a624e3-641d-4b64-b6a1-e51f15b9c998",
+            "controllerId": "-",
+            "created": "2021-05-15T21:20:35Z",
+            "id": 85879,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:20:32Z",
+            "id": 85878,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n<#\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n#>\\n\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:17:59Z",
+            "id": 85877,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:17:55Z",
+            "id": 85876,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T21:17:46Z",
+            "id": 85875,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:17:43Z",
+            "id": 85874,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Import-Module JS7\\n\\n<#\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n#>\\n\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:17:24Z",
+            "id": 85873,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-15#T1113407807-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:16:48Z",
+            "id": 85872,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T21:16:38Z",
+            "id": 85871,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:16:34Z",
+            "id": 85870,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Import-Module JS7\\n\\n<#\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n*>\\n\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:13:55Z",
+            "id": 85869,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:13:51Z",
+            "id": 85868,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "agent-2-0-primary",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:11:47Z",
+            "id": 85867,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T21:11:44Z",
+            "id": 85866,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T21:11:36Z",
+            "id": 85865,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T21:11:33Z",
+            "id": 85864,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Import-Module JS7\\n\\n/*\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n*/\\n    Connect-JS7Api\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:44:34Z",
+            "id": 85863,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:44:30Z",
+            "id": 85862,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T19:44:20Z",
+            "id": 85861,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T19:44:18Z",
+            "id": 85860,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/apmacwin.p12 -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt\\n\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/private/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:40:56Z",
+            "id": 85859,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:40:52Z",
+            "id": 85858,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T19:40:44Z",
+            "id": 85857,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T19:40:41Z",
+            "id": 85856,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/apmacwin.p12 -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt\\n\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"keystore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"truststore\\\", ( \\\"jobscheduler\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:39:40Z",
+            "id": 85855,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-15#T1107524664-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:38:45Z",
+            "id": 85854,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T19:38:36Z",
+            "id": 85853,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T19:38:32Z",
+            "id": 85852,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/apmacwin.p12 -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt\\n\\n    $KeyStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList 'keystore', ( 'jobscheduler' | ConvertTo-SecureString -AsPlainText -Force) )\\n    $TrustStoreCredentials = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList 'truststore', ( 'jobscheduler' | ConvertTo-SecureString -AsPlainText -Force) )\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/https-keystore.p12 -KeyStoreCredentials $KeyStoreCredentials -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/https-truststore.p12 -RootCertificateCredentials $TrustStoreCredentials\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:33:15Z",
+            "id": 85851,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-15#T1107166167-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:32:46Z",
+            "id": 85850,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T19:32:38Z",
+            "id": 85849,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T19:32:35Z",
+            "id": 85848,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $env:JS7_AGENT_CONFIG_DIR/private/apmacwin.p12 -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/config/root-ca.crt\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:30:48Z",
+            "id": 85847,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T19:30:39Z",
+            "id": 85846,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T19:30:16Z",
+            "id": 85845,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"env\\nexit 0\\n\\npwsh -NoLogo -NonInteractive -Command '& {\\n\\t# $credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"root\\\", ( \\\"root\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n\\t# Import-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\t# Connect-JS7 -Url https://joc-2-0-primary:4443 -id testsuite -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n    \\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $JS7_AGENT_CONFIG_DIR/private/apmacwin.p12 -RootCertificatePath $JS7_AGENT_CONFIG_DIR/config/root-ca.crt\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:28:40Z",
+            "id": 85844,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-15#T1106868805-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-15T19:27:49Z",
+            "id": 85843,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-15T19:27:37Z",
+            "id": 85842,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-15T19:27:32Z",
+            "id": 85841,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n\\t# $credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"root\\\", ( \\\"root\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n\\t# Import-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\t# Connect-JS7 -Url https://joc-2-0-primary:4443 -id testsuite -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n    \\n    Import-Module JS7\\n    Connect-JS7 -Url https://joc-2-0-secondary:4443 -id testsuite -KeyStorePath $JS7_AGENT_CONFIG_DIR/private/apmacwin.p12 -RootCertificatePath $JS7_AGENT_CONFIG_DIR/config/root-ca.crt\\n\\n    Get-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:24:45Z",
+            "id": 85840,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"orderName\":\"test-api\"}]}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:24:42Z",
+            "id": 85839,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-14T23:24:33Z",
+            "id": 85838,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T23:24:31Z",
+            "id": 85837,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n\\t$credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"root\\\", ( \\\"root\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n\\tImport-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\tConnect-JS7 -Url https://joc-2-0-primary:4443 -id testsuite -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n  \\n\\tGet-JS7ControllerStatus -display\\n    \\n    $orderId = Add-JS7Order -WorkflowPath /ap/apPrintEnv -OrderName test-api\\n    Write-Output \\\"orderId = $orderId\\\"\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:20:28Z",
+            "id": 85836,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-14#T1033265883-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:19:38Z",
+            "id": 85835,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPrintEnv\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:13:36Z",
+            "id": 85834,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-14T23:13:29Z",
+            "id": 85833,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T23:13:26Z",
+            "id": 85832,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n\\t$credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"root\\\", ( \\\"root\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n\\tImport-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\tConnect-JS7 -Url https://joc-2-0-primary:4443 -id testsuite -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n  \\n\\tGet-JS7ControllerStatus -display\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:13:04Z",
+            "id": 85831,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-14#T1033412240-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:03:32Z",
+            "id": 85830,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-14T23:03:18Z",
+            "id": 85829,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T23:03:11Z",
+            "id": 85828,
+            "parameters": "{\"configuration\":{\"jobResourceNames\":[\"Default\"],\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n\\t$credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList \\\"root\\\", ( \\\"root\\\" | ConvertTo-SecureString -AsPlainText -Force) )\\n\\tImport-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\tConnect-JS7 -Url https://joc-2-0-primary:4443 -id $env:JS7_CONTROLLER_ID -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n  \\n\\tGet-JS7ControllerStatus -display\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}}},\"valid\":true,\"id\":1073,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:01:06Z",
+            "id": 85827,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-14T23:00:34Z",
+            "id": 85826,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T23:00:18Z",
+            "id": 85825,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-14#T1033156385-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T22:59:16Z",
+            "id": 85824,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T22:59:11Z",
+            "id": 85823,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n\\t$credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList 'root', ( 'root' | ConvertTo-SecureString -AsPlainText -Force) )\\n\\tImport-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\tConnect-JS7 -Url https://joc-2-0-primary:4443 -id $env:JS7_CONTROLLER_ID -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n  \\n\\tGet-JS7ControllerStatus -display\\n}'\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-14T22:58:57Z",
+            "id": 85822,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T22:58:35Z",
+            "id": 85821,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-14#T1032844139-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T22:57:03Z",
+            "id": 85820,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-14#T1032844139-root\"],\"position\":[0],\"auditLog\":{}}",
+            "request": "./orders/resume"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "ccc160df-a2ef-47f6-8de0-cde80da5d403",
+            "controllerId": "-",
+            "created": "2021-05-14T22:56:53Z",
+            "id": 85819,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/Defaults/Default\",\"objectType\":\"JOBRESOURCE\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T22:56:46Z",
+            "id": 85818,
+            "parameters": "{\"configuration\":{\"arguments\":{\"javaHome\":\"'env(\\\"JAVA_HOME\\\")'\",\"javaOptions\":\"\\\"-Xmx32m\\\"\",\"js7AgentHostname\":\"env('HOSTNAME')\",\"js7AgentPort\":\"env('JS7_AGENT_PORT')\",\"js7AgentHttpPort\":\"env('JS7_AGENT_HTTP_PORT')\",\"js7AgentHttpsPort\":\"env('JS7_AGENT_HTTPS_PORT')\",\"js7AgentUser\":\"env('JS7_AGENT_USER')\",\"js7AgentHome\":\"env('JS7_AGENT_HOME')\",\"js7AgentData\":\"env('JS7_AGENT_DATA')\",\"js7AgentConfigDir\":\"env('JS7_AGENT_CONFIG_DIR')\",\"js7AgentLogs\":\"env('JS7_AGENT_LOGS')\",\"js7AgentPidFile\":\"env('JS7_AGENT_PID_FILE')\",\"js7AgentWorkDir\":\"env('JS7_AGENT_WORK_DIR')\",\"js7AgentTz\":\"env('JS7_AGENT_TZ')\",\"js7YadeHome\":\"env('JS7_YADE_HOME')\",\"js7YadeBin\":\"env('JS7_YADE_BIN')\",\"js7YadeDmzBin\":\"env('JS7_YADE_DMZ_BIN')\",\"js7YadeConfigDir\":\"env('JS7_YADE_CONFIG_DIR')\",\"js7ControllerId\":\"$js7ControllerId\",\"js7OrderId\":\"$js7OrderId\",\"js7WorkflowName\":\"$js7WorkflowPath\",\"js7WorkflowPosition\":\"$js7WorkflowPosition\",\"js7WorkflowLabel\":\"$js7Label\",\"js7JobName\":\"$js7JobName\",\"js7ScheduledDate\":\"scheduledOrEmpty(format='yyyy-MM-dd HH:mm:ssZ', timezone='Europe/Berlin')\",\"js7ScheduledYear\":\"scheduledOrEmpty(format='yyyy', timezone='Europe/Berlin')\",\"js7ScheduledMonth\":\"scheduledOrEmpty(format='MM', timezone='Europe/Berlin')\",\"js7ScheduledDay\":\"scheduledOrEmpty(format='dd', timezone='Europe/Berlin')\",\"js7ScheduledHour\":\"scheduledOrEmpty(format='HH', timezone='Europe/Berlin')\",\"js7ScheduledMinute\":\"scheduledOrEmpty(format='mm', timezone='Europe/Berlin')\",\"js7ScheduledSecond\":\"scheduledOrEmpty(format='ss', timezone='Europe/Berlin')\",\"js7JobStartDate\":\"now(format='yyyy-MM-dd HH:mm:ssZ', timezone='Europe/Berlin')\",\"js7JobStartYear\":\"now(format='yyyy', timezone='Europe/Berlin')\",\"js7JobStartMonth\":\"now(format='MM', timezone='Europe/Berlin')\",\"js7JobStartDay\":\"now(format='dd', timezone='Europe/Berlin')\",\"js7JobStartHour\":\"now(format='HH', timezone='Europe/Berlin')\",\"js7JobStartMinute\":\"now(format='mm', timezone='Europe/Berlin')\",\"js7JobStartSecond\":\"now(format='ss', timezone='Europe/Berlin')\",\"js7JobStartEpochMillis\":\"$epochMilli\"},\"env\":{\"JAVA_HOME\":\"$javaHome\",\"JAVA_OPTIONS\":\"$javaOptions\",\"JS7_AGENT_HOSTNAME\":\"$js7AgentHostname\",\"JS7_AGENT_PORT\":\"$js7AgentPort\",\"JS7_AGENT_HTTP_PORT\":\"$js7AgentHttpPort\",\"JS7_AGENT_HTTPS_PORT\":\"$js7AgentHttpsPort\",\"JS7_AGENT_USER\":\"$js7AgentUser\",\"JS7_AGENT_HOME\":\"$js7AgentHome\",\"JS7_AGENT_DATA\":\"$js7AgentData\",\"JS7_AGENT_CONFIG_DIR\":\"$js7AgentConfigDir\",\"JS7_AGENT_LOGS\":\"$js7AgentLogs\",\"JS7_AGENT_PID_FILE\":\"$js7AgentPidFile\",\"JS7_AGENT_WORK_DIR\":\"$js7AgentWorkDir\",\"JS7_AGENT_TZ\":\"$js7AgentTz\",\"JS7_YADE_HOME\":\"$js7YadeHome\",\"JS7_YADE_BIN\":\"$js7YadeBin\",\"JS7_YADE_DMZ_BIN\":\"$js7YadeDmzBin\",\"JS7_YADE_CONFIG_DIR\":\"$js7YadeConfigDir\",\"JS7_CONTROLLER_ID\":\"$js7ControllerId\",\"JS7_ORDER_ID\":\"$js7OrderId\",\"JS7_WORKFLOW_NAME\":\"$js7WorkflowName\",\"JS7_WORKFLOW_POSITION\":\"$js7WorkflowPosition\",\"JS7_WORKFLOW_LABEL\":\"$js7WorkflowLabel\",\"JS7_JOB_NAME\":\"$js7JobName\",\"JS7_SCHEDULED_DATE\":\"$js7ScheduledDate\",\"JS7_SCHEDULED_YEAR\":\"$js7ScheduledYear\",\"JS7_SCHEDULED_MONTH\":\"$js7ScheduledMonth\",\"JS7_SCHEDULED_DAY\":\"$js7ScheduledDay\",\"JS7_SCHEDULED_HOUR\":\"$js7ScheduledHour\",\"JS7_SCHEDULED_MINUTE\":\"$js7ScheduledMinute\",\"JS7_SCHEDULED_SECOND\":\"$js7ScheduledSecond\",\"JS7_JOBSTART_DATE\":\"$js7JobStartDate\",\"JS7_JOBSTART_YEAR\":\"$js7JobStartYear\",\"JS7_JOBSTART_MONTH\":\"$js7JobStartMonth\",\"JS7_JOBSTART_DAY\":\"$js7JobStartDay\",\"JS7_JOBSTART_HOUR\":\"$js7JobStartHour\",\"JS7_JOBSTART_MINUTE\":\"$js7JobStartMinute\",\"JS7_JOBSTART_SECOND\":\"$js7JobStartSecond\",\"JS7_JOBSTART_EPOCHMILLIS\":\"$js7JobStartEpochMillis\"},\"title\":\"Default environment variables and arguments\"},\"valid\":true,\"id\":1052,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T22:54:04Z",
+            "id": 85817,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apPowerShell\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T22:53:52Z",
+            "id": 85816,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"taskLimit\":1,\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n\\t$credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList 'root', ( 'root' | ConvertTo-SecureString -AsPlainText -Force) )\\n\\tImport-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\tConnect-JS7 -Url https://joc-2-0-primary:4443 -id $env:JS7_CONTROLLER_ID -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n  \\n\\tGet-JS7ControllerStatus -display\\n}\",\"v1Compatible\":false},\"agentName\":\"primaryAgent\"}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-14T22:53:47Z",
+            "id": 85815,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apPowerShell\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T22:52:45Z",
+            "id": 85814,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"taskLimit\":1,\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n\\t$credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList 'root', ( 'root' | ConvertTo-SecureString -AsPlainText -Force) )\\n\\tImport-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\tConnect-JS7 -Url https://joc-2-0-primary:4443 -id $env:JS7_CONTROLLER_ID -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n}\",\"v1Compatible\":false},\"agentName\":\"primaryAgent\"}},\"jobResourceNames\":[\"Default\"]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T22:52:30Z",
+            "id": 85813,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"check-joc-status\",\"label\":\"check-joc-status\"}],\"jobs\":{\"check-joc-status\":{\"taskLimit\":1,\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"pwsh -NoLogo -NonInteractive -Command '& {\\n\\t$credential = ( New-Object -typename System.Management.Automation.PSCredential -ArgumentList 'root', ( 'root' | ConvertTo-SecureString -AsPlainText -Force) )\\n\\tImport-Module $env:JS7_AGENT_HOME/var/powershell/modules/JS7\\n\\tConnect-JS7 -Url https://joc-2-0-primary:4443 -id $env:JS7_CONTROLLER_ID -Credential $credential -RootCertificatePath $env:JS7_AGENT_CONFIG_DIR/root-ca.crt \\n}\",\"v1Compatible\":false},\"agentName\":\"primaryAgent\"}},\"jobResourceNames\":[]},\"id\":1073,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T22:47:35Z",
+            "id": 85812,
+            "parameters": "{\"objectType\":\"WORKFLOW\",\"path\":\"/ap/apPowerShell\",\"valid\":false,\"configuration\":{}}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T14:03:06Z",
+            "id": 85811,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/こんにちは世界\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "37e1ac34-8f81-4430-9fa2-24a1d2db0034",
+            "controllerId": "-",
+            "created": "2021-05-14T14:02:50Z",
+            "id": 85810,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/こんにちは世界\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T14:02:42Z",
+            "id": 85809,
+            "parameters": "{\"configuration\":{\"orderRequirements\":{\"parameters\":{\"こんにちは\":{\"type\":\"String\",\"default\":\"世界\"}}},\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"こんにちは世界\",\"label\":\"こんにちは世界\"}],\"jobs\":{\"こんにちは世界\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: こんにちは世界\\\"\\n\\necho \\\"HELLOWORLD = $HELLOWORLD\\\"\\necho \\\"HELLO = $HELLO\\\"\\necho \\\"こんにちは = $こんにちは\\\"\\nこんにちは=\\\"abc\\\"\\necho \\\"and $こんにちは\\\"\",\"env\":{\"こんにちは\":\"$こんにちは\",\"HELLO\":\"$こんにちは\",\"HELLOWORLD\":\"\\\"こんにちは世界\\\"\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false,\"title\":\"こんにちは世界\"}}},\"valid\":true,\"id\":1070,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "51d7e0bf-f2ef-48ed-b398-8b50b730f557",
+            "controllerId": "-",
+            "created": "2021-05-14T14:02:14Z",
+            "id": 85808,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/こんにちは世界\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T14:02:08Z",
+            "id": 85807,
+            "parameters": "{\"configuration\":{\"orderRequirements\":{\"parameters\":{\"こんにちは\":{\"type\":\"String\",\"default\":\"世界\"}}},\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"こんにちは世界\",\"label\":\"こんにちは世界\"}],\"jobs\":{\"こんにちは世界\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: こんにちは世界\\\"\\n\\necho \\\"HELLOWORLD = $HELLOWORLD\\\"\\necho \\\"HELLO = $HELLO\\\"\\necho \\\"こんにちは = $こんにちは\\\"\\nこんにちは=\\\"abc\\\"\\necho \\\"and こんにちは\\\"\",\"env\":{\"こんにちは\":\"$こんにちは\",\"HELLO\":\"$こんにちは\",\"HELLOWORLD\":\"\\\"こんにちは世界\\\"\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false,\"title\":\"こんにちは世界\"}}},\"valid\":true,\"id\":1070,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T13:54:33Z",
+            "id": 85806,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/こんにちは世界\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "aeb70489-924a-4b1f-ad28-37b69489d716",
+            "controllerId": "-",
+            "created": "2021-05-14T13:54:25Z",
+            "id": 85805,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/こんにちは世界\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T13:53:42Z",
+            "id": 85804,
+            "parameters": "-",
+            "request": "./inventory/import"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T13:53:16Z",
+            "id": 85803,
+            "parameters": "{\"objects\":[{\"id\":1070}]}",
+            "request": "./inventory/delete_draft"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T13:53:01Z",
+            "id": 85802,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"こんにちは世界\",\"label\":\"こんにちは世界\"}],\"jobs\":{\"こんにちは世界\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: こんにちは世界\\\"\\n\\necho \\\"HELLOWORLD = $HELLOWORLD\\\"\\necho \\\"HELLO = $HELLO\\\"\\necho \\\"こんにちは = $こんにちは\\\"\\n\",\"env\":{\"\":\"\\\"\\\"\",\"HELLO\":\"$こんにちは\",\"HELLOWORLD\":\"\\\"こんにちは世界\\\"\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false,\"title\":\"こんにちは世界\"}},\"orderRequirements\":{\"parameters\":{\"こんにちは\":{\"type\":\"String\",\"default\":\"世界\"}}},\"jobResourceNames\":[]},\"id\":1070,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T13:39:16Z",
+            "id": 85801,
+            "parameters": "-",
+            "request": "./inventory/import"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T13:37:25Z",
+            "id": 85800,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/こんにちは世界\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "51216a71-9c83-4245-af7e-67409d078696",
+            "controllerId": "-",
+            "created": "2021-05-14T13:37:09Z",
+            "id": 85799,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/こんにちは世界\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T13:37:05Z",
+            "id": 85798,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"こんにちは世界\",\"label\":\"こんにちは世界\"}],\"jobs\":{\"こんにちは世界\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: こんにちは世界\\\"\\n\\necho \\\"HELLOWORLD = $HELLOWORLD\\\"\\necho \\\"HELLO = $HELLO\\\"\\necho \\\"こんにちは = $こんにちは\\\"\\n\",\"env\":{\"\":\"\\\"\\\"\",\"HELLO\":\"$こんにちは\",\"HELLOWORLD\":\"\\\"こんにちは世界\\\"\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false,\"title\":\"こんにちは世界\"}},\"orderRequirements\":{\"parameters\":{\"こんにちは\":{\"type\":\"String\",\"default\":\"世界\"}}},\"jobResourceNames\":[]},\"id\":1070,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T13:36:40Z",
+            "id": 85797,
+            "parameters": "{\"newPath\":\"/ap/こんにちは世界\",\"id\":1070}",
+            "request": "./inventory/rename"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-14T13:02:02Z",
+            "id": 85796,
+            "parameters": "{\"exportFile\":{\"filename\":\"2021-05-04-export_centostest_primary_funai_file.zip\",\"format\":\"ZIP\"},\"shallowCopy\":{\"withoutInvalid\":false,\"deployables\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/こんにちは世界\",\"objectType\":\"WORKFLOW\"}}]}}}",
+            "request": "./inventory/export"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T12:56:13Z",
+            "id": 85795,
+            "parameters": "{\"path\":\"/some\"}",
+            "request": "./inventory/remove/folder"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T12:55:58Z",
+            "id": 85794,
+            "parameters": "-",
+            "request": "./inventory/import"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T12:55:14Z",
+            "id": 85793,
+            "parameters": "-",
+            "request": "./inventory/import"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T10:34:36Z",
+            "id": 85792,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-14#T0987276998-root\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T10:20:07Z",
+            "id": 85791,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apRunningLog\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T10:16:09Z",
+            "id": 85790,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apRunningLog\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "843b6b67-b25a-43ee-84a5-ad902cdf882c",
+            "controllerId": "-",
+            "created": "2021-05-14T10:15:55Z",
+            "id": 85789,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apRunningLog\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:15:53Z",
+            "id": 85788,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log\",\"label\":\"running-log\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log2\",\"label\":\"running-log2\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log3\",\"label\":\"running-log3\"}],\"jobs\":{\"running-log\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false},\"running-log2\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false},\"running-log3\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"orderRequirements\":{\"parameters\":{\"num_of_lines\":{\"type\":\"Number\",\"default\":30}}},\"jobResourceNames\":[]},\"id\":1069,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T10:14:37Z",
+            "id": 85787,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ap/apRunningLog\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "93b49d90-8eb2-4629-a2c7-bbcb1125c8b0",
+            "controllerId": "-",
+            "created": "2021-05-14T10:14:21Z",
+            "id": 85786,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ap/apRunningLog\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:14:13Z",
+            "id": 85785,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log\",\"label\":\"running-log\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log2\",\"label\":\"running-log2\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log3\",\"label\":\"running-log3\"}],\"jobs\":{\"running-log\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false},\"running-log2\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false},\"running-log3\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"orderRequirements\":{\"parameters\":{\"num_of_lines\":{\"type\":\"Number\",\"default\":30}}},\"jobResourceNames\":[]},\"id\":1069,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:14:06Z",
+            "id": 85784,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log\",\"label\":\"running-log\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log2\",\"label\":\"running-log2\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log_copy_1\",\"label\":\"running-log\"}],\"jobs\":{\"running-log\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false},\"running-log2\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false},\"running-log_copy_1\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"orderRequirements\":{\"parameters\":{\"num_of_lines\":{\"type\":\"Number\",\"default\":30}}},\"jobResourceNames\":[]},\"id\":1069,\"valid\":false,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:14:00Z",
+            "id": 85783,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log\",\"label\":\"running-log\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log2\",\"label\":\"running-log2\"}],\"jobs\":{\"running-log\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false},\"running-log2\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"orderRequirements\":{\"parameters\":{\"num_of_lines\":{\"type\":\"Number\",\"default\":30}}},\"jobResourceNames\":[]},\"id\":1069,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:13:51Z",
+            "id": 85782,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log\",\"label\":\"running-log\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log_copy_1\",\"label\":\"running-log\"}],\"jobs\":{\"running-log\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false},\"running-log_copy_1\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo \\\"log output line: $i \\\"\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"orderRequirements\":{\"parameters\":{\"num_of_lines\":{\"type\":\"Number\",\"default\":30}}},\"jobResourceNames\":[]},\"id\":1069,\"valid\":false,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:12:41Z",
+            "id": 85781,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log\",\"label\":\"running-log\"}],\"jobs\":{\"running-log\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo $WATCH_DIRECTORY/$i.$FILE_EXTENSION\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"orderRequirements\":{\"parameters\":{\"num_of_lines\":{\"type\":\"Number\",\"default\":30}}},\"jobResourceNames\":[]},\"id\":1069,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:12:06Z",
+            "id": 85780,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"running-log\",\"label\":\"running-log\"}],\"jobs\":{\"running-log\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"#!/bin/bash\\n\\nfor ((i=1; i<=$NUM_OF_LINES; i++)); do\\n  echo $WATCH_DIRECTORY/$i.$FILE_EXTENSION\\n  sleep 1\\ndone\\n\",\"env\":{\"NUM_OF_LINES\":\"$num_of_lines\",\"FILE_EXTENSION\":\"$file_extension\",\"WATCH_DIRECTORY\":\"$watch_directory\"},\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"orderRequirements\":{\"parameters\":{\"num_of_files\":{\"type\":\"Number\",\"default\":5},\"file_extension\":{\"type\":\"String\",\"default\":\"csv\"},\"watch_directory\":{\"type\":\"String\",\"default\":\"/var/sos-berlin.com/files/productdemo/incoming/csv\"}}},\"jobResourceNames\":[]},\"id\":1069,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:10:43Z",
+            "id": 85779,
+            "parameters": "{\"shallowCopy\":false,\"newPath\":\"/ap/apRunningLog\",\"id\":30,\"auditLog\":{}}",
+            "request": "./inventory/copy"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-14T10:08:34Z",
+            "id": 85778,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/LanguageSupport/pdwLanguage-日本語\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "864cfdbb-0ee2-48eb-a6d9-9888201a3c22",
+            "controllerId": "-",
+            "created": "2021-05-14T10:08:26Z",
+            "id": 85777,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/LanguageSupport/pdwLanguage-日本語\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-14T10:08:23Z",
+            "id": 85776,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"ジョブ-1\",\"label\":\"ジョブ-1\"},{\"TYPE\":\"Fork\",\"branches\":[{\"id\":\"branch1\",\"workflow\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"ジョブ-2-1-a\",\"label\":\"ジョブ-2-1-a\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"ジョブ-2-1-b\",\"label\":\"ジョブ-2-1-b\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"ジョブ-2-1-c\",\"label\":\"ジョブ-2-1-c\"}]}},{\"id\":\"branch2\",\"workflow\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"ジョブ-2-2-a\",\"label\":\"ジョブ-2-2-a\"},{\"TYPE\":\"Execute.Named\",\"jobName\":\"ジョブ-2-2-b\",\"label\":\"ジョブ-2-2-b\"}]}}]},{\"TYPE\":\"Execute.Named\",\"jobName\":\"ジョブ-3\",\"label\":\"ジョブ-3\"}],\"jobs\":{\"ジョブ-1\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: ジョブ-1\\\"\\n\\necho \\\"こんにちは = $VAR1\\\"\\n\\nsleep 5\",\"env\":{\"VAR1\":\"$こんにちは\"},\"v1Compatible\":false},\"taskLimit\":100,\"failOnErrWritten\":false},\"ジョブ-2-1-a\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: ジョブ-2-1-a\\\"\\n\\necho \\\"こんにちは = $VAR1\\\"\\n\\nsleep 5\",\"env\":{\"VAR1\":\"$こんにちは\"},\"v1Compatible\":false},\"taskLimit\":100,\"failOnErrWritten\":false},\"ジョブ-2-1-b\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: ジョブ-2-1-b\\\"\\n\\necho \\\"こんにちは = $VAR1\\\"\\n\\nsleep 5\",\"env\":{\"VAR1\":\"$こんにちは\"},\"v1Compatible\":false},\"taskLimit\":100,\"failOnErrWritten\":false},\"ジョブ-2-1-c\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: ジョブ-2-1-c\\\"\\n\\necho \\\"こんにちは = $VAR1\\\"\\n\\nsleep 5\",\"env\":{\"VAR1\":\"$こんにちは\"},\"v1Compatible\":false},\"taskLimit\":100,\"failOnErrWritten\":false},\"ジョブ-2-2-a\":{\"agentName\":\"secondaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: ジョブ-2-2-a\\\"\\n\\necho \\\"こんにちは = $VAR1\\\"\\n\\nsleep 5\",\"env\":{\"VAR1\":\"$こんにちは\"},\"v1Compatible\":false},\"taskLimit\":100,\"failOnErrWritten\":false},\"ジョブ-2-2-b\":{\"agentName\":\"secondaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job: ジョブ-2-2-b\\\"\\n\\necho \\\"こんにちは = $VAR1\\\"\\n\\nsleep 5\",\"env\":{\"VAR1\":\"$こんにちは\"},\"v1Compatible\":false},\"taskLimit\":100,\"failOnErrWritten\":false},\"ジョブ-3\":{\"agentName\":\"secondaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"running job3\\\"\\n\\necho \\\"VAR=$VAR\\\"\\n\\nsleep 5\",\"v1Compatible\":false},\"taskLimit\":100,\"failOnErrWritten\":false}},\"orderRequirements\":{\"parameters\":{\"こんにちは\":{\"type\":\"String\",\"default\":\"世界\"}}},\"jobResourceNames\":[]},\"id\":192,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T20:37:21Z",
+            "id": 85775,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-13#T0935970966-root\"],\"position\":[0],\"auditLog\":{}}",
+            "request": "./orders/resume"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:34:33Z",
+            "id": 85774,
+            "parameters": "{\"path\":\"/sp_imported\"}",
+            "request": "./inventory/remove/folder"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:34:19Z",
+            "id": 85773,
+            "parameters": "{\"objects\":[{\"id\":1068}]}",
+            "request": "./inventory/remove"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:26:57Z",
+            "id": 85772,
+            "parameters": "{\"configuration\":{\"arguments\":{\"from\":\"\\\"js7@sos-berlin.com\\\"\",\"from_name\":\"\\\"JS7 JobScheduler\\\"\",\"reply_to\":\"\\\"no-reply@sos-berlin.com\\\"\",\"mail.smtp.host\":\"\\\"mail.sos-berlin.com\\\"\",\"mail.smtp.port\":\"25\",\"mail.smtp.timeout\":\"5000\",\"mail.smtp.connectiontimeout\":\"5000\",\"mail.smtp.user\":\"\\\"\\\"\",\"mail.smtp.password\":\"\\\"\\\"\"},\"env\":{\"MAIL_SMTP_FROM\":\"$from\",\"MAIL_SMTP_FROM_NAME\":\"$from_name\",\"MAIL_SMTP_REPLY_TO\":\"$reply_to\",\"MAIL_SMTP_HOST\":\"\\\"${`mail.smtp.host`}\\\"\",\"MAIL_SMTP_PORT\":\"\\\"${`mail.smtp.port`}\\\"\",\"MAIL_SMTP_TIMEOUT\":\"\\\"${`mail.smtp.timeout`}\\\"\",\"MAIL_SMTP_CONNECTIONTIMEOUT\":\"\\\"${`mail.smtp.connectiontimeout`}\\\"\"},\"title\":\"Default E-Mail arguments and environment variablesxx\"},\"valid\":false,\"id\":1068,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "854725d9-9a8f-4416-8644-55c80fd29ad1",
+            "controllerId": "-",
+            "created": "2021-05-13T20:26:46Z",
+            "id": 85771,
+            "parameters": "{\"controllerIds\":[\"standalone\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/Defaults/eMailDefault-copy\",\"objectType\":\"JOBRESOURCE\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "9204c0d2-e76d-4041-b346-56beea36f422",
+            "controllerId": "-",
+            "created": "2021-05-13T20:26:46Z",
+            "id": 85771,
+            "parameters": "{\"controllerIds\":[\"standalone\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/Defaults/eMailDefault-copy\",\"objectType\":\"JOBRESOURCE\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:26:35Z",
+            "id": 85770,
+            "parameters": "{\"configuration\":{\"arguments\":{\"from\":\"\\\"js7@sos-berlin.com\\\"\",\"from_name\":\"\\\"JS7 JobScheduler\\\"\",\"reply_to\":\"\\\"no-reply@sos-berlin.com\\\"\",\"mail.smtp.host\":\"\\\"mail.sos-berlin.com\\\"\",\"mail.smtp.port\":\"25\",\"mail.smtp.timeout\":\"5000\",\"mail.smtp.connectiontimeout\":\"5000\",\"mail.smtp.user\":\"\\\"\\\"\",\"mail.smtp.password\":\"\\\"\\\"\"},\"env\":{\"MAIL_SMTP_FROM\":\"$from\",\"MAIL_SMTP_FROM_NAME\":\"$from_name\",\"MAIL_SMTP_REPLY_TO\":\"$reply_to\",\"MAIL_SMTP_HOST\":\"${`mail.smtp.host`}\",\"MAIL_SMTP_PORT\":\"${`mail.smtp.port`}\",\"MAIL_SMTP_TIMEOUT\":\"${`mail.smtp.timeout`}\",\"MAIL_SMTP_CONNECTIONTIMEOUT\":\"${`mail.smtp.connectiontimeout`}\"},\"title\":\"Default E-Mail arguments and environment variables\"},\"valid\":true,\"id\":1068,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:26:22Z",
+            "id": 85769,
+            "parameters": "{\"configuration\":{\"arguments\":{\"from\":\"\\\"js7@sos-berlin.com\\\"\",\"from_name\":\"\\\"JS7 JobScheduler\\\"\",\"reply_to\":\"\\\"no-reply@sos-berlin.com\\\"\",\"mail.smtp.host\":\"\\\"mail.sos-berlin.com\\\"\",\"mail.smtp.port\":\"25\",\"mail.smtp.timeout\":\"5000\",\"mail.smtp.connectiontimeout\":\"5000\",\"mail.smtp.user\":\"\\\"xx\\\"\",\"mail.smtp.password\":\"\\\"xx\\\"\"},\"env\":{\"MAIL_SMTP_FROM\":\"$from\",\"MAIL_SMTP_FROM_NAME\":\"$from_name\",\"MAIL_SMTP_REPLY_TO\":\"$reply_to\",\"MAIL_SMTP_HOST\":\"\\\"${`mail.smtp.host`}\\\"\",\"MAIL_SMTP_PORT\":\"\\\"${`mail.smtp.port`}\\\"\",\"MAIL_SMTP_TIMEOUT\":\"\\\"${`mail.smtp.timeout`}\\\"\",\"MAIL_SMTP_CONNECTIONTIMEOUT\":\"\\\"${`mail.smtp.connectiontimeout`}\\\"\"},\"title\":\"Default E-Mail arguments and environment variables\"},\"valid\":false,\"id\":1068,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:26:17Z",
+            "id": 85768,
+            "parameters": "{\"configuration\":{\"arguments\":{\"from\":\"\\\"js7@sos-berlin.com\\\"\",\"from_name\":\"\\\"JS7 JobScheduler\\\"\",\"reply_to\":\"\\\"no-reply@sos-berlin.com\\\"\",\"mail.smtp.host\":\"\\\"mail.sos-berlin.com\\\"\",\"mail.smtp.port\":\"25\",\"mail.smtp.timeout\":\"5000\",\"mail.smtp.connectiontimeout\":\"5000\",\"mail.smtp.user\":\"\\\"xx\\\"\",\"mail.smtp.password\":\"\\\"\\\"\"},\"env\":{\"MAIL_SMTP_FROM\":\"$from\",\"MAIL_SMTP_FROM_NAME\":\"$from_name\",\"MAIL_SMTP_REPLY_TO\":\"$reply_to\",\"MAIL_SMTP_HOST\":\"\\\"${`mail.smtp.host`}\\\"\",\"MAIL_SMTP_PORT\":\"\\\"${`mail.smtp.port`}\\\"\",\"MAIL_SMTP_TIMEOUT\":\"\\\"${`mail.smtp.timeout`}\\\"\",\"MAIL_SMTP_CONNECTIONTIMEOUT\":\"\\\"${`mail.smtp.connectiontimeout`}\\\"\"},\"title\":\"Default E-Mail arguments and environment variables\"},\"valid\":false,\"id\":1068,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:26:09Z",
+            "id": 85767,
+            "parameters": "{\"configuration\":{\"arguments\":{\"from\":\"\\\"js7@sos-berlin.com\\\"\",\"from_name\":\"\\\"JS7 JobScheduler\\\"\",\"reply_to\":\"\\\"no-reply@sos-berlin.com\\\"\",\"mail.smtp.host\":\"\\\"mail.sos-berlin.com\\\"\",\"mail.smtp.port\":\"25\",\"mail.smtp.timeout\":\"5000\",\"mail.smtp.connectiontimeout\":\"5000\",\"mail.smtp.user\":\"\\\"\\\"\",\"mail.smtp.password\":\"\\\"\\\"\"},\"env\":{\"MAIL_SMTP_FROM\":\"$from\",\"MAIL_SMTP_FROM_NAME\":\"$from_name\",\"MAIL_SMTP_REPLY_TO\":\"$reply_to\",\"MAIL_SMTP_HOST\":\"${`mail.smtp.host`}\",\"MAIL_SMTP_PORT\":\"${`mail.smtp.port`}\",\"MAIL_SMTP_TIMEOUT\":\"${`mail.smtp.timeout`}\",\"MAIL_SMTP_CONNECTIONTIMEOUT\":\"${`mail.smtp.connectiontimeout`}\"},\"title\":\"Default E-Mail arguments and environment variables\"},\"valid\":true,\"id\":1068,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:19:17Z",
+            "id": 85766,
+            "parameters": "{\"configuration\":{\"arguments\":{\"from\":\"\\\"js7@sos-berlin.com\\\"\",\"from_name\":\"\\\"JS7 JobScheduler\\\"\",\"reply_to\":\"\\\"no-reply@sos-berlin.com\\\"\",\"mail.smtp.host\":\"\\\"mail.sos-berlin.com\\\"\",\"mail.smtp.port\":\"25\",\"mail.smtp.timeout\":\"5000\",\"mail.smtp.connectiontimeout\":\"5000\",\"mail.smtp.user\":\"\\\"xxx\\\"\",\"mail.smtp.password\":\"\\\"xxx\\\"\"},\"env\":{\"MAIL_SMTP_FROM\":\"$from\",\"MAIL_SMTP_FROM_NAME\":\"$from_name\",\"MAIL_SMTP_REPLY_TO\":\"$reply_to\",\"MAIL_SMTP_HOST\":\"\\\"${`mail.smtp.host`}\\\"\",\"MAIL_SMTP_PORT\":\"\\\"${`mail.smtp.port`}\\\"\",\"MAIL_SMTP_TIMEOUT\":\"\\\"${`mail.smtp.timeout`}\\\"\",\"MAIL_SMTP_CONNECTIONTIMEOUT\":\"\\\"${`mail.smtp.connectiontimeout`}\\\"\"},\"title\":\"Default E-Mail arguments and environment variables\"},\"valid\":false,\"id\":1068,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:19:15Z",
+            "id": 85765,
+            "parameters": "{\"configuration\":{\"arguments\":{\"from\":\"\\\"js7@sos-berlin.com\\\"\",\"from_name\":\"\\\"JS7 JobScheduler\\\"\",\"reply_to\":\"\\\"no-reply@sos-berlin.com\\\"\",\"mail.smtp.host\":\"\\\"mail.sos-berlin.com\\\"\",\"mail.smtp.port\":\"25\",\"mail.smtp.timeout\":\"5000\",\"mail.smtp.connectiontimeout\":\"5000\",\"mail.smtp.user\":\"\\\"xxx\\\"\",\"mail.smtp.password\":\"\\\"\\\"\"},\"env\":{\"MAIL_SMTP_FROM\":\"$from\",\"MAIL_SMTP_FROM_NAME\":\"$from_name\",\"MAIL_SMTP_REPLY_TO\":\"$reply_to\",\"MAIL_SMTP_HOST\":\"\\\"${`mail.smtp.host`}\\\"\",\"MAIL_SMTP_PORT\":\"\\\"${`mail.smtp.port`}\\\"\",\"MAIL_SMTP_TIMEOUT\":\"\\\"${`mail.smtp.timeout`}\\\"\",\"MAIL_SMTP_CONNECTIONTIMEOUT\":\"\\\"${`mail.smtp.connectiontimeout`}\\\"\"},\"title\":\"Default E-Mail arguments and environment variables\"},\"valid\":false,\"id\":1068,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T20:18:50Z",
+            "id": 85764,
+            "parameters": "{\"shallowCopy\":false,\"suffix\":\"copy\",\"newPath\":\"/Defaults/eMailDefault\",\"id\":1063,\"auditLog\":{}}",
+            "request": "./inventory/copy"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T20:00:09Z",
+            "id": 85763,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailOnSuccess\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T19:59:31Z",
+            "id": 85762,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "fac357d1-b3f1-4cff-82a9-a4bdeceef424",
+            "controllerId": "-",
+            "created": "2021-05-13T19:59:10Z",
+            "id": 85761,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/Defaults/eMailDefault\",\"objectType\":\"JOBRESOURCE\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T19:58:55Z",
+            "id": 85760,
+            "parameters": "{\"configuration\":{\"arguments\":{\"from\":\"\\\"js7@sos-berlin.com\\\"\",\"from_name\":\"\\\"JS7 JobScheduler\\\"\",\"reply_to\":\"\\\"no-reply@sos-berlin.com\\\"\",\"mail.smtp.host\":\"\\\"mail.sos-berlin.com\\\"\",\"mail.smtp.port\":\"25\",\"mail.smtp.timeout\":\"5000\",\"mail.smtp.connectiontimeout\":\"5000\",\"mail.smtp.user\":\"\\\"\\\"\",\"mail.smtp.password\":\"\\\"\\\"\"},\"env\":{\"MAIL_SMTP_FROM\":\"$from\",\"MAIL_SMTP_FROM_NAME\":\"$from_name\",\"MAIL_SMTP_REPLY_TO\":\"$reply_to\",\"MAIL_SMTP_HOST\":\"${`mail.smtp.host`}\",\"MAIL_SMTP_PORT\":\"${`mail.smtp.port`}\",\"MAIL_SMTP_TIMEOUT\":\"${`mail.smtp.timeout`}\",\"MAIL_SMTP_CONNECTIONTIMEOUT\":\"${`mail.smtp.connectiontimeout`}\"},\"title\":\"Default E-Mail arguments and environment variables\"},\"valid\":true,\"id\":1063,\"objectType\":\"JOBRESOURCE\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:22:55Z",
+            "id": 85759,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: {js7AgentHostname}\\n\\n* Workflow: ${js7WorkflowPath}\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: {js7ScheduledDate}\\n\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"Default\",\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "commitId": "61aac377-ee2f-4771-b625-a6ab4cbc2da3",
+            "controllerId": "-",
+            "created": "2021-05-13T08:22:54Z",
+            "id": 85758,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:22:23Z",
+            "id": 85757,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: {js7AgentHostname}\\n\\n* Workflow: ${js7WorkflowPath}\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: ${js7ScheduledDate}\\n\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"Default\",\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:21:54Z",
+            "id": 85756,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-13#T0894081597-apmacwin\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:21:22Z",
+            "id": 85755,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "commitId": "da7975dd-a716-4c1e-8688-969c345a0767",
+            "controllerId": "-",
+            "created": "2021-05-13T08:21:06Z",
+            "id": 85754,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:20:57Z",
+            "id": 85753,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: {js7AgentHostname}\\n\\n* Workflow: ${js7WorkflowPath}\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: ${js7ScheduledDate}\\n\\\"\",\"js7ScheduledDate\":\"\\\"hhallo\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"Default\",\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:20:37Z",
+            "id": 85752,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: {js7AgentHostname}\\n\\n* Workflow: ${js7WorkflowPath}\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: ${js7ScheduledDate}\\n\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"Default\",\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:15:53Z",
+            "id": 85751,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:15:47Z",
+            "id": 85750,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-13#T0893652566-apmacwin\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "commitId": "34d10216-cc30-471c-a4ad-4e3d46046bc7",
+            "controllerId": "-",
+            "created": "2021-05-13T08:15:40Z",
+            "id": 85749,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"deployConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"objectType\":\"WORKFLOW\",\"commitId\":\"3c1b426e-5133-46cc-9d75-6601f830f7af\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "commitId": "3c1b426e-5133-46cc-9d75-6601f830f7af",
+            "controllerId": "-",
+            "created": "2021-05-13T08:15:06Z",
+            "id": 85748,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:15:03Z",
+            "id": 85747,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: {js7AgentHostname}\\n\\n* Workflow: ${js7WorkflowPath}\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: {js7ScheduledDate}\\n\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"Default\",\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:14:13Z",
+            "id": 85746,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:14:06Z",
+            "id": 85745,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-13#T0893382247-apmacwin\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "commitId": "14e4b850-3286-4deb-a726-5e6ad56e4caa",
+            "controllerId": "-",
+            "created": "2021-05-13T08:13:57Z",
+            "id": 85744,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:13:54Z",
+            "id": 85743,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: {js7AgentHostname}\\n\\n* Workflow: ${js7WorkflowPath}\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: ${js7ScheduledDate}\\n\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"Default\",\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:09:51Z",
+            "id": 85742,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-13#T0893146800-apmacwin\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:09:42Z",
+            "id": 85741,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:09:37Z",
+            "id": 85740,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-13#T0893146800-apmacwin\"],\"kill\":false}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-13T08:09:25Z",
+            "id": 85739,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:09:18Z",
+            "id": 85738,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: ${js7AgentHostname}\\n\\n* Workflow: $js7WorkflowPath\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: ${js7ScheduledDate}\\n\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"Default\",\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:08:38Z",
+            "id": 85737,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: ${js7AgentHostname}\\n\\n* Workflow: $js7WorkflowPath\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: ${js7ScheduledDate}\\n\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T08:08:30Z",
+            "id": 85736,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"send-mail\",\"label\":\"send-mail\"}],\"jobs\":{\"send-mail\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"InternalExecutable\",\"className\":\"com.sos.jitl.jobs.mail.SOSMailJob\",\"arguments\":{\"to\":\"\\\"ap@sos-berlin.com\\\"\",\"subject\":\"\\\"JS7 JobScheduler Notification: Order ID $js7OrderId for Workflow $js7WorkflowPath\\\"\",\"body\":\"\\\"Hi,\\n\\nthis message is brought to you by the JS7 JobScheduler:\\n\\n* Controller ID: ${js7ControllerId}\\n\\n* Agent Hostname: ${js7AgentHostname}\\n\\n* Workflow: $js7WorkflowPath\\n\\n* Order ID: ${js7OrderId}\\n\\n* Scheduled for: ${js7ScheduledDate}\\n\\\"\"}},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"Default\",\"eMailDefault\"]}},\"jobResourceNames\":[]},\"id\":233,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:07:02Z",
+            "id": 85735,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailOnFailure\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:06:55Z",
+            "id": 85734,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailOnSuccess\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "apmacwin",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T08:05:47Z",
+            "id": 85733,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Notification/pdwNotificationSOSMailPlainText\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "commitId": "36ba17ea-fb4f-4780-bcf1-675c4a9164d1",
+            "controllerId": "-",
+            "created": "2021-05-13T07:55:22Z",
+            "id": 85732,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Variables/pdwVariablesJobDefault\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "commitId": "a198ad91-f0a7-4dac-8f3b-9c8f95f409a2",
+            "controllerId": "-",
+            "created": "2021-05-13T07:55:16Z",
+            "id": 85731,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Variables/pdwVariablesJobResourceDefault\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T07:55:01Z",
+            "id": 85730,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-environment-variables\",\"label\":\"display-environment-variables\"}],\"jobs\":{\"display-environment-variables\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"----- Agent -----\\\"\\necho \\\"JS7_AGENT_HOSTNAME=$JS7_AGENT_HOSTNAME\\\"\\necho \\\"JS7_AGENT_PORT=$JS7_AGENT_PORT\\\"\\necho \\\"JS7_AGENT_HTTP_PORT=$JS7_AGENT_HTTP_PORT\\\"\\necho \\\"JS7_AGENT_HTTPS_PORT=$JS7_AGENT_HTTPS_PORT\\\"\\necho \\\"JS7_AGENT_USER=$JS7_AGENT_USER\\\"\\necho \\\"JS7_AGENT_HOME=$JS7_AGENT_HOME\\\"\\necho \\\"JS7_AGENT_DATA=$JS7_AGENT_DATA\\\"\\necho \\\"JS7_AGENT_CONFIG_DIR=$JS7_AGENT_CONFIG_DIR\\\"\\necho \\\"JS7_AGENT_LOGS=$JS7_AGENT_LOGS\\\"\\necho \\\"JS7_AGENT_PID_FILE=$JS7_AGENT_PID_FILE\\\"\\necho \\\"JS7_AGENT_WORK_DIR=$JS7_AGENT_WORK_DIR\\\"\\necho \\\"JS7_AGENT_TZ=$JS7_AGENT_TZ\\\"\\necho \\\"JS7_YADE_HOME=$JS7_YADE_HOME\\\"\\necho \\\"JS7_YADE_BIN=$JS7_YADE_BIN\\\"\\necho \\\"JS7_YADE_DMZ_BIN=$JS7_YADE_DMZ_BIN\\\"\\necho \\\"JS7_YADE_CONFIG_DIR=$JS7_YADE_CONFIG_DIR\\\"\\necho \\\"JAVA_HOME=$JAVA_HOME\\\"\\necho \\\"JAVA_OPTIONS=$JAVA_OPTIONS\\\"\\necho \\\"\\\"\\necho \\\"----- Controller -----\\\"\\necho \\\"JS7_CONTROLLER_ID=$JS7_CONTROLLER_ID\\\"\\necho \\\"\\\"\\necho \\\"----- Inventory -----\\\"\\necho \\\"JS7_ORDER_ID=$JS7_ORDER_ID\\\"\\necho \\\"JS7_WORKFLOW_NAME=$JS7_WORKFLOW_NAME\\\"\\necho \\\"JS7_WORKFLOW_POSITION=$JS7_WORKFLOW_POSITION\\\"\\necho \\\"JS7_WORKFLOW_NODE_LABEL=$JS7_WORKFLOW_NODE_LABEL\\\"\\necho \\\"JS7_JOB_NAME=$JS7_JOB_NAME\\\"\\necho \\\"\\\"\\necho \\\"----- Order Scheduled Date -----\\\"\\necho \\\"JS7_SCHEDULED_DATE=$JS7_SCHEDULED_DATE\\\"\\necho \\\"JS7_SCHEDULED_YEAR=$JS7_SCHEDULED_YEAR\\\"\\necho \\\"JS7_SCHEDULED_MONTH=$JS7_SCHEDULED_MONTH\\\"\\necho \\\"JS7_SCHEDULED_DAY=$JS7_SCHEDULED_DAY\\\"\\necho \\\"JS7_SCHEDULED_HOUR=$JS7_SCHEDULED_HOUR\\\"\\necho \\\"JS7_SCHEDULED_MINUTE=$JS7_SCHEDULED_MINUTE\\\"\\necho \\\"JS7_SCHEDULED_SECOND=$JS7_SCHEDULED_SECOND\\\"\\necho \\\"\\\"\\necho \\\"----- Job Start Date -----\\\"\\necho \\\"JS7_JOBSTART_DATE=$JS7_JOBSTART_DATE\\\"\\necho \\\"JS7_JOBSTART_YEAR=$JS7_JOBSTART_YEAR\\\"\\necho \\\"JS7_JOBSTART_MONTH=$JS7_JOBSTART_MONTH\\\"\\necho \\\"JS7_JOBSTART_DAY=$JS7_JOBSTART_DAY\\\"\\necho \\\"JS7_JOBSTART_HOUR=$JS7_JOBSTART_HOUR\\\"\\necho \\\"JS7_JOBSTART_MINUTE=$JS7_JOBSTART_MINUTE\\\"\\necho \\\"JS7_JOBSTART_SECOND=$JS7_JOBSTART_SECOND\\\"\\n\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"pdvDefaultJobResource\"]}},\"jobResourceNames\":[]},\"id\":65,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T07:54:35Z",
+            "id": 85729,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"job1\",\"label\":\"job1\"}],\"jobs\":{\"job1\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"----- Agent -----\\\"\\necho \\\"JS7_AGENT_HOSTNAME=$JS7_AGENT_HOSTNAME\\\"\\necho \\\"JS7_AGENT_PORT=$JS7_AGENT_PORT\\\"\\necho \\\"JS7_AGENT_HTTP_PORT=$JS7_AGENT_HTTP_PORT\\\"\\necho \\\"JS7_AGENT_HTTPS_PORT=$JS7_AGENT_HTTPS_PORT\\\"\\necho \\\"JS7_AGENT_USER=$JS7_AGENT_USER\\\"\\necho \\\"JS7_AGENT_HOME=$JS7_AGENT_HOME\\\"\\necho \\\"JS7_AGENT_DATA=$JS7_AGENT_DATA\\\"\\necho \\\"\\\"\\necho \\\"JS7_AGENT_CONFIG_DIR=$JS7_AGENT_CONFIG_DIR\\\"\\necho \\\"JS7_AGENT_LOGS=$JS7_AGENT_LOGS\\\"\\necho \\\"JS7_AGENT_PID_FILE=$JS7_AGENT_PID_FILE\\\"\\necho \\\"JS7_AGENT_WORK_DIR=$JS7_AGENT_WORK_DIR\\\"\\necho \\\"JS7_AGENT_TZ=$JS7_AGENT_TZ\\\"\\n\\necho \\\"----- Run-Time -----\\\"\\necho \\\"JS7_RETURN_VALUES=$JS7_RETURN_VALUES\\\"\\necho \\\"JAVA_HOME=$JAVA_HOME\\\"\\necho \\\"JAVA_OPTIONS=$JAVA_OPTIONS\\\"\\n\\necho \\\"----- File Transfer -----\\\"\\necho \\\"JS7_YADE_HOME=$JS7_YADE_HOME\\\"\\necho \\\"JS7_YADE_BIN=$JS7_YADE_BIN\\\"\\necho \\\"JS7_YADE_DMZ_BIN=$JS7_YADE_DMZ_BIN\\\"\\necho \\\"JS7_YADE_CONFIG_DIR=$JS7_YADE_CONFIG_DIR\\\"\\n\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[]}},\"jobResourceNames\":[]},\"id\":81,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T07:53:36Z",
+            "id": 85728,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-environment-variables\",\"label\":\"display-environment-variables\"}],\"jobs\":{\"display-environment-variables\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"----- Agent -----\\\"\\necho \\\"JS7_AGENT_HOSTNAME=$JS7_AGENT_HOSTNAME\\\"\\necho \\\"JS7_AGENT_PORT=$JS7_AGENT_PORT\\\"\\necho \\\"JS7_AGENT_HTTP_PORT=$JS7_AGENT_HTTP_PORT\\\"\\necho \\\"JS7_AGENT_HTTPS_PORT=$JS7_AGENT_HTTPS_PORT\\\"\\necho \\\"JS7_AGENT_USER=$JS7_AGENT_USER\\\"\\necho \\\"JS7_AGENT_HOME=$JS7_AGENT_HOME\\\"\\necho \\\"JS7_AGENT_DATA=$JS7_AGENT_DATA\\\"\\necho \\\"JS7_AGENT_CONFIG_DIR=$JS7_AGENT_CONFIG_DIR\\\"\\necho \\\"JS7_AGENT_LOGS=$JS7_AGENT_LOGS\\\"\\necho \\\"JS7_AGENT_PID_FILE=$JS7_AGENT_PID_FILE\\\"\\necho \\\"JS7_AGENT_WORK_DIR=$JS7_AGENT_WORK_DIR\\\"\\necho \\\"JS7_AGENT_TZ=$JS7_AGENT_TZ\\\"\\necho \\\"JS7_YADE_HOME=$JS7_YADE_HOME\\\"\\necho \\\"JS7_YADE_BIN=$JS7_YADE_BIN\\\"\\necho \\\"JS7_YADE_DMZ_BIN=$JS7_YADE_DMZ_BIN\\\"\\necho \\\"JS7_YADE_CONFIG_DIR=$JS7_YADE_CONFIG_DIR\\\"\\necho \\\"JAVA_HOME=$JAVA_HOME\\\"\\necho \\\"JAVA_OPTIONS=$JAVA_OPTIONS\\\"\\necho \\\"\\\"\\necho \\\"----- Controller -----\\\"\\necho \\\"JS7_CONTROLLER_ID=$JS7_CONTROLLER_ID\\\"\\necho \\\"\\\"\\necho \\\"----- Inventory -----\\\"\\necho \\\"JS7_ORDER_ID=$JS7_ORDER_ID\\\"\\necho \\\"JS7_WORKFLOW_NAME=$JS7_WORKFLOW_NAME\\\"\\necho \\\"JS7_WORKFLOW_POSITION=$JS7_WORKFLOW_POSITION\\\"\\necho \\\"JS7_WORKFLOW_NODE_LABEL=$JS7_WORKFLOW_NODE_LABEL\\\"\\necho \\\"JS7_JOB_NAME=$JS7_JOB_NAME\\\"\\necho \\\"\\\"\\necho \\\"----- Order Scheduled Date -----\\\"\\necho \\\"JS7_SCHEDULED_DATE=$JS7_SCHEDULED_DATE\\\"\\necho \\\"JS7_SCHEDULED_YEAR=$JS7_SCHEDULED_YEAR\\\"\\necho \\\"JS7_SCHEDULED_MONTH=$JS7_SCHEDULED_MONTH\\\"\\necho \\\"JS7_SCHEDULED_DAY=$JS7_SCHEDULED_DAY\\\"\\necho \\\"JS7_SCHEDULED_HOUR=$JS7_SCHEDULED_HOUR\\\"\\necho \\\"JS7_SCHEDULED_MINUTE=$JS7_SCHEDULED_MINUTE\\\"\\necho \\\"JS7_SCHEDULED_SECOND=$JS7_SCHEDULED_SECOND\\\"\\necho \\\"\\\"\\necho \\\"----- Job Start Date -----\\\"\\necho \\\"JS7_JOBSTART_DATE=$JS7_JOBSTART_DATE\\\"\\necho \\\"JS7_JOBSTART_YEAR=$JS7_JOBSTART_YEAR\\\"\\necho \\\"JS7_JOBSTART_MONTH=$JS7_JOBSTART_MONTH\\\"\\necho \\\"JS7_JOBSTART_DAY=$JS7_JOBSTART_DAY\\\"\\necho \\\"JS7_JOBSTART_HOUR=$JS7_JOBSTART_HOUR\\\"\\necho \\\"JS7_JOBSTART_MINUTE=$JS7_JOBSTART_MINUTE\\\"\\necho \\\"JS7_JOBSTART_SECOND=$JS7_JOBSTART_SECOND\\\"\\n\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":65,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "commitId": "f79938cc-a2ce-49b9-a143-319e963259ce",
+            "controllerId": "-",
+            "created": "2021-05-13T07:51:21Z",
+            "id": 85727,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Variables/pdwVariablesJobDefault\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "apmacwin",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T07:51:18Z",
+            "id": 85726,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"job1\",\"label\":\"job1\"}],\"jobs\":{\"job1\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"----- Agent -----\\\"\\necho \\\"JS7_AGENT_HOSTNAME=$JS7_AGENT_HOSTNAME\\\"\\necho \\\"JS7_AGENT_PORT=$JS7_AGENT_PORT\\\"\\necho \\\"JS7_AGENT_HTTP_PORT=$JS7_AGENT_HTTP_PORT\\\"\\necho \\\"JS7_AGENT_HTTPS_PORT=$JS7_AGENT_HTTPS_PORT\\\"\\necho \\\"JS7_AGENT_USER=$JS7_AGENT_USER\\\"\\necho \\\"JS7_AGENT_HOME=$JS7_AGENT_HOME\\\"\\necho \\\"JS7_AGENT_DATA=$JS7_AGENT_DATA\\\"\\necho \\\"\\\"\\necho \\\"JS7_AGENT_CONFIG_DIR=$JS7_AGENT_CONFIG_DIR\\\"\\necho \\\"JS7_AGENT_LOGS=$JS7_AGENT_LOGS\\\"\\necho \\\"JS7_AGENT_PID_FILE=$JS7_AGENT_PID_FILE\\\"\\necho \\\"JS7_AGENT_WORK_DIR=$JS7_AGENT_WORK_DIR\\\"\\necho \\\"JS7_AGENT_TZ=$JS7_AGENT_TZ\\\"\\n\\necho \\\"----- Run-Time -----\\\"\\necho \\\"JS7_RETURN_VALUES=$JS7_RETURN_VALUES\\\"\\necho \\\"JAVA_HOME=$JAVA_HOME\\\"\\necho \\\"JAVA_OPTIONS=$JAVA_OPTIONS\\\"\\n\\necho \\\"----- File Transfer -----\\\"\\necho \\\"JS7_YADE_HOME=$JS7_YADE_HOME\\\"\\necho \\\"JS7_YADE_BIN=$JS7_YADE_BIN\\\"\\necho \\\"JS7_YADE_DMZ_BIN=$JS7_YADE_DMZ_BIN\\\"\\necho \\\"JS7_YADE_CONFIG_DIR=$JS7_YADE_CONFIG_DIR\\\"\\n\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false,\"jobResourceNames\":[\"pdvDefaultJobResource\"]}},\"jobResourceNames\":[]},\"id\":81,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-13T07:34:56Z",
+            "id": 85725,
+            "parameters": "{\"exportFile\":{\"filename\":\"Defaults.zip\",\"format\":\"ZIP\"},\"shallowCopy\":{\"withoutInvalid\":false,\"releasables\":{\"releasedConfigurations\":[{\"configuration\":{\"path\":\"/Defaults\",\"objectType\":\"FOLDER\",\"recursive\":false}}],\"draftConfigurations\":[{\"configuration\":{\"path\":\"/Defaults\",\"objectType\":\"FOLDER\",\"recursive\":false}}]},\"deployables\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/Defaults\",\"objectType\":\"FOLDER\",\"recursive\":false}}],\"deployConfigurations\":[{\"configuration\":{\"path\":\"/Defaults\",\"objectType\":\"FOLDER\",\"recursive\":false}}]}}}",
+            "request": "./inventory/export"
+        },
+        {
+            "account": "apmacwin",
+            "category": "DEPLOYMENT",
+            "controllerId": "-",
+            "created": "2021-05-13T07:20:57Z",
+            "id": 85724,
+            "parameters": "{\"exportFile\":{\"filename\":\"export_product_demo.zip\",\"format\":\"ZIP\"},\"shallowCopy\":{\"withoutInvalid\":false,\"releasables\":{\"releasedConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo\",\"objectType\":\"FOLDER\",\"recursive\":true}}],\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo\",\"objectType\":\"FOLDER\",\"recursive\":true}}]},\"deployables\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo\",\"objectType\":\"FOLDER\",\"recursive\":true}}],\"deployConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo\",\"objectType\":\"FOLDER\",\"recursive\":true}}]}}}",
+            "request": "./inventory/export"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T00:24:40Z",
+            "id": 85723,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/DatabaseSQLExecution/dbSQLExecutionConfigurationFile\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T00:08:33Z",
+            "id": 85722,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orderIds\":[\"#2021-05-12#T0858767757-root\",\"#2021-05-12#T0813689615-root\"]}",
+            "request": "./orders/cancel"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T00:07:00Z",
+            "id": 85721,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Variables/pdwVariablesJobResources\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "DEPLOYMENT",
+            "commitId": "bd9d8b26-6de9-4418-8da8-ecfdf743cce9",
+            "controllerId": "-",
+            "created": "2021-05-13T00:06:20Z",
+            "id": 85720,
+            "parameters": "{\"controllerIds\":[\"testsuite\"],\"auditLog\":{},\"store\":{\"draftConfigurations\":[{\"configuration\":{\"path\":\"/ProductDemo/Variables/pdwVariablesJobResourceDefault\",\"objectType\":\"WORKFLOW\"}}]}}",
+            "request": "./inventory/deployment/deploy"
+        },
+        {
+            "account": "root",
+            "category": "INVENTORY",
+            "controllerId": "-",
+            "created": "2021-05-13T00:06:08Z",
+            "id": 85719,
+            "parameters": "{\"configuration\":{\"instructions\":[{\"TYPE\":\"Execute.Named\",\"jobName\":\"display-environment-variables\",\"label\":\"display-environment-variables\"}],\"jobs\":{\"display-environment-variables\":{\"agentName\":\"primaryAgent\",\"executable\":{\"TYPE\":\"ScriptExecutable\",\"script\":\"echo \\\"----- Agent -----\\\"\\necho \\\"JS7_AGENT_HOSTNAME=$JS7_AGENT_HOSTNAME\\\"\\necho \\\"JS7_AGENT_PORT=$JS7_AGENT_PORT\\\"\\necho \\\"JS7_AGENT_HTTP_PORT=$JS7_AGENT_HTTP_PORT\\\"\\necho \\\"JS7_AGENT_HTTPS_PORT=$JS7_AGENT_HTTPS_PORT\\\"\\necho \\\"JS7_AGENT_USER=$JS7_AGENT_USER\\\"\\necho \\\"JS7_AGENT_HOME=$JS7_AGENT_HOME\\\"\\necho \\\"JS7_AGENT_DATA=$JS7_AGENT_DATA\\\"\\necho \\\"JS7_AGENT_CONFIG_DIR=$JS7_AGENT_CONFIG_DIR\\\"\\necho \\\"JS7_AGENT_LOGS=$JS7_AGENT_LOGS\\\"\\necho \\\"JS7_AGENT_PID_FILE=$JS7_AGENT_PID_FILE\\\"\\necho \\\"JS7_AGENT_WORK_DIR=$JS7_AGENT_WORK_DIR\\\"\\necho \\\"JS7_AGENT_KILL_SCRIPT=$JS7_AGENT_KILL_SCRIPT\\\"\\necho \\\"JS7_AGENT_TZ=$JS7_AGENT_TZ\\\"\\necho \\\"JS7_YADE_HOME=$JS7_YADE_HOME\\\"\\necho \\\"JS7_YADE_BIN=$JS7_YADE_BIN\\\"\\necho \\\"JS7_YADE_DMZ_BIN=$JS7_YADE_DMZ_BIN\\\"\\necho \\\"JS7_YADE_CONFIG_DIR=$JS7_YADE_CONFIG_DIR\\\"\\necho \\\"JAVA_HOME=$JAVA_HOME\\\"\\necho \\\"JAVA_OPTIONS=$JAVA_OPTIONS\\\"\\necho \\\"\\\"\\necho \\\"----- Controller -----\\\"\\necho \\\"JS7_CONTROLLER_ID=$JS7_CONTROLLER_ID\\\"\\necho \\\"\\\"\\necho \\\"----- Inventory -----\\\"\\necho \\\"JS7_ORDER_ID=$JS7_ORDER_ID\\\"\\necho \\\"JS7_WORKFLOW_NAME=$JS7_WORKFLOW_NAME\\\"\\necho \\\"JS7_WORKFLOW_POSITION=$JS7_WORKFLOW_POSITION\\\"\\necho \\\"JS7_WORKFLOW_NODE_LABEL=$JS7_WORKFLOW_NODE_LABEL\\\"\\necho \\\"JS7_JOB_NAME=$JS7_JOB_NAME\\\"\\necho \\\"\\\"\\necho \\\"----- Order Scheduled Date -----\\\"\\necho \\\"JS7_SCHEDULED_DATE=$JS7_SCHEDULED_DATE\\\"\\necho \\\"JS7_SCHEDULED_YEAR=$JS7_SCHEDULED_YEAR\\\"\\necho \\\"JS7_SCHEDULED_MONTH=$JS7_SCHEDULED_MONTH\\\"\\necho \\\"JS7_SCHEDULED_DAY=$JS7_SCHEDULED_DAY\\\"\\necho \\\"JS7_SCHEDULED_HOUR=$JS7_SCHEDULED_HOUR\\\"\\necho \\\"JS7_SCHEDULED_MINUTE=$JS7_SCHEDULED_MINUTE\\\"\\necho \\\"JS7_SCHEDULED_SECOND=$JS7_SCHEDULED_SECOND\\\"\\necho \\\"\\\"\\necho \\\"----- Job Start Date -----\\\"\\necho \\\"JS7_JOBSTART_DATE=$JS7_JOBSTART_DATE\\\"\\necho \\\"JS7_JOBSTART_YEAR=$JS7_JOBSTART_YEAR\\\"\\necho \\\"JS7_JOBSTART_MONTH=$JS7_JOBSTART_MONTH\\\"\\necho \\\"JS7_JOBSTART_DAY=$JS7_JOBSTART_DAY\\\"\\necho \\\"JS7_JOBSTART_HOUR=$JS7_JOBSTART_HOUR\\\"\\necho \\\"JS7_JOBSTART_MINUTE=$JS7_JOBSTART_MINUTE\\\"\\necho \\\"JS7_JOBSTART_SECOND=$JS7_JOBSTART_SECOND\\\"\\n\",\"v1Compatible\":false},\"taskLimit\":1,\"failOnErrWritten\":false}},\"jobResourceNames\":[]},\"id\":65,\"valid\":true,\"objectType\":\"WORKFLOW\"}",
+            "request": "./inventory/store"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T00:03:45Z",
+            "id": 85718,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Variables/pdwVariablesJobResourceDefault\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        },
+        {
+            "account": "root",
+            "category": "CONTROLLER",
+            "controllerId": "testsuite",
+            "created": "2021-05-13T00:02:47Z",
+            "id": 85717,
+            "parameters": "{\"controllerId\":\"testsuite\",\"orders\":[{\"workflowPath\":\"/ProductDemo/Variables/pdwVariablesQuoting\",\"scheduledFor\":\"now\"}],\"auditLog\":{}}",
+            "request": "./orders/add"
+        }
+    ],
+    "deliveryDate": "2021-05-18T13:21:11.231Z"
+}

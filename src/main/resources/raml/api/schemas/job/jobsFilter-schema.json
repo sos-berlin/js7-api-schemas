@@ -19,14 +19,11 @@
         "$ref": "jobPath-schema.json"
       }
     },
-    "orders": {
-      "type": "array",
-      "items": {
-        "$ref": "orderPath-schema.json"
-      }
+    "jobName": {
+      "$ref": "../common/string255-schema.json"
     },
-    "regex": {
-      "$ref": "../common/regexFilter-schema.json"
+    "workflowPath": {
+      "$ref": "../common/string255-schema.json"
     },
     "dateFrom": {
       "$ref": "../common/dateFromTo-schema.json"

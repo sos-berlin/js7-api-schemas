@@ -1,0 +1,27 @@
+{
+  "title": "agent report filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentReportFilter",
+  "type": "object",
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerId-schema.json"
+    },
+    "agentIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    },
+    "dateFrom": {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "dateTo": {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "timeZone": {
+      "$ref": "../common/timezone-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

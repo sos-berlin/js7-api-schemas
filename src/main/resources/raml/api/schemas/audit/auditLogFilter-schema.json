@@ -7,12 +7,9 @@
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
     },
-    "objectNames": {
-      "type": "array",
-      "uniqueItems" : true,
-      "items": {
-        "$ref": "../common/string255-schema.json"
-      }
+    "objectName": {
+      "description": "regular expression of an object's name",
+      "$ref": "../common/string255-schema.json"
     },
     "objectTypes": {
       "type": "array",

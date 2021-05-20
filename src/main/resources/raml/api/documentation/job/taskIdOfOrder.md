@@ -4,7 +4,7 @@ It determines the current or last taskId.<br/>
 If "historyIds" is specified then all other optional parameters except ``controllerId`` and ``taskIds`` are ignored.</td>
 <td> [{
   <div style="padding-left:10px;">"historyId":4711,</div>
-  <div style="padding-left:10px;">"position":"exec"</div>
+  <div style="padding-left:10px;">"position":"0/try+0:2/catch+3:4"</div>
   }]</td>
 <td></td>
 </tr>
