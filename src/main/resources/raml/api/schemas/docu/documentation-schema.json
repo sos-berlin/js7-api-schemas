@@ -16,6 +16,9 @@
     "type": {
       "$ref": "../common/string255-schema.json"
     },
+    "assignReference": {
+      "$ref": "../common/string255-schema.json"
+    },
     "modified": {
       "$ref": "../common/timestamp-schema.json"
     }

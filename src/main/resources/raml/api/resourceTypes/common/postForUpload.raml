@@ -10,15 +10,10 @@ post:
           description: The file to be uploaded
           required: true
           type: file
-        controllerId:
-          required: true
-          type: string
-          description: Controller ID
-          example: myController
         accessToken:
           required: false
           type: string
-          description: is used if the header doesn't contain ``X-Access-Token``
+          description: is required if the header doesn't contain ``X-Access-Token``
           example: 550e8400-e29b-11d4-a716-446655440000
         folder:
           required: false

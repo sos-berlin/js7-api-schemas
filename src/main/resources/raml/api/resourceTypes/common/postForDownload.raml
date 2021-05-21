@@ -1,6 +1,6 @@
 type: error
 get?:
-  is: [ accessToken, jobschedulerController ]
+  is: [ accessToken ]
     
   description: |
     <h2><<description>></h2>
@@ -10,7 +10,7 @@ get?:
       type: string
       description: |
         Name of a temp. file from <<infoapi>>/info api
-        This file will be responsed if exists
+        This file is offered for download if exists
       example: sos-download-5961566003164029224.tmp
       required: true
   responses:
@@ -43,7 +43,6 @@ post:
     <thead>
     <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
     </thead><tbody>
-    <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID</td><td>myController</td><td></td></tr>
     <<description1>>
     <<description2>>
     <<description3>>

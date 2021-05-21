@@ -729,10 +729,6 @@ traits:
   description: |
     This is not an API call. Use its children!!
   
-  /{accessToken}/{path}:
-   type:
-      getDocu:
-        description: " "
   /used:
     type:
       postJSONWithoutJSId:
@@ -750,8 +746,8 @@ traits:
         description200: " "
         schema: !include api/schemas/docu/documentationFilter-schema.json
         schema200: !include api/schemas/docu/usedBy-schema.json
-        example: " "
-        example200: " "
+        example: !include api/examples/docu/used-request-example.json
+        example200: !include api/examples/docu/used-response-example.json
   /show:
     get:
     type:
@@ -763,62 +759,27 @@ traits:
         description2: " "
         schema: !include api/schemas/docu/documentationShow-schema.json
         example: " "
-#  /show:
-#    get:
-#    is: [ filteredByJSType ]
-#    type:
-#      postDocu:
-#        description: Get the documentation of a Controller object
-#        jsObjectParam: path
-#        jsObject: Controller object
-#        description1: !include api/documentation/docu/jsObject.md
-#        description2: " "
-#        schema: !include api/schemas/docu/documentationShow-schema.json
-#        example: " "
-#  /url:
-#    post:
-#    type:
-#      postJSONWithoutJSId:
-#        description: Get the URL of a documentation of a Controller object
-#        description1: !include api/documentation/docu/jsObject.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/docu/documentationShow-schema.json
-#        schema200: !include api/schemas/docu/url-schema.json
-#        example: " "
-#        example200: " "    
-
 
 /documentations:
-  description: |
-    This is not an API call. Use its children!!
-    
-#  type:
-#    postJSONWithoutJSId:
-#      description: Get collection of documentations
-#      description1: !include api/documentation/docu/filteredByPaths.md
-#      description2: " "
-#      description3: !include api/documentation/common/regex.md
-#      description4: !include api/documentation/common/folders.md
-#      description5: !include api/documentation/docu/docuTypes.md
-#      description6: " "
-#      description7: " "
-#      description8: " "
-#      description9: " "
-#      description10: " "
-#      description200: !include api/documentation/docu/docu.md
-#      schema: !include api/schemas/docu/documentationsFilter-schema.json
-#      schema200: !include api/schemas/docu/documentations-schema.json
-#      example: " "
-#      example200: " "
+  type:
+    postJSONWithoutJSId:
+      description: Get documentations
+      description1: !include api/documentation/docu/filteredByPaths.md
+      description2: " "
+      #description3: !include api/documentation/common/regex.md
+      description3: " "
+      description4: !include api/documentation/common/folders.md
+      description5: !include api/documentation/docu/docuTypes.md
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: !include api/documentation/docu/docu.md
+      schema: !include api/schemas/docu/documentationsFilter-schema.json
+      schema200: !include api/schemas/docu/documentations-schema.json
+      example: " "
+      example200: " "
   /export:
     get:
     type:
@@ -834,8 +795,8 @@ traits:
         example: " "
     /info:
       type:
-        postJSON:
-          description: Temp. Filename for Export 
+        postJSONWithoutJSId:
+          description: Get temp. filename for export 
           description1: !include api/documentation/docu/filteredByPaths.md
           description2: !include api/documentation/common/folders.md
           description3: " "

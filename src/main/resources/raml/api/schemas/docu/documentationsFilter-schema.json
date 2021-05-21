@@ -25,6 +25,10 @@
         "$ref": "../common/string255-schema.json"
       }
     },
+    "onlyWithAssignReference": {
+      "type": "boolean",
+      "default": false
+    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }
