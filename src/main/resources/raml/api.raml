@@ -729,10 +729,32 @@ traits:
   description: |
     This is not an API call. Use its children!!
   
+  /edit:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Edit the assignment reference
+        description1: !include api/documentation/docu/docPath.md
+        description2: !include api/documentation/docu/assignRef.md
+        description3: " "
+        description4: " "
+        description5: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/docu/documentationFilter-schema.json
+        example: " "
+  /show:
+    get:
+    type:
+      postDocu:
+        description: Shows the documentation
+        jsObjectParam: documentation
+        jsObject: documentation
+        description1: !include api/documentation/docu/jsObject.md
+        description2: " "
+        schema: !include api/schemas/docu/documentationShow-schema.json
+        example: " "
   /used:
     type:
       postJSONWithoutJSId:
-        description: Get Controller objects which use the documentation
+        description: Get objects which use the documentation
         description1: !include api/documentation/docu/docPath.md
         description2: " "
         description3: " "
@@ -748,17 +770,6 @@ traits:
         schema200: !include api/schemas/docu/usedBy-schema.json
         example: !include api/examples/docu/used-request-example.json
         example200: !include api/examples/docu/used-response-example.json
-  /show:
-    get:
-    type:
-      postDocu:
-        description: Shows the documentation
-        jsObjectParam: documentation
-        jsObject: documentation
-        description1: !include api/documentation/docu/jsObject.md
-        description2: " "
-        schema: !include api/schemas/docu/documentationShow-schema.json
-        example: " "
 
 /documentations:
   type:
@@ -829,7 +840,7 @@ traits:
         description7: " "
         description8: " "
         description9: " "
-        description10: " "
+        description10: !include api/documentation/audit/auditLog.md
         description200: " "
         schema: !include api/schemas/docu/documentationsFilter-schema.json
         schema200: ok
