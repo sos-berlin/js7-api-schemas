@@ -1,0 +1,19 @@
+{
+  "title": "reset agent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.command.ResetAgent",
+  "type": "object",
+  "extends" : {
+    "javaType": "Command"
+  },
+  "propertyOrder": [
+    "TYPE",
+    "agentName"
+  ],
+  "properties": {
+    "agentName": {
+      "$ref": "../../../api/schemas/common/string255required-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

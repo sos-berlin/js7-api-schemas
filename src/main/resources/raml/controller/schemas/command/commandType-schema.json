@@ -15,6 +15,7 @@
     "UpdateRepo",
     "ClusterSwitchOver", 
     "ClusterAppointNodes",
-    "ReleaseEvents"
+    "ReleaseEvents",
+    "ResetAgent"
   ]
 }

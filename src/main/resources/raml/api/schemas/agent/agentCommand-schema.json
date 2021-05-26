@@ -1,0 +1,21 @@
+{
+  "title": "agent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentCommand",
+  "type": "object",
+  "required": [
+  	"controllerId",
+  	"agentId"
+  ],
+  "properties": {
+    "controllerId": {
+    	"$ref": "../common/controllerId-schema.json"
+    },
+    "agentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}
