@@ -54,6 +54,9 @@ Different events trigger the following different actions:
 		* The Lock itself is changed -> the tree and the list need to update
 * Update ``Calendar View``: for each following event
 	* to be continued...
+* Update ``Documentation View``: for each following event
+	* **DocumentationUpdated**
+		* It contains the changed folder in the "path" field
 * Update ``History View`` and ``History Tabs`` in ``Workflow View``: 
 	* Order Tab: once for following event
 		* **HistoryOrderStarted**  (is sent only in an active JOC node)

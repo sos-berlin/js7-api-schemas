@@ -8,7 +8,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "../common/string255-schema.json"
+        "$ref": "../common/path-schema.json"
       }
     },
     "folders": {
