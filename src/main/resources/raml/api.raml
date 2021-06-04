@@ -102,7 +102,7 @@ traits:
   type:
     postJSON:
       description: Get Agents
-      description1: !include api/documentation/agent/agentIds.md
+      description1: !include api/documentation/agent/agentIdsUrls.md
       description2: !include api/documentation/agent/states.md
       description3: !include api/documentation/agent/onlyEnabledAgents.md
       description4: !include api/documentation/common/compact.md
@@ -122,7 +122,7 @@ traits:
     type:
       postJSONWithOptionalJSId:
         description: Get persitent Agent information
-        description1: !include api/documentation/agent/agentIds.md
+        description1: !include api/documentation/agent/agentIdsUrls.md
         description2: " "
         description3: !include api/documentation/agent/onlyEnabledAgents.md
         description4: " "
@@ -153,10 +153,10 @@ traits:
     type:
       postJSONWithOptionalJSId:
         description: Get report of Agent tasks
-        description1: !include api/documentation/common/dateFrom.md
-        description2: !include api/documentation/common/dateTo.md
-        description3: !include api/documentation/common/timeZone.md
-        description4: " "
+        description1: !include api/documentation/agent/agentIdsUrls.md
+        description2: !include api/documentation/common/dateFrom.md
+        description3: !include api/documentation/common/dateTo.md
+        description4: !include api/documentation/common/timeZone.md
         description5: " "
         description6: " "
         description7: " "
@@ -166,7 +166,7 @@ traits:
         description11: " "
         description12: " "
         description13: " "
-        description200: " "
+        description200: !include api/documentation/agent/report.md
         schema: !include api/schemas/agent/agentReportFilter-schema.json
         schema200: !include api/schemas/agent/agentReports-schema.json
         example: " "
@@ -188,26 +188,6 @@ traits:
         description10: " "
         schema: !include api/schemas/agent/storeParam-schema.json
         example: !include api/examples/agent/store-example.json
-        
-#  /tasks:
-#    type:
-#      postJSON:
-#        description: Get collection of Agents from database
-#        description1: !include api/documentation/agent/agentIds.md
-#        description2: !include api/documentation/agent/onlyEnabledAgents.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/agent/readAgents_v-schema.json
-#        schema200: !include api/schemas/agent/agentTasks-schema.json
-#        example: !include api/examples/agent/agents_v-request-example.json
-#        example200: " "
         
 
 /audit_log:
@@ -2058,8 +2038,8 @@ traits:
         description8: " "
         description9: " "
         description10: " "
-        schema200: !include api/schemas/job/runningTaskLogs-schema.json
-        schema: !include api/schemas/job/runningTaskLogsFilter-schema.json
+        schema200: !include api/schemas/job/runningTaskLog-schema.json
+        schema: !include api/schemas/job/runningTaskLogFilter-schema.json
         example: TODO
         example200: " "
 
