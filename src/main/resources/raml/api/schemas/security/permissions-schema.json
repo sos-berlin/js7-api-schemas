@@ -16,6 +16,10 @@
 			"javaType": "com.sos.joc.model.security.permissions.JocPermissions",
 			"type": "object",
 			"properties": {
+				"getLog": {
+					"type": "boolean",
+					"default" : false
+				},
 				"administration": {
 					"javaType": "com.sos.joc.model.security.permissions.joc.Administration",
 					"type": "object",

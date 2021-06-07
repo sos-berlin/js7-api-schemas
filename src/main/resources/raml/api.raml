@@ -1875,7 +1875,7 @@ traits:
           example200: !include api/examples/order/snapshot-example.json
   /overview/summary:
       type:
-        postJSON:
+        postJSONWithOptionalJSId:
           description: |
             Summary with number of<h5>
             * successful orders
@@ -1893,6 +1893,9 @@ traits:
           description8: " "
           description9: " "
           description10: " "
+          description11: " "
+          description12: " "
+          description13: " "
           description200: " "
           schema200: !include api/schemas/order/summary-schema.json
           schema: !include api/schemas/order/ordersFilter-schema.json
@@ -2190,38 +2193,41 @@ traits:
       example: TODO
       example200: TODO
       
-#TODO
-#/yade:
-#  description: This is not an API call. Use its children!!
-#   
-#  /overview/summary:
-#    type:
-#      postJSON:
-#        description: |
-#            Summary with number of<h5>
-#            * successful transferred files
-#            * failed transferred files
-#  
-#            filtered by <code>dateFrom</code> parameter until now
-#            </h5>
-#        description1: !include api/documentation/common/dateFrom.md
-#        description2: !include api/documentation/common/dateTo.md
-#        description3: !include api/documentation/common/timeZone.md
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema200: !include api/schemas/yade/summary-schema.json
-#        schema: !include api/schemas/yade/transferFilter-schema.json
-#        example: |
-#            {
-#              "dateFrom": "1d"
-#            }
-#        example200: !include api/examples/yade/summary-example.json
+
+/yade:
+  description: This is not an API call. Use its children!!
+   
+  /overview/summary:
+    type:
+      postJSONWithOptionalJSId:
+        description: |
+            Summary with number of<h5>
+            * successful transferred files
+            * failed transferred files
+  
+            filtered by <code>dateFrom</code> parameter until now
+            </h5>
+        description1: !include api/documentation/common/dateFrom.md
+        description2: !include api/documentation/common/dateTo.md
+        description3: !include api/documentation/common/timeZone.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: " "
+        schema200: !include api/schemas/yade/summary-schema.json
+        schema: !include api/schemas/yade/transferFilter-schema.json
+        example: |
+            {
+              "dateFrom": "1d"
+            }
+        example200: !include api/examples/yade/summary-example.json
 #  /overview/snapshot:
 #      type:
 #        postOnlyId:
@@ -2237,33 +2243,33 @@ traits:
 #          schema200: !include api/schemas/yade/snapshot-schema.json
 #          example200: " "
 #
-#  /transfers:
-#    type:
-#      postJSON18:
-#        description: Responds YADE transfers
-#        description1: !include api/documentation/yade/transferIds.md
-#        description2: !include api/documentation/common/compact.md
-#        description3: !include api/documentation/common/dateFrom.md
-#        description4: !include api/documentation/common/dateTo.md
-#        description5: !include api/documentation/common/timeZone.md
-#        description6: !include api/documentation/yade/operations.md
-#        description7: !include api/documentation/yade/states.md
-#        description8: !include api/documentation/yade/mandator.md
-#        description9: !include api/documentation/yade/source.md
-#        description10: !include api/documentation/yade/target.md
-#        description11: !include api/documentation/yade/hasIntervention.md
-#        description12: !include api/documentation/yade/isIntervention.md
-#        description13: !include api/documentation/yade/profile.md
-#        description14: !include api/documentation/yade/sourcePathRegex.md
-#        description15: !include api/documentation/yade/targetPathRegex.md
-#        description16: !include api/documentation/yade/sourcePath.md
-#        description17: !include api/documentation/yade/targetPath.md
-#        description18: !include api/documentation/common/limit.md
-#        description200: !include api/documentation/yade/transfers.md
-#        schema: !include api/schemas/yade/transferFilter-schema.json
-#        schema200: !include api/schemas/yade/transfers-schema.json
-#        example: " "
-#        example200: " "
+  /transfers:
+    type:
+      postJSON18:
+        description: Responds YADE transfers
+        description1: !include api/documentation/yade/transferIds.md
+        description2: !include api/documentation/common/compact.md
+        description3: !include api/documentation/common/dateFrom.md
+        description4: !include api/documentation/common/dateTo.md
+        description5: !include api/documentation/common/timeZone.md
+        description6: !include api/documentation/yade/operations.md
+        description7: !include api/documentation/yade/states.md
+        description8: !include api/documentation/yade/mandator.md
+        description9: !include api/documentation/yade/source.md
+        description10: !include api/documentation/yade/target.md
+        description11: !include api/documentation/yade/hasIntervention.md
+        description12: !include api/documentation/yade/isIntervention.md
+        description13: !include api/documentation/yade/profile.md
+        description14: !include api/documentation/yade/sourcePathRegex.md
+        description15: !include api/documentation/yade/targetPathRegex.md
+        description16: !include api/documentation/yade/sourcePath.md
+        description17: !include api/documentation/yade/targetPath.md
+        description18: !include api/documentation/common/limit.md
+        description200: !include api/documentation/yade/transfers.md
+        schema: !include api/schemas/yade/transferFilter-schema.json
+        schema200: !include api/schemas/yade/transfers-schema.json
+        example: " "
+        example200: " "
 #
 #    /restart:
 #      type:
