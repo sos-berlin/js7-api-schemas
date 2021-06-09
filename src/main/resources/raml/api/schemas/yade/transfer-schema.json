@@ -3,11 +3,14 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.yade.Transfer",
 	"type": "object",
-	"description": "compact=true -> required fields + possibly profile, mandator, target",
+	"description": "compact=true -> required fields + possibly profile, target, end, error",
 	"required": [
+		"id",
+		"surveyDate",
 		"_operation",
 		"start",
-		"source"
+		"source",
+		"historyId"
 	],
 	"properties": {
 		"surveyDate": {
@@ -16,13 +19,7 @@
 		"id": {
 			"$ref": "../common/nonNegativeLong-schema.json"
 		},
-		"parent_id": {
-			"$ref": "../common/nonNegativeLong-schema.json"
-		},
 		"profile": {
-			"type": "string"
-		},
-		"mandator": {
 			"type": "string"
 		},
 		"state": {
