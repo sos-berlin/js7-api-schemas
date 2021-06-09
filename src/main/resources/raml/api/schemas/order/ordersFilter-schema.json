@@ -25,10 +25,10 @@
       "$ref": "../common/compactParam-schema.json"
     },
     "orderId": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/glob-schema.json"
     },
     "workflowPath": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/glob-schema.json"
     },
     "states": {
       "type": "array",

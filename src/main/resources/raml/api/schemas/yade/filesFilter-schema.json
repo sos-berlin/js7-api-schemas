@@ -1,25 +1,10 @@
 {
-  "title": "yade filter",
+  "title": "file transfer files filter",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.yade.FilesFilter",
   "type": "object",
   "properties": {
-    "controllerId": {
-      "type": "string"
-    },
-    "fileIds": {
-      "type": "array",
-      "items": {
-        "$ref": "../common/nonNegativeLong-schema.json"
-      }
-    },
     "transferIds": {
-      "type": "array",
-      "items": {
-        "$ref": "../common/nonNegativeLong-schema.json"
-      }
-    },
-    "interventionTransferIds": {
       "type": "array",
       "items": {
         "$ref": "../common/nonNegativeLong-schema.json"
@@ -27,9 +12,6 @@
     },
     "compact": {
       "$ref": "../common/compactParam-schema.json"
-    },
-    "regex": {
-      "$ref": "../common/regexFilter-schema.json"
     },
     "states": {
       "type": "array",
@@ -40,14 +22,20 @@
     "sourceFiles": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "../common/string255required-schema.json"
       }
     },
     "targetFiles": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "../common/string255required-schema.json"
       }
+    },
+    "sourceFile": {
+      "$ref": "../common/glob-schema.json"
+    },
+    "targetFile": {
+      "$ref": "../common/glob-schema.json"
     },
     "limit": {
       "description": "only for db history urls to restrict the number of responsed records; -1=unlimited",

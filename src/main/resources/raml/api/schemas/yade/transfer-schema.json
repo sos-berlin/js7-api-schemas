@@ -52,10 +52,6 @@
 		"numOfFiles": {
 			"$ref": "../common/nonNegativeInteger-schema.json"
 		},
-		"hasIntervention": {
-			"type": "boolean",
-			"default": "false"
-		},
 		"controllerId": {
 			"$ref": "../common/controllerId-schema.json"
 		},

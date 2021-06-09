@@ -1,5 +1,5 @@
 {
-  "title": "yade filter",
+  "title": "file transfer filter",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.yade.TransferFilter",
   "type": "object",
@@ -25,9 +25,6 @@
         "type": "string"
       }
     },
-    "mandator": {
-      "type": "string"
-    },
     "states": {
       "type": "array",
       "items": {
@@ -48,18 +45,12 @@
     },
     "timeZone": {
       "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-      "type": "string"
+      "$ref": "../common/timezone-schema.json"
     },
     "limit": {
       "description": "only for db history urls to restrict the number of responsed records; -1=unlimited",
       "type": "integer",
       "default": 10000
-    },
-    "hasIntervention": {
-      "type": "boolean"
-    },
-    "isIntervention": {
-      "type": "boolean"
     },
     "sources": {
       "type": "array",
@@ -73,22 +64,22 @@
         "$ref": "protocolFragment-schema.json"
       }
     },
-    "sourceFilesRegex": {
-      "$ref": "../common/regexFilter-schema.json"
+    "sourceFile": {
+      "$ref": "../common/glob-schema.json"
     },
-    "targetFilesRegex": {
-      "$ref": "../common/regexFilter-schema.json"
+    "targetFile": {
+      "$ref": "../common/glob-schema.json"
     },
     "sourceFiles": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "../common/string255required-schema.json"
       }
     },
     "targetFiles": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "../common/string255required-schema.json"
       }
     }
   }

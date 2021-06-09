@@ -43,7 +43,6 @@ resourceTypes:
   - postJSONWithoutJSId: !include api/resourceTypes/common/postJSONWithoutJSId.raml
   - postWithoutJSONandJSId: !include api/resourceTypes/common/postWithoutJSONandJSId.raml
   - postJSONWithOkWithoutJSId: !include api/resourceTypes/common/postJSONWithOkWithoutJSId.raml
-  - postJSON18: !include api/resourceTypes/common/postJSON18.raml
   - postYADEJSONWithOkResponse: !include api/resourceTypes/yade/postJSONWithOkResponse.raml
   - postOnlyAccessToken: !include api/resourceTypes/common/postOnlyAccessToken.raml
   - postOnlyId: !include api/resourceTypes/common/postOnlyId.raml
@@ -266,25 +265,25 @@ traits:
             application/json:
               schema: !include api/schemas/security/security-configuration-schema.json
       
-  /shiro/store:
-    type:
-      postJSONWithoutJSId:
-        description: Writes configuration in shiro.ini
-        description1: !include api/documentation/security/main.md
-        description2: !include api/documentation/security/users.md
-        description3: !include api/documentation/security/roles.md
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        description200: " "
-        schema200: !include api/schemas/security/security-configuration-schema.json
-        example200: " "
-        schema: !include api/schemas/security/security-configuration-schema.json
-        example: " "    
+    /store:
+      type:
+        postJSONWithoutJSId:
+          description: Writes configuration in shiro.ini
+          description1: !include api/documentation/security/main.md
+          description2: !include api/documentation/security/users.md
+          description3: !include api/documentation/security/roles.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema200: !include api/schemas/security/security-configuration-schema.json
+          example200: " "
+          schema: !include api/schemas/security/security-configuration-schema.json
+          example: " "    
     
     
 
@@ -1416,106 +1415,7 @@ traits:
           body:
             application/json:
   
-#/job:
-#  /documentation:
-#    get:
-#    type:
-#      postDocu:
-#        description: Show documentation
-#        jsObjectParam: job
-#        jsObject: Job
-
-
-#TODO
-#/jobclass:
-#  /configuration:
-#    type:
-#      postJSON:
-#        description: !include api/documentation/common/configuration.md
-#        description1: !include api/documentation/processClass/processClassRequired.md
-#        description2: !include api/documentation/common/configurationFileMimeParam.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: Returns the process class configuration in XML or HTML format
-#        schema: !include api/schemas/processClass/processClassConfigurationFilter-schema.json
-#        schema200: !include api/schemas/common/configuration-schema.json
-#        example: TODO
-#        example200: !include api/examples/processClass/configuration-example.json
-#  /documentation:
-#    get:
-#    type:
-#      postDocu:
-#        description: Show documentation
-#        jsObjectParam: processClass
-#        jsObject: ProcessClass
-#    /assign:
-#      type:
-#        postDocuWithOkResponse:
-#          description: Assigns a Documentation to the Process Class
-#          description1: !include api/documentation/docu/docPath.md
-#          description2: " "
-#          description3: !include api/documentation/processClass/processClassRequired.md
-#          description4: " "
-#          schema: !include api/schemas/processClass/processClassDocuFilter-schema.json
-#          example: TODO
-#          audit: !include api/documentation/audit/auditLog.md
-#    /unassign:
-#      type:
-#        postDocuWithOkResponse:
-#          description: Unassigns a Documentation of the Process Class
-#          description1: " "
-#          description2: " "
-#          description3: !include api/documentation/processClass/processClassRequired.md
-#          description4: " "
-#          schema: !include api/schemas/processClass/processClassDocuFilter-schema.json
-#          example: TODO
-#          audit: !include api/documentation/audit/auditLog.md
-#/jobclasses:
-#  type:
-#    postJSON:
-#      description: process classes (volatile part)
-#      description1: !include api/documentation/processClass/filteredByProcessClasses.md
-#      description2: !include api/documentation/common/regex.md
-#      description3: " "
-#      description4: " "
-#      description5: !include api/documentation/common/folders.md
-#      description6: !include api/documentation/processClass/filteredByHasAgent.md
-#      description7: " "
-#      description8: " "
-#      description9: " "
-#      description10: " "
-#      description200: !include api/documentation/processClass/processClass_v.md
-#      schema: !include api/schemas/processClass/processClassesFilter-schema.json
-#      schema200: !include api/schemas/processClass/processClasses_v-schema.json
-#      example: TODO
-#      example200: !include api/examples/processClass/processClasses_v-example.json
-#  /p:
-#    type:
-#      postJSON:
-#        description: process classes (permanent part)
-#        description1: !include api/documentation/processClass/filteredByProcessClasses.md
-#        description2: !include api/documentation/common/regex.md
-#        description3: " "
-#        description4: " "
-#        description5: !include api/documentation/common/folders.md
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: !include api/documentation/processClass/processClass_p.md
-#        schema: !include api/schemas/processClass/processClassesFilter-schema.json
-#        schema200: !include api/schemas/processClass/processClasses_p-schema.json
-#        example: TODO
-#        example200: !include api/examples/processClass/processClasses_p-example.json
-
-          
+         
 /jobs/overview/summary:
   type:
     postJSONWithOptionalJSId:
@@ -2204,8 +2104,6 @@ traits:
             Summary with number of<h5>
             * successful transferred files
             * failed transferred files
-  
-            filtered by <code>dateFrom</code> parameter until now
             </h5>
         description1: !include api/documentation/common/dateFrom.md
         description2: !include api/documentation/common/dateTo.md
@@ -2233,10 +2131,10 @@ traits:
 #        postOnlyId:
 #          description: |
 #            Summary with number of<h5>
-#            * running YADE transfers
-#            * suspended YADE transfers
-#            * YADE transfers with setback
-#            * waiting for resource YADE transfers
+#            * running file transfers
+#            * suspended file transfers
+#            * file transfers with setback
+#            * waiting for resource file transfers
 #            </h5>
 #          description200: " "
 #          example: " "
@@ -2245,8 +2143,8 @@ traits:
 #
   /transfers:
     type:
-      postJSON18:
-        description: Responds YADE transfers
+      postJSONWithOptionalJSId:
+        description: Get file transfers
         description1: !include api/documentation/yade/transferIds.md
         description2: !include api/documentation/common/compact.md
         description3: !include api/documentation/common/dateFrom.md
@@ -2254,71 +2152,66 @@ traits:
         description5: !include api/documentation/common/timeZone.md
         description6: !include api/documentation/yade/operations.md
         description7: !include api/documentation/yade/states.md
-        description8: !include api/documentation/yade/mandator.md
-        description9: !include api/documentation/yade/source.md
-        description10: !include api/documentation/yade/target.md
-        description11: !include api/documentation/yade/hasIntervention.md
-        description12: !include api/documentation/yade/isIntervention.md
-        description13: !include api/documentation/yade/profile.md
-        description14: !include api/documentation/yade/sourcePathRegex.md
-        description15: !include api/documentation/yade/targetPathRegex.md
-        description16: !include api/documentation/yade/sourcePath.md
-        description17: !include api/documentation/yade/targetPath.md
-        description18: !include api/documentation/common/limit.md
+        description8: !include api/documentation/yade/source.md
+        description9: !include api/documentation/yade/target.md
+        description10: !include api/documentation/yade/profile.md
+        description11: !include api/documentation/yade/patterns.md
+        description12: !include api/documentation/yade/sourceTargetPath.md
+        description13: !include api/documentation/common/limit.md
         description200: !include api/documentation/yade/transfers.md
         schema: !include api/schemas/yade/transferFilter-schema.json
         schema200: !include api/schemas/yade/transfers-schema.json
-        example: " "
-        example200: " "
+        example: !include api/examples/audit/audit-request-example.json
+        example200: !include api/examples/yade/transfers-example.json
 #
 #    /restart:
 #      type:
 #        postYADEJSONWithOkResponse:
-#          description: Restarts YADE transfers for some failed files
+#          description: Restarts file transfers for some failed files
 #          audit: !include api/documentation/audit/auditLog.md
 #          schema: !include api/schemas/yade/modifyTransfers-schema.json
 #          example: " "
 #  
-#  /files:
-#    type:
-#      postJSON:
-#        description: Responds transferred files
-#        description1: !include api/documentation/common/compact.md
-#        description2: " "
-#        description3: !include api/documentation/yade/transferIds.md
-#        description4: !include api/documentation/yade/interventionTransferIds.md
-#        description5: " "
-#        description6: !include api/documentation/yade/fileStates.md
-#        description7: " "
-#        description8: !include api/documentation/yade/sourcePath.md
-#        description9: !include api/documentation/yade/targetPath.md
-#        description10: !include api/documentation/common/limit.md
-#        description200: " "
-#        schema: !include api/schemas/yade/filesFilter-schema.json
-#        schema200: !include api/schemas/yade/files-schema.json
-#        example: " "
-#        example200: " "
-#
-#  /file:
-#    type:
-#      postJSON:
-#        description: Responds transferred file
-#        description1: !include api/documentation/common/compact.md
-#        description2: !include api/documentation/yade/fileId.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/yade/fileFilter-schema.json
-#        schema200: !include api/schemas/yade/file200-schema.json
-#        example: " "
-#        example200: " "
-#
+  /files:
+    type:
+      postJSONWithoutJSId:
+        description: Get transferred files
+        description1: " "
+        description2: " "
+        description3: !include api/documentation/yade/transferIds.md
+        description4: !include api/documentation/common/compact.md
+        description5: " "
+        description6: !include api/documentation/yade/fileStates.md
+        description7: !include api/documentation/yade/patterns.md
+        description8: !include api/documentation/yade/sourceTargetPath.md
+        description9: " "
+        description10: !include api/documentation/common/limit.md
+        description200: " "
+        schema: !include api/schemas/yade/filesFilter-schema.json
+        schema200: !include api/schemas/yade/files-schema.json
+        example: " "
+        example200: " "
+
+  /file:
+    type:
+      postJSONWithoutJSId:
+        description: Get transferred file
+        description1: " "
+        description2: !include api/documentation/yade/fileId.md
+        description3: !include api/documentation/common/compact.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/yade/fileFilter-schema.json
+        schema200: !include api/schemas/yade/file200-schema.json
+        example: " "
+        example200: " "
+
 #  /transfer/order:
 #    type:
 #      postJSON:
@@ -2342,7 +2235,7 @@ traits:
 #  /orders:
 #    type:
 #      postJSON:
-#        description: Returns a collection of orders (volatile part) filtered by a period, job chains or order state
+#        description: Get orders filtered by a period, job chains or order state
 #        description1: !include api/documentation/common/compact.md
 #        description2: " "
 #        description3: " "

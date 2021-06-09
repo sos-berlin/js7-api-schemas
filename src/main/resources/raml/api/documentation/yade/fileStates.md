@@ -1,5 +1,5 @@
 <tr><td>``states``</td><td>optional, array</td>
-<td>Filtered all YADE history item with transfer states such as
+<td>Limits result to transfer states
 <ul>
 <li>UNDEFINED</li>
 <li>WAITING</li>
@@ -15,7 +15,7 @@
 <li>DELETED</li>
 <li>RENAMED</li>
 <li>IGNORED_DUE_TO_ZEROBYTE_CONSTRAINT</li>
-<li>SETBACK</li>
+<li>ROLLED_BACK</li>
 <li>POLLING</li>
 </ul>
 </td><td>["SUCCESS"]</td><td></td></tr>

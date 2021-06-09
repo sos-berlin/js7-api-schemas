@@ -3,23 +3,21 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.yade.ProtocolFragment",
   "type": "object",
-  "description": "compact=true -> only required fields",
-  "required": [
-    "protocol",
-    "host"
-  ],
   "properties": {
     "host": {
-      "type": "string"
+      "$ref": "../common/string255required-schema.json"
     },
     "protocol": {
       "$ref": "protocol-schema.json"
     },
     "port": {
-      "$ref": "../common/nonNegativeInteger-schema.json"
+      "type": "integer",
+  	  "minimum": 0,
+  	  "maximum": 65535
     },
     "account": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

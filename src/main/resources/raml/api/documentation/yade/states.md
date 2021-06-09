@@ -1,5 +1,5 @@
 <tr><td>``states``</td><td>optional, array</td>
-<td>Filtered all YADE transfer items with states such as
+<td>Limits result to states
 <ul>
 <li>SUCCESS</li>
 <li>FAILED</li>
