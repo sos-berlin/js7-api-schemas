@@ -3,14 +3,20 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.yade.Transfer",
 	"type": "object",
-	"description": "compact=true -> required fields + possibly profile, target, end, error",
+	"description": "compact=true -> required fields + possibly numOfFiles, end, error",
 	"required": [
 		"id",
 		"surveyDate",
+		"historyId",
+		"controllerId",
+		"profile",
+		"state",
 		"_operation",
-		"start",
-		"source",
-		"historyId"
+		"workflowPath",
+		"orderId",
+		"job",
+		"jobPosition",
+		"start"
 	],
 	"properties": {
 		"surveyDate": {

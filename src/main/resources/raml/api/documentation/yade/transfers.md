@@ -4,10 +4,19 @@ It depends on the parameter ``compact``.
     * surveyDate
     * id
     * historyId
+    * controllerId
     * profile
     * state
-    * controllerId
     * _operation
+    * workflowPath
+    * orderId
+    * job
+    * jobPosition
+    * numOfFiles
+    * start
+    * end
+    * error
+* The detailed view has the following fields in addition to the compact view
     * source
     	* account
     	* host
@@ -18,17 +27,9 @@ It depends on the parameter ``compact``.
     	* host
     	* port
     	* protocol
-    * numOfFiles
-    * start
-    * end
-    * error
-* The detailed view has the following fields in addition to the compact view
     * jump
     	* host
     	* user
     	* port
     	* protocol
-    * workflowPath
-    * orderId
-    * job
-    * jobPosition
+    

@@ -10,9 +10,6 @@
         "$ref": "../common/nonNegativeLong-schema.json"
       }
     },
-    "compact": {
-      "$ref": "../common/compactParam-schema.json"
-    },
     "states": {
       "type": "array",
       "items": {
