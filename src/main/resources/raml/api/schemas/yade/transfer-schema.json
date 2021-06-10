@@ -53,7 +53,7 @@
 			"$ref": "protocolFragment-schema.json"
 		},
 		"numOfFiles": {
-			"$ref": "../common/nonNegativeInteger-schema.json"
+			"$ref": "../common/nonNegativeLong-schema.json"
 		},
 		"controllerId": {
 			"$ref": "../common/controllerId-schema.json"
