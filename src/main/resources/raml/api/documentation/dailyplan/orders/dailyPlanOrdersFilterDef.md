@@ -14,10 +14,13 @@ dailyPlanDate
 schedulePaths
 </li>
 <li>
-folders
+schedulefolders
 </li>
 <li>
 workflowPaths
+</li>
+<li>
+workflowfolders
 </li>
 <li>
 late

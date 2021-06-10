@@ -1,8 +1,24 @@
-<tr><td>``folders``</td>
+<tr><td>``scheduleFolders``</td>
 	
-<td>optional; array[folder]</td>
+<td>optional; array[schedulerFolder]</td>
 	
-<td>Filters all orders in the given daily plan that have been generated with a schedule located in of the given folders.
+<td>Filters all orders in the given daily plan that have been generated with a schedule located in one of the given folders.
+Depending on the value for "recursive" also in one of the subfolders recursivly.
+</td>
+<td> [{
+  <div style="padding-left:10px;">"folder": "/sos",</div>
+  <div style="padding-left:10px;">"recursive": true</div>
+  }]
+  </td>
+<td></td>
+	
+</tr>
+
+<tr><td>``workflowFolders``</td>
+	
+<td>optional; array[workflowFolder]</td>
+	
+<td>Filters all orders in the given daily plan that have been generated with a schedule assigned to a workflow located in one of the given folders.
 Depending on the value for "recursive" also in one of the subfolders recursivly.
 </td>
 <td> [{
