@@ -8,8 +8,12 @@
 		"controllerId": {
 			"$ref": "../../common/controllerId-schema.json"
 		},
-		"startTime": {
-			"$ref": "../../common/timestamp-schema.json"
+		"scheduledFor": {
+			"$ref": "../../common/timestampWithNow-schema.json"
+		},
+		"timeZone": {
+			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+			"$ref": "../../common/string255-schema.json"
 		},
 		"variables": {
 			"$ref": "../../../../inventory/schemas/common/variables-schema.json"

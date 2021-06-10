@@ -11,7 +11,10 @@
 				"$ref": "../../common/nonNegativeLong-schema.json"
 			}
 		},
-		"folders": {
+		"scheduleFolders": {
+			"$ref": "../../common/folders-schema.json"
+		},
+		"workflowFolders": {
 			"$ref": "../../common/folders-schema.json"
 		},
 		"schedulePaths": {

@@ -12,6 +12,9 @@
 		"startMode"
 	],
 	"properties": {
+	    "controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
 		"surveyDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
