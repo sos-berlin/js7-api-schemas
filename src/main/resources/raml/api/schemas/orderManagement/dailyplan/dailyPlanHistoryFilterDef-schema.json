@@ -17,6 +17,9 @@
 		"controllerId": {
 			"$ref": "../../common/controllerId-schema.json"
 		},
+		"auditLogId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
 		"controllerIds": {
 			"type": "array",
 			"items": {
