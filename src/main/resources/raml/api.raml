@@ -80,22 +80,39 @@ traits:
   - accessToken: !include api/traits/accessToken.raml
   - filename: !include api/traits/filename.raml
 
-/agent/reset:
-  type:
-    postJSONWithOkResponse:
-      description: Reset Agent
-      description1: !include api/documentation/agent/agentId.md
-      description2: !include api/documentation/audit/auditLog.md
-      description3: " "
-      description4: " "
-      description5: " "
-      description6: " "
-      description7: " "
-      description8: " "
-      description9: " "
-      description10: " "
-      schema: !include api/schemas/agent/agentCommand-schema.json
-      example: " "
+/agent
+  /reset:
+    type:
+      postJSONWithOkResponse:
+        description: Reset Agent
+        description1: !include api/documentation/agent/agentId.md
+        description2: !include api/documentation/audit/auditLog.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/agent/agentCommand-schema.json
+        example: " "
+  /remove:
+    type:
+      postJSONWithOkResponse:
+        description: Removes Agent
+        description1: !include api/documentation/agent/agentId.md
+        description2: !include api/documentation/audit/auditLog.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/agent/agentCommand-schema.json
+        example: " "
       
 /agents:
   type:
