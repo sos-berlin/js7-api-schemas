@@ -81,10 +81,10 @@ traits:
   - filename: !include api/traits/filename.raml
 
 /agent:
-  /reset:
+  /remove:
     type:
       postJSONWithOkResponse:
-        description: Reset Agent
+        description: Removes Agent
         description1: !include api/documentation/agent/agentId.md
         description2: !include api/documentation/audit/auditLog.md
         description3: " "
@@ -97,10 +97,10 @@ traits:
         description10: " "
         schema: !include api/schemas/agent/agentCommand-schema.json
         example: " "
-  /remove:
+  /reset:
     type:
       postJSONWithOkResponse:
-        description: Removes Agent
+        description: Reset Agent
         description1: !include api/documentation/agent/agentId.md
         description2: !include api/documentation/audit/auditLog.md
         description3: " "
