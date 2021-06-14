@@ -1,6 +1,6 @@
 <tr><td>``dateTo``</td><td>optional, string</td><td>The value has multiple formats
 <ul>
-<li>Filters items ending before a date.</li>
+<li>Filters Orders whose schedule is before a date.</li>
 <li>an ISO 8601 date format with the <i>time offset</i> and milliseconds being optional, e.g.
   <ul>
     <li>YYYY-MM-DDThh:mm:ss[.s][Z (Z means +00)]</li>
@@ -29,3 +29,6 @@
 <li>the value 0 indicates the current time</li>
 </ul>
 </td><td>1d</td><td></td></tr>
+<tr><td>``timeZone``</td><td>optional, string</td><td><ul><li>If this parameter is set then it beats the time offset of absolute dates in ``dateTo``</li><li>See here the list for <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="wiki">available time zones</a>.</li></ul></td><td>Europe/Berlin</td><td></td></tr>
+<tr><td>``scheduledNever``</td><td>optional, boolean</td>
+<td>Filters Orders whose schedule is "never". If this value is "true" than ``dateTo`` is ignored.</td><td></td><td>false</td></tr>
