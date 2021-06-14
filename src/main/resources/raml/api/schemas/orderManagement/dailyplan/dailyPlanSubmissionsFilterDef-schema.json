@@ -6,13 +6,13 @@
 	"description": "Define the filter To get submissions from the daily plan",
 	"properties": {
 		"dateFrom": {
-			"$ref": "../../common/dateFromTo-schema.json"
+			"$ref": "../../common/date-schema.json"
 		},
 		"dateTo": {
-			"$ref": "../../common/dateFromTo-schema.json"
+			"$ref": "../../common/date-schema.json"
 		},
 		"dateFor": {
-			"$ref": "../../common/dateFromTo-schema.json"
+			"$ref": "../../common/date-schema.json"
 		},
 		"controllerIds": {
 			"type": "array",
