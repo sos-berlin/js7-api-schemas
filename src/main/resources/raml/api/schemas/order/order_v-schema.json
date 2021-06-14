@@ -42,6 +42,10 @@
     "scheduledFor": {
       	"$ref": "../common/nonNegativeLong-schema.json"
     },
+    "scheduledNever": {
+      	"type": "boolean",
+      	"default": false
+    },
     "lastOutcome": {
       	"$ref": "../../../controller/schemas/common/outcome-schema.json"
     },
