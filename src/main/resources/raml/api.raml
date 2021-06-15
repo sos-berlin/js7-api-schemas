@@ -840,9 +840,9 @@ traits:
         description: Import Documentations
   /delete:
     type:
-      postJSON:
-        description: Deletes a list of Documentations
-        description1: !include api/documentation/docu/filteredByPaths.md
+      postJSONWithoutJSId:
+        description: Deletes Documentations
+        description1: !include api/documentation/docu/delete.md
         description2: " "
         description3: " "
         description4: " "
@@ -853,7 +853,7 @@ traits:
         description9: " "
         description10: !include api/documentation/audit/auditLog.md
         description200: " "
-        schema: !include api/schemas/docu/documentationsFilter-schema.json
+        schema: !include api/schemas/docu/documentationsDeleteFilter-schema.json
         schema200: ok
         example: " "
         example200: " "
