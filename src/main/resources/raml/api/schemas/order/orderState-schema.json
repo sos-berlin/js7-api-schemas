@@ -13,6 +13,9 @@
     },
     "_text": {
       "$ref": "../order/orderStateText-schema.json"
+    },
+    "_marked": {
+      "$ref": "../order/orderMarkText-schema.json"
     }
   }
 }
