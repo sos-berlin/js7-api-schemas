@@ -1,7 +1,7 @@
 {
 	"title": "xmleditor deploy configuration in",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.xmleditor.deploy.DeployConfiguration",
+	"javaType": "com.sos.joc.model.xmleditor.release.ReleaseConfiguration",
 	"type": "object",
 	"description": "",
 	"required": [

@@ -1,9 +1,9 @@
 {
 	"title": "xmleditor delete draft configuration in",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.xmleditor.delete.DeleteDraft",
+	"javaType": "com.sos.joc.model.xmleditor.remove.RemoveConfiguration",
 	"type": "object",
-	"description": "id only for OTHER",
+	"description": "id only for OTHER and YADE, release only for NOTIFICATION",
 	"required": [
 		"controllerId",
 		"objectType"
@@ -17,6 +17,9 @@
 		},
 		"id": {
 			"type": "integer"
+		},
+		"release": {
+			"type": "boolean"
 		}
 	}
 }
