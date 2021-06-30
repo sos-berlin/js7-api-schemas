@@ -74,6 +74,9 @@ Different events trigger the following different actions:
 	* Task Tab: once for following event
 		* **HistoryTaskStarted**  (is sent only in an active JOC node)
 		* **HistoryTaskTerminated**  (is sent only in an active JOC node)
+* Update ``DailyPlan View``: for each following event 
+	* **DailyPlanUpdated**
+		* It contains the changed date in the "message" field
 * Alert ``Problem``: for each following event
 	* **ProblemEvent** 
 		* but only in that browser window where the accesstoken of the event equals the window's accesstoken.
