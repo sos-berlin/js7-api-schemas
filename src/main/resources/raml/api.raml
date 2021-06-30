@@ -840,9 +840,9 @@ traits:
         description: Import Documentations
   /delete:
     type:
-      postJSON:
-        description: Deletes a list of Documentations
-        description1: !include api/documentation/docu/filteredByPaths.md
+      postJSONWithoutJSId:
+        description: Deletes Documentations
+        description1: !include api/documentation/docu/delete.md
         description2: " "
         description3: " "
         description4: " "
@@ -853,7 +853,7 @@ traits:
         description9: " "
         description10: !include api/documentation/audit/auditLog.md
         description200: " "
-        schema: !include api/schemas/docu/documentationsFilter-schema.json
+        schema: !include api/schemas/docu/documentationsDeleteFilter-schema.json
         schema200: ok
         example: " "
         example200: " "
@@ -1528,10 +1528,11 @@ traits:
     type:
       postOnlyAccessToken:
         description: |
-          Response contains some settings from joc.properties file such as 
+          Response contains some settings from joc.properties file such as<h5> 
           * pre-defined audit log comments
           * flag to force audit log comments
-          * show/hide views 
+          * show/hide views
+          </h5>
         description200: " "
         schema200: !include api/schemas/joc/properties-schema.json
         example200: !include api/examples/joc/properties-example.json
@@ -1699,7 +1700,7 @@ traits:
       description5: !include api/documentation/common/regex.md
       description6: !include api/documentation/order/state.md
       description7: !include api/documentation/order/dateTo.md
-      description8: !include api/documentation/order/timeZone.md
+      description8: " "
       description9: " "
       description10: " "
       description200: !include api/documentation/order/orders_v.md
@@ -1716,6 +1717,13 @@ traits:
       modifyOrder:
         description: Cancel orders  
         signalParam: !include api/documentation/order/signal.md
+        positionParam: ""
+        audit: !include api/documentation/audit/auditLog.md
+  /confirm:
+    type:
+      modifyOrder:
+        description: Confirm prompting orders  
+        signalParam: ""
         positionParam: ""
         audit: !include api/documentation/audit/auditLog.md
   /daily_plan/cancel:
@@ -1766,11 +1774,12 @@ traits:
           description: |
             Summary with number of<h5>
             * pending orders
-            * calling orders
+            * scheduled orders
             * running orders
             * orders in progress
             * suspended orders
             * failed orders
+            * prompting orders
             * waiting orders
             * blocked orders
             * terminated orders
@@ -1782,7 +1791,7 @@ traits:
           description5: " "
           description6: " "
           description7: !include api/documentation/order/dateTo.md
-          description8: !include api/documentation/order/timeZone.md
+          description8: " "
           description9: " "
           description10: " "
           description200: " "

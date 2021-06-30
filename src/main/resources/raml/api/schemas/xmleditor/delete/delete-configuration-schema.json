@@ -1,9 +1,9 @@
 {
-	"title": "xmleditor read configuration in",
+	"title": "xmleditor delete draft configuration in",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.xmleditor.read.ReadConfiguration",
+	"javaType": "com.sos.joc.model.xmleditor.delete.DeleteConfiguration",
 	"type": "object",
-	"description": "id only for OTHER, forceRelease for notification ",
+	"description": "id only for OTHER and YADE, release only for NOTIFICATION",
 	"required": [
 		"controllerId",
 		"objectType"
@@ -18,7 +18,7 @@
 		"id": {
 			"type": "integer"
 		},
-		"forceRelease": {
+		"release": {
 			"type": "boolean"
 		}
 	}

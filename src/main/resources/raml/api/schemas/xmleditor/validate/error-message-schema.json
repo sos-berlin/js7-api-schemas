@@ -21,6 +21,9 @@
 		},
 		"elementPosition": {
 			"type": "string"
+		},
+		"fatal": {
+			"type": "boolean"
 		}
 	}
 }

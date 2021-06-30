@@ -26,6 +26,9 @@
     "numOfJunctions": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },
+    "numOfJobResources": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
     "numOfFileOrderSources": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },

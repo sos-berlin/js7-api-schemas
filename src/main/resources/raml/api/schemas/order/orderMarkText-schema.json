@@ -1,0 +1,12 @@
+{
+  "title": "order mark text",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderMarkText",
+  "type": "string",
+  "enum": [
+    "CANCELLING",
+    "RESUMING",
+    "SUSPENDING"
+  ]
+}
+

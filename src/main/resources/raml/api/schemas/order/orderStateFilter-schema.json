@@ -5,20 +5,24 @@
   "type": "string",
   "enum": [
     "pending",
+    "scheduled",
     "running",
     "suspended",
     "failed",
     "blocked",
     "waiting",
+    "prompting",
     "terminated"
   ],
   "javaEnumNames": [
     "pending",
+    "scheduled",
     "running",
     "suspended",
     "failed",
     "blocked",
     "waiting",
+    "prompting",
     "terminated"
   ]
 }

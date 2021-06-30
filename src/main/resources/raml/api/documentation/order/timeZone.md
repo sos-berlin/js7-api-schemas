@@ -1,1 +1,0 @@
-<tr><td>``timeZone``</td><td>optional, string</td><td><ul><li>If this parameter is set then it beats the time offset of absolute dates in ``dateTo``</li><li>See here the list for <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="wiki">available time zones</a>.</li></ul></td><td>Europe/Berlin</td><td></td></tr>

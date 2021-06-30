@@ -1,7 +1,7 @@
 {
   "title": "order history log entries",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.webservices.json.jobscheduler.history.order.OrderLogEntries",
+  "javaType": "com.sos.joc.model.history.order.OrderLogEntries",
   "type": "object",
   "properties": {
     "entries": {

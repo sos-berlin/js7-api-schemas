@@ -26,15 +26,18 @@
 			"type": "string"
 		},
 		"state": {
-			"$ref": "read-standard-configuration-answer-state-schema.json"
+			"$ref": "../../../inventory/common/itemStateEnum-schema.json"
+		},
+		"released": {
+			"type": "boolean"
+		},
+		"hasReleases": {
+			"type": "boolean"
 		},
 		"validation": {
 			"$ref": "../../validate/validate-configuration-answer-schema.json"
 		},
-		"warning": {
-			"$ref": "../../common/answer-message-schema.json"
-		},
-		"modified": {
+		"configurationDate": {
 			"$ref": "../../../common/timestamp-schema.json"
 		}
 	}
