@@ -7,10 +7,16 @@
     "pending": {
       "$ref": "../common/nonNegativeInteger-schema.json"
     },
+    "scheduled": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
     "inProgress": {
       "$ref": "../common/nonNegativeInteger-schema.json"
     },
     "running": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "prompting": {
       "$ref": "../common/nonNegativeInteger-schema.json"
     },
     "suspended": {

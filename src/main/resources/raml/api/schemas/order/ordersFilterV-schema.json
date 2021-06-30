@@ -47,6 +47,7 @@
       "type": "string"
     },
     "scheduledNever": {
+      "description": "deprecated -> is State.PENDING",
       "type": "boolean",
       "default": false
     }

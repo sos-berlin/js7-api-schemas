@@ -1719,6 +1719,13 @@ traits:
         signalParam: !include api/documentation/order/signal.md
         positionParam: ""
         audit: !include api/documentation/audit/auditLog.md
+  /confirm:
+    type:
+      modifyOrder:
+        description: Confirm prompting orders  
+        signalParam: ""
+        positionParam: ""
+        audit: !include api/documentation/audit/auditLog.md
   /daily_plan/cancel:
     type:
       postJSON:
@@ -1767,11 +1774,12 @@ traits:
           description: |
             Summary with number of<h5>
             * pending orders
-            * calling orders
+            * scheduled orders
             * running orders
             * orders in progress
             * suspended orders
             * failed orders
+            * prompting orders
             * waiting orders
             * blocked orders
             * terminated orders

@@ -10,6 +10,7 @@ Possible values are:
 <ul>
 <li>PLANNED</li>
 <li>PENDING</li>
+<li>SCHEDULED</li>
 <li>RUNNING</li>
 <li>BLOCKED</li>
 <li>FINISHED</li>

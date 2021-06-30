@@ -46,8 +46,13 @@
       	"$ref": "../common/nonNegativeLong-schema.json"
     },
     "scheduledNever": {
+        "description": "deprecated -> is State.PENDING",
       	"type": "boolean",
       	"default": false
+    },
+    "question": {
+    	"description": "only relevant for state PROMPTING",
+      	"type": "string"
     },
     "lastOutcome": {
       	"$ref": "../../../controller/schemas/common/outcome-schema.json"
