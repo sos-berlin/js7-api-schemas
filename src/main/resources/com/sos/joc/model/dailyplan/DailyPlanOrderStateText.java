@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 public enum DailyPlanOrderStateText {
 
     PLANNED(0),
-    SUBMMITTED(1),
+    SUBMITTED(1),
     FINISHED(8);
     private final Integer intValue;
     private final static Map<String, DailyPlanOrderStateText> CONSTANTS = new HashMap<String, DailyPlanOrderStateText>();
