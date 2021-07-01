@@ -79,6 +79,9 @@ Different events trigger the following different actions:
 		* It contains the changed date in the "message" field
 * Alert ``Problem``: for each following event
 	* **ProblemEvent** 
-		* but only in that browser window where the accesstoken of the event equals the window's accesstoken.
-		* It contains a message in the "message" field 
+		* It contains a message in the "message" field
+		* Use a red color as background-color
+	* **ProblemAsHintEvent** 
+		* It contains a message in the "message" field
+		* Use a yellow color as background-color 
 		
