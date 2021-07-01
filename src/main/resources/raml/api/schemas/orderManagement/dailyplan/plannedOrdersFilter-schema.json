@@ -19,7 +19,7 @@
 		"states": {
 			"type": "array",
 			"items": {
-				"$ref": "../../order/orderStateText-schema.json"
+				"$ref": "dailyPlanOrderStateText-schema.json"
 			}
 		},
 		"late": {
