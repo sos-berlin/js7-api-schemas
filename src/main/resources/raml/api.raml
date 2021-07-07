@@ -1657,6 +1657,25 @@ traits:
       type:
         postOrderLogWithPlainResponse:
           description: Provides order log as download
+  /variables:
+    type:
+      postJSON:
+        description: Get variables that were returned by the jobs before specified position
+        description1: " "
+        description2: " "
+        description3: !include api/documentation/order/orderIdRequired.md
+        description4: !include api/documentation/order/position.md
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: TODO
+        schema: !include api/schemas/order/orderVariablesFilter-schema.json
+        schema200: !include api/schemas/order/ordersPositions-schema.json
+        example: " "
+        example200: " "
 
 #  /documentation:
 #    get:
@@ -1717,14 +1736,16 @@ traits:
       modifyOrder:
         description: Cancel orders  
         signalParam: !include api/documentation/order/signal.md
-        positionParam: ""
+        positionParam: " "
+        variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
   /confirm:
     type:
       modifyOrder:
         description: Confirm prompting orders  
-        signalParam: ""
-        positionParam: ""
+        signalParam: " "
+        positionParam: " "
+        variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
   /daily_plan/cancel:
     type:
@@ -1836,20 +1857,42 @@ traits:
         description: Remove orders when terminated
         signalParam: " "
         positionParam: " "
+        variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
   /resume:
     type:
       modifyOrder:
-        description: Resume orders when suspended
+        description: Resume orders when suspended or failed
         signalParam: " "
         positionParam: !include api/documentation/order/position.md
+        variablesParam: !include api/documentation/order/variables.md
         audit: !include api/documentation/audit/auditLog.md
+    /positions:
+      type:
+        postJSON:
+          description: Get common allowed Workflow position for resuming orders
+          description1: !include api/documentation/order/orderIds.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema200: !include api/schemas/order/ordersPositions-schema.json
+          schema: modifyOrders
+          example: " "
+          example200: " "
   /suspend:
     type:
       modifyOrder:
         description: Suspend orders
         signalParam: !include api/documentation/order/signal.md
         positionParam: " "
+        variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
         
 /profile:

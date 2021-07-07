@@ -34,7 +34,7 @@
 		"position": {
 			"$ref": "../../../controller/schemas/common/position-schema.json"
 		},
-		"arguments": {
+		"variables": {
 			"$ref": "../../../inventory/schemas/common/variables-schema.json"
 		},
 		"auditLog": {
