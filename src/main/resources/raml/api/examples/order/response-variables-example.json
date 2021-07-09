@@ -1,0 +1,13 @@
+{
+    "deliveryDate": "2021-07-08T17:10:33.938+0000",
+    "surveyDate": "2021-07-07T14:35:33.961+0000",
+    "workflowId": {
+        "path": "/test/w1",
+        "versionId": "dc6f31f8-9e7e-48ba-947a-f86e0f970055"
+    },
+    "variables": {
+        "hello": "world",
+        "returnCode": 0
+    },
+    "variablesNotSettable": false
+}

@@ -1671,11 +1671,11 @@ traits:
         description8: " "
         description9: " "
         description10: " "
-        description200: TODO
+        description200: !include api/documentation/order/variables200.md
         schema: !include api/schemas/order/orderVariablesFilter-schema.json
         schema200: !include api/schemas/order/ordersPositions-schema.json
-        example: " "
-        example200: " "
+        example: !include api/examples/order/request-variables-example.json
+        example200: !include api/examples/order/response-variables-example.json
 
 #  /documentation:
 #    get:
@@ -1881,11 +1881,11 @@ traits:
           description8: " "
           description9: " "
           description10: " "
-          description200: " "
+          description200: !include api/documentation/order/positions200.md
           schema200: !include api/schemas/order/ordersPositions-schema.json
           schema: modifyOrders
-          example: " "
-          example200: " "
+          example: !include api/examples/order/request-positions-example.json
+          example200: !include api/examples/order/response-positions-example.json
   /suspend:
     type:
       modifyOrder:
