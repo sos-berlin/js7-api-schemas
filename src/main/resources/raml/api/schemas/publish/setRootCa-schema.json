@@ -1,0 +1,27 @@
+{
+  "title": "set Root CA private key and/or certificate filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.SetRootCaFilter",
+  "type": "object",
+  "anyOf": [{
+    "required": [
+        "privateKey"
+      ]
+    }, {
+      "required": [
+        "certificate"
+      ]
+    }
+  ],
+  "properties": {
+    "privateKey": {
+      "type": "string"
+    },
+    "certificate": {
+      "type": "string"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

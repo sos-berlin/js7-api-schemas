@@ -65,6 +65,7 @@ resourceTypes:
   - loginConfiguration: !include api/resourceTypes/configuration/login.raml
   - postForDownloadUnsigned: !include api/resourceTypes/publish/postForDownloadUnsigned.raml
   - postForUploadSigned: !include api/resourceTypes/publish/postForUploadSigned.raml
+  - postForUploadSignedRootCa: !include api/resourceTypes/publish/postForUploadSignedRootCa.raml
   - postForUploadUnsigned: !include api/resourceTypes/publish/postForUploadUnsigned.raml
   - postForGenerateKey: !include api/resourceTypes/publish/postForGenerateKey.raml
   - postForExport: !include api/resourceTypes/publish/postForExport.raml
@@ -1925,6 +1926,52 @@ traits:
         
 /profile:
   description: This is not an API call. Use child urls instead!
+
+  /ca:
+    type:
+      postWithoutJSONandJSId:
+        description: gets the stored CAs ECDSA private key and X509 certificate
+        description1: " "
+        description2: " "
+        schema: !include api/examples/publish/emptyBody-example.json
+        schema200: !include api/schemas/sign/jocKeyPair-schema.json
+        example: !include api/examples/publish/emptyBody-example.json
+        example200: !include api/examples/publish/showKey-example.json
+    
+    /generate:
+      type:
+        postForGenerateKey:
+          description: generates and stores a new CA ECDSA private key and a X509 certificate
+          description1: !include api/documentation/publish/generateRootCA.md
+          description2: " "
+          audit: !include api/documentation/audit/auditLog.md
+          description200: " "
+          schema200: !include api/schemas/sign/jocKeyPair-schema.json
+          example200: !include api/examples/publish/showKey-example.json
+          schema: !include api/schemas/publish/generateCaFilter-schema.json
+          example: !include api/examples/publish/generateRootCa-example.json
+  
+    /import:
+      type:
+        postForUploadSignedRootCa:
+          description: |
+            imports a CAs ECDSA Private Key or a X509 Certificate file(ASCII format only, no binary files)
+            and stores the file content
+          schema: !include api/schemas/publish/importRootCaFilter-schema.json
+          example: " "
+
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: stores a new CAs ECDSA private key and/or a X509 certificate (PEM format only)
+          description1: !include api/documentation/publish/setECPrivateKey.md
+          description2: !include api/documentation/publish/setRootCaCertificate.md
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/setRootCa-schema.json
+          example: !include api/examples/publish/setRootCa-example.json
 
   /key:
     type:

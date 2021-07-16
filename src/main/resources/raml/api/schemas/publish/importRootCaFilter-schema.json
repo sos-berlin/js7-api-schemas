@@ -1,0 +1,11 @@
+{
+	"title": "Import Root CA Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.ImportRootCaFilter",
+	"type": "object",
+	"properties": {
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	}
+}

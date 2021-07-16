@@ -6,11 +6,13 @@
   "enum": [
     0,
     1,
-    2
+    2,
+    3
   ],
   "javaEnumNames": [
     "PRIVATE",
     "PUBLIC",
-    "X509"
+    "X509",
+    "CA"
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "title": "set generate CA filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.GenerateCaFilter",
+  "type": "object",
+  "required": [
+    "commonName",
+    "organizationUnit",
+    "organization",
+    "countryCode"
+  ],
+  "properties": {
+    "commonName": {
+      "type": "string"
+    },
+    "organizationUnit" : {
+      "type" : "string"
+    },
+    "organization" : {
+      "type" : "string"
+    },
+    "countryCode" : {
+      "type" : "string"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}
