@@ -8,19 +8,7 @@
 		"controllerIds": {
 			"type": "array",
 			"items": {
-				"type": "string"
-			}
-		},
-		"scheduleNames": {
-			"type": "array",
-			"items": {
-				"$ref": "../../common/javaString255-schema.json"
-			}
-		},
-		"workflowNames": {
-			"type": "array",
-			"items": {
-				"$ref": "../../common/javaString255-schema.json"
+				"$ref": "../../common/controllerId-schema.json"
 			}
 		},
 		"schedulePaths": {
