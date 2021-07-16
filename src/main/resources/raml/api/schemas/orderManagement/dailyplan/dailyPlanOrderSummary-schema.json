@@ -4,10 +4,10 @@
   "javaType": "com.sos.joc.model.dailyplan.DailyPlanOrdersSummary",
   "type": "object",
   "properties": {
-    "pending": {
+    "submitted": {
       "$ref": "../../common/nonNegativeInteger-schema.json"
     },
-    "pendingLate": {
+    "submittedLate": {
       "$ref": "../../common/nonNegativeInteger-schema.json"
     },
     "planned": {

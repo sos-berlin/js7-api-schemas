@@ -6,8 +6,10 @@
   "enum": [
     "PLANNED",
     "PENDING",
+    "SCHEDULED",
     "RUNNING",
     "INPROGRESS",
+    "PROMPTING",
     "SUSPENDED",
     "FAILED",
     "WAITING",

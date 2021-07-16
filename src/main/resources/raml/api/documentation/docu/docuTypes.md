@@ -1,8 +1,26 @@
 <tr><td>``types``</td><td>optional, array</td>
-<td>This parameter restricts the documentations. Only documentations are in the response with specified media subtypes<br/>
-Supported types are ["html", "xml", "xsl", "xsd", "javascript", "json", "css", "markdown", "gif", "jpeg", "png"]</td>
+<td>Limits the result to documentations with specified media subtypes<br/>
+Supported types are
+<ul>
+	<li>"pdf"</li>
+	<li>"html"</li>
+	<li>"xml"</li>
+	<li>"xsl"</li>
+	<li>"xsd"</li>
+	<li>"javascript"</li>
+	<li>"json"</li>
+	<li>"css"</li>
+	<li>"markdown"</li>
+	<li>"gif"</li>
+	<li>"jpeg"</li>
+	<li>"png"</li>
+</ul>
+	</td>
 <td> [
   <div style="padding-left:10px;">"html",</div>
   <div style="padding-left:10px;">"xml"</div>
    ]</td>
 <td></td></tr>
+<tr><td>``onlyWithAssignReference``</td><td>optional, boolean</td>
+<td>Limits the result to documentations that have a reference for assignment</td>
+<td></td><td>false</td></tr>

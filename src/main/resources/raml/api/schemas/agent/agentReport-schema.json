@@ -1,0 +1,30 @@
+{
+  "title": "agent report",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentReport",
+  "type": "object",
+  "required": [
+    "agentId",
+    "url",
+    "numOfSuccessfulTasks",
+    "numOfJobs"
+  ],
+  "properties": {
+    "controllerId": {
+      "type": "string"
+    },
+    "agentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "url": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "numOfSuccessfulTasks": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfJobs": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

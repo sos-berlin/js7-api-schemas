@@ -4,11 +4,16 @@
   "javaType": "com.sos.joc.model.audit.AuditLogItem",
   "type": "object",
   "required": [
+    "id",
     "account",
     "request",
+    "category",
     "created"
   ],
   "properties": {
+    "id": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
     "account": {
       "$ref": "../common/string255-schema.json"
     },
@@ -21,23 +26,14 @@
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
     },
+    "category": {
+      "$ref": "category-schema.json"
+    },
     "comment": {
       "type": "string"
     },
     "parameters": {
       "description": "JSON object as string, parameter of request",
-      "type": "string"
-    },
-    "job": {
-      "type": "string"
-    },
-    "workflow": {
-      "type": "string"
-    },
-    "orderId": {
-      "type": "string"
-    },
-    "calendar": {
       "type": "string"
     },
     "timeSpent": {
@@ -46,6 +42,11 @@
     },
     "ticketLink": {
       "type": "string"
+    },
+    "commitId": {
+      "description": "it is only relevant for category 'DEPLOYMENT' and useful to create a link to the deployment history",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F-]+$"
     }
   }
 }

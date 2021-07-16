@@ -44,7 +44,6 @@ resourceTypes:
   - postJSONWithoutJSId: !include api/resourceTypes/common/postJSONWithoutJSId.raml
   - postWithoutJSONandJSId: !include api/resourceTypes/common/postWithoutJSONandJSId.raml
   - postJSONWithOkWithoutJSId: !include api/resourceTypes/common/postJSONWithOkWithoutJSId.raml
-  - postJSON18: !include api/resourceTypes/common/postJSON18.raml
   - postYADEJSONWithOkResponse: !include api/resourceTypes/yade/postJSONWithOkResponse.raml
   - postOnlyAccessToken: !include api/resourceTypes/common/postOnlyAccessToken.raml
   - postOnlyId: !include api/resourceTypes/common/postOnlyId.raml
@@ -287,6 +286,11 @@ traits:
           }
         schema200: ok
 
+/documentation/{accessToken}/{path}:
+   type:
+      getDocu:
+        description: " "
+        
 /events:
   type:
     postEvent:

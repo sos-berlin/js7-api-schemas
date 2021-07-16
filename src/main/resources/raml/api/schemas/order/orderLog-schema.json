@@ -16,10 +16,13 @@
     "eventId": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },
+    "historyId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    },
     "logEvents": {
       "type": "array",
       "items": {
-        "$ref": "orderLogItem-schema.json"
+        "$ref": "../history/order/orderLogEntry-schema.json"
       }
     }
   }

@@ -12,6 +12,9 @@
 		"startMode"
 	],
 	"properties": {
+	    "controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
 		"surveyDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
@@ -85,7 +88,7 @@
 			"type": "boolean"
 		},
 		"state": {
-			"$ref": "../../order/orderState-schema.json"
+			"$ref": "dailyPlanOrderState-schema.json"
 		}
 	}
 }

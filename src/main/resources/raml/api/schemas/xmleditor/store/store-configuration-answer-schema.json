@@ -3,7 +3,7 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.xmleditor.store.StoreConfigurationAnswer",
 	"type": "object",
-	"description": "",
+	"description": "state,releases, hasReleases only for notification",
 	"properties": {
 		"id": {
 			"type": "integer"
@@ -11,8 +11,14 @@
 		"modified": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
-		"message": {
-			"$ref": "../common/answer-message-schema.json"
+		"state": {
+			"$ref": "../../inventory/common/itemStateEnum-schema.json"
+		},
+		"released": {
+			"type": "boolean"
+		},
+		"hasReleases": {
+			"type": "boolean"
 		}
 	}
 }

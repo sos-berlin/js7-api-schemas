@@ -1,0 +1,24 @@
+{
+  "title": "error",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.PositionChange",
+  "type": "object",
+  "required": [
+    "code",
+    "message"
+  ],
+  "description": "reasons that disallow the position change",
+  "properties": {
+    "code": {
+      "type": "string",
+      "javaType": "com.sos.joc.model.order.PositionChangeCode",
+      "enum": [
+      	"NOT_ONE_WORKFLOW",
+      	"NO_COMMON_POSITIONS"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

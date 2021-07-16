@@ -4,9 +4,6 @@
   "javaType": "com.sos.joc.model.docu.DeployDocumentations",
   "type": "object",
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
     "documentations": {
       "type": "array",
       "items": {

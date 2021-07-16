@@ -34,6 +34,10 @@ post:
         X-Log-Event-Id:
           type: number
           required: false
+        X-Log-Task-Id:
+          description: for ./task/log
+          type: number
+          required: false
       body:
         text/plain:
           example: <<example200>>

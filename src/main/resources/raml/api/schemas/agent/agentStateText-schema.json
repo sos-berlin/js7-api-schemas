@@ -5,7 +5,8 @@
   "type": "string",
   "enum": [
       "COUPLED",
-      "DECOUPLED",
+      "RESETTING",
+      "RESET",
       "COUPLINGFAILED",
       "UNKNOWN"
   ]

@@ -1,0 +1,8 @@
+{
+  "title": "glob pattern",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "pattern with wildcards '*' and '?' where '*' match zero or more characters and '?' match any single character",
+  "type": "string",
+  "pattern": "^[^<>]*$",
+  "maxLength": 255
+}

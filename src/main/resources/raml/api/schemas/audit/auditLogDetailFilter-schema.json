@@ -1,0 +1,14 @@
+{
+  "title": "auditLogDetailFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.audit.AuditLogDetailFilter",
+  "type": "object",
+  "required": [
+  	"auditLogId"
+  ],
+  "properties": {
+    "auditLogId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

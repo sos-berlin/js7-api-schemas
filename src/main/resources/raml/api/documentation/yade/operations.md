@@ -1,5 +1,5 @@
 <tr><td>``operations``</td><td>optional, array</td>
-<td>Filtered all YADE history item with operations such as
+<td>Limits result to specified operations
 <ul>
 <li>COPY</li>
 <li>MOVE</li>

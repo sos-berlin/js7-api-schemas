@@ -1,0 +1,21 @@
+{
+  "title": "running order log",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.RunningOrderLogEvent",
+  "type": "object",
+  "extends" : {
+    "$ref": "orderRunningLogFilter-schema.json"
+  },
+  "required": [
+    "complete"
+  ],
+  "properties": {
+    "complete": {
+      "type": "boolean",
+      "default": false
+    },
+    "logEvent": {
+      "$ref": "../history/order/orderLogEntry-schema.json"
+    }
+  }
+}

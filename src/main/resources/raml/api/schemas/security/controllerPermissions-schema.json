@@ -17,6 +17,10 @@
 				"type": "boolean",
 				"default" : false
 			},
+			"getLog": {
+				"type": "boolean",
+				"default" : false
+			},
 			"switchOver": {
 				"type": "boolean",
 				"default" : false

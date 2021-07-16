@@ -1,0 +1,21 @@
+{
+  "title": "FileOrderSource",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.fileordersource.FileOrderSource",
+  "type": "object",
+  "extends" : {
+    "$ref": "../../../inventory/schemas/fileordersource/fileOrderSource-schema.json"
+  },
+  "properties": {
+    "path": {
+      "$ref": "../../../api/schemas/common/path-schema.json"
+    },
+    "versionDate": {
+      "$ref": "../../../api/schemas/common/timestamp-schema.json" 
+    },
+    "state": {
+      "$ref": "../common/syncState-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Documentations filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.docu.DocumentationsDeleteFilter",
+  "type": "object",
+  "anyOf": [
+        {
+            "required": [
+                "documentations"
+            ]
+        },
+        {
+            "required": [
+                "folder"
+            ]
+        }
+    ],
+  "properties": {
+    "documentations": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../common/path-schema.json"
+      }
+    },
+    "folder": {
+      "$ref": "../common/string255required-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

@@ -7,9 +7,6 @@
     "id": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
     "path": {
       "$ref": "../common/path-schema.json"
     },
@@ -17,6 +14,9 @@
       "$ref": "../common/string255-schema.json"
     },
     "type": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "assignReference": {
       "$ref": "../common/string255-schema.json"
     },
     "modified": {

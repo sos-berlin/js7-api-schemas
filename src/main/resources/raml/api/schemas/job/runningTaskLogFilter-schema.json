@@ -4,10 +4,14 @@
   "javaType": "com.sos.joc.model.job.RunningTaskLogFilter",
   "type": "object",
   "required": [
+    "controllerId",
     "taskId",
     "eventId"
   ],
   "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerIdRequired-schema.json"
+    },
     "taskId": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },

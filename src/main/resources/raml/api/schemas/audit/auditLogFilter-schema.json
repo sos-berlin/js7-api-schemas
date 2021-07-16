@@ -7,10 +7,22 @@
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
     },
-    "orders": {
+    "objectName": {
+      "description": "regular expression of an object's name",
+      "$ref": "../common/string255-schema.json"
+    },
+    "objectTypes": {
       "type": "array",
+      "uniqueItems" : true,
       "items": {
-        "$ref": "../order/orderPath-schema.json"
+        "$ref": "objectType-schema.json"
+      }
+    },
+    "categories": {
+      "type": "array",
+      "uniqueItems" : true,
+      "items": {
+        "$ref": "category-schema.json"
       }
     },
     "folders": {
@@ -19,8 +31,8 @@
     "account": {
       "$ref": "../common/string255-schema.json"
     },
-    "regex": {
-      "$ref": "../common/regexFilter-schema.json"
+    "comment": {
+      "$ref": "../common/string255-schema.json"
     },
     "dateFrom": {
       "$ref": "../common/dateFromTo-schema.json"

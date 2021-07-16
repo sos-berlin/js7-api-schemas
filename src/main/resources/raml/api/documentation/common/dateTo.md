@@ -1,1 +1,1 @@
-<tr><td>``dateTo``</td><td>optional, string</td><td>The value has multiple formats similiar to the ``dateFrom`` parameter<ul><li>FIlters items ending before a date.</li></ul></td><td>0</td><td></td></tr>
+<tr><td>``dateTo``</td><td>optional, string</td><td>The value has multiple formats similiar to the ``dateFrom`` parameter<ul><li>Filters items ending before a date.</li></ul></td><td>0</td><td></td></tr>

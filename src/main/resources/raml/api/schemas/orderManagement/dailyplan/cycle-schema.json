@@ -1,0 +1,20 @@
+{
+	"title": "Cyclic Order",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.dailyplan.Cycle",
+	"properties": {
+		"begin": {
+			"type": "string",
+			"pattern": "^[0-9:]*$"
+		},
+		"end": {
+			"type": "string",
+			"pattern": "^[0-9:]*$"
+		},
+		"repeat": {
+			"type": "string",
+			"pattern": "^[0-9:]*$"
+		}
+	}
+}

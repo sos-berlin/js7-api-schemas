@@ -1,0 +1,6 @@
+{
+	"controllerId": "testsuite",
+	"limit": 5000,
+	"dateFrom": "-7d",
+	"timeZone": "Europe/Berlin"
+}

@@ -27,6 +27,9 @@
 	"state": {
 		"$ref": "orderState-schema.json"
 	},
+	"marked": {
+		"$ref": "orderMark-schema.json"
+	},
 	"attachedState": {
 		"$ref": "../../../controller/schemas/order/orderAttachedState-schema.json"
 	},
@@ -36,8 +39,20 @@
 	"position": {
      	"$ref": "../../../controller/schemas/common/position-schema.json"
     },
+	"positionString": {
+     	"$ref": "../common/string255-schema.json"
+    },
     "scheduledFor": {
       	"$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "scheduledNever": {
+        "description": "deprecated -> is State.PENDING",
+      	"type": "boolean",
+      	"default": false
+    },
+    "question": {
+    	"description": "only relevant for state PROMPTING",
+      	"type": "string"
     },
     "lastOutcome": {
       	"$ref": "../../../controller/schemas/common/outcome-schema.json"

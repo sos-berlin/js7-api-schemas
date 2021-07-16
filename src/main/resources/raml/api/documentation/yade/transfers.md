@@ -1,35 +1,35 @@
 Each transfer can have a compact or detailed response.<br/>
 It depends on the parameter ``compact``.
-* Fix required fields are
+* The compact view has the following fields
     * surveyDate
     * id
-    * parent_id
-    * profile
-    * mandator
-    * state
+    * historyId
     * controllerId
+    * profile
+    * state
     * _operation
-    * source
-    	* host
-    * target
-    	* host
-    	* protocol
+    * workflowPath
+    * orderId
+    * job
+    * jobPosition
     * numOfFiles
     * start
     * end
-* The detailed view has the following optional fields in addition to the compact view
+    * error
+* The detailed view has the following fields in addition to the compact view
     * source
-    	* user
+    	* account
+    	* host
     	* port
     	* protocol
     * target
-    	* user
+    	* account
+    	* host
     	* port
+    	* protocol
     * jump
     	* host
     	* user
     	* port
     	* protocol
-    * jobChain
-    * order
-    * job
+    

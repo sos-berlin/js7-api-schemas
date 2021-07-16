@@ -3,13 +3,9 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.agent.ReadAgents",
   "type": "object",
-  "required": [
-  	"controllerId"
-  ],
   "properties": {
     "controllerId": {
-      "$ref": "../common/controllerId-schema.json",
-      "minLength": 1
+      "$ref": "../common/controllerId-schema.json"
     },
     "agentIds": {
     	"type": "array",

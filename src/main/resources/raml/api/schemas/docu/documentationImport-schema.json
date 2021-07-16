@@ -4,12 +4,9 @@
   "javaType": "com.sos.joc.model.docu.DocumentationImport",
   "type": "object",
   "required": [
-    "controllerId"
+    "file"
   ],
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
     "file": {
       "$ref": "../common/string255-schema.json"
     },

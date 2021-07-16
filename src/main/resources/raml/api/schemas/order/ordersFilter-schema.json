@@ -14,18 +14,21 @@
         "$ref": "orderPath-schema.json"
       }
     },
-    "excludeOrders": {
+    "excludeWorkflows": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "orderPath-schema.json"
+        "$ref": "../common/string255required-schema.json"
       }
     },
     "compact": {
       "$ref": "../common/compactParam-schema.json"
     },
-    "regex": {
-      "$ref": "../common/regexFilter-schema.json"
+    "orderId": {
+      "$ref": "../common/glob-schema.json"
+    },
+    "workflowPath": {
+      "$ref": "../common/glob-schema.json"
     },
     "states": {
       "type": "array",

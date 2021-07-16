@@ -1,6 +1,6 @@
 type: error
 get?:
-  is: [ accessToken, jobschedulerController ]
+  is: [ accessToken ]
     
   description: |
     <h2>Documentation</h2>
@@ -11,7 +11,6 @@ get?:
       type: string
       description: |
         Path of a <<jsObject>>
-      pattern: /([^/]+/)*[^/]+
       required: true
   responses:
     200:
@@ -45,7 +44,6 @@ post?:
     <thead>
     <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
     </thead><tbody>
-    <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID</td><td>myController</td><td></td></tr>
     <<description1>>
     <<description2>>
     </tbody></table>

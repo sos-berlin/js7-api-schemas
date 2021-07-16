@@ -43,7 +43,6 @@ resourceTypes:
   - postJSONWithoutJSId: !include api/resourceTypes/common/postJSONWithoutJSId.raml
   - postWithoutJSONandJSId: !include api/resourceTypes/common/postWithoutJSONandJSId.raml
   - postJSONWithOkWithoutJSId: !include api/resourceTypes/common/postJSONWithOkWithoutJSId.raml
-  - postJSON18: !include api/resourceTypes/common/postJSON18.raml
   - postYADEJSONWithOkResponse: !include api/resourceTypes/yade/postJSONWithOkResponse.raml
   - postOnlyAccessToken: !include api/resourceTypes/common/postOnlyAccessToken.raml
   - postOnlyId: !include api/resourceTypes/common/postOnlyId.raml
@@ -82,11 +81,45 @@ traits:
   - accessToken: !include api/traits/accessToken.raml
   - filename: !include api/traits/filename.raml
 
+/agent:
+  /remove:
+    type:
+      postJSONWithOkResponse:
+        description: Removes Agent
+        description1: !include api/documentation/agent/agentId.md
+        description2: !include api/documentation/audit/auditLog.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/agent/agentCommand-schema.json
+        example: " "
+  /reset:
+    type:
+      postJSONWithOkResponse:
+        description: Reset Agent
+        description1: !include api/documentation/agent/agentId.md
+        description2: !include api/documentation/audit/auditLog.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/agent/agentCommand-schema.json
+        example: " "
+      
 /agents:
   type:
     postJSON:
       description: Get Agents
-      description1: !include api/documentation/agent/agentIds.md
+      description1: !include api/documentation/agent/agentIdsUrls.md
       description2: !include api/documentation/agent/states.md
       description3: !include api/documentation/agent/onlyEnabledAgents.md
       description4: !include api/documentation/common/compact.md
@@ -106,7 +139,7 @@ traits:
     type:
       postJSONWithOptionalJSId:
         description: Get persitent Agent information
-        description1: !include api/documentation/agent/agentIds.md
+        description1: !include api/documentation/agent/agentIdsUrls.md
         description2: " "
         description3: !include api/documentation/agent/onlyEnabledAgents.md
         description4: " "
@@ -133,6 +166,29 @@ traits:
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
         
+  /report:
+    type:
+      postJSONWithOptionalJSId:
+        description: Get report of Agent tasks
+        description1: !include api/documentation/agent/agentIdsUrls.md
+        description2: !include api/documentation/common/dateFrom.md
+        description3: !include api/documentation/common/dateTo.md
+        description4: !include api/documentation/common/timeZone.md
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: !include api/documentation/agent/report.md
+        schema: !include api/schemas/agent/agentReportFilter-schema.json
+        schema200: !include api/schemas/agent/agentReports-schema.json
+        example: " "
+        example200: " "
+        
   /store:
     type:
       postJSONWithOkResponse:
@@ -147,29 +203,8 @@ traits:
         description8: " "
         description9: " "
         description10: " "
-        description200: " "
         schema: !include api/schemas/agent/storeParam-schema.json
         example: !include api/examples/agent/store-example.json
-        
-#  /tasks:
-#    type:
-#      postJSON:
-#        description: Get collection of Agents from database
-#        description1: !include api/documentation/agent/agentIds.md
-#        description2: !include api/documentation/agent/onlyEnabledAgents.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/agent/readAgents_v-schema.json
-#        schema200: !include api/schemas/agent/agentTasks-schema.json
-#        example: !include api/examples/agent/agents_v-request-example.json
-#        example200: " "
         
 
 /audit_log:
@@ -179,12 +214,12 @@ traits:
       description1: !include api/documentation/common/dateFrom.md
       description2: !include api/documentation/common/dateTo.md
       description3: !include api/documentation/common/timeZone.md
-      description4: !include api/documentation/common/regex.md
+      description4: " "
       description5: !include api/documentation/common/folders.md
-      description6: " "
-      description7: !include api/documentation/order/filteredByOrders.md
-      description8: " "
-      description9: !include api/documentation/audit/ticketLink.md
+      description6: !include api/documentation/audit/objectTypes.md
+      description7: " "
+      description8: !include api/documentation/audit/ticketLink.md
+      description9: !include api/documentation/audit/comment.md
       description10: !include api/documentation/configuration/userParam.md
       description11: !include api/documentation/common/limit.md
       description12: " "
@@ -192,8 +227,8 @@ traits:
       description200: !include api/documentation/audit/audit.md
       schema: !include api/schemas/audit/auditLogFilter-schema.json
       schema200: !include api/schemas/audit/auditLog-schema.json
-      example: " "
-      example200: " "
+      example: !include api/examples/audit/audit-request-example.json
+      example200: !include api/examples/audit/audit-response-example.json
   /comments:
     type:
       postOnlyAccessToken:
@@ -201,6 +236,25 @@ traits:
         description200: " "
         schema200: !include api/schemas/audit/comments-schema.json
         example200: !include api/examples/audit/comments-example.json
+  /details:
+    type:
+      postJSONWithoutJSId:
+        description: Get processed objects of an audit log entry
+        description1: !include api/documentation/audit/detail.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema200: !include api/schemas/audit/auditLogDetails-schema.json
+        example200: !include api/examples/audit/auditDetail-response-example.json
+        schema: !include api/schemas/audit/auditLogDetailFilter-schema.json
+        example: !include api/examples/audit/auditDetail-request-example.json
 
 /authentication:
   description: This is not an API call. Use child urls instead!
@@ -229,25 +283,25 @@ traits:
             application/json:
               schema: !include api/schemas/security/security-configuration-schema.json
       
-  /shiro/store:
-    type:
-      postJSONWithoutJSId:
-        description: Writes configuration in shiro.ini
-        description1: !include api/documentation/security/main.md
-        description2: !include api/documentation/security/users.md
-        description3: !include api/documentation/security/roles.md
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        description200: " "
-        schema200: !include api/schemas/security/security-configuration-schema.json
-        example200: " "
-        schema: !include api/schemas/security/security-configuration-schema.json
-        example: " "    
+    /store:
+      type:
+        postJSONWithoutJSId:
+          description: Writes configuration in shiro.ini
+          description1: !include api/documentation/security/main.md
+          description2: !include api/documentation/security/users.md
+          description3: !include api/documentation/security/roles.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema200: !include api/schemas/security/security-configuration-schema.json
+          example200: " "
+          schema: !include api/schemas/security/security-configuration-schema.json
+          example: " "    
     
     
 
@@ -333,7 +387,7 @@ traits:
   /abort:
     type:
       postWithOkResponse:
-        description: Aborts Controller and optionally fails over
+        description: Aborts Controller
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
@@ -341,8 +395,7 @@ traits:
     type:
       postWithOkResponse:
         description: |
-          Aborts and restarts Controller and optionally fails over
-          <h5>...</h5>
+          Aborts and restarts Controller and optionally switch over
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
@@ -486,6 +539,25 @@ traits:
           
 /daily_plan:
   description: This is not an API call. Use its children!!
+  /order/variables:
+    type:
+      postJSON:
+        description: Read the variables for a given order 
+        description1: !include api/documentation/order/orderIdRequired.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/order/orderFilter-schema.json
+        schema200: !include api/schemas/orderManagement/orders/orderVariables-schema.json
+        example: " "
+        example200: " "
   /orders:
     type: 
       postJSON:
@@ -571,10 +643,10 @@ traits:
         postJSON:
           description: Modifies Orders for the daily plan 
           description1: !include api/documentation/dailyplan/modify/startTime.md
-          description2: !include api/documentation/dailyplan/modify/variables.md
-          description3: !include api/documentation/dailyplan/modify/removeVariables.md
-          description4: !include api/documentation/dailyplan/orders/orderIds.md
-          description5: 
+          description2: !include api/documentation/dailyplan/modify/cycle.md
+          description3: !include api/documentation/dailyplan/modify/variables.md
+          description4: !include api/documentation/dailyplan/modify/removeVariables.md
+          description5: !include api/documentation/dailyplan/orders/orderIds.md
           description6: 
           description7: 
           description9: 
@@ -633,7 +705,7 @@ traits:
         description2: !include api/documentation/dailyplan/submissions/dateFrom.md
         description3: !include api/documentation/dailyplan/submissions/dateTo.md
         description5: !include api/documentation/dailyplan/submissions/controllerIds.md
-        description4: !include api/documentation/dailyplan/submissions/timeZone.md
+        description4:  
         description6: " "
         description7: " "
         description8: " "
@@ -650,11 +722,11 @@ traits:
         postJSON:
           description: Deletes daily plan submissions 
           description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
-          description2: !include api/documentation/dailyplan/submissions/dateFrom.md
-          description3: !include api/documentation/dailyplan/submissions/dateTo.md
+          description2: !include api/documentation/dailyplan/submissions/dateFor.md
+          description3: !include api/documentation/dailyplan/submissions/dateFrom.md
+          description4: !include api/documentation/dailyplan/submissions/dateTo.md
           description5: !include api/documentation/dailyplan/submissions/controllerIds.md
-          description4: !include api/documentation/dailyplan/submissions/timeZone.md
-          description6: " "
+          description6:  
           description7: " "
           description8: " "
           description9: " "
@@ -665,165 +737,128 @@ traits:
           example: " "
           example200: " "
                
-#/documentation:
-#  description: |
-#    This is not an API call. Use its children!!
-#  
-#  /{controllerId}/{accessToken}/{path}:
-#    type:
-#      getDocu:
-#        description: " "
-#        #description1: !include api/documentation/docu/docuId.md
-#        #description2: " "
-#        #example: " "
-#  /used:
-#    type:
-#      postJSON:
-#        description: Lists Controller objects which use the documentation
-#        description1: !include api/documentation/docu/docPath.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/docu/documentationFilter-schema.json
-#        schema200: !include api/schemas/docu/usedBy-schema.json
-#        example: " "
-#        example200: " "
-#  /preview:
-#    get:
-#    type:
-#      postDocu:
-#        description: Preview the documentation
-#        jsObjectParam: documentation
-#        jsObject: documentation
-#        #description1: !include api/documentation/docu/docPath.md
-#        #description2: " "
-#        #schema: !include api/schemas/docu/documentationShow-schema.json
-#        #example: " "
-#  /show:
-#    get:
-#    is: [ filteredByJSType ]
-#    type:
-#      postDocu:
-#        description: Get the documentation of a Controller object
-#        jsObjectParam: path
-#        jsObject: Controller object
-#        #description1: !include api/documentation/docu/jsObject.md
-#        #description2: " "
-#        #schema: !include api/schemas/docu/documentationShow-schema.json
-#        #example: " "
-#  /url:
-#    post:
-#    type:
-#      postJSON:
-#        description: Get the URL of a documentation of a Controller object
-#        description1: !include api/documentation/docu/jsObject.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/docu/documentationShow-schema.json
-#        schema200: !include api/schemas/docu/url-schema.json
-#        example: " "
-#        example200: " "    
+/documentation:
+  description: |
+    This is not an API call. Use its children!!
+  
+  /edit:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Edit the assignment reference
+        description1: !include api/documentation/docu/docPath.md
+        description2: !include api/documentation/docu/assignRef.md
+        description3: " "
+        description4: " "
+        description5: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/docu/documentationFilter-schema.json
+        example: " "
+  /show:
+    get:
+    type:
+      postDocu:
+        description: Shows the documentation
+        jsObjectParam: documentation
+        jsObject: documentation
+        description1: !include api/documentation/docu/jsObject.md
+        description2: " "
+        schema: !include api/schemas/docu/documentationShow-schema.json
+        example: " "
+  /used:
+    type:
+      postJSONWithoutJSId:
+        description: Get objects which use the documentation
+        description1: !include api/documentation/docu/docPath.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/docu/documentationFilter-schema.json
+        schema200: !include api/schemas/docu/usedBy-schema.json
+        example: !include api/examples/docu/used-request-example.json
+        example200: !include api/examples/docu/used-response-example.json
 
+/documentations:
+  type:
+    postJSONWithoutJSId:
+      description: Get documentations
+      description1: !include api/documentation/docu/filteredByPaths.md
+      description2: " "
+      #description3: !include api/documentation/common/regex.md
+      description3: " "
+      description4: !include api/documentation/common/folders.md
+      description5: !include api/documentation/docu/docuTypes.md
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: !include api/documentation/docu/docu.md
+      schema: !include api/schemas/docu/documentationsFilter-schema.json
+      schema200: !include api/schemas/docu/documentations-schema.json
+      example: " "
+      example200: " "
+  /export:
+    get:
+    type:
+      postForDownload:
+        description: Provides export file (zip) as download of documentations
+        description1: !include api/documentation/docu/filteredByPaths.md
+        description2: !include api/documentation/common/folders.md
+        description3: " "
+        description4: " "
+        description5: " "
+        infoapi: ./documentation/export
+        schema: !include api/schemas/docu/documentationsFilter-schema.json
+        example: " "
+    /info:
+      type:
+        postJSONWithoutJSId:
+          description: Get temp. filename for export 
+          description1: !include api/documentation/docu/filteredByPaths.md
+          description2: !include api/documentation/common/folders.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: !include api/documentation/docu/exportInfo.md
+          schema: !include api/schemas/docu/documentationsFilter-schema.json
+          schema200: !include api/schemas/docu/exportInfo-schema.json
+          example: " "
+          example200: " "
+  /import:
+    type:
+      postForUpload:
+        description: Import Documentations
+  /delete:
+    type:
+      postJSONWithoutJSId:
+        description: Deletes Documentations
+        description1: !include api/documentation/docu/delete.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        description200: " "
+        schema: !include api/schemas/docu/documentationsDeleteFilter-schema.json
+        schema200: ok
+        example: " "
+        example200: " "
 
-#/documentations:
-#  type:
-#    postJSON:
-#      description: Get collection of documentations
-#      description1: !include api/documentation/docu/filteredByPaths.md
-#      description2: " "
-#      description3: !include api/documentation/common/regex.md
-#      description4: !include api/documentation/common/folders.md
-#      description5: !include api/documentation/docu/docuTypes.md
-#      description6: " "
-#      description7: " "
-#      description8: " "
-#      description9: " "
-#      description10: " "
-#      description200: !include api/documentation/docu/docu.md
-#      schema: !include api/schemas/docu/documentationsFilter-schema.json
-#      schema200: !include api/schemas/docu/documentations-schema.json
-#      example: " "
-#      example200: " "
-#  /export:
-#    get:
-#    type:
-#      postForDownload:
-#        description: Provides export file (zip) as download of documentations
-#        description1: !include api/documentation/docu/filteredByPaths.md
-#        description2: !include api/documentation/common/folders.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        infoapi: ./documentation/export
-#        schema: !include api/schemas/docu/documentationsFilter-schema.json
-#        example: " "
-#    /info:
-#      type:
-#        postJSON:
-#          description: Temp. Filename for Export 
-#          description1: !include api/documentation/docu/filteredByPaths.md
-#          description2: !include api/documentation/common/folders.md
-#          description3: " "
-#          description4: " "
-#          description5: " "
-#          description6: " "
-#          description7: " "
-#          description8: " "
-#          description9: " "
-#          description10: " "
-#          description200: !include api/documentation/docu/exportInfo.md
-#          schema: !include api/schemas/docu/documentationsFilter-schema.json
-#          schema200: !include api/schemas/docu/exportInfo-schema.json
-#          example: " "
-#          example200: " "
-#  /import:
-#    type:
-#      postForUpload:
-#        description: Import Documentations
-#  /delete:
-#    type:
-#      postJSON:
-#        description: Deletes a list of Documentations
-#        description1: !include api/documentation/docu/filteredByPaths.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/docu/documentationsFilter-schema.json
-#        schema200: ok
-#        example: " "
-#        example200: " "
-
-# moved to api-internal.raml
-#/events:
-#  type:
-#    postEvent:
-#      description200: TODO
-#      schema: !include api/schemas/event/register-schema.json
-#      schema200: !include api/schemas/event/events-schema.json
-#      example: TODO
-#      example200: TODO
 
 /inventory:
   description: This is not an API call. Use its children!!
@@ -1398,106 +1433,7 @@ traits:
           body:
             application/json:
   
-#/job:
-#  /documentation:
-#    get:
-#    type:
-#      postDocu:
-#        description: Show documentation
-#        jsObjectParam: job
-#        jsObject: Job
-
-
-#TODO
-#/jobclass:
-#  /configuration:
-#    type:
-#      postJSON:
-#        description: !include api/documentation/common/configuration.md
-#        description1: !include api/documentation/processClass/processClassRequired.md
-#        description2: !include api/documentation/common/configurationFileMimeParam.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: Returns the process class configuration in XML or HTML format
-#        schema: !include api/schemas/processClass/processClassConfigurationFilter-schema.json
-#        schema200: !include api/schemas/common/configuration-schema.json
-#        example: TODO
-#        example200: !include api/examples/processClass/configuration-example.json
-#  /documentation:
-#    get:
-#    type:
-#      postDocu:
-#        description: Show documentation
-#        jsObjectParam: processClass
-#        jsObject: ProcessClass
-#    /assign:
-#      type:
-#        postDocuWithOkResponse:
-#          description: Assigns a Documentation to the Process Class
-#          description1: !include api/documentation/docu/docPath.md
-#          description2: " "
-#          description3: !include api/documentation/processClass/processClassRequired.md
-#          description4: " "
-#          schema: !include api/schemas/processClass/processClassDocuFilter-schema.json
-#          example: TODO
-#          audit: !include api/documentation/audit/auditLog.md
-#    /unassign:
-#      type:
-#        postDocuWithOkResponse:
-#          description: Unassigns a Documentation of the Process Class
-#          description1: " "
-#          description2: " "
-#          description3: !include api/documentation/processClass/processClassRequired.md
-#          description4: " "
-#          schema: !include api/schemas/processClass/processClassDocuFilter-schema.json
-#          example: TODO
-#          audit: !include api/documentation/audit/auditLog.md
-#/jobclasses:
-#  type:
-#    postJSON:
-#      description: process classes (volatile part)
-#      description1: !include api/documentation/processClass/filteredByProcessClasses.md
-#      description2: !include api/documentation/common/regex.md
-#      description3: " "
-#      description4: " "
-#      description5: !include api/documentation/common/folders.md
-#      description6: !include api/documentation/processClass/filteredByHasAgent.md
-#      description7: " "
-#      description8: " "
-#      description9: " "
-#      description10: " "
-#      description200: !include api/documentation/processClass/processClass_v.md
-#      schema: !include api/schemas/processClass/processClassesFilter-schema.json
-#      schema200: !include api/schemas/processClass/processClasses_v-schema.json
-#      example: TODO
-#      example200: !include api/examples/processClass/processClasses_v-example.json
-#  /p:
-#    type:
-#      postJSON:
-#        description: process classes (permanent part)
-#        description1: !include api/documentation/processClass/filteredByProcessClasses.md
-#        description2: !include api/documentation/common/regex.md
-#        description3: " "
-#        description4: " "
-#        description5: !include api/documentation/common/folders.md
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: !include api/documentation/processClass/processClass_p.md
-#        schema: !include api/schemas/processClass/processClassesFilter-schema.json
-#        schema200: !include api/schemas/processClass/processClasses_p-schema.json
-#        example: TODO
-#        example200: !include api/examples/processClass/processClasses_p-example.json
-
-          
+         
 /jobs/overview/summary:
   type:
     postJSONWithOptionalJSId:
@@ -1593,10 +1529,11 @@ traits:
     type:
       postOnlyAccessToken:
         description: |
-          Response contains some settings from joc.properties file such as 
+          Response contains some settings from joc.properties file such as<h5> 
           * pre-defined audit log comments
           * flag to force audit log comments
-          * show/hide views 
+          * show/hide views
+          </h5>
         description200: " "
         schema200: !include api/schemas/joc/properties-schema.json
         example200: !include api/examples/joc/properties-example.json
@@ -1721,6 +1658,25 @@ traits:
       type:
         postOrderLogWithPlainResponse:
           description: Provides order log as download
+  /variables:
+    type:
+      postJSON:
+        description: Get variables that were returned by the jobs before specified position
+        description1: " "
+        description2: " "
+        description3: !include api/documentation/order/orderIdRequired.md
+        description4: !include api/documentation/order/position.md
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: !include api/documentation/order/variables200.md
+        schema: !include api/schemas/order/orderVariablesFilter-schema.json
+        schema200: !include api/schemas/order/ordersPositions-schema.json
+        example: !include api/examples/order/request-variables-example.json
+        example200: !include api/examples/order/response-variables-example.json
 
 #  /documentation:
 #    get:
@@ -1764,7 +1720,7 @@ traits:
       description5: !include api/documentation/common/regex.md
       description6: !include api/documentation/order/state.md
       description7: !include api/documentation/order/dateTo.md
-      description8: !include api/documentation/order/timeZone.md
+      description8: " "
       description9: " "
       description10: " "
       description200: !include api/documentation/order/orders_v.md
@@ -1780,8 +1736,17 @@ traits:
     type:
       modifyOrder:
         description: Cancel orders  
-        signalParam: !include api/documentation/order/signal.md
-        positionParam: ""
+        signalParam: !include api/documentation/order/kill.md
+        positionParam: " "
+        variablesParam: " "
+        audit: !include api/documentation/audit/auditLog.md
+  /confirm:
+    type:
+      modifyOrder:
+        description: Confirm prompting orders  
+        signalParam: " "
+        positionParam: " "
+        variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
   /daily_plan/cancel:
     type:
@@ -1789,7 +1754,7 @@ traits:
         description: Cancels orders 
         description1: !include api/documentation/order/cancelOrderIds.md
         description2: !include api/documentation/order/dailyPlanDate.md
-        description3: !include api/documentation/order/signal.md
+        description3: " "
         description4: " "
         description5: " "
         description6: " "
@@ -1806,13 +1771,13 @@ traits:
   /history:
     type:
       postJSONWithOptionalJSId:
-        description: Order history from _reporting_
+        description: Order history
         description1: !include api/documentation/order/filteredByOrders.md
         description2: !include api/documentation/order/excludeOrders.md
         description3: !include api/documentation/common/dateFrom.md
         description4: !include api/documentation/common/dateTo.md
         description5: !include api/documentation/common/timeZone.md
-        description6: !include api/documentation/common/regex.md
+        description6: !include api/documentation/order/patterns.md
         description7: !include api/documentation/common/folders.md
         description8: !include api/documentation/common/limit.md
         description9: !include api/documentation/common/historyStates.md
@@ -1831,11 +1796,12 @@ traits:
           description: |
             Summary with number of<h5>
             * pending orders
-            * calling orders
+            * scheduled orders
             * running orders
             * orders in progress
             * suspended orders
             * failed orders
+            * prompting orders
             * waiting orders
             * blocked orders
             * terminated orders
@@ -1847,7 +1813,7 @@ traits:
           description5: " "
           description6: " "
           description7: !include api/documentation/order/dateTo.md
-          description8: !include api/documentation/order/timeZone.md
+          description8: " "
           description9: " "
           description10: " "
           description200: " "
@@ -1857,7 +1823,7 @@ traits:
           example200: !include api/examples/order/snapshot-example.json
   /overview/summary:
       type:
-        postJSON:
+        postJSONWithOptionalJSId:
           description: |
             Summary with number of<h5>
             * successful orders
@@ -1875,6 +1841,9 @@ traits:
           description8: " "
           description9: " "
           description10: " "
+          description11: " "
+          description12: " "
+          description13: " "
           description200: " "
           schema200: !include api/schemas/order/summary-schema.json
           schema: !include api/schemas/order/ordersFilter-schema.json
@@ -1889,40 +1858,43 @@ traits:
         description: Remove orders when terminated
         signalParam: " "
         positionParam: " "
+        variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
   /resume:
     type:
       modifyOrder:
-        description: Resume orders when suspended
+        description: Resume orders when suspended or failed
         signalParam: " "
         positionParam: !include api/documentation/order/position.md
+        variablesParam: !include api/documentation/order/variables.md
         audit: !include api/documentation/audit/auditLog.md
+    /positions:
+      type:
+        postJSON:
+          description: Get common allowed Workflow position for resuming orders
+          description1: !include api/documentation/order/orderIdsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: !include api/documentation/order/positions200.md
+          schema200: !include api/schemas/order/ordersPositions-schema.json
+          schema: modifyOrders
+          example: !include api/examples/order/request-positions-example.json
+          example200: !include api/examples/order/response-positions-example.json
   /suspend:
     type:
       modifyOrder:
         description: Suspend orders
-        signalParam: !include api/documentation/order/signal.md
+        signalParam: !include api/documentation/order/kill.md
         positionParam: " "
+        variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
-  /variables:
-    type:
-      postJSON:
-        description: Read the variables for a given order 
-        description1: !include api/documentation/order/orderIdRequired.md
-        description2: " "
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        description200: " "
-        schema: !include api/schemas/order/orderFilter-schema.json
-        schema200: !include api/schemas/orderManagement/orders/orderVariables-schema.json
-        example: " "
-        example200: " "
         
 /profile:
   description: This is not an API call. Use child urls instead!
@@ -2058,10 +2030,6 @@ traits:
         example: " "
         example200: " "
 
-
-
-
-
 /task/log:
   type:
     postLog:
@@ -2089,28 +2057,29 @@ traits:
         description8: " "
         description9: " "
         description10: " "
-        schema200: !include api/schemas/job/runningTaskLogs-schema.json
-        schema: !include api/schemas/job/runningTaskLogsFilter-schema.json
+        schema200: !include api/schemas/job/runningTaskLog-schema.json
+        schema: !include api/schemas/job/runningTaskLogFilter-schema.json
         example: TODO
         example200: " "
 
 /tasks/history:
   type:
     postJSONWithOptionalJSId:
-      description: Task history from _reporting_ (permanent)
+      description: Task history
       description1: !include api/documentation/job/filteredByJobs.md
       description2: !include api/documentation/job/excludeJobs.md
       description3: !include api/documentation/common/dateFrom.md
       description4: !include api/documentation/common/dateTo.md
       description5: !include api/documentation/common/timeZone.md
-      description6: !include api/documentation/common/regex.md
+      description6: !include api/documentation/job/patterns.md
       description7: !include api/documentation/common/folders.md
       description8: !include api/documentation/common/limit.md
       description9: !include api/documentation/common/historyStates.md
       description10: !include api/documentation/job/criticalities.md
       description11: !include api/documentation/job/taskIds.md
-      description12: !include api/documentation/job/taskIdOfOrder.md
-      description13: !include api/documentation/job/filteredByOrders.md
+      # TODO introduce label in HISTORY_ORDER_STEPS then use label instead of workflow position: description12: !include api/documentation/job/taskIdOfOrder.md
+      description12: " "
+      description13: " "
       description200: TODO
       schema: !include api/schemas/job/jobsFilter-schema.json
       schema200: !include api/schemas/job/history-schema.json
@@ -2240,129 +2209,125 @@ traits:
       example: TODO
       example200: TODO
       
-#TODO
-#/yade:
-#  description: This is not an API call. Use its children!!
-#   
-#  /overview/summary:
-#    type:
-#      postJSON:
-#        description: |
-#            Summary with number of<h5>
-#            * successful transferred files
-#            * failed transferred files
-#  
-#            filtered by <code>dateFrom</code> parameter until now
-#            </h5>
-#        description1: !include api/documentation/common/dateFrom.md
-#        description2: !include api/documentation/common/dateTo.md
-#        description3: !include api/documentation/common/timeZone.md
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema200: !include api/schemas/yade/summary-schema.json
-#        schema: !include api/schemas/yade/transferFilter-schema.json
-#        example: |
-#            {
-#              "dateFrom": "1d"
-#            }
-#        example200: !include api/examples/yade/summary-example.json
+
+/yade:
+  description: This is not an API call. Use its children!!
+   
+  /overview/summary:
+    type:
+      postJSONWithOptionalJSId:
+        description: |
+            Summary with number of<h5>
+            * successful transferred files
+            * failed transferred files
+            </h5>
+        description1: !include api/documentation/common/dateFrom.md
+        description2: !include api/documentation/common/dateTo.md
+        description3: !include api/documentation/common/timeZone.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: " "
+        schema200: !include api/schemas/yade/summary-schema.json
+        schema: !include api/schemas/yade/transferFilter-schema.json
+        example: |
+            {
+              "dateFrom": "1d"
+            }
+        example200: !include api/examples/yade/summary-example.json
 #  /overview/snapshot:
 #      type:
 #        postOnlyId:
 #          description: |
 #            Summary with number of<h5>
-#            * running YADE transfers
-#            * suspended YADE transfers
-#            * YADE transfers with setback
-#            * waiting for resource YADE transfers
+#            * running file transfers
+#            * suspended file transfers
+#            * file transfers with setback
+#            * waiting for resource file transfers
 #            </h5>
 #          description200: " "
 #          example: " "
 #          schema200: !include api/schemas/yade/snapshot-schema.json
 #          example200: " "
 #
-#  /transfers:
-#    type:
-#      postJSON18:
-#        description: Responds YADE transfers
-#        description1: !include api/documentation/yade/transferIds.md
-#        description2: !include api/documentation/common/compact.md
-#        description3: !include api/documentation/common/dateFrom.md
-#        description4: !include api/documentation/common/dateTo.md
-#        description5: !include api/documentation/common/timeZone.md
-#        description6: !include api/documentation/yade/operations.md
-#        description7: !include api/documentation/yade/states.md
-#        description8: !include api/documentation/yade/mandator.md
-#        description9: !include api/documentation/yade/source.md
-#        description10: !include api/documentation/yade/target.md
-#        description11: !include api/documentation/yade/hasIntervention.md
-#        description12: !include api/documentation/yade/isIntervention.md
-#        description13: !include api/documentation/yade/profile.md
-#        description14: !include api/documentation/yade/sourcePathRegex.md
-#        description15: !include api/documentation/yade/targetPathRegex.md
-#        description16: !include api/documentation/yade/sourcePath.md
-#        description17: !include api/documentation/yade/targetPath.md
-#        description18: !include api/documentation/common/limit.md
-#        description200: !include api/documentation/yade/transfers.md
-#        schema: !include api/schemas/yade/transferFilter-schema.json
-#        schema200: !include api/schemas/yade/transfers-schema.json
-#        example: " "
-#        example200: " "
+  /transfers:
+    type:
+      postJSONWithOptionalJSId:
+        description: Get file transfers
+        description1: !include api/documentation/yade/transferIds.md
+        description2: !include api/documentation/common/compact.md
+        description3: !include api/documentation/common/dateFrom.md
+        description4: !include api/documentation/common/dateTo.md
+        description5: !include api/documentation/common/timeZone.md
+        description6: !include api/documentation/yade/operations.md
+        description7: !include api/documentation/yade/states.md
+        description8: !include api/documentation/yade/source.md
+        description9: !include api/documentation/yade/target.md
+        description10: !include api/documentation/yade/profile.md
+        description11: !include api/documentation/yade/patterns.md
+        description12: !include api/documentation/yade/sourceTargetPath.md
+        description13: !include api/documentation/common/limit.md
+        description200: !include api/documentation/yade/transfers.md
+        schema: !include api/schemas/yade/transferFilter-schema.json
+        schema200: !include api/schemas/yade/transfers-schema.json
+        example: !include api/examples/audit/audit-request-example.json
+        example200: !include api/examples/yade/transfers-example.json
 #
 #    /restart:
 #      type:
 #        postYADEJSONWithOkResponse:
-#          description: Restarts YADE transfers for some failed files
+#          description: Restarts file transfers for some failed files
 #          audit: !include api/documentation/audit/auditLog.md
 #          schema: !include api/schemas/yade/modifyTransfers-schema.json
 #          example: " "
 #  
-#  /files:
-#    type:
-#      postJSON:
-#        description: Responds transferred files
-#        description1: !include api/documentation/common/compact.md
-#        description2: " "
-#        description3: !include api/documentation/yade/transferIds.md
-#        description4: !include api/documentation/yade/interventionTransferIds.md
-#        description5: " "
-#        description6: !include api/documentation/yade/fileStates.md
-#        description7: " "
-#        description8: !include api/documentation/yade/sourcePath.md
-#        description9: !include api/documentation/yade/targetPath.md
-#        description10: !include api/documentation/common/limit.md
-#        description200: " "
-#        schema: !include api/schemas/yade/filesFilter-schema.json
-#        schema200: !include api/schemas/yade/files-schema.json
-#        example: " "
-#        example200: " "
-#
-#  /file:
-#    type:
-#      postJSON:
-#        description: Responds transferred file
-#        description1: !include api/documentation/common/compact.md
-#        description2: !include api/documentation/yade/fileId.md
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/yade/fileFilter-schema.json
-#        schema200: !include api/schemas/yade/file200-schema.json
-#        example: " "
-#        example200: " "
-#
+  /files:
+    type:
+      postJSONWithoutJSId:
+        description: Get transferred files
+        description1: " "
+        description2: " "
+        description3: !include api/documentation/yade/transferIds.md
+        description4: " "
+        description5: " "
+        description6: !include api/documentation/yade/fileStates.md
+        description7: !include api/documentation/yade/patterns.md
+        description8: !include api/documentation/yade/sourceTargetPath.md
+        description9: " "
+        description10: !include api/documentation/common/limit.md
+        description200: " "
+        schema: !include api/schemas/yade/filesFilter-schema.json
+        schema200: !include api/schemas/yade/files-schema.json
+        example: " "
+        example200: " "
+
+  /file:
+    type:
+      postJSONWithoutJSId:
+        description: Get transferred file
+        description1: " "
+        description2: !include api/documentation/yade/fileId.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/yade/fileFilter-schema.json
+        schema200: !include api/schemas/yade/file200-schema.json
+        example: " "
+        example200: " "
+
 #  /transfer/order:
 #    type:
 #      postJSON:
@@ -2386,7 +2351,7 @@ traits:
 #  /orders:
 #    type:
 #      postJSON:
-#        description: Returns a collection of orders (volatile part) filtered by a period, job chains or order state
+#        description: Get orders filtered by a period, job chains or order state
 #        description1: !include api/documentation/common/compact.md
 #        description2: " "
 #        description3: " "

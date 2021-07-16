@@ -1,0 +1,28 @@
+{
+	"title": "xmleditor deploy configuration in",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.xmleditor.release.ReleaseConfiguration",
+	"type": "object",
+	"description": "",
+	"required": [
+		"controllerId",
+		"objectType"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/object-type-schema.json"
+		},
+		"configuration": {
+			"$ref": "../../common/noScript-schema.json"
+		},
+		"configurationJson": {
+			"$ref": "../../common/noScript-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}

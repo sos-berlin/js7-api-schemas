@@ -1,4 +1,4 @@
-<tr><td>``timezone``</td>
+<tr><td>``timeZone``</td>
 	
 <td>optional, string</td>
 

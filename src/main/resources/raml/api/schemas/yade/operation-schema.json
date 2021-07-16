@@ -9,6 +9,7 @@
     "GETLIST",
     "RENAME",
     "COPYTOINTERNET",
-    "COPYFROMINTERNET"
+    "COPYFROMINTERNET",
+    "UNKNOWN"
   ]
 }

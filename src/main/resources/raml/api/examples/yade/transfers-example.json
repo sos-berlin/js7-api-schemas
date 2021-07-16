@@ -1,0 +1,166 @@
+{
+    "deliveryDate": "2021-06-09T08:25:04.202Z",
+    "transfers": [
+        {
+            "_operation": "MOVE",
+            "controllerId": "testsuite",
+            "end": "2021-05-27T21:40:17Z",
+            "error": {},
+            "historyId": 358062,
+            "id": 1,
+            "job": "transferFile",
+            "jobPosition": "0",
+            "numOfFiles": 1,
+            "orderId": "#2021-05-27#F1622151608-pdfFilesCsv:4.csv",
+            "profile": "product_demo_to_demo_file_path_sftp",
+            "source": {
+                "account": ".",
+                "host": "agent-2-0-primary",
+                "port": 0,
+                "protocol": "LOCAL"
+            },
+            "start": "2021-05-27T21:40:15Z",
+            "state": {
+                "_text": "SUCCESSFUL",
+                "severity": 6
+            },
+            "surveyDate": "2021-05-27T21:40:17Z",
+            "target": {
+                "account": "sos",
+                "host": "centostest_primary.sos",
+                "port": 22,
+                "protocol": "SFTP"
+            },
+            "workflowPath": "/pdwWatchFileAndTransferFile"
+        },
+        {
+            "_operation": "MOVE",
+            "controllerId": "testsuite",
+            "end": "2021-05-27T21:40:17Z",
+            "error": {},
+            "historyId": 358063,
+            "id": 2,
+            "job": "transferFile",
+            "jobPosition": "0",
+            "numOfFiles": 1,
+            "orderId": "#2021-05-27#F1622151608-pdfFilesCsv:3.csv",
+            "profile": "product_demo_to_demo_file_path_sftp",
+            "source": {
+                "account": ".",
+                "host": "agent-2-0-primary",
+                "port": 0,
+                "protocol": "LOCAL"
+            },
+            "start": "2021-05-27T21:40:15Z",
+            "state": {
+                "_text": "SUCCESSFUL",
+                "severity": 6
+            },
+            "surveyDate": "2021-05-27T21:40:17Z",
+            "target": {
+                "account": "sos",
+                "host": "centostest_primary.sos",
+                "port": 22,
+                "protocol": "SFTP"
+            },
+            "workflowPath": "/pdwWatchFileAndTransferFile"
+        },
+        {
+            "_operation": "MOVE",
+            "controllerId": "testsuite",
+            "end": "2021-05-27T21:40:17Z",
+            "error": {},
+            "historyId": 358064,
+            "id": 3,
+            "job": "transferFile",
+            "jobPosition": "0",
+            "numOfFiles": 1,
+            "orderId": "#2021-05-27#F1622151608-pdfFilesCsv:2.csv",
+            "profile": "product_demo_to_demo_file_path_sftp",
+            "source": {
+                "account": ".",
+                "host": "agent-2-0-primary",
+                "port": 0,
+                "protocol": "LOCAL"
+            },
+            "start": "2021-05-27T21:40:15Z",
+            "state": {
+                "_text": "SUCCESSFUL",
+                "severity": 6
+            },
+            "surveyDate": "2021-05-27T21:40:17Z",
+            "target": {
+                "account": "sos",
+                "host": "centostest_primary.sos",
+                "port": 22,
+                "protocol": "SFTP"
+            },
+            "workflowPath": "/pdwWatchFileAndTransferFile"
+        },
+        {
+            "_operation": "MOVE",
+            "controllerId": "testsuite",
+            "end": "2021-05-27T21:40:17Z",
+            "error": {},
+            "historyId": 358065,
+            "id": 4,
+            "job": "transferFile",
+            "jobPosition": "0",
+            "numOfFiles": 1,
+            "orderId": "#2021-05-27#F1622151608-pdfFilesCsv:1.csv",
+            "profile": "product_demo_to_demo_file_path_sftp",
+            "source": {
+                "account": ".",
+                "host": "agent-2-0-primary",
+                "port": 0,
+                "protocol": "LOCAL"
+            },
+            "start": "2021-05-27T21:40:15Z",
+            "state": {
+                "_text": "SUCCESSFUL",
+                "severity": 6
+            },
+            "surveyDate": "2021-05-27T21:40:17Z",
+            "target": {
+                "account": "sos",
+                "host": "centostest_primary.sos",
+                "port": 22,
+                "protocol": "SFTP"
+            },
+            "workflowPath": "/pdwWatchFileAndTransferFile"
+        },
+        {
+            "_operation": "MOVE",
+            "controllerId": "testsuite",
+            "end": "2021-05-27T21:40:17Z",
+            "error": {},
+            "hasIntervention": false,
+            "historyId": 358066,
+            "id": 5,
+            "job": "transferFile",
+            "jobPosition": "0",
+            "numOfFiles": 1,
+            "orderId": "#2021-05-27#F1622151608-pdfFilesCsv:5.csv",
+            "profile": "product_demo_to_demo_file_path_sftp",
+            "source": {
+                "account": ".",
+                "host": "agent-2-0-primary",
+                "port": 0,
+                "protocol": "LOCAL"
+            },
+            "start": "2021-05-27T21:40:15Z",
+            "state": {
+                "_text": "SUCCESSFUL",
+                "severity": 6
+            },
+            "surveyDate": "2021-05-27T21:40:17Z",
+            "target": {
+                "account": "sos",
+                "host": "centostest_primary.sos",
+                "port": 22,
+                "protocol": "SFTP"
+            },
+            "workflowPath": "/pdwWatchFileAndTransferFile"
+        }
+    ]
+}

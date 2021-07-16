@@ -29,9 +29,6 @@
 		"recreateJson": {
 			"type": "boolean"
 		},
-		"state": {
-			"$ref": "answer-configuration-state-schema.json"
-		},
 		"validation": {
 			"$ref": "../../validate/validate-configuration-answer-schema.json"
 		},

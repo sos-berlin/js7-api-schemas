@@ -3,4 +3,5 @@ Each documentation has the fields:<br/>
 * path
 * name
 * type
+* assignReference (optional)
 * modified

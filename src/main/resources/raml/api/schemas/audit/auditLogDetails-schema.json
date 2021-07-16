@@ -1,0 +1,21 @@
+{
+  "title": "auditLog details",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.audit.AuditLogDetails",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "auditLogDetails"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "auditLogDetails": {
+      "type": "array",
+      "items": {
+        "$ref": "auditDetail-schema.json"
+      }
+    }
+  }
+}

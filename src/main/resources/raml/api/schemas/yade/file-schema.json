@@ -18,9 +18,6 @@
     "transferId": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },
-    "interventionTransferId": {
-      "$ref": "../common/nonNegativeLong-schema.json"
-    },
     "state": {
       "$ref": "fileTransferState-schema.json"
     },

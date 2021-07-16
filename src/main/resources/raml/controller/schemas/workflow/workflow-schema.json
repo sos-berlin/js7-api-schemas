@@ -19,6 +19,12 @@
     },
     "state": {
       "$ref": "../common/syncState-schema.json"
+    },
+    "fileOrderSources": {
+      "type": "array",
+      "items": {
+        "$ref": "../fileordersource/fileOrderSource-schema.json"
+      }
     }
   },
   "additionalProperties": false

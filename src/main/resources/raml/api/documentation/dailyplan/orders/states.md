@@ -9,14 +9,11 @@ Possible values are:
 
 <ul>
 <li>PLANNED</li>
-<li>PENDING</li>
-<li>RUNNING</li>
-<li>BLOCKED</li>
+<li>SUBMITTED</li>
 <li>FINISHED</li>
-<li>FAILED</li>
 </ul>
 
-</td><td>["PLANNED","RUNNING"]
+</td><td>["PLANNED","FINISHED"]
 </td>
 	
 <td></td>

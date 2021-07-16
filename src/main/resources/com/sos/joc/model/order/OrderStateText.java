@@ -20,6 +20,8 @@ public enum OrderStateText {
     BROKEN(12),
     INPROGRESS(13),
     CALLING(14),
+    SCHEDULED(15),
+    PROMPTING(16),
     UNKNOWN(99);
     private final Integer intValue;
     private final static Map<String, OrderStateText> CONSTANTS = new HashMap<String, OrderStateText>();

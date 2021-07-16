@@ -6,7 +6,7 @@
   "required": [
     "deliveryDate",
     "surveyDate",
-    "orders"
+    "files"
   ],
   "properties": {
     "deliveryDate": {
@@ -25,11 +25,11 @@
       "properties": {
         "successful": {
           "description": "number of successful yade files in the past specified by a time parameter",
-          "$ref": "../common/nonNegativeInteger-schema.json"
+          "$ref": "../common/nonNegativeLong-schema.json"
         },
         "failed": {
           "description": "number of failed  yade files in the past specified by a time parameter",
-          "$ref": "../common/nonNegativeInteger-schema.json"
+          "$ref": "../common/nonNegativeLong-schema.json"
         }
       }
     }

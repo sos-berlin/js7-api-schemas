@@ -1,20 +1,14 @@
 {
-  "title": "yade filter",
+  "title": "file transfer file filter",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.yade.FileFilter",
   "type": "object",
+  "required": [
+    "fileId"
+  ],
   "properties": {
-    "controllerId": {
-      "type": "string"
-    },
     "fileId": {
       "$ref": "../common/nonNegativeLong-schema.json"
-    },
-    "compact": {
-      "$ref": "../common/compactParam-schema.json"
-    },
-    "mime": {
-      "$ref": "../common/logMimeFilter-schema.json"
     }
   }
 }
