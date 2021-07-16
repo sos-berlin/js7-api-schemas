@@ -1,0 +1,44 @@
+{
+	"title": "notification object in monitoring notifications collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.NotificationItem",
+	"type": "object",
+	"required": [
+		"notificationId",
+		"type",
+		"hasMonitors",
+		"created",
+		"controllerId",
+		"orderId",
+		"workflow"
+	],
+	"properties": {
+		"notificationId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"type": {
+			"$ref": "../../common/monitoringNotificationTypeText-schema.json"
+		},
+		"created": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"hasMonitors": {
+			"type": "boolean"
+		},
+		"controllerId": {
+			"type": "string"
+		},
+		"orderId": {
+			"type": "string"
+		},
+		"workflow": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"message": {
+			"type": "string"
+		},
+		"job": {
+			"$ref": "notification-item-job-item-schema.json"
+		}
+	}
+}

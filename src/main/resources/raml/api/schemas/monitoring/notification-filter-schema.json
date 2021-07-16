@@ -1,0 +1,18 @@
+{
+  "title": "notification filter with notification id",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.monitoring.NotificationFilter",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "notificationId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerIdRequired-schema.json"
+    },
+    "notificationId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}
