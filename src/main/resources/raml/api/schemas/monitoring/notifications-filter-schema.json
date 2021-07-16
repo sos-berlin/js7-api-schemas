@@ -24,6 +24,12 @@
 			"items": {
 				"$ref": "../common/monitoringNotificationTypeText-schema.json"
 			}
+		},
+		"notificationIds": {
+			"type": "array",
+			"items": {
+				"$ref": "../common/nonNegativeLong-schema.json"
+			}
 		}
 	}
 }
