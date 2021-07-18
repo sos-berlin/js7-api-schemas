@@ -11,6 +11,7 @@
     "JOBCLASS",
     "JOBRESOURCE",
     "LOCK",
+    "BOARD",
     "JUNCTION",
     "FILEORDERSOURCE",
     "SCHEDULE",

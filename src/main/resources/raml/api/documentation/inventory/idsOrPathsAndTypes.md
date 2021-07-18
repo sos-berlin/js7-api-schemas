@@ -7,6 +7,7 @@
     <li>"JOBCLASS"</li>
     <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
+    <li>"BOARD"</li>
     <li>"JUNCTION"</li>
     <li>"FILEORDERSOURCE"</li>
     <li>"WORKINGDAYSCALENDAR"</li>

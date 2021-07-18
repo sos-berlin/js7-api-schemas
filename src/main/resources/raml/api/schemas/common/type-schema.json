@@ -10,6 +10,7 @@
     "JOBCLASS",
     "AGENTCLUSTER",
     "LOCK",
+    "BOARD",
     "JUNCTION",
     "FILEORDERSOURCE",
     "ORDER",

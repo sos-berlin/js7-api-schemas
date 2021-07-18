@@ -1,0 +1,15 @@
+{
+	"title": "Board configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.board.BoardPublish",
+	"type": "object",
+	"extends": {
+		"javaType": "com.sos.joc.model.publish.ControllerObject"
+	},
+	"properties": {
+		"content": {
+			"$ref": "../../../sign/schemas/board/board-schema.json"
+		}
+	}
+}
+

@@ -8,7 +8,7 @@
   ],
   "properties": {
   	"TYPE": {
-  		"description": "Succeeded, Failed, Disrupted, Cancelled, Killed",
+  		"description": "Succeeded, Failed, Disrupted, Cancelled, Killed, TimedOut",
   		"type": "string"
   	},
   	"namedValues": {

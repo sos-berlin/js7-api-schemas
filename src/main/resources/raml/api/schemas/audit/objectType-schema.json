@@ -8,6 +8,7 @@
     "JOBCLASS",
     "JOBRESOURCE",
     "LOCK",
+    "BOARD",
     "JUNCTION",
     "FILEORDERSOURCE",
     "WORKINGDAYSCALENDAR", 

@@ -5,6 +5,7 @@
     <li>"LOCK"</li>
     <li>"JUNCTION"</li>
     <li>"FILEORDERSOURCE"</li>
+    <li>"BOARD"</li>
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"SCHEDULE"</li>

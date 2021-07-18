@@ -9,6 +9,7 @@
     	* <a href="../../../../../inventory/schemas/jobresource/jobResource-schema.json" target="jobresource">JobResource JSON schema</a>
     	* <a href="../../../../../inventory/schemas/junction/junction-schema.json" target="junction">Junction JSON schema - IN PROGRESS</a>
     	* <a href="../../../../../inventory/schemas/fileordersource/fileOrderSource-schema.json" target="fileordersource">FileOrderSource JSON schema</a>
+    	* <a href="../../../../../inventory/schemas/board/board-schema.json" target="board">Board JSON schema</a>
 		* <a href="../../../../../inventory/schemas/job/job-schema.json" target="job">Job JSON schema</a>
     	* <a href="../../../../../inventory/schemas/schedule/schedule-schema.json" target="order">Schedule JSON schema</a>
     	* <a href="../../../../../inventory/schemas/calendar/calendar-schema.json" target="calendar">Calendar JSON schema</a>

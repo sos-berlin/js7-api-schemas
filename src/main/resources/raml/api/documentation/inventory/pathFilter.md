@@ -14,6 +14,7 @@
       <li>"WORKFLOW"</li>
       <li>"JOBCLASS"</li>
       <li>"JOBRESOURCE"</li>
+      <li>"BOARD"</li>
       <li>"LOCK"</li>
       <li>"JUNCTION"</li>
       <li>"FILEORDERSOURCE"</li>
