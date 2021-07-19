@@ -12,7 +12,6 @@ public enum ConfigurationType {
     WORKFLOW(1),
     JOBCLASS(2),
     LOCK(4),
-    JUNCTION(5),
     WORKINGDAYSCALENDAR(60),
     NONWORKINGDAYSCALENDAR(61),
     SCHEDULE(7),

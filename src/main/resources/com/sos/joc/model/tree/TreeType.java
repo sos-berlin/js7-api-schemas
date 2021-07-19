@@ -13,7 +13,6 @@ public enum TreeType {
     WORKFLOW(1),
     JOBCLASS(2),
     LOCK(4),
-    JUNCTION(5),
     SCHEDULE(7),
     JOB(8),
     FILEORDERSOURCE(9),

@@ -5,7 +5,6 @@
 	<li><a href="../../../../../inventory/schemas/lock/lock-schema.json" target="jobclass">Lock JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/jobclass/jobClass-schema.json" target="jobclass">JobClass JSON schema - IN PROGRESS</a></li>
 	<li><a href="../../../../../inventory/schemas/jobresource/jobResource-schema.json" target="jobresource">JobResource JSON schema</a></li>
-	<li><a href="../../../../../inventory/schemas/junction/junction-schema.json" target="junction">Junction JSON schema - IN PROGRESS</a></li>
 	<li><a href="../../../../../inventory/schemas/fileordersource/fileOrderSource-schema.json" target="fileordersource">FileOrderSource JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/board/board-schema.json" target="board">Board JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/schedule/schedule-schema.json" target="order">Schedule JSON schema</a></li>
@@ -19,7 +18,6 @@
     <li>"BOARD"</li>
     <li>"JOBCLASS"</li>
     <li>"JOBRESOURCE"</li>
-    <li>"JUNCTION"</li>
     <li>"FILEORDERSOURCE"</li>
     <li>"SCHEDULE"</li>
     <li>"WORKINGDAYSCALENDAR"</li>

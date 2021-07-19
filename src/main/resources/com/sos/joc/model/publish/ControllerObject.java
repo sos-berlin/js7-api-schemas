@@ -40,7 +40,6 @@ import com.sos.joc.model.common.IDeployObject;
 	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.workflow.WorkflowPublish.class, name = "Workflow"),
 	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobclass.JobClassPublish.class, name = "JobClass"),
 	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobresource.JobResourcePublish.class, name = "JobResource"),
-    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.junction.JunctionPublish.class, name = "Junction"),
 	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.lock.LockPublish.class, name = "Lock"),
 	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.board.BoardPublish.class, name = "Board"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.fileordersource.FileOrderSourcePublish.class, name = "FileWatch")})

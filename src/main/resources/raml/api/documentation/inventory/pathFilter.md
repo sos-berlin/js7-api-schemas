@@ -16,7 +16,6 @@
       <li>"JOBRESOURCE"</li>
       <li>"BOARD"</li>
       <li>"LOCK"</li>
-      <li>"JUNCTION"</li>
       <li>"FILEORDERSOURCE"</li>
       <li>"WORKINGDAYSCALENDAR"</li>
       <li>"NONWORKINGDAYSCALENDAR"</li>

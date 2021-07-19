@@ -4,7 +4,6 @@
     <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
     <li>"BOARD"</li>
-    <li>"JUNCTION"</li>
     <li>"FILEORDERSOURCE"</li>
 </ul>
 </td><td>["WORKFLOW"]</td><td></td></tr>

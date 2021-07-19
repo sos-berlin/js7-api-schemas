@@ -76,7 +76,7 @@
 <tr>
 <td style="padding-left:80px;">``objectType``</td>
 <td>required, enum</td>
-<td>Subset of deployable objects from the enum ConfigurationType. The subset consist of WORKFLOW, JUNCTION, LOCK, JOBCLASS, FILEORDERSOURCE and FOLDER.</td>
+<td>Subset of deployable objects from the enum ConfigurationType. The subset consist of WORKFLOW, BOARD, LOCK, JOBCLASS, FILEORDERSOURCE and FOLDER.</td>
 <td>"objectType" : "WORKFLOW"</td>
 <td></td>
 </tr>
@@ -183,7 +183,7 @@
 <tr>
 <td style="padding-left:80px;">``objectType``</td>
 <td>required, enum</td>
-<td>Subset of deployable objects from the enum ConfigurationType. The subset consist of WORKFLOW, JUNCTION, LOCK, JOBCLASS, FILEORDERSOURCE and FOLDER.</td>
+<td>Subset of deployable objects from the enum ConfigurationType. The subset consist of WORKFLOW, BOARD, LOCK, JOBCLASS, FILEORDERSOURCE and FOLDER.</td>
 <td>"objectType" : "WORKFLOW"</td>
 <td></td>
 </tr>
