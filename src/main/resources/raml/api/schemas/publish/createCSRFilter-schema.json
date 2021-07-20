@@ -1,13 +1,12 @@
 {
-  "title": "set generate client/server certificates filter",
+  "title": "sets the properties to create a (C)ertificate (S)igning (R)equest filter",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.publish.GenerateClientServerCertificateFilter",
+  "javaType": "com.sos.joc.model.publish.CreateCSRFilter",
   "type": "object",
   "required": [
-    "commonName",
-    "organizationUnit",
-    "organization",
-    "countryCode"
+    "location",
+    "state",
+    "alias"
   ],
   "properties": {
     "commonName": {
@@ -26,6 +25,12 @@
       "type" : "string"
     },
     "state" : {
+      "type" : "string"
+    },
+    "alias" : {
+      "type" : "string"
+    },
+    "subjectAltName" : {
       "type" : "string"
     },
     "auditLog": {
