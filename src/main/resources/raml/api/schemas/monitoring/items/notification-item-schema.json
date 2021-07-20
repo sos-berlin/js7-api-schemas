@@ -16,6 +16,9 @@
 		"notificationId": {
 			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
+		"recoveredNotificationId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
 		"type": {
 			"$ref": "../../common/monitoringNotificationTypeText-schema.json"
 		},
