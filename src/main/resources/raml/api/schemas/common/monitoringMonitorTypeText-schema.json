@@ -1,0 +1,12 @@
+{
+	"title": "notification monitor type text",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.common.MonitoringMonitorTypeText",
+	"type": "string",
+	"enum": [
+		"COMMAND",
+		"MAIL",
+		"NSCA",
+		"JMS"
+	]
+}

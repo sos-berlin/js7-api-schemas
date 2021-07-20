@@ -1,0 +1,34 @@
+{
+	"title": "order object in history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.MonitorItem",
+	"type": "object",
+	"required": [
+		"type",
+		"name",
+		"configuration",
+		"message",
+		"error",
+		"created"
+	],
+	"properties": {
+		"type": {
+			"$ref": "../../common/monitoringMonitorTypeText-schema.json"
+		},
+		"name": {
+			"type": "string"
+		},
+		"configuration": {
+			"type": "string"
+		},
+		"message": {
+			"type": "string"
+		},
+		"error": {
+			"type": "string"
+		},
+		"created": {
+			"$ref": "../../common/timestamp-schema.json"
+		}
+	}
+}

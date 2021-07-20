@@ -10,6 +10,7 @@
     "PROCESSCLASS",
     "AGENTCLUSTER",
     "LOCK",
+    "BOARD",
     "SCHEDULE",
     "FOLDER",
     "JOBSCHEDULER",

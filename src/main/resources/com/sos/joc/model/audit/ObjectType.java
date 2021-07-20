@@ -12,13 +12,13 @@ public enum ObjectType {
     WORKFLOW(1),
     JOBCLASS(2),
     LOCK(4),
-    JUNCTION(5),
     WORKINGDAYSCALENDAR(60),
     NONWORKINGDAYSCALENDAR(61),
     SCHEDULE(7),
     JOB(8),
     FILEORDERSOURCE(9),
     JOBRESOURCE(10),
+    BOARD(11),
     DOCUMENTATION(20),
     ORDER(99);
     private final Integer intValue;

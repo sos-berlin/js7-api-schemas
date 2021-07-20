@@ -5,7 +5,6 @@
   "type": "string",
   "enum": [
     "Fresh",
-    "Awaiting",
     "DelayedAfterError",
     "Forked",
     "Offering",
@@ -21,11 +20,11 @@
     "Cancelled",
     "ProcessingKilled",
     "Suspended",
-    "WaitingForLock"
+    "WaitingForLock",
+    "WaitingForNotice"
   ],
   "javaEnumNames": [
     "Fresh",
-    "Awaiting",
     "DelayedAfterError",
     "Forked",
     "Offering",
@@ -41,7 +40,8 @@
     "Cancelled",
     "ProcessingKilled",
     "Suspended",
-    "WaitingForLock"
+    "WaitingForLock",
+    "WaitingForNotice"
   ]
 }
 

@@ -9,11 +9,12 @@
     "JOBCLASS",
     "JOBRESOURCE",
     "LOCK",
-    "JUNCTION",
+    "BOARD",
     "FILEORDERSOURCE",
     "WORKINGDAYSCALENDAR", 
     "NONWORKINGDAYSCALENDAR",
     "SCHEDULE",
+    "BOARD",
     "JOB"
   ]
 }

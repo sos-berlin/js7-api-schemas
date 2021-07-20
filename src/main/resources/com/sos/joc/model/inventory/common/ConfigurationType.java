@@ -12,13 +12,13 @@ public enum ConfigurationType {
     WORKFLOW(1),
     JOBCLASS(2),
     LOCK(4),
-    JUNCTION(5),
     WORKINGDAYSCALENDAR(60),
     NONWORKINGDAYSCALENDAR(61),
     SCHEDULE(7),
     JOB(8),
     FILEORDERSOURCE(9),
-    JOBRESOURCE(10);
+    JOBRESOURCE(10),
+    BOARD(11);
     private final Integer intValue;
     private final static Map<String, ConfigurationType> CONSTANTS = new HashMap<String, ConfigurationType>();
     private final static Map<Integer, ConfigurationType> INTCONSTANTS = new HashMap<Integer, ConfigurationType>();

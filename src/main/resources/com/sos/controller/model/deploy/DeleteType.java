@@ -11,9 +11,9 @@ public enum DeleteType {
     WORKFLOW("WorkflowPath", 1),
     JOBCLASS("JobClassPath", 2),
     LOCK("LockPath", 4),
-    JUNCTION("JunctionPath", 5),
     FILEORDERSOURCE("FileWatchPath", 9),
-    JOBRESOURCE("JobResourcePath", 10);
+    JOBRESOURCE("JobResourcePath", 10),
+    BOARD("BoardPath", 11);
     private final String value;
     private final Integer intValue;
     private final static Map<String, DeleteType> CONSTANTS = new HashMap<String, DeleteType>();

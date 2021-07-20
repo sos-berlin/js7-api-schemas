@@ -1,0 +1,44 @@
+{
+	"title": "order object in history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.NotificationItemJobItem",
+	"type": "object",
+	"required": [
+		"job",
+		"startTime",
+		"position",
+		"state",
+		"criticality",
+		"taskId",
+		"agentUrl"
+	],
+	"properties": {
+		"job": {
+			"type": "string"
+		},
+		"startTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"endTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"position": {
+			"type": "string"
+		},
+		"state": {
+			"$ref": "../../common/historyState-schema.json"
+		},
+		"criticality": {
+			"type": "string"
+		},
+		"taskId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"agentUrl": {
+			"type": "string"
+		},
+		"exitCode": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		}
+	}
+}

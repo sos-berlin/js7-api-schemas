@@ -8,13 +8,15 @@
     "Failed",
     "Disrupted",
     "Cancelled",
-    "Killed"
+    "Killed",
+    "TimedOut"
   ],
   "javaEnumNames": [
     "Succeeded",
     "Failed",
     "Disrupted",
     "Cancelled",
-    "Killed"
+    "Killed",
+    "TimedOut"
   ]
 }
