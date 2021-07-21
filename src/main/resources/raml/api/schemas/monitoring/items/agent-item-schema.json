@@ -1,0 +1,25 @@
+{
+	"title": "notification object in monitoring notifications collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.AgentItem",
+	"type": "object",
+	"required": [
+		"agentId",
+		"url",
+		"entries"
+	],
+	"properties": {
+		"agentId": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"url": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"entries": {
+			"type": "array",
+			"items": {
+				"$ref": "agent-item-entry-item-schema.json"
+			}
+		}
+	}
+}

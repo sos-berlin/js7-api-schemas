@@ -1,21 +1,20 @@
 {
 	"title": "order object in history collection",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.monitoring.ControllerItemEntryItem",
+	"javaType": "com.sos.joc.model.monitoring.AgentItemEntryItem",
 	"type": "object",
 	"required": [
-		"totalRunningTime",
 		"readyTime"
 	],
 	"properties": {
-		"totalRunningTime": {
-			"$ref": "../../common/nonNegativeLong-schema.json"
-		},
 		"readyTime": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
-		"shutdownTime": {
+		"couplingFailedTime": {
 			"$ref": "../../common/timestamp-schema.json"
+		},
+		"couplingFailedMessage": {
+			"type": "string"
 		}
 	}
 }
