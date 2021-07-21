@@ -1,0 +1,14 @@
+{
+  "title": "POJO for show one time token(s) response",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.auth.token.OnetimeTokensResponse",
+  "type": "object",
+  "properties": {
+    "tokens": {
+      "type": "array",
+    	"items": {
+    		"$ref": "onetimeToken-schema.json"
+    	}
+    }
+  }
+}

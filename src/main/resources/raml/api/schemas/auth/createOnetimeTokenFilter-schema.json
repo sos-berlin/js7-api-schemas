@@ -1,0 +1,40 @@
+{
+  "title": "sets the properties to create a one time token filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.auth.CreateOnetimeTokenFilter",
+  "type": "object",
+  "anyOf": [{
+    "required": [
+        "agentIds",
+    	"validUntil",
+    	"timezone"
+      ]
+    }, {
+      "required": [
+        "controllerId",
+        "validUntil",
+    	"timezone"
+      ]
+    }
+  ],
+  "properties": {
+    "agentIds": {
+      "type": "array",
+    	"items": {
+    		"$ref": "../common/string255-schema.json"
+    	}
+    },
+    "controllerId" : {
+      "$ref": "../common/string255-schema.json"
+    },
+    "validUntil" : {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "timezone" : {
+      "$ref": "../common/timezone-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

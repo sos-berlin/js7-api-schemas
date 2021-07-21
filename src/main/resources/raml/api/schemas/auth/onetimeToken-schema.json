@@ -1,0 +1,20 @@
+{
+  "title": "sets the properties of a one time token",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.auth.token.OnetimeToken",
+  "type": "object",
+  "properties": {
+    "agentId": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "controllerId" : {
+      "$ref": "../common/string255-schema.json"
+    },
+    "UUID" : {
+      "$ref": "../common/string100-schema.json"
+    },
+    "validUntil" : {
+      "$ref": "../common/timestamp-schema.json"
+    }
+  }
+}

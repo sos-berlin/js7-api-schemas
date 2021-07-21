@@ -1,0 +1,17 @@
+{
+  "title": "sets the filter properties to show one time token(s)",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.auth.ShowOnetimeTokenFilter",
+  "type": "object",
+  "properties": {
+    "agentIds": {
+      "type": "array",
+    	"items": {
+    		"$ref": "../common/string255-schema.json"
+    	}
+    },
+    "controllerId" : {
+		"$ref": "../common/string255-schema.json"
+    }
+  }
+}
