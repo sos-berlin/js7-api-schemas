@@ -1,0 +1,22 @@
+{
+	"title": "order object in history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.ControllerItemEntryItem",
+	"type": "object",
+	"required": [
+		"totalRunningTime",
+		"readyTime",
+		"shutdownTime"
+	],
+	"properties": {
+		"totalRunningTime": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"readyTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"shutdownTime": {
+			"$ref": "../../common/timestamp-schema.json"
+		}
+	}
+}
