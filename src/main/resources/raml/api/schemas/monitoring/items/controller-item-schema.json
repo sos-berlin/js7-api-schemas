@@ -11,6 +11,9 @@
 		"controllerId": {
 			"$ref": "../../common/controllerId-schema.json"
 		},
+		"url": {
+			"$ref": "../../common/string255required-schema.json"
+		},
 		"entries": {
 			"type": "array",
 			"items": {
