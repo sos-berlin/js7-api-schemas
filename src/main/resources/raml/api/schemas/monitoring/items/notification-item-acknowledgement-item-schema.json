@@ -1,0 +1,21 @@
+{
+	"title": "order object in history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.NotificationItemAcknowledgementItem",
+	"type": "object",
+	"required": [
+		"account",
+		"created"
+	],
+	"properties": {
+		"account": {
+			"type": "string"
+		},
+		"comment": {
+			"type": "string"
+		},
+		"created": {
+			"$ref": "../../common/timestamp-schema.json"
+		}
+	}
+}

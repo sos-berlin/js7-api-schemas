@@ -42,6 +42,9 @@
 		},
 		"job": {
 			"$ref": "notification-item-job-item-schema.json"
+		},
+		"acknowledgement": {
+			"$ref": "notification-item-acknowledgement-item-schema.json"
 		}
 	}
 }
