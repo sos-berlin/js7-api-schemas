@@ -5,14 +5,17 @@
 	"type": "object",
 	"required": [
 		"controllerId",
-		"notificationId"
+		"notificationIds"
 	],
 	"properties": {
 		"controllerId": {
 			"$ref": "../common/controllerIdRequired-schema.json"
 		},
-		"notificationId": {
-			"$ref": "../common/nonNegativeLong-schema.json"
+		"notificationIds": {
+			"type": "array",
+			"items": {
+				"$ref": "../common/nonNegativeLong-schema.json"
+			}
 		},
 		"comment": {
 			"type": "string"
