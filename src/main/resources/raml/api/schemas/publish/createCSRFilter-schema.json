@@ -4,9 +4,8 @@
   "javaType": "com.sos.joc.model.publish.CreateCSRFilter",
   "type": "object",
   "required": [
-    "location",
-    "state",
-    "alias"
+    "commonName",
+    "subjectAltName"
   ],
   "properties": {
     "commonName": {
@@ -27,14 +26,8 @@
     "state" : {
       "type" : "string"
     },
-    "alias" : {
-      "type" : "string"
-    },
     "subjectAltName" : {
       "type" : "string"
-    },
-    "auditLog": {
-      "$ref": "../audit/auditParams-schema.json"
     }
   }
 }
