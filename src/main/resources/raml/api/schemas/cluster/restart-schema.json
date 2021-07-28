@@ -14,13 +14,15 @@
 				"cluster",
 				"history",
 				"dailyplan",
-				"cleanup"
+				"cleanup",
+				"monitor"
 			],
 			"javaEnumNames": [
 				"cluster",
 				"history",
 				"dailyplan",
-				"cleanup"
+				"cleanup",
+				"monitor"
 			]
 		}
 	}
