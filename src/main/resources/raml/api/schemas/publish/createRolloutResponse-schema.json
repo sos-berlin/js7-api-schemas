@@ -1,0 +1,14 @@
+{
+  "title": "sets the properties to create a response for rollout",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.RolloutResponse",
+  "type": "object",
+  "properties": {
+    "JocKeyPair": {
+      "$ref": "../sign/jocKeyPair-schema.json"
+    },
+    "caCert" : {
+      "type" : "string"
+    }
+  }
+}
