@@ -4,17 +4,18 @@
 	"javaType": "com.sos.joc.model.monitoring.AgentItemEntryItem",
 	"type": "object",
 	"required": [
+	    "totalRunningTime",
 		"readyTime"
 	],
 	"properties": {
+		"totalRunningTime": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
 		"readyTime": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
-		"couplingFailedTime": {
+		"lastKnownTime": {
 			"$ref": "../../common/timestamp-schema.json"
-		},
-		"couplingFailedMessage": {
-			"type": "string"
 		}
 	}
 }

@@ -15,6 +15,9 @@
 		"url": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"previousEntry": {
+			"$ref": "agent-item-entry-item-schema.json"
+		},
 		"entries": {
 			"type": "array",
 			"items": {

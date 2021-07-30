@@ -6,6 +6,16 @@
 	"properties": {
 		"controllerId": {
 			"$ref": "../common/controllerId-schema.json"
+		},
+		"dateFrom": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"dateTo": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"timeZone": {
+			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+			"type": "string"
 		}
 	}
 }

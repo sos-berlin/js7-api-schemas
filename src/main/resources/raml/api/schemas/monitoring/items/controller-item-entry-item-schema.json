@@ -14,7 +14,7 @@
 		"readyTime": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
-		"shutdownTime": {
+		"lastKnownTime": {
 			"$ref": "../../common/timestamp-schema.json"
 		}
 	}
