@@ -10,47 +10,11 @@
 		"deliveryDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
-		"workflows": {
+		"results": {
 			"type": "array",
 			"items": {
 				"$ref": "response-search-item-schema.json"
-			},
-			"uniqueItems": true
-		},
-		"fileOrderSources": {
-			"type": "array",
-			"items": {
-				"$ref": "response-search-item-schema.json"
-			},
-			"uniqueItems": true
-		},
-		"jobResources": {
-			"type": "array",
-			"items": {
-				"$ref": "response-search-item-schema.json"
-			},
-			"uniqueItems": true
-		},
-		"boards": {
-			"type": "array",
-			"items": {
-				"$ref": "response-search-item-schema.json"
-			},
-			"uniqueItems": true
-		},
-		"locks": {
-			"type": "array",
-			"items": {
-				"$ref": "response-search-item-schema.json"
-			},
-			"uniqueItems": true
-		},
-		"schedules": {
-			"type": "array",
-			"items": {
-				"$ref": "response-search-item-schema.json"
-			},
-			"uniqueItems": true
+			}
 		}
 	}
 }

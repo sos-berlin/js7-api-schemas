@@ -16,6 +16,9 @@
 		"lock": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"schedule": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"boards": {
 			"$ref": "../../common/string255-schema.json"
 		},
