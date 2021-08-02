@@ -1,0 +1,56 @@
+{
+	"title": "Inventory search response",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.search.ResponseSearch",
+	"type": "object",
+	"required": [
+		"deliveryDate"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"workflows": {
+			"type": "array",
+			"items": {
+				"$ref": "response-search-item-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"fileOrderSources": {
+			"type": "array",
+			"items": {
+				"$ref": "response-search-item-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"jobResources": {
+			"type": "array",
+			"items": {
+				"$ref": "response-search-item-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"boards": {
+			"type": "array",
+			"items": {
+				"$ref": "response-search-item-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"locks": {
+			"type": "array",
+			"items": {
+				"$ref": "response-search-item-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"schedules": {
+			"type": "array",
+			"items": {
+				"$ref": "response-search-item-schema.json"
+			},
+			"uniqueItems": true
+		}
+	}
+}

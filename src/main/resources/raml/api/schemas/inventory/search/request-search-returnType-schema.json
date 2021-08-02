@@ -1,0 +1,14 @@
+{
+	"title": "Inventory search return type",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.search.RequestSearchReturnType",
+	"type": "string",
+	"enum": [
+		"WORKFLOW",
+		"FILEORDERSOURCE",
+		"JOBRESOURCE",
+		"BOARD",
+		"LOCK",
+		"SCHEDULE"
+	]
+}

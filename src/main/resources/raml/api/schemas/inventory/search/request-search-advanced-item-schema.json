@@ -1,0 +1,44 @@
+{
+	"title": "Inventory advanced search",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.search.RequestSearchAdvancedItem",
+	"type": "object",
+	"properties": {
+		"agentName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"workflow": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"fileOrderSource": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"lock": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"boards": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"jobResources": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"jobName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"jobCriticality": {
+			"$ref": "../../../../inventory/schemas/job/jobCriticality-schema.json"
+		},
+		"jobCountFrom": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
+		"jobCountTo": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
+		"argumentName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"argumentValue": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	}
+}
