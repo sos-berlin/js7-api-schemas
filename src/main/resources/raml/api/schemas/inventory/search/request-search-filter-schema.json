@@ -14,7 +14,10 @@
 			"$ref": "../../common/string255-schema.json"
 		},
 		"folders": {
-			"$ref": "../../common/folders-schema.json"
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
 		},
 		"deployedOrReleased": {
 			"type": "boolean",
