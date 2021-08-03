@@ -41,6 +41,9 @@
 		},
 		"hasReleases": {
 			"type": "boolean"
+		},
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
 		}
 	}
 }
