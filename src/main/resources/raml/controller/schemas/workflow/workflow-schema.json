@@ -25,6 +25,13 @@
       "items": {
         "$ref": "../fileordersource/fileOrderSource-schema.json"
       }
+    },
+    "forkListVariables": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../api/schemas/common/string255-schema.json"
+      }
     }
   },
   "additionalProperties": false
