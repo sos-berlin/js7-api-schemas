@@ -1,6 +1,3 @@
 {
-  "commonName" : "sp",
-  "organizationUnit" : "devel",
-  "organization" : "SOS",
-  "countryCode" : "DE"
+  "dn" : "CN=SOS root CA, OU=devel, O=SOS, C=DE"
 }
