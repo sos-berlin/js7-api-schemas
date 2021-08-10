@@ -1,0 +1,17 @@
+{
+  "title": "set Root CA certificate for signing filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.SetRootCaForSigningFilter",
+  "type": "object",
+  "required": [
+    "certificate"
+  ],
+  "properties": {
+    "certificate": {
+      "type": "string"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

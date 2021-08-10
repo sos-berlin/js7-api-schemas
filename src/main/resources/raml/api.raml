@@ -1956,6 +1956,39 @@ traits:
         example: !include api/examples/publish/emptyBody-example.json
         example200: !include api/examples/publish/showKey-example.json
 
+    /ca:
+      type:
+        postWithoutJSONandJSId:
+          description: gets the stored signing CAs X509 certificate
+          description1: " "
+          description2: " "
+          schema: !include api/examples/publish/emptyBody-example.json
+          schema200: !include api/schemas/sign/jocKeyPair-schema.json
+          example: !include api/examples/publish/emptyBody-example.json
+          example200: !include api/examples/publish/showKey-example.json
+          
+      /import:
+        type:
+          postForUploadSignedRootCa:
+            description: |
+              imports a signing CAs X509 Certificate file(ASCII format only, no binary files)
+              and stores the file content
+            schema: !include api/schemas/publish/importRootCaFilter-schema.json
+            example: " "
+
+      /store:
+        type:
+          postJSONWithOkWithoutJSId:
+            description: stores a new signing CAs X509 certificate (PEM format only)
+            description1: !include api/documentation/publish/setRootCaCertificate.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            audit: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/publish/setRootCaForSigning-schema.json
+            example: !include api/examples/publish/setRootCaForSigning-example.json
+
     /generate:
       type:
         postForGenerateKey:
