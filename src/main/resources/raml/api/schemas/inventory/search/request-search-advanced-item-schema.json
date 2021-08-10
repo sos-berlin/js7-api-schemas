@@ -37,10 +37,19 @@
 		"jobCountTo": {
 			"$ref": "../../common/nonNegativeInteger-schema.json"
 		},
+		"jobScript": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"argumentName": {
 			"$ref": "../../common/string255-schema.json"
 		},
 		"argumentValue": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"envName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"envValue": {
 			"$ref": "../../common/string255-schema.json"
 		}
 	}
