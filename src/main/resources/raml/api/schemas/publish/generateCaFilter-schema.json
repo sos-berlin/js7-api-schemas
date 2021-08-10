@@ -4,23 +4,11 @@
   "javaType": "com.sos.joc.model.publish.GenerateCaFilter",
   "type": "object",
   "required": [
-    "commonName",
-    "organizationUnit",
-    "organization",
-    "countryCode"
+    "dn"
   ],
   "properties": {
-    "commonName": {
+    "dn": {
       "type": "string"
-    },
-    "organizationUnit" : {
-      "type" : "string"
-    },
-    "organization" : {
-      "type" : "string"
-    },
-    "countryCode" : {
-      "type" : "string"
     },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"

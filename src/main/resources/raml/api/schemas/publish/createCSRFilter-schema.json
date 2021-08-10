@@ -3,30 +3,14 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.publish.CreateCSRFilter",
   "type": "object",
-  "required": [
-    "commonName",
-    "san"
-  ],
   "properties": {
-    "commonName": {
+    "dn": {
       "type": "string"
     },
-    "organizationUnit" : {
-      "type" : "string"
-    },
-    "organization" : {
-      "type" : "string"
-    },
-    "countryCode" : {
-      "type" : "string"
-    },
-    "location" : {
-      "type" : "string"
-    },
-    "state" : {
-      "type" : "string"
-    },
     "san" : {
+      "type" : "string"
+    }, 
+    "hostname" : {
       "type" : "string"
     }
   }
