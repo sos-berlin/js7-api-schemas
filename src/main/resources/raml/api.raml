@@ -303,6 +303,39 @@ traits:
           schema: !include api/schemas/security/security-configuration-schema.json
           example: " "    
     
+/board:
+  /notice/delete:
+    type:
+      postJSONWithOkResponse:
+        description: Deletes Notice
+        description1: !include api/documentation/board/deleteNotice.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/board/modifyNotice-schema.json
+        example: " "
+  /notice/post:
+    type:
+      postJSONWithOkResponse:
+        description: Posts Notice
+        description1: !include api/documentation/board/deleteNotice.md
+        description2: !include api/documentation/board/endOfLife.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/board/modifyNotice-schema.json
+        example: " "
     
 
 /calendar/dates:
