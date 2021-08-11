@@ -1,0 +1,15 @@
+{
+	"title": "Post Notice",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.command.PostNotice",
+	"type": "object",
+	"extends": {
+		"$ref": "deleteNotice-schema.json"
+	},
+	"properties": {
+		"endOfLife": {
+    		"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

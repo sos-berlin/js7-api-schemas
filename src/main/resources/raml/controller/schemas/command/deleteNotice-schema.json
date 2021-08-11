@@ -1,0 +1,27 @@
+{
+	"title": "Delete Notice",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.controller.model.command.DeleteNotice",
+	"type": "object",
+	"extends": {
+		"javaType": "Command"
+	},
+	"required": [
+		"boardPath",
+		"noticeId"
+	],
+	"propertyOrder": [
+    	"TYPE",
+    	"boardPath",
+    	"noticeId"
+  	],
+  	"properties": {
+		"boardPath": {
+			"type": "string"
+		},
+		"noticeId": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

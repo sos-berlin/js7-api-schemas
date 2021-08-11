@@ -16,6 +16,8 @@
     "ClusterSwitchOver", 
     "ClusterAppointNodes",
     "ReleaseEvents",
-    "ResetAgent"
+    "ResetAgent",
+    "DeleteNotice",
+    "PostNotice"
   ]
 }

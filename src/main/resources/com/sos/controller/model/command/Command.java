@@ -42,7 +42,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
         @JsonSubTypes.Type(value = ClusterSwitchOver.class, name = "ClusterSwitchOver"),
         @JsonSubTypes.Type(value = ClusterAppointNodes.class, name = "ClusterAppointNodes"),
         @JsonSubTypes.Type(value = ReleaseEvents.class, name = "ReleaseEvents"),
-        @JsonSubTypes.Type(value = ResetAgent.class, name = "ResetAgent")})
+        @JsonSubTypes.Type(value = ResetAgent.class, name = "ResetAgent"),
+        @JsonSubTypes.Type(value = DeleteNotice.class, name = "DeleteNotice"),
+        @JsonSubTypes.Type(value = PostNotice.class, name = "PostNotice")})
 public abstract class Command
     extends ClassHelper
 {
