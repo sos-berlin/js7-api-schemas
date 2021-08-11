@@ -1,0 +1,22 @@
+{
+	"title": "jobs",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.wizard.Jobs",
+	"type": "object",
+	"required": [
+		"deliveryDate",
+		"jobs"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"jobs": {
+			"description": "job items without params",
+			"type": "array",
+			"items": {
+				"$ref": "wizard-job-schema.json"
+			}
+		}
+	}
+}

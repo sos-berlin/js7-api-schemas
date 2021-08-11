@@ -1,0 +1,50 @@
+{
+	"title": "job",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.wizard.Job",
+	"type": "object",
+	"required": [
+		"docPath",
+		"docName",
+		"javaClass"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"docPath": {
+			"$ref": "../common/path-schema.json"
+		},
+		"docName": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"javaClass": {
+			"type": "string"
+		},
+		"params": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.wizard.Param",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"required": {
+						"type": "boolean"
+					},
+					"defaultValue": {
+						"type": "string"
+					},
+					"description": {
+						"description": "string in html format",
+						"type": "string"
+					}
+				}
+			}
+		}
+	}
+}

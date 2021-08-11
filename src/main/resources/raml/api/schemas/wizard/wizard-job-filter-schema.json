@@ -1,0 +1,18 @@
+{
+	"title": "jobs filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.wizard.JobWizardFilter",
+	"type": "object",
+	"required": [
+		"jobschedulerId",
+		"docPath"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/controllerId-schema.json"
+		},
+		"docPath": {
+			"$ref": "../common/path-schema.json"
+		}
+	}
+}
