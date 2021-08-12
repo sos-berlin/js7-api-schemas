@@ -9,6 +9,12 @@
     },
     "caCert" : {
       "type" : "string"
+    },
+    "DNs": {
+      "type": "array",
+    	"items": {
+    		"type": "string"
+    	}
     }
   }
 }
