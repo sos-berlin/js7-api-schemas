@@ -13,6 +13,9 @@
     "UUID" : {
       "$ref": "../common/string100-schema.json"
     },
+    "URI" : {
+      "$ref": "../common/string255-schema.json"
+    },
     "validUntil" : {
       "$ref": "../common/timestamp-schema.json"
     }
