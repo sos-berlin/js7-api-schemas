@@ -24,4 +24,4 @@
     }
 </pre>
 * Content of the folders collection depends on ``folders`` parameter
-* If ``types`` parameter is specified then any folder which don't have subfolders or Controller objects from the ``types`` parameter are omit
+* If ``types`` parameter is specified then any folder that don't have subfolders or Controller objects from the ``types`` parameter are omit

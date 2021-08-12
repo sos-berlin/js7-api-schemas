@@ -331,7 +331,7 @@ traits:
 #  /used:
 #    type:
 #      postJSON:
-#        description: Sends compact collection of calendar items with objects which use it
+#        description: Sends compact collection of calendar items with objects that use it
 #        description1: " "
 #        description2: !include api/documentation/common/regex.md
 #        description3: !include api/documentation/common/folders.md
@@ -404,7 +404,7 @@ traits:
           description: |
             * The collection of all available Controller IDs can be used for a
             selectbox in which the user can change the ID.
-            * The ID which is specified in the selected field will be used for
+            * The ID that is specified in the selected field will be used for
             all following requests
           body:
             application/json:
@@ -623,7 +623,7 @@ traits:
     /summary:
       type:
         postJSON:
-          description: Get Summary order counts for the daily plan 
+          description: Gets summary order counts for the daily plan 
           description1: !include api/documentation/dailyplan/summary/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -643,7 +643,7 @@ traits:
   /history:
     type:
       postJSON:
-        description: Get daily plan history
+        description: Gets daily plan history
         description1: !include api/documentation/dailyplan/history/dailyPlanHistoryFilterDef.md
         description2: !include api/documentation/dailyplan/history/dateFrom.md
         description3: !include api/documentation/dailyplan/history/dateTo.md
@@ -663,7 +663,7 @@ traits:
   /submissions:
     type:
       postJSON:
-        description: Get daily plan submissions 
+        description: Gets daily plan submissions 
         description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
         description2: !include api/documentation/dailyplan/submissions/dateFrom.md
         description3: !include api/documentation/dailyplan/submissions/dateTo.md
@@ -729,7 +729,7 @@ traits:
   /used:
     type:
       postJSONWithoutJSId:
-        description: Get objects which use the documentation
+        description: Gets objects that use the documentation
         description1: !include api/documentation/docu/docPath.md
         description2: " "
         description3: " "
@@ -749,7 +749,7 @@ traits:
 /documentations:
   type:
     postJSONWithoutJSId:
-      description: Get documentations
+      description: Gets documentations
       description1: !include api/documentation/docu/filteredByPaths.md
       description2: " "
       #description3: !include api/documentation/common/regex.md
@@ -782,7 +782,7 @@ traits:
     /info:
       type:
         postJSONWithoutJSId:
-          description: Get temp. filename for export 
+          description: Gets temp. filename for export 
           description1: !include api/documentation/docu/filteredByPaths.md
           description2: !include api/documentation/common/folders.md
           description3: " "
@@ -847,7 +847,7 @@ traits:
   /calendar/dates:
     type:
       postJSONWithoutJSId:
-        description: Get dates of a calendar
+        description: Gets dates of a calendar
         description1: !include api/documentation/calendar/calendarIdPath.md
         description2: " "
         description3: !include api/documentation/calendar/dateFrom.md
@@ -927,7 +927,7 @@ traits:
   /deployable:
     type:
       postJSONWithoutJSId:
-        description: Get deployable object
+        description: Gets deployable object
         description1: !include api/documentation/inventory/idOrPathAndDeployableType.md
         description2: !include api/documentation/inventory/onlyValidObjects.md
         description3: " "
@@ -947,7 +947,7 @@ traits:
   /deployables:
     type:
       postJSONWithoutJSId:
-        description: Get deployable objects
+        description: Gets deployable objects
         description1: !include api/documentation/inventory/folder.md
         description2: !include api/documentation/common/recursive.md
         description3: !include api/documentation/inventory/deployableTypes.md
@@ -1131,7 +1131,7 @@ traits:
   /releasable:
     type:
       postJSONWithoutJSId:
-        description: Get releasable objects
+        description: Gets releasable objects
         description1: !include api/documentation/inventory/idOrPathAndReleasableType.md
         description2: !include api/documentation/inventory/onlyValidObjects.md
         description3: " "
@@ -1151,7 +1151,7 @@ traits:
   /releasables:
     type:
       postJSONWithoutJSId:
-        description: Get releasable objects
+        description: Gets releasable objects
         description1: !include api/documentation/inventory/folder.md
         description2: !include api/documentation/common/recursive.md
         description3: !include api/documentation/inventory/releasableTypes.md
@@ -1658,7 +1658,7 @@ traits:
   /variables:
     type:
       postJSON:
-        description: Get variables that were returned by the jobs before specified position
+        description: Gets variables that were returned by the jobs before specified position
         description1: " "
         description2: " "
         description3: !include api/documentation/order/orderIdRequired.md
@@ -1868,7 +1868,7 @@ traits:
     /positions:
       type:
         postJSON:
-          description: Get common allowed Workflow position for resuming orders
+          description: Gets common allowed workflow position for resuming orders
           description1: !include api/documentation/order/orderIdsRequired.md
           description2: " "
           description3: " "
@@ -2290,7 +2290,7 @@ traits:
   /transfers:
     type:
       postJSONWithOptionalJSId:
-        description: Get file transfers
+        description: Gets file transfers
         description1: !include api/documentation/yade/transferIds.md
         description2: !include api/documentation/common/compact.md
         description3: !include api/documentation/common/dateFrom.md
@@ -2321,7 +2321,7 @@ traits:
   /files:
     type:
       postJSONWithoutJSId:
-        description: Get transferred files
+        description: Gets transferred files
         description1: " "
         description2: " "
         description3: !include api/documentation/yade/transferIds.md
@@ -2341,7 +2341,7 @@ traits:
   /file:
     type:
       postJSONWithoutJSId:
-        description: Get transferred file
+        description: Gets transferred file
         description1: " "
         description2: !include api/documentation/yade/fileId.md
         description3: " "
@@ -2381,7 +2381,7 @@ traits:
 #  /orders:
 #    type:
 #      postJSON:
-#        description: Get orders filtered by a period, job chains or order state
+#        description: Gets orders filtered by a period, job chains or order state
 #        description1: !include api/documentation/common/compact.md
 #        description2: " "
 #        description3: " "
