@@ -25,9 +25,9 @@ Different events trigger the following different actions:
 	* ``Order Summary``: once for the following event
 		* **WorkflowStateChanged**
 	* ``History`` (failed/successful Orders): once for the following event
-		* **HistoryOrderTerminated** (is sent only in an active JOC node)
+		* **HistoryOrderTerminated** (is sent only in an active JOC Cockpit node)
 	* ``History`` (failed/successful Jobs): once for the following event
-		* **HistoryTaskTerminated** (is sent only in an active JOC node)
+		* **HistoryTaskTerminated** (is sent only in an active JOC Cockpit node)
 * Update ``Manage Controller/Agents View``: for each following event
 	* **ItemAdded** (with "objectType": "AGENT")
 	* **ItemDeleted** (with "objectType": "AGENT")
@@ -69,11 +69,11 @@ Different events trigger the following different actions:
 		* It contains the parent folder in the "path" field to update the tree
 * Update ``History View`` and ``History Tabs`` in ``Workflow View``: 
 	* Order Tab: once for following event
-		* **HistoryOrderStarted**  (is sent only in an active JOC node)
-		* **HistoryOrderTerminated**  (is sent only in an active JOC node)
+		* **HistoryOrderStarted**  (is sent only in an active JOC Cockpit node)
+		* **HistoryOrderTerminated**  (is sent only in an active JOC Cockpit node)
 	* Task Tab: once for following event
-		* **HistoryTaskStarted**  (is sent only in an active JOC node)
-		* **HistoryTaskTerminated**  (is sent only in an active JOC node)
+		* **HistoryTaskStarted**  (is sent only in an active JOC Cockpit node)
+		* **HistoryTaskTerminated**  (is sent only in an active JOC Cockpit node)
 * Update ``DailyPlan View``: for each following event 
 	* **DailyPlanUpdated**
 		* It contains the changed date in the "message" field

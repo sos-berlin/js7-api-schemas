@@ -1,7 +1,7 @@
 <tr>
 <td>``filter``</td><td>required</td>
 <td>
-Specify the filters elements to filter the orders that should be considered.
+Specifies the elements to filter the orders that should be considered.
 All filter elements will be combined with "and". The elements in the lists schedulePaths, folders, workflowPaths, states will be combined with "or"
 
 The filter elements are
@@ -14,13 +14,13 @@ dailyPlanDate
 schedulePaths
 </li>
 <li>
-schedulefolders
+scheduleFolders
 </li>
 <li>
 workflowPaths
 </li>
 <li>
-workflowfolders
+workflowFolders
 </li>
 <li>
 late

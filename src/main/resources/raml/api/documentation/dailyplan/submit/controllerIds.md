@@ -2,7 +2,7 @@
 	
 <td>optional; array[string]</td>
 	
-<td>Filters orders that have been generated for the controller-IDs that are in the list controllerIds. The orders will be submitted to the controller for that they have been planned before.
+<td>Filters orders that have been generated for the Controller IDs that are in the list controllerIds. The orders will be submitted to the Controller for that they have been planned before.
 
 </td>
 

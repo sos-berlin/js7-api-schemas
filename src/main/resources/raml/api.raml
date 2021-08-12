@@ -101,7 +101,12 @@ traits:
   /reset:
     type:
       postJSONWithOkResponse:
-        description: Reset Agent
+        description: | 
+          Resets Agent<h5>
+          Any currently running orders are continued. Workflows and other deployable objects are withdrawn. 
+          The Agent drops its journal and restarts. Then the Controller tries to reconnect to the Agent, 
+          deploys workflows etc. and submits orders to the Agent.
+          </h5>
         description1: !include api/documentation/agent/agentId.md
         description2: !include api/documentation/audit/auditLog.md
         description3: " "
@@ -118,7 +123,7 @@ traits:
 /agents:
   type:
     postJSON:
-      description: Get Agents
+      description: Gets Agents
       description1: !include api/documentation/agent/agentIdsUrls.md
       description2: !include api/documentation/agent/states.md
       description3: !include api/documentation/agent/onlyEnabledAgents.md
@@ -134,29 +139,6 @@ traits:
       schema200: !include api/schemas/agent/agents_v-schema.json
       example: !include api/examples/agent/agents_v-request-example.json
       example200: !include api/examples/agent/agents_v-example.json
-  
-  /p:
-    type:
-      postJSONWithOptionalJSId:
-        description: Get persitent Agent information
-        description1: !include api/documentation/agent/agentIdsUrls.md
-        description2: " "
-        description3: !include api/documentation/agent/onlyEnabledAgents.md
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        description11: " "
-        description12: " "
-        description13: " "
-        description200: !include api/documentation/agent/agents_p.md
-        schema: !include api/schemas/agent/readAgents-schema.json
-        schema200: !include api/schemas/agent/agents-schema.json
-        example: !include api/examples/controller/controllerParam-example.json
-        example200: !include api/examples/agent/agents_p-example.json
         
   /reassign:
     type:
@@ -169,7 +151,7 @@ traits:
   /report:
     type:
       postJSONWithOptionalJSId:
-        description: Get report of Agent tasks
+        description: Gets report of Agent tasks
         description1: !include api/documentation/agent/agentIdsUrls.md
         description2: !include api/documentation/common/dateFrom.md
         description3: !include api/documentation/common/dateTo.md
@@ -210,7 +192,7 @@ traits:
 /audit_log:
   type:
     postJSONWithOptionalJSId:
-      description: Get the audit log
+      description: Gets the audit log
       description1: !include api/documentation/common/dateFrom.md
       description2: !include api/documentation/common/dateTo.md
       description3: !include api/documentation/common/timeZone.md
@@ -229,17 +211,10 @@ traits:
       schema200: !include api/schemas/audit/auditLog-schema.json
       example: !include api/examples/audit/audit-request-example.json
       example200: !include api/examples/audit/audit-response-example.json
-  /comments:
-    type:
-      postOnlyAccessToken:
-        description: Get pre-defined comments and force_comments_for_audit_log settings
-        description200: " "
-        schema200: !include api/schemas/audit/comments-schema.json
-        example200: !include api/examples/audit/comments-example.json
   /details:
     type:
       postJSONWithoutJSId:
-        description: Get processed objects of an audit log entry
+        description: Gets objects of an audit log entry
         description1: !include api/documentation/audit/detail.md
         description2: " "
         description3: " "
@@ -262,7 +237,7 @@ traits:
   /joc_cockpit_permissions:
     type:
       postOnlyAccessToken:
-        description: Get permissions for current account
+        description: Gets permissions for current account
         description200: " "
         example200: !include api/examples/user/permissions-example.json
         schema200: !include api/schemas/security/permissions-schema.json
@@ -276,7 +251,7 @@ traits:
   /shiro:
     type: error
     post:
-      description: <h2>Reads configuration from shiro.ini</h2>
+      description: <h2>Reads configuration from Shiro</h2>
       responses:
         200:
           body:
@@ -286,7 +261,7 @@ traits:
     /store:
       type:
         postJSONWithoutJSId:
-          description: Writes configuration in shiro.ini
+          description: Stores configuration to Shiro
           description1: !include api/documentation/security/main.md
           description2: !include api/documentation/security/users.md
           description3: !include api/documentation/security/roles.md
@@ -301,47 +276,12 @@ traits:
           schema200: !include api/schemas/security/security-configuration-schema.json
           example200: " "
           schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "    
-    
-/board:
-  /notice/delete:
-    type:
-      postJSONWithOkResponse:
-        description: Deletes Notice
-        description1: !include api/documentation/board/deleteNotice.md
-        description2: " "
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        schema: !include api/schemas/board/modifyNotice-schema.json
-        example: " "
-  /notice/post:
-    type:
-      postJSONWithOkResponse:
-        description: Posts Notice
-        description1: !include api/documentation/board/deleteNotice.md
-        description2: !include api/documentation/board/endOfLife.md
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        schema: !include api/schemas/board/modifyNotice-schema.json
-        example: " "
-    
+          example: " "   
 
 /calendar/dates:
   type:
     postJSONWithoutJSId:
-      description: Get dates of a calendar
+      description: Gets dates of a calendar
       description1: !include api/documentation/calendar/calendarIdPath.md
       description2: " "
       description3: !include api/documentation/calendar/dateFrom.md
@@ -371,7 +311,7 @@ traits:
 /calendars:
   type:
     postJSONWithoutJSId:
-      description: Get calendars
+      description: Gets calendars
       description1: !include api/documentation/calendar/filteredByCalendarPaths.md
       description2: !include api/documentation/calendar/filteredByCalendarIds.md
       description3: !include api/documentation/common/compact.md
@@ -412,7 +352,7 @@ traits:
 /controller:
   type:
     postStateResponse:
-      description: Get Controller status information
+      description: Gets Controller status information
       urlparam: !include api/documentation/controller/urlParamClusterRequired.md
       description200: !include api/documentation/controller/master.md
       schema200: !include api/schemas/controller/jobscheduler200_v-schema.json
@@ -428,16 +368,8 @@ traits:
     type:
       postWithOkResponse:
         description: |
-          Aborts and restarts Controller and optionally switch over
+          Aborts and restarts Controller and optionally switches over
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
-        failover: " "
-        audit: !include api/documentation/audit/auditLog.md
-  
-  /cleanup:
-    type:
-      postWithOkResponse:
-        description: Unregister Controller
-        urlparam: " "
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
   
@@ -446,9 +378,9 @@ traits:
       postWithOkResponse:
         description: |
           Re-establish Controller Cluster roles and assign cluster-watching Agent<h5>
-          * Primary and secondary Controllers are assigned the active and standby roles. 
-          * In addition an Agent is assign the cluster-watching role. This information is persitent when registering a Controller.
-          * The resource can be used to re-established the roles in a cluster, e.g. in case that Controller journals are renewed.
+          * Primary and secondary Controller instances are assigned the active and standby roles. 
+          * In addition an Agent is assigned the cluster-watching role. This information is persistent when registering a Controller.
+          * The resource can be used to re-establish the roles in a cluster, e.g. in case that Controller journals are renewed.
           </h5>
         urlparam: " "
         failover: " "
@@ -457,7 +389,7 @@ traits:
   /cluster/switchover:
     type:
       postWithOkResponse:
-        description: Switch-over Controller Cluster
+        description: Switches over Controller Cluster
         urlparam: " "
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
@@ -466,13 +398,13 @@ traits:
     type: error
     post:
       description: |
-        <h2>Get registered Controller IDs</h2>
+        <h2>Gets Controller IDs</h2>
       responses:
         200:
           description: |
-            * The collection of all available Controller Ids can be used for a
-            selectbox in which the user can change the Id.
-            * The Id which is specified in the selected field will be used for
+            * The collection of all available Controller IDs can be used for a
+            selectbox in which the user can change the ID.
+            * The ID which is specified in the selected field will be used for
             all following requests
           body:
             application/json:
@@ -487,7 +419,7 @@ traits:
   /p:
     type:
       postStateResponse:
-        description: Get Controller persistent information
+        description: Gets Controller persistent information
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         description200: !include api/documentation/controller/jobscheduler_p.md
         schema200: !include api/schemas/controller/jobscheduler200_v-schema.json
@@ -498,7 +430,7 @@ traits:
       registerControllerWithOkResponse:
         description: |
           Registers a Controller<h5>
-          * A Controllers consists of a standalone instance or cluster with primary and standby nodes.
+          * A Controllers consists of a standalone instance or cluster with primary and secondary nodes.
           * This resource adds a Controller to JOC Cockpit. Updates Controller instance information such as the URL.
           </h5>
         audit: !include api/documentation/audit/auditLog.md
@@ -524,7 +456,7 @@ traits:
       postJSONWithoutJSId:
         description: Tests Controller instance connection and Controller ID
         description1: |
-          <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID is used to check if the Controller is registered for the given Controller ID, can be empty for a connection test</td><td>scheduler</td><td></td></tr>
+          <tr><td>``controllerId``</td><td>optional, string</td><td>Controller ID is used to check if the Controller is registered for the given Controller ID.</td><td>scheduler</td><td></td></tr>
         description2: !include api/documentation/controller/urlParamRequired.md
         description3: " "
         description4: " "
@@ -543,39 +475,37 @@ traits:
             "controllerId": "scheduler",
             "url": "http://jobSchedulerHost:40444"
           }
-
+  
+  /unregister:
+    type:
+      postWithOkResponse:
+        description: Unregisters Controller
+        urlparam: " "
+        failover: " "
+        audit: !include api/documentation/audit/auditLog.md
+  
+  
 /controllers:
   type:
     postOnlyOptionalId:
-      description: Get Controllers
+      description: Gets Controllers
       description200: !include api/documentation/controller/master.md
       schema200: !include api/schemas/controller/masters-schema.json
       example200: " "
   /p:
     type:
       postOnlyOptionalId:
-        description: Get persistent Controllers
+        description: Gets persistent Controller information
         description200: !include api/documentation/controller/controller_p.md
         schema200: !include api/schemas/controller/masters-schema.json
         example200: !include api/examples/controller/controller_p-example.json
-  /security_level:
-    type:
-      postOnlyAccessToken:
-        description: Get Controller IDs with security level
-        description200: !include api/documentation/controller/securityLevels.md
-        schema200: !include api/schemas/controller/masters-schema.json
-        example200: !include api/examples/controller/securityLevels-example.json
-    /take_over:
-      type:
-        postWithOkResponse:
-          description: Current security level will be take over to existing Controllers
           
 /daily_plan:
   description: This is not an API call. Use its children!!
   /order/variables:
     type:
       postJSON:
-        description: Read the variables for a given order 
+        description: Reads the variables for a given order 
         description1: !include api/documentation/order/orderIdRequired.md
         description2: " "
         description3: " "
@@ -594,7 +524,7 @@ traits:
   /orders:
     type: 
       postJSON:
-        description: Get daily plan Orders
+        description: Gets orders from the daily plan
         description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
         description2: !include api/documentation/dailyplan/dailyPlanDate.md
         description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -614,7 +544,7 @@ traits:
     /generate:
       type:
         postJSON:
-          description: Generates Orders of a given daily plan 
+          description: Generates orders for a given daily plan 
           description1: !include api/documentation/dailyplan/generate/dailyPlanOrdersSelectorDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/generate/schedules.md
@@ -634,7 +564,7 @@ traits:
     /submit:
       type:
         postJSON:
-          description: Submits planned Orders of a given daily plan
+          description: Submits planned orders for a given daily plan
           description1: !include api/documentation/dailyplan/submit/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -654,7 +584,7 @@ traits:
     /delete:
       type:
         postJSON:
-          description: Deletes planned Orders of a given daily plan 
+          description: Deletes planned orders for a given daily plan 
           description1: !include api/documentation/dailyplan/delete/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -1611,10 +1541,44 @@ traits:
       example: TODO
       example200: !include api/examples/lock/locks.json      
 
+/notice:
+  /delete:
+    type:
+      postJSONWithOkResponse:
+        description: Deletes Notice
+        description1: !include api/documentation/board/deleteNotice.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/board/modifyNotice-schema.json
+        example: " "
+  /post:
+    type:
+      postJSONWithOkResponse:
+        description: Posts Notice
+        description1: !include api/documentation/board/deleteNotice.md
+        description2: !include api/documentation/board/endOfLife.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/board/modifyNotice-schema.json
+        example: " "
+        
 /order:
   type:
     postJSON:
-      description: order (volatile part) - <b>IN PROGRESS</b>
+      description: order (volatile part)
       description1: " "
       description2: !include api/documentation/order/orderIdRequired.md
       description3: !include api/documentation/common/compact.md

@@ -11,7 +11,7 @@
 	<li><a href="../../../../../inventory/schemas/calendar/calendar-schema.json" target="calendar">Calendar JSON schema</a></li>
 </ul>
 </p>
-<p>The url parameter has to be the corresponding objectType (case insensitive)
+<p>The URL parameter has to be the corresponding objectType (case insensitive)
 <ul>
 	<li>"WORKFLOW"</li>
     <li>"LOCK"</li>

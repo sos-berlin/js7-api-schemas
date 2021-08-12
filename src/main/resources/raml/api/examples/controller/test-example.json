@@ -4,6 +4,6 @@
         "_text": "established",
         "severity": 0
     },
-    "controllerId": "scheduler.2.0",
+    "controllerId": "controller.2.0",
     "url": "http://someHost:40444"
 }

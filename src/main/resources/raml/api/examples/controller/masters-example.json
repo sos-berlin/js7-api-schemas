@@ -3,7 +3,7 @@
     "controllers": [
         {
             "id": 1,
-            "controllerId": "scheduler.2.0.1.oh",
+            "controllerId": "controller.2.0.1.oh",
             "role": "STANDALONE",
             "surveyDate": "2020-03-16T19:14:13Z",
             "url": "http://xx:40421",

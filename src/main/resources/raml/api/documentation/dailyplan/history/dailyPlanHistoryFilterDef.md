@@ -2,7 +2,7 @@
 <td>``filter``</td><td>optional</td>
 <td>
 Specify the filters elements to filter the daily plan history that should be considered.
-All filter elements will be combined with "and".  The elements in the lists controllerIds will be combined with "or"
+All filter elements will be combined with "and".  The elements in the lists Controller Ids will be combined with "or"
 If dateTo is not set then entries for dateFrom will be considered.
 
 The filter elements are
@@ -22,10 +22,10 @@ dateFrom
 dateTo
 </li>
 <li>
-notSubmitted
+submitted
 </li>
 <li>
-auditLogid
+auditLogId
 </li>
    
 </ul> 

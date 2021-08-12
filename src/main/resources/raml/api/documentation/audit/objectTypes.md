@@ -12,7 +12,7 @@
     <li>"ORDER"</li>
 </ul>
 </td><td>["ORDER"]</td><td></td></tr>
-<tr><td>``objectName``</td><td>optional, string</td><td>Limits result to a specified glob pattern of a processed object's name 
+<tr><td>``objectName``</td><td>optional, string</td><td>Limits result to a specified glob pattern of an object's name 
 that supports '&#42;' and '?' as wildcards where
 <ul>
   <li> &#42; : match zero or more characters</li>

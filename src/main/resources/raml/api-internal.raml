@@ -82,14 +82,45 @@ traits:
   - filename: !include api/traits/filename.raml
 
 
-/agents/names:
+/agents:
+  /names:
+    type:
+      postOnlyAccessToken:
+        description: Get enabled Agent names and aliases
+        description200: Collection of enabled Agent names
+        schema200: !include api/schemas/agent/agentNames-schema.json
+        example200 : !include api/examples/agent/agentNames-example.json
+      
+  /p:
+    type:
+      postJSONWithOptionalJSId:
+        description: Gets persistent Agent information
+        description1: !include api/documentation/agent/agentIdsUrls.md
+        description2: " "
+        description3: !include api/documentation/agent/onlyEnabledAgents.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: !include api/documentation/agent/agents_p.md
+        schema: !include api/schemas/agent/readAgents-schema.json
+        schema200: !include api/schemas/agent/agents-schema.json
+        example: !include api/examples/controller/controllerParam-example.json
+        example200: !include api/examples/agent/agents_p-example.json
+  
+/auditlog/comments:
   type:
     postOnlyAccessToken:
-      description: Get enabled Agent names and aliases
-      description200: Collection of enabled Agent names
-      schema200: !include api/schemas/agent/agentNames-schema.json
-      example200 : !include api/examples/agent/agentNames-example.json
-  
+      description: Gets pre-defined comments and force_comments_for_audit_log settings
+      description200: " "
+      schema200: !include api/schemas/audit/comments-schema.json
+      example200: !include api/examples/audit/comments-example.json
        
 /configuration:
   type:
@@ -285,6 +316,19 @@ traits:
             "ok":true
           }
         schema200: ok
+
+/controllers:
+  /security_level:
+    type:
+      postOnlyAccessToken:
+        description: Gets Controller IDs with security level
+        description200: !include api/documentation/controller/securityLevels.md
+        schema200: !include api/schemas/controller/masters-schema.json
+        example200: !include api/examples/controller/securityLevels-example.json
+    /take_over:
+      type:
+        postWithOkResponse:
+          description: Current security level will be take over to existing Controllers
 
 /documentation/{accessToken}/{path}:
    type:

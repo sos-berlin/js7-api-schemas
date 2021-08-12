@@ -2,10 +2,9 @@
 	
 <td>optional; array[string]</td>
 	
-<td>When empty the orders will be generated for those controllerIds that have a deployed workflow for the given schedules (from folder or from schedulePaths) are assigned to
+<td>When empty the orders will be generated for those Controller Ids that have a deployed workflow for the given schedules (from folder or from schedulePaths).
 <br>
-When not empty the orders will be generated for those controllerIds that have a deployed workflow for the given schedules (from folder or from schedulePaths) are assigned to
-and that are listed in the list of controllerIds
+When not empty the orders will be generated for those Controller Ids that have a deployed workflow for the given schedules (from folder or from schedulePaths) and that are included in the list controllerIds.
  
 </td>
 

@@ -1,8 +1,8 @@
 {
   "deliveryDate": "2016-05-05T20:34:51Z",
   "controllerIds": [
-    "scheduler",
-    "scheduler.test"
+    "controller",
+    "controller.test"
   ],
-  "selected": "scheduler"
+  "selected": "controller"
 }

@@ -3,7 +3,7 @@
 <td>optional; array[folder]</td>
 	
 <td>Generate orders for the given daily plan based on the schedules located in the given folders.
-Depending on the value for "recursive" also in one of the subfolders recursivly.
+Depending on the value for "recursive" also in one of the subfolders recursively.
 </td>
 <td> [{
   <div style="padding-left:10px;">"folder": "/sos",</div>
