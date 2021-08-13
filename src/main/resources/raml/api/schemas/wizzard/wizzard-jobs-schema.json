@@ -1,7 +1,7 @@
 {
-	"title": "jobs",
+	"title": "jobs for wizzard",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.wizard.Jobs",
+	"javaType": "com.sos.joc.model.wizzard.Jobs",
 	"type": "object",
 	"required": [
 		"deliveryDate",
@@ -15,7 +15,7 @@
 			"description": "job items without params",
 			"type": "array",
 			"items": {
-				"$ref": "wizard-job-schema.json"
+				"$ref": "wizzard-job-schema.json"
 			}
 		}
 	}

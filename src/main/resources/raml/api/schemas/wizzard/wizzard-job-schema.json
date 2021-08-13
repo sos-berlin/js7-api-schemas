@@ -1,12 +1,11 @@
 {
 	"title": "job",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.wizard.Job",
+	"javaType": "com.sos.joc.model.wizzard.Job",
 	"type": "object",
 	"required": [
 		"docPath",
-		"docName",
-		"javaClass"
+		"assignReference"
 	],
 	"properties": {
 		"deliveryDate": {
@@ -16,22 +15,25 @@
 			"$ref": "../common/path-schema.json"
 		},
 		"docName": {
-			"type": "string"
+			"$ref": "../common/string255-schema.json"
+		},
+		"assignReference": {
+			"$ref": "../common/string255-schema.json"
 		},
 		"title": {
-			"type": "string"
+			"$ref": "../common/string255-schema.json"
 		},
 		"javaClass": {
-			"type": "string"
+			"$ref": "../common/string255-schema.json"
 		},
 		"params": {
 			"type": "array",
 			"items": {
 				"type": "object",
-				"javaType": "com.sos.joc.model.wizard.Param",
+				"javaType": "com.sos.joc.model.wizzard.Param",
 				"properties": {
 					"name": {
-						"type": "string"
+						"$ref": "../common/string255-schema.json"
 					},
 					"required": {
 						"type": "boolean"

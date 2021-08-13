@@ -1,0 +1,14 @@
+{
+	"title": "job wizzard filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.wizzard.JobWizzardFilter",
+	"type": "object",
+	"required": [
+		"assignReference"
+	],
+	"properties": {
+		"assignReference": {
+			"$ref": "../common/string255required-schema.json"
+		}
+	}
+}

@@ -1395,6 +1395,49 @@ traits:
         440:
           body:
             application/json:
+            
+  /wizzard/jobs:
+    type: error
+    post:
+      description: |
+        <h2>Gets JITL jobs</h2>
+      responses:
+        200:
+          description: |
+            TODO
+          body:
+            application/json:
+              example: |
+                {
+                  "TODO"
+                }
+              schema: !include api/schemas/wizzard/wizzard-jobs-schema.json
+        420:
+          body:
+            application/json:
+        440:
+          body:
+            application/json:
+            
+  /wizzard/job:
+    type:
+      postJSONWithoutJSId:
+        description: Gets JITL job with its parameters
+        description1: !include api/documentation/docu/assignRefRequired.md
+        description2: " "
+        description3: " " 
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/wizzard/wizzard-job-filter-schema.json
+        example: " "
+        schema200: !include api/schemas/wizzard/wizzard-job-schema.json
+        example200: " "
   
          
 /jobs/overview/summary:
