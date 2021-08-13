@@ -1,7 +1,7 @@
 {
 	"title": "job",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.wizzard.Job",
+	"javaType": "com.sos.joc.model.wizard.Job",
 	"type": "object",
 	"required": [
 		"docPath",
@@ -30,7 +30,7 @@
 			"type": "array",
 			"items": {
 				"type": "object",
-				"javaType": "com.sos.joc.model.wizzard.Param",
+				"javaType": "com.sos.joc.model.wizard.Param",
 				"properties": {
 					"name": {
 						"$ref": "../common/string255-schema.json"

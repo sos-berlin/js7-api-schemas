@@ -1,7 +1,7 @@
 {
-	"title": "job wizzard filter",
+	"title": "job wizard filter",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.wizzard.JobWizzardFilter",
+	"javaType": "com.sos.joc.model.wizard.JobWizardFilter",
 	"type": "object",
 	"required": [
 		"assignReference"

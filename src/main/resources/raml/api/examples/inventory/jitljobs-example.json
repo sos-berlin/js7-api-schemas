@@ -1,0 +1,75 @@
+{
+    "deliveryDate": "2021-08-13T00:41:41.14Z",
+    "jobs": [
+        {
+            "assignReference": "RenameFileJob",
+            "docName": "RenameFileJob.xml",
+            "docPath": "/sos/jitl-jobs/RenameFileJob.xml",
+            "javaClass": "com.sos.jitl.jobs.file.RenameFileJob",
+            "title": "Rename one or more files"
+        },
+        {
+            "assignReference": "RemoveFileJob",
+            "docName": "RemoveFileJob.xml",
+            "docPath": "/sos/jitl-jobs/RemoveFileJob.xml",
+            "javaClass": "com.sos.jitl.jobs.file.RemoveFileJob",
+            "title": "Remove one or more files"
+        },
+        {
+            "assignReference": "FileNotExistsJob",
+            "docName": "FileNotExistsJob.xml",
+            "docPath": "/sos/jitl-jobs/FileNotExistsJob.xml",
+            "javaClass": "com.sos.jitl.jobs.file.FileNotExistsJob",
+            "title": "check for file absence"
+        },
+        {
+            "assignReference": "SQLPLUSJob",
+            "docName": "SQLPLUSJob.xml",
+            "docPath": "/sos/jitl-jobs/SQLPLUSJob.xml",
+            "javaClass": "com.sos.jitl.jobs.db.oracle.SQLPLUSJob",
+            "title": "Start SQL*Plus client and execute a sql*plus script"
+        },
+        {
+            "assignReference": "FileExistsJob",
+            "docName": "FileExistsJob.xml",
+            "docPath": "/sos/jitl-jobs/FileExistsJob.xml",
+            "javaClass": "com.sos.jitl.jobs.file.FileExistsJob",
+            "title": "check wether a file exist"
+        },
+        {
+            "assignReference": "MailJob",
+            "docName": "MailJob.xml",
+            "docPath": "/sos/jitl-jobs/MailJob.xml",
+            "javaClass": "com.sos.jitl.jobs.mail.MailJob",
+            "title": "Send Mails"
+        },
+        {
+            "assignReference": "CanWriteJob",
+            "docName": "CanWriteJob.xml",
+            "docPath": "/sos/jitl-jobs/CanWriteJob.xml",
+            "javaClass": "com.sos.jitl.jobs.file.CanWriteJob",
+            "title": "check wether a file is writable"
+        },
+        {
+            "assignReference": "CopyFileJob",
+            "docName": "CopyFileJob.xml",
+            "docPath": "/sos/jitl-jobs/CopyFileJob.xml",
+            "javaClass": "com.sos.jitl.jobs.file.CopyFileJob",
+            "title": "Copies one or more files"
+        },
+        {
+            "assignReference": "PLSQLJob",
+            "docName": "PLSQLJob.xml",
+            "docPath": "/sos/jitl-jobs/PLSQLJob.xml",
+            "javaClass": "com.sos.jitl.jobs.db.oracle.PLSQLJob",
+            "title": "Execute PL/SQL procedure"
+        },
+        {
+            "assignReference": "SQLExecutorJob",
+            "docName": "SQLExecutorJob.xml",
+            "docPath": "/sos/jitl-jobs/SQLExecutorJob.xml",
+            "javaClass": "com.sos.jitl.jobs.db.SQLExecutorJob",
+            "title": "Launch Database Statement"
+        }
+    ]
+}

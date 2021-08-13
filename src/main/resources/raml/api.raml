@@ -1396,22 +1396,17 @@ traits:
           body:
             application/json:
             
-  /wizzard/jobs:
+  /wizard/jobs:
     type: error
     post:
       description: |
         <h2>Gets JITL jobs</h2>
       responses:
         200:
-          description: |
-            TODO
           body:
             application/json:
-              example: |
-                {
-                  "TODO"
-                }
-              schema: !include api/schemas/wizzard/wizzard-jobs-schema.json
+              example: !include api/examples/inventory/jitljobs-example.json
+              schema: !include api/schemas/wizard/wizard-jobs-schema.json
         420:
           body:
             application/json:
@@ -1419,7 +1414,7 @@ traits:
           body:
             application/json:
             
-  /wizzard/job:
+  /wizard/job:
     type:
       postJSONWithoutJSId:
         description: Gets JITL job with its parameters
@@ -1434,10 +1429,13 @@ traits:
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/wizzard/wizzard-job-filter-schema.json
-        example: " "
-        schema200: !include api/schemas/wizzard/wizzard-job-schema.json
-        example200: " "
+        schema: !include api/schemas/wizard/wizard-job-filter-schema.json
+        example: |
+          {
+            "assignReference": "RenameFileJob"
+          }
+        schema200: !include api/schemas/wizard/wizard-job-schema.json
+        example200: !include api/examples/inventory/jitljob-example.json
   
          
 /jobs/overview/summary:
