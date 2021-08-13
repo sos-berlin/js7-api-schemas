@@ -1,4 +1,4 @@
-<tr><td>``objectTypes``</td><td>optional, array</td><td>Object types of the configuration item. Possibly value are 
+<tr><td>``objectTypes``</td><td>optional, array</td><td>Object types of the configuration item. Possible value are 
 <ul><li>"FOLDER"</li>
     <li>"WORKFLOW"</li>
     <li>"JOBCLASS"</li>

@@ -2,11 +2,11 @@
 	
 <td>optional, string</td>
 
-<td>To consider submissions executed in an intervall that starts with this date. 
-The value has to have the format *YYYY-MM-DD*<br/></td>
+<td>This date sets the start of interval to look up submissions.
+The value has to have the format *YYYY-MM-DD*</td>
 	
 <td>2017-01-01</td>
 	
-<td>the value for the date today</td>
+<td>today</td>
 	
 </tr>

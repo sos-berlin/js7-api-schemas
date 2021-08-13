@@ -1,4 +1,4 @@
-<h2>validates JSON representation of an inventory objects</h2>
+<h2>Validates JSON representation of inventory objects</h2>
 <p>supported JSON:
 <ul>
 	<li><a href="../../../../../inventory/schemas/workflow/workflow-schema.json" target="workflow">Workflow JSON schema</a></li>

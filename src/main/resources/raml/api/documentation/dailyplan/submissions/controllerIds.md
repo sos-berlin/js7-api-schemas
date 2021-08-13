@@ -2,8 +2,7 @@
 	
 <td>optional; array[string]</td>
 	
-<td>Filter submissions to the Controller Ids that are listet in the list controllerIds.
- 
+<td>Filter submissions to the Controller IDs that are included with the controllerIds element.
 </td>
 
 

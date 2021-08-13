@@ -1,7 +1,7 @@
 <tr>
 <td>``compactFilter``</td>
 <td>required oneOf(``compactFilter``, ``detailFilter``), object</td>
-<td>Filter to limit the results. Using a ``compactFilter`` also narrows down the results to commit information only. To obtain objects of specific commits, use the ``detailFilter``. </td>
+<td>Filter to limits the result. Using a ``compactFilter`` narrows down the results to commit information only. To obtain objects of specific commits, use the ``detailFilter``. </td>
 <td>"compactFilter" : {
 <div style="padding-left:10px;">"from" : "-30d",</div>
 <div style="padding-left:10px;">"to" : "-5d"</div>
@@ -11,7 +11,7 @@
 <tr>
 <td style="padding-left:20px;">``account``</td>
 <td>optional, string</td>
-<td>Profile (account) the deployment was done with.</td>
+<td>Account that deployed objects.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"account": "root"</div>
@@ -22,7 +22,7 @@
 <tr>
 <td style="padding-left:20px;">``folder``</td>
 <td>optional, string</td>
-<td>Path of a folder of multiple objects.</td>
+<td>Path to a folder.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"folder": "/myWorkflows/ifElseWorkflows"</div>
@@ -33,7 +33,7 @@
 <tr>
 <td style="padding-left:20px;">``controllerId``</td>
 <td>optional, string</td>
-<td>Identifier of the controller the deployment was processed to.</td>
+<td>Identifies the controller the deployment was performed for.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"controllerId": "testsuite"</div>
@@ -66,7 +66,7 @@
 <tr>
 <td style="padding-left:20px;">``state``</td>
 <td>optional, string</td>
-<td>State of the deployment. Possible values are DEPLOYED, NOT_DEPLOYED</td>
+<td>Status of the deployment. Possible values are DEPLOYED, NOT_DEPLOYED</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"state": "DEPLOYED"</div>
@@ -76,8 +76,8 @@
 </tr>
 <tr>
 <td style="padding-left:20px;">``deploymentDate``</td>
-<td>optional, Date</td>
-<td>Specific date when the deployment was done.</td>
+<td>optional, string</td>
+<td>Date when the deployment was done.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"deploymentDate": "2020-11-06T11:00:00Z"</div>
@@ -87,8 +87,8 @@
 </tr>
 <tr>
 <td style="padding-left:20px;">``deleteDate``</td>
-<td>optional, Date</td>
-<td>Specific date when an existing deployment was deleted from a controller.</td>
+<td>optional, string</td>
+<td>Date when an deployment was deleted from a Controller.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"deleteDate": "2020-11-06T11:00:00Z"</div>
@@ -172,7 +172,7 @@
 <tr>
 <td style="padding-left:20px;">``limit``</td>
 <td>optional, integer</td>
-<td>Restricts the number of delivered items, -1=unlimited</td>
+<td>Limits the number of delivered items, -1=unlimited</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"limit": "5000"</div>
@@ -269,7 +269,7 @@
 <tr>
 <td style="padding-left:20px;">``state``</td>
 <td>optional, string</td>
-<td>State of the deployment. Possible values are DEPLOYED, NOT_DEPLOYED</td>
+<td>Status of the deployment. Possible values are DEPLOYED, NOT_DEPLOYED</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"state": "DEPLOYED"</div>

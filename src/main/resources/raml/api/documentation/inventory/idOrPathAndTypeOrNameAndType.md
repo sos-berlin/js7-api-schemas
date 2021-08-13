@@ -2,7 +2,7 @@
 <tr><td>``id``</td><td>integer</td><td>ID of the configuration item</td><td></td><td></td></tr>
 <tr><td>``path``</td><td>string<td>Path of the configuration item</td><td></td><td></td></tr>
 <tr><td>``name``</td><td>string<td>Name of the configuration item</td><td></td><td></td></tr>
-<tr><td>``objectType``</td><td>string</td><td>Object type of the configuration item. Possibly value are 
+<tr><td>``objectType``</td><td>string</td><td>Object type of the configuration item. Possible value are 
 <ul><li>"FOLDER"</li>
     <li>"WORKFLOW"</li>
     <li>"JOBCLASS"</li>

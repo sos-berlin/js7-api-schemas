@@ -174,7 +174,7 @@ traits:
   /store:
     type:
       postJSONWithOkResponse:
-        description: Stores Agents persistently and assignes Agents to Controllers
+        description: Stores Agents persistently and assigns Agents to Controllers
         description1: !include api/documentation/agent/agents.md
         description2: !include api/documentation/audit/auditLog.md
         description3: " "
@@ -297,16 +297,6 @@ traits:
       example: !include api/examples/calendar/calendarDates-example.json
       schema200: !include api/schemas/calendar/dates-schema.json
       example200: TODO
-#/calendar:
-#  description: This is not an API call. Use its children!!
-#          
-#  /documentation:
-#    get:
-#    type:
-#      postDocu:
-#        description: Show documentation
-#        jsObjectParam: calendar
-#        jsObject: Calendar
                     
 /calendars:
   type:
@@ -707,7 +697,7 @@ traits:
   /edit:
     type:
       postJSONWithOkWithoutJSId:
-        description: Edit the assignment reference
+        description: Modifies the assignment reference
         description1: !include api/documentation/docu/docPath.md
         description2: !include api/documentation/docu/assignRef.md
         description3: " "
@@ -719,7 +709,6 @@ traits:
     get:
     type:
       postDocu:
-        description: Shows the documentation
         jsObjectParam: documentation
         jsObject: documentation
         description1: !include api/documentation/docu/jsObject.md
@@ -782,7 +771,7 @@ traits:
     /info:
       type:
         postJSONWithoutJSId:
-          description: Gets temp. filename for export 
+          description: Gets temporary filename for export 
           description1: !include api/documentation/docu/filteredByPaths.md
           description2: !include api/documentation/common/folders.md
           description3: " "
@@ -801,7 +790,7 @@ traits:
   /import:
     type:
       postForUpload:
-        description: Import Documentations
+        description: Imports Documentations
   /delete:
     type:
       postJSONWithoutJSId:
@@ -887,7 +876,7 @@ traits:
   /delete_draft:
     type:
       postJSONWithoutJSId:
-        description: Revert configuration draft of an inventory object
+        description: Reverts draft configuration of an inventory object
         description1: !include api/documentation/inventory/idsOrPathsAndTypes.md
         description2: " "
         description3: " "
@@ -907,7 +896,7 @@ traits:
   /delete_draft/folder:
     type:
       postJSONWithoutJSId:
-        description: Revert configuration draft of an inventory object of a folder
+        description: Reverts draft configuration of inventory objects by folder
         description1: !include api/documentation/inventory/path.md
         description2: " "
         description3: " "
@@ -970,7 +959,7 @@ traits:
     /deploy:
       type:
         postJSONWithOkWithoutJSId:
-          description: Signs and deploys deployable objects to- or deletes already deployed objects from the given Controllers 
+          description: Signs and deploys objects 
           description1: !include api/documentation/publish/deployFilter.md
           description2: " "
           description3: " "
@@ -983,7 +972,7 @@ traits:
     /history:
       type:
         postForShowDepHistory:
-          description: shows the deployment history according to the provided filters 
+          description: Reads the deployment history
           description1: !include api/documentation/publish/showDepHistory.md
           schema: !include api/schemas/publish/showDepHistoryFilter-schema.json
           schema200: !include api/schemas/publish/depHistory-schema.json
@@ -993,14 +982,14 @@ traits:
     /import_deploy:
       type:
         postForImportDeploy:
-          description: uploads archive file (*.zip, *.tar.gz) with valid deployable configurations and their signatures and deploys the configurations to the specified controller.
+          description: Uploads archive file (*.zip, *.tar.gz) and deploys objects
           schema: !include api/schemas/publish/importDeployFilter-schema.json
           example: !include api/examples/publish/publishImportDeploy-example.json
 
     /redeploy:
       type:
         postJSONWithOkWithoutJSId:
-          description: redeploys as set of deployable objects from the deplyoment history to the given Controller
+          description: Redeploys as set of deployable objects from the deplyoment history to the given Controller
           description1: !include api/documentation/publish/redeployFilter.md
           description2: " "
           description3: " "
@@ -1013,7 +1002,7 @@ traits:
     /set_version:
       type:
         postJSONWithOkWithoutJSId:
-          description: sets a new version to an array of JS Objects
+          description: Sets a new version to an array of JS Objects
           description1: !include api/documentation/publish/setVersionFilter.md
           description2: " "
           description3: " "
@@ -1026,7 +1015,7 @@ traits:
     /set_versions:
       type:
         postJSONWithOkWithoutJSId:
-          description: sets a new version per item to an array of JS Objects
+          description: Sets a new version per item to an array of JS Objects
           description1: !include api/documentation/publish/setVersionsFilter.md
           description2: " "
           description3: " "
@@ -1040,7 +1029,7 @@ traits:
     get:
     type:
       postForExport:
-        description: provides archive file (zip, tar.gz) to download unsigned JSON files
+        description: Provides archive file (zip, tar.gz) to download unsigned JSON files
         description1: !include api/documentation/publish/exportFilterPost.md
         schema: !include api/schemas/publish/exportFilter-schema.json
         example: !include api/examples/publish/publishExport-example.json
@@ -1048,7 +1037,7 @@ traits:
   /import:
     type:
       postForUploadUnsigned:
-        description: uploads archive file (zip, tar.gz) with unsigned JSON files of deployable and releasable objects  
+        description: Uploads archive file (zip, tar.gz) with unsigned JSON files of deployable and releasable objects  
         schema: !include api/schemas/publish/importFilter-schema.json
         example: !include api/examples/publish/publishImport-example.json
 
@@ -1217,7 +1206,7 @@ traits:
   /replace:
     type:
       postJSONWithOkWithoutJSId:
-        description: Search/replace names of inventory objects
+        description: Searches/replaces names of inventory objects
         description1: !include api/documentation/inventory/idsOrPathsAndTypes.md
         description2: !include api/documentation/inventory/replace.md
         description3: " "
@@ -1230,7 +1219,7 @@ traits:
   /replace/folder:
     type:
       postJSONWithOkWithoutJSId:
-        description: Search/replace object names of an inventory folder content
+        description: Searches/replaces object names of an inventory folder content
         description1: !include api/documentation/inventory/path.md
         description2: !include api/documentation/inventory/replace.md
         description3: " "
@@ -1715,37 +1704,6 @@ traits:
         schema200: !include api/schemas/order/ordersPositions-schema.json
         example: !include api/examples/order/request-variables-example.json
         example200: !include api/examples/order/response-variables-example.json
-
-#  /documentation:
-#    get:
-#    is: [ filteredByOrderId ]
-#    type:
-#      postDocu:
-#        description: Show documentation
-#        jsObjectParam: workflow
-#        jsObject: workflow
-#    /assign:
-#      type:
-#        postDocuWithOkResponse:
-#          description: Assigns a Documentation to the Order
-#          description1: !include api/documentation/docu/docPath.md
-#          description2: !include api/documentation/order/workflow.md
-#          description3: !include api/documentation/order/orderIdRequired.md
-#          description4: " "
-#          schema: !include api/schemas/order/orderDocuFilter-schema.json
-#          example: TODO
-#          audit: !include api/documentation/audit/auditLog.md
-#    /unassign:
-#      type:
-#        postDocuWithOkResponse:
-#          description: Unassigns a Documentation of the Order
-#          description1: " "
-#          description2: !include api/documentation/order/workflow.md
-#          description3: !include api/documentation/order/orderIdRequired.md
-#          description4: " "
-#          schema: !include api/schemas/order/orderDocuFilter-schema.json
-#          example: TODO
-#          audit: !include api/documentation/audit/auditLog.md
        
 /orders:
   type:

@@ -7,17 +7,17 @@ post:
     multipart/form-data:
       formParameters:
         controllerId:
-          description: The controllerId of the controller the imported objects should be deployed to.
+          description: The controllerId of the Controller the imported objects should be deployed to.
           example: testsuite
           required: true
           type: string
         signatureAlgorithm:
-          description: The signature algorithm the objects where signed with.
+          description: The signature algorithm the objects are signed with.
           example: SHA512withECDSA
           required: true
           type: string
         format:
-          description: Specifies the archive format (tar.gz or zip) of the import file. The enum archiveFormat for the value consist of ZIP and TAR_GZ.
+          description: Specifies the archive format (tar.gz or zip) of the import file. The enum archiveFormat for the value consists of ZIP and TAR_GZ.
           example: ZIP
           required: true
           type: string

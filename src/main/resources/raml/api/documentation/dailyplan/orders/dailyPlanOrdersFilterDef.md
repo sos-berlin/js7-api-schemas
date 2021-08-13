@@ -2,7 +2,9 @@
 <td>``filter``</td><td>required</td>
 <td>
 Specifies the elements to filter the orders that should be considered.
-All filter elements will be combined with "and". The elements in the lists schedulePaths, folders, workflowPaths, states will be combined with "or"
+All filter elements will be combined with "and".
+The values of the schedulePaths, folders, workflowPaths elements will be combined with "or".
+
 
 The filter elements are
 

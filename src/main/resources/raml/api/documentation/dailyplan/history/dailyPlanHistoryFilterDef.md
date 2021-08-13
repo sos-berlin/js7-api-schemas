@@ -1,8 +1,8 @@
 <tr>
 <td>``filter``</td><td>optional</td>
 <td>
-Specify the filters elements to filter the daily plan history that should be considered.
-All filter elements will be combined with "and".  The elements in the lists Controller Ids will be combined with "or"
+Specifies the filter elements to filter the daily plan history.
+All filter elements will be combined with "and".  The values in the controllerIds element will be combined with "or".
 If dateTo is not set then entries for dateFrom will be considered.
 
 The filter elements are

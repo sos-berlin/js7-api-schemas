@@ -3,7 +3,7 @@
 <td>``dateTo``</td>
 	
 <td>optional, string</td>
-<td>To consider daily plan history entries in an intervall that ends with this date. 
+<td>This date specifies the end of interval that it used look up daily plan history entries.
 The value has to have the format *YYYY-MM-DD*<br/>
 if empty daily plan history entries for the dayFrom value will be considered.
 	

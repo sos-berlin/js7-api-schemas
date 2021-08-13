@@ -2,11 +2,11 @@
 	
 <td>optional, string</td>
 
-<td>To consider submissions executed in an intervall that have been submitted with this date. 
-The value has to have the format *YYYY-MM-DD*<br/></td>
+<td>Specifies the daily plan date for which submissions should be deleted.
+The value has to have the format *YYYY-MM-DD*</td>
 	
 <td>2017-01-01</td>
 	
-<td>the value for the date today</td>
+<td>today</td>
 	
 </tr>

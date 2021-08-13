@@ -3,8 +3,8 @@
 <td>``dateTo``</td>
 	
 <td>required, string</td>
-<td>To consider submissions executed in an intervall that ends with this date. 
-The value has to have the format *YYYY-MM-DD*<br/></td>
+<td>This date specifies the end of interval that it used look up submissions.
+The value has to have the format *YYYY-MM-DD*</td>
 	
 <td>2017-12-31</td>
 	
