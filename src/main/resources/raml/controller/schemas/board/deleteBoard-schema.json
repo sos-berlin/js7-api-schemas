@@ -1,5 +1,5 @@
 {
-  "title": "delete board",
+  "title": "delete notice board",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.controller.model.board.DeleteBoard",
   "type": "object",

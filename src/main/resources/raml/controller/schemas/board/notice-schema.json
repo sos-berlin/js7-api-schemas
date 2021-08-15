@@ -1,0 +1,25 @@
+{
+  "title": "notice",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.board.Notice",
+  "type": "object",
+  "required" : [
+    "id",
+    "endOfLife"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "../../../api/schemas/common/string255required-schema.json"
+    },
+    "endOfLife": {
+      "$ref": "../../../api/schemas/common/timestamp-schema.json"
+    },
+    "expectingOrders": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../api/schemas/order/order_v-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

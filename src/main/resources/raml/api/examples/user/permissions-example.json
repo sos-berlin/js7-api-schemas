@@ -75,6 +75,11 @@
         "locks": {
             "view": true
         },
+        "noticeBoards": {
+            "view": true,
+            "post": true,
+            "delete": true
+        },
         "workflows": {
             "view": true
         }
@@ -102,6 +107,11 @@
             "locks": {
                 "view": false
             },
+        	"noticeBoards": {
+            	"view": false,
+            	"post": false,
+            	"delete": false
+        	},
             "workflows": {
                 "view": false
             }

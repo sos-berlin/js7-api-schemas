@@ -84,6 +84,28 @@
 				},
 				"additionalProperties": false
 			},
+			"noticeBoards": {
+				"javaType": "com.sos.joc.model.security.permissions.controller.NoticeBoards",
+				"type": "object",
+				"properties": {
+					"view": {
+						"description": "show resource tab 'notice boards'",
+						"type": "boolean",
+						"default" : true
+					},
+					"post": {
+						"description": "post notice",
+						"type": "boolean",
+						"default" : false
+					},
+					"delete": {
+						"description": "delete notice",
+						"type": "boolean",
+						"default" : false
+					}
+				},
+				"additionalProperties": false
+			},
 			"locks": {
 				"javaType": "com.sos.joc.model.security.permissions.controller.Locks",
 				"type": "object",

@@ -4,7 +4,7 @@
     <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
     <li>"FILEORDERSOURCE"</li>
-    <li>"BOARD"</li>
+    <li>"NOTICEBOARD"</li>
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"SCHEDULE"</li>

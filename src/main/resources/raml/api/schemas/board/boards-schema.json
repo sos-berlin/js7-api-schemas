@@ -1,0 +1,24 @@
+{
+	"title": "notice boards response",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.board.Boards",
+	"type": "object",
+	"required": [
+		"deliveryDate"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"surveyDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"noticeBoards": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../controller/schemas/board/board-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}

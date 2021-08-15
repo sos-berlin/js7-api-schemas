@@ -50,7 +50,7 @@
 <tr>
 <td style="padding-left:60px;">``objectType``</td>
 <td>required, string</td>
-<td>Subset of deployable objects from the enum ConfigurationType. The subset consist of WORKFLOW, BOARD, LOCK, JOBCLASS, FILEORDERSOURCE and FOLDER.</td>
+<td>Subset of deployable objects from the enum ConfigurationType. The subset consist of WORKFLOW, NOTICEBOARD, LOCK, JOBCLASS, FILEORDERSOURCE and FOLDER.</td>
 <td>"objectType" : "WORKFLOW"</td>
 <td></td>
 </tr>

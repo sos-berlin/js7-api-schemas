@@ -5,23 +5,26 @@
 	"type": "object",
 	"required": [
 		"controllerId",
-		"boardPath",
+		"noticeBoardPath",
 		"noticeId"
 	],
 	"properties": {
 		"controllerId": {
 			"$ref": "../common/controllerId-schema.json"
 		},
-		"boardPath": {
+		"noticeBoardPath": {
 			"$ref": "../common/string255-schema.json"
 		},
 		"noticeId": {
 			"type": "string"
 		},
 		"endOfLife": {
-			"description": "in milliseconds",
-    		"$ref": "../common/nonNegativeLong-schema.json"
-		}
+			"$ref": "../common/timestampWithNow-schema.json"
+		},
+    	"timeZone": {
+      		"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+      		"$ref": "../common/string255-schema.json"
+    	}
 	},
 	"additionalProperties": false
 }

@@ -5,12 +5,10 @@
   "type": "string",
   "enum": [
     "JOB",
-    "JOBCHAIN",
     "ORDER",
-    "PROCESSCLASS",
     "AGENTCLUSTER",
     "LOCK",
-    "BOARD",
+    "NOTICEBOARD",
     "SCHEDULE",
     "FOLDER",
     "JOBSCHEDULER",

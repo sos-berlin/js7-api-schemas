@@ -19,7 +19,7 @@
 		"schedule": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"boards": {
+		"noticeBoards": {
 			"$ref": "../../common/string255-schema.json"
 		},
 		"jobResources": {

@@ -1,0 +1,27 @@
+{
+  "title": "notice board",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.board.Board",
+  "type": "object",
+  "extends" : {
+    "$ref": "../../../inventory/schemas/board/board-schema.json"
+  },
+  "properties": {
+    "path": {
+      "$ref": "../../../api/schemas/common/path-schema.json"
+    },
+    "versionDate": {
+      "$ref": "../../../api/schemas/common/timestamp-schema.json" 
+    },
+    "state": {
+      "$ref": "../common/syncState-schema.json"
+    },
+    "notices": {
+      "type": "array",
+      "items": {
+        "$ref": "notice-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

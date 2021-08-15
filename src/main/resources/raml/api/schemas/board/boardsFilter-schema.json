@@ -1,0 +1,24 @@
+{
+	"title": "notice boards request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.board.BoardsFilter",
+	"type": "object",
+	"required": [
+		"controllerId"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/controllerId-schema.json"
+		},
+		"noticeBoardPaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../common/string255-schema.json"
+			}
+		},
+		"folders": {
+			"$ref": "../common/folders-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

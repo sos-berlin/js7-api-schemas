@@ -1,5 +1,5 @@
 {
-	"title": "Board configuration",
+	"title": "notice board configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.inventory.board.BoardPublish",
 	"type": "object",

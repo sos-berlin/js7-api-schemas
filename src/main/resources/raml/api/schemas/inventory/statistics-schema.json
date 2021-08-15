@@ -23,7 +23,7 @@
     "numOfLocks": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },
-    "numOfBoards": {
+    "numOfNoticeBoards": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },
     "numOfJobResources": {

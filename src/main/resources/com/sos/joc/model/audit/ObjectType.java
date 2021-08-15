@@ -18,7 +18,7 @@ public enum ObjectType {
     JOB(8),
     FILEORDERSOURCE(9),
     JOBRESOURCE(10),
-    BOARD(11),
+    NOTICEBOARD(11),
     DOCUMENTATION(20),
     ORDER(99);
     private final Integer intValue;

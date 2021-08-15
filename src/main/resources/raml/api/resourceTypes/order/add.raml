@@ -33,11 +33,10 @@ post:
     <tr><td style="padding-left:20px;">``orderName``</td><td>required, string (max. 30 characters)<br/>field of each ``orders`` item</td><td>``orderName`` is only a part of the orderId in the form &quot;#&lt;date&gt;#T&lt;uniqueId&gt;-&lt;orderName&gt;&quot;</td><td></td></tr>
     <tr><td style="padding-left:20px;">``workflowPath``</td><td>required, string<br/>field of each ``orders`` item</td><td></td><td></td></tr>
     <tr><td style="padding-left:20px;">``scheduledFor``</td><td>optional, string<br/>field of each ``orders`` item</td>
-    <td>start time in ISO format &quot;yyyy-mm-dd HH:MM[:SS]&quot; or &quot;now&quot; or &quot;now + HH:MM[:SS]&quot; or &quot;now + SECONDS&quot; or &quot;never&quot;</td>
+    <td>A start time in ISO format &quot;yyyy-mm-dd HH:MM[:SS]&quot; or &quot;now&quot; or &quot;now + HH:MM[:SS]&quot; or &quot;now + SECONDS&quot; or &quot;never&quot; is expected</td>
     <td>now+10</td><td>now</td></tr>
     <tr><td style="padding-left:20px;">``timeZone``</td><td>optional, string<br/>field of each ``orders`` item</td><td><ul>
-       <li>This parameter set the time zone for an absolute time stamp in the ``scheduledFor`` parameter.</li>
-       <li>This parameter is ignored for relative times in ``scheduledFor`` such as "now+10"</li>
+       <li>This parameter set the time zone for the time stamp in the ``scheduledFor`` parameter.</li>
        <li>See here the list for <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="wiki">available time zones</a>.</li>
     </ul></td><td>Europe/Berlin</td><td>Etc/UTC</td></tr>
     <tr><td style="padding-left:20px;">``arguments``</td><td>optional, object</td><td>Field of each ``orders`` item<br/>An object with key-value pairs. The value can be a string, number or boolean<td><pre>"arguments": {

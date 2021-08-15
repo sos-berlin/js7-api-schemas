@@ -1237,7 +1237,7 @@ traits:
             * Jobs
             * Workflows
             * Locks
-            * Boards
+            * Notice Boards
             * File Watches
             * Schedules
             * Calendars
@@ -1554,7 +1554,7 @@ traits:
 /locks:
   type:
     postJSON:
-      description: Returns the deployed locks
+      description: Returns deployed locks
       description1: " "
       description2: " "
       description3: !include api/documentation/common/folders.md
@@ -1572,6 +1572,46 @@ traits:
       example200: !include api/examples/lock/locks.json      
 
 /notice:
+  /board:
+    type:
+      postJSON:
+        description: Returns a deployed notice board
+        description1: " "
+        description2: " "
+        description3: !include api/documentation/board/boardPath.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: TODO
+        schema: !include api/schemas/board/boardFilter-schema.json
+        schema200: !include api/schemas/board/board-schema.json
+        example: TODO
+        example200: TODO
+
+  /boards:
+    type:
+      postJSON:
+        description: Returns deployed notice boards
+        description1: " "
+        description2: " "
+        description3: !include api/documentation/common/folders.md
+        description4: !include api/documentation/board/boardPaths.md
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: TODO
+        schema: !include api/schemas/board/boardsFilter-schema.json
+        schema200: !include api/schemas/board/boards-schema.json
+        example: TODO
+        example200: TODO
+        
   /delete:
     type:
       postJSONWithOkResponse:

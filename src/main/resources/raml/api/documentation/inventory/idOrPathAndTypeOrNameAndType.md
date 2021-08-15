@@ -8,7 +8,7 @@
     <li>"JOBCLASS"</li>
     <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
-    <li>"BOARD"</li>
+    <li>"NOTICEBOARD"</li>
     <li>"FILEORDERSOURCE"</li>
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>

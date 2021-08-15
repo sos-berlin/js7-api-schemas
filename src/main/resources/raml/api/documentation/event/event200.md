@@ -51,6 +51,15 @@ Different events trigger the following different actions:
 	* **ItemChanged** (with "objectType": "WORKFLOW") 
 		* They contain the added/deleted/changed Workflow in the "path" field
 		* The Workflow itself is changed -> the tree and the list need to update
+* Update ``Notice Board View``: for each following event
+	* **BoardStateChanged**
+		* It contains the changed Notice Board in the "path" field
+		* The Notice Board itself is not changed -> only the notices need to update
+	* **ItemAdded** (with "objectType": "NOTICEBOARD")
+	* **ItemDeleted** (with "objectType": "NOTICEBOARD")
+	* **ItemChanged** (with "objectType": "NOTICEBOARD") 
+		* They contain the added/deleted/changed Notice Board in the "path" field
+		* The Notice Board itself is changed -> the tree and the list need to update
 * Update ``Lock View``: for each following event
 	* **LockStateChanged**
 		* It contains the changed Lock in the "path" field
