@@ -1,0 +1,7 @@
+{
+	"folders": [{
+		"folder": "/oh",
+		"recursive": false
+	}],
+	"controllerId": "standalone"
+}

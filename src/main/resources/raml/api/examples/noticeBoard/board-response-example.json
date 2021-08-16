@@ -1,0 +1,21 @@
+{
+	"deliveryDate": "2021-08-16T10:50:25.393+0000",
+	"surveyDate": "2021-08-16T10:21:41.979+0000",
+	"noticeBoard": {
+		"path": "/oh/b2",
+		"versionDate": "2021-08-13T15:01:33.000+0000",
+		"state": {
+			"severity": 6,
+			"_text": "IN_SYNC"
+		},
+		"notices": [{
+			"id": "hello-notice",
+			"endOfLife": "2021-08-16T19:10:29.274+0000",
+			"expectingOrders": []
+		}],
+		"postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+		"endOfLife": "$epochMilli + 86400000",
+		"expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+		"title": "myBoard"
+	}
+}
