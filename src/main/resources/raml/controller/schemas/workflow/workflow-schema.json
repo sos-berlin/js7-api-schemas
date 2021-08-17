@@ -32,6 +32,9 @@
       "items": {
         "$ref": "../../../api/schemas/common/string255-schema.json"
       }
+    },
+    "hasExpectedNoticeBoards": {
+      "type": "boolean"
     }
   },
   "additionalProperties": false

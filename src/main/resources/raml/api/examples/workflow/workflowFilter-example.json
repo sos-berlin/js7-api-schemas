@@ -1,0 +1,6 @@
+{
+	"controllerId": "standalone",
+	"workflowId": {
+	    "path": "w1"
+	}
+}

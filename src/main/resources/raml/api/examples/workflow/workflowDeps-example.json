@@ -1,0 +1,189 @@
+{
+    "deliveryDate": "2021-08-17T14:27:16.963+0000",
+    "surveyDate": "2021-08-17T14:27:43.623+0000",
+    "workflow": {
+        "expectedNoticeBoards": {
+            "b2": [
+                {
+                    "path": "/oh/w2",
+                    "isCurrentVersion": true,
+                    "versionDate": "2021-08-17T14:22:42.000+0000",
+                    "state": {
+                        "severity": 6,
+                        "_text": "IN_SYNC"
+                    },
+                    "hasExpectedNoticeBoards": false,
+                    "TYPE": "Workflow",
+                    "version": "1.0.0",
+                    "versionId": "7f366d4a-d3cd-4fb5-b65e-b4bdd01b1092",
+                    "orderPreparation": {
+                        "parameters": {
+                            "exitcode": {
+                                "type": "Number",
+                                "default": "0"
+                            }
+                        },
+                        "allowUndeclared": false
+                    },
+                    "instructions": [
+                        {
+                            "TYPE": "Execute.Named",
+                            "jobName": "job1",
+                            "label": "job1",
+                            "position": [
+                                0
+                            ],
+                            "positionString": "0"
+                        },
+                        {
+                            "TYPE": "Execute.Named",
+                            "jobName": "job2",
+                            "label": "job2",
+                            "defaultArguments": {
+                                "bool": "true",
+                                "number": "42",
+                                "string": "'hallo'"
+                            },
+                            "position": [
+                                1
+                            ],
+                            "positionString": "1"
+                        },
+                        {
+                            "TYPE": "PostNotice",
+                            "noticeBoardName": "b2",
+                            "position": [
+                                2
+                            ],
+                            "positionString": "2"
+                        },
+                        {
+                            "TYPE": "ImplicitEnd",
+                            "position": [
+                                3
+                            ],
+                            "positionString": "3"
+                        }
+                    ],
+                    "title": "postNotice",
+                    "jobs": {
+                        "job1": {
+                            "agentName": "standaloneAgent",
+                            "executable": {
+                                "TYPE": "ShellScriptExecutable",
+                                "script": "ls -l\nexit 1",
+                                "v1Compatible": false
+                            },
+                            "parallelism": 1,
+                            "graceTimeout": 15,
+                            "failOnErrWritten": false
+                        },
+                        "job2": {
+                            "agentName": "standaloneAgent",
+                            "executable": {
+                                "TYPE": "ShellScriptExecutable",
+                                "script": "ls -l\nexit 1",
+                                "v1Compatible": false
+                            },
+                            "parallelism": 1,
+                            "graceTimeout": 15,
+                            "failOnErrWritten": false
+                        }
+                    }
+                }
+            ]
+        },
+        "TYPE": "Workflow",
+        "version": "1.0.0",
+        "versionId": "94bdb3dc-1f97-4f5b-9393-02d601ecee2d",
+        "orderPreparation": {
+            "parameters": {
+                "exitcode": {
+                    "type": "Number",
+                    "default": "0"
+                },
+                "myFinal": {
+                    "final": "'hello'"
+                },
+                "reqVar": {
+                    "type": "String",
+                    "default": "\"world\""
+                }
+            },
+            "allowUndeclared": false
+        },
+        "instructions": [
+            {
+                "TYPE": "ExpectNotice",
+                "noticeBoardName": "b2",
+                "position": [
+                    0
+                ],
+                "positionString": "0"
+            },
+            {
+                "TYPE": "Execute.Named",
+                "jobName": "job1",
+                "label": "job1",
+                "defaultArguments": {
+                    "bool": "true",
+                    "number": "42",
+                    "string": "'hallo'"
+                },
+                "position": [
+                    1
+                ],
+                "positionString": "1"
+            },
+            {
+                "TYPE": "Execute.Named",
+                "jobName": "job2",
+                "label": "job2",
+                "position": [
+                    2
+                ],
+                "positionString": "2"
+            },
+            {
+                "TYPE": "ImplicitEnd",
+                "position": [
+                    3
+                ],
+                "positionString": "3"
+            }
+        ],
+        "jobs": {
+            "job1": {
+                "agentName": "standaloneAgent",
+                "executable": {
+                    "TYPE": "ShellScriptExecutable",
+                    "script": "#!/bin/bash\n#for ((i=1; i<=100; i++)); do\n#   echo \"log output for line $i\"\n#   sleep 1\n#done\nx=1\nwhile [ $x -le 100 ]\ndo\n  echo \"Welcome $x times\"\n  sleep 1\n  x=$(( $x + 1 ))\ndone",
+                    "v1Compatible": false
+                },
+                "parallelism": 1,
+                "timeout": 200,
+                "graceTimeout": 10,
+                "failOnErrWritten": false,
+                "documentationName": "test-doc"
+            },
+            "job2": {
+                "agentName": "standalone-agent",
+                "executable": {
+                    "TYPE": "ShellScriptExecutable",
+                    "script": "ls -l",
+                    "v1Compatible": false
+                },
+                "parallelism": 1,
+                "graceTimeout": 15,
+                "failOnErrWritten": false
+            }
+        },
+        "path": "/oh/w1",
+        "isCurrentVersion": true,
+        "versionDate": "2021-08-17T14:27:44.000+0000",
+        "state": {
+            "severity": 6,
+            "_text": "IN_SYNC"
+        }
+    }
+}

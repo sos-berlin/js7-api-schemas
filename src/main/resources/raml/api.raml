@@ -2241,7 +2241,7 @@ traits:
 /workflow:
   type:
     postJSON:
-      description: Returns a workflow - <b>IN PROGRESS</b>
+      description: Returns a workflow
       description1: !include api/documentation/workflow/workflowId.md
       description2: " "
       description3: " "
@@ -2255,8 +2255,28 @@ traits:
       description200: TODO
       schema: !include api/schemas/workflow/workflowFilter-schema.json
       schema200: !include api/schemas/workflow/workflow-schema.json
-      example: TODO
+      example: !include api/examples/workflow/workflowFilter-example.json
       example200: TODO
+      
+  /dependencies:
+    type:
+      postJSON:
+        description: Returns a workflow
+        description1: !include api/documentation/workflow/workflowId.md
+        description2: " "
+        description3: " "
+        description4: !include api/documentation/common/compact.md
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: TODO
+        schema: !include api/schemas/workflow/workflowFilter-schema.json
+        schema200: !include api/schemas/workflow/workflowDeps-schema.json
+        example: !include api/examples/workflow/workflowFilter-example.json
+        example200: !include api/examples/workflow/workflowDeps-example.json
 
 /workflows:
   type:

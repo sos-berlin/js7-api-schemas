@@ -1,0 +1,22 @@
+{
+  "title": "workflow with dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.WorkflowDeps",
+  "type": "object",
+  "extends" : {
+    "$ref": "workflow-schema.json"
+  },
+  "properties": {
+    "expectedNoticeBoards": {
+    	"type": "object",
+    	"javaType": "com.sos.controller.model.workflow.ExpectedWorkflows",
+      	"additionalProperties": {
+ 			"type": "array",
+ 			"items": {
+       			"$ref": "workflow-schema.json"
+   			 }
+  		}
+    }
+  },
+  "additionalProperties": false
+}
