@@ -12,6 +12,10 @@
     }, 
     "hostname" : {
       "type" : "string"
+    },
+    "dnOnly" : {
+   	  "type" : "boolean",
+      "default": false
     }
   }
 }
