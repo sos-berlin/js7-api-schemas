@@ -1,6 +1,6 @@
-<tr><td>``endOfLife``</td><td>optional, string</td><td>The value has multiple formats
+<tr><td>``endOfLife``</td><td>optional, string</td><td>Overwrites the lifetime of the notice as specified from the notice board.<br/>
+The value has multiple formats
 <ul>
-<li>Filters Orders whose schedule is before a date.</li>
 <li>an ISO 8601 date format with the <i>time offset</i> and milliseconds being optional, e.g.
   <ul>
     <li>YYYY-MM-DDThh:mm:ss[.s][Z (Z means +00)]</li>
