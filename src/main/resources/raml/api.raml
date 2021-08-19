@@ -999,32 +999,6 @@ traits:
           schema: !include api/schemas/publish/redeployFilter-schema.json
           example: !include api/examples/publish/redeployFilter-example.json
 
-    /set_version:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Sets a new version to an array of JS Objects
-          description1: !include api/documentation/publish/setVersionFilter.md
-          description2: " "
-          description3: " "
-          description4: " "
-          description5: " "
-          audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/publish/setVersion-schema.json
-          example: !include api/examples/publish/setVersion-example.json
-  
-    /set_versions:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Sets a new version per item to an array of JS Objects
-          description1: !include api/documentation/publish/setVersionsFilter.md
-          description2: " "
-          description3: " "
-          description4: " "
-          description5: " "
-          audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/publish/setVersions-schema.json
-          example: !include api/examples/publish/setVersions-example.json
-
   /export:
     get:
     type:
