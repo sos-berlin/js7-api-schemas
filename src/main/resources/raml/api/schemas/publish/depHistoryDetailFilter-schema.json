@@ -19,6 +19,9 @@
     "commitId" : {
       "type": "string"
     },
+    "auditlogId" : {
+      "type": "string"
+    },
     "version" : {
       "type": "string"
     },
