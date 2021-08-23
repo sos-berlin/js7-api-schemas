@@ -9,7 +9,17 @@
   "properties": {
     "expectedNoticeBoards": {
     	"type": "object",
-    	"javaType": "com.sos.controller.model.workflow.ExpectedWorkflows",
+    	"javaType": "com.sos.controller.model.workflow.BoardWorkflows",
+      	"additionalProperties": {
+ 			"type": "array",
+ 			"items": {
+       			"$ref": "workflow-schema.json"
+   			 }
+  		}
+    },
+    "postNoticeBoards": {
+    	"type": "object",
+    	"javaType": "com.sos.controller.model.workflow.BoardWorkflows",
       	"additionalProperties": {
  			"type": "array",
  			"items": {

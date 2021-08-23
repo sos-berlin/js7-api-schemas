@@ -35,6 +35,9 @@
     },
     "hasExpectedNoticeBoards": {
       "type": "boolean"
+    },
+    "hasPostNoticeBoards": {
+      "type": "boolean"
     }
   },
   "additionalProperties": false
