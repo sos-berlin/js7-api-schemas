@@ -90,6 +90,14 @@
           "type": "boolean"
         }
       }
+    },
+    "welcomeDoNotRemindMe": {
+      "type": "boolean",
+      "default": false
+    },
+    "welcomeGotIt": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
