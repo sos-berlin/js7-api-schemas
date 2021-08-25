@@ -1545,6 +1545,29 @@ traits:
       example: TODO
       example200: !include api/examples/lock/locks.json      
 
+/monitoring:
+  /notifications:
+    type:
+      postJSONWithOptionalJSId:
+        description: Gets notifications
+        description1: " "
+        description2: " "
+        description3: !include api/documentation/common/dateFrom.md
+        description4: " "
+        description5: !include api/documentation/common/timeZone.md
+        description6: " "
+        description7: " "
+        description8: !include api/documentation/common/limit.md
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: TODO
+        schema: !include api/schemas/monitoring/notifications-filter-schema.json
+        schema200: !include api/schemas/monitoring/notifications-answer-schema.json
+        example: " "
+        example200: " "
 /notice:
   /board:
     type:
