@@ -34,7 +34,7 @@
 			"whenHoliday": "PREVIOUSNONWORKINGDAY"
 		}]
 	}],
-	"nonWorkingCalendars": [{
+	"nonWorkingDayCalendars": [{
 		"calendarPath": "/test/holidays1"
 	}]
 }

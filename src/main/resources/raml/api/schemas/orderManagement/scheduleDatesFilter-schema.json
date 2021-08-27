@@ -10,8 +10,8 @@
 		"calendars": {
 			"$ref": "../../../inventory/schemas/calendar/calendars-list-schema.json"
 		},
-		"nonWorkingCalendars": {
-			"$ref": "../../../inventory/schemas/calendar/calendars-list-non-working-schema.json"
+		"nonWorkingDayCalendars": {
+			"$ref": "../../../inventory/schemas/calendar/calendars-list-non-working-day-schema.json"
 		},
     	"dateFrom": {
       		"$ref": "../common/date-schema.json"
