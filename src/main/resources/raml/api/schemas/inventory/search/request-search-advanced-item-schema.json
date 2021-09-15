@@ -28,6 +28,10 @@
 		"jobName": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"jobNameExactMatch": {
+			"type": "boolean",
+			"default": false
+		},
 		"jobCriticality": {
 			"$ref": "../../../../inventory/schemas/job/jobCriticality-schema.json"
 		},
