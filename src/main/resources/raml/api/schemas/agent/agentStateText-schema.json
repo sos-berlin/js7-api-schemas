@@ -8,6 +8,7 @@
       "RESETTING",
       "RESET",
       "COUPLINGFAILED",
+      "SHUTDOWN",
       "UNKNOWN"
   ]
 }
