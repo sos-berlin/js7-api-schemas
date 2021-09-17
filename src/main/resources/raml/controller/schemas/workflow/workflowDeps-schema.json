@@ -8,24 +8,22 @@
   },
   "properties": {
     "expectedNoticeBoards": {
-    	"type": "object",
-    	"javaType": "com.sos.controller.model.workflow.BoardWorkflows",
-      	"additionalProperties": {
- 			"type": "array",
- 			"items": {
-       			"$ref": "workflow-schema.json"
-   			 }
-  		}
+    	"$ref": "boardWorkflows-schema.json"
     },
     "postNoticeBoards": {
-    	"type": "object",
-    	"javaType": "com.sos.controller.model.workflow.BoardWorkflows",
-      	"additionalProperties": {
- 			"type": "array",
- 			"items": {
-       			"$ref": "workflow-schema.json"
-   			 }
-  		}
+    	"$ref": "boardWorkflows-schema.json"
+    },
+    "addOrderToWorkflows": {
+    	"type": "array",
+ 		"items": {
+    		"$ref": "workflow-schema.json"
+   		}
+    },
+    "addOrderFromWorkflows": {
+    	"type": "array",
+ 		"items": {
+    		"$ref": "workflow-schema.json"
+   		}
     }
   },
   "additionalProperties": false

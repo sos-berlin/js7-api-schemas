@@ -38,6 +38,9 @@
     },
     "hasPostNoticeBoards": {
       "type": "boolean"
+    },
+    "hasAddOrderDependencies": {
+      "type": "boolean"
     }
   },
   "additionalProperties": false

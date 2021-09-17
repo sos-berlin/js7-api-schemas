@@ -1,0 +1,12 @@
+{
+  "title": "workflow with dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.BoardWorkflows",
+  "type": "object",
+  "additionalProperties": {
+  	"type": "array",
+ 	"items": {
+    	"$ref": "workflow-schema.json"
+   	}
+  }
+}
