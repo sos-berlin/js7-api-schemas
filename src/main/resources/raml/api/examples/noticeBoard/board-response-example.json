@@ -1,21 +1,54 @@
 {
-	"deliveryDate": "2021-08-16T10:50:25.393+0000",
-	"surveyDate": "2021-08-16T10:21:41.979+0000",
-	"noticeBoard": {
-		"path": "/oh/b2",
-		"versionDate": "2021-08-13T15:01:33.000+0000",
-		"state": {
-			"severity": 6,
-			"_text": "IN_SYNC"
-		},
-		"notices": [{
-			"id": "hello-notice",
-			"endOfLife": "2021-08-16T19:10:29.274+0000",
-			"expectingOrders": []
-		}],
-		"postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
-		"endOfLife": "$epochMilli + 86400000",
-		"expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
-		"title": "myBoard"
-	}
+    "deliveryDate": "2021-09-19T14:39:49.126+0000",
+    "surveyDate": "2021-09-19T01:03:48.840+0000",
+    "noticeBoard": {
+        "path": "/oh/b2",
+        "versionDate": "2021-08-13T15:01:33.000+0000",
+        "state": {
+            "severity": 6,
+            "_text": "IN_SYNC"
+        },
+        "notices": [
+            {
+                "id": "2021-09-18",
+                "expectingOrders": [
+                    {
+                        "orderId": "#2021-09-18#T1979038619-root",
+                        "workflowId": {
+                            "path": "/oh/w1",
+                            "versionId": "2b56fc1a-ed0b-4cee-aff4-70e950750f84"
+                        },
+                        "state": {
+                            "severity": 8,
+                            "_text": "WAITING"
+                        },
+                        "position": [
+                            0
+                        ],
+                        "positionString": "0",
+                        "scheduledNever": false,
+                        "historicOutcome": []
+                    }
+                ],
+                "state": {
+                    "severity": 8,
+                    "_text": "EXPECTED"
+                }
+            },
+            {
+                "id": "2021-09-19",
+                "endOfLife": "2021-09-19T22:00:00.000+0000",
+                "expectingOrders": [],
+                "state": {
+                    "severity": 4,
+                    "_text": "POSTED"
+                }
+            }
+        ],
+        "TYPE": "Board",
+        "postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+        "endOfLife": "$epochMilli + 86400000",
+        "expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+        "title": "myBoard"
+    }
 }
