@@ -6,6 +6,10 @@
    "properties": {
 		"TYPE": {
 			"type": "string"
+		},
+		"noticeId": {
+			"description": "set if state == ExpectingNotice",
+			"type": "string"
 		}
 	},
   "additionalProperties": false

@@ -19,6 +19,9 @@
       "items": {
         "$ref": "../../../api/schemas/order/order_v-schema.json"
       }
+    },
+    "state": {
+      "$ref": "noticeState-schema.json"
     }
   },
   "additionalProperties": false
