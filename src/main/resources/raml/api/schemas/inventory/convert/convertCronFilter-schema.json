@@ -1,0 +1,25 @@
+{
+	"title": "Convert Cron Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.convert.ConvertCronFilter",
+	"type": "object",
+	"properties": {
+	    "folder": {
+	      "$ref": "../../common/path-schema.json"
+	    },
+	    "calendarName" : {
+	      "$ref": "../../common/string255-schema.json"
+	    },
+		"suffix": {
+			"description": "default: '-imported<number>'",
+			"$ref": "../../common/string100-schema.json"
+		},
+		"prefix": {
+			"description": "default: empty",
+			"$ref": "../../common/string100-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
