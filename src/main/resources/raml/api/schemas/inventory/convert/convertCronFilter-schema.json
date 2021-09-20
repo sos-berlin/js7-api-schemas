@@ -3,20 +3,27 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.inventory.convert.ConvertCronFilter",
 	"type": "object",
+	"required": [
+		"calendarName",
+		"agentName"
+	],
 	"properties": {
-	    "folder": {
-	      "$ref": "../../common/path-schema.json"
-	    },
-	    "calendarName" : {
-	      "$ref": "../../common/string255-schema.json"
-	    },
-		"suffix": {
-			"description": "default: '-imported<number>'",
+		"folder": {
+			"type": "string",
+			"pattern": "^(/|(/[^/\\\\<>?:\"|*]+)+)$",
+			"maxLength": 255,
+			"minLength": 1,
+			"default": "/"
+		},
+		"calendarName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"agentName": {
 			"$ref": "../../common/string100-schema.json"
 		},
-		"prefix": {
-			"description": "default: empty",
-			"$ref": "../../common/string100-schema.json"
+		"systemCrontab": {
+			"type": "boolean",
+			"default": false
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
