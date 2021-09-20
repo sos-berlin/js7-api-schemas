@@ -40,7 +40,7 @@
                 "endOfLife": "2021-09-19T22:00:00.000+0000",
                 "expectingOrders": [],
                 "state": {
-                    "severity": 4,
+                    "severity": 6,
                     "_text": "POSTED"
                 }
             }
