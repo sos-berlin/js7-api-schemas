@@ -14,6 +14,11 @@
     "agentId": {
     	"$ref": "../common/string255required-schema.json"
     },
+    "force": {
+    	"description": "only relevant for reset agent",
+    	"type": "boolean",
+    	"default": false
+    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }
