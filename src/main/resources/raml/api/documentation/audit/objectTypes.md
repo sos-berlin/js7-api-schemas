@@ -1,6 +1,5 @@
 <tr><td>``objectTypes``</td><td>optional, array</td><td>Limits results to specified types of processed objects. Possible values are 
 <ul><li>"WORKFLOW"</li>
-    <li>"JOBCLASS"</li>
     <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
     <li>"FILEORDERSOURCE"</li>

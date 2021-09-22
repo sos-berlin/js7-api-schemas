@@ -12,7 +12,6 @@
     <ul>
       <li>"FOLDER"</li>
       <li>"WORKFLOW"</li>
-      <li>"JOBCLASS"</li>
       <li>"JOBRESOURCE"</li>
       <li>"NOTICEBOARD"</li>
       <li>"LOCK"</li>

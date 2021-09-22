@@ -1,7 +1,6 @@
 <tr><td>``path``</td><td>required, string</td><td>Path of a Controller object</td><td></td><td></td></tr>
 <tr><td>``objectType``</td><td>required, string</td><td>Path of a Controller object. Possible values are 
 <ul><li>"WORKFLOW"</li>
-    <li>"JOBCLASS"</li>
     <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
     <li>"FILEORDERSOURCE"</li>
