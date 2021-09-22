@@ -44,7 +44,7 @@
 <tr>
 <td style="padding-left:20px;">``deployType``</td>
 <td>optional, string</td>
-<td>Type of the deployed object. Subset of deployable objects from the enum ConfigurationType. The subset consists of WORKFLOW, JOBCLASS, LOCK, NOTICEBOARD, FILEORDERSOURCE.</td>
+<td>Type of the deployed object. Subset of deployable objects from the enum ConfigurationType. The subset consists of WORKFLOW, LOCK, NOTICEBOARD, FILEORDERSOURCE.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"deployType": "WORKFLOW"</div>
@@ -247,7 +247,7 @@
 <tr>
 <td style="padding-left:20px;">``deployType``</td>
 <td>optional, string</td>
-<td>Type of the deployed object. Subset of deployable objects from the enum ConfigurationType. The subset consists of WORKFLOW, JOBCLASS, LOCK, BOARD, FILEORDERSOURCE.</td>
+<td>Type of the deployed object. Subset of deployable objects from the enum ConfigurationType. The subset consists of WORKFLOW, LOCK, BOARD, FILEORDERSOURCE.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"deployType": "WORKFLOW"</div>

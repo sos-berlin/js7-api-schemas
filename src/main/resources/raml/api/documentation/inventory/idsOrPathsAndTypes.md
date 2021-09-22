@@ -4,7 +4,6 @@
 <tr><td style="padding-left:20px;">``path``</td><td>string<td>Path of the inventory item</td><td></td><td></td></tr>
 <tr><td style="padding-left:20px;">``objectType``</td><td>string</td><td>Object type of the inventory item. Possible value are 
 <ul><li>"WORKFLOW"</li>
-    <li>"JOBCLASS"</li>
     <li>"JOBRESOURCE"</li>
     <li>"LOCK"</li>
     <li>"NOTICEBOARD"</li>
