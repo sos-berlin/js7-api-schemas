@@ -13,6 +13,10 @@
     },
     "_text": {
       "$ref": "../order/orderStateText-schema.json"
+    },
+    "_reason": {
+      "description" : "reason for WAITING state",
+      "$ref": "../order/orderWaitingReason-schema.json"
     }
   }
 }
