@@ -4,10 +4,10 @@
   "javaType": "com.sos.joc.model.order.OrderWaitingReason",
   "type": "string",
   "enum": [
-            "DelayedAfterError",
-            "Forked",
-            "ExpectingNotice",
-            "WaitingForLock"
+            "DELAYED_AFTER_ERROR",
+            "FORKED",
+            "EXPECTING_NOTICE",
+            "WAITING_FOR_LOCK"
   ]
 }
 

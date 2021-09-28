@@ -50,6 +50,11 @@
       "description": "deprecated -> is State.PENDING",
       "type": "boolean",
       "default": false
+    },
+    "limit": {
+      "description": "-1=unlimited",
+      "type": "integer",
+      "default": -1
     }
   }
 }
