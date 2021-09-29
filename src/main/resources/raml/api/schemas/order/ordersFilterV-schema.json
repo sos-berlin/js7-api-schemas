@@ -54,7 +54,7 @@
     "limit": {
       "description": "-1=unlimited",
       "type": "integer",
-      "default": -1
+      "default": 10000
     }
   }
 }
