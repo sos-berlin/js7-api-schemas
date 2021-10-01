@@ -47,6 +47,21 @@
     },
     "deploymentId" : {
         "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "workflowCount" : {
+        "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "jobResourceCount" : {
+        "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "fileOrderSourceCount" : {
+        "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "boardCount" : {
+        "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "lockCount" : {
+        "$ref": "../common/nonNegativeLong-schema.json"
     }
   }
 }

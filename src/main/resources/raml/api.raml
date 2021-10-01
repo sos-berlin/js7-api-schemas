@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.0.0
+version: 2.0.1
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -1577,7 +1577,7 @@ traits:
         description2: " "
         description3: !include api/documentation/board/boardPath.md
         description4: " "
-        description5: " "
+        description5: !include api/documentation/board/limit.md
         description6: " "
         description7: " "
         description8: " "
@@ -1598,7 +1598,7 @@ traits:
         description3: !include api/documentation/common/folders.md
         description4: !include api/documentation/board/boardPaths.md
         description5: " "
-        description6: " "
+        description6: !include api/documentation/board/limit.md
         description7: " "
         description8: " "
         description9: " "
@@ -1753,7 +1753,7 @@ traits:
       description5: !include api/documentation/common/regex.md
       description6: !include api/documentation/order/state.md
       description7: !include api/documentation/order/dateTo.md
-      description8: " "
+      description8: !include api/documentation/common/limit.md
       description9: " "
       description10: " "
       description200: !include api/documentation/order/orders_v.md

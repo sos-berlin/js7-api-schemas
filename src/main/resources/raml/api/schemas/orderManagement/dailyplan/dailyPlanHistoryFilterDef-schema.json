@@ -25,6 +25,10 @@
 			"items": {
 				"$ref": "../../common/controllerId-schema.json"
 			}
+		},
+		"limit": {
+			"type": "integer",
+			"default": 10000
 		}
 	}
 }
