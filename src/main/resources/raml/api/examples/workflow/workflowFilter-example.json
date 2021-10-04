@@ -1,6 +1,6 @@
 {
 	"controllerId": "standalone",
 	"workflowId": {
-	    "path": "w1"
+	    "path": "/JS7Demo/01_HelloWorld/jdHelloWorld"
 	}
 }

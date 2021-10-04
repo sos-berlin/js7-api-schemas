@@ -1,0 +1,50 @@
+{
+	"deliveryDate": "2021-10-01T22:14:25.914+0000",
+	"surveyDate": "2021-10-01T22:14:24.691+0000",
+	"workflow": {
+		"path": "/JS7Demo/01_HelloWorld/jdHelloWorld",
+		"isCurrentVersion": true,
+		"versionDate": "2021-09-27T22:21:40.000+0000",
+		"state": {
+			"severity": 6,
+			"_text": "IN_SYNC"
+		},
+		"hasExpectedNoticeBoards": false,
+		"hasPostNoticeBoards": false,
+		"hasAddOrderDependencies": false,
+		"TYPE": "Workflow",
+		"version": "1.0.0",
+		"versionId": "f50bef79-1f01-4b02-a7c7-94f47f05d449",
+		"timeZone": "Etc/UTC",
+		"title": "Say Hello World",
+		"documentationName": "PKB-JS7-OnlineDemo-Workflow-HelloWorld",
+		"jobResourceNames": ["Default"],
+		"instructions": [{
+			"TYPE": "Execute.Named",
+			"jobName": "job-hello-world",
+			"label": "job-hello-world",
+			"position": [0],
+			"positionString": "0"
+		},
+		{
+			"TYPE": "ImplicitEnd",
+			"position": [1],
+			"positionString": "1"
+		}],
+		"jobs": {
+			"job-hello-world": {
+				"agentName": "primaryAgent",
+				"executable": {
+					"TYPE": "ShellScriptExecutable",
+					"script": "echo \"using workflow: $JS7_WORKFLOW_NAME\"\necho \"running job: $JS7_JOB_NAME\"\n\necho \"Hello World\"",
+					"v1Compatible": false
+				},
+				"skipIfNoAdmissionForOrderDay": false,
+				"parallelism": 1,
+				"graceTimeout": 15,
+				"failOnErrWritten": false,
+				"title": "Say hello world"
+			}
+		}
+	}
+}
