@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.0.0
+version: 2.0.1
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -1484,7 +1484,7 @@ traits:
   /logs:
     type: error
     post:
-      description: <h2>Returns a list of JOC Cockpit logs (joc.log)</h2>
+      description: <h2>Gets a list of JOC Cockpit logs (joc.log)</h2>
       responses:
         200:
           description: " "
@@ -1496,7 +1496,7 @@ traits:
     type:
       postOnlyAccessToken:
         description: |
-          Response contains some settings from joc.properties file such as<h5> 
+          Response contains some settings such as<h5> 
           * pre-defined audit log comments
           * flag to force audit log comments
           * show/hide views
@@ -1508,18 +1508,18 @@ traits:
 /lock:
   type:
     postJSON:
-      description: Returns a deployed lock
+      description: Gets a deployed lock
       description1: " "
       description2: " "
       description3: !include api/documentation/lock/lockPath.md
       description4: " "
-      description5: " "
+      description5: !include api/documentation/common/compact.md
       description6: " "
       description7: " "
       description8: " "
       description9: " "
       description10: " "
-      description200: TODO
+      description200: !include api/documentation/lock/locks.md
       schema: !include api/schemas/lock/lockFilter-schema.json
       schema200: !include api/schemas/lock/lock-schema.json
       example: TODO
@@ -1530,16 +1530,16 @@ traits:
     postJSON:
       description: Returns deployed locks
       description1: " "
-      description2: " "
+      description2: !include api/documentation/lock/lockPaths.md
       description3: !include api/documentation/common/folders.md
-      description4: !include api/documentation/lock/lockPaths.md
-      description5: " "
+      description4: !include api/documentation/common/compact.md
+      description5: !include api/documentation/lock/limit.md
       description6: " "
       description7: " "
       description8: " "
       description9: " "
       description10: " "
-      description200: TODO
+      description200: !include api/documentation/lock/locks.md
       schema: !include api/schemas/lock/locksFilter-schema.json
       schema200: !include api/schemas/lock/locks-schema.json
       example: TODO
@@ -1572,12 +1572,12 @@ traits:
   /board:
     type:
       postJSON:
-        description: Returns a deployed notice board
+        description: Gets a deployed notice board
         description1: " "
         description2: " "
         description3: !include api/documentation/board/boardPath.md
-        description4: " "
-        description5: " "
+        description4: !include api/documentation/common/compact.md
+        description5: !include api/documentation/board/limit.md
         description6: " "
         description7: " "
         description8: " "
@@ -1592,13 +1592,13 @@ traits:
   /boards:
     type:
       postJSON:
-        description: Returns deployed notice boards
+        description: Gets deployed notice boards
         description1: " "
         description2: " "
         description3: !include api/documentation/common/folders.md
         description4: !include api/documentation/board/boardPaths.md
-        description5: " "
-        description6: " "
+        description5: !include api/documentation/common/compact.md
+        description6: !include api/documentation/board/limit.md
         description7: " "
         description8: " "
         description9: " "
@@ -1753,7 +1753,7 @@ traits:
       description5: !include api/documentation/common/regex.md
       description6: !include api/documentation/order/state.md
       description7: !include api/documentation/order/dateTo.md
-      description8: " "
+      description8: !include api/documentation/common/limit.md
       description9: " "
       description10: " "
       description200: !include api/documentation/order/orders_v.md
@@ -2205,7 +2205,6 @@ traits:
         description7: 
         description9: 
         description10: 
-        audit:  
         description200: " "
         schema: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
         schema200: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
@@ -2225,7 +2224,6 @@ traits:
         description7: 
         description9: 
         description10: 
-        audit:  
         description200: " "
         schema: !include api/schemas/order/ordersFilterV-schema.json
         schema200: !include api/schemas/order/orderIds-schema.json
@@ -2249,16 +2247,16 @@ traits:
       description8: " "
       description9: " "
       description10: " "
-      description200: TODO
+      description200: !include api/documentation/workflow/workflows-response.md
       schema: !include api/schemas/workflow/workflowFilter-schema.json
       schema200: !include api/schemas/workflow/workflow-schema.json
       example: !include api/examples/workflow/workflowFilter-example.json
-      example200: TODO
+      example200: !include api/examples/workflow/workflow_v-example.json
       
   /dependencies:
     type:
       postJSON:
-        description: Returns a workflow
+        description: Returns workflow dependencies
         description1: !include api/documentation/workflow/workflowId.md
         description2: " "
         description3: " "
@@ -2292,8 +2290,27 @@ traits:
       description200: !include api/documentation/workflow/workflows-response.md
       schema: !include api/schemas/workflow/workflowsFilter-schema.json
       schema200: !include api/schemas/workflow/workflows-schema.json
-      example: TODO
-      example200: TODO
+      example: !include api/examples/workflow/workflowsFilter-example.json
+      example200: !include api/examples/workflow/workflows_v-example.json
+  /order_count:
+    type:
+      postJSON:
+        description: Returns number of orders of specified workflows
+        description1: !include api/documentation/workflow/workflowIds.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: !include api/documentation/order/dateTo.md
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: !include api/documentation/workflow/orderCount-response.md
+        schema: !include api/schemas/workflow/workflowIdsFilter-schema.json
+        schema200: !include api/schemas/workflow/workflowsOrderCount-schema.json
+        example: !include api/examples/workflow/orderCount-example.json
+        example200: !include api/examples/workflow/orderCount-response-example.json
       
 
 /yade:

@@ -7,6 +7,7 @@ It depends on the parameter ``compact``.<br/>
     	* version
     * position
     * state
+    	* reason (if state is WAITING)
 * The compact view has further optional fields
     * arguments
     * attachedState
