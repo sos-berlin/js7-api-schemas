@@ -1,0 +1,21 @@
+{
+	"controllerId": "testsuite",
+	"workflowIds": [{
+		"path": "/Examples.Unix/05_ScheduledExecution/jduScheduledWorkflowForkList",
+		"versionId": "10ac4f2a-1977-4232-81cf-e90862477271"
+	},
+	{
+		"path": "/Examples.Unix/05_ScheduledExecution/jduScheduledWorkflowBusinessDays",
+		"versionId": "10ac4f2a-1977-4232-81cf-e90862477271"
+	},
+	{
+		"path": "/Examples.Unix/05_ScheduledExecution/jduScheduledWorkflowDaily",
+		"versionId": "10ac4f2a-1977-4232-81cf-e90862477271"
+	},
+	{
+		"path": "/Examples.Unix/05_ScheduledExecution/jduScheduledWorkflowCyclic",
+		"versionId": "10ac4f2a-1977-4232-81cf-e90862477271"
+	}],
+	"dateTo": "1d",
+	"timeZone": "Europe/Berlin"
+}
