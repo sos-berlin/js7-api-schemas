@@ -23,7 +23,7 @@
       		"$ref": "../common/string255-schema.json"
     	  },
       	  "numOfOrders": {
-      	    "$ref": "../common/nonNegativeInteger-schema.json" 
+      	    "$ref": "../order/ordersSummary-schema.json" 
       	  }
       	},
   		"additionalProperties": false

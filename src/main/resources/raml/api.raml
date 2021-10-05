@@ -1572,11 +1572,11 @@ traits:
   /board:
     type:
       postJSON:
-        description: Returns a deployed notice board
+        description: Gets a deployed notice board
         description1: " "
         description2: " "
         description3: !include api/documentation/board/boardPath.md
-        description4: " "
+        description4: !include api/documentation/common/compact.md
         description5: !include api/documentation/board/limit.md
         description6: " "
         description7: " "
@@ -1592,12 +1592,12 @@ traits:
   /boards:
     type:
       postJSON:
-        description: Returns deployed notice boards
+        description: Gets deployed notice boards
         description1: " "
         description2: " "
         description3: !include api/documentation/common/folders.md
         description4: !include api/documentation/board/boardPaths.md
-        description5: " "
+        description5: !include api/documentation/common/compact.md
         description6: !include api/documentation/board/limit.md
         description7: " "
         description8: " "
@@ -2302,7 +2302,7 @@ traits:
         description4: " "
         description5: " "
         description6: " "
-        description7: " "
+        description7: !include api/documentation/order/dateTo.md
         description8: " "
         description9: " "
         description10: " "
