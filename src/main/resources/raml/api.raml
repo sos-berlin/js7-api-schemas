@@ -1484,7 +1484,7 @@ traits:
   /logs:
     type: error
     post:
-      description: <h2>Returns a list of JOC Cockpit logs (joc.log)</h2>
+      description: <h2>Gets a list of JOC Cockpit logs (joc.log)</h2>
       responses:
         200:
           description: " "
@@ -1496,7 +1496,7 @@ traits:
     type:
       postOnlyAccessToken:
         description: |
-          Response contains some settings from joc.properties file such as<h5> 
+          Response contains some settings such as<h5> 
           * pre-defined audit log comments
           * flag to force audit log comments
           * show/hide views
@@ -1508,18 +1508,18 @@ traits:
 /lock:
   type:
     postJSON:
-      description: Returns a deployed lock
+      description: Gets a deployed lock
       description1: " "
       description2: " "
       description3: !include api/documentation/lock/lockPath.md
       description4: " "
-      description5: " "
+      description5: !include api/documentation/common/compact.md
       description6: " "
       description7: " "
       description8: " "
       description9: " "
       description10: " "
-      description200: TODO
+      description200: !include api/documentation/lock/locks.md
       schema: !include api/schemas/lock/lockFilter-schema.json
       schema200: !include api/schemas/lock/lock-schema.json
       example: TODO
@@ -1530,16 +1530,16 @@ traits:
     postJSON:
       description: Returns deployed locks
       description1: " "
-      description2: " "
+      description2: !include api/documentation/lock/lockPaths.md
       description3: !include api/documentation/common/folders.md
-      description4: !include api/documentation/lock/lockPaths.md
-      description5: " "
+      description4: !include api/documentation/common/compact.md
+      description5: !include api/documentation/lock/limit.md
       description6: " "
       description7: " "
       description8: " "
       description9: " "
       description10: " "
-      description200: TODO
+      description200: !include api/documentation/lock/locks.md
       schema: !include api/schemas/lock/locksFilter-schema.json
       schema200: !include api/schemas/lock/locks-schema.json
       example: TODO
@@ -2205,7 +2205,6 @@ traits:
         description7: 
         description9: 
         description10: 
-        audit:  
         description200: " "
         schema: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
         schema200: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
@@ -2225,7 +2224,6 @@ traits:
         description7: 
         description9: 
         description10: 
-        audit:  
         description200: " "
         schema: !include api/schemas/order/ordersFilterV-schema.json
         schema200: !include api/schemas/order/orderIds-schema.json
@@ -2249,7 +2247,7 @@ traits:
       description8: " "
       description9: " "
       description10: " "
-      description200: TODO
+      description200: !include api/documentation/workflow/workflows-response.md
       schema: !include api/schemas/workflow/workflowFilter-schema.json
       schema200: !include api/schemas/workflow/workflow-schema.json
       example: !include api/examples/workflow/workflowFilter-example.json
