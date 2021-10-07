@@ -1514,7 +1514,7 @@ traits:
       description3: !include api/documentation/lock/lockPath.md
       description4: " "
       description5: !include api/documentation/common/compact.md
-      description6: " "
+      description6: !include api/documentation/lock/limit.md
       description7: " "
       description8: " "
       description9: " "
@@ -1768,7 +1768,8 @@ traits:
   /cancel:
     type:
       modifyOrder:
-        description: Cancel orders  
+        description: Cancel orders 
+        folderParam: !include api/documentation/common/folders.md
         signalParam: !include api/documentation/order/kill.md
         positionParam: " "
         variablesParam: " "
@@ -1777,6 +1778,7 @@ traits:
     type:
       modifyOrder:
         description: Confirm prompting orders  
+        folderParam: !include api/documentation/common/folders.md
         signalParam: " "
         positionParam: " "
         variablesParam: " "
@@ -1842,7 +1844,7 @@ traits:
           description1: " "
           description2: !include api/documentation/workflow/filteredByWorkflows.md
           description3: " "
-          description4: " "
+          description4: !include api/documentation/common/folders.md
           description5: " "
           description6: " "
           description7: !include api/documentation/order/dateTo.md
@@ -1889,6 +1891,7 @@ traits:
     type:
       modifyOrder:
         description: Remove orders when terminated
+        folderParam: !include api/documentation/common/folders.md
         signalParam: " "
         positionParam: " "
         variablesParam: " "
@@ -1897,6 +1900,7 @@ traits:
     type:
       modifyOrder:
         description: Resume orders when suspended or failed
+        folderParam: !include api/documentation/common/folders.md
         signalParam: " "
         positionParam: !include api/documentation/order/position.md
         variablesParam: !include api/documentation/order/variables.md
@@ -1924,6 +1928,7 @@ traits:
     type:
       modifyOrder:
         description: Suspend orders
+        folderParam: !include api/documentation/common/folders.md
         signalParam: !include api/documentation/order/kill.md
         positionParam: " "
         variablesParam: " "
