@@ -1769,7 +1769,8 @@ traits:
     type:
       modifyOrder:
         description: Cancel orders 
-        folderParam: !include api/documentation/common/folders.md
+        dateToParam: !include api/documentation/calendar/dateTo.md
+        timeZoneParam: !include api/documentation/orderManagement/timeZone.md
         signalParam: !include api/documentation/order/kill.md
         positionParam: " "
         variablesParam: " "
@@ -1778,7 +1779,8 @@ traits:
     type:
       modifyOrder:
         description: Confirm prompting orders  
-        folderParam: !include api/documentation/common/folders.md
+        dateToParam: " "
+        timeZoneParam: " "
         signalParam: " "
         positionParam: " "
         variablesParam: " "
@@ -1891,7 +1893,8 @@ traits:
     type:
       modifyOrder:
         description: Remove orders when terminated
-        folderParam: !include api/documentation/common/folders.md
+        dateToParam: " "
+        timeZoneParam: " "
         signalParam: " "
         positionParam: " "
         variablesParam: " "
@@ -1900,7 +1903,8 @@ traits:
     type:
       modifyOrder:
         description: Resume orders when suspended or failed
-        folderParam: !include api/documentation/common/folders.md
+        dateToParam: " "
+        timeZoneParam: " "
         signalParam: " "
         positionParam: !include api/documentation/order/position.md
         variablesParam: !include api/documentation/order/variables.md
@@ -1928,7 +1932,8 @@ traits:
     type:
       modifyOrder:
         description: Suspend orders
-        folderParam: !include api/documentation/common/folders.md
+        dateToParam: !include api/documentation/calendar/dateTo.md
+        timeZoneParam: !include api/documentation/orderManagement/timeZone.md
         signalParam: !include api/documentation/order/kill.md
         positionParam: " "
         variablesParam: " "

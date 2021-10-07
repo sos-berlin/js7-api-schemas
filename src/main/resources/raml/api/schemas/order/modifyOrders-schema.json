@@ -26,6 +26,13 @@
 		"folders": {
         	"$ref": "../common/folders-schema.json"
       	},
+    	"dateTo": {
+      		"$ref": "../common/dateFromTo-schema.json"
+    	},
+    	"timeZone": {
+      		"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+      		"type": "string"
+    	},
 		"orderType": {
 			"$ref": "../../../controller/schemas/order/orderModeType-schema.json"
 		},
