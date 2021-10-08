@@ -23,6 +23,12 @@
 				"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
 			}
 		},
+    	"states": {
+      		"type": "array",
+      		"items": {
+        		"$ref": "orderStateText-schema.json"
+      		}
+    	},
 		"folders": {
         	"$ref": "../common/folders-schema.json"
       	},
