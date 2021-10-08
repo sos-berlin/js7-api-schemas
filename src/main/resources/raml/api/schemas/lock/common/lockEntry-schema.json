@@ -14,13 +14,13 @@
 			"$ref": "../../../../controller/schemas/lock/lock-schema.json"
 		},
 		"acquiredLockCount": {
-			"$ref": "../../../../inventory/schemas/common/nonNegativeInteger-schema.json"
+			"$ref": "../../common/nonNegativeInteger-schema.json"
 		},
 		"ordersHoldingLocksCount": {
-			"$ref": "../../../../inventory/schemas/common/nonNegativeInteger-schema.json"
+			"$ref": "../../common/nonNegativeInteger-schema.json"
 		},
 		"ordersWaitingForLocksCount": {
-			"$ref": "../../../../inventory/schemas/common/nonNegativeInteger-schema.json"
+			"$ref": "../../common/nonNegativeInteger-schema.json"
 		},
 		"workflows": {
 			"type": "array",

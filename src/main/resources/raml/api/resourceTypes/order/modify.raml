@@ -17,11 +17,45 @@ post:
     </thead><tbody>
     <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID</td><td>myController</td><td></td></tr>
     <tr><td>``orderIds``</td><td>required, array</td>
-    <td>Specified the order ids which should be modified.</td>
+    <td>Specified the order ids which should be modified.<br/>
+      If this parameter is specified then the parameters ``workflowIds``, ``folders`` and ``states`` where applicable are ignored.</td>
     <td> [
       <div style="padding-left:10px;">"daily"</div>
       ]</td>
     <td></td></tr>
+    <tr><td>``workflowIds``</td><td>optional, object</td>
+    <td>Filtered response by a collection of workflows specified by its path and optional version<br/>
+        If this parameter is specified the parameter ``folders`` where applicable are ignored.</td>
+    <td> {
+        <div style="padding-left:10px;">"path": "/path/to/workflow",</div>
+        <div style="padding-left:10px;">"versionId": "c79caab4-4e72-4818-bae7-902f1037d8b6"</div>
+    }</td>
+    <td></td>
+    </tr>
+    <tr><td style="padding-left:20px;">``path``</td><td>required, string</td><td>Field for each item in ``workflowIds`` to specify the path of a workflow</td><td></td><td></td></tr>
+    <tr><td style="padding-left:20px;">``version``</td><td>required, string</td><td>Field for each in ``workflowIds`` to specify the version of a workflow</td><td></td><td></td></tr>
+    <tr><td>``folders``</td><td>optional, array[object]</td><td>Limits the result to a collection of folders</td>
+    <td> [{
+        <div style="padding-left:10px;">"folder": "/sos",</div>
+        <div style="padding-left:10px;">"recursive": true</div>
+    }]</td>
+    <td></td></tr>
+    <tr><td>``states``</td><td>optional, array</td>
+    <td>Filtered all orders with states such as
+    <ul>
+      <li>PENDING</li>
+      <li>SCHEDULED</li>
+      <li>INPROGRESS</li>
+      <li>RUNNING</li>
+      <li>SUSPENDED</li>
+      <li>WAITING</li>
+      <li>PROMPTING</li>
+      <li>FAILED</li>
+      <li>BLOCKED</li>
+    </ul>
+    </td><td>["SUSPENDED"]</td><td></td></tr>
+    <<dateToParam>>
+    <<timeZoneParam>>
     <<positionParam>>
     <<variablesParam>>
     <<signalParam>>
