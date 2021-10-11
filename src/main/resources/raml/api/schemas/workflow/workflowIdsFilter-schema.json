@@ -1,0 +1,30 @@
+{
+  "title": "workflowIdsFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowIdsFilter",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "workflowIds"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerId-schema.json"
+    },
+    "workflowIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+      }
+    },
+    "dateTo": {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "timeZone": {
+      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+      "type": "string"
+    }
+  }
+}

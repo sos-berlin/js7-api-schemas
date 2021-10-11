@@ -1,0 +1,68 @@
+{
+	"deliveryDate": "2021-10-05T13:54:10.791Z",
+	"surveyDate": "2021-10-05T13:54:03.41Z",
+	"workflows": [{
+		"numOfOrders": {
+			"blocked": 0,
+			"failed": 0,
+			"inProgress": 0,
+			"pending": 0,
+			"prompting": 0,
+			"running": 0,
+			"scheduled": 1,
+			"suspended": 0,
+			"terminated": 0,
+			"waiting": 0
+		},
+		"path": "jduScheduledWorkflowDaily",
+		"versionId": "10ac4f2a-1977-4232-81cf-e90862477271"
+	},
+	{
+		"numOfOrders": {
+			"blocked": 0,
+			"failed": 0,
+			"inProgress": 0,
+			"pending": 0,
+			"prompting": 0,
+			"running": 0,
+			"scheduled": 1,
+			"suspended": 0,
+			"terminated": 0,
+			"waiting": 0
+		},
+		"path": "jduScheduledWorkflowForkList",
+		"versionId": "10ac4f2a-1977-4232-81cf-e90862477271"
+	},
+	{
+		"numOfOrders": {
+			"blocked": 0,
+			"failed": 0,
+			"inProgress": 0,
+			"pending": 0,
+			"prompting": 0,
+			"running": 0,
+			"scheduled": 0,
+			"suspended": 0,
+			"terminated": 0,
+			"waiting": 0
+		},
+		"path": "jduScheduledWorkflowCyclic",
+		"versionId": "10ac4f2a-1977-4232-81cf-e90862477271"
+	},
+	{
+		"numOfOrders": {
+			"blocked": 0,
+			"failed": 0,
+			"inProgress": 0,
+			"pending": 0,
+			"prompting": 0,
+			"running": 0,
+			"scheduled": 0,
+			"suspended": 0,
+			"terminated": 0,
+			"waiting": 0
+		},
+		"path": "jduScheduledWorkflowBusinessDays",
+		"versionId": "10ac4f2a-1977-4232-81cf-e90862477271"
+	}]
+}

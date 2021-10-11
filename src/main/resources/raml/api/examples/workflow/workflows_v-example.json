@@ -1,130 +1,96 @@
 {
-    "deliveryDate": "2021-02-15T15:17:44.585+0000",
-    "surveyDate": "2021-02-15T14:33:47.184+0000",
-    "workflows": [
-        {
-            "TYPE": "Workflow",
-            "isCurrentVersion": true,
-            "path": "/test/w2",
-            "versionId": "da98900e-21dd-4fae-b4da-6d21aefa5209",
-            "orderRequirements": {
-                "parameters": {
-                    "myString": {
-                        "type": "String"
-                    },
-                    "myString2": {
-                        "type": "String"
-                    },
-                    "myNumber": {
-                        "type": "Number",
-                        "default": 3.14
-                    }
-                }
-            },
-            "instructions": [
-                {
-                    "TYPE": "Execute.Named",
-                    "jobName": "job1",
-                    "label": "step1",
-                    "position": [
-                        0
-                    ]
-                },
-                {
-                    "TYPE": "Execute.Named",
-                    "jobName": "job1",
-                    "label": "step2",
-                    "position": [
-                        1
-                    ]
-                },
-                {
-                    "TYPE": "ImplicitEnd",
-                    "position": [
-                        2
-                    ]
-                }
-            ],
-            "jobs": {
-                "job1": {
-                    "agentId": "agent_primary",
-                    "executable": {
-                        "TYPE": "ShellScriptExecutable",
-                        "script": "echo \"A=$A\"\necho \"B=$B\"\necho \"C=$C\"\necho \"D=$D\"\necho \"E=$E\"\nsleep 20",
-                        "env": {
-                            "A": "$myString",
-                            "B": "$myNumber",
-                            "C": "'hello world'",
-                            "D": "$myString ++ ' and ' ++ $myString2",
-                            "E": "$myNumber + 1"
-                        },
-                        "v1Compatible": false
-                    },
-                    "taskLimit": 1
-                }
-            }
-        },
-        {
-            "TYPE": "Workflow",
-            "isCurrentVersion": false,
-            "path": "/test/w2",
-            "versionId": "a041dbdb-bc38-450e-ba29-262f2a035346",
-            "orderRequirements": {
-                "parameters": {
-                    "myString": {
-                        "type": "String"
-                    },
-                    "myString2": {
-                        "type": "String"
-                    },
-                    "myNumber": {
-                        "type": "Number",
-                        "default": 3.14
-                    }
-                }
-            },
-            "instructions": [
-                {
-                    "TYPE": "Execute.Named",
-                    "jobName": "job1",
-                    "label": "step1",
-                    "position": [
-                        0
-                    ]
-                },
-                {
-                    "TYPE": "Execute.Named",
-                    "jobName": "job1",
-                    "label": "step2",
-                    "position": [
-                        1
-                    ]
-                },
-                {
-                    "TYPE": "ImplicitEnd",
-                    "position": [
-                        2
-                    ]
-                }
-            ],
-            "jobs": {
-                "job1": {
-                    "agentId": "agent_primary",
-                    "executable": {
-                        "TYPE": "ShellScriptExecutable",
-                        "script": "echo \"A=$A\"\necho \"B=$B\"\necho \"C=$C\"\necho \"D=$D\"\necho \"E=$E\"\nsleep 30",
-                        "env": {
-                            "A": "$myString",
-                            "B": "$myNumber",
-                            "C": "'hello world'",
-                            "D": "$myString ++ ' and ' ++ $myString2",
-                            "E": "$myNumber + 1"
-                        },
-                        "v1Compatible": false
-                    },
-                    "taskLimit": 1
-                }
-            }
-        }
-    ]
+	"deliveryDate": "2021-10-01T22:14:25.914+0000",
+	"surveyDate": "2021-10-01T22:14:24.691+0000",
+	"workflows": [{
+		"path": "/JS7Demo/01_HelloWorld/jdHelloWorld",
+		"isCurrentVersion": true,
+		"versionDate": "2021-09-27T22:21:40.000+0000",
+		"state": {
+			"severity": 6,
+			"_text": "IN_SYNC"
+		},
+		"hasExpectedNoticeBoards": false,
+		"hasPostNoticeBoards": false,
+		"hasAddOrderDependencies": false,
+		"TYPE": "Workflow",
+		"version": "1.0.0",
+		"versionId": "f50bef79-1f01-4b02-a7c7-94f47f05d449",
+		"timeZone": "Etc/UTC",
+		"title": "Say Hello World",
+		"documentationName": "PKB-JS7-OnlineDemo-Workflow-HelloWorld",
+		"jobResourceNames": ["Default"],
+		"instructions": [{
+			"TYPE": "Execute.Named",
+			"jobName": "job-hello-world",
+			"label": "job-hello-world",
+			"position": [0],
+			"positionString": "0"
+		},
+		{
+			"TYPE": "ImplicitEnd",
+			"position": [1],
+			"positionString": "1"
+		}],
+		"jobs": {
+			"job-hello-world": {
+				"agentName": "primaryAgent",
+				"executable": {
+					"TYPE": "ShellScriptExecutable",
+					"script": "echo \"using workflow: $JS7_WORKFLOW_NAME\"\necho \"running job: $JS7_JOB_NAME\"\n\necho \"Hello World\"",
+					"v1Compatible": false
+				},
+				"skipIfNoAdmissionForOrderDay": false,
+				"parallelism": 1,
+				"graceTimeout": 15,
+				"failOnErrWritten": false,
+				"title": "Say hello world"
+			}
+		}
+	},
+	{
+		"path": "/JS7Demo/01_HelloWorld/jdHelloRunningLog",
+		"isCurrentVersion": true,
+		"versionDate": "2021-09-27T22:21:40.000+0000",
+		"state": {
+			"severity": 6,
+			"_text": "IN_SYNC"
+		},
+		"hasExpectedNoticeBoards": false,
+		"hasPostNoticeBoards": false,
+		"hasAddOrderDependencies": false,
+		"TYPE": "Workflow",
+		"version": "1.0.0",
+		"versionId": "f50bef79-1f01-4b02-a7c7-94f47f05d449",
+		"timeZone": "Etc/UTC",
+		"title": "Hello World example for a running log",
+		"documentationName": "PKB-JS7-OnlineDemo-Workflow-HelloWorld",
+		"jobResourceNames": ["Default"],
+		"instructions": [{
+			"TYPE": "Execute.Named",
+			"jobName": "job-running-log",
+			"label": "job-running-log",
+			"position": [0],
+			"positionString": "0"
+		},
+		{
+			"TYPE": "ImplicitEnd",
+			"position": [1],
+			"positionString": "1"
+		}],
+		"jobs": {
+			"job-running-log": {
+				"agentName": "primaryAgent",
+				"executable": {
+					"TYPE": "ShellScriptExecutable",
+					"script": "#!/bin/bash\n\necho \"using workflow: $JS7_WORKFLOW_NAME\"\necho \"running job: $JS7_JOB_NAME\"\n\nfor ((i=1; i<=100; i++)); do\n   echo \"Hello World no. $i\"\n   sleep 1\ndone\n",
+					"v1Compatible": false
+				},
+				"skipIfNoAdmissionForOrderDay": false,
+				"parallelism": 1,
+				"graceTimeout": 15,
+				"failOnErrWritten": false,
+				"title": "Write log output for running log"
+			}
+		}
+	}]
 }

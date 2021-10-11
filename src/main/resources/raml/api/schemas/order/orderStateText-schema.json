@@ -17,7 +17,6 @@
     "CANCELLED",
     "FINISHED",
     "BROKEN",
-    "CALLING",
     "UNKNOWN"
   ]
 }

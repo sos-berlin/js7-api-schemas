@@ -16,6 +16,12 @@
     "state": {
       "$ref": "../common/syncState-schema.json"
     },
+	"numOfNotices": {
+	  "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+	},
+	"numOfExpectingOrders": {
+	  "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+	},
     "notices": {
       "type": "array",
       "items": {

@@ -19,6 +19,9 @@
 		"folders": {
 			"$ref": "../common/folders-schema.json"
 		},
+		"compact": {
+			"$ref": "../common/compactParam-schema.json"
+		},
     	"limit": {
       		"description": "-1=unlimited",
       		"type": "integer",
