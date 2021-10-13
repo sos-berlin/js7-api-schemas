@@ -30,7 +30,8 @@
       "$ref": "category-schema.json"
     },
     "comment": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 2000
     },
     "parameters": {
       "description": "JSON object as string, parameter of request",
