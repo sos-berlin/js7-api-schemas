@@ -1,0 +1,40 @@
+{
+  "title": "Obstacles",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.Obstacles200",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "surveyDate",
+    "orders"
+  ],
+  "properties": {
+    "deliveryDate": {
+      	"$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      	"$ref": "../common/timestamp-schema.json"
+    },
+    "orders": {
+    	"type": "array",
+    	"items": {
+    		"type": "object",
+    		"javaType": "com.sos.joc.model.order.Obstacles",
+    		"properties": {
+    			"orderId": {
+    				"$ref": "../common/string255-schema.json"
+    			},
+    			"obstacles": {
+    				"type": "array",
+    				"uniqueItems": true,
+    				"items": {
+    					"$ref": "obstacle-schema.json"
+    				}
+    			}
+    		},
+    		"additionalProperties": false
+    	}
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Obstacle",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.Obstacle",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "$ref": "obstacleType-schema.json"
+    },
+    "until": {
+      "$ref": "../common/timestamp-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1722,6 +1722,25 @@ traits:
       type:
         postOrderLogWithPlainResponse:
           description: Provides order log as download
+  /obstacles:
+    type:
+      postJSON:
+        description: Gets obstacles
+        description1: " "
+        description2: " "
+        description3: !include api/documentation/order/orderIdRequired.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/order/orderFilter-schema.json
+        schema200: !include api/schemas/order/obstacle200-schema.json
+        example: " "
+        example200: !include api/examples/order/obstacle-example.json
   /variables:
     type:
       postJSON:

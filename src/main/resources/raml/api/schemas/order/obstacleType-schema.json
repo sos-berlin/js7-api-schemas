@@ -1,0 +1,15 @@
+{
+  "title": "ObstacleType",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.ObstacleType",
+  "type": "string",
+  "enum": [
+    "WaitingForAdmission",
+    "JobParallelismLimitReached"
+  ],
+  "javaEnumNames": [
+    "WaitingForAdmission",
+    "JobParallelismLimitReached"
+  ]
+}
+
