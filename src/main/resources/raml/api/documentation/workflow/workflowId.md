@@ -7,5 +7,5 @@
 <td></td>
 </tr>
 <tr><td style="padding-left:20px;">``path``</td><td>required, string</td><td>Field in ``workflowId`` to specify the path of a workflow</td><td></td><td></td></tr>
-<tr><td style="padding-left:20px;">``version``</td><td>optional, string</td><td>Field in ``workflowId`` to specify the version of a workflow</td><td></td><td></td></tr>
+<tr><td style="padding-left:20px;">``versionId``</td><td>optional, string</td><td>Field in ``workflowId`` to specify the version of a workflow</td><td></td><td></td></tr>
 
