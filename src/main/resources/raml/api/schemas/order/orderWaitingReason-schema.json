@@ -7,7 +7,8 @@
             "DELAYED_AFTER_ERROR",
             "FORKED",
             "EXPECTING_NOTICE",
-            "WAITING_FOR_LOCK"
+            "WAITING_FOR_LOCK",
+            "BETWEEN_CYCLES"
   ]
 }
 
