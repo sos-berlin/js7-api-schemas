@@ -1,17 +1,20 @@
 {
-  "title": "OrderState",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.controller.model.order.OrderState",
-  "type": "object",
-   "properties": {
+  	"title": "OrderState",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"javaType": "com.sos.controller.model.order.OrderState",
+  	"type": "object",
+   	"properties": {
 		"TYPE": {
 			"type": "string"
 		},
 		"noticeId": {
 			"description": "set if state == ExpectingNotice",
 			"type": "string"
+		},
+		"cycleState": {
+			"$ref": "orderCycleState-schema.json"
 		}
 	},
-  "additionalProperties": false
+  	"additionalProperties": false
 }
  

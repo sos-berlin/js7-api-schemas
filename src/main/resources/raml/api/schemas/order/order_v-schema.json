@@ -36,6 +36,9 @@
 	"agentId": {
 		"type": "string"
 	},
+	"cycleState": {
+		"$ref": "../../../controller/schemas/order/orderCycleState-schema.json"
+	},
 	"position": {
      	"$ref": "../../../controller/schemas/common/position-schema.json"
     },
@@ -70,5 +73,6 @@
 	"cyclicOrder": {
 		"$ref": "../orderManagement/dailyplan/cyclicOrder-schema.json"
 	}
-  }
+  },
+  "additionalProperties": false
 }
