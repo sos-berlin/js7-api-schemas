@@ -45,7 +45,10 @@
 	"positionString": {
      	"$ref": "../common/string255-schema.json"
     },
-    "scheduledFor": {
+    "positionIsImplicitEnd": {
+     	"type": "boolean"
+    },
+	"scheduledFor": {
       	"$ref": "../common/nonNegativeLong-schema.json"
     },
     "scheduledNever": {
