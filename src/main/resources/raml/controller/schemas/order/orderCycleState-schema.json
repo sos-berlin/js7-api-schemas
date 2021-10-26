@@ -5,9 +5,6 @@
 	"javaType": "com.sos.controller.model.order.OrderCycleState",
 	"description": "set if state == BetweenCycles or processing inside a cycle",
 	"properties": {
-		"end": {
-			"$ref": "../common/timestamp-schema.json"
-		},
 		"next": {
 			"description": "set if state == BetweenCycles",
 			"$ref": "../common/timestamp-schema.json"
