@@ -8,6 +8,7 @@
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"SCHEDULE"</li>
+    <li>"SCRIPT"</li>
     <li>"JOB"</li>
 </ul>
 </td><td>["JOB"]</td><td></td></tr>

@@ -9,6 +9,7 @@
 		"JOBRESOURCE",
 		"NOTICEBOARD",
 		"LOCK",
-		"SCHEDULE"
+		"SCHEDULE",
+		"SCRIPT"
 	]
 }
