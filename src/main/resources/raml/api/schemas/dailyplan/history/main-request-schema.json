@@ -1,0 +1,27 @@
+{
+	"title": "daily plan history request",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.history.MainRequest",
+	"type": "object",
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
+		"timeZone": {
+			"$ref": "../../common/timezone-schema.json"
+		},
+		"dateFrom": {
+			"$ref": "../../common/dateFromTo-schema.json"
+		},
+		"dateTo": {
+			"$ref": "../../common/dateFromTo-schema.json"
+		},
+		"submitted": {
+			"type": "boolean"
+		},
+		"limit": {
+			"type": "integer",
+			"default": 5000
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"title": "date object in daily plan history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.history.items.OrderItem",
+	"type": "object",
+	"required": [
+		"workflowPath",
+		"orderId",
+		"submitted"
+	],
+	"properties": {
+		"scheduledFor": {
+			"$ref": "../../../common/timestamp-schema.json"
+		},
+		"workflowPath": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"orderId": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"submitted": {
+			"type": "boolean"
+		},
+		"permitted": {
+			"type": "boolean"
+		}
+	}
+}

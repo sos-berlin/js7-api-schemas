@@ -1,0 +1,18 @@
+{
+	"title": "date object in daily plan history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.history.items.SubmissionItem",
+	"type": "object",
+	"required": [
+		"submissionTime",
+		"countTotal"
+	],
+	"properties": {
+		"submissionTime": {
+			"$ref": "../../../common/timestamp-schema.json"
+		},
+		"countTotal": {
+			"$ref": "../../../common/nonNegativeLong-schema.json"
+		}
+	}
+}

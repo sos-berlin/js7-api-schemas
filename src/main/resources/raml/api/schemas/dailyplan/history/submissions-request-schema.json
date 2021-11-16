@@ -1,0 +1,25 @@
+{
+	"title": "daily plan history request",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.history.SubmissionsRequest",
+	"type": "object",
+	"required": [
+		"controllerId",
+		"date"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
+		"date": {
+			"$ref": "../../common/date-schema.json"
+		},
+		"submitted": {
+			"type": "boolean"
+		},
+		"limit": {
+			"type": "integer",
+			"default": 5000
+		}
+	}
+}

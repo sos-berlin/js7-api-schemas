@@ -1,0 +1,33 @@
+{
+	"title": "collection of daily plan dates",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"description": "",
+	"javaType": "com.sos.joc.model.dailyplan.history.SubmissionsOrdersResponse",
+	"type": "object",
+	"required": [
+		"deliveryDate"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"orders": {
+			"type": "array",
+			"items": {
+				"$ref": "items/order-item-schema.json"
+			}
+		},
+		"warnMessages": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"errorMessages": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}
