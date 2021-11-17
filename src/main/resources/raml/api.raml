@@ -632,23 +632,43 @@ traits:
         
   /history:
     type:
-      postJSON:
-        description: Gets daily plan history
-        description1: !include api/documentation/dailyplan/history/dailyPlanHistoryFilterDef.md
-        description2: !include api/documentation/dailyplan/history/dateFrom.md
-        description3: !include api/documentation/dailyplan/history/dateTo.md
+      postJSONWithOptionalJSId:
+        description: Gets daily plan dates history
+        description1: !include api/documentation/common/dateFrom.md
+        description2: !include api/documentation/common/dateTo.md
+        description3: !include api/documentation/common/timeZone.md
         description4: !include api/documentation/dailyplan/history/submitted.md
-        description5: !include api/documentation/dailyplan/history/timeZone.md
+        description5: !include api/documentation/common/limit.md
         description6: " "
         description7: " "
         description8: " "
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/orderManagement/dailyplan/dailyplanHistoryFilter-schema.json
-        schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanHistory-schema.json 
+        schema: !include api/schemas/dailyplan/history/main-request-schema.json
+        schema200: !include api/schemas/dailyplan/history/main-response-schema.json 
         example: " "
         example200: " "
+
+    /submissions:
+      type:
+        postJSON:
+          description: Gets daily plan submission times history 
+          description1: !include api/documentation/dailyplan/history/date.md
+          description2: !include api/documentation/dailyplan/history/submitted.md
+          description3: !include api/documentation/common/limit.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: 
+          description200: " "
+          schema: !include api/schemas/dailyplan/history/submissions-request-schema.json
+          schema200: !include api/schemas/dailyplan/history/submissions-response-schema.json
+          example: " "
+          example200: " "
                     
   /submissions:
     type:
