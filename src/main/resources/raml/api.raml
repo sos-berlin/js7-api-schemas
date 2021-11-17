@@ -653,7 +653,7 @@ traits:
     /submissions:
       type:
         postJSON:
-          description: Gets daily plan submission times history 
+          description: Gets daily plan date submission times history 
           description1: !include api/documentation/dailyplan/history/date.md
           description2: !include api/documentation/dailyplan/history/submitted.md
           description3: !include api/documentation/common/limit.md
@@ -669,6 +669,26 @@ traits:
           schema200: !include api/schemas/dailyplan/history/submissions-response-schema.json
           example: " "
           example200: " "
+      
+      /orders:
+        type:
+          postJSON:
+            description: Gets daily plan submission time orders history 
+            description1: !include api/documentation/dailyplan/history/date.md
+            description2: !include api/documentation/dailyplan/history/submissionTime.md
+            description3: !include api/documentation/dailyplan/history/submitted.md
+            description4: !include api/documentation/common/limit.md
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description9: " "
+            description10: 
+            description200: " "
+            schema: !include api/schemas/dailyplan/history/submissions-orders-request-schema.json
+            schema200: !include api/schemas/dailyplan/history/submissions-orders-response-schema.json
+            example: " "
+            example200: " "
                     
   /submissions:
     type:
