@@ -7,14 +7,11 @@
 		"controllerId": {
 			"$ref": "../../common/controllerId-schema.json"
 		},
-		"timeZone": {
-			"$ref": "../../common/timezone-schema.json"
-		},
 		"dateFrom": {
-			"$ref": "../../common/dateFromTo-schema.json"
+			"$ref": "common/dateFromTo-schema.json"
 		},
 		"dateTo": {
-			"$ref": "../../common/dateFromTo-schema.json"
+			"$ref": "common/dateFromTo-schema.json"
 		},
 		"submitted": {
 			"type": "boolean"
