@@ -4,9 +4,8 @@
 	"javaType": "com.sos.joc.model.dailyplan.history.items.OrderItem",
 	"type": "object",
 	"required": [
-		"workflowPath",
 		"orderId",
-		"submitted"
+		"permitted"
 	],
 	"properties": {
 		"scheduledFor": {
