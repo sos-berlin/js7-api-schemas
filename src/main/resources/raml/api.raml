@@ -1513,6 +1513,18 @@ traits:
           schema: !include api/schemas/cluster/switch-schema.json
           example: " "
   
+  /is_active:
+    get:
+    type:
+      postOnlyAccessToken:
+        description: Returns wether JOC node is active or not
+        description200: ok = true exactly if it is active
+        schema200: ok
+        example200: |
+          {
+            "deliveryDate":"2020-05-05T21:13:35Z",
+            "ok":true
+          }
   /log:
     type:
       postWithPlainResponse:
