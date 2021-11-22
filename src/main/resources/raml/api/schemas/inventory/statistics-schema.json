@@ -37,6 +37,9 @@
     },
     "numOfCalendars": {
       "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfScripts": {
+      "$ref": "../common/nonNegativeLong-schema.json"
     }
   }
 }

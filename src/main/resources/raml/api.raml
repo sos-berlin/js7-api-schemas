@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.1.0
+version: 2.2.0
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -632,23 +632,63 @@ traits:
         
   /history:
     type:
-      postJSON:
-        description: Gets daily plan history
-        description1: !include api/documentation/dailyplan/history/dailyPlanHistoryFilterDef.md
-        description2: !include api/documentation/dailyplan/history/dateFrom.md
-        description3: !include api/documentation/dailyplan/history/dateTo.md
-        description4: !include api/documentation/dailyplan/history/submitted.md
-        description5: !include api/documentation/dailyplan/history/timeZone.md
+      postJSONWithOptionalJSId:
+        description: Gets daily plan dates history
+        description1: !include api/documentation/dailyplan/history/dateFrom.md
+        description2: !include api/documentation/dailyplan/history/dateTo.md
+        description3: !include api/documentation/dailyplan/history/submitted.md
+        description4: !include api/documentation/common/limit.md
+        description5: " "
         description6: " "
         description7: " "
         description8: " "
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/orderManagement/dailyplan/dailyplanHistoryFilter-schema.json
-        schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanHistory-schema.json 
+        schema: !include api/schemas/dailyplan/history/main-request-schema.json
+        schema200: !include api/schemas/dailyplan/history/main-response-schema.json 
         example: " "
         example200: " "
+
+    /submissions:
+      type:
+        postJSON:
+          description: Gets daily plan date submission times history 
+          description1: !include api/documentation/dailyplan/history/date.md
+          description2: !include api/documentation/dailyplan/history/submitted.md
+          description3: !include api/documentation/common/limit.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: 
+          description200: " "
+          schema: !include api/schemas/dailyplan/history/submissions-request-schema.json
+          schema200: !include api/schemas/dailyplan/history/submissions-response-schema.json
+          example: " "
+          example200: " "
+      
+      /orders:
+        type:
+          postJSON:
+            description: Gets daily plan submission time orders history 
+            description1: !include api/documentation/dailyplan/history/date.md
+            description2: !include api/documentation/dailyplan/history/submissionTime.md
+            description3: !include api/documentation/dailyplan/history/submitted.md
+            description4: !include api/documentation/common/limit.md
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description9: " "
+            description10: 
+            description200: " "
+            schema: !include api/schemas/dailyplan/history/submissions-orders-request-schema.json
+            schema200: !include api/schemas/dailyplan/history/submissions-orders-response-schema.json
+            example: " "
+            example200: " "
                     
   /submissions:
     type:
@@ -1473,6 +1513,18 @@ traits:
           schema: !include api/schemas/cluster/switch-schema.json
           example: " "
   
+  /is_active:
+    get:
+    type:
+      postOnlyAccessToken:
+        description: Returns wether JOC node is active or not
+        description200: ok = true exactly if it is active
+        schema200: ok
+        example200: |
+          {
+            "deliveryDate":"2020-05-05T21:13:35Z",
+            "ok":true
+          }
   /log:
     type:
       postWithPlainResponse:

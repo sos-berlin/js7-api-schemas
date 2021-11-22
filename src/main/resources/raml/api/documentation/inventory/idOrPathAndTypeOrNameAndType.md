@@ -11,5 +11,7 @@
     <li>"FILEORDERSOURCE"</li>
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
-    <li>"SCHEDULE"</li></ul>
+    <li>"SCHEDULE"</li>
+    <li>"SCRIPT"</li>
+    </ul>
 </td><td></td><td></td></tr>

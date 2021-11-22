@@ -11,5 +11,6 @@
 		* <a href="../../../../../inventory/schemas/job/job-schema.json" target="job">Job JSON schema</a>
     	* <a href="../../../../../inventory/schemas/schedule/schedule-schema.json" target="order">Schedule JSON schema</a>
     	* <a href="../../../../../inventory/schemas/calendar/calendar-schema.json" target="calendar">Calendar JSON schema</a>
+    	* <a href="../../../../../inventory/schemas/script/script-schema.json" target="script">Script JSON schema</a>
     	* EMPTY in case of a folder
     * valid

@@ -1,4 +1,17 @@
 type: error
+get?:
+  is: [ accessToken ]
+    
+  description: |
+    <h2><<description>></h2>
+    ___
+  responses:
+    200:
+      description: <<description200>>
+      body:
+        application/json:
+          example: <<example200>>
+          schema: <<schema200>>
 post:
   description: |
     <h2><<description>></h2>

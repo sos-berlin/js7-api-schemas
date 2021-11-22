@@ -14,6 +14,7 @@
     "WORKINGDAYSCALENDAR", 
     "NONWORKINGDAYSCALENDAR",
     "SCHEDULE",
+    "SCRIPT",
     "JOB"
   ]
 }

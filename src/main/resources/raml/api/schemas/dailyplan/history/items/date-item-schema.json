@@ -1,0 +1,24 @@
+{
+	"title": "date object in daily plan history collection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.history.items.DateItem",
+	"type": "object",
+	"required": [
+		"date",
+		"countTotal"
+	],
+	"properties": {
+		"date": {
+			"$ref": "../../../common/timestamp-schema.json"
+		},
+		"countTotal": {
+			"$ref": "../../../common/nonNegativeLong-schema.json"
+		},
+		"controllers": {
+			"type": "array",
+			"items": {
+				"$ref": "controller-item-schema.json"
+			}
+		}
+	}
+}

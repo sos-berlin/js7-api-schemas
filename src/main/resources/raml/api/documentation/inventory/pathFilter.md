@@ -19,6 +19,7 @@
       <li>"WORKINGDAYSCALENDAR"</li>
       <li>"NONWORKINGDAYSCALENDAR"</li>
       <li>"SCHEDULE"</li>
+      <li>"SCRIPT"</li>
     </ul>
   </td>
   <td>"objectType" : "WORKFLOW"</td>

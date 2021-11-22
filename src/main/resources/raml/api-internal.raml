@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API Internal
-version: 2.1.0
+version: 2.2.0
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -85,10 +85,25 @@ traits:
 /agents:
   /names:
     type:
-      postOnlyAccessToken:
+      postJSONWithOptionalJSId:
         description: Get enabled Agent names and aliases
+        description1: " "
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
         description200: Collection of enabled Agent names
+        schema: !include api/schemas/controller/controllerId-optional-schema.json
         schema200: !include api/schemas/agent/agentNames-schema.json
+        example: !include api/examples/controller/controllerParam-example.json
         example200 : !include api/examples/agent/agentNames-example.json
       
   /p:
