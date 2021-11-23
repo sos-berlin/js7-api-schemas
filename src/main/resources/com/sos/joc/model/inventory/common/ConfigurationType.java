@@ -19,7 +19,7 @@ public enum ConfigurationType {
     FILEORDERSOURCE(9),
     JOBRESOURCE(10),
     NOTICEBOARD(11),
-    SCRIPT(12);
+    INCLUDESCRIPT(12);
     private final Integer intValue;
     private final static Map<String, ConfigurationType> CONSTANTS = new HashMap<String, ConfigurationType>();
     private final static Map<Integer, ConfigurationType> INTCONSTANTS = new HashMap<Integer, ConfigurationType>();

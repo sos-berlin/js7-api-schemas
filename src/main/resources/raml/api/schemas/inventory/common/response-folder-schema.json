@@ -70,7 +70,7 @@
 			},
 			"uniqueItems": true
 		},
-		"scripts": {
+		"includeScripts": {
 			"type": "array",
 			"items": {
 				"$ref": "response-folderItem-schema.json"

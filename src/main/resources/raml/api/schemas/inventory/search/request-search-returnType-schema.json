@@ -10,6 +10,6 @@
 		"NOTICEBOARD",
 		"LOCK",
 		"SCHEDULE",
-		"SCRIPT"
+		"INCLUDESCRIPT"
 	]
 }

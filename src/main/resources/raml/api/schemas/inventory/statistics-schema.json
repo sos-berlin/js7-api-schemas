@@ -38,7 +38,7 @@
     "numOfCalendars": {
       "$ref": "../common/nonNegativeLong-schema.json"
     },
-    "numOfScripts": {
+    "numOfIncludeScripts": {
       "$ref": "../common/nonNegativeLong-schema.json"
     }
   }

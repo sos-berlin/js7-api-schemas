@@ -10,7 +10,7 @@
     "LOCK",
     "NOTICEBOARD",
     "SCHEDULE",
-    "SCRIPT",
+    "INCLUDESCRIPT",
     "FOLDER",
     "JOBSCHEDULER",
     "DAILYPLAN",
