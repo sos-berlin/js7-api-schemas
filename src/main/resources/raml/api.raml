@@ -2311,7 +2311,18 @@ traits:
         example: " "
         example200: " "
 
-
+  /hash:
+    post:
+      description: <h2>gets sha512 hash</h2><hr/>
+      body:
+        text/plain:
+      responses:
+        200:
+          description: If the body is empty then ``plain:`` will be returned<br/>otherwise a sha512 hash with prefix ``sha512:``, e.g.<br/>``sha512:B793649879D61613FD3F711B68F7FF3DB19F2FE2D2C136E8523ABC87612219D5AECB4A09035AD88D544E227400A0A56F02BC990CF0D4CB348F8413DE00BCBF08``
+          body:
+            text/plain:
+    type:
+      error:
 
 
 /workflow:

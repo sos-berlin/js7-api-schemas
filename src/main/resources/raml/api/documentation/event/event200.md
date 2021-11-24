@@ -17,13 +17,15 @@ Different events trigger the following different actions:
 		* **ItemAdded** (with "objectType": "AGENT")
 		* **ItemDeleted** (with "objectType": "AGENT")
 		* **ItemChanged** (with "objectType": "AGENT")
-	* ``Agent Running Tasks``: once for the following event
+	* ``Agent Running Jobs``: once for the following event
 		* **JobStateChanged**
 		* **AgentStateChanged**
 		* **ProxyCoupled**
 		* **ProxyDecoupled**
 	* ``Order Summary``: once for the following event
 		* **WorkflowStateChanged**
+		* **ProxyCoupled**
+		* **ProxyDecoupled**
 	* ``History`` (failed/successful Orders): once for the following event
 		* **HistoryOrderTerminated** (is sent only in an active JOC Cockpit node)
 	* ``History`` (failed/successful Jobs): once for the following event
