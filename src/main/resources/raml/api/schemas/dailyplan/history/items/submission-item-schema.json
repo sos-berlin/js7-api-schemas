@@ -5,13 +5,17 @@
 	"type": "object",
 	"required": [
 		"submissionTime",
-		"countTotal"
+		"countTotal",
+		"countSubmitted"
 	],
 	"properties": {
 		"submissionTime": {
 			"$ref": "../../../common/timestamp-schema.json"
 		},
 		"countTotal": {
+			"$ref": "../../../common/nonNegativeLong-schema.json"
+		},
+		"countSubmitted": {
 			"$ref": "../../../common/nonNegativeLong-schema.json"
 		}
 	}

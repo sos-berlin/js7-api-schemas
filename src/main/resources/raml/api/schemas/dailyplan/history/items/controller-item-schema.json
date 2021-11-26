@@ -5,13 +5,17 @@
 	"type": "object",
 	"required": [
 		"controllerId",
-		"countTotal"
+		"countTotal",
+		"countSubmitted"
 	],
 	"properties": {
 		"controllerId": {
 			"$ref": "../../../common/controllerId-schema.json"
 		},
 		"countTotal": {
+			"$ref": "../../../common/nonNegativeLong-schema.json"
+		},
+		"countSubmitted": {
 			"$ref": "../../../common/nonNegativeLong-schema.json"
 		}
 	}
