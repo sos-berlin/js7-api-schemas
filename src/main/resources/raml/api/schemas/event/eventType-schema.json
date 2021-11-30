@@ -19,7 +19,7 @@
     "JOBCLASS",
     "JOBRESOURCE",
     "SCHEDULE",
-    "SCRIPT",
+    "INCLUDESCRIPT",
     "CALENDAR",
     "DAILYPLAN",
     "ORDERHISTORY",

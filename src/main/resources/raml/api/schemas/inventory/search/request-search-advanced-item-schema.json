@@ -19,7 +19,7 @@
 		"schedule": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"script": {
+		"includeScript": {
 			"$ref": "../../common/string255-schema.json"
 		},
 		"noticeBoards": {

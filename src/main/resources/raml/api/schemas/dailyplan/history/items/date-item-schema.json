@@ -5,13 +5,17 @@
 	"type": "object",
 	"required": [
 		"date",
-		"countTotal"
+		"countTotal",
+		"countSubmitted"
 	],
 	"properties": {
 		"date": {
 			"$ref": "../../../common/timestamp-schema.json"
 		},
 		"countTotal": {
+			"$ref": "../../../common/nonNegativeLong-schema.json"
+		},
+		"countSubmitted": {
 			"$ref": "../../../common/nonNegativeLong-schema.json"
 		},
 		"controllers": {

@@ -1,5 +1,5 @@
 {
-	"title": "script Edit configuration",
+	"title": "includescript Edit configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.inventory.script.ScriptEdit",
 	"type": "object",

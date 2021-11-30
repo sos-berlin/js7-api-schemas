@@ -8,7 +8,7 @@
 	<li><a href="../../../../../inventory/schemas/board/board-schema.json" target="board">NoticeBoard JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/schedule/schedule-schema.json" target="order">Schedule JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/calendar/calendar-schema.json" target="calendar">Calendar JSON schema</a></li>
-	<li><a href="../../../../../inventory/schemas/script/script-schema.json" target="script">Script JSON schema</a></li>
+	<li><a href="../../../../../inventory/schemas/script/script-schema.json" target="script">IncludeScript JSON schema</a></li>
 </ul>
 </p>
 <p>The URL parameter has to be the corresponding objectType (case insensitive)
@@ -21,6 +21,6 @@
     <li>"SCHEDULE"</li>
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
-    <li>"SCRIPT"</li>
+    <li>"INCLUDESCRIPT"</li>
 </ul>
 </p>
