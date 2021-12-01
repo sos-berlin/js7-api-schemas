@@ -42,22 +42,25 @@
 			}
 		},
 
-		"users": {
+		"accounts": {
 			"type": "array",
 			"items": {
 				"type": "object",
-				"javaType": "com.sos.joc.model.security.SecurityConfigurationUser",
+				"javaType": "com.sos.joc.model.security.SecurityConfigurationAccount",
 				"required": [
 					"user",
 					"roles"
 				],
 				"properties": {
-					"user": {
+					"account": {
 						"type": "string"
 					},
 
 					"password": {
 						"type": "string"
+					},
+					"identityServiceId": {
+						"$ref": "../common/nonNegativeLong-schema.json"
 					},
 
 					"roles": {

@@ -1,0 +1,25 @@
+ 
+{
+	"title": "IdentityService",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.IdentityService",
+	"type": "object",
+	"properties": {
+		"identityServiceType": {
+			"$ref": "identityServiceTypes-schema.json"
+		},
+		"identityServiceName": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"ordering": {
+			"$ref": "../common/nonNegativeInteger-schema.json"
+		},
+		"disabled": {
+			"$ref": "disabledParam-schema.json"
+		},
+		"required": {
+			"$ref": "requiredParam-schema.json"
+		}
+	}
+}
+    

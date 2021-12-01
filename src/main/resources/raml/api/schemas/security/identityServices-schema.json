@@ -1,0 +1,23 @@
+{
+	"title": "Identiy Services",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.IdentityServices",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"identityServiceItems": {
+			"type": "array",
+			"items": {
+				"$ref": "identityService-schema.json"
+			}
+		},
+		"identityServiceTypes": {
+			"type": "array",
+			"items": {
+				"$ref": "identityServiceTypes-schema.json"
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Identity Service Types",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.security.IdentityServiceTypes",
+  "type": "string",
+  "enum": [
+    "SHIRO",
+    "VAULT",
+    "VAULT-JOC",
+    "VAULT-JOC-ACTIVE",
+    "LDAP",
+    "LDAP-JOC",
+    "JOC" 
+  ]
+}
+    
