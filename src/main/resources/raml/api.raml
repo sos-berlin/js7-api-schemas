@@ -492,6 +492,20 @@ traits:
           
 /daily_plan:
   description: This is not an API call. Use its children!!
+  
+  /calendar/deploy:
+    type:
+      postOnlyAccessToken:
+        description: Deploys current daily plan calendar to Controllers
+        description200: |
+          **Confirm <span style="text-transform: capitalize;">deploy</span> successfully**
+        schema200: ok
+        example200: |
+          {
+            "deliveryDate":"2021-12-05T21:13:35Z",
+            "ok":true
+          }
+      
   /order/variables:
     type:
       postJSON:
@@ -731,8 +745,7 @@ traits:
           example200: " "
                
 /documentation:
-  description: |
-    This is not an API call. Use its children!!
+  description: This is not an API call. Use its children!!
   
   /edit:
     type:
@@ -743,6 +756,7 @@ traits:
         description3: " "
         description4: " "
         description5: !include api/documentation/audit/auditLog.md
+        audit: " "
         schema: !include api/schemas/docu/documentationFilter-schema.json
         example: " "
   /show:
