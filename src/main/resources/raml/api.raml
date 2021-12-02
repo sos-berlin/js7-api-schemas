@@ -851,28 +851,29 @@ traits:
         example: " "
         example200: " "
 
-/iam
-  description: This is not an API call. Use its children!!
-  /identityservices
+/iam:
+  description: |
+    This is not an API call. Use its children!!
+  /identityservices:
     type:
       postJSONWithoutJSId:
-      description: Returns a collection of Identity Services
-      description1: !include api/documentation/security/identityServices/identityServiceName.md
-      description2: !include api/documentation/security/identityService/disabled.md
-      description3: " "
-      description4: " "
-      description5: " "
-      description6: " "
-      description7: " "
-      description8: " "
-      description9: " "
-      description10: " "
-      description200: " "
-      schema: !include api/schemas/security/identityServiceFilter-schema.json
-      schema200: !include api/schemas/security/identityServices-schema.json
-      example: " "
-      example200: " "
-  /identityservice 
+        description: Returns a collection of Identity Services
+        description1: !include api/documentation/security/identityServices/identityServiceName.md
+        description2: !include api/documentation/security/identityService/disabled.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/security/identityServiceFilter-schema.json
+        schema200: !include api/schemas/security/identityServices-schema.json
+        example: " "
+        example200: " "
+  /identityservice:
     type:
       postJSONWithoutJSId:
         description: A Identity Service
@@ -891,14 +892,14 @@ traits:
         schema200: !include api/schemas/security/identityService-schema.json
         example: " "
         example200: " "
-  /identityservice/store
+  /identityservice/store:
     type:
       postJSONWithoutJSId:
         description: Stores an Identity Service
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/identityService/identityServiceType.md
         description3: !include api/documentation/security/identityService/disabled.md
-        description4: !include api/documentation/security/identityServices/required.md
+        description4: !include api/documentation/security/identityService/required.md
         description5: " "
         description6: " "
         description7: " "
@@ -910,7 +911,7 @@ traits:
         schema200: ok
         example: " "
         example200: " "
-  /identityservice/delete
+  /identityservice/delete:
     type:
       postJSONWithoutJSId:
         description: Deletes an Identiy Service
