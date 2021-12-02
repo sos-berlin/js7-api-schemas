@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.1.1
+version: 2.2.0
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -852,8 +852,8 @@ traits:
         example200: " "
 
 /iam:
-  description: |
-    This is not an API call. Use its children!!
+  description: This is not an API call. Use its children!!
+    
   /identityservices:
     type:
       postJSONWithoutJSId:
@@ -892,44 +892,30 @@ traits:
         schema200: !include api/schemas/security/identityService-schema.json
         example: " "
         example200: " "
-  /identityservice/store:
-    type:
-      postJSONWithoutJSId:
-        description: Stores an Identity Service
-        description1: !include api/documentation/security/identityService/identityServiceName.md
-        description2: !include api/documentation/security/identityService/identityServiceType.md
-        description3: !include api/documentation/security/identityService/disabled.md
-        description4: !include api/documentation/security/identityService/required.md
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        description200: " "
-        schema: !include api/schemas/security/identityServiceFilter-schema.json
-        schema200: ok
-        example: " "
-        example200: " "
-  /identityservice/delete:
-    type:
-      postJSONWithoutJSId:
-        description: Deletes an Identiy Service
-        description1: !include api/documentation/security/identityService/identityServiceName.md
-        description2: " "
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        description200: " "
-        schema: !include api/schemas/security/identityServiceFilter-schema.json
-        schema200: ok
-        example: " "
-        example200: " "
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Stores an Identity Service
+          description1: !include api/documentation/security/identityService/identityServiceName.md
+          description2: !include api/documentation/security/identityService/identityServiceType.md
+          description3: !include api/documentation/security/identityService/disabled.md
+          description4: !include api/documentation/security/identityService/required.md
+          description5: " "
+          audit: " "
+          schema: !include api/schemas/security/identityServiceFilter-schema.json
+          example: " "
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes an Identiy Service
+          description1: !include api/documentation/security/identityService/identityServiceName.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: " "
+          schema: !include api/schemas/security/identityServiceFilter-schema.json
+          example: " "
 
 /inventory:
   description: This is not an API call. Use its children!!
