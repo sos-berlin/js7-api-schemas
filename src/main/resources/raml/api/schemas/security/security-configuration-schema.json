@@ -3,16 +3,14 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.SecurityConfiguration",
 	"type": "object",
-	"required": [
-		"main"
-	],
-	
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../common/timestamp-schema.json"
 		},
-		
-		"main":{
+		"identityServiceType": {
+			"$ref": "identityServiceTypes-schema.json"
+		},
+		"main": {
 			"type": "array",
 			"items": {
 				"type": "object",
@@ -21,7 +19,7 @@
 					"entryName",
 					"entryValue"
 				],
-				"properties": {			
+				"properties": {
 					"entryName": {
 						"type": "string"
 					},
@@ -41,28 +39,25 @@
 				"additionalProperties": false
 			}
 		},
-
 		"accounts": {
 			"type": "array",
 			"items": {
 				"type": "object",
 				"javaType": "com.sos.joc.model.security.SecurityConfigurationAccount",
 				"required": [
-					"user",
+					"account",
 					"roles"
 				],
 				"properties": {
 					"account": {
 						"type": "string"
 					},
-
 					"password": {
 						"type": "string"
 					},
 					"identityServiceId": {
 						"$ref": "../common/nonNegativeLong-schema.json"
 					},
-
 					"roles": {
 						"type": "array",
 						"minItems": 1,
@@ -74,7 +69,6 @@
 				"additionalProperties": false
 			}
 		},
-		
 		"profiles": {
 			"type": "array",
 			"items": {
@@ -84,7 +78,6 @@
 					"account": {
 						"type": "string"
 					},
-
 					"lastLogin": {
 						"$ref": "../common/timestamp-schema.json"
 					}
@@ -92,13 +85,12 @@
 				"additionalProperties": false
 			}
 		},
-		
 		"roles": {
 			"javaType": "com.sos.joc.model.security.permissions.SecurityConfigurationRoles",
 			"type": "object",
-			"additionalProperties":  { 
-    			"$ref": "role-schema.json"
-   			}
+			"additionalProperties": {
+				"$ref": "role-schema.json"
+			}
 		}
 	},
 	"additionalProperties": false
