@@ -7,8 +7,8 @@
 		"deliveryDate": {
 			"$ref": "../common/timestamp-schema.json"
 		},
-		"identityServiceType": {
-			"$ref": "identityServiceTypes-schema.json"
+		"identityServiceName": {
+			"$ref": "../common/string255-schema.json"
 		},
 		"main": {
 			"type": "array",
