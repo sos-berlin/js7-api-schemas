@@ -1,10 +1,9 @@
 {
 	"title": "Daily Plan  Order Selector",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderSelector",
+	"javaType": "com.sos.joc.model.dailyplan.generate.GenerateRequest",
 	"type": "object",
 	"description": "To generate orders for the daily plan",
-	
 	"properties": {
 		"controllerId": {
 			"$ref": "../../common/controllerId-schema.json"
@@ -12,24 +11,17 @@
 		"dailyPlanDate": {
 			"$ref": "../../common/date-schema.json"
 		},
+		"selector": {
+			"$ref": "common/generate-selector-schema.json"
+		},
 		"overwrite": {
-			"$ref": "overwriteParam-schema.json"
+			"$ref": "../common/overwrite-schema.json"
 		},
 		"withSubmit": {
-			"$ref": "withSubmitParam-schema.json"
-		},
-		"controllerIds": {
-			"type": "array",
-			"items": {
-				"$ref": "../../common/controllerId-schema.json"
-			}
-		},
-		"selector": {
-			"$ref": "dailyPlanOrdersSelectorDef-schema.json"
+			"$ref": "../common/withSubmit-schema.json"
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
 	}
 }
- 
