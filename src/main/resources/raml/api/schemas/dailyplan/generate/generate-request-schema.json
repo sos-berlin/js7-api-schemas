@@ -4,6 +4,10 @@
 	"javaType": "com.sos.joc.model.dailyplan.generate.GenerateRequest",
 	"type": "object",
 	"description": "To generate orders for the daily plan",
+	"required": [
+		"controllerId",
+		"dailyPlanDate"
+	],
 	"properties": {
 		"controllerId": {
 			"$ref": "../../common/controllerId-schema.json"
@@ -11,8 +15,11 @@
 		"dailyPlanDate": {
 			"$ref": "../../common/date-schema.json"
 		},
-		"selector": {
-			"$ref": "common/generate-selector-schema.json"
+		"schedulePaths": {
+			"$ref": "items/path-item-schema.json"
+		},
+		"workflowPaths": {
+			"$ref": "items/path-item-schema.json"
 		},
 		"overwrite": {
 			"$ref": "../common/overwrite-schema.json"
