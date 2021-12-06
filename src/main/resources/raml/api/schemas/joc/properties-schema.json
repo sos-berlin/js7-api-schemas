@@ -98,6 +98,10 @@
     "welcomeGotIt": {
       "type": "boolean",
       "default": false
+    },
+    "clusterLicense": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

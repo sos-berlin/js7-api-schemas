@@ -1,0 +1,21 @@
+{
+  "title": "cluster agent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.ClusterAgent",
+  "type": "object",
+  "extends" : {
+  	"$ref": "singleAgent-schema.json"
+  },
+  "required": [
+  	"agentId",
+  	"agentName"
+  ],
+  "properties": {
+    "subagents": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "subagent-schema.json"
+    	}
+    }
+  }
+}

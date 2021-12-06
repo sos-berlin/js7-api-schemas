@@ -1,0 +1,12 @@
+{
+  "title": "SubagentDiretoryType",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.SubagentDirectorType",
+  "type": "string",
+  "enum": [
+      "NO_DIRECTOR",
+      "PRIMARY_DIRECTOR",
+      "STANDBY_DIRECTOR"
+  ],
+  "default": "NO_DIRECTOR"
+}

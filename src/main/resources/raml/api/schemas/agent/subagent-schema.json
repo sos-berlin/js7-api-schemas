@@ -1,0 +1,27 @@
+{
+  "title": "agent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.SubAgent",
+  "type": "object",
+  "required": [
+  	"subagentId",
+  	"url"
+  ],
+  "properties": {
+    "controllerId": {
+    	"$ref": "../common/controllerId-schema.json"
+    },
+    "agentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "subagentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "url": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "isDirector": {
+    	"$ref": "subagentDirectorType-schema.json"
+    }
+  }
+}

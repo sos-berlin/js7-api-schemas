@@ -5,21 +5,18 @@
   "type": "object",
   "required": [
     "id",
-    "uri"
+    "director"
   ],
   
   "properties": {
     "id": {
       "$ref": "../../../api/schemas/common/string255-schema.json"
     },
-    "uri": {
-      "$ref": "../../../api/schemas/common/string255-schema.json"
+    "director": {
+      "$ref": "../../../api/schemas/common/string255required-schema.json"
     },
-    "maxProcesses": {
-      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
-    },
-    "title": {
-      "type": "string"
+    "standbyDirector": {
+      "$ref": "../../../api/schemas/common/string255required-schema.json"
     }
   },
   "additionalProperties": false

@@ -1,5 +1,5 @@
 {
-  "title": "agents",
+  "title": "single agents",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.agent.Agents",
   "type": "object",
@@ -13,7 +13,7 @@
     "agents": {
     	"type": "array",
     	"items": {
-    		"$ref": "agent-schema.json"
+    		"$ref": "singleAgent-schema.json"
     	}
     }
   },

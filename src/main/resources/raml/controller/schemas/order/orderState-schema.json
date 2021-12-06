@@ -13,6 +13,9 @@
 		},
 		"cycleState": {
 			"$ref": "orderCycleState-schema.json"
+		},
+		"subagentId": {
+			"type": "string"
 		}
 	},
   	"additionalProperties": false

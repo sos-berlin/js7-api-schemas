@@ -36,6 +36,9 @@
 	"agentId": {
 		"type": "string"
 	},
+	"subagentId": {
+		"type": "string"
+	},
 	"cycleState": {
 		"$ref": "../../../controller/schemas/order/orderCycleState-schema.json"
 	},

@@ -1,0 +1,21 @@
+{
+  "title": "cluster agents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.ClusterAgents",
+  "type": "object",
+  "required": [
+  	"deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "agents": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "clusterAgent-schema.json"
+    	}
+    }
+  },
+  "additionalProperties": false
+}
