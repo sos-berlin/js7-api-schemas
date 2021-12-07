@@ -5,6 +5,7 @@
   "type": "object",
   "required": [
     "agentId",
+    "url",
     "numOfSuccessfulTasks",
     "numOfJobs"
   ],
@@ -13,6 +14,9 @@
       "type": "string"
     },
     "agentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "url": {
     	"$ref": "../common/string255required-schema.json"
     },
     "numOfSuccessfulTasks": {

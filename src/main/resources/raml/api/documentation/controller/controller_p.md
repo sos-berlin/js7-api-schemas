@@ -5,6 +5,7 @@ Contains collection of Controllers and Agents where each Controller has fields s
 * role (STANDALONE, PRIMARY or BACKUP)
 * host
 * version
+* javaVersion
 * operating system
     * name
     * architecture

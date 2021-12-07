@@ -13,6 +13,12 @@
     		"$ref": "../common/string255required-schema.json"
     	}
     },
+    "urls": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../common/string255required-schema.json"
+    	}
+    },
     "dateFrom": {
       "$ref": "../common/dateFromTo-schema.json"
     },

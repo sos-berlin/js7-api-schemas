@@ -106,11 +106,34 @@ traits:
         example: !include api/examples/controller/controllerParam-example.json
         example200 : !include api/examples/agent/agentNames-example.json
       
+  /cluster/p:
+    type:
+      postJSONWithOptionalJSId:
+        description: Gets persistent Cluster Agent information
+        description1: !include api/documentation/agent/agentIds.md
+        description2: " "
+        description3: !include api/documentation/agent/onlyEnabledAgents.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: !include api/documentation/agent/clusterAgents_p.md
+        schema: !include api/schemas/agent/readAgents-schema.json
+        schema200: !include api/schemas/agent/clusterAgents-schema.json
+        example: !include api/examples/controller/controllerParam-example.json
+        example200: " "
+        
   /p:
     type:
       postJSONWithOptionalJSId:
-        description: Gets persistent Agent information
-        description1: !include api/documentation/agent/agentIdsUrls.md
+        description: Gets persistent Solo Agent information
+        description1: !include api/documentation/agent/agentIds.md
         description2: " "
         description3: !include api/documentation/agent/onlyEnabledAgents.md
         description4: " "

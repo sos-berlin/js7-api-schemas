@@ -124,7 +124,7 @@ traits:
   type:
     postJSON:
       description: Gets Agents
-      description1: !include api/documentation/agent/agentIdsUrls.md
+      description1: !include api/documentation/agent/agentIds.md
       description2: !include api/documentation/agent/states.md
       description3: !include api/documentation/agent/onlyEnabledAgents.md
       description4: !include api/documentation/common/compact.md
@@ -139,6 +139,23 @@ traits:
       schema200: !include api/schemas/agent/agents_v-schema.json
       example: !include api/examples/agent/agents_v-request-example.json
       example200: !include api/examples/agent/agents_v-example.json
+      
+  /cluster/store:
+    type:
+      postJSONWithOkResponse:
+        description: Stores Cluster Agents persistently and assigns Cluster Agents to Controllers
+        description1: !include api/documentation/agent/clusterAgents.md
+        description2: !include api/documentation/audit/auditLog.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/agent/storeClusterParam-schema.json
+        example: " "
         
   /reassign:
     type:
@@ -174,7 +191,7 @@ traits:
   /store:
     type:
       postJSONWithOkResponse:
-        description: Stores Agents persistently and assigns Agents to Controllers
+        description: Stores Solo Agents persistently and assigns Solo Agents to Controllers
         description1: !include api/documentation/agent/agents.md
         description2: !include api/documentation/audit/auditLog.md
         description3: " "
@@ -2256,6 +2273,24 @@ traits:
         example: " "
         example200: " "
 
+/subagent:
+  /remove:
+    type:
+      postJSONWithOkResponse:
+        description: Removes Subagent
+        description1: !include api/documentation/agent/subagentId.md
+        description2: !include api/documentation/audit/auditLog.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/agent/subagentCommand-schema.json
+        example: " "
+        
 /task/log:
   type:
     postLog:

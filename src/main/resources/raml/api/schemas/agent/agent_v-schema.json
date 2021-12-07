@@ -17,6 +17,9 @@
     "agentName": {
     	"$ref": "../common/string255required-schema.json"
     },
+    "url": {
+    	"$ref": "../common/string255required-schema.json"
+    },
     "state": {
     	"$ref": "agentState-schema.json"
     },

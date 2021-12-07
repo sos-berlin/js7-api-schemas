@@ -8,9 +8,6 @@
   	"url"
   ],
   "properties": {
-    "controllerId": {
-    	"$ref": "../common/controllerId-schema.json"
-    },
     "agentId": {
     	"$ref": "../common/string255required-schema.json"
     },
@@ -22,6 +19,10 @@
     },
     "isDirector": {
     	"$ref": "subagentDirectorType-schema.json"
+    },
+    "isClusterWatcher": {
+    	"type": "boolean",
+    	"default": false
     }
   }
 }

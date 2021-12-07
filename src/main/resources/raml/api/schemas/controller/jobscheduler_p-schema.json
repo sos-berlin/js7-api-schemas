@@ -40,6 +40,9 @@
     "version": {
       "type": "string"
     },
+    "javaVersion": {
+      "type": "string"
+    },
     "os": {
       "$ref": "os-schema.json"
     },
