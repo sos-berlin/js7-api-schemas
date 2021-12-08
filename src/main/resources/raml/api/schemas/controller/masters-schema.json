@@ -20,7 +20,13 @@
     "agents": {
     	"type": "array",
     	"items": {
-    		"$ref": "../agent/clusterAgent-schema.json"
+    		"$ref": "../agent/singleAgent-schema.json"
+    	}
+    },
+    "clusterAgents": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../agent/singleAgent-schema.json"
     	}
     },
     "currentSecurityLevel": {
