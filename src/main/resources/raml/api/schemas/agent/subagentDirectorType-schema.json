@@ -7,6 +7,5 @@
       "NO_DIRECTOR",
       "PRIMARY_DIRECTOR",
       "STANDBY_DIRECTOR"
-  ],
-  "default": "NO_DIRECTOR"
+  ]
 }

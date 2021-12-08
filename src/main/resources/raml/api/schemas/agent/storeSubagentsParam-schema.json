@@ -1,0 +1,29 @@
+{
+  "title": "store sub agents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.StoreSubAgents",
+  "type": "object",
+  "required": [
+  	"controllerId",
+  	"clusterAgents"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerIdRequired-schema.json"
+    },
+    "agentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "subagents": {
+    	"type": "array",
+    	"minItems": 1,
+    	"items": {
+    		"$ref": "subagent-schema.json"
+    	}
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

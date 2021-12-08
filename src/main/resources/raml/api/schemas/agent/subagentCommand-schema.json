@@ -1,18 +1,22 @@
 {
-  "title": "sub agent (e.g. remove)",
+  "title": "sub agents (e.g. remove)",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.agent.SubAgentCommand",
+  "javaType": "com.sos.joc.model.agent.SubAgentsCommand",
   "type": "object",
   "required": [
   	"controllerId",
-  	"subagentId"
+  	"subagentIds"
   ],
   "properties": {
     "controllerId": {
     	"$ref": "../common/controllerId-schema.json"
     },
-    "subagentId": {
-    	"$ref": "../common/string255required-schema.json"
+    "subagentIds": {
+    	"type": "array",
+    	"minItems": 1,
+    	"items": {
+    		"$ref": "../common/string255required-schema.json"
+    	}
     },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
