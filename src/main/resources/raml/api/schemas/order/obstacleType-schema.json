@@ -4,10 +4,12 @@
   "javaType": "com.sos.joc.model.order.ObstacleType",
   "type": "string",
   "enum": [
+    "OrderNotExisting",
     "WaitingForAdmission",
     "JobParallelismLimitReached"
   ],
   "javaEnumNames": [
+    "OrderNotExisting",
     "WaitingForAdmission",
     "JobParallelismLimitReached"
   ]
