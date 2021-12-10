@@ -24,6 +24,11 @@
     "isClusterWatcher": {
     	"type": "boolean",
     	"default": false
+    },
+    "priority": {
+    	"type": "integer",
+    	"default": 0
     }
-  }
+  },
+  "additionalProperties": false
 }
