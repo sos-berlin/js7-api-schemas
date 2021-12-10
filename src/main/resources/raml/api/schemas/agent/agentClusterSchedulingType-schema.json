@@ -1,0 +1,11 @@
+{
+  "title": "AgentClusterSchedulingType",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentClusterSchedulingType",
+  "type": "string",
+  "enum": [
+      "ROUND_ROBIN",
+      "FIXED_PRIORITY"
+  ],
+  "default": "ROUND_ROBIN"
+}

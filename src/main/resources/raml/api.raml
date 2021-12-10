@@ -176,16 +176,33 @@ traits:
   /cluster/store:
     type:
       postJSONWithOkResponse:
-        description: Stores Cluster Agents persistently and assigns Cluster Agents to Controllers
+        description: Stores Cluster Agents persistently
         description1: !include api/documentation/agent/clusterAgents.md
-        description2: !include api/documentation/audit/auditLog.md
+        description2: " "
         description3: " "
         description4: " "
         description5: " "
         description6: " "
         description7: " "
         description8: " "
-        description9: " "
+        description9: !include api/documentation/audit/auditLog.md
+        description10: " "
+        schema: !include api/schemas/agent/storeClusterParam-schema.json
+        example: " "
+        
+  /cluster/deploy:
+    type:
+      postJSONWithOkResponse:
+        description: Assigns Cluster Agents to Controllers
+        description1: !include api/documentation/agent/clusterAgentsDeploy.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: !include api/documentation/audit/auditLog.md
         description10: " "
         schema: !include api/schemas/agent/storeClusterParam-schema.json
         example: " "

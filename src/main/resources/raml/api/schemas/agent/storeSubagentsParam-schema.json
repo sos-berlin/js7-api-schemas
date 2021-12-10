@@ -1,5 +1,5 @@
 {
-  "title": "store sub agents",
+  "title": "store/deploy sub agents",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.agent.StoreSubAgents",
   "type": "object",
@@ -16,10 +16,14 @@
     },
     "subagents": {
     	"type": "array",
+    	"uniqueItems": true,
     	"minItems": 1,
     	"items": {
     		"$ref": "subagent-schema.json"
     	}
+    },
+    "scheduingType": {
+      "$ref": "agentClusterSchedulingType-schema.json"
     },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
