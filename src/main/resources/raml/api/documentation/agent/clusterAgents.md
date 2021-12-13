@@ -10,6 +10,11 @@
     	<br/>each Subagent has the following fields where one of them has to be a primary director and another optionally a standby director</td><td></td><td></td></tr>
     	<tr><td style="padding-left:40px;">``subagentId``</td><td>required, string</td><td>The ``subagentId`` is the name that is used in the Controller to identify a Subagent. This value is set once and cannot be overwritten</td><td></td><td></td></tr>
     	<tr><td style="padding-left:40px;">``url``</td><td>required, string</td><td>URL of the Subagent</td><td></td><td></td></tr>
-    	<tr><td style="padding-left:40px;">``isDirector``</td><td>required, string</td><td>Possible values are NO_DIRECTOR, PRIMARY_DIRECTOR, STANDBY_DIRECTOR</td><td></td><td></td></tr>
-    
+    	<tr><td style="padding-left:40px;">``isDirector``</td><td>required, string</td><td>Possible values are
+    		<ul>
+    			<li>NO_DIRECTOR</li>
+    			<li>PRIMARY_DIRECTOR</li>
+    			<li>STANDBY_DIRECTOR</li>
+    		</ul></td><td></td><td></td></tr>
+    	<tr><td style="padding-left:40px;">``position``</td><td>required, integer</td><td>It indicates the ordering in a passive cluster. The higher the position the lower the priority</td><td></td><td></td></tr>
     

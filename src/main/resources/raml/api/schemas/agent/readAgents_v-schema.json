@@ -8,8 +8,7 @@
   ],
   "properties": {
     "controllerId": {
-      "$ref": "../common/controllerIdRequired-schema.json",
-      "minLength": 1
+      "$ref": "../common/controllerIdRequired-schema.json"
     },
     "agentIds": {
     	"type": "array",

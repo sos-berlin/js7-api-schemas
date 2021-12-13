@@ -193,7 +193,7 @@ traits:
   /cluster/deploy:
     type:
       postJSONWithOkResponse:
-        description: Assigns Cluster Agents to Controllers
+        description: Deploys Cluster Agents to Controllers
         description1: !include api/documentation/agent/clusterAgentsDeploy.md
         description2: " "
         description3: " "
@@ -204,7 +204,7 @@ traits:
         description8: " "
         description9: !include api/documentation/audit/auditLog.md
         description10: " "
-        schema: !include api/schemas/agent/storeClusterParam-schema.json
+        schema: !include api/schemas/agent/deployClusterParam-schema.json
         example: " "
         
   /reassign:

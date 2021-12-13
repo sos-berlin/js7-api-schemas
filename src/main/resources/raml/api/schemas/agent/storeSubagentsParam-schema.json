@@ -22,9 +22,6 @@
     		"$ref": "subagent-schema.json"
     	}
     },
-    "scheduingType": {
-      "$ref": "agentClusterSchedulingType-schema.json"
-    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }

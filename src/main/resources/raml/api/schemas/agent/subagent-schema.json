@@ -25,9 +25,9 @@
     	"type": "boolean",
     	"default": false
     },
-    "priority": {
+    "position": {
     	"type": "integer",
-    	"default": 0
+    	"minimum": 1
     }
   },
   "additionalProperties": false

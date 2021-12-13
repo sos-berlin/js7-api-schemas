@@ -17,5 +17,6 @@
     		"$ref": "subagent-schema.json"
     	}
     }
-  }
+  },
+  "additionalProperties": false
 }
