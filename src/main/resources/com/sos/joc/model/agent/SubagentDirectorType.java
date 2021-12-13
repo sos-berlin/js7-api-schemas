@@ -10,7 +10,7 @@ public enum SubagentDirectorType {
 
     NO_DIRECTOR(0),
     PRIMARY_DIRECTOR(1),
-    STANDBY_DIRECTOR(2);
+    SECONDARY_DIRECTOR(2);
     private final Integer intValue;
     private final static Map<String, SubagentDirectorType> CONSTANTS = new HashMap<String, SubagentDirectorType>();
     private final static Map<Integer, SubagentDirectorType> INTCONSTANTS = new HashMap<Integer, SubagentDirectorType>();

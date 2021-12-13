@@ -6,5 +6,5 @@ Contains collection of Cluster Agents where each Agent following fields
 * subagents where each Subagent has following fields
 	* subagentId
 	* url
-	* isDirector (NO_DIRECTOR, PRIMARY_DIRECTOR, STANDBY_DIRECTOR)
+	* isDirector (NO_DIRECTOR, PRIMARY_DIRECTOR, SECONDARY_DIRECTOR)
 	* isClusterWatcher

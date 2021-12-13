@@ -6,6 +6,6 @@
   "enum": [
       "NO_DIRECTOR",
       "PRIMARY_DIRECTOR",
-      "STANDBY_DIRECTOR"
+      "SECONDARY_DIRECTOR"
   ]
 }
