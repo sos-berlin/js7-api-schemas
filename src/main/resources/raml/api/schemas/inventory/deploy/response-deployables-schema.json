@@ -7,6 +7,18 @@
 		"deliveryDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
+		"name": {
+      		"$ref": "../../common/string255-schema.json"
+    	},
+		"path": {
+      		"$ref": "../../common/path-schema.json"
+    	},
+		"folders": {
+      		"type": "array",
+      		"items": {
+        		"$ref": "response-deployables-schema.json"
+      		}
+    	},
 		"deployables": {
 			"type": "array",
 			"items": {
@@ -14,5 +26,6 @@
 			},
 			"uniqueItems": true
 		}
-	}
+	},
+  	"additionalProperties": false
 }

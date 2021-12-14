@@ -25,6 +25,9 @@
 		"deleted": {
 			"type": "boolean"
 		},
+		"syncState": {
+			"$ref": "../../../../controller/schemas/common/syncState-schema.json"
+		},
 		"deployed": {
 			"type": "boolean"
 		},
