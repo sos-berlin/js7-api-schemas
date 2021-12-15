@@ -58,6 +58,9 @@
 		"hasReleases": {
 			"type": "boolean"
 		},
+		"syncState": {
+			"$ref": "../../../controller/schemas/common/syncState-schema.json"
+		},
 		"deployments": {
 			"type": "array",
 			"items": {

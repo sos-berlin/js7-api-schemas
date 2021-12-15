@@ -17,6 +17,9 @@
         }
     ],
 	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
 		"id": {
 			"$ref": "../../common/nonNegativeLong-schema.json"
 		},

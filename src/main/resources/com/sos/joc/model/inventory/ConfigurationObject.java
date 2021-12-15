@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.sos.joc.model.inventory.common.ConfigurationType;
+import com.sos.controller.model.common.SyncState;
 import com.sos.joc.model.audit.AuditParams;
 import com.sos.joc.model.common.IConfigurationObject;
 import com.sos.joc.model.inventory.common.ItemStateEnum;
@@ -40,6 +41,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "released",
     "hasDeployments",
     "hasReleases",
+    "syncState",
     "deployments",
     "configurationDate",
     "deliveryDate",
@@ -117,6 +119,14 @@ public class ConfigurationObject {
     private Boolean hasDeployments;
     @JsonProperty("hasReleases")
     private Boolean hasReleases;
+    /**
+     * sync state
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("syncState")
+    private SyncState syncState;
     @JsonProperty("deployments")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     private Set<ResponseDeployableVersion> deployments = new LinkedHashSet<ResponseDeployableVersion>();
@@ -318,6 +328,28 @@ public class ConfigurationObject {
         return hasReleases;
     }
     
+    /**
+     * sync state
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("syncState")
+    public SyncState getSyncState() {
+        return syncState;
+    }
+
+    /**
+     * sync state
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("syncState")
+    public void setSyncState(SyncState syncState) {
+        this.syncState = syncState;
+    }
+    
     @JsonProperty("hasDeployments")
     public void setHasDeployments(Boolean hasDeployments) {
         this.hasDeployments = hasDeployments;
@@ -411,7 +443,7 @@ public class ConfigurationObject {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("id", id).append("path", path).append("objectType", objectType).append("configuration", configuration).append("state", state).append("valid", valid).append("invalidMsg", invalidMsg).append("deleted", deleted).append("deployed", deployed).append("released", released).append("hasReleases", hasReleases).append("hasDeployments", hasDeployments).append("deployments", deployments).append("configurationDate", configurationDate).append("deliveryDate", deliveryDate).toString();
+        return new ToStringBuilder(this).append("id", id).append("path", path).append("objectType", objectType).append("configuration", configuration).append("state", state).append("valid", valid).append("invalidMsg", invalidMsg).append("deleted", deleted).append("deployed", deployed).append("released", released).append("hasReleases", hasReleases).append("syncState", syncState).append("hasDeployments", hasDeployments).append("deployments", deployments).append("configurationDate", configurationDate).append("deliveryDate", deliveryDate).toString();
     }
 
     @Override

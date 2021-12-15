@@ -7,6 +7,9 @@
 		"folder"
 	],
 	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
 		"folder": {
 			"$ref": "../../common/path-schema.json"
 		},
