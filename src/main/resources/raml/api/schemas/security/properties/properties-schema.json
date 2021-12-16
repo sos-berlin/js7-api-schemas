@@ -1,0 +1,18 @@
+{
+	"title": "Identity Service Properties",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.Properties",
+	"type": "object",
+	"properties": {
+		"sessionTimeout": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
+		"vault": {
+			"$ref": "vault-properties-schema.json"
+		},
+		"ldap": {
+			"$ref": "ldap-properties-schema.json"
+		}
+	}
+}
+    
