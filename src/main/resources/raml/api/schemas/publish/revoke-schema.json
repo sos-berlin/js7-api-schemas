@@ -1,0 +1,27 @@
+{
+	"title": "revoke",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.RevokeFilter",
+	"type": "object",
+	"required": [
+		"controllerIds",
+		"revoke"
+	],
+	"properties": {
+		"controllerIds": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"deployConfigurations": {
+			"type": "array",
+			"items": {
+				"$ref": "config-schema.json"
+			}
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "controllerIds" : [{
+    "controllerId" : "js7-cluster"
+  }, {
+    "controllerId" : "standalone"
+  }],
+  "deployConfigurations" : [{
+    "deployConfiguration" : {
+      "path" : "/myWorkflows/ifElseWorkflow/workflow_12",
+      "objectType" : "WORKFLOW",
+      "commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"
+    }
+  }]
+}
