@@ -6,6 +6,7 @@
   "enum": [
     "IN_SYNC",
     "NOT_IN_SYNC",
+    "NOT_DEPLOYED",
     "UNKNOWN"
   ]
 }
