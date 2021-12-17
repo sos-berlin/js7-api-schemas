@@ -5,7 +5,7 @@
 	"type": "object",
 	"required": [
 		"controllerIds",
-		"revoke"
+		"deployConfigurations"
 	],
 	"properties": {
 		"controllerIds": {
