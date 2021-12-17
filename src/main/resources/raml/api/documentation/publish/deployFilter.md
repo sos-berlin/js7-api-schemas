@@ -111,7 +111,7 @@
 <tr>
 <td>``delete``</td>
 <td>required anyOf(``store``, ``delete``), object</td>
-<td>Filter collection of deployed objects to delete, specified by their paths and object types.</td>
+<td>Filter collection of deployed objects to delete, specified by their paths and object types. All selected objects will be deleted from <u>all</u> known controllers, not just from the selected ones.</td>
 <td>"delete" : {
 <div style="padding-left:10px;">"deployConfigurations" : [{</div>
 <div style="padding-left:20px;">...example see below...</div>

@@ -1,0 +1,11 @@
+{
+  "title": "Identity Service Authentication Scheme",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.security.IdentityServiceAuthenticationScheme",
+  "type": "string",
+  "enum": [
+    "SINGLE",
+    "TWO-FACTOR"
+  ]
+}
+    
