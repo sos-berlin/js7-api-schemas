@@ -1,0 +1,36 @@
+{
+	"title": "CopyToFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.repository.CopyToFilter",
+	"type": "object",
+	"oneOf": [{
+		"required": [
+			"draftConfigurations"
+		]
+	},{
+		"required": [
+			"controllerId",
+			"deployConfigurations"
+		]
+	}],
+	"properties": {
+		"controllerId": {
+      		"$ref": "../../common/controllerIdRequired-schema.json"
+		},
+		"draftConfigurations": {
+			"type": "array",
+			"items": {
+				"$ref": "../config-schema.json"
+			}
+		},
+		"deployConfigurations": {
+			"type": "array",
+			"items": {
+				"$ref": "../config-schema.json"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}

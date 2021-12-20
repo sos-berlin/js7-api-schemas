@@ -1,0 +1,19 @@
+{
+	"title": "Repository Folder",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.repository.Folder",
+	"type": "object",
+	"required": [
+		"path",
+		"recursive"
+	],
+	"properties": {
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"recursive": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

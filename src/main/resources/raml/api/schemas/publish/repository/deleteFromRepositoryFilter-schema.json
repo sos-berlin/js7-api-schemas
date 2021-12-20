@@ -1,0 +1,20 @@
+{
+	"title": "Delete From Repository Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.repository.DeleteFromFilter",
+	"type": "object",
+	"required": [
+		"draftConfigurations"
+	],
+	"properties": {
+		"draftConfigurations": {
+			"type": "array",
+			"items": {
+				"$ref": "../config-schema.json"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
