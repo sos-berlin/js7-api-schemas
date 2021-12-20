@@ -9,7 +9,8 @@ Each deployable object contains the following fields depends on the requested pa
 * valid
 * deleted
 * deployed
-* deployablesVersions 
+* deployablesVersions
+* syncState if controllerId is specified in the request 
 
 It is an array where the first item is the draft if the draft is valid and ``withoutDrafts`` == false
 

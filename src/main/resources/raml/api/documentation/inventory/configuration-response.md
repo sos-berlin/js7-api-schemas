@@ -14,3 +14,4 @@
     	* <a href="../../../../../inventory/schemas/script/script-schema.json" target="script">IncludeScript JSON schema</a>
     	* EMPTY in case of a folder
     * valid
+    * syncState if controllerId is specified in the request
