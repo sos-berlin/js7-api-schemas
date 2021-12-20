@@ -1,7 +1,7 @@
 <tr>
 <td>``controllerId``</td>
 <td>required, string</td>
-<td>ID of the controller to redeploy to.</td>
+<td>ID of the controller to synchronize to.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"controllerId": "testsuite"</div>
@@ -12,7 +12,7 @@
 <tr>
 <td>``folder``</td>
 <td>required, string</td>
-<td>Path of a folder containing the objects to redeploy.</td>
+<td>Path of a folder containing the objects to synchronize.</td>
 <td>
   <div>{</div>
   <div style="padding-left:10px;">"folder": "/myWorkflows/ifElseWorkflows"</div>

@@ -1188,8 +1188,21 @@ traits:
     /redeploy:
       type:
         postJSONWithOkWithoutJSId:
-          description: Redeploys as set of deployable objects from the deplyoment history to the given Controller
+          description: Redeploys as set of deployable objects from the deployment history to the given Controller
           description1: !include api/documentation/publish/redeployFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/redeployFilter-schema.json
+          example: !include api/examples/publish/redeployFilter-example.json
+          
+    /synchronize:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deploys the latest version of all deployable objects from the deployment history to the specified Controller that are not known in the Controller but have been deployed before
+          description1: !include api/documentation/publish/syncFilter.md
           description2: " "
           description3: " "
           description4: " "
