@@ -1,5 +1,5 @@
 {
-	"title": "CopyToFilter",
+	"title": "Filter To Copy To Repository",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.publish.repository.CopyToFilter",
 	"type": "object",

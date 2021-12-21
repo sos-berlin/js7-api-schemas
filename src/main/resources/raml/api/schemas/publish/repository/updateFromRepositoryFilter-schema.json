@@ -1,16 +1,16 @@
 {
-	"title": "Filter to Delete From Repository",
+	"title": "Filter With Repository Object To Update Configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.publish.repository.DeleteFromFilter",
+	"javaType": "com.sos.joc.model.publish.repository.UpdateFromFilter",
 	"type": "object",
 	"required": [
-		"draftConfigurations"
+		"folders"
 	],
 	"properties": {
-		"draftConfigurations": {
+		"configurationItems": {
 			"type": "array",
 			"items": {
-				"$ref": "../config-schema.json"
+				"$ref": "../configuration-schema.json"
 			}
 		},
 		"auditLog": {
