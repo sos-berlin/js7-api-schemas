@@ -1,7 +1,7 @@
 {
 	"title": "GetFromFilter",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.publish.repository.GetFromFilter",
+	"javaType": "com.sos.joc.model.publish.repository.ReadFromFilter",
 	"type": "object",
 	"required": [
 		"folders"
