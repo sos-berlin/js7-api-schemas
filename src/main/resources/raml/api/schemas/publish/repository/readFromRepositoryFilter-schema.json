@@ -4,17 +4,15 @@
 	"javaType": "com.sos.joc.model.publish.repository.ReadFromFilter",
 	"type": "object",
 	"required": [
-		"folders"
+		"folder"
 	],
 	"properties": {
-		"folders": {
-			"type": "array",
-			"items": {
-				"$ref": "folder-schema.json"
-			}
+		"folder": {
+			"$ref": "../../common/path-schema.json"
 		},
-		"auditLog": {
-			"$ref": "../../audit/auditParams-schema.json"
+		"recursive": {
+			"type": "boolean",
+			"default": false
 		}
 	}
 }
