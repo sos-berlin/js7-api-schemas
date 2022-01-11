@@ -1,0 +1,22 @@
+{
+  "title": "OrderIdMap",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.order.OrderIdMap200",
+  "type": "object",
+  "required": [
+    "deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "orderIds": {
+      "type": "object",
+      "javaType": "com.sos.joc.model.order.OrderIdMap",
+      "additionalProperties": {
+	      "type": "string" 
+      }
+    }
+  },
+  "additionalProperties": false
+}
