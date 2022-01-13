@@ -614,7 +614,7 @@ traits:
         
     /generate:
       type:
-        postJSON:
+        postJSONWithOkResponse:
           description: Generates orders for a given daily plan 
           description1: !include api/documentation/dailyplan/dailyPlanDate.md
           description2: !include api/documentation/dailyplan/generate/schedulePaths.md
@@ -625,16 +625,12 @@ traits:
           description7: " "
           description8: " "
           description10: !include api/documentation/audit/auditLog.md
-          audit: !include api/documentation/audit/auditLog.md
-          description200: " "
           schema: !include api/schemas/dailyplan/generate/generate-request-schema.json
-          schema200: ok
           example: " "
-          example200: " "
            
     /submit:
       type:
-        postJSON:
+        postJSONWithOkResponse:
           description: Submits planned orders for a given daily plan
           description1: !include api/documentation/dailyplan/submit/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
@@ -646,15 +642,11 @@ traits:
           description8: !include api/documentation/dailyplan/orders/orderIds.md
           description9: !include api/documentation/audit/auditLog.md
           description10: " "
-          audit: !include api/documentation/audit/auditLog.md
-          description200: " "
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
-          schema200: ok
           example: " "
-          example200: " "
     /delete:
       type:
-        postJSON:
+        postJSONWithOkResponse:
           description: Deletes planned orders for a given daily plan 
           description1: !include api/documentation/dailyplan/delete/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
@@ -666,12 +658,8 @@ traits:
           description8: !include api/documentation/dailyplan/orders/controllerIds.md
           description9: !include api/documentation/dailyplan/orders/orderIds.md
           description10: !include api/documentation/audit/auditLog.md
-          audit: !include api/documentation/audit/auditLog.md
-          description200: " "
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
-          schema200: ok
           example: " "
-          example200: " "
     /modify:
       type:
         postJSON:
@@ -684,13 +672,17 @@ traits:
           description6: 
           description7: 
           description9: 
-          description10: 
-          audit: !include api/documentation/audit/auditLog.md
-          description200: " "
+          description10: !include api/documentation/audit/auditLog.md
+          description200: |
+            This API changes the OrderId. For ad hoc orders, a map in the form <br/>  ``"oldOrderId": "newOrderId"``<br/>is returned.
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanModifyOrder-schema.json
-          schema200: ok
+          schema200: !include api/schemas/order/orderIdMap-schema.json
           example: " "
-          example200: " "
+          example200: !include api/examples/order/modify-example.json
+      post:
+        responses:
+          419:
+        
     /summary:
       type:
         postJSON:
