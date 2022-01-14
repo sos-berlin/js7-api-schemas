@@ -1,0 +1,36 @@
+{
+	"title": "Ldap Properties",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.LdapExpertProperties",
+	"type": "object",
+	"properties": {
+		"iamLdapServerUrl": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapUserDnTemplate": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapSearchBase": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapGroupNameAttribute": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapUserNameAttribute": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapUserSearchFilter": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapUseStartTls": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapSecurityProtocol": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapGroupRolesMap": {
+			"$ref": "ldap-group-roles-mapping-schema.json"
+		}
+	}
+}
+    

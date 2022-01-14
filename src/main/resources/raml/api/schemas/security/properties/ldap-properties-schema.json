@@ -4,33 +4,12 @@
 	"javaType": "com.sos.joc.model.security.LdapProperties",
 	"type": "object",
 	"properties": {
-		"iamLdapServerUrl": {
-			"$ref": "../../common/string255-schema.json"
+		"simple": {
+			"$ref": "ldap-simple-properties-schema.json"
 		},
-		"iamLdapUserDnTemplate": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamLdapSearchBase": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamLdapGroupNameAttribute": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamLdapUserNameAttribute": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamLdapUserSearchFilter": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamLdapUseStartTls": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamLdapSecurityProtocol": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamLdapGroupRolesMap": {
-			"$ref": "../../common/string255-schema.json"
-		}
+		"expert": {
+			"$ref": "ldap-expert-properties-schema.json"
+		} 
 	}
 }
     

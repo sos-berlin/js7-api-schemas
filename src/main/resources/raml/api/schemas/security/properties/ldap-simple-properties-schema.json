@@ -1,0 +1,27 @@
+{
+	"title": "Ldap Properties",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.LdapSimpleProperties",
+	"type": "object",
+	"properties": {
+		"iamLdapHost": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapPort": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"iamLdapProtocol": {
+			"$ref": "ldap-protocol-item-schema.json"
+		},
+		"iamLdapAD": {
+			"type": "boolean"
+		},
+		"iamLdapADwithSamAccount": {
+			"type": "boolean"
+		},
+		"iamLdapWithMemberOf": {
+			"type": "boolean"
+		}
+	}
+}
+    
