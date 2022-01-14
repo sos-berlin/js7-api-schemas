@@ -13,6 +13,9 @@
 		"iamLdapSearchBase": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"iamLdapGroupSearchBase": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"iamLdapGroupNameAttribute": {
 			"$ref": "../../common/string255-schema.json"
 		},
@@ -22,8 +25,17 @@
 		"iamLdapUserSearchFilter": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"iamLdapUseStartTls": {
+		"iamLdapGroupSearchFilter": {
 			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapUseStartTls": {
+			"type": "boolean",
+			 "default": false
+			
+		},
+		"iamLdapHostNameVerification": {
+			"type": "boolean",
+			 "default": false
 		},
 		"iamLdapSecurityProtocol": {
 			"$ref": "../../common/string255-schema.json"
