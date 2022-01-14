@@ -4,10 +4,10 @@
 	"javaType": "com.sos.joc.model.publish.repository.DeleteFromFilter",
 	"type": "object",
 	"required": [
-		"draftConfigurations"
+		"configurations"
 	],
 	"properties": {
-		"draftConfigurations": {
+		"configurations": {
 			"type": "array",
 			"items": {
 				"$ref": "../config-schema.json"

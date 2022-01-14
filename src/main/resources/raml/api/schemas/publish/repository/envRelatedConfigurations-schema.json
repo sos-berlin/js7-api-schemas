@@ -4,12 +4,13 @@
 	"javaType": "com.sos.joc.model.publish.repository.EnvRelatedConfigurations",
 	"type": "object",
 	"anyOf": [{
-		"required": ["draftConfigurations"]
-	}, {
-		"required": ["deployConfigurations"]
-	}, {
-		"required": ["releasedConfigurations"]
-	}],
+			"required": ["draftConfigurations"]
+		}, {
+			"required": ["deployConfigurations"]
+		}, {
+			"required": ["releasedConfigurations"]
+		}
+	],
 	"properties": {
 		"draftConfigurations": {
 			"type": "array",

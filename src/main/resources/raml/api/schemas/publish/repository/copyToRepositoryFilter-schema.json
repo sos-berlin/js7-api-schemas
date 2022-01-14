@@ -4,9 +4,9 @@
 	"javaType": "com.sos.joc.model.publish.repository.CopyToFilter",
 	"type": "object",
 	"anyOf": [{
-			"required": ["deployables"]
+			"required": ["envIndependent"]
 		}, {
-			"required": ["releasables"]
+			"required": ["envRelated"]
 		}],
 	"properties": {
 		"controllerId": {
