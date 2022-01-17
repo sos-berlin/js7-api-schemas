@@ -1,0 +1,29 @@
+{
+	"title": "daily plan delete submissions request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.submissions.SubmissionsDeleteRequestFilter",
+	"type": "object",
+	"anyOf": [
+		{
+			"required": [
+				"dateFor"
+			]
+		},
+		{
+			"required": [
+				"dateTo"
+			]
+		}
+	],
+	"properties": {
+		"dateFor": {
+			"$ref": "../../common/date-schema.json"
+		},
+		"dateFrom": {
+			"$ref": "../../common/date-schema.json"
+		},
+		"dateTo": {
+			"$ref": "../../common/date-schema.json"
+		}
+	}
+}
