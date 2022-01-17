@@ -30,12 +30,19 @@
 		},
 		"iamLdapUseStartTls": {
 			"type": "boolean",
-			 "default": false
-			
+			"default": false
+		},
+		"iamLdapTruststorePath": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapTruststorePassword": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapTruststoreType": {
+			"$ref": "../../common/string255-schema.json"
 		},
 		"iamLdapHostNameVerification": {
-			"type": "boolean",
-			 "default": false
+			"$ref": "../../common/string255-schema.json"
 		},
 		"iamLdapSecurityProtocol": {
 			"$ref": "../../common/string255-schema.json"
