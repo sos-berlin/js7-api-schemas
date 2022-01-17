@@ -767,19 +767,19 @@ traits:
     type:
       postJSON:
         description: Gets daily plan submissions 
-        description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
+        description1: !include api/documentation/dailyplan/submissions/submissionsFilter.md
         description2: !include api/documentation/dailyplan/submissions/dateFrom.md
         description3: !include api/documentation/dailyplan/submissions/dateTo.md
-        description5: !include api/documentation/dailyplan/submissions/controllerIds.md
-        description4:  
+        description5: " "
+        description4: " "
         description6: " "
         description7: " "
         description8: " "
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/orderManagement/dailyplan/dailyplanSubmissionsFilter-schema.json
-        schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanSubmissions-schema.json 
+        schema: !include api/schemas/dailyplan/submissions/submissions-request-schema.json
+        schema200: !include api/schemas/dailyplan/submissions/submissions-response-schema.json 
         example: " "
         example200: " "
                 
@@ -787,18 +787,18 @@ traits:
       type:
         postJSON:
           description: Deletes daily plan submissions 
-          description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
-          description2: !include api/documentation/dailyplan/submissions/dateFor.md
+          description1: !include api/documentation/dailyplan/submissions/submissionsDeleteFilter.md
+          description2: !include api/documentation/dailyplan/submissions/deleteDateFor.md
           description3: !include api/documentation/dailyplan/submissions/dateFrom.md
-          description4: !include api/documentation/dailyplan/submissions/dateTo.md
-          description5: !include api/documentation/dailyplan/submissions/controllerIds.md
-          description6:  
+          description4: !include api/documentation/dailyplan/submissions/deleteDateTo.md
+          description5: " "
+          description6: " " 
           description7: " "
           description8: " "
           description9: " "
           description10: " "
           description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyplanSubmissionsFilter-schema.json
+          schema: !include api/schemas/dailyplan/submissions/submissions-delete-request-schema.json
           schema200: ok
           example: " "
           example200: " "
