@@ -4,13 +4,13 @@
 	"javaType": "com.sos.joc.model.publish.repository.UpdateFromFilter",
 	"type": "object",
 	"required": [
-		"folders"
+		"configurations"
 	],
 	"properties": {
-		"configurationItems": {
+		"configurations": {
 			"type": "array",
 			"items": {
-				"$ref": "../configuration-schema.json"
+				"$ref": "../config-schema.json"
 			}
 		},
 		"auditLog": {
