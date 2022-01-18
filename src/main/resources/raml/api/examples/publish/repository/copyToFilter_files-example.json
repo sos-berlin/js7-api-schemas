@@ -1,0 +1,32 @@
+{
+  "controllerId" : "testsuite",
+  "envIndependent" : {
+    "draftConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo/CyclicExecution/pdCyclicSerialWorkflow",
+        "objectType" : "WORKFLOW"
+      }
+    } ],
+    "deployConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo/AdmissionTimes/pdAdmissionTimeJob2",
+        "objectType" : "WORKFLOW",
+        "commitId" : "0a4b2077-6912-4a98-b5f1-799af9c1d90a"
+      }
+    } ]
+  },
+  "envRelated" : {
+    "draftConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo/CyclicExecution/pdCyclicSerialWorkflow",
+        "objectType" : "SCHEDULE"
+      }
+    } ],
+    "releasedConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo/CyclicExecution/pdCyclicAllDays",
+        "objectType" : "WORKINGDAYSCALENDAR"
+      }
+    } ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "envIndependent" : {
+    "draftConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : true
+      }
+    } ],
+    "deployConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : true
+      }
+    } ]
+  },
+  "envRelated" : {
+    "draftConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : true
+      }
+    } ],
+    "deployConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : true
+      }
+    } ],
+    "releasedConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : true
+      }
+    } ]
+  }
+}

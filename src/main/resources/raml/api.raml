@@ -1407,6 +1407,61 @@ traits:
         schema: !include api/schemas/inventory/replace/request-folder-schema.json
         example: !include api/examples/inventory/replace-example.json
         
+  /repository:
+    description: This is not an API call. Use child urls instead!
+
+    /read:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: reads from a local repository in ./resources/joc/repositories
+          description1: !include api/documentation/publish/repository/readFromFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: " "
+          schema: !include api/schemas/publish/repository/readFromRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/readFromFilter_recursive_true-example.json
+        
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: stores configurations to a local repository in ./resources/joc/repositories
+          description1: !include api/documentation/publish/repository/copyToFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/repository/copyToRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/copyToFilter_files-example.json
+        
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: deletes configurations from a local repository in ./resources/joc/repositories
+          description1: !include api/documentation/publish/repository/deleteFromFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/repository/deleteFromRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/deleteFromFilter_files-example.json
+        
+    /update:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: adds or updates configuration objects in JOC with configurations from the local repository
+          description1: !include api/documentation/publish/repository/updateFromFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/repository/updateFromRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/updateFromFilter_files-example.json
+        
   /statistics:
     type:
       postOnlyId:
