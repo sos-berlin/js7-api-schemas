@@ -1412,7 +1412,7 @@ traits:
 
     /read:
       type:
-        postJSONWithOkWithoutJSId:
+        postJSONWithoutJSId:
           description: reads from a local repository in ./resources/joc/repositories
           description1: !include api/documentation/publish/repository/readFromFilter.md
           description2: " "
@@ -1422,6 +1422,8 @@ traits:
           audit: " "
           schema: !include api/schemas/publish/repository/readFromRepositoryFilter-schema.json
           example: !include api/examples/publish/repository/readFromFilter_recursive_true-example.json
+          schema200: !include api/schemas/publish/repository/response-folder-schema.json
+          example200: !include api/examples/publish/repository/responseFolder_recursive_true-example.json
         
     /store:
       type:
