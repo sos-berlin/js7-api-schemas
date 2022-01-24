@@ -45,13 +45,16 @@
 				"type": "object",
 				"javaType": "com.sos.joc.model.security.SecurityConfigurationAccount",
 				"required": [
-					"account" 
+					"account"
 				],
 				"properties": {
 					"account": {
 						"type": "string"
 					},
 					"password": {
+						"type": "string"
+					},
+					"hashedPassword": {
 						"type": "string"
 					},
 					"identityServiceId": {
