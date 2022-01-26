@@ -57,6 +57,15 @@
 					"hashedPassword": {
 						"type": "string"
 					},
+					"repeatedPassword": {
+						"type": "string"
+					},
+					"oldPassword": {
+						"type": "string"
+					},
+					"forcePasswordChange": {
+						"$ref": "forcePasswordChange-schema.json"
+					},
 					"identityServiceId": {
 						"$ref": "../common/nonNegativeLong-schema.json"
 					},

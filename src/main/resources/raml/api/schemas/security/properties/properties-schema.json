@@ -4,6 +4,12 @@
 	"javaType": "com.sos.joc.model.security.Properties",
 	"type": "object",
 	"properties": {
+		"initialPassword": {
+			"type": "string"
+		},
+		"minPasswordLength": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
 		"sessionTimeout": {
 			"$ref": "../../common/nonNegativeInteger-schema.json"
 		},
