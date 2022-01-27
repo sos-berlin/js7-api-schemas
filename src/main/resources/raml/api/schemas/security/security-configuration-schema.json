@@ -3,6 +3,9 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.SecurityConfiguration",
 	"type": "object",
+	"required": [
+		"identityServiceName"
+	],
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../common/timestamp-schema.json"
