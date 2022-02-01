@@ -4,7 +4,8 @@
 	"javaType": "com.sos.joc.model.publish.repository.DeleteFromFilter",
 	"type": "object",
 	"required": [
-		"configurations"
+		"configurations",
+		"category"
 	],
 	"properties": {
 		"configurations": {
@@ -12,6 +13,9 @@
 			"items": {
 				"$ref": "../config-schema.json"
 			}
+		},
+		"category": {
+			"$ref": "category-schema.json"
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"

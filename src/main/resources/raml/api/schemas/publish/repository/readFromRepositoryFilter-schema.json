@@ -4,11 +4,15 @@
 	"javaType": "com.sos.joc.model.publish.repository.ReadFromFilter",
 	"type": "object",
 	"required": [
-		"folder"
+		"folder",
+		"category"
 	],
 	"properties": {
 		"folder": {
 			"$ref": "../../common/path-schema.json"
+		},
+		"category": {
+			"$ref": "category-schema.json"
 		},
 		"recursive": {
 			"type": "boolean",

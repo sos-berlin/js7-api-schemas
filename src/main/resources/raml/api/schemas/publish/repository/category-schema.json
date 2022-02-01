@@ -1,0 +1,14 @@
+{
+  "title": "Repository Category, based on the local environment or environment independent/able to roll out",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.repository.Category",
+  "type": "string",
+  "enum": [
+    "LOCAL",
+    "ROLLOUT"
+  ],
+  "javaEnumNames": [
+    "LOCAL",
+    "ROLLOUT"
+  ]
+}

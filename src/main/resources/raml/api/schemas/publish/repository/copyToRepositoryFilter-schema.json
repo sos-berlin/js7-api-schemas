@@ -4,18 +4,18 @@
 	"javaType": "com.sos.joc.model.publish.repository.CopyToFilter",
 	"type": "object",
 	"anyOf": [{
-			"required": ["envIndependent"]
+			"required": ["rollout"]
 		}, {
-			"required": ["envRelated"]
+			"required": ["local"]
 		}],
 	"properties": {
 		"controllerId": {
       		"$ref": "../../common/controllerId-schema.json"
 		},
-		"envIndependent": {
+		"rollout": {
 			"$ref": "envIndependentConfigurations-schema.json"
 		},
-		"envRelated": {
+		"local": {
 			"$ref": "envRelatedConfigurations-schema.json"
 		},
 		"auditLog": {
