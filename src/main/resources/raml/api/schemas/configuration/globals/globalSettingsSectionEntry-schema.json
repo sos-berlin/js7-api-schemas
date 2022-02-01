@@ -14,6 +14,12 @@
 		"default": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"values": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
+		},
 		"ordering": {
 			"$ref": "../../common/nonNegativeInteger-schema.json"
 		}
