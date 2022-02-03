@@ -4,6 +4,10 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.IdentityService",
 	"type": "object",
+	"required": [
+		"identityServiceName",
+		"serviceAuthenticationScheme"
+	],
 	"properties": {
 		"identityServiceType": {
 			"$ref": "identityServiceTypes-schema.json"
