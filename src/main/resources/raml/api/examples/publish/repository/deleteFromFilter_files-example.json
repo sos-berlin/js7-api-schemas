@@ -1,0 +1,23 @@
+{
+  "configurations" : [ {
+    "configuration" : {
+      "path" : "/ProductDemo/AdmissionTimes/pdAdmissionTimeJob2",
+      "objectType" : "WORKFLOW"
+    }
+  }, {
+    "configuration" : {
+      "path" : "/ProductDemo/CyclicExecution/pdCyclicSerialWorkflow",
+      "objectType" : "WORKFLOW"
+    }
+  }, {
+    "configuration" : {
+      "path" : "/ProductDemo/CyclicExecution/pdCyclicSerialWorkflow",
+      "objectType" : "SCHEDULE"
+    }
+  }, {
+    "configuration" : {
+      "path" : "/ProductDemo/CyclicExecution/pdCyclicAllDays",
+      "objectType" : "WORKINGDAYSCALENDAR"
+    }
+  } ]
+}

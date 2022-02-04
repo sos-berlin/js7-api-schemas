@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.2.0
+version: 2.2.2
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -767,19 +767,19 @@ traits:
     type:
       postJSON:
         description: Gets daily plan submissions 
-        description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
+        description1: !include api/documentation/dailyplan/submissions/submissionsFilter.md
         description2: !include api/documentation/dailyplan/submissions/dateFrom.md
         description3: !include api/documentation/dailyplan/submissions/dateTo.md
-        description5: !include api/documentation/dailyplan/submissions/controllerIds.md
-        description4:  
+        description5: " "
+        description4: " "
         description6: " "
         description7: " "
         description8: " "
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/orderManagement/dailyplan/dailyplanSubmissionsFilter-schema.json
-        schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanSubmissions-schema.json 
+        schema: !include api/schemas/dailyplan/submissions/submissions-request-schema.json
+        schema200: !include api/schemas/dailyplan/submissions/submissions-response-schema.json 
         example: " "
         example200: " "
                 
@@ -787,18 +787,18 @@ traits:
       type:
         postJSON:
           description: Deletes daily plan submissions 
-          description1: !include api/documentation/dailyplan/submissions/dailyPlanSubmissionsFilterDef.md
-          description2: !include api/documentation/dailyplan/submissions/dateFor.md
+          description1: !include api/documentation/dailyplan/submissions/submissionsDeleteFilter.md
+          description2: !include api/documentation/dailyplan/submissions/deleteDateFor.md
           description3: !include api/documentation/dailyplan/submissions/dateFrom.md
-          description4: !include api/documentation/dailyplan/submissions/dateTo.md
-          description5: !include api/documentation/dailyplan/submissions/controllerIds.md
-          description6:  
+          description4: !include api/documentation/dailyplan/submissions/deleteDateTo.md
+          description5: " "
+          description6: " " 
           description7: " "
           description8: " "
           description9: " "
           description10: " "
           description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyplanSubmissionsFilter-schema.json
+          schema: !include api/schemas/dailyplan/submissions/submissions-delete-request-schema.json
           schema200: ok
           example: " "
           example200: " "
@@ -1406,6 +1406,63 @@ traits:
         audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/replace/request-folder-schema.json
         example: !include api/examples/inventory/replace-example.json
+        
+  /repository:
+    description: This is not an API call. Use child urls instead!
+
+    /read:
+      type:
+        postJSONWithoutJSId:
+          description: reads from a local repository in ./resources/joc/repositories
+          description1: !include api/documentation/publish/repository/readFromFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: " "
+          schema: !include api/schemas/publish/repository/readFromRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/readFromFilter_recursive_true-example.json
+          schema200: !include api/schemas/publish/repository/response-folder-schema.json
+          example200: !include api/examples/publish/repository/responseFolder_recursive_true-example.json
+        
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: stores configurations to a local repository in ./resources/joc/repositories
+          description1: !include api/documentation/publish/repository/copyToFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/repository/copyToRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/copyToFilter_files-example.json
+        
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: deletes configurations from a local repository in ./resources/joc/repositories
+          description1: !include api/documentation/publish/repository/deleteFromFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/repository/deleteFromRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/deleteFromFilter_files-example.json
+        
+    /update:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: adds or updates configuration objects in JOC with configurations from the local repository
+          description1: !include api/documentation/publish/repository/updateFromFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/repository/updateFromRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/updateFromFilter_files-example.json
         
   /statistics:
     type:

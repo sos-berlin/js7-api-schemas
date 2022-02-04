@@ -3,8 +3,10 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.permissions.SecurityConfigurationRole",
 	"type": "object",
-	
 	"properties": {
+		"role": {
+			"type": "string"
+		},
 		"folders": {
 			"javaType": "com.sos.joc.model.security.permissions.SecurityConfigurationFolders",
 			"type": "object",
@@ -15,9 +17,9 @@
 				"controllers": {
 					"javaType": "com.sos.joc.model.security.permissions.ControllerFolders",
 					"type": "object",
-					"additionalProperties":  { 
-    					"$ref": "../common/folders-schema.json"
-   					}
+					"additionalProperties": {
+						"$ref": "../common/folders-schema.json"
+					}
 				}
 			},
 			"additionalProperties": false

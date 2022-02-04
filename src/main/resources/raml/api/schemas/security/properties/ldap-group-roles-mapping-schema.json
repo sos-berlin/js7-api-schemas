@@ -1,0 +1,14 @@
+{
+	"title": "LDAP Group Roles Mapping",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.LdapGroupRolesMapping",
+	"type": "object",
+	"properties": {
+		"items": {
+			"type": "array",
+			"items": {
+				"$ref": "ldap-group-roles-mapping-item-schema.json"
+			}
+		}
+	}
+}

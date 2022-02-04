@@ -1,0 +1,11 @@
+{
+  "title": "Protocol for LDAP",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.security.LdapProtocolItem",
+  "type": "string",
+  "enum": [
+    "PLAIN",
+    "STARTTLS",
+    "SSL"
+  ]
+}

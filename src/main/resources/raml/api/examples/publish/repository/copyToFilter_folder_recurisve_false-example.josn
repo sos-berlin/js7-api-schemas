@@ -1,0 +1,42 @@
+Repository - CopyToFilter Folder Example
+{
+  "envIndependent" : {
+    "draftConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : false
+      }
+    } ],
+    "deployConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : false
+      }
+    } ]
+  },
+  "envRelated" : {
+    "draftConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : false
+      }
+    } ],
+    "deployConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : false
+      }
+    } ],
+    "releasedConfigurations" : [ {
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : false
+      }
+    } ]
+  }
+}

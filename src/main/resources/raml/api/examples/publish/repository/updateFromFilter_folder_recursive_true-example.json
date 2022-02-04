@@ -1,0 +1,9 @@
+{
+  "configurations" : [ {
+    "configuration" : {
+      "path" : "/ProductDemo",
+      "objectType" : "FOLDER",
+      "recursive" : true
+    }
+  } ]
+}

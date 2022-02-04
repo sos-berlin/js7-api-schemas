@@ -4,7 +4,7 @@
   "javaType": "com.sos.joc.model.security.IdentityServiceAuthenticationScheme",
   "type": "string",
   "enum": [
-    "SINGLE",
+    "SINGLE-FACTOR",
     "TWO-FACTOR"
   ]
 }

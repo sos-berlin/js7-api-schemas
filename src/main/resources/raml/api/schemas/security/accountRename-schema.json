@@ -1,0 +1,24 @@
+
+{
+	"title": "AccountRename",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.AccountRename",
+	"type": "object",
+	"required": [
+		"identityServiceName",
+		"accountOldName",
+		"accountNewName"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"accountOldName": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"accountNewName": {
+			"$ref": "../common/string255-schema.json"
+		}
+	}
+}
+        

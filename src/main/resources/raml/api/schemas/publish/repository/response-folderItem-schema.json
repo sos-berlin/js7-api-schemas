@@ -1,0 +1,20 @@
+{
+	"title": "ResponseFolderItem",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.repository.ResponseFolderItem",
+	"type": "object",
+	"properties": {
+		"folder": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"objectName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"objectType": {
+			"$ref": "../../inventory/common/configurationType-schema.json"
+		},
+		"lastModified": {
+			"$ref": "../../common/timestamp-schema.json"
+		}
+	}
+}

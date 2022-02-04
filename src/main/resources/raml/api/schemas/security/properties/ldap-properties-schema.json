@@ -4,9 +4,12 @@
 	"javaType": "com.sos.joc.model.security.LdapProperties",
 	"type": "object",
 	"properties": {
-		"iamLdapUrl": {
-			"$ref": "../../common/string255-schema.json"
-		}
+		"simple": {
+			"$ref": "ldap-simple-properties-schema.json"
+		},
+		"expert": {
+			"$ref": "ldap-expert-properties-schema.json"
+		} 
 	}
 }
     

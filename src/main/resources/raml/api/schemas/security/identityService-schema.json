@@ -4,6 +4,10 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.IdentityService",
 	"type": "object",
+	"required": [
+		"identityServiceName",
+		"serviceAuthenticationScheme"
+	],
 	"properties": {
 		"identityServiceType": {
 			"$ref": "identityServiceTypes-schema.json"
@@ -11,11 +15,20 @@
 		"identityServiceName": {
 			"$ref": "../common/string255-schema.json"
 		},
+		"serviceAuthenticationScheme": {
+			"$ref": "identityServiceAuthenticationScheme-schema.json"
+		},
 		"ordering": {
 			"$ref": "../common/nonNegativeInteger-schema.json"
 		},
 		"disabled": {
 			"$ref": "disabledParam-schema.json"
+		},
+		"singleFactorCert": {
+			"$ref": "singleFactorCert-schema.json"
+		},
+		"singleFactorPwd": {
+			"$ref": "singleFactorPwd-schema.json"
 		},
 		"required": {
 			"$ref": "requiredParam-schema.json"

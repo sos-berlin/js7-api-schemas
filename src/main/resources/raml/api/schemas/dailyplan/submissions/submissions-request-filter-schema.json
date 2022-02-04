@@ -1,0 +1,17 @@
+{
+	"title": "daily plan submissions request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.submissions.SubmissionsRequestFilter",
+	"type": "object",
+	"required": [
+		"dateTo"
+	],
+	"properties": {
+		"dateFrom": {
+			"$ref": "../../common/date-schema.json"
+		},
+		"dateTo": {
+			"$ref": "../../common/date-schema.json"
+		}
+	}
+}

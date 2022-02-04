@@ -3,6 +3,9 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.SecurityConfiguration",
 	"type": "object",
+	"required": [
+		"identityServiceName"
+	],
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../common/timestamp-schema.json"
@@ -45,7 +48,7 @@
 				"type": "object",
 				"javaType": "com.sos.joc.model.security.SecurityConfigurationAccount",
 				"required": [
-					"account" 
+					"account"
 				],
 				"properties": {
 					"account": {
@@ -53,6 +56,21 @@
 					},
 					"password": {
 						"type": "string"
+					},
+					"hashedPassword": {
+						"type": "string"
+					},
+					"repeatedPassword": {
+						"type": "string"
+					},
+					"oldPassword": {
+						"type": "string"
+					},
+					"forcePasswordChange": {
+						"$ref": "forcePasswordChange-schema.json"
+					},
+					"disabled": {
+						"$ref": "disabledParam-schema.json"
 					},
 					"identityServiceId": {
 						"$ref": "../common/nonNegativeLong-schema.json"

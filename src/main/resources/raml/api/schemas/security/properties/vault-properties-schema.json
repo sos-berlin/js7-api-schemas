@@ -7,16 +7,7 @@
 		"iamVaultUrl": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"iamVaultKeystorePath": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamVaultKeystorePassword": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamVaultKeyPassword": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamVaultKeystoreType": {
+		"iamVaultAuthenticationMethodPath": {
 			"$ref": "../../common/string255-schema.json"
 		},
 		"iamVaultTruststorePath": {

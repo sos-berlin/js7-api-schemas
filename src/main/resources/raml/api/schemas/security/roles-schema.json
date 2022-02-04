@@ -1,0 +1,31 @@
+{
+	"title": "Roles",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.Roles",
+	"type": "object",
+	"required": [
+		"identityServiceName"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"roles": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.security.Role",
+				"required": [
+					"role"
+				],
+				"properties": {
+					"role": {
+						"type": "string"
+					}
+				},
+				"additionalProperties": false
+			}
+		}
+	},
+	"additionalProperties": false
+}

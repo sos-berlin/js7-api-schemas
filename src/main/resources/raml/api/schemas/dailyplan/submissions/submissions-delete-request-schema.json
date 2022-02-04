@@ -1,0 +1,18 @@
+{
+	"title": "daily plan delete submissions request",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.submissions.SubmissionsDeleteRequest",
+	"type": "object",
+	"required": [
+		"controllerId",
+		"filter"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
+		"filter": {
+			"$ref": "submissions-delete-request-filter-schema.json"
+		}
+	}
+}
