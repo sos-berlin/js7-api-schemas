@@ -16,3 +16,11 @@
 </td>
 <td></td>
 </tr>
+<tr>
+<td>``category``</td>
+<td>required, string</td>
+<td>Categorize the repository nature. Possible values are LOCAL or ROLLOUT.</td>
+<td></td>
+<td></td>
+</tr>
+
