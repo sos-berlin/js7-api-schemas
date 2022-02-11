@@ -1,5 +1,5 @@
 {
-  "envIndependent" : {
+  "rollout" : {
     "draftConfigurations" : [ {
       "configuration" : {
         "path" : "/ProductDemo",
@@ -15,7 +15,7 @@
       }
     } ]
   },
-  "envRelated" : {
+  "local" : {
     "draftConfigurations" : [ {
       "configuration" : {
         "path" : "/ProductDemo",

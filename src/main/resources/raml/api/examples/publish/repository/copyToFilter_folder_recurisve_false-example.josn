@@ -1,6 +1,5 @@
-Repository - CopyToFilter Folder Example
 {
-  "envIndependent" : {
+  "rollout" : {
     "draftConfigurations" : [ {
       "configuration" : {
         "path" : "/ProductDemo",
@@ -16,7 +15,7 @@ Repository - CopyToFilter Folder Example
       }
     } ]
   },
-  "envRelated" : {
+  "local" : {
     "draftConfigurations" : [ {
       "configuration" : {
         "path" : "/ProductDemo",

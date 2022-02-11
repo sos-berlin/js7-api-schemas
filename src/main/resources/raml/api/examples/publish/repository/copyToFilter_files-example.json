@@ -1,6 +1,6 @@
 {
   "controllerId" : "testsuite",
-  "envIndependent" : {
+  "rollout" : {
     "draftConfigurations" : [ {
       "configuration" : {
         "path" : "/ProductDemo/CyclicExecution/pdCyclicSerialWorkflow",
@@ -15,7 +15,7 @@
       }
     } ]
   },
-  "envRelated" : {
+  "local" : {
     "draftConfigurations" : [ {
       "configuration" : {
         "path" : "/ProductDemo/CyclicExecution/pdCyclicSerialWorkflow",

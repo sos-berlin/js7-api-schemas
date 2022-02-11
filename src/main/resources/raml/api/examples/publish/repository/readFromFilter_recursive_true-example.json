@@ -1,4 +1,5 @@
 {
   "folder" : "/ProductDemo",
-  "recursive" : true
+  "recursive" : true,
+  "category": "ROLLOUT"
 }

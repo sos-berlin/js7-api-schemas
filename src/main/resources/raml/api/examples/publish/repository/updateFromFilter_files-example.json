@@ -19,5 +19,6 @@
       "path" : "/ProductDemo/CyclicExecution/pdCyclicAllDays",
       "objectType" : "WORKINGDAYSCALENDAR"
     }
-  } ]
+  } ],
+  "category": "ROLLOUT"
 }

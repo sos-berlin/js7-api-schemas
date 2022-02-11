@@ -88,6 +88,9 @@
         },
         "configuration": {
           "type": "boolean"
+        },
+        "monitor": {
+          "type": "boolean"
         }
       }
     },

@@ -5,5 +5,6 @@
       "objectType" : "FOLDER",
       "recursive" : true
     }
-  } ]
+  } ],
+  "category": "ROLLOUT"
 }

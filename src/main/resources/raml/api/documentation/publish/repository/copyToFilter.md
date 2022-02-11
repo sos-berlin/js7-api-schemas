@@ -6,10 +6,10 @@
 <td></td>
 </tr>
 <tr>
-<td>``envIndependent``</td>
-<td>required anyOf(``envIndependent``, ``envRelated``), object</td>
+<td>``rollout``</td>
+<td>required anyOf(``rollout``, ``local``), object</td>
 <td>Filter collection of configuration objects to add or update, specified by their paths and object types.</td>
-<td>"envIndependent" : {
+<td>"rollout" : {
 <div style="padding-left:10px;">"draftConfigurations" : [{</div>
 <div style="padding-left:20px;">...example see below...</div>
 <div style="padding-left:10px;">],</div>
@@ -106,10 +106,10 @@
 <td>false</td>
 </tr>
 <tr>
-<td>``envRelated``</td>
-<td>required anyOf(``envIndependent``, ``envRelated``), object</td>
+<td>``local``</td>
+<td>required anyOf(``rollout``, ``local``), object</td>
 <td>Filter collection of deployed objects to delete, specified by their paths and object types. All selected objects will be deleted from <u>all</u> known controllers, not just from the selected ones.</td>
-<td>"envRelated" : {
+<td>"local" : {
 <div style="padding-left:10px;">"draftConfigurations" : [{</div>
 <div style="padding-left:20px;">...example see below...</div>
 <div style="padding-left:10px;">],</div>
