@@ -32,6 +32,9 @@
 		},
 		"required": {
 			"$ref": "requiredParam-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
 		}
 	}
 }
