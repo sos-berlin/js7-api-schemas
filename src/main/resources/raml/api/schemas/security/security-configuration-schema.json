@@ -107,6 +107,9 @@
 			"additionalProperties": {
 				"$ref": "role-schema.json"
 			}
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
 		}
 	},
 	"additionalProperties": false
