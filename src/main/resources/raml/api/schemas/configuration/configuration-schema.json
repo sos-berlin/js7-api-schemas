@@ -1,40 +1,43 @@
 {
-  "title": "save and response configuration",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.configuration.Configuration",
-  "type": "object",
-  "required": [
-    "id"
-  ],
-  "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
-    "id": {
-      "description": "=0, if customization is new",
-      "$ref": "../common/nonNegativeLong-schema.json"
-    },
-    "account": {
-      "$ref": "../common/string255-schema.json"
-    },
-    "configurationType": {
-      "$ref": "type-schema.json"
-    },
-    "objectType": {
-      "description": "required if configurationType equals CUSTOMIZATION",
-      "$ref": "../common/string255-schema.json"
-    },
-    "name": {
-      "description": "required if configurationType equals CUSTOMIZATION",
-      "$ref": "../common/string255-schema.json"
-    },
-    "shared": {
-      "type": "boolean",
-      "default": false
-    },
-    "configurationItem": {
-      "description": "JSON object as string,  depends on configuration type",
-      "type": "string"
-    }
-  }
+	"title": "save and response configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.configuration.Configuration",
+	"type": "object",
+	"required": [
+		"id"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/controllerId-schema.json"
+		},
+		"id": {
+			"description": "=0, if customization is new",
+			"$ref": "../common/nonNegativeLong-schema.json"
+		},
+		"account": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"configurationType": {
+			"$ref": "type-schema.json"
+		},
+		"objectType": {
+			"description": "required if configurationType equals CUSTOMIZATION",
+			"$ref": "../common/string255-schema.json"
+		},
+		"name": {
+			"description": "required if configurationType equals CUSTOMIZATION",
+			"$ref": "../common/string255-schema.json"
+		},
+		"shared": {
+			"type": "boolean",
+			"default": false
+		},
+		"configurationItem": {
+			"description": "JSON object as string,  depends on configuration type",
+			"type": "string"
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	}
 }
