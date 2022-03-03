@@ -335,22 +335,40 @@ traits:
         schema: !include api/schemas/security/security-configuration-schema.json
         example: " "   
     
-    /store:
+    /store (Accounts): 
       type:
         postJSONWithOkWithoutJSId:
           description: Stores accounts, roles, permission to Identity Service
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/store/accounts.md
-          description3: !include api/documentation/security/store/account.md
-          description4: !include api/documentation/security/store/disabled.md
-          description5: !include api/documentation/security/store/forcepasswordchange.md
-          description6: !include api/documentation/security/store/password.md
-          description7: !include api/documentation/security/store/roles.md
+          description2: !include api/documentation/security/store/accounts/accounts.md
+          description3: !include api/documentation/security/store/accounts/account.md
+          description4: !include api/documentation/security/store/accounts/disabled.md
+          description5: !include api/documentation/security/store/accounts/forcepasswordchange.md
+          description6: !include api/documentation/security/store/accounts/password.md
+          description7: !include api/documentation/security/store/accounts/roles.md
           description8: " "
           description9: !include api/documentation/audit/auditLog.md
           description10: " "
           schema: !include api/schemas/security/security-configuration-schema.json
           example: " "   
+          
+    /store (Roles and Permissions): 
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Stores accounts, roles, permission to Identity Service
+          description1: !include api/documentation/security/identityService/identityServiceName.md
+          description2: !include api/documentation/security/store/roles/roles.md
+          description3: !include api/documentation/security/store/roles/folders.md
+          description4: !include api/documentation/security/store/roles/permissions.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: !include api/documentation/audit/auditLog.md
+          description10: " "
+          schema: !include api/schemas/security/security-configuration-schema.json
+          example: " "   
+          
     /changepassword:
       type:
         postJSONWithOkWithoutJSId:
@@ -1095,7 +1113,7 @@ traits:
           description3: !include api/documentation/security/identityService/disabled.md
           description4: !include api/documentation/security/identityService/required.md
           description5: " "
-          audit: " "
+          audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/identityServiceFilter-schema.json
           example: " "
     /delete:
@@ -1107,8 +1125,20 @@ traits:
           description3: " "
           description4: " "
           description5: " "
-          audit: " "
+          audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/identityServiceFilter-schema.json
+          example: " "
+    /rename:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Renames an Identiy Service
+          description1: !include api/documentation/security/identityService/identityserviceoldname.md
+          description2: !include api/documentation/security/identityService/identityservicenewname.md
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/identityServiceRename-schema.json
           example: " "
 
 /inventory:
