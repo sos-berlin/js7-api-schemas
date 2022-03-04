@@ -57,9 +57,6 @@
 					"password": {
 						"type": "string"
 					},
-					"hashedPassword": {
-						"type": "string"
-					},
 					"repeatedPassword": {
 						"type": "string"
 					},
