@@ -1,23 +1,23 @@
 {
 	"title": "Authentication configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.SecurityConfiguration",
+	"javaType": "com.sos.joc.model.security.configuration.SecurityConfiguration",
 	"type": "object",
 	"required": [
 		"identityServiceName"
 	],
 	"properties": {
 		"deliveryDate": {
-			"$ref": "../common/timestamp-schema.json"
+			"$ref": "../../common/timestamp-schema.json"
 		},
 		"identityServiceName": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../../common/string255-schema.json"
 		},
 		"main": {
 			"type": "array",
 			"items": {
 				"type": "object",
-				"javaType": "com.sos.joc.model.security.SecurityConfigurationMainEntry",
+				"javaType": "com.sos.joc.model.security.configuration.SecurityConfigurationMainEntry",
 				"required": [
 					"entryName",
 					"entryValue"
@@ -46,7 +46,7 @@
 			"type": "array",
 			"items": {
 				"type": "object",
-				"javaType": "com.sos.joc.model.security.SecurityConfigurationAccount",
+				"javaType": "com.sos.joc.model.security.configuration.SecurityConfigurationAccount",
 				"required": [
 					"account"
 				],
@@ -67,10 +67,10 @@
 						"$ref": "forcePasswordChange-schema.json"
 					},
 					"disabled": {
-						"$ref": "disabledParam-schema.json"
+						"$ref": "../disabledParam-schema.json"
 					},
 					"identityServiceId": {
-						"$ref": "../common/nonNegativeLong-schema.json"
+						"$ref": "../../common/nonNegativeLong-schema.json"
 					},
 					"roles": {
 						"type": "array",
@@ -92,21 +92,21 @@
 						"type": "string"
 					},
 					"lastLogin": {
-						"$ref": "../common/timestamp-schema.json"
+						"$ref": "../../common/timestamp-schema.json"
 					}
 				},
 				"additionalProperties": false
 			}
 		},
 		"roles": {
-			"javaType": "com.sos.joc.model.security.permissions.SecurityConfigurationRoles",
+			"javaType": "com.sos.joc.model.security.configuration.SecurityConfigurationRoles",
 			"type": "object",
 			"additionalProperties": {
 				"$ref": "role-schema.json"
 			}
 		},
 		"auditLog": {
-			"$ref": "../audit/auditParams-schema.json"
+			"$ref": "../../audit/auditParams-schema.json"
 		}
 	},
 	"additionalProperties": false

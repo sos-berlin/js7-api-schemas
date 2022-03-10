@@ -1,22 +1,22 @@
 {
 	"title": "Role",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.permissions.SecurityConfigurationRole",
+	"javaType": "com.sos.joc.model.security.configuration.SecurityConfigurationRole",
 	"type": "object",
 	
 	"properties": {
 		"folders": {
-			"javaType": "com.sos.joc.model.security.permissions.SecurityConfigurationFolders",
+			"javaType": "com.sos.joc.model.security.configuration.permissions.SecurityConfigurationFolders",
 			"type": "object",
 			"properties": {
 				"joc": {
-					"$ref": "../common/folders-schema.json"
+					"$ref": "../../common/folders-schema.json"
 				},
 				"controllers": {
-					"javaType": "com.sos.joc.model.security.permissions.ControllerFolders",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.ControllerFolders",
 					"type": "object",
 					"additionalProperties":  { 
-    					"$ref": "../common/folders-schema.json"
+    					"$ref": "../../common/folders-schema.json"
    					}
 				}
 			},

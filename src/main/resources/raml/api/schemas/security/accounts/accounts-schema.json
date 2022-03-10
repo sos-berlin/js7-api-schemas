@@ -1,0 +1,21 @@
+{
+	"title": "Accounts",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.accounts.Accounts",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"identityServiceName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"accountItems": {
+			"type": "array",
+			"items": {
+				"$ref": "account-schema.json"
+			}
+		}
+	}
+}
+ 

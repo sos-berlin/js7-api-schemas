@@ -1,0 +1,32 @@
+{
+	"title": "Folders Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.permissions.FoldersFilter",
+	"type": "object",
+	"required": [
+		"identityServiceName",
+		"roleName",
+		"folderNames"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"controllerId": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"roleName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"folderNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
+  

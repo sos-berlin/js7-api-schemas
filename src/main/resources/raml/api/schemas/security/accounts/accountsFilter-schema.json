@@ -1,0 +1,28 @@
+{
+	"title": "Account Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.accounts.AccountsFilter",
+	"type": "object",
+	"required": [
+		"accountNames",
+		"identityServiceName"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"accountNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
+		},
+		"disabled": {
+			"$ref": "../disabledParam-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
+  

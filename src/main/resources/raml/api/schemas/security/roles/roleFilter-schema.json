@@ -1,0 +1,22 @@
+{
+	"title": "Role Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.roles.RoleFilter",
+	"type": "object",
+	"required": [
+		"roleName",
+		"identityServiceName"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255-schema.json"
+		}, 
+		"roleName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
+  

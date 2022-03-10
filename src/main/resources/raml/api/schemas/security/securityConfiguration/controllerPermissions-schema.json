@@ -1,7 +1,7 @@
 {
 	"title": "Controller Permissions",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.permissions.ControllerPermissions",
+	"javaType": "com.sos.joc.model.security.configuration.permissions.ControllerPermissions",
 	"type": "object",
 	
 	"properties": {
@@ -26,7 +26,7 @@
 				"default" : false
 			},
 			"deployments": {
-				"javaType": "com.sos.joc.model.security.permissions.controller.Deployments",
+				"javaType": "com.sos.joc.model.security.configuration.permissions.controller.Deployments",
 				"type": "object",
 				"properties": {
 					"view": {
@@ -43,7 +43,7 @@
 				"additionalProperties": false
 			},
 			"orders": {
-				"javaType": "com.sos.joc.model.security.permissions.controller.Orders",
+				"javaType": "com.sos.joc.model.security.configuration.permissions.controller.Orders",
 				"type": "object",
 				"properties": {
 					"view": {
@@ -73,7 +73,7 @@
 				"additionalProperties": false
 			},
 			"agents": {
-				"javaType": "com.sos.joc.model.security.permissions.controller.Agents",
+				"javaType": "com.sos.joc.model.security.configuration.permissions.controller.Agents",
 				"type": "object",
 				"properties": {
 					"view": {
@@ -85,7 +85,7 @@
 				"additionalProperties": false
 			},
 			"noticeBoards": {
-				"javaType": "com.sos.joc.model.security.permissions.controller.NoticeBoards",
+				"javaType": "com.sos.joc.model.security.configuration.permissions.controller.NoticeBoards",
 				"type": "object",
 				"properties": {
 					"view": {
@@ -107,7 +107,7 @@
 				"additionalProperties": false
 			},
 			"locks": {
-				"javaType": "com.sos.joc.model.security.permissions.controller.Locks",
+				"javaType": "com.sos.joc.model.security.configuration.permissions.controller.Locks",
 				"type": "object",
 				"properties": {
 					"view": {
@@ -119,7 +119,7 @@
 				"additionalProperties": false
 			},
 			"workflows": {
-				"javaType": "com.sos.joc.model.security.permissions.controller.Workflows",
+				"javaType": "com.sos.joc.model.security.configuration.permissions.controller.Workflows",
 				"type": "object",
 				"properties": {
 					"view": {

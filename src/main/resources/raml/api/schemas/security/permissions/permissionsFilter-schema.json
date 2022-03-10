@@ -1,0 +1,33 @@
+{
+	"title": "Permissions Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.permissions.PermissionsFilter",
+	"type": "object",
+	"required": [
+		"identityServiceName",
+		"controllerId",
+		"roleName",
+		"permissionPaths"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"controllerId": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"roleName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"permissionPaths": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
+  

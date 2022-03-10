@@ -1,0 +1,44 @@
+ 
+{
+	"title": "Account",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.accounts.Account",
+	"type": "object",
+	"required": [
+		"identityServiceName",
+		"accountName"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"accountName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"password": {
+			"type": "string"
+		},
+		"repeatedPassword": {
+			"type": "string"
+		},
+		"oldPassword": {
+			"type": "string"
+		},
+		"forcePasswordChange": {
+			"$ref": "forcePasswordChange-schema.json"
+		},
+		"disabled": {
+			"$ref": "../disabledParam-schema.json"
+		},
+		"roles": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
+    

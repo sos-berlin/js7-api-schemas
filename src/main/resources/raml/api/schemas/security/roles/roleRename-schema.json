@@ -2,7 +2,7 @@
 {
 	"title": "RoleRename",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.RoleRename",
+	"javaType": "com.sos.joc.model.security.roles.RoleRename",
 	"type": "object",
 	"required": [
 		"identityServiceName",
@@ -11,16 +11,16 @@
 	],
 	"properties": {
 		"identityServiceName": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../../common/string255-schema.json"
 		},
 		"roleOldName": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../../common/string255-schema.json"
 		},
 		"roleNewName": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../../common/string255-schema.json"
 		},
 		"auditLog": {
-			"$ref": "../audit/auditParams-schema.json"
+			"$ref": "../../audit/auditParams-schema.json"
 		}
 	}
 }

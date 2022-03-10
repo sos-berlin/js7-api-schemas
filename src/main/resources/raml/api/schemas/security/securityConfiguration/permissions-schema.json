@@ -1,7 +1,7 @@
 {
 	"title": " Permissions",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.Permissions",
+	"javaType": "com.sos.joc.model.security.configuration.permissions.Permissions",
 	"type": "object",
 	
 	"properties": {
@@ -13,7 +13,7 @@
 			}
 		},
 		"joc": {
-			"javaType": "com.sos.joc.model.security.permissions.JocPermissions",
+			"javaType": "com.sos.joc.model.security.configuration.permissions.JocPermissions",
 			"type": "object",
 			"properties": {
 				"getLog": {
@@ -21,11 +21,11 @@
 					"default" : false
 				},
 				"administration": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.Administration",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.Administration",
 					"type": "object",
 					"properties": {
 						"accounts": {
-							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Accounts",
+							"javaType": "com.sos.joc.model.security.configuration.permissions.joc.admin.Accounts",
 							"type": "object",
 							"properties": {
 								"view": {
@@ -40,7 +40,7 @@
 							"additionalProperties": false
 						},
 						"settings": {
-							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Settings",
+							"javaType": "com.sos.joc.model.security.configuration.permissions.joc.admin.Settings",
 							"type": "object",
 							"properties": {
 								"view": {
@@ -55,7 +55,7 @@
 							"additionalProperties": false
 						},
 						"controllers": {
-							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Controllers",
+							"javaType": "com.sos.joc.model.security.configuration.permissions.joc.admin.Controllers",
 							"type": "object",
 							"properties": {
 								"view": {
@@ -70,7 +70,7 @@
 							"additionalProperties": false
 						},
 						"certificates": {
-							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Certificates",
+							"javaType": "com.sos.joc.model.security.configuration.permissions.joc.admin.Certificates",
 							"type": "object",
 							"properties": {
 								"view": {
@@ -85,7 +85,7 @@
 							"additionalProperties": false
 						},
 						"customization": {
-							"javaType": "com.sos.joc.model.security.permissions.joc.admin.Customization",
+							"javaType": "com.sos.joc.model.security.configuration.permissions.joc.admin.Customization",
 							"type": "object",
 							"properties": {
 								"view": {
@@ -108,7 +108,7 @@
 					"additionalProperties": false
 				},
 				"cluster": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.Cluster",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.Cluster",
 					"type": "object",
 					"properties": {
 						"manage": {
@@ -119,7 +119,7 @@
 					"additionalProperties": false
 				},
 				"inventory": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.Inventory",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.Inventory",
 					"type": "object",
 					"properties": {
 						"view": {
@@ -140,7 +140,7 @@
 					"additionalProperties": false
 				},
 				"calendars": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.Calendars",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.Calendars",
 					"type": "object",
 					"properties": {
 						"view": {
@@ -151,7 +151,7 @@
 					"additionalProperties": false
 				},
 				"documentations": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.Documentations",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.Documentations",
 					"type": "object",
 					"properties": {
 						"view": {
@@ -167,7 +167,7 @@
 					"additionalProperties": false
 				},
 				"auditLog": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.AuditLog",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.AuditLog",
 					"type": "object",
 					"properties": {
 						"view": {
@@ -178,7 +178,7 @@
 					"additionalProperties": false
 				},
 				"dailyPlan": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.DailyPlan",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.DailyPlan",
 					"type": "object",
 					"properties": {
 						"view": {
@@ -195,7 +195,7 @@
 					"additionalProperties": false
 				},
 				"fileTransfer": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.FileTransfer",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.FileTransfer",
 					"type": "object",
 					"properties": {
 						"view": {
@@ -211,7 +211,7 @@
 					"additionalProperties": false
 				},
 				"notification": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.Notification",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.Notification",
 					"type": "object",
 					"properties": {
 						"view": {
@@ -227,7 +227,7 @@
 					"additionalProperties": false
 				},
 				"others": {
-					"javaType": "com.sos.joc.model.security.permissions.joc.Others",
+					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.Others",
 					"type": "object",
 					"properties": {
 						"view": {
@@ -249,7 +249,7 @@
 			"$ref": "controllerPermissions-schema.json"
 		},
 		"controllers": {
-			"javaType": "com.sos.joc.model.security.permissions.Controllers",
+			"javaType": "com.sos.joc.model.security.configuration.permissions.Controllers",
 			"type": "object",
 			"additionalProperties":  { 
     			"$ref": "controllerPermissions-schema.json"

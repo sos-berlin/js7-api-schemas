@@ -1,7 +1,7 @@
 {
 	"title": " Permissions",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.IniPermissions",
+	"javaType": "com.sos.joc.model.security.configuration.permissions.IniPermissions",
 	"type": "object",
 	
 	"properties": {
@@ -18,7 +18,7 @@
 			}
 		},
 		"controllers": {
-			"javaType": "com.sos.joc.model.security.permissions.IniControllers",
+			"javaType": "com.sos.joc.model.security.configuration.permissions.IniControllers",
 			"type": "object",
 			"additionalProperties":  { 
     			"type": "array",

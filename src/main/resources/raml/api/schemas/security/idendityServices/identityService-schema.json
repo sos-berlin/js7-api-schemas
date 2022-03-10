@@ -2,7 +2,7 @@
 {
 	"title": "IdentityService",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.IdentityService",
+	"javaType": "com.sos.joc.model.security.idendityservice.IdentityService",
 	"type": "object",
 	"required": [
 		"identityServiceName",
@@ -13,16 +13,16 @@
 			"$ref": "identityServiceTypes-schema.json"
 		},
 		"identityServiceName": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../../common/string255-schema.json"
 		},
 		"serviceAuthenticationScheme": {
 			"$ref": "identityServiceAuthenticationScheme-schema.json"
 		},
 		"ordering": {
-			"$ref": "../common/nonNegativeInteger-schema.json"
+			"$ref": "../../common/nonNegativeInteger-schema.json"
 		},
 		"disabled": {
-			"$ref": "disabledParam-schema.json"
+			"$ref": "../disabledParam-schema.json"
 		},
 		"singleFactorCert": {
 			"$ref": "singleFactorCert-schema.json"
@@ -34,7 +34,7 @@
 			"$ref": "requiredParam-schema.json"
 		},
 		"auditLog": {
-			"$ref": "../audit/auditParams-schema.json"
+			"$ref": "../../audit/auditParams-schema.json"
 		}
 	}
 }
