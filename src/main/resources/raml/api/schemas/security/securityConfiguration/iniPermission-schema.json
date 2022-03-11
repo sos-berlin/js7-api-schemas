@@ -4,10 +4,10 @@
 	"javaType": "com.sos.joc.model.security.configuration.permissions.IniPermission",
 	"type": "object",
 	"required": [
-		"path"
+		"permissionPath"
 	],
 	"properties": {
-		"path": {
+		"permissionPath": {
 			"$ref": "../../common/string255-schema.json"
 		},
 		"excluded": {

@@ -48,7 +48,7 @@
 				"type": "object",
 				"javaType": "com.sos.joc.model.security.configuration.SecurityConfigurationAccount",
 				"required": [
-					"account"
+					"accountName"
 				],
 				"properties": {
 					"accountName": {
