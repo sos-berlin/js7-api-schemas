@@ -51,7 +51,7 @@
 					"account"
 				],
 				"properties": {
-					"account": {
+					"accountName": {
 						"type": "string"
 					},
 					"password": {

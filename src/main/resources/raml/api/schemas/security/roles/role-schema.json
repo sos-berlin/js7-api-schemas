@@ -14,6 +14,9 @@
 		"roleName": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"ordering": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
 		"controllers": {
 			"type": "array",
 			"items": {

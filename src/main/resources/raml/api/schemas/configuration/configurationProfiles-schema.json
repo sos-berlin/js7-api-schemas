@@ -1,0 +1,27 @@
+{
+	"title": "Configuration Profils",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.configuration.Profiles",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"profiles": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.configuration.Profile",
+				"properties": {
+					"account": {
+						"type": "string"
+					},
+					"lastLogin": {
+						"$ref": "../common/timestamp-schema.json"
+					}
+				},
+				"additionalProperties": false
+			}
+		}
+	}
+}
