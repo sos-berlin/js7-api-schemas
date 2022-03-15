@@ -25,7 +25,7 @@
 <tr>
 <td style="padding-left:20px;">``draftConfigurations``</td>
 <td>required anyOf(``draftConfigurations``, ``deployConfigurations``, ``releasedConfigurations``), array</td>
-<td>An array of draft configuration of deployable objects.</td>
+<td>An array of draft configuration of deployable or releaseable objects.</td>
 <td></td>
 <td></td>
 </tr>
@@ -111,7 +111,7 @@
 <tr>
 <td style="padding-left:20px;">``releasedConfigurations``</td>
 <td>required anyOf(``draftConfigurations``, ``deployConfigurations``, ``releasedConfigurations``), array</td>
-<td>An array of deployed configuration objects.</td>
+<td>An array of released configuration objects.</td>
 <td></td>
 <td></td>
 </tr>
@@ -167,7 +167,7 @@
 <tr>
 <td style="padding-left:20px;">``draftConfigurations``</td>
 <td>required anyOf(``draftConfigurations``, ``deployConfigurations``, ``releasedConfigurations``), array</td>
-<td>An array of draft configuration of deployable objects.</td>
+<td>An array of draft configuration of deployable or releaseable objects.</td>
 <td></td>
 <td></td>
 </tr>
@@ -253,7 +253,7 @@
 <tr>
 <td style="padding-left:20px;">``releasedConfigurations``</td>
 <td>required anyOf(``draftConfigurations``, ``deployConfigurations``, ``releasedConfigurations``), array</td>
-<td>An array of deployed configuration objects.</td>
+<td>An array of released configuration objects.</td>
 <td></td>
 <td></td>
 </tr>
