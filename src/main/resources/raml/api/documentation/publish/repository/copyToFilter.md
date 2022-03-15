@@ -16,6 +16,9 @@
 <div style="padding-left:10px;">"deployConfigurations" : [{</div>
 <div style="padding-left:20px;">...example see below...</div>
 <div style="padding-left:10px;">]</div>
+<div style="padding-left:10px;">"releasedConfigurations" : [{</div>
+<div style="padding-left:20px;">...example see below...</div>
+<div style="padding-left:10px;">]</div>
 }</td>
 <td></td>
 </tr>
@@ -96,6 +99,45 @@
 <td>required, string</td>
 <td>The ``commitId`` of the deployment of the deployed configuration. If no commitId is set the latest deployment of the configuration will be processed.</td>
 <td>"commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"</td>
+<td></td>
+</tr>
+<tr>
+<td style="padding-left:60px;">``recursive``</td>
+<td>optional, boolean</td>
+<td>Decides if a given folder should be processed recursively.</td>
+<td>"recursive" : true</td>
+<td>false</td>
+</tr>
+<tr>
+<td style="padding-left:20px;">``releasedConfigurations``</td>
+<td>required anyOf(``draftConfigurations``, ``deployConfigurations``, ``releasedConfigurations``), array</td>
+<td>An array of deployed configuration objects.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="padding-left:40px;">``configuration``</td>
+<td>required, object</td>
+<td>A released configuration specified by its ``path`` and ``objectType``. If released configurations are specified by a folder, all released items from the folder will be processed.</td>
+<td><div style="padding-left:10px;">"configuration" : {</div>
+<div style="padding-left:20px;">"path" : "/mySchedules/ifElseWorkflows/schedule_if_else_1",</div>
+<div style="padding-left:20px;">"objectType" : "SCHEDULE"</div>
+<div style="padding-left:10px;">}</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td style="padding-left:60px;">``path``</td>
+<td>required, string</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="padding-left:60px;">``objectType``</td>
+<td>required, enum</td>
+<td>see above.</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -238,13 +280,6 @@
 <td>required, enum</td>
 <td>see above.</td>
 <td></td>
-<td></td>
-</tr>
-<tr>
-<td style="padding-left:60px;">``commitId``</td>
-<td>required, string</td>
-<td>The ``commitId`` of the deployment of the deployed configuration. If no commitId is set the latest deployment of the configuration will be processed.</td>
-<td>"commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"</td>
 <td></td>
 </tr>
 <tr>
