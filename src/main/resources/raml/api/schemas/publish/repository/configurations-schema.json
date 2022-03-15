@@ -1,7 +1,7 @@
 {
-	"title": "Filter for environment related Objects",
+	"title": "Filter for configurations",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.publish.repository.EnvRelatedConfigurations",
+	"javaType": "com.sos.joc.model.publish.repository.Configurations",
 	"type": "object",
 	"anyOf": [{
 			"required": ["draftConfigurations"]

@@ -13,10 +13,10 @@
       		"$ref": "../../common/controllerId-schema.json"
 		},
 		"rollout": {
-			"$ref": "envIndependentConfigurations-schema.json"
+			"$ref": "configurations-schema.json"
 		},
 		"local": {
-			"$ref": "envRelatedConfigurations-schema.json"
+			"$ref": "configurations-schema.json"
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"

@@ -1,41 +1,48 @@
 {
   "rollout" : {
-    "draftConfigurations" : [ {
+    "draftConfigurations" : [{
       "configuration" : {
         "path" : "/ProductDemo",
         "objectType" : "FOLDER",
         "recursive" : true
       }
-    } ],
-    "deployConfigurations" : [ {
+    }],
+    "deployConfigurations" : [{
       "configuration" : {
         "path" : "/ProductDemo",
         "objectType" : "FOLDER",
         "recursive" : true
       }
-    } ]
+    }],
+    "releasedConfigurations" : [{
+      "configuration" : {
+        "path" : "/ProductDemo",
+        "objectType" : "FOLDER",
+        "recursive" : false
+      }
+    }]
   },
   "local" : {
-    "draftConfigurations" : [ {
+    "draftConfigurations" : [{
       "configuration" : {
         "path" : "/ProductDemo",
         "objectType" : "FOLDER",
         "recursive" : true
       }
-    } ],
-    "deployConfigurations" : [ {
+    }],
+    "deployConfigurations" : [{
       "configuration" : {
         "path" : "/ProductDemo",
         "objectType" : "FOLDER",
         "recursive" : true
       }
-    } ],
-    "releasedConfigurations" : [ {
+    }],
+    "releasedConfigurations" : [{
       "configuration" : {
         "path" : "/ProductDemo",
         "objectType" : "FOLDER",
         "recursive" : true
       }
-    } ]
+    }]
   }
 }
