@@ -2,7 +2,7 @@
 {
 	"title": "IdentityService",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.idendityservice.IdentityService",
+	"javaType": "com.sos.joc.model.security.identityservice.IdentityService",
 	"type": "object",
 	"required": [
 		"identityServiceName",

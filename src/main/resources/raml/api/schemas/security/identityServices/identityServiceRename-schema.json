@@ -2,7 +2,7 @@
 {
 	"title": "IdentityServiceRename",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.idendityservice.IdentityServiceRename",
+	"javaType": "com.sos.joc.model.security.identityservice.IdentityServiceRename",
 	"type": "object",
 	"required": [
 		"identityServiceOldName",

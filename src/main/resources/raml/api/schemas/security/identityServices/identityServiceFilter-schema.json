@@ -1,7 +1,7 @@
 {
 	"title": "IdentityService Filter",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.idendityservice.IdentityServiceFilter",
+	"javaType": "com.sos.joc.model.security.identityservice.IdentityServiceFilter",
 	"type": "object",
 	"properties": {
 		"identityServiceName": {

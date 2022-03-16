@@ -1,0 +1,21 @@
+{
+	"title": "IdentityServices Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.identityservice.IdentityServicesFilter",
+	"type": "object",
+	"required": [
+		"identityServiceNames" 
+	],
+	"properties": {
+		"identityServiceNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	}
+}
+  

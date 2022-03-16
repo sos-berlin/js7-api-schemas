@@ -1,7 +1,7 @@
 {
   "title": "Identity Service Authentication Scheme",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.security.idendityservice.IdentityServiceAuthenticationScheme",
+  "javaType": "com.sos.joc.model.security.identityservice.IdentityServiceAuthenticationScheme",
   "type": "string",
   "enum": [
     "SINGLE-FACTOR",
