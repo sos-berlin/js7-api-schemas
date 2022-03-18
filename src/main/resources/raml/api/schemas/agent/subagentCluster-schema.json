@@ -15,6 +15,9 @@
     "subagentClusterId": {
     	"$ref": "../common/string255required-schema.json"
     },
+    "title": {
+    	"$ref": "../common/string255-schema.json"
+    },
     "subagentIds": {
     	"type": "array",
     	"items": {
