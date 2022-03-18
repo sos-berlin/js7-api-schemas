@@ -70,7 +70,7 @@ resourceTypes:
   - postForExport: !include api/resourceTypes/publish/postForExport.raml
   - postForImportDeploy: !include api/resourceTypes/publish/postForImportDeploy.raml
   - postForShowDepHistory: !include api/resourceTypes/publish/postForShowDepHistory.raml
-  
+
 
 traits:
   - jobschedulerController: !include api/traits/jobschedulerController.raml
@@ -82,7 +82,7 @@ traits:
   - filename: !include api/traits/filename.raml
 
 /agent:
-  /remove:
+  /delete:
     type:
       postJSONWithOkResponse:
         description: Removes Agent
@@ -101,10 +101,10 @@ traits:
   /reset:
     type:
       postJSONWithOkResponse:
-        description: | 
+        description: |
           Resets Agent<h5>
-          Any currently running orders are continued. Workflows and other deployable objects are withdrawn. 
-          The Agent drops its journal and restarts. Then the Controller tries to reconnect to the Agent, 
+          Any currently running orders are continued. Workflows and other deployable objects are withdrawn.
+          The Agent drops its journal and restarts. Then the Controller tries to reconnect to the Agent,
           deploys workflows etc. and submits orders to the Agent.
           </h5>
         description1: !include api/documentation/agent/agentId.md
@@ -119,40 +119,7 @@ traits:
         description10: " "
         schema: !include api/schemas/agent/agentCommand-schema.json
         example: " "
-  /subagents:
-    /remove:
-      type:
-        postJSONWithOkResponse:
-          description: Removes Subagents
-          description1: " "
-          description2: !include api/documentation/agent/subagentIds.md
-          description3: " "
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/agent/subagentCommand-schema.json
-          example: " "
-    /store:
-      type:
-        postJSONWithOkResponse:
-          description: Stores Subagents to a Cluster Agent
-          description1: !include api/documentation/agent/agentId.md
-          description2: !include api/documentation/agent/subAgents.md
-          description3: " "
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/agent/storeSubagentsParam-schema.json
-          example: " "
-      
+
 /agents:
   type:
     postJSON:
@@ -172,49 +139,249 @@ traits:
       schema200: !include api/schemas/agent/agents_v-schema.json
       example: !include api/examples/agent/agents_v-request-example.json
       example200: !include api/examples/agent/agents_v-example.json
-      
-  /cluster/store:
+  
+  /cluster:
+    /deploy:
+      type:
+        postJSONWithOkResponse:
+          description: Deploys Subagent Clusters to Controller
+          description1: !include api/documentation/agent/subagentClustersDeploy.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: !include api/documentation/audit/auditLog.md
+          description10: " "
+          schema: !include api/schemas/agent/deployClusterParam-schema.json
+          example: " "
+
+    /store:
+      type:
+        postJSONWithOkResponse:
+          description: Stores Subagent Clusters
+          description1: !include api/documentation/agent/subagentClusters.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: !include api/documentation/audit/auditLog.md
+          description10: " "
+          schema: !include api/schemas/agent/storeSubagentCluster-schema.json
+          example: " "
+
+    /delete:
+      type:
+        postJSONWithOkResponse:
+          description: Deletes Subagent Clusters at Controller
+          description1: !include api/documentation/agent/subagentClustersDeploy.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: !include api/documentation/audit/auditLog.md
+          description10: " "
+          schema: !include api/schemas/agent/deployClusterParam-schema.json
+          example: " "
+          
+  /inventory:
     type:
-      postJSONWithOkResponse:
-        description: Stores Cluster Agents persistently
-        description1: !include api/documentation/agent/clusterAgents.md
+      postJSONWithOptionalJSId:
+        description: Gets persistent Solo Agent information
+        description1: !include api/documentation/agent/agentIds.md
         description2: " "
-        description3: " "
+        description3: !include api/documentation/agent/onlyEnabledAgents.md
         description4: " "
         description5: " "
         description6: " "
         description7: " "
         description8: " "
-        description9: !include api/documentation/audit/auditLog.md
+        description9: " "
         description10: " "
-        schema: !include api/schemas/agent/storeClusterParam-schema.json
-        example: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: !include api/documentation/agent/agents_p.md
+        schema: !include api/schemas/agent/readAgents-schema.json
+        schema200: !include api/schemas/agent/singleAgents-schema.json
+        example: !include api/examples/controller/controllerParam-example.json
+        example200: !include api/examples/agent/agents_p-example.json
         
-  /cluster/deploy:
-    type:
-      postJSONWithOkResponse:
-        description: Deploys Cluster Agents to Controllers
-        description1: !include api/documentation/agent/clusterAgentsDeploy.md
-        description2: " "
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: !include api/documentation/audit/auditLog.md
-        description10: " "
-        schema: !include api/schemas/agent/deployClusterParam-schema.json
-        example: " "
+    /cluster:
+      type:
+        postJSONWithOptionalJSId:
+          description: Gets persistent Cluster Agent information
+          description1: !include api/documentation/agent/agentIds.md
+          description2: " "
+          description3: !include api/documentation/agent/onlyEnabledAgents.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description11: " "
+          description12: " "
+          description13: " "
+          description200: !include api/documentation/agent/clusterAgents_p.md
+          schema: !include api/schemas/agent/readAgents-schema.json
+          schema200: !include api/schemas/agent/inventoryClusterAgents-schema.json
+          example: !include api/examples/controller/controllerParam-example.json
+          example200: " "
+
+      /delete:
+        type:
+          postJSONWithOkResponse:
+            description: Deletes Cluster Agents at Controller
+            description1: !include api/documentation/agent/clusterAgentsDeploy.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description9: !include api/documentation/audit/auditLog.md
+            description10: " "
+            schema: !include api/schemas/agent/deployClusterParam-schema.json
+            example: " "
+
+      /deploy:
+        type:
+          postJSONWithOkResponse:
+            description: Deploys Cluster Agents to Controller
+            description1: !include api/documentation/agent/clusterAgentsDeploy.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description9: !include api/documentation/audit/auditLog.md
+            description10: " "
+            schema: !include api/schemas/agent/deployClusterParam-schema.json
+            example: " "
+
+      /subagents:
+        /delete:
+          type:
+            postJSONWithOkResponse:
+              description: Deletes Subagents
+              description1: " "
+              description2: !include api/documentation/agent/subagentIds.md
+              description3: " "
+              description4: " "
+              description5: " "
+              description6: " "
+              description7: " "
+              description8: " "
+              description9: !include api/documentation/audit/auditLog.md
+              description10: " "
+              schema: !include api/schemas/agent/subagentCommand-schema.json
+              example: " "
         
-  /reassign:
-    type:
-      postWithOkResponse:
-        description: Repeats assignment of Agents to Controllers
-        urlparam: " "
-        failover: " "
-        audit: !include api/documentation/audit/auditLog.md
+        /disable:
+          type:
+            postJSONWithOkResponse:
+              description: Disables Subagents
+              description1: " "
+              description2: !include api/documentation/agent/subagentIds.md
+              description3: " "
+              description4: " "
+              description5: " "
+              description6: " "
+              description7: " "
+              description8: " "
+              description9: !include api/documentation/audit/auditLog.md
+              description10: " "
+              schema: !include api/schemas/agent/subagentCommand-schema.json
+              example: " "
+
+        /enable:
+          type:
+            postJSONWithOkResponse:
+              description: Enables Subagents
+              description1: " "
+              description2: !include api/documentation/agent/subagentIds.md
+              description3: " "
+              description4: " "
+              description5: " "
+              description6: " "
+              description7: " "
+              description8: " "
+              description9: !include api/documentation/audit/auditLog.md
+              description10: " "
+              schema: !include api/schemas/agent/subagentCommand-schema.json
+              example: " "
         
+        /store:
+          type:
+            postJSONWithOkResponse:
+              description: Stores Subagents to a Cluster Agent
+              description1: !include api/documentation/agent/agentId.md
+              description2: !include api/documentation/agent/subAgents.md
+              description3: " "
+              description4: " "
+              description5: " "
+              description6: " "
+              description7: " "
+              description8: " "
+              description9: !include api/documentation/audit/auditLog.md
+              description10: " "
+              schema: !include api/schemas/agent/storeSubagentsParam-schema.json
+              example: " "
+            
+      /store:
+        type:
+          postJSONWithOkResponse:
+            description: Stores Cluster Agents
+            description1: !include api/documentation/agent/inventoryClusterAgents.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description9: !include api/documentation/audit/auditLog.md
+            description10: " "
+            schema: !include api/schemas/agent/storeInventoryClusterParam-schema.json
+            example: " "
+
+    /reassign:
+      type:
+        postWithOkResponse:
+          description: Repeats assignment of Agents to Controllers
+          urlparam: " "
+          failover: " "
+          audit: !include api/documentation/audit/auditLog.md
+    /store:
+      type:
+        postJSONWithOkResponse:
+          description: Stores Solo Agents persistently and assigns Solo Agents to Controllers
+          description1: !include api/documentation/agent/agents.md
+          description2: !include api/documentation/audit/auditLog.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/agent/storeParam-schema.json
+          example: !include api/examples/agent/store-example.json
+
   /report:
     type:
       postJSONWithOptionalJSId:
@@ -237,24 +404,7 @@ traits:
         schema200: !include api/schemas/agent/agentReports-schema.json
         example: " "
         example200: " "
-        
-  /store:
-    type:
-      postJSONWithOkResponse:
-        description: Stores Solo Agents persistently and assigns Solo Agents to Controllers
-        description1: !include api/documentation/agent/agents.md
-        description2: !include api/documentation/audit/auditLog.md
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: " "
-        schema: !include api/schemas/agent/storeParam-schema.json
-        example: !include api/examples/agent/store-example.json
-        
+
 
 /audit_log:
   type:
@@ -300,7 +450,7 @@ traits:
 
 /authentication:
   description: This is not an API call. Use child urls instead!
-  
+
   /joc_cockpit_permissions:
     type:
       postOnlyAccessToken:
@@ -308,13 +458,13 @@ traits:
         description200: " "
         example200: !include api/examples/user/permissions-example.json
         schema200: !include api/schemas/security/permissions-schema.json
-  
+
   /login:
     type: login
-    
+
   /logout:
-    type: logout 
-      
+    type: logout
+
   /auth:
     type:
       postJSONWithoutJSId:
@@ -330,12 +480,12 @@ traits:
         description9: " "
         description10: " "
         description200: " "
-        schema200: !include api/schemas/security/security-configuration-schema.json 
+        schema200: !include api/schemas/security/security-configuration-schema.json
         example200: " "
         schema: !include api/schemas/security/security-configuration-schema.json
-        example: " "   
-    
-    /store (Accounts): 
+        example: " "
+
+    /store (Accounts):
       type:
         postJSONWithOkWithoutJSId:
           description: Stores accounts, roles, permission to Identity Service
@@ -350,9 +500,9 @@ traits:
           description9: !include api/documentation/audit/auditLog.md
           description10: " "
           schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "   
-          
-    /store (Roles and Permissions): 
+          example: " "
+
+    /store (Roles and Permissions):
       type:
         postJSONWithOkWithoutJSId:
           description: Stores accounts, roles, permission to Identity Service
@@ -367,8 +517,8 @@ traits:
           description9: !include api/documentation/audit/auditLog.md
           description10: " "
           schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "   
-          
+          example: " "
+
     /changepassword:
       type:
         postJSONWithOkWithoutJSId:
@@ -385,7 +535,7 @@ traits:
           description10: " "
           schema: !include api/schemas/security/security-configuration-schema.json
           example: !include api/examples/security/changepassword-example.json
-    /forcepasswordchange:      
+    /forcepasswordchange:
       type:
         postJSONWithOkWithoutJSId:
           description: Forces the user to change the password with the next login
@@ -401,7 +551,7 @@ traits:
           description10: " "
           schema: !include api/schemas/security/security-configuration-schema.json
           example: !include api/examples/security/forcepasswordchange-example.json
-    /resetpassword:      
+    /resetpassword:
       type:
         postJSONWithOkWithoutJSId:
           description: Change the password to the initial password for an account
@@ -434,7 +584,7 @@ traits:
           description9: !include api/documentation/audit/auditLog.md
           description10: " "
           schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "   
+          example: " "
     /account/rename:
       type:
         postJSONWithOkWithoutJSId:
@@ -450,7 +600,7 @@ traits:
           description9: !include api/documentation/audit/auditLog.md
           description10: " "
           schema: !include api/schemas/security/accountRename-schema.json
-          example: " "   
+          example: " "
     /roles/delete:
       type:
         postJSONWithOkWithoutJSId:
@@ -466,7 +616,7 @@ traits:
           description9: !include api/documentation/audit/auditLog.md
           description10: " "
           schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "   
+          example: " "
     /role/rename:
       type:
         postJSONWithOkWithoutJSId:
@@ -482,7 +632,7 @@ traits:
           description9: !include api/documentation/audit/auditLog.md
           description10: " "
           schema: !include api/schemas/security/roleRename-schema.json
-          example: " "   
+          example: " "
 
 /calendar/dates:
   type:
@@ -503,7 +653,7 @@ traits:
       example: !include api/examples/calendar/calendarDates-example.json
       schema200: !include api/schemas/calendar/dates-schema.json
       example200: TODO
-                    
+
 /calendars:
   type:
     postJSONWithoutJSId:
@@ -523,7 +673,7 @@ traits:
       schema200: !include api/schemas/calendar/calendars-schema.json
       example: " "
       example200: " "
-      
+
 #  /used:
 #    type:
 #      postJSON:
@@ -568,13 +718,13 @@ traits:
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
-  
+
   /cluster/appoint_nodes:
     type:
       postWithOkResponse:
         description: |
           Re-establish Controller Cluster roles and assign cluster-watching Agent<h5>
-          * Primary and secondary Controller instances are assigned the active and standby roles. 
+          * Primary and secondary Controller instances are assigned the active and standby roles.
           * In addition an Agent is assigned the cluster-watching role. This information is persistent when registering a Controller.
           * The resource can be used to re-establish the roles in a cluster, e.g. in case that Controller journals are renewed.
           </h5>
@@ -611,7 +761,7 @@ traits:
       postURLWithPlainResponse:
         description: Provides Controller log (controller.log) for download in gzip format
         description200: Snapshot of current controller.log for download in gzip format
-  
+
   /p:
     type:
       postStateResponse:
@@ -620,9 +770,9 @@ traits:
         description200: !include api/documentation/controller/jobscheduler_p.md
         schema200: !include api/schemas/controller/jobscheduler200_v-schema.json
         example200: " "
-  
+
   /register:
-    type: 
+    type:
       registerControllerWithOkResponse:
         description: |
           Registers a Controller<h5>
@@ -638,7 +788,7 @@ traits:
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         failover: !include api/documentation/controller/failover.md
         audit: !include api/documentation/audit/auditLog.md
-  
+
   /terminate:
     type:
       postWithOkResponse:
@@ -646,7 +796,7 @@ traits:
         urlparam: !include api/documentation/controller/urlParamClusterRequired.md
         failover: !include api/documentation/controller/failover.md
         audit: !include api/documentation/audit/auditLog.md
-  
+
   /test:
     type:
       postJSONWithoutJSId:
@@ -671,7 +821,7 @@ traits:
             "controllerId": "scheduler",
             "url": "http://jobSchedulerHost:40444"
           }
-  
+
   /unregister:
     type:
       postWithOkResponse:
@@ -679,8 +829,8 @@ traits:
         urlparam: " "
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
-  
-  
+
+
 /controllers:
   type:
     postOnlyOptionalId:
@@ -695,10 +845,10 @@ traits:
         description200: !include api/documentation/controller/controller_p.md
         schema200: !include api/schemas/controller/masters-schema.json
         example200: !include api/examples/controller/controller_p-example.json
-          
+
 /daily_plan:
   description: This is not an API call. Use its children!!
-  
+
   /calendar/deploy:
     type:
       postOnlyAccessToken:
@@ -711,11 +861,11 @@ traits:
             "deliveryDate":"2021-12-05T21:13:35Z",
             "ok":true
           }
-      
+
   /order/variables:
     type:
       postJSON:
-        description: Reads the variables for a given order 
+        description: Reads the variables for a given order
         description1: !include api/documentation/order/orderIdRequired.md
         description2: " "
         description3: " "
@@ -732,7 +882,7 @@ traits:
         example: " "
         example200: " "
   /orders:
-    type: 
+    type:
       postJSON:
         description: Gets orders from the daily plan
         description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
@@ -750,11 +900,11 @@ traits:
         schema200: !include api/schemas/orderManagement/dailyplan/plannedOrders-schema.json
         example: " "
         example200: " "
-        
+
     /generate:
       type:
         postJSONWithOkResponse:
-          description: Generates orders for a given daily plan 
+          description: Generates orders for a given daily plan
           description1: !include api/documentation/dailyplan/dailyPlanDate.md
           description2: !include api/documentation/dailyplan/generate/schedulePaths.md
           description3: !include api/documentation/dailyplan/generate/workflowPaths.md
@@ -766,7 +916,7 @@ traits:
           description10: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/dailyplan/generate/generate-request-schema.json
           example: " "
-           
+
     /submit:
       type:
         postJSONWithOkResponse:
@@ -786,7 +936,7 @@ traits:
     /delete:
       type:
         postJSONWithOkResponse:
-          description: Deletes planned orders for a given daily plan 
+          description: Deletes planned orders for a given daily plan
           description1: !include api/documentation/dailyplan/delete/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -802,15 +952,15 @@ traits:
     /modify:
       type:
         postJSON:
-          description: Modifies Orders for the daily plan 
+          description: Modifies Orders for the daily plan
           description1: !include api/documentation/dailyplan/modify/startTime.md
           description2: !include api/documentation/dailyplan/modify/cycle.md
           description3: !include api/documentation/dailyplan/modify/variables.md
           description4: !include api/documentation/dailyplan/modify/removeVariables.md
           description5: !include api/documentation/dailyplan/orders/orderIds.md
-          description6: 
-          description7: 
-          description9: 
+          description6:
+          description7:
+          description9:
           description10: !include api/documentation/audit/auditLog.md
           description200: |
             This API changes the OrderId. For ad hoc orders, a map in the form <br/>  ``"oldOrderId": "newOrderId"``<br/>is returned.
@@ -821,11 +971,11 @@ traits:
       post:
         responses:
           419:
-        
+
     /summary:
       type:
         postJSON:
-          description: Gets summary order counts for the daily plan 
+          description: Gets summary order counts for the daily plan
           description1: !include api/documentation/dailyplan/summary/dailyPlanOrdersFilterDef.md
           description2: !include api/documentation/dailyplan/dailyPlanDate.md
           description3: !include api/documentation/dailyplan/orders/schedules.md
@@ -835,13 +985,13 @@ traits:
           description7: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
           description8: !include api/documentation/dailyplan/orders/controllerIds.md
           description9: !include api/documentation/dailyplan/orders/orderIds.md
-          description10: 
+          description10:
           description200: " "
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
           schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanOrderSummary-schema.json
           example: " "
           example200: " "
-        
+
   /history:
     type:
       postJSONWithOptionalJSId:
@@ -858,14 +1008,14 @@ traits:
         description10: " "
         description200: " "
         schema: !include api/schemas/dailyplan/history/main-request-schema.json
-        schema200: !include api/schemas/dailyplan/history/main-response-schema.json 
+        schema200: !include api/schemas/dailyplan/history/main-response-schema.json
         example: " "
         example200: " "
 
     /submissions:
       type:
         postJSON:
-          description: Gets daily plan date submission times history 
+          description: Gets daily plan date submission times history
           description1: !include api/documentation/dailyplan/history/date.md
           description2: !include api/documentation/dailyplan/history/submitted.md
           description3: !include api/documentation/common/limit.md
@@ -875,17 +1025,17 @@ traits:
           description7: " "
           description8: " "
           description9: " "
-          description10: 
+          description10:
           description200: " "
           schema: !include api/schemas/dailyplan/history/submissions-request-schema.json
           schema200: !include api/schemas/dailyplan/history/submissions-response-schema.json
           example: " "
           example200: " "
-      
+
       /orders:
         type:
           postJSON:
-            description: Gets daily plan submission time orders history 
+            description: Gets daily plan submission time orders history
             description1: !include api/documentation/dailyplan/history/date.md
             description2: !include api/documentation/dailyplan/history/submissionTime.md
             description3: !include api/documentation/dailyplan/history/submitted.md
@@ -895,17 +1045,17 @@ traits:
             description7: " "
             description8: " "
             description9: " "
-            description10: 
+            description10:
             description200: " "
             schema: !include api/schemas/dailyplan/history/submissions-orders-request-schema.json
             schema200: !include api/schemas/dailyplan/history/submissions-orders-response-schema.json
             example: " "
             example200: " "
-                    
+
   /submissions:
     type:
       postJSON:
-        description: Gets daily plan submissions 
+        description: Gets daily plan submissions
         description1: !include api/documentation/dailyplan/submissions/submissionsFilter.md
         description2: !include api/documentation/dailyplan/submissions/dateFrom.md
         description3: !include api/documentation/dailyplan/submissions/dateTo.md
@@ -918,20 +1068,20 @@ traits:
         description10: " "
         description200: " "
         schema: !include api/schemas/dailyplan/submissions/submissions-request-schema.json
-        schema200: !include api/schemas/dailyplan/submissions/submissions-response-schema.json 
+        schema200: !include api/schemas/dailyplan/submissions/submissions-response-schema.json
         example: " "
         example200: " "
-                
+
     /delete:
       type:
         postJSON:
-          description: Deletes daily plan submissions 
+          description: Deletes daily plan submissions
           description1: !include api/documentation/dailyplan/submissions/submissionsDeleteFilter.md
           description2: !include api/documentation/dailyplan/submissions/deleteDateFor.md
           description3: !include api/documentation/dailyplan/submissions/dateFrom.md
           description4: !include api/documentation/dailyplan/submissions/deleteDateTo.md
           description5: " "
-          description6: " " 
+          description6: " "
           description7: " "
           description8: " "
           description9: " "
@@ -941,10 +1091,10 @@ traits:
           schema200: ok
           example: " "
           example200: " "
-               
+
 /documentation:
   description: This is not an API call. Use its children!!
-  
+
   /edit:
     type:
       postJSONWithOkWithoutJSId:
@@ -1023,7 +1173,7 @@ traits:
     /info:
       type:
         postJSONWithoutJSId:
-          description: Gets temporary filename for export 
+          description: Gets temporary filename for export
           description1: !include api/documentation/docu/filteredByPaths.md
           description2: !include api/documentation/common/folders.md
           description3: " "
@@ -1065,7 +1215,7 @@ traits:
 
 /iam:
   description: This is not an API call. Use its children!!
-    
+
   /identityservices:
     type:
       postJSONWithoutJSId:
@@ -1143,7 +1293,7 @@ traits:
 
 /inventory:
   description: This is not an API call. Use its children!!
-  
+
   /{objectType}/validate:
     type: error
     post:
@@ -1161,7 +1311,7 @@ traits:
         440:
           body:
             application/json:
-            
+
   /calendar/dates:
     type:
       postJSONWithoutJSId:
@@ -1181,7 +1331,7 @@ traits:
         example: !include api/examples/calendar/calendarDates-example.json
         schema200: !include api/schemas/calendar/dates-schema.json
         example200: TODO
-        
+
   /copy:
     type:
       postJSONWithoutJSId:
@@ -1201,7 +1351,7 @@ traits:
         example: !include api/examples/inventory/rename-example.json
         schema200: !include api/schemas/inventory/common/response-newPath-schema.json
         example200: " "
-  
+
   /delete_draft:
     type:
       postJSONWithoutJSId:
@@ -1221,7 +1371,7 @@ traits:
         example: !include api/examples/inventory/pathsTypes-example.json
         schema200: !include api/schemas/inventory/delete/response-item-schema.json
         example200: !include api/examples/inventory/deleteDraft-response-example.json
-        
+
   /delete_draft/folder:
     type:
       postJSONWithoutJSId:
@@ -1241,7 +1391,7 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/delete/response-item-schema.json
         example200: !include api/examples/inventory/deleteDraft-response-example.json
-  
+
   /deployable:
     type:
       postJSONWithoutJSId:
@@ -1261,7 +1411,7 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/deploy/response-deployable-schema.json
         example200: TODO
-        
+
   /deployables:
     type:
       postJSONWithoutJSId:
@@ -1281,14 +1431,14 @@ traits:
         example: !include api/examples/inventory/deployables-request-example.json
         schema200: !include api/schemas/inventory/deploy/response-deployables-schema.json
         example200: !include api/examples/inventory/deployables-response-example.json
-  
+
   /deployment:
     description: This is not an API call. Use child urls instead!
 
     /deploy:
       type:
         postJSONWithOkWithoutJSId:
-          description: Signs and deploys objects 
+          description: Signs and deploys objects
           description1: !include api/documentation/publish/deployFilter.md
           description2: " "
           description3: " "
@@ -1318,7 +1468,7 @@ traits:
     /revoke:
       type:
         postJSONWithOkWithoutJSId:
-          description: Revokes deployed objects from specified controllers only. 
+          description: Revokes deployed objects from specified controllers only.
           description1: !include api/documentation/publish/revokeFilter.md
           description2: " "
           description3: " "
@@ -1340,7 +1490,7 @@ traits:
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/publish/redeployFilter-schema.json
           example: !include api/examples/publish/redeployFilter-example.json
-          
+
     /synchronize:
       type:
         postJSONWithOkWithoutJSId:
@@ -1366,7 +1516,7 @@ traits:
   /import:
     type:
       postForUploadUnsigned:
-        description: Uploads archive file (zip, tar.gz) with unsigned JSON files of deployable and releasable objects  
+        description: Uploads archive file (zip, tar.gz) with unsigned JSON files of deployable and releasable objects
         schema: !include api/schemas/publish/importFilter-schema.json
         example: !include api/examples/publish/publishImport-example.json
 
@@ -1389,7 +1539,7 @@ traits:
         example: !include api/examples/inventory/pathFilter-example.json
         schema200: !include api/schemas/inventory/path/pathResponse-schema.json
         example200: !include api/examples/inventory/pathResponse-example.json
-  
+
   /read/configuration:
     type:
       postJSONWithoutJSId:
@@ -1409,7 +1559,7 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/configurationObject-schema.json
         example200: TODO
-  
+
   /read/folder:
     type:
       postJSONWithoutJSId:
@@ -1429,7 +1579,7 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/common/response-folder-schema.json
         example200: TODO
-              
+
   /release:
     type:
       postJSONWithOkWithoutJSId:
@@ -1445,7 +1595,7 @@ traits:
     post:
       responses:
         419:
-  
+
   /releasable:
     type:
       postJSONWithoutJSId:
@@ -1465,7 +1615,7 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/release/response-releasable-schema.json
         example200: TODO
-        
+
   /releasables:
     type:
       postJSONWithoutJSId:
@@ -1485,7 +1635,7 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/release/response-releasables-schema.json
         example200: TODO
-        
+
   /remove:
     type:
       postJSONWithOkWithoutJSId:
@@ -1498,7 +1648,7 @@ traits:
         audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/common/request-filters-schema.json
         example: !include api/examples/inventory/pathsTypes-example.json
-  
+
   /remove/folder:
     type:
       postJSONWithOkWithoutJSId:
@@ -1511,7 +1661,7 @@ traits:
         audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/common/request-folder-schema.json
         example: TODO
-  
+
   /rename:
     type:
       postJSONWithoutJSId:
@@ -1531,7 +1681,7 @@ traits:
         example: !include api/examples/inventory/rename-example.json
         schema200: !include api/schemas/inventory/common/response-newPath-schema.json
         example200: " "
-        
+
   /replace:
     type:
       postJSONWithOkWithoutJSId:
@@ -1544,7 +1694,7 @@ traits:
         audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/replace/request-filters-schema.json
         example: !include api/examples/inventory/replaces-example.json
-        
+
   /replace/folder:
     type:
       postJSONWithOkWithoutJSId:
@@ -1557,7 +1707,7 @@ traits:
         audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/inventory/replace/request-folder-schema.json
         example: !include api/examples/inventory/replace-example.json
-        
+
   /repository:
     description: This is not an API call. Use child urls instead!
 
@@ -1575,7 +1725,7 @@ traits:
           example: !include api/examples/publish/repository/readFromFilter_recursive_true-example.json
           schema200: !include api/schemas/publish/repository/response-folder-schema.json
           example200: !include api/examples/publish/repository/responseFolder_recursive_true-example.json
-        
+
     /store:
       type:
         postJSONWithOkWithoutJSId:
@@ -1588,7 +1738,7 @@ traits:
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/publish/repository/copyToRepositoryFilter-schema.json
           example: !include api/examples/publish/repository/copyToFilter_files-example.json
-        
+
     /delete:
       type:
         postJSONWithOkWithoutJSId:
@@ -1601,7 +1751,7 @@ traits:
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/publish/repository/deleteFromRepositoryFilter-schema.json
           example: !include api/examples/publish/repository/deleteFromFilter_files-example.json
-        
+
     /update:
       type:
         postJSONWithOkWithoutJSId:
@@ -1614,7 +1764,7 @@ traits:
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/publish/repository/updateFromRepositoryFilter-schema.json
           example: !include api/examples/publish/repository/updateFromFilter_files-example.json
-        
+
   /statistics:
     type:
       postOnlyId:
@@ -1650,36 +1800,36 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/configurationObject-schema.json
         example200: !include api/examples/inventory/store-response-example.json
-  
+
   /trash:
     description: This is not an API call. Use its children!!
-    
+
     /delete:
       type:
         postJSONWithOkWithoutJSId:
           description: Deletes discarded inventory objects
           description1: !include api/documentation/inventory/idsOrPathsAndTypes.md
           description2: " "
-          description3: " " 
+          description3: " "
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/inventory/common/request-filters-schema.json
           example: !include api/examples/inventory/pathsTypes-example.json
-    
+
     /delete/folder:
       type:
         postJSONWithOkWithoutJSId:
           description: Deletes folder of discarded inventory objects
           description1: !include api/documentation/inventory/path.md
           description2: " "
-          description3: " " 
+          description3: " "
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/inventory/common/request-folder-schema.json
           example: TODO
-    
+
     /read/configuration:
       type:
         postJSONWithoutJSId:
@@ -1699,7 +1849,7 @@ traits:
           example: TODO
           schema200: !include api/schemas/inventory/configurationObject-schema.json
           example200: TODO
-  
+
     /read/folder:
       type:
         postJSONWithoutJSId:
@@ -1719,14 +1869,14 @@ traits:
           example: TODO
           schema200: !include api/schemas/inventory/common/response-folder-schema.json
           example200: TODO
-          
+
     /restore:
       type:
         postJSONWithoutJSId:
           description: Restore a discarded inventory object
           description1: !include api/documentation/inventory/idOrPathAndType.md
           description2: !include api/documentation/inventory/newRestorePath.md
-          description3: " " 
+          description3: " "
           description4: !include api/documentation/inventory/suffixPrefix4restore.md
           description5: " "
           description6: " "
@@ -1739,7 +1889,7 @@ traits:
           example: !include api/examples/inventory/pathType-example.json
           schema200: !include api/schemas/inventory/common/response-newPath-schema.json
           example200: " "
-  
+
   /validate/path:
     type:
       postJSONWithOkWithoutJSId:
@@ -1752,7 +1902,7 @@ traits:
         audit: " "
         schema: !include api/schemas/inventory/rename/request-filter-schema.json
         example: !include api/examples/inventory/pathType-example.json
-        
+
   /validate/predicate:
     type: error
     post:
@@ -1770,7 +1920,7 @@ traits:
         440:
           body:
             application/json:
-            
+
   /wizard/jobs:
     type: error
     post:
@@ -1788,14 +1938,14 @@ traits:
         440:
           body:
             application/json:
-            
+
   /wizard/job:
     type:
       postJSONWithoutJSId:
         description: Gets JITL job with its parameters
         description1: !include api/documentation/docu/assignRefRequired.md
         description2: " "
-        description3: " " 
+        description3: " "
         description4: " "
         description5: " "
         description6: " "
@@ -1811,8 +1961,8 @@ traits:
           }
         schema200: !include api/schemas/wizard/wizard-job-schema.json
         example200: !include api/examples/inventory/jitljob-example.json
-  
-         
+
+
 /jobs/overview/summary:
   type:
     postJSONWithOptionalJSId:
@@ -1842,7 +1992,7 @@ traits:
             "dateFrom": "1d"
           }
       example200: !include api/examples/job/summary-example.json
-        
+
 /joc:
   description: This is not an API call. Use its children!!
   /cluster:
@@ -1863,7 +2013,7 @@ traits:
     /restart:
       type:
         postJSONWithOkWithoutJSId:
-          description: Restarts JOC services such as cluster, history, dailyplan, cleanup 
+          description: Restarts JOC services such as cluster, history, dailyplan, cleanup
           description1: !include api/documentation/cluster/restart.md
           description2: " "
           description3: " "
@@ -1875,7 +2025,7 @@ traits:
     /switch_member:
       type:
         postJSONWithOkWithoutJSId:
-          description: Switches to an inactive JOC cluster member 
+          description: Switches to an inactive JOC cluster member
           description1: !include api/documentation/cluster/switch.md
           description2: " "
           description3: " "
@@ -1884,7 +2034,7 @@ traits:
           audit: " "
           schema: !include api/schemas/cluster/switch-schema.json
           example: " "
-  
+
   /is_active:
     get:
     type:
@@ -1915,12 +2065,12 @@ traits:
           body:
             application/json:
               schema: !include api/schemas/joc/filenames-schema.json
-  
+
   /properties:
     type:
       postOnlyAccessToken:
         description: |
-          Response contains some settings such as<h5> 
+          Response contains some settings such as<h5>
           * pre-defined audit log comments
           * flag to force audit log comments
           * show/hide views
@@ -1967,7 +2117,7 @@ traits:
       schema: !include api/schemas/lock/locksFilter-schema.json
       schema200: !include api/schemas/lock/locks-schema.json
       example: TODO
-      example200: !include api/examples/lock/locks.json      
+      example200: !include api/examples/lock/locks.json
 
 /monitoring:
   /notifications:
@@ -2032,7 +2182,7 @@ traits:
         schema200: !include api/schemas/board/boards-schema.json
         example: !include api/examples/noticeBoard/boards-request-example.json
         example200: !include api/examples/noticeBoard/boards-response-example.json
-        
+
   /delete:
     type:
       postJSONWithOkResponse:
@@ -2065,7 +2215,7 @@ traits:
         description10: " "
         schema: !include api/schemas/board/modifyNotice-schema.json
         example: " "
-        
+
 /order:
   type:
     postJSON:
@@ -2184,7 +2334,7 @@ traits:
         schema200: !include api/schemas/order/ordersPositions-schema.json
         example: !include api/examples/order/request-variables-example.json
         example200: !include api/examples/order/response-variables-example.json
-       
+
 /orders:
   type:
     postJSON:
@@ -2211,7 +2361,7 @@ traits:
   /cancel:
     type:
       modifyOrder:
-        description: Cancel orders 
+        description: Cancel orders
         dateToParam: !include api/documentation/calendar/dateTo.md
         timeZoneParam: !include api/documentation/orderManagement/timeZone.md
         signalParam: !include api/documentation/order/kill.md
@@ -2221,7 +2371,7 @@ traits:
   /confirm:
     type:
       modifyOrder:
-        description: Confirm prompting orders  
+        description: Confirm prompting orders
         dateToParam: " "
         timeZoneParam: " "
         signalParam: " "
@@ -2231,7 +2381,7 @@ traits:
   /daily_plan/cancel:
     type:
       postJSON:
-        description: Cancels orders 
+        description: Cancels orders
         description1: !include api/documentation/order/cancelOrderIds.md
         description2: !include api/documentation/order/dailyPlanDate.md
         description3: " "
@@ -2242,11 +2392,11 @@ traits:
         description8: " "
         description9: " "
         description10: !include api/documentation/audit/auditLog.md
-        description200:  
+        description200:
         schema: !include api/schemas/order/cancelDailyPlanOrders-schema.json
         schema200: !include api/schemas/common/ok-schema.json
-        example: 
-        example200: 
+        example:
+        example200:
 
   /history:
     type:
@@ -2381,7 +2531,7 @@ traits:
         positionParam: " "
         variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
-        
+
 /profile:
   description: This is not an API call. Use child urls instead!
 
@@ -2395,7 +2545,7 @@ traits:
         schema200: !include api/schemas/sign/jocKeyPair-schema.json
         example: !include api/examples/publish/emptyBody-example.json
         example200: !include api/examples/publish/showKey-example.json
-    
+
     /generate:
       type:
         postForGenerateKey:
@@ -2408,7 +2558,7 @@ traits:
           example200: !include api/examples/publish/showKey-example.json
           schema: !include api/schemas/publish/generateCaFilter-schema.json
           example: !include api/examples/publish/generateRootCa-example.json
-  
+
     /import:
       type:
         postForUploadSignedRootCa:
@@ -2452,7 +2602,7 @@ traits:
           schema200: !include api/schemas/sign/jocKeyPair-schema.json
           example: !include api/examples/publish/emptyBody-example.json
           example200: !include api/examples/publish/showKey-example.json
-          
+
       /import:
         type:
           postForUploadSignedRootCa:
@@ -2487,7 +2637,7 @@ traits:
           example200: !include api/examples/publish/showKey-example.json
           schema: !include api/schemas/publish/generateKey-schema.json
           example: !include api/examples/publish/generateKey-example.json
-  
+
     /import:
       type:
         postForUploadSigned:
@@ -2532,7 +2682,7 @@ traits:
 /schedules:
     type:
       postJSON:
-        description: Lists schedules for a given controller 
+        description: Lists schedules for a given controller
         description1: !include api/documentation/dailyplan/schedules/dailyPlanSchedulesSelectorDef.md
         description2: !include api/documentation/dailyplan/schedules/folders.md
         description3: !include api/documentation/dailyplan/schedules/schedules.md
@@ -2548,7 +2698,7 @@ traits:
         schema200: !include api/schemas/orderManagement/orders/schedulesList-schema.json
         example: " "
         example200: " "
-        
+
 /task/log:
   type:
     postLog:
@@ -2650,14 +2800,14 @@ traits:
       postJSONWithoutJSId:
         description: To convert a relative date like +1d to a date yyyy-mm-dd
         description1: !include api/documentation/dailyplan/relativeDates.md
-        description2:  
-        description3:  
-        description4: 
-        description5: 
-        description6: 
-        description7: 
-        description9: 
-        description10: 
+        description2:
+        description3:
+        description4:
+        description5:
+        description6:
+        description7:
+        description9:
+        description10:
         description200: " "
         schema: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
         schema200: !include api/schemas/orderManagement/dailyplan/relativeDatesConverter-schema.json
@@ -2669,14 +2819,14 @@ traits:
       postJSONWithoutJSId:
         description: To expand a list of orderIds to a list with the expanded cyclic orderIds
         description1: !include api/documentation/dailyplan/cyclicOrders.md
-        description2:  
-        description3:  
-        description4: 
-        description5: 
-        description6: 
-        description7: 
-        description9: 
-        description10: 
+        description2:
+        description3:
+        description4:
+        description5:
+        description6:
+        description7:
+        description9:
+        description10:
         description200: " "
         schema: !include api/schemas/order/ordersFilterV-schema.json
         schema200: !include api/schemas/order/orderIds-schema.json
@@ -2716,7 +2866,7 @@ traits:
       schema200: !include api/schemas/workflow/workflow-schema.json
       example: !include api/examples/workflow/workflowFilter-example.json
       example200: !include api/examples/workflow/workflow_v-example.json
-      
+
   /dependencies:
     type:
       postJSON:
@@ -2775,11 +2925,11 @@ traits:
         schema200: !include api/schemas/workflow/workflowsOrderCount-schema.json
         example: !include api/examples/workflow/orderCount-example.json
         example200: !include api/examples/workflow/orderCount-response-example.json
-      
+
 
 /yade:
   description: This is not an API call. Use its children!!
-   
+
   /overview/summary:
     type:
       postJSONWithOptionalJSId:
@@ -2854,7 +3004,7 @@ traits:
 #          audit: !include api/documentation/audit/auditLog.md
 #          schema: !include api/schemas/yade/modifyTransfers-schema.json
 #          example: " "
-#  
+#
   /files:
     type:
       postJSONWithoutJSId:
@@ -2911,7 +3061,7 @@ traits:
 #        description10: " "
 #        description200: " "
 #        schema: !include api/schemas/yade/modifyTransfer-schema.json
-#        schema200: !include api/schemas/order/order200_v-schema.json  
+#        schema200: !include api/schemas/order/order200_v-schema.json
 #        example: " "
 #        example200: " "
 #

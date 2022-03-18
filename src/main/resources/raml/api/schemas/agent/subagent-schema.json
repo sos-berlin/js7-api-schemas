@@ -21,6 +21,10 @@
     "isDirector": {
     	"$ref": "subagentDirectorType-schema.json"
     },
+    "disabled": {
+    	"type": "boolean",
+    	"default": false
+    },
     "isClusterWatcher": {
     	"type": "boolean",
     	"default": false

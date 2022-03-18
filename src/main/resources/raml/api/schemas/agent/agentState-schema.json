@@ -15,5 +15,6 @@
     "_text": {
       "$ref": "agentStateText-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

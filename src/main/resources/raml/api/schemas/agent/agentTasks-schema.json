@@ -35,7 +35,8 @@
     			"subagentId": {
     				"type": "string"
     			}
-    		}
+    		},
+  			"additionalProperties": false
     	}
     },
     "runningTasks": {

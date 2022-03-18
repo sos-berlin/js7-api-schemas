@@ -8,5 +8,5 @@
     			<li>PRIMARY_DIRECTOR</li>
     			<li>SECONDARY_DIRECTOR</li>
     		</ul></td><td></td><td></td></tr>
-    <tr><td style="padding-left:20px;">``position``</td><td>required, integer</td><td>It indicates the ordering in a passive cluster. The higher the position the lower the priority</td><td></td><td></td></tr>
+    <tr><td style="padding-left:20px;">``position``</td><td>optional, integer</td><td></td><td></td><td></td></tr>
     

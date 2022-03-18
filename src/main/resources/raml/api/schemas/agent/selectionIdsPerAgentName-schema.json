@@ -1,0 +1,12 @@
+{
+  "title": "selection ids per agent name",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "javaType": "com.sos.joc.model.agent.SelectionIdsPerAgentName",
+  "additionalProperties": {
+    "type": "array",
+    	"items": {
+    		"type": "string"
+    	}
+  	}
+}

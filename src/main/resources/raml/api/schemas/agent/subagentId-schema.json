@@ -1,0 +1,21 @@
+{
+  "title": "subagentId",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.SubAgentId",
+  "type": "object",
+  "required": [
+  	"subagentId",
+  	"priority"
+  ],
+  "properties": {
+    "subagentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "priority": {
+    	"type": "integer",
+    	"minimum": 0,
+    	"maximum": 1024
+    }
+  },
+  "additionalProperties": false
+}

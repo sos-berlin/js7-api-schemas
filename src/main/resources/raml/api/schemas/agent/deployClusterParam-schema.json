@@ -4,33 +4,26 @@
   "javaType": "com.sos.joc.model.agent.DeployClusterAgents",
   "type": "object",
   "required": [
-  	"controllerId",
-  	"clusterAgents"
+  	"controllerId"
   ],
   "properties": {
     "controllerId": {
     	"$ref": "../common/controllerIdRequired-schema.json"
     },
-    "clusterAgents": {
+    "clusterAgentIds": {
     	"type": "array",
     	"minItems": 1,
     	"uniqueItems": true,
     	"items": {
-    		"type": "object",
-    		"javaType": "com.sos.joc.model.agent.DeployClusterAgent",
-    		"required": [
-    			"agentId",
-    			"schedulingType"
-    		],
-    		"properties": {
-    			"agentId": {
-    				"$ref": "../common/string255required-schema.json"
-    			},
-    			"schedulingType": {
-      				"$ref": "agentClusterSchedulingType-schema.json"
-    			}
-    		},
-    		"additionalProperties": false
+    		"$ref": "../common/string255required-schema.json"
+    	}
+    },
+    "subagentClusterIds": {
+    	"type": "array",
+    	"minItems": 1,
+    	"uniqueItems": true,
+    	"items": {
+    		"$ref": "../common/string255required-schema.json"
     	}
     },
     "auditLog": {

@@ -1,0 +1,19 @@
+{
+  "title": "selection ids per agent name",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.SelectionIdsPerAgentNames",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "agentNames": {
+    	"type": "object",
+    	"javaType": "com.sos.joc.model.agent.SelectionIdsPerAgentName",
+    	"additionalProperties": {
+    		"$ref": "selectionIdsPerAgentName-schema.json"
+    	}
+    }
+  },
+  "additionalProperties": false
+}
