@@ -141,6 +141,28 @@ traits:
       example200: !include api/examples/agent/agents_v-example.json
   
   /cluster:
+    type:
+      postJSONWithOptionalJSId:
+        description: Gets Subagent Clusters
+        description1: !include api/documentation/agent/agentIds.md
+        description2: !include api/documentation/agent/subagentClusterIds.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description11: " "
+        description12: " "
+        description13: " "
+        description200: !include api/documentation/agent/subagentClusters_p.md
+        schema: !include api/schemas/agent/readSubagentClusters-schema.json
+        schema200: !include api/schemas/agent/subagentClusters-schema.json
+        example: " "
+        example200: " "
+    
     /deploy:
       type:
         postJSONWithOkResponse:

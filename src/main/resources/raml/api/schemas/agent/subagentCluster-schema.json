@@ -9,6 +9,9 @@
   	"subagentIds"
   ],
   "properties": {
+    "controllerId": {
+    	"$ref": "../common/controllerId-schema.json"
+    },
     "agentId": {
     	"$ref": "../common/string255required-schema.json"
     },
@@ -17,6 +20,13 @@
     },
     "title": {
     	"$ref": "../common/string255-schema.json"
+    },
+    "deployed": {
+    	"type": "boolean",
+    	"default": false
+    },
+    "syncState": {
+    	"$ref": "../../../controller/schemas/common/syncState-schema.json"
     },
     "subagentIds": {
     	"type": "array",

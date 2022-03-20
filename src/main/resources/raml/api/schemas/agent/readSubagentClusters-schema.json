@@ -1,0 +1,24 @@
+{
+  "title": "read subagent clusters",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.ReadSubagentClusters",
+  "type": "object",
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerId-schema.json"
+    },
+    "agentIds": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../common/string255required-schema.json"
+    	}
+    },
+    "subagentClusterIds": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../common/string255required-schema.json"
+    	}
+    }
+  },
+  "additionalProperties": false
+}
