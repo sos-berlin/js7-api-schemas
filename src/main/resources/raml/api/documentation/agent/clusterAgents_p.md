@@ -8,5 +8,6 @@ Contains collection of Cluster Agents where each Agent following fields
 	* url
 	* title (optional)
 	* deployed
+	* disabled
 	* isDirector (NO_DIRECTOR, PRIMARY_DIRECTOR, SECONDARY_DIRECTOR)
 	* isClusterWatcher
