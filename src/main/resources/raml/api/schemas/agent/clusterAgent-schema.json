@@ -1,7 +1,7 @@
 {
   "title": "cluster agent",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.agent.InventoryClusterAgent",
+  "javaType": "com.sos.joc.model.agent.ClusterAgent",
   "type": "object",
   "extends" : {
   	"$ref": "singleAgent-schema.json"

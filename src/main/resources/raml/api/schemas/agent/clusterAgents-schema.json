@@ -1,7 +1,7 @@
 {
   "title": "cluster agents",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.agent.InventoryClusterAgents",
+  "javaType": "com.sos.joc.model.agent.ClusterAgents",
   "type": "object",
   "required": [
   	"deliveryDate"
@@ -13,7 +13,7 @@
     "agents": {
     	"type": "array",
     	"items": {
-    		"$ref": "inventoryClusterAgent-schema.json"
+    		"$ref": "clusterAgent-schema.json"
     	}
     }
   },

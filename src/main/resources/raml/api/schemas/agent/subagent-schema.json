@@ -21,7 +21,17 @@
     "isDirector": {
     	"$ref": "subagentDirectorType-schema.json"
     },
+    "title": {
+    	"$ref": "../common/string255-schema.json"
+    },
+    "syncState": {
+    	"$ref": "../../../controller/schemas/common/syncState-schema.json"
+    },
     "disabled": {
+    	"type": "boolean",
+    	"default": false
+    },
+    "deployed": {
     	"type": "boolean",
     	"default": false
     },

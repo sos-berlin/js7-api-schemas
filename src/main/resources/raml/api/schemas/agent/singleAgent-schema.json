@@ -32,7 +32,14 @@
     	"type": "boolean",
     	"default": false
     },
+    "title": {
+    	"$ref": "../common/string255-schema.json"
+    },
     "disabled": {
+    	"type": "boolean",
+    	"default": false
+    },
+    "deployed": {
     	"type": "boolean",
     	"default": false
     }

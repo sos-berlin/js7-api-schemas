@@ -4,13 +4,9 @@
   "javaType": "com.sos.joc.model.agent.StoreSubagentClusters",
   "type": "object",
   "required": [
-  	"controllerId",
   	"subagentClusters"
   ],
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerIdRequired-schema.json"
-    },
     "subagentClusters": {
     	"type": "array",
     	"minItems": 1,

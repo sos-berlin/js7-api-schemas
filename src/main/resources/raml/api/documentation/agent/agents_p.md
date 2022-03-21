@@ -4,4 +4,6 @@ Contains collection of Solo Agents where each Agent has following fields
 * agentName
 * agentNameAliases
 * url
+* title (optional)
+* deployed
 * isClusterWatcher
