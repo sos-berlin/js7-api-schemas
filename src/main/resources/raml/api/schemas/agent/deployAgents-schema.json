@@ -1,0 +1,26 @@
+{
+  "title": "deploy agents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.DeployAgents",
+  "type": "object",
+  "required": [
+  	"controllerId",
+  	"agentIds"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerIdRequired-schema.json"
+    },
+    "agentIds": {
+    	"type": "array",
+    	"minItems": 1,
+    	"items": {
+    		"$ref": "../common/string255required-schema.json"
+    	}
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

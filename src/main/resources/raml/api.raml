@@ -243,7 +243,7 @@ traits:
           description: Gets persistent Cluster Agent information
           description1: !include api/documentation/agent/agentIds.md
           description2: " "
-          description3: !include api/documentation/agent/onlyEnabledAgents.md
+          description3: " "
           description4: " "
           description5: " "
           description6: " "
@@ -380,6 +380,23 @@ traits:
             schema: !include api/schemas/agent/storeClusterParam-schema.json
             example: " "
 
+    /deploy:
+      type:
+        postJSONWithOkResponse:
+          description: Deploys Solo Agents to Controllers
+          description1: !include api/documentation/agent/agentIds.md
+          description2: !include api/documentation/audit/auditLog.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/agent/deployAgents-schema.json
+          example: " "
+          
     /reassign:
       type:
         postWithOkResponse:
@@ -390,7 +407,7 @@ traits:
     /store:
       type:
         postJSONWithOkResponse:
-          description: Stores Solo Agents persistently and assigns Solo Agents to Controllers
+          description: Stores Solo Agents
           description1: !include api/documentation/agent/agents.md
           description2: !include api/documentation/audit/auditLog.md
           description3: " "
