@@ -496,7 +496,7 @@ traits:
         description: Gets permissions for current account
         description200: " "
         example200: !include api/examples/user/permissions-example.json
-        schema200: !include api/schemas/security/permissions-schema.json
+        schema200: !include api/schemas/security/permissions/permissions-schema.json
 
   /login:
     type: login
@@ -519,159 +519,11 @@ traits:
         description9: " "
         description10: " "
         description200: " "
-        schema200: !include api/schemas/security/security-configuration-schema.json
+        schema200: !include api/schemas/security/securityConfiguration/security-configuration-schema.json
         example200: " "
-        schema: !include api/schemas/security/security-configuration-schema.json
+        schema: !include api/schemas/security/securityConfiguration/security-configuration-schema.json
         example: " "
 
-    /store (Accounts):
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Stores accounts, roles, permission to Identity Service
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/store/accounts/accounts.md
-          description3: !include api/documentation/security/store/accounts/account.md
-          description4: !include api/documentation/security/store/accounts/disabled.md
-          description5: !include api/documentation/security/store/accounts/forcepasswordchange.md
-          description6: !include api/documentation/security/store/accounts/password.md
-          description7: !include api/documentation/security/store/accounts/roles.md
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "
-
-    /store (Roles and Permissions):
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Stores accounts, roles, permission to Identity Service
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/store/roles/roles.md
-          description3: !include api/documentation/security/store/roles/folders.md
-          description4: !include api/documentation/security/store/roles/permissions.md
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "
-
-    /changepassword:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Changes the password for an account without forcepasswordchange
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/password/accounts.md
-          description3: !include api/documentation/security/password/account.md
-          description4: !include api/documentation/security/password/newPassword.md
-          description5: !include api/documentation/security/password/oldPassword.md
-          description6: !include api/documentation/security/password/repeatedPassword.md
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/security/security-configuration-schema.json
-          example: !include api/examples/security/changepassword-example.json
-    /forcepasswordchange:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Forces the user to change the password with the next login
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/password/accounts.md
-          description3: !include api/documentation/security/password/account.md
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/security/security-configuration-schema.json
-          example: !include api/examples/security/forcepasswordchange-example.json
-    /resetpassword:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Change the password to the initial password for an account
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/password/accounts.md
-          description3: !include api/documentation/security/password/account.md
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          description200: " "
-          schema: !include api/schemas/security/security-configuration-schema.json
-          example: !include api/examples/security/resetpassword-example.json
-
-    /accounts/delete:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Deletes a given array of accounts
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/accountdelete/accounts.md
-          description3: !include api/documentation/security/accountdelete/account.md
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "
-    /account/rename:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Renames a given account
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/accountrename/accountnewname.md
-          description3: !include api/documentation/security/accountrename/accountoldname.md
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/security/accountRename-schema.json
-          example: " "
-    /roles/delete:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Deletes a given array of roles
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/roledelete/roles.md
-          description3: !include api/documentation/security/roledelete/role.md
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/security/security-configuration-schema.json
-          example: " "
-    /role/rename:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Renames a given account
-          description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/rolerename/rolenewname.md
-          description3: !include api/documentation/security/rolerename/roleoldname.md
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
-          schema: !include api/schemas/security/roleRename-schema.json
-          example: " "
 
 /calendar/dates:
   type:
@@ -1254,6 +1106,146 @@ traits:
 
 /iam:
   description: This is not an API call. Use its children!!
+  /accounts:
+    type:
+      postJSONWithoutJSId:
+        description: Returns a collection of Accounts
+        description1: !include api/documentation/security/accounts/identityServiceName.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/security/accounts/accountListFilter-schema.json
+        schema200: !include api/schemas/security/accounts/accounts-schema.json
+        example: " "
+        example200: " "  
+    /forcepasswordchange:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Force accounts to set a new password during the next login
+          description1: !include api/documentation/security/accounts/identityServiceName.md
+          description2: !include api/documentation/security/accountforcepasswordchange/accounts.md
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          example: " "          
+    /resetpassword:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Set accounts to the initial password. 
+          description1: !include api/documentation/security/accounts/identityServiceName.md
+          description2: !include api/documentation/security/accountresetpassword/accounts.md
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          example: " "          
+    /enable:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Enables accounts
+          description1: !include api/documentation/security/accounts/identityServiceName.md
+          description2: !include api/documentation/security/accountenable/accounts.md
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          example: " "          
+    /disable:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Disable accounts
+          description1: !include api/documentation/security/accounts/identityServiceName.md
+          description2: !include api/documentation/security/accountdisable/accounts.md
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          example: " "          
+  
+        
+  /account:
+    type:
+      postJSONWithoutJSId:
+        description: returns an account
+        description1: !include api/documentation/security/identityService/identityServiceName.md
+        description2: !include api/documentation/security/account/accountName.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/security/accounts/accountFilter-schema.json
+        schema200: !include api/schemas/security/accounts/account-schema.json
+        example: " "
+        example200: " "        
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Stores an Account
+          description1: !include api/documentation/security/identityService/identityServiceName.md
+          description2: !include api/documentation/security/account/accountName.md
+          description3: !include api/documentation/security/account/disabled.md
+          description4: !include api/documentation/security/account/forcepasswordchange.md
+          description5: !include api/documentation/security/account/password.md
+          description6: !include api/documentation/security/account/roles.md
+          description7: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/accounts/account-schema.json
+          example: " "    
+                    
+    /rename:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Renames an Account   
+          description1: !include api/documentation/security/identityService/identityServiceName.md
+          description2: !include api/documentation/security/account/accountoldname.md
+          description3: !include api/documentation/security/account/accountnewname.md
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/accounts/accountRename-schema.json
+          example: " "    
+    /permission:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Returns the permissions for this account like they would be if login in with the given account name
+          description1: !include api/documentation/security/identityService/identityServiceName.md
+          description2: !include api/documentation/security/account/accountName.md
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/accounts/accountFilter-schema.json
+          example: " "                
+    /changepassword:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Changes the password for the given account
+          description1: !include api/documentation/security/identityService/identityServiceName.md
+          description2: !include api/documentation/security/account/accountName.md
+          description3: !include api/documentation/security/account/password.md
+          description3: !include api/documentation/security/account/repeatedPassword.md
+          description4: !include api/documentation/security/account/oldPassword.md
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/accounts/account-schema.json
+          example: " "  
 
   /identityservices:
     type:
@@ -1270,8 +1262,8 @@ traits:
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/security/identityServiceFilter-schema.json
-        schema200: !include api/schemas/security/identityServices-schema.json
+        schema: !include api/schemas/security/identityServices/identityServiceFilter-schema.json
+        schema200: !include api/schemas/security/identityServices/identityServices-schema.json
         example: " "
         example200: " "
   /identityservice:
@@ -1289,8 +1281,8 @@ traits:
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/security/identityServiceFilter-schema.json
-        schema200: !include api/schemas/security/identityService-schema.json
+        schema: !include api/schemas/security/identityServices/identityServiceFilter-schema.json
+        schema200: !include api/schemas/security/identityServices/identityService-schema.json
         example: " "
         example200: " "
     /store:
@@ -1303,7 +1295,7 @@ traits:
           description4: !include api/documentation/security/identityService/required.md
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/identityServiceFilter-schema.json
+          schema: !include api/schemas/security/identityServices/identityServiceFilter-schema.json
           example: " "
     /delete:
       type:
@@ -1315,7 +1307,7 @@ traits:
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/identityServiceFilter-schema.json
+          schema: !include api/schemas/security/identityServices/identityServiceFilter-schema.json
           example: " "
     /rename:
       type:
@@ -1327,7 +1319,7 @@ traits:
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/identityServiceRename-schema.json
+          schema: !include api/schemas/security/identityServices/identityServiceRename-schema.json
           example: " "
 
 /inventory:
