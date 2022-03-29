@@ -3,15 +3,38 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.agent.AgentNames",
   "type": "object",
+  "required":[
+  	"deliveryDate"
+  ],
   "properties": {
     "deliveryDate": {
       "$ref": "../common/timestamp-schema.json"
     },
     "agentNames": {
+    	"description": "Agent names of standalone Agents",
     	"type": "array",
     	"uniqueItems": true,
     	"items": {
     		"$ref": "../common/string255required-schema.json"
+    	}
+    },
+    "clusterAgentNames": {
+    	"description": "Agent names of Agent clusters",
+    	"type": "array",
+    	"uniqueItems": true,
+    	"items": {
+    		"$ref": "../common/string255required-schema.json"
+    	}
+    },
+    "subagentClusterIds": {
+    	"description": "Subagent Cluster IDs of Agent clusters",
+    	"type": "object",
+    	"javaType": "com.sos.joc.model.agent.SelectionIdsPerAgentName",
+    	"additionalProperties": {
+    		"type": "array",
+    		"items": {
+    			"$ref": "../common/string255required-schema.json"
+    		}
     	}
     }
   },

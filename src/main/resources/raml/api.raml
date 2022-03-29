@@ -180,6 +180,23 @@ traits:
           schema: !include api/schemas/agent/deployClusterParam-schema.json
           example: " "
 
+    /revoke:
+      type:
+        postJSONWithOkResponse:
+          description: Revokes deployed Subagent Clusters from Controller
+          description1: !include api/documentation/agent/subagentClustersDeploy.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: !include api/documentation/audit/auditLog.md
+          description10: " "
+          schema: !include api/schemas/agent/deployClusterParam-schema.json
+          example: " "
+
     /store:
       type:
         postJSONWithOkWithoutJSId:
@@ -260,22 +277,23 @@ traits:
           example: !include api/examples/controller/controllerParam-example.json
           example200: " "
 
-      /delete:
-        type:
-          postJSONWithOkResponse:
-            description: Deletes Cluster Agents at Controller
-            description1: !include api/documentation/agent/clusterAgentsDeploy.md
-            description2: " "
-            description3: " "
-            description4: " "
-            description5: " "
-            description6: " "
-            description7: " "
-            description8: " "
-            description9: !include api/documentation/audit/auditLog.md
-            description10: " "
-            schema: !include api/schemas/agent/deployClusterParam-schema.json
-            example: " "
+      # use agent/delete
+      #/delete:
+      #  type:
+      #    postJSONWithOkResponse:
+      #      description: Deletes Cluster Agents at Controller
+      #      description1: !include api/documentation/agent/clusterAgentsDeploy.md
+      #      description2: " "
+      #      description3: " "
+      #      description4: " "
+      #      description5: " "
+      #      description6: " "
+      #      description7: " "
+      #      description8: " "
+      #      description9: !include api/documentation/audit/auditLog.md
+      #      description10: " "
+      #      schema: !include api/schemas/agent/deployClusterParam-schema.json
+      #      example: " "
 
       /deploy:
         type:
@@ -383,7 +401,7 @@ traits:
     /deploy:
       type:
         postJSONWithOkResponse:
-          description: Deploys Solo Agents to Controllers
+          description: Deploys standalone Agents to Controllers
           description1: !include api/documentation/agent/agentIds.md
           description2: !include api/documentation/audit/auditLog.md
           description3: " "
@@ -407,7 +425,7 @@ traits:
     /store:
       type:
         postJSONWithOkResponse:
-          description: Stores Solo Agents
+          description: Stores standalone Agents
           description1: !include api/documentation/agent/agents.md
           description2: !include api/documentation/audit/auditLog.md
           description3: " "
