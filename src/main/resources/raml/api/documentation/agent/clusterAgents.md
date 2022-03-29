@@ -16,4 +16,5 @@
     			<li>SECONDARY_DIRECTOR</li>
     		</ul></td><td></td><td>NO_DIRECTOR</td></tr>
     	<tr><td style="padding-left:40px;">``ordering``</td><td>optional, integer</td><td></td><td></td><td></td></tr>
+    	<tr><td style="padding-left:40px;">``withGenerateSubagentCluster``</td><td>optional, boolean</td><td></td><td></td><td>false</td></tr>
     

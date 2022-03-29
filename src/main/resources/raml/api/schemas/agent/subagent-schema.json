@@ -39,6 +39,10 @@
     	"type": "boolean",
     	"default": false
     },
+    "withGenerateSubagentCluster": {
+    	"type": "boolean",
+    	"default": false
+    },
     "ordering": {
     	"alias": "position",
     	"type": "integer",
