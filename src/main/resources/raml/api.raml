@@ -2039,7 +2039,7 @@ traits:
     /git:
       description: This is not an API call. Use child urls instead!
       
-      /credentials
+      /credentials:
         type:
           postJSONWithoutJSId:
             description: delivers git credentials for a specific JOC account
@@ -2054,7 +2054,7 @@ traits:
             schema200: !include api/schemas/publish/git/gitCredentials-schema.json
             example200: !include api/examples/publish/git/gitCredentials-keyfile-example.json
 
-        /store
+        /store:
           type:
             postJSONWithOkWithoutJSId:
               description: delivers git credentials for a specific JOC account
