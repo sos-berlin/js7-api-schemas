@@ -21,6 +21,9 @@
 		"agentName": {
 			"$ref": "../../common/string100-schema.json"
 		},
+		"subagentClusterId": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"systemCrontab": {
 			"type": "boolean",
 			"default": false
