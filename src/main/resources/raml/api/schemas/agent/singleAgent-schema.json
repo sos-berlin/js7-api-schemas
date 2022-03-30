@@ -39,6 +39,9 @@
     	"type": "boolean",
     	"default": false
     },
+    "syncState": {
+    	"$ref": "../../../controller/schemas/common/syncState-schema.json"
+    },
     "deployed": {
     	"type": "boolean",
     	"default": false

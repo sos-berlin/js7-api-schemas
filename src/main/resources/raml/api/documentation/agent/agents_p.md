@@ -5,5 +5,5 @@ Contains collection of Solo Agents where each Agent has following fields
 * agentNameAliases
 * url
 * title (optional)
-* deployed
+* syncState
 * isClusterWatcher
