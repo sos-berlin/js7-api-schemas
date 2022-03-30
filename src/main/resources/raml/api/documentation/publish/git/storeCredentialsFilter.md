@@ -1,11 +1,4 @@
 <tr>
-<td>``account``</td>
-<td>required, string</td>
-<td>JOC Account to store the Git credentials for.</td>
-<td>"account" : "myExampleJOCAccount"</td>
-<td></td>
-</tr>
-<tr>
 <td>``credentials``</td>
 <td>required, object</td>
 <td>Git credentials to store.</td>

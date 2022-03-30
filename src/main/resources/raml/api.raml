@@ -2042,8 +2042,8 @@ traits:
       /credentials:
         type:
           postJSONWithoutJSId:
-            description: delivers git credentials for a specific JOC account
-            description1: !include api/documentation/publish/git/getCredentialsFilter.md
+            description: delivers git credentials for the current JOC account in dependence to the JOC Security Levels.
+            description1: " "
             description2: " "
             description3: " "
             description4: " "
@@ -2057,7 +2057,7 @@ traits:
         /store:
           type:
             postJSONWithOkWithoutJSId:
-              description: stores git credentials for a specific JOC account
+              description: stores git credentials for the current JOC account in dependence to the JOC Security Levels.
               description1: !include api/documentation/publish/git/storeCredentialsFilter.md
               description2: " "
               description3: " "
