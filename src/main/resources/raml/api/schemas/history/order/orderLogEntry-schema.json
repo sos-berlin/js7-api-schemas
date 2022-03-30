@@ -33,7 +33,13 @@
 			"alias": "agentPath",
 			"type": "string"
 		},
+		"agentName": {
+			"type": "string"
+		},
 		"agentUrl": {
+			"type": "string"
+		},
+		"subagentClusterId": {
 			"type": "string"
 		},
 		"job": {
@@ -50,7 +56,7 @@
 		},
 		"error": {
 			"type": "object",
-			"javaType": "com.sos.joc.model.history.order.Lock",
+			"javaType": "com.sos.joc.model.history.order.OrderLogEntryError",
 			"properties": {
 				"errorState": {
 					"type": "string"
@@ -69,6 +75,7 @@
 		},
 		"lock": {
 			"type": "object",
+			"javaType": "com.sos.joc.model.history.order.Lock",
 			"required": [
 				"lockName",
 				"limit"
@@ -76,8 +83,7 @@
 			"properties": {
 				"lockName": {
 				 	"alias": "lockId,lockPath",
-					"type": "string",
-					"javaType": "com.sos.joc.model.history.order.Lock"
+					"type": "string"
 				},
 				"limit": {
 					"type": "integer",
