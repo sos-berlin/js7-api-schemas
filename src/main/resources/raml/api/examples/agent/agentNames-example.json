@@ -1,7 +1,21 @@
 {
+    "deliveryDate": "2022-03-29T10:27:00.045+0000",
     "agentNames": [
-        "agent-primary",
-        "agent-secondary"
+        "primaryAgent",
+        "secondaryAgent",
+        "standaloneAgent"
     ],
-    "deliveryDate": "2020-11-19T16:07:14.499Z"
+    "clusterAgentNames": [
+        "AgentCluster001"
+    ],
+    "subagentClusterIds": {
+        "AgentCluster001": [
+            "active-active-all-agents",
+            "active-active-passive-all-agents",
+            "active-passive-all-agents",
+            "director_primary_001",
+            "subagent_primary_001",
+            "subagent_secondary_001"
+        ]
+    }
 }
