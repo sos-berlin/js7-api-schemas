@@ -1741,6 +1741,37 @@ traits:
 
   /repository:
     description: This is not an API call. Use child urls instead!
+    
+    /git:
+      description: This is not an API call. Use child urls instead!
+      
+      /credentials
+        type:
+          postJSONWithoutJSId:
+            description: delivers git credentials for a specific JOC account
+            description1: !include api/documentation/publish/git/getCredentialsFilter.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            audit: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/publish/git/getCredentialsFilter-schema.json
+            example: !include api/examples/publish/git/getCredentialsFilter-example.json
+            schema200: !include api/schemas/publish/git/gitCredentials-schema.json
+            example200: !include api/examples/publish/git/gitCredentials-keyfile-example.json
+
+        /store
+          type:
+            postJSONWithOkWithoutJSId:
+              description: delivers git credentials for a specific JOC account
+              description1: !include api/documentation/publish/git/storeCredentialsFilter.md
+              description2: " "
+              description3: " "
+              description4: " "
+              description5: " "
+              audit: !include api/documentation/audit/auditLog.md
+              schema: !include api/schemas/publish/git/storeCredentialsFilter-schema.json
+              example: !include api/examples/publish/git/storeCredentialsFilter-example.json
 
     /read:
       type:
