@@ -2089,18 +2089,18 @@ traits:
             schema200: !include api/schemas/publish/git/gitCredentials-schema.json
             example200: !include api/examples/publish/git/gitCredentials-keyfile-example.json
 
-        /store:
+        /add:
           type:
             postJSONWithOkWithoutJSId:
-              description: stores git credentials for the current JOC account in dependence to the JOC Security Levels.
-              description1: !include api/documentation/publish/git/storeCredentialsFilter.md
+              description: Adds git credentials for the current JOC account in dependence to the JOC Security Levels.
+              description1: !include api/documentation/publish/git/addCredentialsFilter.md
               description2: " "
               description3: " "
               description4: " "
               description5: " "
               audit: !include api/documentation/audit/auditLog.md
-              schema: !include api/schemas/publish/git/storeCredentialsFilter-schema.json
-              example: !include api/examples/publish/git/storeCredentialsFilter-example.json
+              schema: !include api/schemas/publish/git/addCredentialsFilter-schema.json
+              example: !include api/examples/publish/git/addCredentialsFilter-example.json
 
     /read:
       type:
