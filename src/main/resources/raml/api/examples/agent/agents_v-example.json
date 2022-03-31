@@ -1,31 +1,136 @@
 {
 	"agents": [{
-		"agentId": "agent_primary",
-		"agentName": "agent-primary",
+		"agentId": "agent_001",
+		"agentName": "primaryAgent",
 		"controllerId": "testsuite",
 		"isClusterWatcher": true,
-		"orders": [],
-        "runningTasks": 0,
+		"runningTasks": 0,
 		"state": {
 			"_text": "COUPLED",
 			"severity": 0
 		},
-		"url": "https://agent-2-0-primary:4443"
+		"url": "https://whereever:4443"
 	},
 	{
-		"agentId": "agent_secondary",
-		"agentName": "agent-secondary",
+		"agentId": "agent_002",
+		"agentName": "secondaryAgent",
 		"controllerId": "testsuite",
-		"errorMessage": "Connection refused",
 		"isClusterWatcher": false,
-		"orders": [],
-        "runningTasks": 0,
+		"runningTasks": 0,
 		"state": {
-			"_text": "COUPLINGFAILED",
+			"_text": "COUPLED",
+			"severity": 0
+		},
+		"url": "https://whereever2:4443"
+	},
+	{
+		"agentId": "agent_004",
+		"agentName": "testAgent",
+		"controllerId": "testsuite",
+		"isClusterWatcher": false,
+		"runningTasks": 0,
+		"state": {
+			"_text": "COUPLED",
+			"severity": 0
+		},
+		"url": "http://whereever:4245"
+	},
+	{
+		"agentId": "agent_005",
+		"agentName": "myAgent",
+		"controllerId": "testsuite",
+		"isClusterWatcher": false,
+		"runningTasks": 0,
+		"state": {
+			"_text": "UNKNOWN",
 			"severity": 2
 		},
-		"url": "http://agent-2-0-secondary:4444"
+		"url": "http://whereever:4449"
+	},
+	{
+		"agentId": "agent_006",
+		"agentName": "myAgent2",
+		"controllerId": "testsuite",
+		"isClusterWatcher": false,
+		"runningTasks": 0,
+		"state": {
+			"_text": "UNKNOWN",
+			"severity": 2
+		},
+		"url": "http://whereever2:4245"
+	},
+	{
+		"agentId": "agent_101",
+		"agentName": "agent17",
+		"controllerId": "testsuite",
+		"isClusterWatcher": false,
+		"runningTasks": 0,
+		"state": {
+			"_text": "COUPLED",
+			"severity": 0
+		},
+		"url": "http://whereever:7775"
+	},
+	{
+		"agentId": "agent_009",
+		"agentName": "agent18",
+		"controllerId": "testsuite",
+		"isClusterWatcher": false,
+		"runningTasks": 0,
+		"state": {
+			"_text": "COUPLED",
+			"severity": 0
+		},
+		"url": "http://whereever3:4445"
+	},
+	{
+		"agentId": "agent_cluster_001",
+		"agentName": "AgentCluster001",
+		"controllerId": "testsuite",
+		"runningTasks": 0,
+		"subagents": [{
+			"agentId": "agent_cluster_001",
+			"runningTasks": 0,
+			"state": {
+				"_text": "RESET",
+				"severity": 1
+			},
+			"subagentId": "director_primary_001",
+			"url": "http://whereever4:4445"
+		},
+		{
+			"agentId": "agent_cluster_001",
+			"runningTasks": 0,
+			"state": {
+				"_text": "COUPLED",
+				"severity": 0
+			},
+			"subagentId": "subagent_primary_001",
+			"url": "http://whereever5:4445"
+		},
+		{
+			"agentId": "agent_cluster_001",
+			"runningTasks": 0,
+			"state": {
+				"_text": "COUPLED",
+				"severity": 0
+			},
+			"subagentId": "subagent_secondary_001",
+			"url": "http://whereever6:4445"
+		}]
+	},
+	{
+		"agentId": "agent_014",
+		"agentName": "agent14",
+		"controllerId": "testsuite",
+		"isClusterWatcher": false,
+		"runningTasks": 0,
+		"state": {
+			"_text": "COUPLED",
+			"severity": 0
+		},
+		"url": "http://whereever7:4445"
 	}],
-	"deliveryDate": "2020-12-04T15:42:40.185Z",
-	"surveyDate": "2020-12-04T15:24:20.744Z"
+	"deliveryDate": "2022-03-31T19:00:02.051Z",
+	"surveyDate": "2022-03-31T18:50:31.685Z"
 }

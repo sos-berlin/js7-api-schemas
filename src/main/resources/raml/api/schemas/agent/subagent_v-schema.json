@@ -1,20 +1,17 @@
 {
-  "title": "agent",
+  "title": "subagent",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.agent.AgentV",
+  "javaType": "com.sos.joc.model.agent.SubagentV",
   "type": "object",
   "required": [
   	"agentId",
-  	"agentName"
+  	"subagentId"
   ],
   "properties": {
-    "controllerId": {
-    	"$ref": "../common/controllerId-schema.json"
-    },
     "agentId": {
     	"$ref": "../common/string255required-schema.json"
     },
-    "agentName": {
+    "subagentId": {
     	"$ref": "../common/string255required-schema.json"
     },
     "url": {
@@ -35,16 +32,6 @@
     },
     "runningTasks": {
     	"$ref": "../common/nonNegativeInteger-schema.json"
-    },
-    "isClusterWatcher": {
-    	"type": "boolean",
-    	"default": false
-    },
-    "subagents": {
-    	"type": "array",
-    	"items": {
-    		"$ref": "subagent_v-schema.json"
-    	}
     }
   },
   "additionalProperties": false
