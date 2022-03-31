@@ -1,6 +1,6 @@
 <tr>
 <td>``credentials``</td>
-<td>required, object</td>
+<td>required, arrayy</td>
 <td>Git credentials to store.</td>
 <td>
 <div>{</div>
