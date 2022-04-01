@@ -2102,6 +2102,20 @@ traits:
               schema: !include api/schemas/publish/git/addCredentialsFilter-schema.json
               example: !include api/examples/publish/git/addCredentialsFilter-example.json
 
+
+        /remove:
+          type:
+            postJSONWithOkWithoutJSId:
+              description: Removes git credentials for the current JOC account in dependence to the JOC Security Levels.
+              description1: !include api/documentation/publish/git/removeCredentialsFilter.md
+              description2: " "
+              description3: " "
+              description4: " "
+              description5: " "
+              audit: !include api/documentation/audit/auditLog.md
+              schema: !include api/schemas/publish/git/removeCredentialsFilter-schema.json
+              example: !include api/examples/publish/git/removeCredentialsFilter-example.json
+
     /read:
       type:
         postJSONWithoutJSId:
