@@ -2074,6 +2074,58 @@ traits:
     /git:
       description: This is not an API call. Use child urls instead!
       
+      /add:
+        type:
+          postJSONWithOkWithoutJSId:
+            description: Adds all unstaged changes (tracked or untracked) to the local repositories staging area.
+            description1: !include api/documentation/publish/git/commands/commonFilter.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            audit: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/publish/git/commands/commonFilter-schema.json
+            example: !include api/examples/publish/git/commands/commonFilter-example.json
+
+      /checkout:
+        type:
+          postJSONWithOkWithoutJSId:
+            description: Checkout of a specific branch or tag in a local repository folder.
+            description1: !include api/documentation/publish/git/commands/checkoutFilter.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            audit: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/publish/git/commands/checkoutFilter-schema.json
+            example: !include api/examples/publish/git/commands/checkoutFilter_tag-example.json
+
+      /clone:
+        type:
+          postJSONWithOkWithoutJSId:
+            description: Clone of a remote repository to a local repository folder.
+            description1: !include api/documentation/publish/git/commands/cloneFilter.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            audit: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/publish/git/commands/cloneFilter-schema.json
+            example: !include api/examples/publish/git/commands/cloneFilter-example.json
+
+      /commit:
+        type:
+          postJSONWithOkWithoutJSId:
+            description: Commit of all staged changes to the local repository.
+            description1: !include api/documentation/publish/git/commands/commitFilter.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            audit: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/publish/git/commands/commitFilter-schema.json
+            example: !include api/examples/publish/git/commands/commitFilter-example.json
+
       /credentials:
         type:
           postJSONWithoutJSId:
@@ -2102,7 +2154,6 @@ traits:
               schema: !include api/schemas/publish/git/addCredentialsFilter-schema.json
               example: !include api/examples/publish/git/addCredentialsFilter-example.json
 
-
         /remove:
           type:
             postJSONWithOkWithoutJSId:
@@ -2115,6 +2166,33 @@ traits:
               audit: !include api/documentation/audit/auditLog.md
               schema: !include api/schemas/publish/git/removeCredentialsFilter-schema.json
               example: !include api/examples/publish/git/removeCredentialsFilter-example.json
+
+      /pull:
+        type:
+          postJSONWithOkWithoutJSId:
+            description: Pulls all recent changes from the remote repository. If merge conflicts prevent a successful pull, the conflicts have to be solved outside of JOC Cockpit.
+            description1: !include api/documentation/publish/git/commands/commonFilter.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            audit: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/publish/git/commands/commonFilter-schema.json
+            example: !include api/examples/publish/git/commands/commonFilter-example.json
+
+      /push:
+        type:
+          postJSONWithOkWithoutJSId:
+            description: Pushes all commited changes to the remote repository. If merge conflicts prevent a successful push, the conflicts have to be solved outside of JOC Cockpit.
+            description1: !include api/documentation/publish/git/commands/commonFilter.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            audit: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/publish/git/commands/commonFilter-schema.json
+            example: !include api/examples/publish/git/commands/commonFilter-example.json
+
 
     /read:
       type:

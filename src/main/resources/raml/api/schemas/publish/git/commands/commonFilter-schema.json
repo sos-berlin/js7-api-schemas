@@ -1,0 +1,18 @@
+{
+  "title": "Filter for different Git command apis",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.git.commands.CommonFilter",
+  "type": "object",
+  "required": ["folder", "category"],
+  "properties": {
+    "folder": {
+      "$ref": "../../../common/string255-schema.json"
+    },
+    "category": {
+      "$ref": "../../repository/category-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../../../audit/auditParams-schema.json"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Filter To checkout a specific branch in a local repository",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.git.commands.CheckoutFilter",
+  "type": "object",
+  "oneOf": [{
+      "required": ["branch", "folder", "category"]
+    }, {
+      "required": ["tag", "folder", "category"]
+    }],
+  "properties": {
+    "branch": {
+      "$ref": "../../../common/string100-schema.json"
+    },
+    "tag": {
+      "$ref": "../../../common/string100-schema.json"
+    },
+    "folder": {
+      "$ref": "../../../common/string255-schema.json"
+    },
+    "category": {
+      "$ref": "../../repository/category-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../../../audit/auditParams-schema.json"
+    }
+  }
+}

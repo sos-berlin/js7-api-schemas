@@ -1,0 +1,21 @@
+{
+  "title": "Filter To commit all staged changes to the local repository with a message",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.git.commands.CommitFilter",
+  "type": "object",
+  "required": ["folder", "category"],
+  "properties": {
+    "folder": {
+      "$ref": "../../../common/string255-schema.json"
+    },
+    "category": {
+      "$ref": "../../repository/category-schema.json"
+    },
+    "message": {
+      "$ref": "../../../common/string255-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../../../audit/auditParams-schema.json"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Filter To Tag a specific commit in the local repository",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.git.commands.TagFilter",
+  "type": "object",
+  "required": ["commitHash", "name", "folder", "category"],
+  "properties": {
+    "commitHash": {
+      "$ref": "../../../common/string255-schema.json"
+    },
+    "name": {
+      "$ref": "../../../common/string255-schema.json"
+    },
+    "folder": {
+      "$ref": "../../../common/string255-schema.json"
+    },
+    "category": {
+      "$ref": "../../repository/category-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../../../audit/auditParams-schema.json"
+    }
+  }
+}

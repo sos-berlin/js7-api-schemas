@@ -1,0 +1,25 @@
+{
+  "title": "Filter to clone a remote repository into a local repository folder",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.git.commands.CloneFilter",
+  "type": "object",
+  "required": ["remoteUri", "category"],
+  "properties": {
+    "remoteUri": {
+      "description": "Git Remote Uri.",
+      "type": "string",
+      "pattern": "^\\S*@(\\S*):(\\S*)$|^(\\S*).//(\\S*):(\\S*)$",
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "folder": {
+      "$ref": "../../../common/string255-schema.json"
+    }, 
+    "category": {
+      "$ref": "../../repository/category-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../../../audit/auditParams-schema.json"
+    }
+  }
+}
