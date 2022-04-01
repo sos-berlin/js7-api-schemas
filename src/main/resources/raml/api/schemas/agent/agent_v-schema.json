@@ -3,43 +3,14 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.agent.AgentV",
   "type": "object",
+  "extends" : {
+    "$ref": "agentstate_v-schema.json"
+  },
   "required": [
   	"agentId",
   	"agentName"
   ],
   "properties": {
-    "controllerId": {
-    	"$ref": "../common/controllerId-schema.json"
-    },
-    "agentId": {
-    	"$ref": "../common/string255required-schema.json"
-    },
-    "agentName": {
-    	"$ref": "../common/string255required-schema.json"
-    },
-    "url": {
-    	"$ref": "../common/string255required-schema.json"
-    },
-    "state": {
-    	"$ref": "agentState-schema.json"
-    },
-    "errorMessage": {
-    	"description": "if state == couplngFailed or unknown",
-    	"type": "string"
-    },
-    "orders": {
-    	"type": "array",
-    	"items": {
-    		"$ref": "../order/order_v-schema.json"
-    	}
-    },
-    "runningTasks": {
-    	"$ref": "../common/nonNegativeInteger-schema.json"
-    },
-    "isClusterWatcher": {
-    	"type": "boolean",
-    	"default": false
-    },
     "subagents": {
     	"type": "array",
     	"items": {

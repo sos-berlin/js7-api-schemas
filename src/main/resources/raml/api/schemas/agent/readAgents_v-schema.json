@@ -28,6 +28,10 @@
     },
     "compact": {
     	"$ref": "../common/compactParam-schema.json"
+    },
+    "flat": {
+    	"type": "boolean",
+  		"default": false
     }
   },
   "additionalProperties": false

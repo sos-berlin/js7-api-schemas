@@ -1,0 +1,50 @@
+{
+  "title": "parent class for agent and subagent states",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentStateV",
+  "type": "object",
+  "required": [
+  	"agentId"
+  ],
+  "properties": {
+    "controllerId": {
+    	"description": "only for agents",
+    	"$ref": "../common/controllerId-schema.json"
+    },
+    "agentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "agentName": {
+    	"description": "only for agents",
+    	"$ref": "../common/string255-schema.json"
+    },
+    "subagentId": {
+    	"description": "only for subagents",
+    	"$ref": "../common/string255-schema.json"
+    },
+    "url": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "state": {
+    	"$ref": "agentState-schema.json"
+    },
+    "errorMessage": {
+    	"description": "if state == couplngFailed or unknown",
+    	"type": "string"
+    },
+    "orders": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../order/order_v-schema.json"
+    	}
+    },
+    "runningTasks": {
+    	"$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "isClusterWatcher": {
+    	"type": "boolean",
+    	"default": false
+    }
+  },
+  "additionalProperties": false
+}
