@@ -34,6 +34,9 @@
     "targetFile": {
       "$ref": "../common/glob-schema.json"
     },
+    "integrityHash": {
+      "$ref": "../common/string255required-schema.json"
+    },
     "limit": {
       "description": "only for db history urls to restrict the number of responsed records; -1=unlimited",
       "type": "integer",
