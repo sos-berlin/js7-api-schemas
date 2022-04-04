@@ -1,0 +1,5 @@
+{
+  "command" : "git status -s",
+  "stdOut" : " M sp_git_test.txt",
+  "exitCode" : 0
+}

@@ -2076,7 +2076,7 @@ traits:
       
       /add:
         type:
-          postJSONWithOkWithoutJSId:
+          postJSONWithoutJSId:
             description: Adds all unstaged changes (tracked or untracked) to the local repositories staging area.
             description1: !include api/documentation/publish/git/commands/commonFilter.md
             description2: " "
@@ -2086,10 +2086,12 @@ traits:
             audit: !include api/documentation/audit/auditLog.md
             schema: !include api/schemas/publish/git/commands/commonFilter-schema.json
             example: !include api/examples/publish/git/commands/commonFilter-example.json
+            schema200: !include api/schemas/publish/git/commands/commandResponse-schema.json
+            example200: !include api/examples/publish/commands/commandResponse-example.json
 
       /checkout:
         type:
-          postJSONWithOkWithoutJSId:
+          postJSONWithoutJSId:
             description: Checkout of a specific branch or tag in a local repository folder.
             description1: !include api/documentation/publish/git/commands/checkoutFilter.md
             description2: " "
@@ -2099,10 +2101,12 @@ traits:
             audit: !include api/documentation/audit/auditLog.md
             schema: !include api/schemas/publish/git/commands/checkoutFilter-schema.json
             example: !include api/examples/publish/git/commands/checkoutFilter_tag-example.json
+            schema200: !include api/schemas/publish/git/commands/commandResponse-schema.json
+            example200: !include api/examples/publish/commands/commandResponse-example.json
 
       /clone:
         type:
-          postJSONWithOkWithoutJSId:
+          postJSONWithoutJSId:
             description: Clone of a remote repository to a local repository folder.
             description1: !include api/documentation/publish/git/commands/cloneFilter.md
             description2: " "
@@ -2112,10 +2116,12 @@ traits:
             audit: !include api/documentation/audit/auditLog.md
             schema: !include api/schemas/publish/git/commands/cloneFilter-schema.json
             example: !include api/examples/publish/git/commands/cloneFilter-example.json
+            schema200: !include api/schemas/publish/git/commands/commandResponse-schema.json
+            example200: !include api/examples/publish/commands/commandResponse-example.json
 
       /commit:
         type:
-          postJSONWithOkWithoutJSId:
+          postJSONWithoutJSId:
             description: Commit of all staged changes to the local repository.
             description1: !include api/documentation/publish/git/commands/commitFilter.md
             description2: " "
@@ -2125,6 +2131,8 @@ traits:
             audit: !include api/documentation/audit/auditLog.md
             schema: !include api/schemas/publish/git/commands/commitFilter-schema.json
             example: !include api/examples/publish/git/commands/commitFilter-example.json
+            schema200: !include api/schemas/publish/git/commands/commandResponse-schema.json
+            example200: !include api/examples/publish/commands/commandResponse-example.json
 
       /credentials:
         type:
@@ -2169,7 +2177,7 @@ traits:
 
       /pull:
         type:
-          postJSONWithOkWithoutJSId:
+          postJSONWithoutJSId:
             description: Pulls all recent changes from the remote repository. If merge conflicts prevent a successful pull, the conflicts have to be solved outside of JOC Cockpit.
             description1: !include api/documentation/publish/git/commands/commonFilter.md
             description2: " "
@@ -2179,10 +2187,12 @@ traits:
             audit: !include api/documentation/audit/auditLog.md
             schema: !include api/schemas/publish/git/commands/commonFilter-schema.json
             example: !include api/examples/publish/git/commands/commonFilter-example.json
+            schema200: !include api/schemas/publish/git/commands/commandResponse-schema.json
+            example200: !include api/examples/publish/commands/commandResponse-example.json
 
       /push:
         type:
-          postJSONWithOkWithoutJSId:
+          postJSONWithoutJSId:
             description: Pushes all commited changes to the remote repository. If merge conflicts prevent a successful push, the conflicts have to be solved outside of JOC Cockpit.
             description1: !include api/documentation/publish/git/commands/commonFilter.md
             description2: " "
@@ -2192,7 +2202,8 @@ traits:
             audit: !include api/documentation/audit/auditLog.md
             schema: !include api/schemas/publish/git/commands/commonFilter-schema.json
             example: !include api/examples/publish/git/commands/commonFilter-example.json
-
+            schema200: !include api/schemas/publish/git/commands/commandResponse-schema.json
+            example200: !include api/examples/publish/commands/commandResponse-example.json
 
     /read:
       type:

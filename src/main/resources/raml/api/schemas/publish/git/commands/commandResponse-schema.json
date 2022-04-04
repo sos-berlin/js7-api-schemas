@@ -1,0 +1,20 @@
+{
+  "title": "Git Commnad Response",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.git.commands.GitCommandResponse",
+  "type": "object",
+  "properties": {
+    "command": {
+      "$ref": "../../../common/string255-schema.json"
+    },
+    "stdOut": {
+      "type": "string"
+    },
+    "stdErr": {
+      "type": "string"
+    },
+    "exitCode": {
+      "type": "integer"
+    }
+  }
+}
