@@ -1,0 +1,20 @@
+{
+  "title": "cluster agent state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentClusterState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=ALL_SUBAGENTS_ARE_COUPLED, 1=ONLY_SOME_AGENTS_ARE_COUPLED, 1=ALL_AGENTS_ARE_RESET, 2=ALL_AGENTS_ARE_NOT_COUPLED, 3=UNKNOWN",
+      "type": "integer"
+    },
+    "_text": {
+      "$ref": "agentClusterStateText-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

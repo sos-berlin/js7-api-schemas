@@ -1,0 +1,14 @@
+{
+  "title": "cluster agent state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentClusterStateText",
+  "type": "string",
+  "enum": [
+      "ALL_SUBAGENTS_ARE_COUPLED",
+      "ONLY_SOME_SUBAGENTS_ARE_COUPLED",
+      "ALL_SUBAGENTS_ARE_RESET",
+      "ONLY_SOME_SUBAGENTS_ARE_RESET",
+      "SUBAGENTS_ARE_NOT_COUPLED",
+      "UNKNOWN"
+  ]
+}
