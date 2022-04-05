@@ -8,7 +8,6 @@
     "remoteUri": {
       "description": "Git Remote Uri.",
       "type": "string",
-      "pattern": "^\\S*@(\\S*):(\\S*)$|^(\\S*)://(\\S*):(\\S*)$",
       "maxLength": 255,
       "minLength": 1
     },
