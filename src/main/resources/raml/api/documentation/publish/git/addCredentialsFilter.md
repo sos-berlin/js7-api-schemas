@@ -3,11 +3,11 @@
 <td>required, array</td>
 <td>Git credentials to store.</td>
 <td>
-<div>{</div>
+<div>[{</div>
 <div style="padding-left:10px;">"gitAccount" : "myExampleGitAccount",</div>
 <div style="padding-left:10px;">"keyfilePath" : "/example/path/to/keyfile",</div>
 <div style="padding-left:10px;">"gitServer" : "my-example-remote.git-host.net"</div>
-<div>}</div>
+<div>}]</div>
 </td>
 <td></td>
 </tr>
