@@ -10,6 +10,8 @@
     "DEPLOYMENT",
     "DOCUMENTATIONS",
     "CERTIFICATES",
-    "IDENTITY"
+    "IDENTITY",
+    "SETTINGS",
+    "MONITORING"
   ]
 }

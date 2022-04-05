@@ -20,6 +20,9 @@
 		"comment": {
 			"type": "string",
 			"maxLength": 2000
-		}
+		},
+		"auditLog": {
+      		"$ref": "../audit/auditParams-schema.json"
+    	}
 	}
 }
