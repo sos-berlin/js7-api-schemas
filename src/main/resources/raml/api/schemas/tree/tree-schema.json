@@ -17,6 +17,10 @@
       "type": "boolean",
       "default": true
     },
+    "repoControlled": {
+      "description": "only for top level folder in the reponse",
+      "type": "boolean"
+    },
     "lockedBy": {
       "type": "string"
     },
