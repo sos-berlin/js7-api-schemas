@@ -2136,16 +2136,9 @@ traits:
 
       /credentials:
         type:
-          postJSONWithoutJSId:
+          postOnlyAccessToken:
             description: delivers git credentials for the current JOC account in dependence to the JOC Security Levels.
-            description1: " "
-            description2: " "
-            description3: " "
-            description4: " "
-            description5: " "
-            audit: !include api/documentation/audit/auditLog.md
-            schema: !include api/schemas/publish/git/getCredentialsFilter-schema.json
-            example: !include api/examples/publish/git/getCredentialsFilter-example.json
+            description200: " "
             schema200: !include api/schemas/publish/git/gitCredentials-schema.json
             example200: !include api/examples/publish/git/gitCredentials-keyfile-example.json
 
