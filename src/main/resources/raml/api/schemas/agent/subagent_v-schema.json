@@ -10,5 +10,14 @@
   	"agentId",
   	"subagentId"
   ],
+  "properties": {
+  	"isDirector": {
+    	"$ref": "subagentDirectorType-schema.json"
+    },
+    "disabled": {
+    	"type": "boolean",
+    	"default": false
+    }
+  },
   "additionalProperties": false
 }
