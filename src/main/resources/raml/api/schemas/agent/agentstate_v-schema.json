@@ -35,6 +35,9 @@
     	"description": "if state == couplngFailed or unknown",
     	"type": "string"
     },
+    "disabled": {
+    	"type": "boolean"
+    },
     "orders": {
     	"type": "array",
     	"items": {
