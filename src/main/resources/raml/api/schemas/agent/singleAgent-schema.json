@@ -35,6 +35,10 @@
     "title": {
     	"$ref": "../common/string255-schema.json"
     },
+    "hidden": {
+    	"type": "boolean",
+    	"default": false
+    },
     "disabled": {
     	"type": "boolean",
     	"default": false

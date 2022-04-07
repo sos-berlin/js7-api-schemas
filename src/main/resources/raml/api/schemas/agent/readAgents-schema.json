@@ -13,7 +13,7 @@
     		"$ref": "../common/string255required-schema.json"
     	}
     },
-    "onlyEnabledAgents": {
+    "onlyVisibleAgents": {
     	"type": "boolean",
     	"default": false
     }

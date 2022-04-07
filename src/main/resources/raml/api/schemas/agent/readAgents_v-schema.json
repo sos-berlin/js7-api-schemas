@@ -22,7 +22,7 @@
     		"$ref": "agentStateText-schema.json"
     	}
     },
-    "onlyEnabledAgents": {
+    "onlyVisibleAgents": {
     	"type": "boolean",
     	"default": false
     },
