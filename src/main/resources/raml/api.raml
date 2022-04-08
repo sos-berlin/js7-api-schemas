@@ -329,6 +329,24 @@ traits:
             schema: !include api/schemas/agent/deployClusterParam-schema.json
             example: " "
           
+      /subagent:
+        /reset:
+          type:
+            postJSONWithOkResponse:
+              description: Resets Subagent
+              description1: " "
+              description2: !include api/documentation/agent/subagentId.md
+              description3: !include api/documentation/agent/subagentForce.md
+              description4: " "
+              description5: " "
+              description6: " "
+              description7: " "
+              description8: " "
+              description9: !include api/documentation/audit/auditLog.md
+              description10: " "
+              schema: !include api/schemas/agent/subagentCommand-schema.json
+              example: " "
+        
       /subagents:
         /delete:
           type:
@@ -344,7 +362,7 @@ traits:
               description8: " "
               description9: !include api/documentation/audit/auditLog.md
               description10: " "
-              schema: !include api/schemas/agent/subagentCommand-schema.json
+              schema: !include api/schemas/agent/subagentsCommand-schema.json
               example: " "
         
         /disable:
@@ -361,7 +379,7 @@ traits:
               description8: " "
               description9: !include api/documentation/audit/auditLog.md
               description10: " "
-              schema: !include api/schemas/agent/subagentCommand-schema.json
+              schema: !include api/schemas/agent/subagentsCommand-schema.json
               example: " "
 
         /enable:
@@ -378,24 +396,7 @@ traits:
               description8: " "
               description9: !include api/documentation/audit/auditLog.md
               description10: " "
-              schema: !include api/schemas/agent/subagentCommand-schema.json
-              example: " "
-        
-        /reset:
-          type:
-            postJSONWithOkResponse:
-              description: Resets Subagents
-              description1: " "
-              description2: !include api/documentation/agent/subagentIds.md
-              description3: " "
-              description4: " "
-              description5: " "
-              description6: " "
-              description7: " "
-              description8: " "
-              description9: !include api/documentation/audit/auditLog.md
-              description10: " "
-              schema: !include api/schemas/agent/subagentCommand-schema.json
+              schema: !include api/schemas/agent/subagentsCommand-schema.json
               example: " "
         
         /store:
