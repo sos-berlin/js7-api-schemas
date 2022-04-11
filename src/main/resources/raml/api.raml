@@ -1201,7 +1201,7 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Delete accounts
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/account/delete/accounts.md
+          description2: !include api/documentation/security/account/delete/accountNames.md
           description3: " "
           description4: " "
           description5: " "
@@ -1213,7 +1213,7 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Force accounts to set a new password during the next login
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/account/forcepasswordchange/accounts.md
+          description2: !include api/documentation/security/account/forcepasswordchange/accountNames.md
           description3: " "
           description4: " "
           description5: " "
@@ -1225,7 +1225,7 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Set accounts to the initial password. 
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/account/resetpassword/accounts.md
+          description2: !include api/documentation/security/account/resetpassword/accountNames.md
           description3: " "
           description4: " "
           description5: " "
@@ -1237,7 +1237,7 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Enables accounts
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/account/enable/accounts.md
+          description2: !include api/documentation/security/account/enable/accountNames.md
           description3: " "
           description4: " "
           description5: " "
@@ -1249,7 +1249,7 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Disable accounts
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/account/disable/accounts.md
+          description2: !include api/documentation/security/account/disable/accountNames.md
           description3: " "
           description4: " "
           description5: " "
@@ -1360,7 +1360,7 @@ traits:
           description4: !include api/documentation/security/folder/store/folders.md
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          schema: !include api/schemas/security/folders/folders-schema.json
           example: " "          
     /delete:
       type:
@@ -1369,7 +1369,7 @@ traits:
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/folder/delete/roleName.md
           description3: !include api/documentation/security/folder/delete/controllerId.md
-          description4: !include api/documentation/security/folder/delete/folders.md
+          description4: !include api/documentation/security/folder/delete/folderNames.md
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/folders/foldersFilter-schema.json
@@ -1383,7 +1383,7 @@ traits:
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/folder/roleName.md
         description3: !include api/documentation/security/folder/controllerId.md
-        description4: " "
+        description4: !include api/documentation/security/folder/folderName.md
         description5: " "
         description6: " "
         description7: " "
@@ -1403,8 +1403,8 @@ traits:
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/folder/rename/folderoldname.md
           description3: !include api/documentation/security/folder/rename/foldernew.md
-          description4: " "
-          description5: " "
+          description4: !include api/documentation/security/folder/rename/controllerId.md
+          description5: !include api/documentation/security/folder/rename/roleName.md
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/folders/folderRename-schema.json
           example: " "    
@@ -1469,9 +1469,10 @@ traits:
           description2: !include api/documentation/security/identityService/identityServiceType.md
           description3: !include api/documentation/security/identityService/disabled.md
           description4: !include api/documentation/security/identityService/required.md
-          description5: " "
+          description5: !include api/documentation/security/identityService/ordering.md
+          description6: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/identityServices/identityServiceFilter-schema.json
+          schema: !include api/schemas/security/identityServices/identityService-schema.json
           example: " "
     /delete:
       type:
@@ -1519,26 +1520,26 @@ traits:
     /store:
       type:
         postJSONWithOkWithoutJSId:
-          description: Stores folders to a given role and controller-id
+          description: Stores permissions to a given role and controller-id
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/permission/store/roleName.md
           description3: !include api/documentation/security/permission/store/controllerId.md
           description4: !include api/documentation/security/permission/store/permissions.md
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/permissions/permissionsFilter-schema.json
+          schema: !include api/schemas/security/permissions/permissions-schema.json
           example: " "          
     /delete:
       type:
         postJSONWithOkWithoutJSId:
-          description: Delete folders from a given role and controller-id
+          description: Delete permissions from a given role and controller-id
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/permission/delete/roleName.md
           description3: !include api/documentation/security/permission/delete/controllerId.md
-          description4: !include api/documentation/security/permission/delete/permissions.md
+          description4: !include api/documentation/security/permission/delete/permissionPaths.md
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/folders/foldersFilter-schema.json
+          schema: !include api/schemas/security/permissions/permissionsFilter-schema.json
           example: " "          
     
         
@@ -1549,7 +1550,7 @@ traits:
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/permission/roleName.md
         description3: !include api/documentation/security/permission/controllerId.md
-        description4: " "
+        description4: !include api/documentation/security/permission/permissionPath.md
         description5: " "
         description6: " "
         description7: " "
@@ -1567,7 +1568,7 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Renames a permission   
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/permission/rename/permissionoldname.md
+          description2: !include api/documentation/security/permission/rename/oldPermissionPath.md
           description3: !include api/documentation/security/permission/rename/permissionnew.md
           description4: " "
           description5: " "
@@ -1601,7 +1602,7 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Delete roles from a given Identity Service
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/role/delete/roles.md
+          description2: !include api/documentation/security/role/delete/roleNames.md
           description3: " "
           description4: " "
           description5: " "
@@ -1613,12 +1614,12 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Reorders the Roles for a given Identity Service
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/role/roles.md
+          description2: !include api/documentation/security/role/reorder/roleNames.md
           description3: " "
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/identityServices/identityServicesFilter-schema.json
+          schema: !include api/schemas/security/roles/rolesFilter-schema.json
           example: " "                  
     
         
@@ -1648,8 +1649,8 @@ traits:
         postJSONWithOkWithoutJSId:
           description: Stores roles to a given Identity Service
           description1: !include api/documentation/security/identityService/identityServiceName.md
-          description2: !include api/documentation/security/permission/store/roleName.md
-          description3: " "
+          description2: !include api/documentation/security/role/store/roleName.md
+          description3: !include api/documentation/security/role/store/ordering.md
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
@@ -1668,6 +1669,7 @@ traits:
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/roles/roleRename-schema.json
           example: " "                          
+                      
 
 /inventory:
   description: This is not an API call. Use its children!!

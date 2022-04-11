@@ -3,12 +3,7 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.permissions.PermissionItem",
 	"type": "object",
-	"required": [
-		"identityServiceName",
-		"controllerId",
-		"roleName",
-		"permissionPath"
-	],
+	
 	"properties": {
 		"identityServiceName": {
 			"$ref": "../../common/string255-schema.json"

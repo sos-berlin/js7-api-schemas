@@ -2,13 +2,7 @@
 	"title": "Folder",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.folders.FolderItem",
-	"type": "object",
-	"required": [
-		"identityServiceName",
-		"controllerId",
-		"roleName",
-		"folder"
-	],
+	"type": "object",	 
 	"properties": {
 		"identityServiceName": {
 			"$ref": "../../common/string255-schema.json"

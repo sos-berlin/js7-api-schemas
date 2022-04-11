@@ -1,1 +1,1 @@
-<tr><td>``controllerId``</td><td>optional; string</td><td>The name of the controller-ID for which the permissions should be deleted</td><td>myControllerId</td><td></td></tr>
+<tr><td>``controllerId``</td><td>required; string</td><td>The name of the controller-ID for which the permissions should be deleted. The value for the default controllerId is ""</td><td>myControllerId</td><td></td></tr>
