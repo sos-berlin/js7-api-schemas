@@ -433,10 +433,44 @@ traits:
             schema: !include api/schemas/agent/storeClusterParam-schema.json
             example: " "
 
+    /enable:
+      type:
+        postJSONWithOkResponse:
+          description: Enables standalone Agents at the Controller
+          description1: !include api/documentation/agent/agentIds.md
+          description2: !include api/documentation/audit/auditLog.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/agent/deployAgents-schema.json
+          example: " "
+          
     /deploy:
       type:
         postJSONWithOkResponse:
           description: Deploys standalone Agents to Controllers
+          description1: !include api/documentation/agent/agentIds.md
+          description2: !include api/documentation/audit/auditLog.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/agent/deployAgents-schema.json
+          example: " "
+          
+    /disable:
+      type:
+        postJSONWithOkResponse:
+          description: Disables standalone Agents at the Controller
           description1: !include api/documentation/agent/agentIds.md
           description2: !include api/documentation/audit/auditLog.md
           description3: " "
