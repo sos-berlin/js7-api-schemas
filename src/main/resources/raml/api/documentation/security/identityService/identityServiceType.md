@@ -1,4 +1,4 @@
-<tr><td>``identityServiceName``</td><td>required, array</td>
+<tr><td>``identityServiceType``</td><td>required, enum</td>
 <td>The type of the idendityService
 <ul>
 <li>SHIRO</li>
@@ -9,5 +9,5 @@
 <li>LDAP_JOC</li>
 <li>JOC</li>
 </ul>
-</td><td>["VAULT"]</td><td></td></tr>
+</td><td>"VAULT"</td><td></td></tr>
     

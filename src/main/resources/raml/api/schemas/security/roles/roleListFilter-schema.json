@@ -9,10 +9,7 @@
 	"properties": {
 		"identityServiceName": {
 			"$ref": "../../common/string255-schema.json"
-		},
-		"roleName": {
-			"$ref": "../../common/string255-schema.json"
-		} 
+		}
 	}
 }
   

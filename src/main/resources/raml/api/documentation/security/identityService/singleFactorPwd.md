@@ -1,0 +1,1 @@
+<tr><td>``singleFactorPwd``</td><td>required; string</td><td>When the identity service scheme is SINGLE-FACTOR whether a passoword will authenticate the account.</td><td>myService</td><td></td></tr>

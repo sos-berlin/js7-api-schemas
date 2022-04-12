@@ -1252,7 +1252,7 @@ traits:
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          schema: !include api/schemas/security/accounts/accountNamesFilter-schema.json
           example: " "          
     /resetpassword:
       type:
@@ -1264,7 +1264,7 @@ traits:
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          schema: !include api/schemas/security/accounts/accountNamesFilter-schema.json
           example: " "          
     /enable:
       type:
@@ -1276,7 +1276,7 @@ traits:
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          schema: !include api/schemas/security/accounts/accountNamesFilter-schema.json
           example: " "          
     /disable:
       type:
@@ -1288,7 +1288,7 @@ traits:
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/accounts/accountsFilter-schema.json
+          schema: !include api/schemas/security/accounts/accountNamesFilter-schema.json
           example: " "          
   
         
@@ -1362,7 +1362,7 @@ traits:
           description5: !include api/documentation/security/account/changepassword/oldPassword.md
           description6: !include api/documentation/security/account/forcepasswordchange.md
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/accounts/account-schema.json
+          schema: !include api/schemas/security/accounts/accountChangePassword-schema.json
           example: " "
           
   /folders:
@@ -1504,7 +1504,10 @@ traits:
           description3: !include api/documentation/security/identityService/disabled.md
           description4: !include api/documentation/security/identityService/required.md
           description5: !include api/documentation/security/identityService/ordering.md
-          description6: " "
+          description6: !include api/documentation/security/identityService/singleFactorCert.md
+          description7: !include api/documentation/security/identityService/singleFactorPwd.md
+          description8: " " 
+          description9: " "
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/identityServices/identityService-schema.json
           example: " "
@@ -1702,8 +1705,7 @@ traits:
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/roles/roleRename-schema.json
-          example: " "                          
-                      
+          example: " "                    
 
 /inventory:
   description: This is not an API call. Use its children!!
