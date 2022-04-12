@@ -1,0 +1,15 @@
+{
+	"title": "read request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.read.RequestFilter",
+	"type": "object",
+	"extends" : {
+    	"$ref": "../common/request-filter-schema.json"
+  	},
+	"properties": {
+		"commitId": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	},
+  	"additionalProperties": false
+}
