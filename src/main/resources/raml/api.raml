@@ -1216,8 +1216,8 @@ traits:
       postJSONWithoutJSId:
         description: Returns a collection of Accounts
         description1: !include api/documentation/security/identityService/identityServiceName.md
-        description2: " "
-        description3: " "
+        description2: !include api/documentation/security/account/list/accountName.md
+        description3: !include api/documentation/security/account/list/disabled.md
         description4: " "
         description5: " "
         description6: " "
@@ -1236,7 +1236,7 @@ traits:
           description: Delete accounts
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/delete/accountNames.md
-          description3: " "
+          description3: !include api/documentation/security/account/delete/disabled.md
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
@@ -1358,9 +1358,9 @@ traits:
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/accountName.md
           description3: !include api/documentation/security/account/changepassword/password.md
-          description3: !include api/documentation/security/account/changepassword/repeatedPassword.md
-          description4: !include api/documentation/security/account/changepassword/oldPassword.md
-          description5: !include api/documentation/security/account/forcepasswordchange.md
+          description4: !include api/documentation/security/account/changepassword/repeatedPassword.md
+          description5: !include api/documentation/security/account/changepassword/oldPassword.md
+          description6: !include api/documentation/security/account/forcepasswordchange.md
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/accounts/account-schema.json
           example: " "
@@ -1449,7 +1449,7 @@ traits:
       postJSONWithoutJSId:
         description: Returns a collection of Identity Services
         description1: !include api/documentation/security/identityServices/identityServiceName.md
-        description2: !include api/documentation/security/identityService/disabled.md
+        description2: !include api/documentation/security/identityServices/disabled.md
         description3: " "
         description4: " "
         description5: " "
@@ -1688,7 +1688,7 @@ traits:
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/roles/role-schema.json
+          schema: !include api/schemas/security/roles/roleStore-schema.json
           example: " "                       
                     
     /rename:
