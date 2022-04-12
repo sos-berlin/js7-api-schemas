@@ -3,7 +3,7 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.xmleditor.apply.ApplyConfigurationAnswer",
 	"type": "object",
-	"description": "state,released,hasReleases only for notification",
+	"description": "state,released,hasReleases only for objectType=NOTIFICATION",
 	"properties": {
 		"id": {
 			"type": "integer"

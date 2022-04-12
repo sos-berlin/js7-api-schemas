@@ -3,9 +3,11 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.xmleditor.apply.ApplyConfiguration",
 	"type": "object",
-	"description": "id, name, schemaIdentifier only for OTHER",
+	"description": "id, name, schemaIdentifier only for objectType=YADE/OTHER",
 	"required": [
-		"controllerId"
+		"controllerId",
+		"objectType",
+		"configuration"
 	],
 	"properties": {
 		"controllerId": {
