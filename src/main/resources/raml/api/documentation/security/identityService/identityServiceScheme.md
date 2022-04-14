@@ -1,4 +1,4 @@
-<tr><td>``identityServiceScheme``</td><td>required,enum</td>
+<tr><td>``identityServiceScheme``</td><td>required, enum</td>
 <td>The scheme of the idendityService
 <ul>
 <li>SINGLE-FACTOR</li>

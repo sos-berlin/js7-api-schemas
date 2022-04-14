@@ -3,11 +3,11 @@
 <ul>
 <li>SHIRO</li>
 <li>VAULT</li>
-<li>VAULT_JOC</li>
-<li>VAULT_JOC_ACTIVE</li>
+<li>VAULT-JOC</li>
+<li>VAULT-JOC-ACTIVE</li>
 <li>LDAP</li>
-<li>LDAP_JOC</li>
+<li>LDAP-JOC</li>
 <li>JOC</li>
 </ul>
-</td><td>"VAULT"</td><td></td></tr>
+</td><td>VAULT</td><td></td></tr>
     

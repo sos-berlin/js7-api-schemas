@@ -19,7 +19,9 @@
 			"$ref": "identityServiceAuthenticationScheme-schema.json"
 		},
 		"ordering": {
-			"$ref": "../../common/nonNegativeInteger-schema.json"
+			"type": "integer",
+  			"minimum": 1,
+  			"default": 1
 		},
 		"disabled": {
 			"$ref": "../disabledParam-schema.json"

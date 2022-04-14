@@ -1,1 +1,1 @@
-<tr><td>``singleFactorCert``</td><td>required; string</td><td>When the identity service scheme is SINGLE-FACTOR whether a certificate will authenticate the account.</td><td>myService</td><td></td></tr>
+<tr><td>``singleFactorCert``</td><td>optional, boolean</td><td>When the identity service scheme is SINGLE-FACTOR whether a certificate will authenticate the account.</td><td>false</td><td>false</td></tr>
