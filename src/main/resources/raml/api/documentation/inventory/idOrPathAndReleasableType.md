@@ -4,5 +4,6 @@
 <tr><td>``objectType``</td><td>string</td><td>Object type of the configuration item. Possible value are 
 <ul><li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
-    <li>"SCHEDULE"</li></ul>
+    <li>"SCHEDULE"</li>
+    <li>"INCLUDESCRIPT"</li></ul>
 </td><td></td><td></td></tr>
