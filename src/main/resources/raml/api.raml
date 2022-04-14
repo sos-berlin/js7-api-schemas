@@ -1233,7 +1233,7 @@ traits:
     /delete:
       type:
         postJSONWithOkWithoutJSId:
-          description: Delete accounts
+          description: Deletes accounts
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/delete/accountNames.md
           description3: !include api/documentation/security/account/delete/disabled.md
@@ -1245,7 +1245,7 @@ traits:
     /forcepasswordchange:
       type:
         postJSONWithOkWithoutJSId:
-          description: Force accounts to set a new password during the next login
+          description: Forces accounts to set a new password during the next login
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/forcepasswordchange/accountNames.md
           description3: " "
@@ -1257,7 +1257,7 @@ traits:
     /resetpassword:
       type:
         postJSONWithOkWithoutJSId:
-          description: Set accounts to the initial password. 
+          description: Sets accounts to the initial password. 
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/resetpassword/accountNames.md
           description3: " "
@@ -1281,7 +1281,7 @@ traits:
     /disable:
       type:
         postJSONWithOkWithoutJSId:
-          description: Disable accounts
+          description: Disables accounts
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/disable/accountNames.md
           description3: " "
@@ -1295,7 +1295,7 @@ traits:
   /account:
     type:
       postJSONWithoutJSId:
-        description: returns an account
+        description: Returns an account
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/account/accountName.md
         description3: " "
@@ -1314,7 +1314,7 @@ traits:
     /store:
       type:
         postJSONWithOkWithoutJSId:
-          description: Stores an Account
+          description: Stores an account
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/accountName.md
           description3: !include api/documentation/security/account/store/disabled.md
@@ -1329,7 +1329,7 @@ traits:
     /rename:
       type:
         postJSONWithOkWithoutJSId:
-          description: Renames an Account   
+          description: Renames an account   
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/rename/accountoldname.md
           description3: !include api/documentation/security/account/rename/accountnewname.md
@@ -1368,7 +1368,7 @@ traits:
   /folders:
     type:
       postJSONWithoutJSId:
-        description: Returns a collection of Folders for the given role and controller-id
+        description: Returns a collection of folders for the given role and Controller ID
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/folder/roleName.md
         description3: !include api/documentation/security/folder/controllerId.md
@@ -1387,7 +1387,7 @@ traits:
     /store:
       type:
         postJSONWithOkWithoutJSId:
-          description: Stores folders to a given role and controller-id
+          description: Stores folders to a given role and Controller ID
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/folder/store/roleName.md
           description3: !include api/documentation/security/folder/store/controllerId.md
@@ -1399,7 +1399,7 @@ traits:
     /delete:
       type:
         postJSONWithOkWithoutJSId:
-          description: Delete folders from a given role and controller-id
+          description: Deletes folders from a given role and Controller ID
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/folder/delete/roleName.md
           description3: !include api/documentation/security/folder/delete/controllerId.md
@@ -1413,7 +1413,7 @@ traits:
   /folder:
     type:
       postJSONWithoutJSId:
-        description: returns a folder
+        description: Returns a folder
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/folder/roleName.md
         description3: !include api/documentation/security/folder/controllerId.md
@@ -1479,7 +1479,7 @@ traits:
   /identityservice:
     type:
       postJSONWithoutJSId:
-        description: A Identity Service
+        description: Returns an Identity Service
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: " "
         description3: " "
@@ -1514,7 +1514,7 @@ traits:
     /delete:
       type:
         postJSONWithOkWithoutJSId:
-          description: Deletes an Identiy Service
+          description: Deletes an Identity Service
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: " "
           description3: " "
@@ -1526,7 +1526,7 @@ traits:
     /rename:
       type:
         postJSONWithOkWithoutJSId:
-          description: Renames an Identiy Service
+          description: Renames an Identity Service
           description1: !include api/documentation/security/identityService/identityserviceoldname.md
           description2: !include api/documentation/security/identityService/identityservicenewname.md
           description3: " "
@@ -1538,7 +1538,7 @@ traits:
   /permissions:
     type:
       postJSONWithoutJSId:
-        description: Returns a collection of Permissions for the given role and controller-id
+        description: Returns a collection of permissions for the given role and Controller ID
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/permission/roleName.md
         description3: !include api/documentation/security/permission/controllerId.md
@@ -1557,7 +1557,7 @@ traits:
     /store:
       type:
         postJSONWithOkWithoutJSId:
-          description: Stores permissions to a given role and controller-id
+          description: Stores permissions to a given role and Controller ID
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/permission/store/roleName.md
           description3: !include api/documentation/security/permission/store/controllerId.md
@@ -1569,7 +1569,7 @@ traits:
     /delete:
       type:
         postJSONWithOkWithoutJSId:
-          description: Delete permissions from a given role and controller-id
+          description: Delete permissions from a given role and Controller ID
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/permission/delete/roleName.md
           description3: !include api/documentation/security/permission/delete/controllerId.md
@@ -1583,7 +1583,7 @@ traits:
   /permission:
     type:
       postJSONWithoutJSId:
-        description: returns a permission
+        description: Returns a permission
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/permission/roleName.md
         description3: !include api/documentation/security/permission/controllerId.md
@@ -1617,7 +1617,7 @@ traits:
   /roles:
     type:
       postJSONWithoutJSId:
-        description: Returns a collection of Roles for the given Identity Service
+        description: Returns a collection of roles for the given Identity Service
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: " "
         description3: " "
@@ -1637,7 +1637,7 @@ traits:
     /delete:
       type:
         postJSONWithOkWithoutJSId:
-          description: Delete roles from a given Identity Service
+          description: Deletes roles from a given Identity Service
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/role/delete/roleNames.md
           description3: " "
@@ -1649,7 +1649,7 @@ traits:
     /reorder:
       type:
         postJSONWithOkWithoutJSId:
-          description: Reorders the Roles for a given Identity Service
+          description: Reorders the roles for a given Identity Service
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/role/reorder/roleNames.md
           description3: " "
@@ -1663,7 +1663,7 @@ traits:
   /role:
     type:
       postJSONWithoutJSId:
-        description: returns a role
+        description: Returns a role
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/role/roleName.md
         description3: " "

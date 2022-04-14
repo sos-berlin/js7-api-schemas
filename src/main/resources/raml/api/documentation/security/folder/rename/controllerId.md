@@ -1,1 +1,1 @@
-<tr><td>``controllerId``</td><td>optional; string</td><td>The name of the controller-ID for which the folder should be renamed. For the default controllerId the value is ""</td><td>myControllerId</td><td></td></tr>
+<tr><td>``controllerId``</td><td>optional, string</td><td>The Controller ID for which the folder should be renamed</td><td>myControllerId</td><td></td></tr>

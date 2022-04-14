@@ -1,1 +1,1 @@
-<tr><td>``oldPermissionPath``</td><td>required; string</td><td>The old path of the permission</td><td>myOldPermission</td><td></td></tr>
+<tr><td>``oldPermissionPath``</td><td>required, string</td><td>The old path of the permission</td><td>myOldPermission</td><td></td></tr>

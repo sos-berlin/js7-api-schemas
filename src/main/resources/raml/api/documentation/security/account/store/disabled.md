@@ -1,1 +1,1 @@
-<tr><td>``disabled``</td><td>optional; string</td><td>Whether the Account is disabled </td><td>false</td><td></td></tr>
+<tr><td>``disabled``</td><td>optional, boolean</td><td>Whether the account is disabled</td><td>false</td><td>false</td></tr>

@@ -17,6 +17,7 @@
 		"roleName": {
 			"$ref": "../../common/string255-schema.json"
 		} 
-	}
+	},
+	"additionalProperties": false
 }
   

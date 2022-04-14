@@ -1,1 +1,1 @@
-<tr><td>``controllerId``</td><td>required, string</td><td>The Controller ID for which the folder should be returned. For the default controllerId the value is ""</td><td>myControllerId</td><td></td></tr>
+<tr><td>``controllerId``</td><td>optional, string</td><td>The Controller ID for which the folder should be returned</td><td>myControllerId</td><td></td></tr>

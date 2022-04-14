@@ -1,8 +1,6 @@
-<tr><td>``accountNames``</td><td>required, array</td>
+<tr><td>``accountNames``</td><td>required, array[string]</td>
 <td>An array with account names that should be disabled.<br/>
-<td> [
-  <div style="padding-left:10px;">"accountNames":"["myAccount","anotherAccount"]</div>
-  ]</td>
+<td>["myAccount","anotherAccount"]</td>
 <td></td>
 </tr>
 
