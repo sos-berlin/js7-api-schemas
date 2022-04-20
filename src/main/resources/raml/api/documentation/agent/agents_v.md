@@ -3,6 +3,7 @@ Contains collection of Agents where each Agent has the fields
 * agentId
 * agentName
 * url (only for standalone agent)
+* hidden
 * disabled (only for standalone agent)
 * isClusterWatcher (only for standalone agent)
 * state (only for standalone agent; COUPLED, COUPLINGFAILED, RESET, RESETTING, SHUTDOWN, UNKNOWN)

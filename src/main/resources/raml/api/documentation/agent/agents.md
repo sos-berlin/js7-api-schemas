@@ -5,5 +5,5 @@
     <tr><td style="padding-left:20px;">``agentNameAliases``</td><td>optional, array[string]</td><td>Aliases of the ``agentName``</td><td></td><td></td></tr>
     <tr><td style="padding-left:20px;">``url``</td><td>required, string</td><td>URL of the Agent</td><td></td><td></td></tr>
     <!-- tr><td style="padding-left:20px;">``isClusterWatcher``</td><td>optional, boolean</td><td>If a Controller Cluster is configured then at least one Agent must be a Cluster Watcher</td><td></td><td>false</td></tr -->
-    <tr><td style="padding-left:20px;">``disabled``</td><td>optional, boolean</td><td>A disabled Agent will not be offered in JOC Cockpit during the Job configuration</td><td></td><td>false</td></tr>
+    <tr><td style="padding-left:20px;">``hidden``</td><td>optional, boolean</td><td>A hidden Agent will not be offered in JOC Cockpit during the Job configuration</td><td></td><td>false</td></tr>
     
