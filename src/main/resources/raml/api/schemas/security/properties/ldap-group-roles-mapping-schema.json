@@ -10,5 +10,6 @@
 				"$ref": "ldap-group-roles-mapping-item-schema.json"
 			}
 		}
-	}
+	},
+	"additionalProperties": false
 }

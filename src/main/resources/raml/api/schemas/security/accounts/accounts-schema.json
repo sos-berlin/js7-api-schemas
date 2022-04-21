@@ -16,6 +16,7 @@
 				"$ref": "account-schema.json"
 			}
 		}
-	}
+	},
+	"additionalProperties": false
 }
  

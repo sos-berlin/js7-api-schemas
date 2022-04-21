@@ -50,6 +50,7 @@
 		"iamLdapGroupRolesMap": {
 			"$ref": "ldap-group-roles-mapping-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }
     

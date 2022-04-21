@@ -6,25 +6,26 @@
 	"required": [
 		"identityServiceName",
 		"controllerId",
-		"roleName",	
+		"roleName",
 		"folderName"
 	],
 	"properties": {
 		"identityServiceName": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"controllerId": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/controllerId-schema.json"
 		},
 		"roleName": {
-			"$ref": "../../common/string255-schema.json"
-		},				
+			"$ref": "../../common/string255required-schema.json"
+		},
 		"folderName": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }
   
