@@ -9,13 +9,13 @@
 	],
 	"properties": {
 		"identityServiceName": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"controllerId": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/controllerId-schema.json"
 		},	
 		"roleName": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		} 
 	},
 	"additionalProperties": false

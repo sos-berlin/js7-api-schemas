@@ -19,5 +19,6 @@
 				"$ref": "identityServiceTypes-schema.json"
 			}
 		}
-	}
+	},
+	"additionalProperties": false
 }

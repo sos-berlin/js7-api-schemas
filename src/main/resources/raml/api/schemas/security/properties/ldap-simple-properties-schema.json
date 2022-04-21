@@ -22,6 +22,7 @@
 		"iamLdapWithMemberOf": {
 			"type": "boolean"
 		}
-	}
+	},
+	"additionalProperties": false
 }
     

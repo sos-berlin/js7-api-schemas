@@ -11,11 +11,12 @@
 			"$ref": "../../common/string255-schema.json"
 		},
 		"identityServiceName": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"disabled": {
 			"$ref": "../disabledParam-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }
   

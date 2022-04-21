@@ -8,7 +8,7 @@
 			"$ref": "../../common/string255-schema.json"
 		},
 		"controllerId": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/controllerId-schema.json"
 		},
 		"roleName": {
 			"$ref": "../../common/string255-schema.json"
@@ -18,8 +18,7 @@
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
-		},
-		"additionalProperties": false
+		} 
 	},
 	"additionalProperties": false
 }
