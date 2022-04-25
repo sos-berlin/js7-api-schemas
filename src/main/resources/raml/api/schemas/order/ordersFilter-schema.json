@@ -1,70 +1,76 @@
 {
-  "title": "orders filter",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.order.OrdersFilter",
-  "type": "object",
-  "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
-    "orders": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "orderPath-schema.json"
-      }
-    },
-    "excludeWorkflows": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "../common/string255required-schema.json"
-      }
-    },
-    "compact": {
-      "$ref": "../common/compactParam-schema.json"
-    },
-    "orderId": {
-      "$ref": "../common/glob-schema.json"
-    },
-    "workflowPath": {
-      "$ref": "../common/glob-schema.json"
-    },
-    "states": {
-      "type": "array",
-      "items": {
-        "$ref": "orderStateText-schema.json"
-      }
-    },
-    "dateFrom": {
-      "$ref": "../common/dateFromTo-schema.json"
-    },
-    "dateTo": {
-      "$ref": "../common/dateFromTo-schema.json"
-    },
-    "timeZone": {
-      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-      "type": "string"
-    },
-    "folders": {
-      "$ref": "../common/folders-schema.json"
-    },
-    "limit": {
-      "description": "only for db history urls to restrict the number of responsed records; -1=unlimited",
-      "type": "integer",
-      "default": 10000
-    },
-    "historyStates": {
-      "type": "array",
-      "items": {
-        "$ref": "../common/historyStateText-schema.json"
-      }
-    },
-    "historyIds": {
-      "type": "array",
-      "items": {
-        "$ref": "../common/nonNegativeLong-schema.json"
-      }
-    }
-  }
+	"title": "orders filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.order.OrdersFilter",
+	"type": "object",
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/controllerId-schema.json"
+		},
+		"orders": {
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"$ref": "orderPath-schema.json"
+			}
+		},
+		"excludeWorkflows": {
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"$ref": "../common/string255required-schema.json"
+			}
+		},
+		"compact": {
+			"$ref": "../common/compactParam-schema.json"
+		},
+		"orderId": {
+			"$ref": "../common/glob-schema.json"
+		},
+		"workflowPath": {
+			"$ref": "../common/glob-schema.json"
+		},
+		"states": {
+			"type": "array",
+			"items": {
+				"$ref": "orderStateText-schema.json"
+			}
+		},
+		"dateFrom": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"dateTo": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"endDateFrom": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"endDateTo": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"timeZone": {
+			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+			"type": "string"
+		},
+		"folders": {
+			"$ref": "../common/folders-schema.json"
+		},
+		"limit": {
+			"description": "only for db history urls to restrict the number of responsed records; -1=unlimited",
+			"type": "integer",
+			"default": 10000
+		},
+		"historyStates": {
+			"type": "array",
+			"items": {
+				"$ref": "../common/historyStateText-schema.json"
+			}
+		},
+		"historyIds": {
+			"type": "array",
+			"items": {
+				"$ref": "../common/nonNegativeLong-schema.json"
+			}
+		}
+	}
 }
