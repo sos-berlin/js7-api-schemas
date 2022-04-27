@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API Internal
-version: 2.3.0
+version: 2.3.1
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -44,7 +44,6 @@ resourceTypes:
   - postJSONWithoutJSId: !include api/resourceTypes/common/postJSONWithoutJSId.raml
   - postWithoutJSONandJSId: !include api/resourceTypes/common/postWithoutJSONandJSId.raml
   - postJSONWithOkWithoutJSId: !include api/resourceTypes/common/postJSONWithOkWithoutJSId.raml
-  - postYADEJSONWithOkResponse: !include api/resourceTypes/yade/postJSONWithOkResponse.raml
   - postOnlyAccessToken: !include api/resourceTypes/common/postOnlyAccessToken.raml
   - postOnlyId: !include api/resourceTypes/common/postOnlyId.raml
   - postOnlyOptionalId: !include api/resourceTypes/common/postOnlyOptionalId.raml

@@ -19,20 +19,14 @@
     "sourceFiles": {
       "type": "array",
       "items": {
-        "$ref": "../common/string255required-schema.json"
+        "$ref": "../common/glob-schema.json"
       }
     },
     "targetFiles": {
       "type": "array",
       "items": {
-        "$ref": "../common/string255required-schema.json"
+        "$ref": "../common/glob-schema.json"
       }
-    },
-    "sourceFile": {
-      "$ref": "../common/glob-schema.json"
-    },
-    "targetFile": {
-      "$ref": "../common/glob-schema.json"
     },
     "integrityHash": {
       "$ref": "../common/string255required-schema.json"

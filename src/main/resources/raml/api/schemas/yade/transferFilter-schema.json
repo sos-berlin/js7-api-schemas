@@ -7,12 +7,6 @@
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
     },
-    "transferIds": {
-      "type": "array",
-      "items": {
-        "$ref": "../common/nonNegativeLong-schema.json"
-      }
-    },
     "compact": {
       "$ref": "../common/compactParam-schema.json"
     },
@@ -22,7 +16,7 @@
     "profiles": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "../common/glob-schema.json"
       }
     },
     "states": {
@@ -64,22 +58,16 @@
         "$ref": "protocolFragment-schema.json"
       }
     },
-    "sourceFile": {
-      "$ref": "../common/glob-schema.json"
-    },
-    "targetFile": {
-      "$ref": "../common/glob-schema.json"
-    },
     "sourceFiles": {
       "type": "array",
       "items": {
-        "$ref": "../common/string255required-schema.json"
+        "$ref": "../common/glob-schema.json"
       }
     },
     "targetFiles": {
       "type": "array",
       "items": {
-        "$ref": "../common/string255required-schema.json"
+        "$ref": "../common/glob-schema.json"
       }
     }
   }
