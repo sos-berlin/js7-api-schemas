@@ -30,6 +30,9 @@
 		"workflowPath": {
 			"$ref": "../common/glob-schema.json"
 		},
+    	"workflowName": {
+      		"$ref": "../common/glob-schema.json"
+    	},
 		"states": {
 			"type": "array",
 			"items": {
