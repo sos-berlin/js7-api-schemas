@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.3.0
+version: 2.3.1
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -43,7 +43,6 @@ resourceTypes:
   - postJSONWithoutJSId: !include api/resourceTypes/common/postJSONWithoutJSId.raml
   - postWithoutJSONandJSId: !include api/resourceTypes/common/postWithoutJSONandJSId.raml
   - postJSONWithOkWithoutJSId: !include api/resourceTypes/common/postJSONWithOkWithoutJSId.raml
-  - postYADEJSONWithOkResponse: !include api/resourceTypes/yade/postJSONWithOkResponse.raml
   - postOnlyAccessToken: !include api/resourceTypes/common/postOnlyAccessToken.raml
   - postOnlyId: !include api/resourceTypes/common/postOnlyId.raml
   - postOnlyOptionalId: !include api/resourceTypes/common/postOnlyOptionalId.raml
@@ -3521,7 +3520,7 @@ traits:
     type:
       postJSONWithOptionalJSId:
         description: Gets file transfers
-        description1: !include api/documentation/yade/transferIds.md
+        description1: " "
         description2: !include api/documentation/common/compact.md
         description3: !include api/documentation/common/dateFrom.md
         description4: !include api/documentation/common/dateTo.md
@@ -3532,22 +3531,14 @@ traits:
         description9: !include api/documentation/yade/target.md
         description10: !include api/documentation/yade/profile.md
         description11: !include api/documentation/yade/patterns.md
-        description12: !include api/documentation/yade/sourceTargetPath.md
+        description12: " "
         description13: !include api/documentation/common/limit.md
         description200: !include api/documentation/yade/transfers.md
         schema: !include api/schemas/yade/transferFilter-schema.json
         schema200: !include api/schemas/yade/transfers-schema.json
         example: !include api/examples/audit/audit-request-example.json
         example200: !include api/examples/yade/transfers-example.json
-#
-#    /restart:
-#      type:
-#        postYADEJSONWithOkResponse:
-#          description: Restarts file transfers for some failed files
-#          audit: !include api/documentation/audit/auditLog.md
-#          schema: !include api/schemas/yade/modifyTransfers-schema.json
-#          example: " "
-#
+
   /files:
     type:
       postJSONWithoutJSId:
@@ -3559,7 +3550,7 @@ traits:
         description5: " "
         description6: !include api/documentation/yade/fileStates.md
         description7: !include api/documentation/yade/patterns.md
-        description8: !include api/documentation/yade/sourceTargetPath.md
+        description8: " "
         description9: !include api/documentation/yade/integrityHash.md
         description10: !include api/documentation/common/limit.md
         description200: " "
