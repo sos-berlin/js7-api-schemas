@@ -9,4 +9,10 @@ that supports '&#42;' and '?' as wildcards where
 <ul>
   <li> &#42; : match zero or more characters</li>
   <li> ? : match any single character</li>
+</ul></td><td>"a/b/my&#42;Workflow"</td><td></td></tr>
+<tr><td>``workflowName``</td><td>optional, string</td><td>Limits result to a specified glob pattern of a Workflow name 
+that supports '&#42;' and '?' as wildcards where
+<ul>
+  <li> &#42; : match zero or more characters</li>
+  <li> ? : match any single character</li>
 </ul></td><td>"my&#42;Workflow"</td><td></td></tr>

@@ -23,7 +23,10 @@
       "$ref": "../common/string255-schema.json"
     },
     "workflowPath": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/glob-schema.json"
+    },
+    "workflowName": {
+      "$ref": "../common/glob-schema.json"
     },
     "dateFrom": {
       "$ref": "../common/dateFromTo-schema.json"
