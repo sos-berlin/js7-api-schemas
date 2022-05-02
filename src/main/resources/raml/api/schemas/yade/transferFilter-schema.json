@@ -69,6 +69,13 @@
       "items": {
         "$ref": "../common/glob-schema.json"
       }
+    },
+    "workflowNames": {
+      	"type": "array",
+		"items": {
+			"$ref": "../common/glob-schema.json"
+		}
     }
-  }
+  },
+  "additionalProperties": false
 }
