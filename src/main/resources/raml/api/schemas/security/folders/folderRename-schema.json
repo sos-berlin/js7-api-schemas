@@ -25,7 +25,7 @@
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"newFolder": {
-			"$ref": "../../common/string255required-schema.json"
+			"$ref": "../../common/folder-schema.json"
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
