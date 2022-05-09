@@ -105,6 +105,12 @@
     "clusterLicense": {
       "type": "boolean",
       "default": false
+    },
+    "validFrom": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "validUntil": {
+      "$ref": "../common/timestamp-schema.json"
     }
   }
 }
