@@ -106,10 +106,10 @@
       "type": "boolean",
       "default": false
     },
-    "validFrom": {
+    "licenseValidFrom": {
       "$ref": "../common/timestamp-schema.json"
     },
-    "validUntil": {
+    "licenseValidUntil": {
       "$ref": "../common/timestamp-schema.json"
     }
   }
