@@ -111,6 +111,9 @@
     },
     "licenseValidUntil": {
       "$ref": "../common/timestamp-schema.json"
+    },
+    "licenseType": {
+      "$ref": "licenseType-schema.json"
     }
   }
 }
