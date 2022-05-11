@@ -1,0 +1,21 @@
+{
+  "title": "js7-license information",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.Js7LicenseInfo",
+  "type": "object",
+  "properties": {
+    "valid": {
+      "type": "boolean",
+      "default": false
+    },
+    "validFrom": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "validUntil": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "type": {
+          "$ref": "licenseType-schema.json"
+      }
+  }
+}

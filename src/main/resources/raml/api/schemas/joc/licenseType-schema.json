@@ -1,0 +1,10 @@
+{
+  "title": "sos js7 license types",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.LicenseType",
+  "type": "string",
+  "enum": [
+    "COMMERCIAL",
+    "OPENSOURCE"
+  ]
+}
