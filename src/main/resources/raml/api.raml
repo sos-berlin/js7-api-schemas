@@ -2589,6 +2589,16 @@ traits:
             "deliveryDate":"2020-05-05T21:13:35Z",
             "ok":true
           }
+  /license:
+    type:
+      postWithoutJSONandJSId:
+        description: shows information about the currently used SOS JS7 License
+        description1: " "
+        description2: " "
+        schema: !include api/examples/publish/emptyBody-example.json
+        schema200: !include api/schemas/joc/js7LicenseInfo-schema.json
+        example: !include api/examples/publish/emptyBody-example.json
+        example200: !include api/examples/joc/js7LicenseInfo-example.json
   /log:
     type:
       postWithPlainResponse:
