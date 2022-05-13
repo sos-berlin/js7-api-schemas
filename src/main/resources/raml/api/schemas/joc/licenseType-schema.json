@@ -4,7 +4,8 @@
   "javaType": "com.sos.joc.model.joc.LicenseType",
   "type": "string",
   "enum": [
-    "COMMERCIAL",
-    "OPENSOURCE"
+    "OPENSOURCE",
+    "COMMERCIAL_VALID",
+    "COMMERCIAL_INVALID"
   ]
 }
