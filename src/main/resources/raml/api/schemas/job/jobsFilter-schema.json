@@ -34,12 +34,18 @@
     "dateTo": {
       "$ref": "../common/dateFromTo-schema.json"
     },
-    "endDateFrom": {
-      "$ref": "../common/dateFromTo-schema.json"
-    },
-    "endDateTo": {
-      "$ref": "../common/dateFromTo-schema.json"
-    },
+    "completedDateFrom": {
+      		"alias": "endDateFrom",
+			"description": "0 or [number][smhdwMy] (where smhdwMy unit for second, minute, etc) or ISO 8601 timestamp",
+  			"type": "string",
+  			"pattern": "^([+-]?0|([+-]?[0-9]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}(?:T| )\\d{2}:\\d{2}:\\d{2}([,.]\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+	},
+    "completedDateTo": {
+      		"alias": "endDateTo",
+			"description": "0 or [number][smhdwMy] (where smhdwMy unit for second, minute, etc) or ISO 8601 timestamp",
+  			"type": "string",
+  			"pattern": "^([+-]?0|([+-]?[0-9]+[smhdwMy])+|\\d{4}-\\d{2}-\\d{2}(?:T| )\\d{2}:\\d{2}:\\d{2}([,.]\\d{1,3})?)(Z|[+-]\\d{2}(:?\\d{2})?)?$"
+	},
     "timeZone": {
       "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
       "type": "string"

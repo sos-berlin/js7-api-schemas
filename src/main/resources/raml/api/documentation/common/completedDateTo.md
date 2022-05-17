@@ -1,0 +1,1 @@
+<tr><td>``completedDateTo``</td><td>optional, string</td><td>The value has multiple formats similiar to the ``completedDateFrom`` parameter<ul><li>Filters items ending before a date.</li></ul></td><td>0</td><td></td></tr>
