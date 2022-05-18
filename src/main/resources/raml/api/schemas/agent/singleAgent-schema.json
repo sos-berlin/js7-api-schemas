@@ -49,6 +49,10 @@
     "deployed": {
     	"type": "boolean",
     	"default": false
+    },
+    "ordering": {
+    	"type": "integer",
+    	"minimum": 1
     }
   },
   "additionalProperties": false
