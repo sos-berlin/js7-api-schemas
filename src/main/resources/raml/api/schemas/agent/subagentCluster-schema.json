@@ -28,6 +28,10 @@
     "syncState": {
     	"$ref": "../../../controller/schemas/common/syncState-schema.json"
     },
+    "ordering": {
+    	"type": "integer",
+    	"minimum": 1
+    },
     "subagentIds": {
     	"type": "array",
     	"items": {
