@@ -11,7 +11,7 @@
 			"$ref": "../../common/controllerId-schema.json"
 		},
 		"search": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/glob-schema.json"
 		},
 		"folders": {
 			"type": "array",

@@ -2,6 +2,6 @@
   "title": "controllerId",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "string",
-  "pattern": "^[^/\\<>?:\"|*]*$",
+  "pattern": "^[^/\\<>?!&:;()\"|*^]*$",
   "maxLength": 100
 }
