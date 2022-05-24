@@ -1,0 +1,20 @@
+{
+  "title": "ordering subagentclusters",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.OrderingSubagentClusters",
+  "type": "object",
+  "required": [
+  	"subagentClusterId",
+  	"ordering"
+  ],
+  "properties": {
+    "subagentClusterId": {
+      "$ref": "../common/string255required-schema.json"
+    },
+    "ordering": {
+    	"type": "integer",
+    	"minimum": 1
+    }
+  },
+  "additionalProperties": false
+}

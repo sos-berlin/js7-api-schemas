@@ -1,0 +1,20 @@
+{
+  "title": "ordering subagents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.OrderingSubagents",
+  "type": "object",
+  "required": [
+  	"subagentId",
+  	"ordering"
+  ],
+  "properties": {
+    "subagentId": {
+      "$ref": "../common/string255required-schema.json"
+    },
+    "ordering": {
+    	"type": "integer",
+    	"minimum": 1
+    }
+  },
+  "additionalProperties": false
+}

@@ -82,6 +82,43 @@ traits:
 
 
 /agents:
+  /cluster:
+    /ordering:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Change the order of Subagent Clusters in a list display
+          description1: !include api/documentation/agent/subagentClusterId.md
+          description2: !include api/documentation/agent/ordering.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: " "
+          schema: !include api/schemas/agent/orderingSubagentCluster-schema.json
+          example: " "
+  /inventory:
+    /ordering:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Change the order of Agents in a list display
+          description1: !include api/documentation/agent/agentId.md
+          description2: !include api/documentation/agent/ordering.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: " "
+          schema: !include api/schemas/agent/orderingAgent-schema.json
+          example: " "
+
   /names:
     type:
       postJSONWithOptionalJSId:
