@@ -1,0 +1,20 @@
+{
+  "title": "ordering agents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.OrderingAgents",
+  "type": "object",
+  "required": [
+  	"agentId",
+  	"ordering"
+  ],
+  "properties": {
+    "agentId": {
+      "$ref": "../common/string255required-schema.json"
+    },
+    "ordering": {
+    	"type": "integer",
+    	"minimum": 1
+    }
+  },
+  "additionalProperties": false
+}
