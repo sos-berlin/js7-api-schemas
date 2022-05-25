@@ -4,16 +4,14 @@
   "javaType": "com.sos.joc.model.agent.OrderingAgents",
   "type": "object",
   "required": [
-  	"agentId",
-  	"ordering"
+  	"agentId"
   ],
   "properties": {
     "agentId": {
       "$ref": "../common/string255required-schema.json"
     },
-    "ordering": {
-    	"type": "integer",
-    	"minimum": 1
+    "predecessorAgentId": {
+    	"$ref": "../common/string255-schema.json"
     }
   },
   "additionalProperties": false
