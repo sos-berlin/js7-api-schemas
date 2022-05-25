@@ -1,0 +1,1 @@
+<tr><td>``predecessorSubagentClusterId``</td><td>optional, string</td><td>Subagent Cluster ID of the predecessor. If it is empty or undefined than the Subagent Cluster is on top in the order</td><td></td><td></td></tr>
