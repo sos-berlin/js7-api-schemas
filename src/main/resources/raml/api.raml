@@ -434,6 +434,24 @@ traits:
               schema: !include api/schemas/agent/subagentsCommand-schema.json
               example: " "
         
+        /ordering:
+          type:
+            postJSONWithOkWithoutJSId:
+              description: Change the order of Subagents
+              description1: !include api/documentation/agent/subagentId.md
+              description2: !include api/documentation/agent/predecessorSubagentId.md
+              description3: " "
+              description4: " "
+              description5: " "
+              description6: " "
+              description7: " "
+              description8: " "
+              description9: " "
+              description10: " "
+              audit: " "
+              schema: !include api/schemas/agent/orderingSubagent-schema.json
+              example: " "
+          
         /store:
           type:
             postJSONWithOkResponse:
@@ -1270,8 +1288,8 @@ traits:
         description: Returns a collection of Accounts
         description1: !include api/documentation/security/identityService/identityServiceName.md
         description2: !include api/documentation/security/account/list/accountName.md
-        description3: !include api/documentation/security/account/list/disabled.md
-        description4: " "
+        description3: !include api/documentation/security/account/list/enabled.md
+        description4: !include api/documentation/security/account/list/disabled.md
         description5: " "
         description6: " "
         description7: " "
@@ -1289,8 +1307,8 @@ traits:
           description: Deletes accounts
           description1: !include api/documentation/security/identityService/identityServiceName.md
           description2: !include api/documentation/security/account/delete/accountNames.md
-          description3: !include api/documentation/security/account/delete/disabled.md
-          description4: " "
+          description3: !include api/documentation/security/account/delete/enabled.md
+          description4: !include api/documentation/security/account/delete/disabled.md
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/accounts/accountsFilter-schema.json

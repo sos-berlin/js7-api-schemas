@@ -17,8 +17,13 @@
 				"$ref": "../../common/string255-schema.json"
 			}
 		},
+		"enabled": {
+			"type": "boolean",
+  			"default": false
+		},
 		"disabled": {
-			"$ref": "../disabledParam-schema.json"
+			"type": "boolean",
+  			"default": false
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
