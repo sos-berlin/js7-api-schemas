@@ -13,8 +13,13 @@
 		"identityServiceName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"enabled": {
+			"type": "boolean",
+  			"default": false
+		},
 		"disabled": {
-			"$ref": "../disabledParam-schema.json"
+			"type": "boolean",
+  			"default": false
 		}
 	},
 	"additionalProperties": false
