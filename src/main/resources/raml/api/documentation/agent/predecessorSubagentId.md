@@ -1,0 +1,1 @@
+<tr><td>``predecessorSubagentId``</td><td>optional, string</td><td>Subagent ID of the predecessor. If it is empty or undefined than the Subagent is on top in the order</td><td></td><td></td></tr>
