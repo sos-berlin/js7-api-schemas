@@ -1,0 +1,15 @@
+{
+	"title": "favorite identifiers",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.favorite.FavoriteIdentifiers",
+	"type": "object",
+	"properties": {
+		"favoriteIds": {
+    		"type": "array",
+    		"items": {
+    			"$ref": "identifier-schema.json"
+    		}
+    	}
+	},
+  	"additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+	"title": "favorite object",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.favorite.Favorite",
+	"type": "object",
+	"extends" : {
+    	"$ref": "storeFavorite-schema.json"
+  	},
+	"properties": {
+		"ordering": {
+    		"type": "integer",
+    		"minimum": 1
+    	},
+		"configurationDate": {
+      		"$ref": "../common/timestamp-schema.json"
+    	}
+	},
+  	"additionalProperties": false
+}

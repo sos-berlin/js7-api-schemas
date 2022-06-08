@@ -1,0 +1,1 @@
+<tr><td>``predecessorName``</td><td>optional, string</td><td>Name of the predecessor with the same ``type``. If it is empty or undefined than the favorite is on top in the order</td><td></td><td></td></tr>

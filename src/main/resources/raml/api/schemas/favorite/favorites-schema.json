@@ -1,0 +1,27 @@
+{
+  "title": "favorites",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.favorite.Favorites",
+  "type": "object",
+  "required": [
+  	"deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "favorites": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "favorite-schema.json"
+    	}
+    },
+    "sharedFavorites": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "favorite-schema.json"
+    	}
+    }
+  },
+  "additionalProperties": false
+}

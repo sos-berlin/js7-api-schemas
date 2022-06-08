@@ -1,0 +1,10 @@
+{
+  "title": "favorite types",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.favorite.FavoriteType",
+  "type": "string",
+  "enum": [
+    "FACET",
+    "AGENT"
+  ]
+}

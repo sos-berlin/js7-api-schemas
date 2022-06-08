@@ -1,0 +1,19 @@
+{
+	"title": "store favorites",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.favorite.StoreFavorites",
+	"type": "object",
+	"required": [
+		"favorites"
+	],
+	"properties": {
+		"favorites": {
+    		"type": "array",
+    		"minItems": 1,
+    		"items": {
+    			"$ref": "storeFavorite-schema.json"
+    		}
+    	}
+	},
+  	"additionalProperties": false
+}

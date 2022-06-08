@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.3.2
+version: 2.4.0
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -182,7 +182,7 @@ traits:
     /ordering:
       type:
         postJSONWithOkWithoutJSId:
-          description: Change the order of Subagent Clusters
+          description: Change the order of the Subagent Clusters
           description1: !include api/documentation/agent/subagentClusterId.md
           description2: !include api/documentation/agent/predecessorSubagentClusterId.md
           description3: " "
@@ -332,7 +332,7 @@ traits:
       /ordering:
         type:
           postJSONWithOkWithoutJSId:
-            description: Change the order of Cluster Agents
+            description: Change the order of the Cluster Agents
             description1: !include api/documentation/agent/agentId.md
             description2: !include api/documentation/agent/predecessorAgentId.md
             description3: " "
@@ -437,7 +437,7 @@ traits:
         /ordering:
           type:
             postJSONWithOkWithoutJSId:
-              description: Change the order of Subagents
+              description: Change the order of the Subagents
               description1: !include api/documentation/agent/subagentId.md
               description2: !include api/documentation/agent/predecessorSubagentId.md
               description3: " "
@@ -540,7 +540,7 @@ traits:
     /ordering:
       type:
         postJSONWithOkWithoutJSId:
-          description: Change the order of standalone Agents
+          description: Change the order of the standalone Agents
           description1: !include api/documentation/agent/agentId.md
           description2: !include api/documentation/agent/predecessorAgentId.md
           description3: " "
@@ -1170,8 +1170,8 @@ traits:
         description2: !include api/documentation/docu/assignRef.md
         description3: " "
         description4: " "
-        description5: !include api/documentation/audit/auditLog.md
-        audit: " "
+        description5: " "
+        audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/docu/documentationFilter-schema.json
         example: " "
   /show:
@@ -2000,6 +2000,134 @@ traits:
         schema: !include api/schemas/publish/exportFilter-schema.json
         example: !include api/examples/publish/publishExport-example.json
 
+  /favorites:
+    type: 
+      postJSONWithoutJSId:
+        description: Gets favorites
+        description1: !include api/documentation/favorite/favoritesFilter.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: !include api/documentation/favorite/favorites200.md
+        schema: !include api/schemas/favorite/readFavoritesFilter-schema.json
+        example: " "
+        schema200: !include api/schemas/favorite/favorites-schema.json
+        example200: " "
+  
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes favorites
+          description1: !include api/documentation/favorite/favoriteIdentifiers.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: " "
+          schema: !include api/schemas/favorite/identifiers-schema.json
+          example: !include api/examples/favorite/identifiers-example.json
+        
+    /make_private:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Set own shared favorites as not shared
+          description1: !include api/documentation/favorite/favoriteIdentifiers.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: " "
+          schema: !include api/schemas/favorite/identifiers-schema.json
+          example: !include api/examples/favorite/identifiers-example.json
+        
+    /ordering:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Change the order of the favorites
+          description1: !include api/documentation/favorite/favoriteIdentifier.md
+          description2: !include api/documentation/favorite/predecessorFavorite.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: " "
+          schema: !include api/schemas/favorite/orderingFavorite-schema.json
+          example: " "
+        
+    /share:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Shares own favorites for other accounts
+          description1: !include api/documentation/favorite/favoriteIdentifiers.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: " "
+          schema: !include api/schemas/favorite/identifiers-schema.json
+          example: !include api/examples/favorite/identifiers-example.json
+        
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Stores favorites
+          description1: !include api/documentation/favorite/favorites.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: " "
+          schema: !include api/schemas/favorite/storeFavorites-schema.json
+          example: " "
+        
+    /take_over:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Takes over shared favorites from other accounts
+          description1: !include api/documentation/favorite/favoriteIdentifiers.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: " "
+          schema: !include api/schemas/favorite/identifiers-schema.json
+          example: !include api/examples/favorite/identifiers-example.json  
+        
   /import:
     type:
       postForUploadUnsigned:

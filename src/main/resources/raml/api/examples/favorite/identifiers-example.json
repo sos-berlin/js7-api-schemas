@@ -1,0 +1,8 @@
+{
+    "favoriteIds": [
+        {
+            "name": "agent-primary",
+            "type" : "AGENT"
+        }
+    ]
+}

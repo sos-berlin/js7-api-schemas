@@ -1,0 +1,26 @@
+{
+	"title": "favorite object",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.favorite.ReadFavoritesFilter",
+	"type": "object",
+	"extends" : {
+    	"$ref": "identifiers-schema.json"
+  	},
+	"properties": {
+		"types": {
+    		"type": "array",
+    		"items": {
+    			"$ref": "favoriteType-schema.json"
+    		}
+    	},
+    	"withShared": {
+    		"type": "boolean",
+    		"default": false
+    	},
+    	"onlyShared": {
+    		"type": "boolean",
+    		"default": false
+    	}
+	},
+  	"additionalProperties": false
+}
