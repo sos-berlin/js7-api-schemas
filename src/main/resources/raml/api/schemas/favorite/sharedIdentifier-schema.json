@@ -1,0 +1,20 @@
+{
+	"title": "shared favorite identifier",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.favorite.FavoriteSharedIdentifier",
+	"type": "object",
+	"extends" : {
+    	"$ref": "identifier-schema.json"
+  	},
+	"required": [
+    	"name",
+        "type",
+        "account"
+    ],
+	"properties": {
+		"account": {
+			"$ref": "../common/string255required-schema.json"
+		}
+	},
+  	"additionalProperties": false
+}

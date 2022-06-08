@@ -2114,7 +2114,7 @@ traits:
       type:
         postJSONWithOkWithoutJSId:
           description: Takes over shared favorites from other accounts
-          description1: !include api/documentation/favorite/favoriteIdentifiers.md
+          description1: !include api/documentation/favorite/favoriteAccountIdentifiers.md
           description2: " "
           description3: " "
           description4: " "
@@ -2125,8 +2125,8 @@ traits:
           description9: " "
           description10: " "
           audit: " "
-          schema: !include api/schemas/favorite/identifiers-schema.json
-          example: !include api/examples/favorite/identifiers-example.json  
+          schema: !include api/schemas/favorite/sharedIdentifiers-schema.json
+          example: !include api/examples/favorite/sharedIdentifiers-example.json  
         
   /import:
     type:

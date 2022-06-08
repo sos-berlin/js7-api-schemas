@@ -1,17 +1,17 @@
 {
-	"title": "favorite identifiers",
+	"title": "shared favorite identifiers",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.favorite.FavoriteIdentifiers",
+	"javaType": "com.sos.joc.model.favorite.FavoriteSharedIdentifiers",
 	"type": "object",
 	"required": [
-		"favoriteIds"
+		"sharedFavoriteIds"
 	],
 	"properties": {
-		"favoriteIds": {
+		"sharedFavoriteIds": {
     		"type": "array",
     		"minItems": 1,
     		"items": {
-    			"$ref": "identifier-schema.json"
+    			"$ref": "sharedIdentifier-schema.json"
     		}
     	}
 	},

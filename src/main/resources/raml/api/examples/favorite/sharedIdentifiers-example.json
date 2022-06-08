@@ -1,0 +1,9 @@
+{
+    "sharedFavoriteIds": [
+        {
+            "name": "agent-primary",
+            "type" : "AGENT",
+            "acount" : "root"
+        }
+    ]
+}

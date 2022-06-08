@@ -6,10 +6,19 @@
 	"extends" : {
     	"$ref": "storeFavorite-schema.json"
   	},
+	"required": [
+    	"name",
+        "type",
+        "ordering",
+        "configurationDate"
+    ],
 	"properties": {
 		"ordering": {
     		"type": "integer",
     		"minimum": 1
+    	},
+		"account": {
+      		"$ref": "../common/string255-schema.json"
     	},
 		"configurationDate": {
       		"$ref": "../common/timestamp-schema.json"
