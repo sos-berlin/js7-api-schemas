@@ -42,7 +42,8 @@
 			"$ref": "../../common/string255-schema.json"
 		},
 		"iamLdapHostNameVerification": {
-			"$ref": "../../common/string255-schema.json"
+			"type": "boolean",
+			"default": false
 		},
 		"iamLdapSecurityProtocol": {
 			"$ref": "../../common/string255-schema.json"

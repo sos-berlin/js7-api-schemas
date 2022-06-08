@@ -4,7 +4,6 @@
   "javaType": "com.sos.joc.model.security.identityservice.IdentityServiceTypes",
   "type": "string",
   "enum": [
-    "SHIRO",
     "VAULT",
     "VAULT-JOC",
     "VAULT-JOC-ACTIVE",
