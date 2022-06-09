@@ -1,0 +1,19 @@
+{
+	"title": "rename favorites",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.favorite.RenameFavorites",
+	"type": "object",
+	"required": [
+		"favoriteIds"
+	],
+	"properties": {
+		"favoriteIds": {
+    		"type": "array",
+    		"minItems": 1,
+    		"items": {
+    			"$ref": "renameFavorite-schema.json"
+    		}
+    	}
+	},
+  	"additionalProperties": false
+}
