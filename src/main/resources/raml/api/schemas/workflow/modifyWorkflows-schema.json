@@ -1,0 +1,27 @@
+{
+  "title": "ModifyWorkflows",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.ModifyWorkflows",
+  "type": "object",
+  "required": [
+    	"controllerId"
+  ],
+  "properties": {
+		"controllerId": {
+      		"$ref": "../common/controllerId-schema.json"
+    	},
+    	"workflowPaths": {
+      		"type": "array",
+      		"items": {
+        		"$ref": "../common/string255required-schema.json"
+      		}
+    	},
+    	"folders": {
+        	"$ref": "../common/folders-schema.json"
+      	},
+      	"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+  },
+  "additionalProperties": false
+}

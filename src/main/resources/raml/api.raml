@@ -24,6 +24,7 @@ schemas:
   - addOrders: !include api/schemas/order/addOrders-schema.json
   - orderIds: !include api/schemas/order/orderIds-schema.json
   - modifyOrders: !include api/schemas/order/modifyOrders-schema.json
+  - modifyWorkflows: !include api/schemas/workflow/modifyWorkflows-schema.json
   - modifyCalendars: !include api/schemas/calendar/calendarsFilter-schema.json
   - security: !include api/schemas/user/security-schema.json
   - loginConfiguration: !include api/schemas/configuration/login-schema.json
@@ -59,6 +60,7 @@ resourceTypes:
   - modifyOrder: !include api/resourceTypes/order/modify.raml
   - addOrder: !include api/resourceTypes/order/add.raml
   - postOrderLogWithPlainResponse: !include api/resourceTypes/order/postWithPlainResponse.raml
+  - modifyWorkflow: !include api/resourceTypes/workflow/modify.raml
   - modifyCalendar: !include api/resourceTypes/calendar/modify.raml
   - loginConfiguration: !include api/resourceTypes/configuration/login.raml
   - postForDownloadUnsigned: !include api/resourceTypes/publish/postForDownloadUnsigned.raml
@@ -3694,6 +3696,18 @@ traits:
         schema200: !include api/schemas/workflow/workflowsOrderCount-schema.json
         example: !include api/examples/workflow/orderCount-example.json
         example200: !include api/examples/workflow/orderCount-response-example.json
+        
+  /resume:
+    type:
+      modifyWorkflow:
+        description: Resume workflows
+        audit: !include api/documentation/audit/auditLog.md
+        
+  /suspend:
+    type:
+      modifyWorkflow:
+        description: Suspend workflows
+        audit: !include api/documentation/audit/auditLog.md
 
 
 /yade:

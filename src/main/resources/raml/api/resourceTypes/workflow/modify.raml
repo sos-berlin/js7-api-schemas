@@ -1,0 +1,55 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+    <h4>Parameters in the POST body schema</h4>
+    <table class="params" style="table-layout:auto;">
+    <colgroup>
+      <col width="10%"/>
+      <col width="16%"/>
+      <col width="*"/>
+      <col width="20%"/>
+      <col width="10%"/>
+    </colgroup>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
+    </thead><tbody>
+    <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID</td><td>myController</td><td></td></tr>
+    <tr><td>``workflowPaths``</td><td>optional, array[string]</td>
+    <td>Workflow paths<br/>
+        If this parameter is specified the parameter ``folders`` where applicable are ignored.</td>
+    <td></td>
+    </tr>
+    <tr><td>``folders``</td><td>optional, array[object]</td><td>Limits the result to a collection of folders</td>
+    <td> [{
+        <div style="padding-left:10px;">"folder": "/sos",</div>
+        <div style="padding-left:10px;">"recursive": true</div>
+    }]</td>
+    <td></td></tr>
+    <<audit>>
+    </tbody></table>
+
+  body:
+    application/json:
+      schema: modifyWorkflows
+      example: |
+        {
+          "controllerId": "myController",
+          "workflowPaths": [
+            "myWorkflow"
+          ]
+        }
+  responses:
+    200:
+      description: It returns an _ok_. This reply code comes only for bulk operations if all commands were successful.
+      body:
+        application/json:
+          schema: ok
+          example: |
+            {
+              "deliveryDate":"2022-06-24T21:13:35Z",
+              "surveyDate":"2022-06-24T21:13:34Z",
+              "ok":true
+            }
+    419:

@@ -23,13 +23,13 @@ post:
       <div style="padding-left:10px;">"daily"</div>
       ]</td>
     <td></td></tr>
-    <tr><td>``workflowIds``</td><td>optional, object</td>
+    <tr><td>``workflowIds``</td><td>optional, array[object]</td>
     <td>Filtered response by a collection of workflows specified by its path and optional version<br/>
         If this parameter is specified the parameter ``folders`` where applicable are ignored.</td>
-    <td> {
+    <td> [{
         <div style="padding-left:10px;">"path": "/path/to/workflow",</div>
         <div style="padding-left:10px;">"versionId": "c79caab4-4e72-4818-bae7-902f1037d8b6"</div>
-    }</td>
+    }]</td>
     <td></td>
     </tr>
     <tr><td style="padding-left:20px;">``path``</td><td>required, string</td><td>Field for each item in ``workflowIds`` to specify the path of a workflow</td><td></td><td></td></tr>

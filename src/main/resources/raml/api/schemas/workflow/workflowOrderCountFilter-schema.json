@@ -1,0 +1,23 @@
+{
+  "title": "WorkflowOrderCountFilter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowOrderCountFilter",
+  "type": "object",
+  "extends" : {
+    "$ref": "workflowIdsFilter-schema.json"
+  },
+  "required": [
+    "controllerId",
+    "workflowIds"
+  ],
+  "properties": {
+    "dateTo": {
+      "$ref": "../common/dateFromTo-schema.json"
+    },
+    "timeZone": {
+      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
