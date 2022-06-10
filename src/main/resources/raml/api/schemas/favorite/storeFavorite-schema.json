@@ -12,7 +12,7 @@
     ],
 	"properties": {
 		"content": {
-			"$ref": "../common/string255-schema.json"
+			"type": "string"
 		},
     	"shared": {
 			"type": "boolean"
