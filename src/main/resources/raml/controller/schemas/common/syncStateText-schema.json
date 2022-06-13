@@ -2,11 +2,15 @@
   "title": "sync state text",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.controller.model.common.SyncStateText",
+  "description": "SUSPENDED, SUSPENDING and RESUMING only for Workflows",
   "type": "string",
   "enum": [
     "IN_SYNC",
     "NOT_IN_SYNC",
     "NOT_DEPLOYED",
+    "SUSPENDED",
+    "SUSPENDING",
+    "RESUMING",
     "UNKNOWN"
   ]
 }

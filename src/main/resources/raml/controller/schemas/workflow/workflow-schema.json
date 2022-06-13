@@ -20,6 +20,11 @@
     "state": {
       "$ref": "../common/syncState-schema.json"
     },
+    "suspended": {
+      "description": "true if state._text == SUSPENDED or SUSPENDING",
+      "type": "boolean",
+      "default": false
+    },
     "fileOrderSources": {
       "type": "array",
       "items": {

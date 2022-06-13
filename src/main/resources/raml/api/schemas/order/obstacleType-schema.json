@@ -6,12 +6,14 @@
   "enum": [
     "OrderNotExisting",
     "WaitingForAdmission",
-    "JobParallelismLimitReached"
+    "JobParallelismLimitReached",
+    "WorkflowIsSuspended"
   ],
   "javaEnumNames": [
     "OrderNotExisting",
     "WaitingForAdmission",
-    "JobParallelismLimitReached"
+    "JobParallelismLimitReached",
+    "WorkflowIsSuspended"
   ]
 }
 
