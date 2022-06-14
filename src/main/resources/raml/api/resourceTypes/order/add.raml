@@ -39,11 +39,13 @@ post:
        <li>This parameter set the time zone for the time stamp in the ``scheduledFor`` parameter.</li>
        <li>See here the list for <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="wiki">available time zones</a>.</li>
     </ul></td><td>Europe/Berlin</td><td>Etc/UTC</td></tr>
-    <tr><td style="padding-left:20px;">``arguments``</td><td>optional, object</td><td>Field of each ``orders`` item<br/>An object with key-value pairs. The value can be a string, number or boolean<td><pre>"arguments": {
+    <tr><td style="padding-left:20px;">``arguments``</td><td>optional, object<br/>field of each ``orders`` item</td><td>An object with key-value pairs. The value can be a string, number or boolean<td><pre>"arguments": {
       "myString": "stringValue",
       "myNumber": 3.14,
       "myBoolean": true
     }</pre></td><td></td></tr>
+    <tr><td style="padding-left:20px;">``startPosition``</td><td>optional, string<br/>field of each ``orders`` item</td><td>The order starts at the first instruction per default<td>"0"</td><td></td></tr>
+    <tr><td style="padding-left:20px;">``endPosition``</td><td>optional, string<br/>field of each ``orders`` item</td><td>The order ends at the last instruction per default<td>"1"</td><td></td></tr>
     <<audit>>
     </tbody></table>
 

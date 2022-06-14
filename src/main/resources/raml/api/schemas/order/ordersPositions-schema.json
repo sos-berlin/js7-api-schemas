@@ -14,13 +14,6 @@
     "surveyDate": {
     	"$ref": "../common/timestamp-schema.json"
     },
-    "orderIds": {
-        "type": "array",
-        "uniqueItems": true,
-        "items": {
-        	"$ref": "../common/string255-schema.json"
-        }
-    },
     "workflowId": {
 		"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
 	},
@@ -39,17 +32,6 @@
     			}
      		}
      	}
-    },
-    "disabledPositionChange": {
-    	"$ref": "positionChange-schema.json"
-    },
-    "variables": {
-      "description": "variables of the current position; only if one orderId is set",
-      "$ref": "../../../inventory/schemas/common/variables-schema.json"
-    },
-    "variablesNotSettable": {
-      "description": "only relevant for resuming a single order. Occurs if order starts from the beginning in its scope",
-      "type": "boolean"
     }
   }
 }

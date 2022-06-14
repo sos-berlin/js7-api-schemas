@@ -23,6 +23,12 @@
     },
     "arguments": {
       "$ref": "../../../inventory/schemas/common/variables-schema.json"
+    },
+    "startPosition": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "endPosition": {
+      "$ref": "../common/string255-schema.json"
     }
   }
 }
