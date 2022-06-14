@@ -46,13 +46,16 @@ Different events trigger the following different actions:
 		* It contains the parent folder in the "path" field to update the tree
 * Update ``Workflow View``: for each following event
 	* **WorkflowStateChanged**
-		* It contains the changed Workflow in the "path" field
+		* It contains the changed Workflow in the "path" and "versionId" field
 		* The Workflow itself is not changed but its Orders -> only the Orders need to update 
 	* **ItemAdded** (with "objectType": "WORKFLOW")
 	* **ItemDeleted** (with "objectType": "WORKFLOW")
 	* **ItemChanged** (with "objectType": "WORKFLOW") 
 		* They contain the added/deleted/changed Workflow in the "path" field
 		* The Workflow itself is changed -> the tree and the list need to update
+	* **WorkflowUpdated**
+		* It contains the changed Workflow(s) in the "path" field
+		* The Orders are not changed but the workflow(s) -> the list needs to update (not the tree)
 * Update ``Notice Board View``: for each following event
 	* **BoardStateChanged**
 		* It contains the changed Notice Board in the "path" field
