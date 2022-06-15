@@ -33,6 +33,18 @@
 		"dailyPlanDate": {
 			"$ref": "../../common/date-schema.json"
 		},
+		"startPosition": {
+     		"$ref": "../../../../controller/schemas/common/position-schema.json"
+    	},
+		"startPositionString": {
+     		"$ref": "../../common/string255-schema.json"
+    	},
+    	"endPosition": {
+     		"$ref": "../../../../controller/schemas/common/position-schema.json"
+    	},
+    	"endPositionString": {
+     		"$ref": "../../common/string255-schema.json"
+    	},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
