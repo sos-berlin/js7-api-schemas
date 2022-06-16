@@ -1,0 +1,40 @@
+{
+	"title": "Keycloak Properties",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.properties.keycloak.KeycloakProperties",
+	"type": "object",
+	"properties": {
+		"iamKeycloakUrl": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakAuthenticationMethodPath": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakTruststorePath": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakTruststorePassword": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakTruststoreType": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakClientSecret": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakClientId": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakAdminAccount": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakAdminPassword": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakRealm": {
+			"$ref": "../../../common/string255-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    
