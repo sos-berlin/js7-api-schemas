@@ -19,6 +19,12 @@
     },
     "arguments": {
       "$ref": "../../../inventory/schemas/common/variables-schema.json"
+    },
+    "startPosition": {
+     	"$ref": "../common/position-schema.json"
+    },
+	"endPosition": {
+     	"$ref": "../common/position-schema.json"
     }
   },
   "additionalProperties": false
