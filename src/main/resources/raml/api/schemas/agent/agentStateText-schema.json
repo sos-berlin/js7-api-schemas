@@ -4,6 +4,7 @@
   "javaType": "com.sos.joc.model.agent.AgentStateText",
   "type": "string",
   "enum": [
+      "NEVER_STARTED",
       "COUPLED",
       "RESETTING",
       "RESET",
