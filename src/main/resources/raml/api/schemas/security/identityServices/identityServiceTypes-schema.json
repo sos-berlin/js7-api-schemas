@@ -6,7 +6,10 @@
   "enum": [
     "VAULT",
     "VAULT-JOC",
-    "VAULT-JOC-ACTIVE",
+    "VAULT-JOC-ACTIVE",    
+    "KEYCLOAK",
+    "KEYCLOAK-JOC",
+    "KEYCLOAK-JOC-ACTIVE",
     "LDAP",
     "LDAP-JOC",
     "UNKNOWN", 

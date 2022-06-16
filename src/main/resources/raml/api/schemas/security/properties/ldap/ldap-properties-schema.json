@@ -1,7 +1,7 @@
 {
 	"title": "Ldap Properties",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.ldap.LdapProperties",
+	"javaType": "com.sos.joc.model.security.properties.ldap.LdapProperties",
 	"type": "object",
 	"properties": {
 		"simple": {

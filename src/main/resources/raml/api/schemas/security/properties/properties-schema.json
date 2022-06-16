@@ -1,7 +1,7 @@
 {
 	"title": "Identity Service Properties",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.Properties",
+	"javaType": "com.sos.joc.model.security.properties.Properties",
 	"type": "object",
 	"properties": {
 		"initialPassword": {
@@ -14,10 +14,13 @@
 			"$ref": "../../common/nonNegativeInteger-schema.json"
 		},
 		"vault": {
-			"$ref": "vault-properties-schema.json"
+			"$ref": "vault/vault-properties-schema.json"
+		},
+		"keycloak": {
+			"$ref": "keycloak/keycloak-properties-schema.json"
 		},
 		"ldap": {
-			"$ref": "ldap-properties-schema.json"
+			"$ref": "ldap/ldap-properties-schema.json"
 		}
 	}
 }
