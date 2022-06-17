@@ -36,14 +36,11 @@
 		"startPosition": {
      		"$ref": "../../../../controller/schemas/common/position-schema.json"
     	},
-		"startPositionString": {
-     		"$ref": "../../common/string255-schema.json"
-    	},
-    	"endPosition": {
-     		"$ref": "../../../../controller/schemas/common/position-schema.json"
-    	},
-    	"endPositionString": {
-     		"$ref": "../../common/string255-schema.json"
+		"endPositions": {
+			"type": "array",
+			"items": {
+     			"$ref": "../../../../controller/schemas/common/position-schema.json"
+     		}
     	},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"

@@ -20,11 +20,8 @@
     "arguments": {
       "$ref": "../../../inventory/schemas/common/variables-schema.json"
     },
-    "startPosition": {
-     	"$ref": "../common/position-schema.json"
-    },
-	"endPosition": {
-     	"$ref": "../common/position-schema.json"
+    "positions": {
+     	"$ref": "../../../inventory/schemas/schedule/positions-schema.json"
     }
   },
   "additionalProperties": false
