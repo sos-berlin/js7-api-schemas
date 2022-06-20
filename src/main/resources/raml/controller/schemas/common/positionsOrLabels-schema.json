@@ -1,0 +1,11 @@
+{
+  "title": "positions or labels",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "anyOf": [
+    	{"$ref": "position-schema.json"},
+    	{"type": "string"}
+    ]
+  }
+}

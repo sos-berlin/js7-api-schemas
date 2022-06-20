@@ -51,11 +51,8 @@
     "positionIsImplicitEnd": {
      	"type": "boolean"
     },
-    "endPosition": {
-     	"$ref": "../../../controller/schemas/common/position-schema.json"
-    },
-    "endPositionString": {
-     	"$ref": "../common/string255-schema.json"
+    "endPositions": {
+     	"$ref": "../../../controller/schemas/common/positionsOrLabels-schema.json"
     },
 	"scheduledFor": {
       	"$ref": "../common/nonNegativeLong-schema.json"

@@ -33,6 +33,9 @@
 		},
         "removeWhenTerminated": {
 			"type": "boolean"
+		},
+        "stopPositions": {
+			"$ref": "../common/positionsOrLabels-schema.json"
 		}
 	},
   "additionalProperties": false
