@@ -3678,6 +3678,17 @@ traits:
         schema200: !include api/schemas/workflow/workflowDeps-schema.json
         example: !include api/examples/workflow/workflowFilter-example.json
         example200: !include api/examples/workflow/workflowDeps-example.json
+        
+  /state:
+    type:
+      postJSON:
+        description: Returns which agents has and has not confirmed a suspension or resuming
+        description1: !include api/documentation/workflow/workflowId.md
+        description200: TODO
+        schema: !include api/schemas/workflow/workflowFilter-schema.json
+        schema200: !include api/schemas/workflow/workflowState-schema.json
+        example: !include api/examples/workflow/workflowFilter-example.json
+        example200: " "
 
 /workflows:
   type:
@@ -3722,7 +3733,7 @@ traits:
     type:
       modifyWorkflow:
         description: Resume workflows
-        audit: !include api/documentation/audit/auditLog.md
+        audit: !include api/documentation/audit/auditLog.md        
         
   /suspend:
     type:
