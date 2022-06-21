@@ -22,12 +22,19 @@
      	"uniqueItems": true,
      	"items": {
      		"type": "object",
-     		"javaType": "com.sos.joc.model.order.Positions",
+     		"javaType": "com.sos.joc.model.order.Position",
      		"properties": {
      			"position": {
      				"$ref": "../../../controller/schemas/common/position-schema.json"
     			},
 				"positionString": {
+     				"$ref": "../common/string255-schema.json"
+    			},
+				"type": {
+     				"$ref": "../common/string255-schema.json"
+    			},
+				"label": {
+					"description": "if the type of the instruction is a Job",
      				"$ref": "../common/string255-schema.json"
     			}
      		}

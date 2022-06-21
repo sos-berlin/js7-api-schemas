@@ -2214,6 +2214,26 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/common/response-folder-schema.json
         example200: TODO
+        
+  /read/order/positions:
+    type:
+      postJSONWithoutJSId:
+        description: Reads available positions inside a Workflow for Orders in a Schedule configuration
+        description1: !include api/documentation/inventory/workflowPath.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/read/request-workflow-filter-schema.json
+        example: TODO
+        schema200: !include api/schemas/order/ordersPositions-schema.json
+        example200: TODO
 
   /release:
     type:

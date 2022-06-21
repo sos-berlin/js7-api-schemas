@@ -1,0 +1,15 @@
+{
+	"title": "read filter for workflows",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.read.RequestWorkflowFilter",
+	"type": "object",
+	"required": [
+		"workflowPath"
+	],
+	"properties": {
+		"workflowPath": {
+			"$ref": "../../common/string255required-schema.json"
+		}
+	},
+  	"additionalProperties": false
+}
