@@ -4,15 +4,15 @@
   "javaType": "com.sos.joc.model.yade.TransferId",
   "type": "object",
   "required": [
-    "deliveryDate",
     "transferId"
   ],
   "properties": {
-    "deliveryDate": {
-      "$ref": "../common/timestamp-schema.json"
-    },
     "transferId": {
       "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "compact": {
+      "$ref": "../common/compactParam-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }
