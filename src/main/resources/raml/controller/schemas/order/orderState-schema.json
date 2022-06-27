@@ -7,9 +7,19 @@
 		"TYPE": {
 			"type": "string"
 		},
-		"noticeId": {
-			"description": "set if state == ExpectingNotice",
-			"type": "string"
+		"expected": {
+			"description": "set if state == ExpectingNotices",
+			"type": "object",
+			"javaType": "com.sos.controller.model.order.ExpectedNotices",
+			"properties": {
+				"boardPath": {
+					"type": "string"
+				},
+				"noticeId": {
+					"type": "string"
+				}
+			},
+  			"additionalProperties": false	
 		},
 		"cycleState": {
 			"$ref": "orderCycleState-schema.json"
