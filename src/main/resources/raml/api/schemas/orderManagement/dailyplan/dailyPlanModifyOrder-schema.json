@@ -4,9 +4,13 @@
 	"javaType": "com.sos.joc.model.dailyplan.DailyPlanModifyOrder",
 	"type": "object",
 	"description": "To change the starttime of given order",
+	"required": [
+		"controllerId",
+		"orderIds"
+	],
 	"properties": {
 		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
+			"$ref": "../../common/controllerIdRequired-schema.json"
 		},
 		"scheduledFor": {
 			"$ref": "../../common/timestampWithNow-schema.json"
@@ -22,12 +26,16 @@
 			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
 		},
 		"removeVariables": {
-			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
-		},
-		"orderIds": {
 			"type": "array",
 			"items": {
 				"type": "string"
+			}
+		},
+		"orderIds": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$ref": "../../common/string255required-schema.json"
 			}
 		},
 		"dailyPlanDate": {

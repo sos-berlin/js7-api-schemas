@@ -1022,14 +1022,15 @@ traits:
       type:
         postJSON:
           description: Modifies Orders for the daily plan
-          description1: !include api/documentation/dailyplan/modify/startTime.md
-          description2: !include api/documentation/dailyplan/modify/cycle.md
-          description3: !include api/documentation/dailyplan/modify/variables.md
-          description4: !include api/documentation/dailyplan/modify/removeVariables.md
-          description5: !include api/documentation/dailyplan/orders/orderIds.md
-          description6:
-          description7:
-          description9:
+          description1: !include api/documentation/dailyplan/modify/orderIds.md
+          description2: !include api/documentation/dailyplan/modify/startTime.md
+          description3: !include api/documentation/dailyplan/modify/cycle.md
+          description4: !include api/documentation/dailyplan/modify/orderParametrisation.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
           description10: !include api/documentation/audit/auditLog.md
           description200: |
             This API changes the OrderId. For ad hoc orders, a map in the form <br/>  ``"oldOrderId": "newOrderId"``<br/>is returned.
