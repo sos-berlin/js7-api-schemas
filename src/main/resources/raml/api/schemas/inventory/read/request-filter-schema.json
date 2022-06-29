@@ -9,6 +9,10 @@
 	"properties": {
 		"commitId": {
 			"$ref": "../../common/string255-schema.json"
+		},
+		"withPositions": {
+			"description": "only for Workflows. If true then the Workflow instructions are sent with positions",
+			"type": "boolean"
 		}
 	},
   	"additionalProperties": false
