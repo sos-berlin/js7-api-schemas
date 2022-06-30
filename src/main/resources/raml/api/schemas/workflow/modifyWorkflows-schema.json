@@ -1,5 +1,5 @@
 {
-  "title": "ModifyWorkflows",
+  "title": "ModifyWorkflows (suspend, resume)",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.workflow.ModifyWorkflows",
   "type": "object",
