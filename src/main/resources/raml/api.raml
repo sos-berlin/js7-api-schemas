@@ -2002,6 +2002,13 @@ traits:
         description1: !include api/documentation/publish/exportFilterPost.md
         schema: !include api/schemas/publish/exportFilter-schema.json
         example: !include api/examples/publish/publishExport-example.json
+    /folder:
+      type:
+        postForExport:
+          description: Provides archive file (zip, tar.gz) to download unsigned JSON files
+          description1: !include api/documentation/publish/folder/exportFolder.md
+          schema: !include api/schemas/publish/folder/exportFolderFilter-schema.json
+          example: !include api/examples/publish/folder/exportFolder-example.json
 
   /favorites:
     type: 
