@@ -1,18 +1,21 @@
 {
-  "title": "configurationsDeleteFilter",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.configuration.ConfigurationsDeleteFilter",
-  "type": "object",
-  "required": [
-    "accounts"
-  ],
-  "properties": {
-    "accounts": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string"
-      }
-    }
-  }
+	"title": "configurationsDeleteFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.configuration.ConfigurationsDeleteFilter",
+	"type": "object",
+	"required": [
+		"accounts"
+	],
+	"properties": {
+		"configurationType": {
+			"$ref": "type-schema.json"
+		},
+		"accounts": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "string"
+			}
+		}
+	}
 }

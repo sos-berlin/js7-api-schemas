@@ -1,0 +1,44 @@
+{
+	"title": "Shallow Copy ExportFolderFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.publish.folder.ExportFolderShallowCopy",
+	"type": "object",
+  "required": [
+      "objectTypes",
+      "folders"
+  ],
+ 	"properties": {
+    "objectTypes" : {
+      "type" : "array",
+      "items" : {
+        "$ref": "../../inventory/common/configurationType-schema.json"
+      }
+    },
+    "folders" : {
+      "type" : "array",
+      "items" : {
+        "$ref": "../../common/path-schema.json"
+      }
+    },
+    "recursive": {
+      "type": "boolean",
+      "default": false
+    },
+    "onlyValidObjects": {
+      "type": "boolean",
+      "default": false
+    },
+    "withoutDrafts": {
+      "type": "boolean",
+      "default": false
+    },
+    "withoutDeployed": {
+      "type": "boolean",
+      "default": false
+    },
+    "withoutReleased": {
+      "type": "boolean",
+      "default": false
+    }
+	}
+}

@@ -1,0 +1,20 @@
+ 
+{
+	"title": "LoginHistory",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.history.LoginHistoryItem",
+	"type": "object",
+	"properties": {
+		"accountName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"loginDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"loginSuccess": {
+			"type": "boolean"
+		}
+	},
+	"additionalProperties": false
+}
+    
