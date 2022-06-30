@@ -3707,6 +3707,23 @@ traits:
         example: !include api/examples/workflow/workflowFilter-example.json
         example200: !include api/examples/workflow/workflowDeps-example.json
         
+  /skip:
+    type:
+      postJSONWithOkResponse:
+        description: Skips labeled instructions
+        description1: !include api/documentation/workflow/workflowLabels.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/workflow/modifyWorkflowLabels-schema.json
+        example: " "
+        
   /state:
     type:
       postJSON:
@@ -3717,6 +3734,23 @@ traits:
         schema200: !include api/schemas/workflow/workflowState-schema.json
         example: !include api/examples/workflow/workflowFilter-example.json
         example200: " "
+        
+  /unskip:
+    type:
+      postJSONWithOkResponse:
+        description: Unskips labeled instructions
+        description1: !include api/documentation/workflow/workflowLabels.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/workflow/modifyWorkflowLabels-schema.json
+        example: " "
 
 /workflows:
   type:
