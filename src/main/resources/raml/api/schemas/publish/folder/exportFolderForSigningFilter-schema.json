@@ -28,10 +28,6 @@
       "type": "boolean",
       "default": false
     },
-    "onlyValidObjects": {
-      "type": "boolean",
-      "default": false
-    },
     "withoutDrafts": {
       "type": "boolean",
       "default": false

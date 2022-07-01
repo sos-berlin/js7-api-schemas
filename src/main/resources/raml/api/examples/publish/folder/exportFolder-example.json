@@ -4,7 +4,6 @@
     "objectTypes" : [ "WORKFLOW", "FILEORDERSOURCE", "JOBRESOURCE", "LOCK" ],
     "folders" : [ "/JS7Demo", "/Examples.Unix" ],
     "recursive" : true,
-    "onlyValidObjects" : true,
     "withoutDrafts" : false,
     "withoutDeployed" : false
   },

@@ -31,7 +31,6 @@
 <div style="padding-left:10px;">"objectTypes" : [ "WORKFLOW", "FILEORDERSOURCE", "JOBRESOURCE", "LOCK" ],</div>
 <div style="padding-left:10px;">"folders" : [ "/JS7Demo", "/Examples.Unix" ],</div>
 <div style="padding-left:10px;">"recursive" : true,</div>
-<div style="padding-left:10px;">"onlyValidObjects" : true,</div>
 <div style="padding-left:10px;">"withoutDrafts" : false,</div>
 <div style="padding-left:10px;">"withoutDeployed" : false</div>
 <div style="padding-left:10px;">}</div>
@@ -64,13 +63,6 @@
 <td>optional, boolean</td>
 <td>A switch to determine if the specified folders should be read recursively.</td>
 <td>"recursive" : true</td>
-<td>false</td>
-</tr>
-<tr>
-<td style="padding-left:20px;">``onlyValidObjects``</td>
-<td>optional, boolean</td>
-<td>Determines if invalid draft configurations are excluded from export.</td>
-<td>"onlyValidObjects" : true</td>
 <td>false</td>
 </tr>
 <tr>
