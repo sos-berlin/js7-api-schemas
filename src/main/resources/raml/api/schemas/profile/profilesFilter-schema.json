@@ -1,0 +1,21 @@
+{
+	"title": "ProfilesFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.profile.ProfilesFilter",
+	"type": "object",
+	"required": [
+		"accounts"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/controllerId-schema.json"
+		},
+		"accounts": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}

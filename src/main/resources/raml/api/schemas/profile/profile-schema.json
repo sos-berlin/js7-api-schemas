@@ -1,0 +1,25 @@
+{
+	"title": "store and response configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.profile.Profile",
+	"type": "object",
+	"required": [
+		"account",
+		"profileItem"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/controllerId-schema.json"
+		},
+		"account": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"profileItem": {
+			"description": "JSON object as string",
+			"type": "string"
+		},
+		"modified": {
+			"$ref": "../common/timestamp-schema.json"
+		}
+	}
+}

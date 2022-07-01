@@ -1,0 +1,14 @@
+{
+	"title": "save and response configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.profile.ProfileResponse",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"profile": {
+			"$ref": "profile-schema.json"
+		}
+	}
+}
