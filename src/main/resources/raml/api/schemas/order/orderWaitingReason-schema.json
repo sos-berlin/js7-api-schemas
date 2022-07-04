@@ -6,7 +6,7 @@
   "enum": [
             "DELAYED_AFTER_ERROR",
             "FORKED",
-            "EXPECTING_NOTICE",
+            "EXPECTING_NOTICES",
             "WAITING_FOR_LOCK",
             "BETWEEN_CYCLES"
   ]

@@ -1,0 +1,17 @@
+{
+  	"title": "ExpectedNotice",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"type": "object",
+	"javaType": "com.sos.controller.model.order.ExpectedNotice",
+	"properties": {
+		"boardName": {
+			"alias": "boardPath",
+			"type": "string"
+		},
+		"noticeId": {
+			"type": "string"
+		}
+	},
+  	"additionalProperties": false
+}
+ 

@@ -11,17 +11,7 @@
 			"description": "set if state == ExpectingNotices",
 			"type": "array",
 			"items": {
-				"type": "object",
-				"javaType": "com.sos.controller.model.order.ExpectedNotice",
-				"properties": {
-					"boardPath": {
-						"type": "string"
-					},
-					"noticeId": {
-						"type": "string"
-					}
-				},
-  				"additionalProperties": false
+				"$ref": "expectedNotice-schema.json"
 			}	
 		},
 		"cycleState": {
