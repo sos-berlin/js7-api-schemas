@@ -1,0 +1,21 @@
+{
+  "title": "filter to recall already released configurations",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.release.ReleasableRecallFilter",
+  "type": "object",
+  "description": "",
+  "required": [
+    "releasables"
+  ],
+  "properties": {
+    "releasables" : {
+      "type" : "array",
+      "items" : {
+        "$ref": "releasable-schema.json"
+      }
+    },
+    "auditLog": {
+      "$ref": "../../audit/auditParams-schema.json"
+    }
+  }
+}

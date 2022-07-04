@@ -1,0 +1,6 @@
+{
+  "releasables" : [ {
+    "name" : "mySchedule",
+    "objectType" : "SCHEDULE"
+  } ]
+}

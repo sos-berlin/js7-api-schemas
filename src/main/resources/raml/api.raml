@@ -2299,6 +2299,18 @@ traits:
         schema200: !include api/schemas/inventory/release/response-releasables-schema.json
         example200: TODO
 
+    /recall:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Recalls an array of already released objects.
+          description1: !include api/documentation/inventory/releasableRecallFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          schema: !include api/schemas/inventory/release/releasableRecallFilter-schema.json
+          example: !include api/examples/inventory/releasableRecallFilter-example.json 
+        
   /remove:
     type:
       postJSONWithOkWithoutJSId:
