@@ -14,7 +14,7 @@
       "$ref": "../../../controller/schemas/common/syncState-schema.json"
     },
     "confirmedAgentNames": {
-    	"description": "only specified, if state._text == RESUMING or SUSPENDING",
+    	"description": "only specified, if state._text != OUTSTANDING",
     	"type": "array",
     	"uniqueItems": true,
     	"items": {
@@ -22,7 +22,7 @@
     	}
     },
     "notConfirmedAgentNames": {
-    	"description": "only specified, if state._text == RESUMING or SUSPENDING",
+    	"description": "only specified, if state._text == OUTSTANDING",
     	"type": "array",
     	"uniqueItems": true,
     	"items": {
