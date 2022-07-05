@@ -664,6 +664,21 @@ traits:
         example200: !include api/examples/audit/auditDetail-response-example.json
         schema: !include api/schemas/audit/auditLogDetailFilter-schema.json
         example: !include api/examples/audit/auditDetail-request-example.json
+        
+
+  /login_history:
+    type:
+      postJSONWithoutJSId:
+        description: List of failed accounts
+        description1: !include api/documentation/common/dateFrom.md
+        description2: !include api/documentation/common/dateTo.md
+        description3: !include api/documentation/common/timeZone.md
+        description4: !include api/documentation/audit/accountName.md
+        description200: " "
+        example200: " "
+        schema200: !include api/schemas/security/history/loginHistory-schema.json
+        schema: !include api/schemas/security/history/loginHistoryFilter-schema.json
+        
 
 /authentication:
   description: This is not an API call. Use child urls instead!
