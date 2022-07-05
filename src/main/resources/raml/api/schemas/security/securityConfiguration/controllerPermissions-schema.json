@@ -68,6 +68,11 @@
 					"modify": {
 						"type": "boolean",
 						"default" : true
+					},
+					"managePositions": {
+						"description": "skip, unskip, stop, unstop workflow jobs and add/modify order with special start-/endposition",
+						"type": "boolean",
+						"default" : true
 					}
 				},
 				"additionalProperties": false

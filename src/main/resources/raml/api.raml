@@ -3736,6 +3736,23 @@ traits:
         schema: !include api/schemas/workflow/modifyWorkflowLabels-schema.json
         example: " "
         
+  /stop:
+    type:
+      postJSONWithOkResponse:
+        description: Stops labeled instructions
+        description1: !include api/documentation/workflow/workflowLabels.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/workflow/modifyWorkflowLabels-schema.json
+        example: " "
+        
   /state:
     type:
       postJSON:
@@ -3751,6 +3768,23 @@ traits:
     type:
       postJSONWithOkResponse:
         description: Unskips labeled instructions
+        description1: !include api/documentation/workflow/workflowLabels.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/workflow/modifyWorkflowLabels-schema.json
+        example: " "
+        
+  /unstop:
+    type:
+      postJSONWithOkResponse:
+        description: Unstops labeled instructions
         description1: !include api/documentation/workflow/workflowLabels.md
         description2: " "
         description3: " "
