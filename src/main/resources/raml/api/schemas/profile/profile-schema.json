@@ -4,14 +4,14 @@
 	"javaType": "com.sos.joc.model.profile.Profile",
 	"type": "object",
 	"required": [
-		"account",
+		"accountName",
 		"profileItem"
 	],
 	"properties": {
 		"controllerId": {
 			"$ref": "../common/controllerId-schema.json"
 		},
-		"account": {
+		"accountName": {
 			"$ref": "../common/string255-schema.json"
 		},
 		"profileItem": {

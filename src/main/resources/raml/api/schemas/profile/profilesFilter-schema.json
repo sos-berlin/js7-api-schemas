@@ -10,7 +10,7 @@
 		"controllerId": {
 			"$ref": "../common/controllerId-schema.json"
 		},
-		"accounts": {
+		"accountNames": {
 			"type": "array",
 			"minItems": 1,
 			"items": {

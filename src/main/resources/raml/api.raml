@@ -670,7 +670,7 @@ traits:
     type:
       postJSONWithoutJSId:
         description: List of failed accounts
-        description1: !include api/documentation/common/dateFrom.md
+        descriptioprofilen1: !include api/documentation/common/dateFrom.md
         description2: !include api/documentation/common/dateTo.md
         description3: !include api/documentation/common/timeZone.md
         description4: !include api/documentation/audit/accountName.md
@@ -3379,10 +3379,26 @@ traits:
         positionParam: " "
         variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
-
+        
+        
 /profile:
   description: This is not an API call. Use child urls instead!
 
+  /prefs:
+    type:
+      postJSON:
+        description: gets the preferences from the profile in JSON format 
+        description1: !include api/documentation/security/account/accountName.md
+        schema: !include api/schemas/profile/profileFilter-schema.json
+        schema200: !include api/schemas/profile/profile-schema.json
+    /store:
+      type:
+        postJSONWithOkResponse:
+          description: Stores the prefs for a profile
+          description1: !include api/documentation/security/account/accountName.md
+          description2: !include api/documentation/profile/profileItem.md
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/profile/profile-schema.json
   /ca:
     type:
       postWithoutJSONandJSId:
@@ -3506,6 +3522,22 @@ traits:
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/publish/setKey-schema.json
           example: !include api/examples/publish/setKey-example.json
+    
+/profiles:
+ type:
+    postJSON:
+      description: Provide the list of profiles including the last login time. A profile is listed, when changed preferences, git credentials, favorites or signatures/keys are found.
+      description1: !include api/documentation/security/identityServices/identityServiceName.md
+      schema: !include api/schemas/security/identityServices/identityServiceFilter-schema.json
+      schema200: !include api/schemas/profile/profiles-schema.json        
+
+/profiles/delete:
+    type:
+      postJSONWithOkResponse:
+        description: Deletes the profile for the accounts
+        description1: !include api/documentation/security/account/delete/accountNames.md 
+        schema: !include api/schemas/profile/profilesFilter-schema.json          
+
 
 /schedule/runtime:
   type:
