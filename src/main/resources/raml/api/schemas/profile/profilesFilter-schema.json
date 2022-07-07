@@ -10,6 +10,10 @@
 		"controllerId": {
 			"$ref": "../common/controllerId-schema.json"
 		},
+		"complete": {
+			"type": "boolean",
+			"default": false
+		},
 		"accountNames": {
 			"type": "array",
 			"minItems": 1,
