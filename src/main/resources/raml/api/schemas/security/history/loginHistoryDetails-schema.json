@@ -1,0 +1,16 @@
+{
+	"title": "LoginHistoryDetails",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.history.LoginHistoryDetails",
+	"type": "object",
+	"properties": {
+		"loginHistoryItems": {
+			"type": "array",
+			"items": {
+				"$ref": "loginHistoryDetailItem-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false 
+}
+ 

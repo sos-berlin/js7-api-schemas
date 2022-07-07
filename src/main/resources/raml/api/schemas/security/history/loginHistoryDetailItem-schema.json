@@ -1,0 +1,17 @@
+ 
+{
+	"title": "LoginHistoryDetailItem",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.history.LoginHistoryDetailItem",
+	"type": "object",
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"message": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	},
+	"additionalProperties": false 
+}
+    

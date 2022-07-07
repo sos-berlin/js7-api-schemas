@@ -6,15 +6,17 @@
 	"type": "object",
 	"properties": {
 		"accountName": {
-			"$ref": "../../common/string255required-schema.json"
+			"$ref": "../../common/string255-schema.json"
 		},
 		"loginDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
 		"loginSuccess": {
 			"type": "boolean"
-		}
-	},
-	"additionalProperties": false
+		},
+		"details": {
+			"$ref": "loginHistoryDetails-schema.json"
+		} 
+	}
 }
     
