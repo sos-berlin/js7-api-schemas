@@ -3043,6 +3043,66 @@ traits:
         schema: !include api/schemas/board/modifyNotice-schema.json
         example: " "
 
+/notification:
+  type:
+    postJSON:
+      description: Reads a notification.
+      description1: !include api/documentation/notification/readNotificationFilter.md
+      description2: " "
+      description3: " "
+      description4: " "
+      description5: " "
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: " "
+      schema: !include api/schemas/notification/readNotificationFilter-schema.json
+      schema200: " "
+      example: !include api/examples/notification/readNotificationFilter-example.json
+      example200: " "
+
+  /delete:
+    type:
+      postJSON:
+        description: Deletes a notification.
+        description1: !include api/documentation/notification/deleteNotificationFilter.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/notification/deleteNotificationFilter-schema.json
+        schema200: " "
+        example: !include api/examples/notification/deleteNotificationFilter-example.json
+        example200: " "
+
+  /store:
+    type:
+      postJSON:
+        description: Deletes a notification.
+        description1: !include api/documentation/notification/storeNotificationFilter.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/notification/storeNotificationFilter-schema.json
+        schema200: !include api/schemas/notification/storeNotificationResponse-schema.json
+        example: !include api/examples/notification/storeNotificationFilter-example.json
+        example200: " "
+
 /order:
   type:
     postJSON:

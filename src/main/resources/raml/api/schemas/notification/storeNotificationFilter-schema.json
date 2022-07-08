@@ -1,0 +1,29 @@
+{
+  "title": "store notification filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.notification.StoreNotificationFilter",
+  "type": "object",
+  "description": "Request Filter to store a notification.",
+  "required": [
+    "controllerId",
+    "configuration",
+    "name"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerId-schema.json"
+    },
+    "configuration": {
+      "$ref": "../common/noScript-schema.json"
+    },
+    "configurationJson": {
+      "$ref": "../common/noScript-schema.json"
+    },
+    "name": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

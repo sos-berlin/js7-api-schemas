@@ -1,0 +1,22 @@
+{
+  "title": "read notification",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.notification.ReadNotificationFilter",
+  "type": "object",
+  "description": "forceRelease for notification",
+  "required": [
+    "controllerId",
+    "name"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerId-schema.json"
+    },
+    "name": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "forceRelease": {
+      "type": "boolean"
+    }
+  }
+}

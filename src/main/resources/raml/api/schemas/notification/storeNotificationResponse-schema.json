@@ -1,0 +1,27 @@
+{
+  "title": " store notification response",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.notification.StoreNotificationResponse",
+  "type": "object",
+  "description": "state,releases, hasReleases only for objectType=NOTIFICATION",
+  "properties": {
+    "name": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "objectType": {
+      "$ref": "../xmleditor/common/object-type-schema.json"
+    },
+    "modified": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "state": {
+      "$ref": "../inventory/common/itemStateEnum-schema.json"
+    },
+    "released": {
+      "type": "boolean"
+    },
+    "hasReleases": {
+      "type": "boolean"
+    }
+  }
+}
