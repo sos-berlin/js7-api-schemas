@@ -21,6 +21,9 @@
     "asStandaloneAgent": {
     	"type": "boolean",
     	"default": false
+    },
+    "primaryDirectorId": {
+    	"$ref": "../common/string255-schema.json"
     }
   },
   "additionalProperties": false
