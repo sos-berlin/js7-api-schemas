@@ -1,0 +1,26 @@
+ 
+{
+	"title": "BlockedAccount",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.blocklist.BlockedAccount",
+	"type": "object",
+	"required": [
+		"accountName"
+	],
+	"properties": {
+		"accountName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"notice": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"since": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    

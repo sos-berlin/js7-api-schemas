@@ -25,6 +25,9 @@
     "url": {
     	"$ref": "../common/string255required-schema.json"
     },
+    "version": {
+    	"type": "string"
+    },
     "state": {
     	"$ref": "agentState-schema.json"
     },

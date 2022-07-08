@@ -26,6 +26,8 @@ post:
     <tr><td style="padding-left:20px;">``agentId``</td><td>required, integer</td><td>The ``agentId`` is the (technical) name that is used by the Controller to identify an Agent. This value is set once and cannot be changed</td><td></td><td></td></tr>
     <tr><td style="padding-left:20px;">``agentName``</td><td>required, string</td><td>The ``agentName`` is the (logical) name that is used with the configuration of a Job to reference an Agent</td><td></td><td></td></tr>
     <tr><td style="padding-left:20px;">``url``</td><td>required, string</td><td>URL of the Agent</td><td></td><td></td></tr>
+    <tr><td style="padding-left:20px;">``asStandaloneAgent``</td><td>optional, boolean</td><td>A new Cluster Watch Agent will be registered per default as a Cluster Agent.
+    <br/>ATTENTION! If the Cluster Watch Agent is already registered then this parameter will be ignored.</td><td></td><td>false</td></tr>
     <<audit>>
     </tbody></table>
   body:

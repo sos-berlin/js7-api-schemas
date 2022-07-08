@@ -1,0 +1,27 @@
+{
+  "title": "Register Cluster Watch Agent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.RegisterClusterWatchAgent",
+  "type": "object",
+  "required": [
+  	"agentId",
+  	"agentName",
+  	"url"
+  ],
+  "properties": {
+    "agentId": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "agentName": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "url": {
+    	"$ref": "../common/string255required-schema.json"
+    },
+    "asStandaloneAgent": {
+    	"type": "boolean",
+    	"default": false
+    }
+  },
+  "additionalProperties": false
+}

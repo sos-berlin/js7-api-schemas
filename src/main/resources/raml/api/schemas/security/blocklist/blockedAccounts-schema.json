@@ -1,0 +1,19 @@
+{
+	"title": "BlockedAccounts",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.blocklist.BlockedAccounts",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"blockedAccounts": {
+			"type": "array",
+			"items": {
+				"$ref": "blockedAccount-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}
+ 
