@@ -1,0 +1,5 @@
+{
+  "controllerId" : "testsuite",
+  "name" : "notification.xml",
+  "forceRelease" : false
+}

@@ -1,0 +1,25 @@
+{
+  "title": "delete notification filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.notification.DeleteNotificationFilter",
+  "type": "object",
+  "description": "Request Filter to delete a notification",
+  "required": [
+    "controllerId",
+    "name"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerId-schema.json"
+    },
+    "name": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "release": {
+      "type": "boolean"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}
