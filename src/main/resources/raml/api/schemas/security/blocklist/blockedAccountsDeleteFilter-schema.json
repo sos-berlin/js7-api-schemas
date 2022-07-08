@@ -1,0 +1,21 @@
+{
+	"title": "BlockedAccountsDelete Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.blocklist.BlockedAccountsDeleteFilter",
+	"type":"object",
+	"required": [
+		"accountNames"
+	],
+	"properties": {
+		"accountNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
