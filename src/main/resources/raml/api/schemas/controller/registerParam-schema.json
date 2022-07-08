@@ -47,7 +47,7 @@
       }
     },
     "clusterWatcher": {
-    	"$ref": "../agent/singleAgent-schema.json"
+    	"$ref": "../agent/registerClusterWatchAgent-schema.json"
     },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"

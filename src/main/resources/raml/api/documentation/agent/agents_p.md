@@ -1,4 +1,4 @@
-Contains collection of Solo Agents where each Agent has following fields
+Contains collection of Standalone Agents where each Agent has following fields
 * controllerId
 * agentId
 * agentName
