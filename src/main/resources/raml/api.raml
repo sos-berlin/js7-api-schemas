@@ -1796,6 +1796,40 @@ traits:
           schema: !include api/schemas/security/roles/roleRename-schema.json
           example: " "                    
 
+  /blockedAccounts:
+    type:
+      postJSONWithoutJSId:
+        description: Returns a collection of blocked Accounts
+        description1: !include api/documentation/common/dateFrom.md
+        description2: !include api/documentation/common/dateTo.md
+        description3: !include api/documentation/common/timeZone.md
+        description4: !include api/documentation/audit/accountName.md
+        description200: " "
+        schema: !include api/schemas/security/blocklist/blockedAccountsFilter-schema.json
+        schema200: !include api/schemas/security/blocklist/blockedAccounts-schema.json
+        example: " "
+        example200: " "  
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes blocked accounts from the list of blocked accounts
+          description1: !include api/documentation/security/blocklist/delete/accountNames.md
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/blocklist/blockedAccountsDeleteFilter-schema.json
+          example: " "          
+ 
+        
+    
+  /blockedAccount/store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Stores a blocked account
+          description1: !include api/documentation/security/blocklist/store/accountName.md
+          description2: !include api/documentation/security/blocklist/store/notice.md
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/blocklist/blockedAccount-schema.json
+          example: " "    
+
 /inventory:
   description: This is not an API call. Use its children!!
 
