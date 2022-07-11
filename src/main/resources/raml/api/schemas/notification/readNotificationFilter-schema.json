@@ -3,17 +3,17 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.notification.ReadNotificationFilter",
   "type": "object",
-  "description": "forceRelease for notification",
+  "description": "Request Filter to read a notification",
   "required": [
     "controllerId",
     "name"
   ],
   "properties": {
     "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
+      "$ref": "../common/controllerIdRequired-schema.json"
     },
     "name": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/string255required-schema.json"
     },
     "forceRelease": {
       "type": "boolean"
