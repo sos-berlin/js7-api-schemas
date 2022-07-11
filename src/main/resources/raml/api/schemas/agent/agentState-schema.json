@@ -14,6 +14,9 @@
     },
     "_text": {
       "$ref": "agentStateText-schema.json"
+    },
+    "_reason": {
+      "$ref": "agentStateReason-schema.json"
     }
   },
   "additionalProperties": false

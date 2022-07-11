@@ -1,0 +1,11 @@
+{
+  "title": "reason of intitialised state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentStateReason",
+  "type": "string",
+  "enum": [
+      "FRESH",
+      "RESTARTED",
+      "RESET"
+  ]
+}
