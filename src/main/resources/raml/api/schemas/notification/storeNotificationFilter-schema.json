@@ -11,7 +11,7 @@
   ],
   "properties": {
     "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
+      "$ref": "../common/controllerIdRequired-schema.json"
     },
     "configuration": {
       "$ref": "../common/noScript-schema.json"
@@ -20,7 +20,7 @@
       "$ref": "../common/noScript-schema.json"
     },
     "name": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/string255required-schema.json"
     },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
