@@ -14,7 +14,7 @@
 			"type": "boolean",
 			"default": false
 		},
-		"accountNames": {
+		"accounts": {
 			"type": "array",
 			"minItems": 1,
 			"items": {
