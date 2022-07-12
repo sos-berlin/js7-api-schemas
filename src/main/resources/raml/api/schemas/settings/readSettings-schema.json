@@ -4,15 +4,11 @@
   "javaType": "com.sos.joc.model.settings.ReadSettingsFilter",
   "type": "object",
   "required": [
-    "controllerId",
-    "account"
+    "controllerId"
   ],
   "properties": {
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
-    },
-    "account": {
-      "$ref": "../common/string255-schema.json"
     }
   }
 }
