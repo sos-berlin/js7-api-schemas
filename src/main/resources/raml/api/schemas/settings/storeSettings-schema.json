@@ -4,13 +4,9 @@
   "javaType": "com.sos.joc.model.settings.StoreSettingsFilter",
   "type": "object",
   "required": [
-    "controllerId",
     "configurationItem"
   ],
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerId-schema.json"
-    },
     "configurationItem": {
       "description": "JSON object as string, depends on configuration type",
       "type": "string"

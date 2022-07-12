@@ -1,4 +1,3 @@
 {
-  "controllerId" : "testsuite",
   "configurationItem" : "{\"status\":[\"info\",\"debug\",\"error\",\"warn\"],\"isEnable\":false}"
 }
