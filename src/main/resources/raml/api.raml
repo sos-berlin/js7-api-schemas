@@ -3672,6 +3672,43 @@ traits:
         example: " "
         example200: " "
 
+/settings:
+  type:
+    postJSON:
+      description: reads the settings of a specified account for the specified controller
+      description1: !include api/documentation/settings/readSettings.md
+      description2: " "
+      description3: " "
+      description4: " "
+      description5: " "
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: " "
+      schema: !include api/schemas/settings/readSettings-schema.json
+      schema200: !include api/schemas/configuration/configuration200-schema.json
+      example: !include api/examples/settings/readSettings-example.json
+      example200: " "
+  /store:
+    type:
+      postJSONWithOkResponse:
+        description: stores the settings of a specified account for the specified controller
+        description1: !include api/documentation/settings/storeSettings.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/settings/storeSettings-schema.json
+        example: !include api/examples/settings/storeSettings-example.json
+
 /task/log:
   type:
     postLog:

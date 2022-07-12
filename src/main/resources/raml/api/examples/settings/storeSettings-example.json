@@ -1,0 +1,5 @@
+{
+  "controllerId" : "testsuite",
+  "account" : "root",
+  "configurationItem" : "{\"status\":[\"info\",\"debug\",\"error\",\"warn\"],\"isEnable\":false}"
+}
