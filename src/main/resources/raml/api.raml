@@ -3905,7 +3905,7 @@ traits:
   /stop:
     type:
       postJSONWithOkResponse:
-        description: Stops labeled instructions
+        description: Stops instructions
         description1: !include api/documentation/workflow/workflowId.md
         description2: !include api/documentation/workflow/workflowPositions.md
         description3: " "
@@ -3950,9 +3950,9 @@ traits:
   /unstop:
     type:
       postJSONWithOkResponse:
-        description: Unstops labeled instructions
-        description1: !include api/documentation/workflow/workflowLabels.md
-        description2: " "
+        description: Unstops instructions
+        description1: !include api/documentation/workflow/workflowId.md
+        description2: !include api/documentation/workflow/workflowPositions.md
         description3: " "
         description4: " "
         description5: " "
@@ -3961,7 +3961,7 @@ traits:
         description8: " "
         description9: " "
         description10: !include api/documentation/audit/auditLog.md
-        schema: !include api/schemas/workflow/modifyWorkflowLabels-schema.json
+        schema: !include api/schemas/workflow/modifyWorkflowPositions-schema.json
         example: " "
 
 /workflows:
