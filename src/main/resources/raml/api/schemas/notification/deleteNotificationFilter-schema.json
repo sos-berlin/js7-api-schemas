@@ -5,15 +5,11 @@
   "type": "object",
   "description": "Request Filter to delete a notification",
   "required": [
-    "controllerId",
-    "name"
+    "controllerId"
   ],
   "properties": {
     "controllerId": {
       "$ref": "../common/controllerIdRequired-schema.json"
-    },
-    "name": {
-      "$ref": "../common/string255required-schema.json"
     },
     "release": {
       "type": "boolean"

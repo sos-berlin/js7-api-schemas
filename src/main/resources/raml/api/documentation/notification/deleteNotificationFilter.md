@@ -1,11 +1,4 @@
 <tr>
-<td>``name``</td>
-<td>required, string</td>
-<td>The name of the notification to delete.</td>
-<td>"name" : "notification.xml"</td>
-<td></td>
-</tr>
-<tr>
 <td>``release``</td>
 <td>optional, boolean</td>
 <td>Determines if a draft or an already released notification will be deleted.</td>

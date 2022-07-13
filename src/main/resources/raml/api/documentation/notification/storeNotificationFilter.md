@@ -1,11 +1,4 @@
 <tr>
-<td>``name``</td>
-<td>required, string</td>
-<td>The name of the notification to store.</td>
-<td>"name" : "notification.xml"</td>
-<td></td>
-</tr>
-<tr>
 <td>``configuration``</td>
 <td>required, boolean</td>
 <td>The XML configuration of the notification to store.</td>

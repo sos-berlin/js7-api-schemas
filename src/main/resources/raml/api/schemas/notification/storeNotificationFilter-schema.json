@@ -6,8 +6,7 @@
   "description": "Request Filter to store a notification.",
   "required": [
     "controllerId",
-    "configuration",
-    "name"
+    "configuration"
   ],
   "properties": {
     "controllerId": {

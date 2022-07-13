@@ -5,8 +5,7 @@
   "type": "object",
   "description": "Request Filter to read a notification",
   "required": [
-    "controllerId",
-    "name"
+    "controllerId"
   ],
   "properties": {
     "controllerId": {
