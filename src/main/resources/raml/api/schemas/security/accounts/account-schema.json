@@ -24,6 +24,9 @@
 		"disabled": {
 			"$ref": "../disabledParam-schema.json"
 		},
+		"blocked": {
+			"$ref": "../blockedParam-schema.json"
+		},
 		"roles": {
 			"type": "array",
 			"items": {
