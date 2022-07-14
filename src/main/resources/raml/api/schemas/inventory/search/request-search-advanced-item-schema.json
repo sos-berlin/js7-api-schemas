@@ -22,6 +22,9 @@
 		"includeScript": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"calendar": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"noticeBoards": {
 			"$ref": "../../common/string255-schema.json"
 		},
