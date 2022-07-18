@@ -10,6 +10,12 @@
 		"iamLdapUserDnTemplate": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"iamLdapSystemUser": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"iamLdapSystemPassword": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"iamLdapSearchBase": {
 			"$ref": "../../common/string255-schema.json"
 		},
@@ -42,8 +48,8 @@
 			"$ref": "../../common/string255-schema.json"
 		},
 		"iamLdapHostNameVerification": {
-			"$ref": "../../common/string255-schema.json"
-		},
+            "type": "boolean",
+			"default": false		},
 		"iamLdapSecurityProtocol": {
 			"$ref": "../../common/string255-schema.json"
 		},
