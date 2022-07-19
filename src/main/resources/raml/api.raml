@@ -1830,6 +1830,27 @@ traits:
           schema: !include api/schemas/security/blocklist/blockedAccount-schema.json
           example: " "    
 
+  /sessions:
+    type:
+      postJSONWithoutJSId:
+        description: Returns a collection of active sessions
+        description1: !include api/documentation/audit/accountName.md
+        description200: " "
+        schema: !include api/schemas/security/sessions/sessionsFilter-schema.json
+        schema200: !include api/schemas/security/sessions/sessions-schema.json
+        example: " "
+        example200: " "  
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes sessions 
+          description1: !include api/documentation/security/session/delete/accountNames.md
+          description2: !include api/documentation/security/session/delete/ids.md
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/security/sessions/sessionsDeleteFilter-schema.json
+          example: " "          
+          
+
 /inventory:
   description: This is not an API call. Use its children!!
 
