@@ -1,0 +1,16 @@
+{
+	"title": "ActiveSessionsFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.sessions.ActiveSessionsFilter",
+	"type": "object",
+	"properties": {
+		"accountName": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"limit": {
+			"description": "restricts the number of responsed records; -1=unlimited",
+			"type": "integer",
+			"default": 10000
+		}
+	}
+}
