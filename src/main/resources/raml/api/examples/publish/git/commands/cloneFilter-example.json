@@ -1,5 +1,5 @@
 {
-  "remoteUri" : "git@github.com:sos-berlin/JS7Demo.git",
+  "remoteUrl" : "git@github.com:sos-berlin/JS7Demo.git",
   "folder" : "/JSDemo",
   "category" : "ROLLOUT"
 }

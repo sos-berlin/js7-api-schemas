@@ -3,10 +3,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.publish.git.commands.CloneFilter",
   "type": "object",
-  "required": ["remoteUri", "folder", "category"],
+  "required": ["remoteUrl", "folder", "category"],
   "properties": {
-    "remoteUri": {
-      "description": "Git Remote Uri.",
+    "remoteUrl": {
+      "alias": "remoteUri",
+      "description": "Git Remote URL",
       "type": "string",
       "maxLength": 255,
       "minLength": 1

@@ -39,7 +39,7 @@
       "type": "string"
     }, 
     "limit": {
-        "description": "Only for db history URIs. Restricts the number of delivered items; -1=unlimited",
+        "description": "Limits the number of resulting items; -1=unlimited",
         "type": "integer",
         "default": 5000
     }

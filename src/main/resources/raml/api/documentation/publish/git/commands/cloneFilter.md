@@ -1,8 +1,8 @@
 <tr>
-<td>``remoteUri``</td>
+<td>``remoteUrl``</td>
 <td>required, string</td>
-<td>Uri of a remote Git repository.</td>
-<td>"remoteUri" : "git@github.com:sos-berlin/JS7Demo.git"</td>
+<td>URL of a remote Git repository.</td>
+<td>"git@github.com:sos-berlin/JS7Demo.git"</td>
 <td></td>
 </tr>
 <tr>
