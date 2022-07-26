@@ -21,7 +21,7 @@
 			},
 			"uniqueItems": true
 		},
-		"jobs": {
+		"jobTemplates": {
 			"type": "array",
 			"items": {
 				"$ref": "response-folderItem-schema.json"

@@ -40,6 +40,9 @@
     },
     "numOfIncludeScripts": {
       "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfJobTemplates": {
+      "$ref": "../common/nonNegativeLong-schema.json"
     }
   }
 }

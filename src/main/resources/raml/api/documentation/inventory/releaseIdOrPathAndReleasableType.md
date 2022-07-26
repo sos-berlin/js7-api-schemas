@@ -4,5 +4,6 @@
 <ul><li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"SCHEDULE"</li>
+    <li>"JOB"</li>
     <li>"INCLUDESCRIPT"</li></ul>
 </td><td></td><td></td></tr>
