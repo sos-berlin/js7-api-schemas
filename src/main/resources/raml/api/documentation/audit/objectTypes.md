@@ -8,6 +8,7 @@
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"SCHEDULE"</li>
     <li>"INCLUDESCRIPT"</li>
+    <li>"JOB"</li>
     <li>"DOCUMENTATION"</li>
     <li>"ORDER"</li>
 </ul>

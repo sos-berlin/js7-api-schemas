@@ -10,7 +10,9 @@ public enum ReleaseType {
 
     WORKINGDAYSCALENDAR(60),
     NONWORKINGDAYSCALENDAR(61),
-    SCHEDULE(7);
+    SCHEDULE(7),
+    INCLUDESCRIPT(12),
+    JOB(8);
     private final Integer intValue;
     private final static Map<String, ReleaseType> CONSTANTS = new HashMap<String, ReleaseType>();
     private final static Map<Integer, ReleaseType> INTCONSTANTS = new HashMap<Integer, ReleaseType>();

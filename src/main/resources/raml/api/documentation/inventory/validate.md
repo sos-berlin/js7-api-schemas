@@ -8,6 +8,7 @@
 	<li><a href="../../../../../inventory/schemas/board/board-schema.json" target="board">NoticeBoard JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/schedule/schedule-schema.json" target="order">Schedule JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/calendar/calendar-schema.json" target="calendar">Calendar JSON schema</a></li>
+	<li><a href="../../../../../inventory/schemas/jobTemplate/jobTemplate-schema.json" target="jobTemplate">Job Template JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/script/script-schema.json" target="script">IncludeScript JSON schema</a></li>
 </ul>
 </p>
@@ -21,6 +22,7 @@
     <li>"SCHEDULE"</li>
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
+    <li>"JOB"</li>
     <li>"INCLUDESCRIPT"</li>
 </ul>
 </p>

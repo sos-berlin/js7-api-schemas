@@ -10,6 +10,7 @@ the tupel (``path`` and ``objectType``).</td><td></td><td></td></tr>
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"SCHEDULE"</li>
+    <li>"JOB"</li>
     <li>"INCLUDESCRIPT"</li>
     </ul>
 </td><td></td><td></td></tr>

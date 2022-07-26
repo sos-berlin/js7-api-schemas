@@ -84,7 +84,7 @@
 <td>required oneOf(``forSigning``, ``shallowCopy``), object</td>
 <td>Object consists of an array of ``objectTypes``, an array of ``folders`` and additional booleans for information on how to filter..</td>
 <td>"shallowCopy" : {
-<div style="padding-left:10px;">"objectTypes" : [ "WORKFLOW", "FILEORDERSOURCE", "JOBRESOURCE", "LOCK", "WORKINGDAYSCALENDAR", "SCHEDULE" ],</div>
+<div style="padding-left:10px;">"objectTypes" : [ "WORKFLOW", "FILEORDERSOURCE", "JOBRESOURCE", "LOCK", "WORKINGDAYSCALENDAR", "SCHEDULE", "JOB", "INCLUDESCRIPT" ],</div>
 <div style="padding-left:10px;">"folders" : [ "/JS7Demo", "/Examples.Unix" ],</div>
 <div style="padding-left:10px;">"recursive" : true,</div>
 <div style="padding-left:10px;">"onlyValidObjects" : false,</div>
@@ -98,7 +98,7 @@
 <td style="padding-left:20px;">``objectTypes``</td>
 <td>required, array</td>
 <td>An array defining a subset of Configuration Types the specified folders should bw filtered with. Releaseable and deployable Configuration Types are allowed.</td>
-<td>"objectTypes" : [ "WORKFLOW", "FILEORDERSOURCE", "JOBRESOURCE", "LOCK", "WORKINGDAYSCALENDAR", "SCHEDULE" ]</td>
+<td>"objectTypes" : [ "WORKFLOW", "FILEORDERSOURCE", "JOBRESOURCE", "LOCK", "WORKINGDAYSCALENDAR", "SCHEDULE", "JOB", "INCLUDESCRIPT" ]</td>
 <td></td>
 </tr>
 <tr>

@@ -1,5 +1,5 @@
 {
-	"title": "JS AgentRef Edit configuration",
+	"title": "Job Template Edit configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.inventory.job.JobEdit",
 	"type": "object",
@@ -8,7 +8,7 @@
 	},
 	"properties": {
 		"configuration": {
-			"$ref": "../../../inventory/schemas/job/job-schema.json"
+			"$ref": "../../../inventory/schemas/jobTemplate/jobTemplate-schema.json"
 		}
 	}
 }
