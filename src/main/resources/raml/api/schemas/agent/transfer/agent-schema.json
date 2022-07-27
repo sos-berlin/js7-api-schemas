@@ -1,0 +1,19 @@
+{
+  "title": "agent schema for agents to transfer (ex-/import or converter for JobScheduler 1 objects)",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.transfer.Agent",
+  "type": "object",
+  "oneOf": [{
+      "required": ["agentCluster"]
+    }, {
+      "required": ["standaloneAgent"]
+    }],
+  "properties": {
+    "agentCluster": {
+      "$ref": "../clusterAgent-schema.json"
+    },
+    "standaloneAgent": {
+      "$ref": "../singleAgent-schema.json"
+    }
+  }
+}
