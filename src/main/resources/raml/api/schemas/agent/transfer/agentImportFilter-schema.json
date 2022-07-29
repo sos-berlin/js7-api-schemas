@@ -1,0 +1,17 @@
+{
+  "title": "Agent Import Filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.transfer.AgentImportFilter",
+  "type": "object",
+  "required": [
+    "format"
+  ],
+  "properties": {
+    "format": {
+      "$ref": "../../publish/archiveFormat-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../../audit/auditParams-schema.json"
+    }
+  }
+}
