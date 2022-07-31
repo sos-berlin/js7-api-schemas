@@ -1,24 +1,17 @@
 {
 	"title": "Filter Inventory search",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.inventory.search.RequestSearchFilter",
+	"javaType": "com.sos.joc.model.inventory.search.RequestDeployedSearchFilter",
 	"type": "object",
 	"extends" : {
   		"$ref": "request-base-search-filter-schema.json"
   	},
 	"required": [
-		"returnType"
+		"controllerId"
 	],
 	"properties": {
 		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
-		},
-		"deployedOrReleased": {
-			"type": "boolean",
-			"default": false
-		},
-		"returnType": {
-			"$ref": "request-search-returnType-schema.json"
+			"$ref": "../../common/controllerIdRequired-schema.json"
 		}
 	},
   	"additionalProperties": false
