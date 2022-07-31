@@ -741,7 +741,7 @@ traits:
 /calendars:
   type:
     postJSONWithoutJSId:
-      description: Gets calendars
+      description: Gets released calendars
       description1: !include api/documentation/calendar/filteredByCalendarPaths.md
       description2: !include api/documentation/calendar/filteredByCalendarIds.md
       description3: !include api/documentation/common/compact.md
@@ -757,6 +757,26 @@ traits:
       schema200: !include api/schemas/calendar/calendars-schema.json
       example: " "
       example200: " "
+      
+  /search:
+    type:
+      postJSONWithoutJSId:
+        description: Searches released calendars
+        description1: !include api/documentation/inventory/search/search-folders.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/search/request-base-search-filter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-search-schema.json
+        example200: TODO
 
 #  /used:
 #    type:
@@ -2637,6 +2657,26 @@ traits:
           schema: !include api/schemas/publish/repository/updateFromRepositoryFilter-schema.json
           example: !include api/examples/publish/repository/updateFromFilter_files-example.json
 
+  /search:
+    type:
+      postJSONWithOptionalJSId:
+        description: Searches inventory objects
+        description1: !include api/documentation/inventory/search/search-folders.md
+        description2: !include api/documentation/inventory/search/returnType.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: !include api/documentation/inventory/search/advanched.md
+        description7: !include api/documentation/inventory/search/advanched-workflow.md
+        description8: !include api/documentation/inventory/search/advanched-lock.md
+        description9: !include api/documentation/inventory/search/advanched-noticeboard.md
+        description10: !include api/documentation/inventory/search/advanched-calendar.md
+        description200: " "
+        schema: !include api/schemas/inventory/search/request-search-filter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-search-schema.json
+        example200: TODO
+    
   /statistics:
     type:
       postOnlyId:
@@ -3000,6 +3040,26 @@ traits:
       schema200: !include api/schemas/lock/locks-schema.json
       example: TODO
       example200: !include api/examples/lock/locks.json
+      
+  /search:
+    type:
+      postJSON:
+        description: Searches deployed locks
+        description1: !include api/documentation/inventory/search/search-folders.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: !include api/documentation/inventory/search/advanched.md
+        description7: !include api/documentation/inventory/search/advanched-workflow.md
+        description8: " "
+        description9: !include api/documentation/inventory/search/advanched-noticeboard.md
+        description10: !include api/documentation/inventory/search/advanched-calendar.md
+        description200: " "
+        schema: !include api/schemas/inventory/search/request-deployed-search-filter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-search-schema.json
+        example200: TODO
 
 /monitoring:
   /notifications:
@@ -3064,6 +3124,26 @@ traits:
         schema200: !include api/schemas/board/boards-schema.json
         example: !include api/examples/noticeBoard/boards-request-example.json
         example200: !include api/examples/noticeBoard/boards-response-example.json
+        
+    /search:
+      type:
+        postJSON:
+          description: Searches deployed notice boards
+          description1: !include api/documentation/inventory/search/search-folders.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: !include api/documentation/inventory/search/advanched.md
+          description7: !include api/documentation/inventory/search/advanched-workflow.md
+          description8: !include api/documentation/inventory/search/advanched-lock.md
+          description9: " "
+          description10: !include api/documentation/inventory/search/advanched-calendar.md
+          description200: " "
+          schema: !include api/schemas/inventory/search/request-deployed-search-filter-schema.json
+          example: TODO
+          schema200: !include api/schemas/inventory/search/response-search-schema.json
+          example200: TODO
 
   /delete:
     type:
@@ -4023,6 +4103,26 @@ traits:
         schema200: !include api/schemas/workflow/workflowsOrderCount-schema.json
         example: !include api/examples/workflow/orderCount-example.json
         example200: !include api/examples/workflow/orderCount-response-example.json
+        
+  /search:
+    type:
+      postJSON:
+        description: Searches deployed workflows
+        description1: !include api/documentation/inventory/search/search-folders.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: !include api/documentation/inventory/search/advanched.md
+        description7: " "
+        description8: !include api/documentation/inventory/search/advanched-lock.md
+        description9: !include api/documentation/inventory/search/advanched-noticeboard.md
+        description10: !include api/documentation/inventory/search/advanched-calendar.md
+        description200: " "
+        schema: !include api/schemas/inventory/search/request-deployed-search-filter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-search-schema.json
+        example200: TODO
         
   /resume:
     type:

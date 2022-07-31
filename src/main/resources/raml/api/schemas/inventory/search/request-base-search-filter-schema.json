@@ -1,0 +1,21 @@
+{
+	"title": "Filter Inventory search",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.search.RequestBaseSearchFilter",
+	"type": "object",
+	"properties": {
+		"search": {
+			"$ref": "../../common/glob-schema.json"
+		},
+		"folders": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/path-schema.json"
+			}
+		},
+		"advanced": {
+			"$ref": "request-search-advanced-item-schema.json"
+		}
+	},
+  	"additionalProperties": false
+}

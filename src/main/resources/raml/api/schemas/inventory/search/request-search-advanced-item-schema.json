@@ -20,16 +20,25 @@
 			"$ref": "../../common/string255-schema.json"
 		},
 		"includeScript": {
-			"$ref": "../../common/string255-schema.json"
+			"alias": "includeScripts",
+			"type": "string",
+  			"pattern": "^[^<>]*$",
+  			"maxLength": 255
 		},
 		"calendar": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"noticeBoards": {
-			"$ref": "../../common/string255-schema.json"
+		"noticeBoard": {
+			"alias": "noticeBoards",
+			"type": "string",
+  			"pattern": "^[^<>]*$",
+  			"maxLength": 255
 		},
-		"jobResources": {
-			"$ref": "../../common/string255-schema.json"
+		"jobResource": {
+			"alias": "jobResources",
+			"type": "string",
+  			"pattern": "^[^<>]*$",
+  			"maxLength": 255
 		},
 		"jobName": {
 			"$ref": "../../common/string255-schema.json"
@@ -62,5 +71,6 @@
 		"envValue": {
 			"$ref": "../../common/string255-schema.json"
 		}
-	}
+	},
+  	"additionalProperties": false
 }
