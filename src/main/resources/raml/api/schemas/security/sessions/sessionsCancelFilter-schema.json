@@ -1,7 +1,7 @@
 {
-	"title": "ActiveSessionsDelete Filter",
+	"title": "ActiveSessionsCancelFilter Filter",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.sessions.ActiveSessionsDeleteFilter",
+	"javaType": "com.sos.joc.model.security.sessions.ActiveSessionsCancelFilter",
 	"type": "object",
 	"properties": {
 		"accountNames": {
