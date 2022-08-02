@@ -1,0 +1,7 @@
+{
+  "exportFile" : {
+    "filename" : "myAgentExport.zip",
+    "format" : "ZIP"
+  },
+  "agentIds" : [ "agent_cluster_001", "agent_001", "agent_002", "agent_003", "agent_006" ]
+}

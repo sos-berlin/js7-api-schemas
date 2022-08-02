@@ -1860,14 +1860,14 @@ traits:
         schema200: !include api/schemas/security/sessions/sessions-schema.json
         example: " "
         example200: " "  
-    /delete:
+    /cancel:
       type:
         postJSONWithOkWithoutJSId:
-          description: Deletes sessions 
-          description1: !include api/documentation/security/session/delete/accountNames.md
-          description2: !include api/documentation/security/session/delete/ids.md
+          description: Cancel sessions 
+          description1: !include api/documentation/security/session/cancel/accountNames.md
+          description2: !include api/documentation/security/session/cancel/ids.md
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/security/sessions/sessionsDeleteFilter-schema.json
+          schema: !include api/schemas/security/sessions/sessionsCancelFilter-schema.json
           example: " "          
           
 
