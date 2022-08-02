@@ -4,16 +4,16 @@
   "javaType": "com.sos.joc.model.agent.transfer.AgentExportFilter",
   "type": "object",
   "required": [
-      "exportFile",
-      "agentIds"
+    "exportFile",
+    "agentIds"
   ],
   "properties": {
     "exportFile": {
       "$ref": "../../publish/exportFile-schema.json"
     },
     "agentIds": {
-      "type" : "array",
-      "items" : {
+      "type": "array",
+      "items": {
         "$ref": "../../common/string255-schema.json"
       }
     },
