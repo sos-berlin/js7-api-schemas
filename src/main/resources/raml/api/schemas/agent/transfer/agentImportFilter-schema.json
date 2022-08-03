@@ -10,6 +10,12 @@
     "format": {
       "$ref": "../../publish/archiveFormat-schema.json"
     },
+    "overwrite": {
+      "type": "boolean"
+    }, 
+    "controllerId": {
+      "$ref": "../../common/controllerId-schema.json"
+    },
     "auditLog": {
       "$ref": "../../audit/auditParams-schema.json"
     }
