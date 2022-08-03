@@ -250,6 +250,14 @@ traits:
           schema: !include api/schemas/agent/deployClusterParam-schema.json
           example: " "
           
+  /export:
+    type:
+      postForExport:
+        description: Provides archive file (zip, tar.gz) to download agent configurations
+        description1: !include api/documentation/agent/transfer/agentExportFilter.md
+        schema: !include api/schemas/agent/transfer/agentExportFilter-schema.json
+        example: !include api/examples/agent/transfer/agentExportFilter-example.json
+
   /inventory:
     type:
       postJSONWithOptionalJSId:
