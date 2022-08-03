@@ -71,6 +71,7 @@ resourceTypes:
   - postForExport: !include api/resourceTypes/publish/postForExport.raml
   - postForImportDeploy: !include api/resourceTypes/publish/postForImportDeploy.raml
   - postForShowDepHistory: !include api/resourceTypes/publish/postForShowDepHistory.raml
+  - postForUploadAgents: !include api/resourceTypes/agent/transfer/postForUploadAgents.raml
 
 
 traits:
@@ -257,6 +258,13 @@ traits:
         description1: !include api/documentation/agent/transfer/agentExportFilter.md
         schema: !include api/schemas/agent/transfer/agentExportFilter-schema.json
         example: !include api/examples/agent/transfer/agentExportFilter-example.json
+
+  /import:
+    type:
+      postForUploadAgents:
+        description: Uploads archive file (zip, tar.gz) with JSON files of agent configurations
+        schema: !include api/schemas/agent/transfer/agentImportFilter-schema.json
+        example: !include api/examples/agent/transfer/agentImportFilter-example.json
 
   /inventory:
     type:

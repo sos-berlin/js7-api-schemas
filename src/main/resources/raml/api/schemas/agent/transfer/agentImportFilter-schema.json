@@ -4,14 +4,16 @@
   "javaType": "com.sos.joc.model.agent.transfer.AgentImportFilter",
   "type": "object",
   "required": [
-    "format"
+    "format",
+    "controllerId"
   ],
   "properties": {
     "format": {
       "$ref": "../../publish/archiveFormat-schema.json"
     },
     "overwrite": {
-      "type": "boolean"
+      "type": "boolean",
+      "default" : false
     }, 
     "controllerId": {
       "$ref": "../../common/controllerId-schema.json"
