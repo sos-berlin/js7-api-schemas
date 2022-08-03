@@ -1,0 +1,50 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+  body:
+    multipart/form-data:
+      formParameters:
+        file:
+          description: The file to be uploaded. - required -
+          required: true
+          example: archive.zip
+          type: file
+        format:
+          description: Specifies the archive format (tar.gz or zip) of the import file. The enum archiveFormat for the value consist of ZIP and TAR_GZ.
+        overwrite:
+          description: |
+            If set to [true] agent configurations from the import archive overwrite existing agent configurations. - default: false -
+          required: false
+          example: false
+          type: boolean
+        controllerId:
+          description: The controllerId of the controller the agents should be assigned to.
+          required: true
+          example: testsuite
+          type: string
+        comment:
+          description: for auditLog
+          required: false
+          type: string
+        timeSpent:
+          description: for auditLog
+          required: false
+          type: string
+        ticketLink:
+          description: for auditLog
+          required: false
+          type: string  
+  responses:
+    200:
+      description: |
+        **Confirm <span style="text-transform: capitalize;"><<resourcePathName>></span> successfully**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate":"2016-05-05T21:13:35Z",
+              "ok":true
+            }
+          schema: ok
