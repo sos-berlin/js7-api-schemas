@@ -448,7 +448,7 @@ public class ConfigurationObject {
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(valid).append(configurationDate).append(path).append(deleted).append(configuration).append(deployed).append(released).append(id).append(state).append(deliveryDate).append(objectType).toHashCode();
+        return new HashCodeBuilder().append(name).append(objectType).toHashCode();
     }
 
     @Override
@@ -460,7 +460,7 @@ public class ConfigurationObject {
             return false;
         }
         ConfigurationObject rhs = ((ConfigurationObject) other);
-        return new EqualsBuilder().append(valid, rhs.valid).append(configurationDate, rhs.configurationDate).append(path, rhs.path).append(deleted, rhs.deleted).append(released, rhs.released).append(configuration, rhs.configuration).append(deployed, rhs.deployed).append(id, rhs.id).append(state, rhs.state).append(deliveryDate, rhs.deliveryDate).append(objectType, rhs.objectType).isEquals();
+        return new EqualsBuilder().append(name, rhs.name).append(objectType, rhs.objectType).isEquals();
     }
 
 }
