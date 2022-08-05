@@ -22,7 +22,7 @@
     <li>"SCHEDULE"</li>
     <li>"WORKINGDAYSCALENDAR"</li>
     <li>"NONWORKINGDAYSCALENDAR"</li>
-    <li>"JOB"</li>
+    <li>"JOBTEMPLATE"</li>
     <li>"INCLUDESCRIPT"</li>
 </ul>
 </p>
