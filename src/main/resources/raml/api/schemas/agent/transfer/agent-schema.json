@@ -12,6 +12,13 @@
     "agentCluster": {
       "$ref": "../clusterAgent-schema.json"
     },
+    "subagentClusters" : {
+      "type": "array",
+      "items": {
+        "$ref": "../subagentCluster-schema.json"
+      }
+    
+    },
     "standaloneAgent": {
       "$ref": "../singleAgent-schema.json"
     }
