@@ -7,7 +7,7 @@
     "INVENTORY",
     "FOLDER",
     "WORKFLOW",
-    "JOB",
+    "JOBTEMPLATE",
     "JOBCLASS",
     "JOBRESOURCE",
     "LOCK",

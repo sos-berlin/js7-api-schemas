@@ -11,5 +11,5 @@
     <li>"INCLUDESCRIPT"</li>
     <li>"JOB"</li>
 </ul>
-</td><td>["JOB"]</td><td></td></tr>
-<tr><td>``jobName``</td><td>optional, string</td><td>If the ``objectType`` is a JOB then the Workflow path is expected in ``path`` and the job name here</td><td></td><td></td></tr>
+</td><td>["JOBTEMPLATE"]</td><td></td></tr>
+<tr><td>``jobName``</td><td>optional, string</td><td>If the ``objectType`` is a JOBTEMPLATE then the Workflow path is expected in ``path`` and the job name here</td><td></td><td></td></tr>

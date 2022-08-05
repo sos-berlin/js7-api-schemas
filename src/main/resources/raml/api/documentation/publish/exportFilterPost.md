@@ -283,7 +283,7 @@
 <tr>
 <td style="padding-left:80px;">``objectType``</td>
 <td>required, enum</td>
-<td>Subset of releasable objects from the enum ConfigurationType. Subset consist of SCHEDULE, "JOB", "INCLUDESCRIPT", WORKINGDAYSCALENDAR, NONWORKINGDAYSCALENDAR and FOLDER.</td>
+<td>Subset of releasable objects from the enum ConfigurationType. Subset consist of SCHEDULE, "JOBTEMPLATE", "INCLUDESCRIPT", WORKINGDAYSCALENDAR, NONWORKINGDAYSCALENDAR and FOLDER.</td>
 <td>"objectType" : "SCHEDULE"</td>
 <td></td>
 </tr>

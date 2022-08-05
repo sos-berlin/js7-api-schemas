@@ -14,7 +14,7 @@ public enum TreeType {
     JOBCLASS(2),
     LOCK(4),
     SCHEDULE(7),
-    JOB(8),
+    JOBTEMPLATE(8),
     FILEORDERSOURCE(9),
     JOBRESOURCE(10),
     NOTICEBOARD(11),

@@ -50,7 +50,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "objectType", visible = true)
 @JsonSubTypes({ 
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.workflow.WorkflowEdit.class, name = "WORKFLOW"),
-    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.job.JobEdit.class, name = "JOB"),
+    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.job.JobEdit.class, name = "JOBTEMPLATE"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobclass.JobClassEdit.class, name = "JOBCLASS"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobresource.JobResourceEdit.class, name = "JOBRESOURCE"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.lock.LockEdit.class, name = "LOCK"),

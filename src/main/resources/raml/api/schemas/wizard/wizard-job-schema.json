@@ -1,5 +1,5 @@
 {
-	"title": "job",
+	"title": "job wizard",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.wizard.Job",
 	"type": "object",
