@@ -1,0 +1,14 @@
+{
+	"title": "JobTemplateFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.jobtemplate.JobTemplateFilter",
+	"type": "object",
+	"required": [
+		"jobTemplatePath"
+	],
+	"properties": {
+		"jobTemplatePath": {
+			"$ref": "../common/string255required-schema.json"
+		}
+	}
+}

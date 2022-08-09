@@ -1,0 +1,15 @@
+{
+  "title": "JobTemplate",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.JobTemplate",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "jobTemplate": {
+      "$ref": "../../../controller/schemas/jobTemplate/jobTemplate-schema.json"
+    }
+  },
+  "additionalProperties": false
+}
