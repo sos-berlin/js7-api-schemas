@@ -1,0 +1,21 @@
+{
+  "title": "JobTemplates filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.JobTemplatesFilter",
+  "type": "object",
+  "properties": {
+    "jobTemplatePaths": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    },
+    "folders": {
+      "$ref": "../common/folders-schema.json"
+    },
+    "compact": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
