@@ -1,0 +1,23 @@
+ 
+{
+	"title": "MonitoringControllerStatus",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.jitl.monitoring.MonitoringControllerStatus",
+	"type": "object",
+	"properties": {
+		"active": {
+			"$ref": "../../controller/master-schema.json"
+		},
+		"passive": {
+			"$ref": "../../controller/master-schema.json"
+		},
+		"volatileStatus": {
+			"$ref": "../../controller/master-schema.json"
+		},
+		"permanentStatus": {
+			"$ref": "../../controller/jobscheduler_p-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    

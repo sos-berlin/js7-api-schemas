@@ -1,0 +1,17 @@
+ 
+{
+	"title": "MonitoringJocStatus",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.jitl.monitoring.MonitoringJocStatus",
+	"type": "object",
+	"properties": {
+		"active": {
+			"$ref": "../../controller/joc-schema.json"
+		},
+		"passive": {
+			"$ref": "../../controller/joc-schema.json"
+			}
+	},
+	"additionalProperties": false
+}
+    
