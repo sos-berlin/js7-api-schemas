@@ -1,0 +1,47 @@
+ 
+{
+	"title": "MonitoringStatus",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.jitl.monitoring.MonitoringStatus",
+	"type": "object",
+	"properties": {
+		"from": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"controllerStatus": {
+			"$ref": "monitoringControllerStatus-schema.json"
+		},
+		"jocStatus": {
+			"$ref": "monitoringJocStatus-schema.json"
+		},
+		"agentStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "../../agent/agent_v-schema.json"
+			}
+		},
+		"orderSnapshot": {
+			"$ref": "../../order/ordersSummary-schema.json"
+		},
+		"orderSummary": {
+			"javaType": "com.sos.joc.model.order.OrdersHistoricSummary",
+			"type": "object",
+			"required": [
+				"successful",
+				"failed"
+			],
+			"properties": {
+				"successful": {
+					"description": "number of successful orders in the past specified by a time parameter",
+					"$ref": "../../common/nonNegativeLong-schema.json"
+				},
+				"failed": {
+					"description": "number of failed orders in the past specified by a time parameter",
+					"$ref": "../../common/nonNegativeLong-schema.json"
+				}
+			}
+		}
+	},
+	"additionalProperties": false
+}
+    
