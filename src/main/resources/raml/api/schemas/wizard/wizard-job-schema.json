@@ -27,6 +27,7 @@
 			"$ref": "../common/string255-schema.json"
 		},
 		"params": {
+			"description": "deprecated: use 'arguments'",
 			"type": "array",
 			"items": {
 				"type": "object",
@@ -47,6 +48,9 @@
 					}
 				}
 			}
+		},
+		"arguments": {
+			"$ref": "../../../inventory/schemas/jobTemplate/parameters-schema.json"
 		}
 	}
 }
