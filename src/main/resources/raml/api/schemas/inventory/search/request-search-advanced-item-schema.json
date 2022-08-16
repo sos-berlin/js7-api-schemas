@@ -40,6 +40,9 @@
   			"pattern": "^[^<>]*$",
   			"maxLength": 255
 		},
+		"jobTemplate": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"jobName": {
 			"$ref": "../../common/string255-schema.json"
 		},

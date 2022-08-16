@@ -1,0 +1,20 @@
+{
+  "title": "Filter to get versions of controllers, agents and JOC Cockpit",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.VersionsFilter",
+  "type": "object",
+  "properties": {
+    "controllerIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    },
+    "agentIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255-schema.json"
+      }
+    }
+  }
+}

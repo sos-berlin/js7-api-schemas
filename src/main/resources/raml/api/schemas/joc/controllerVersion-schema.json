@@ -1,0 +1,22 @@
+{
+  "title": "version od a specific controller",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.ControllerVersion",
+  "type": "object",
+  "required": [
+    "controllerId",
+    "uri",
+    "version"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "uri": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "version": {
+      "$ref": "../common/string255-schema.json"
+    }
+  }
+}

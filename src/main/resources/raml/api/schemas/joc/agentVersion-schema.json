@@ -1,0 +1,25 @@
+{
+  "title": "version of a specifc agent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.AgentVersion",
+  "type": "object",
+  "required": [
+    "agentId",
+    "uri",
+    "version"
+  ],
+  "properties": {
+    "agentId": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "subagentId": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "uri": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "version": {
+      "$ref": "../common/string255-schema.json"
+    }
+  }
+}
