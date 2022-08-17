@@ -8,8 +8,7 @@
   	},
   	"required": [
 	  "objects",
-	  "search",
-      "replace"
+	  "search"
 	],
 	"properties": {
 		"search": {
@@ -19,7 +18,8 @@
 		},
 		"replace": {
 			"type": "string",
-			"pattern": "^[^/]*$"
+			"pattern": "^[^/]*$",
+			"default": ""
 		}
 	}
 }

@@ -5,8 +5,7 @@
 	"type": "object",
 	"required": [
 		"path",
-		"search",
-		"replace"
+		"search"
 	],
 	"properties": {
 		"path": {
@@ -19,7 +18,8 @@
 		},
 		"replace": {
 			"type": "string",
-			"pattern": "^[^/]*$"
+			"pattern": "^[^/]*$",
+			"default": ""
 		},
       	"auditLog": {
       		"$ref": "../../audit/auditParams-schema.json"
