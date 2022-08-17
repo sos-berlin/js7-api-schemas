@@ -3055,7 +3055,28 @@ traits:
         description200: " "
         schema200: !include api/schemas/joc/properties-schema.json
         example200: !include api/examples/joc/properties-example.json
-
+  
+  /versions:
+    type:
+      postJSONWithoutJSId:
+        description: Reads the versions of the specified JS7 components.
+        description1: !include api/documentation/joc/versionsFilter.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/joc/versionsFilter-schema.json
+        schema200: !include api/schemas/joc/versionResponse-schema.json
+        example: !include api/examples/joc/versionsFilter-example.json
+        example200: !include api/examples/joc/versionsResponse-example.json
+        
+      
 /lock:
   type:
     postJSON:

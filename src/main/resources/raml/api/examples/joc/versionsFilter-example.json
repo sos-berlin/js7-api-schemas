@@ -1,0 +1,4 @@
+{
+  "controllerIds" : [ "controller", "standalone", "testsuite" ],
+  "agentIds" : [ "primaryAgentID", "standaloneAgentID", "agent_cluster_001" ]
+}
