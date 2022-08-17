@@ -1,0 +1,35 @@
+{
+	"title": "OrderParameterisations of all schedules where current workflow is assigned and has orderParameterisations",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.workflow.Schedules",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+      		"$ref": "../common/timestamp-schema.json"
+    	},
+		"schedules": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"javaType": "com.sos.joc.model.workflow.OrderParameterisations",
+				"properties": {
+					"path": {
+						"$ref": "../common/path-schema.json"
+					},
+					"name": {
+						"$ref": "../common/string255-schema.json"
+					},
+					"title": {
+						"$ref": "../common/string255-schema.json"
+					},
+					"orderParameterisations": {
+						"type": "array",
+						"items": {
+							"$ref": "../../../inventory/schemas/schedule/orderParameterisation-schema.json"
+						}
+					}
+				}
+			}
+		}
+	}
+}
