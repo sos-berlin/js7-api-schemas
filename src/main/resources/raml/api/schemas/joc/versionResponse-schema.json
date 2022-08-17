@@ -1,0 +1,26 @@
+{
+  "title": "version response with agent and controller versions",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.VersionResponse",
+  "type": "object",
+  "required": [
+    "version"
+  ],
+  "properties": {
+    "controllerVersions": {
+      "type": "array",
+      "items": {
+        "$ref": "controllerVersion-schema.json"
+      }
+    },
+    "agentVersions": {
+      "type": "array",
+      "items": {
+        "$ref": "agentVersion-schema.json"
+      }
+    },
+    "jocVersion" : {
+      "type": "string"
+    }
+  }
+}
