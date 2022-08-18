@@ -1,7 +1,7 @@
 {
-  "title": "JobTemplates",
+  "title": "JobTemplates used by Workflows",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.jobtemplate.JobTemplates",
+  "javaType": "com.sos.joc.model.jobtemplate.JobTemplatesUsedBy",
   "type": "object",
   "required": [
     "deliveryDate",
@@ -14,7 +14,7 @@
     "jobTemplates": {
       "type": "array",
       "items": {
-        "$ref": "../../../controller/schemas/jobTemplate/jobTemplate-schema.json"
+        "$ref": "usedBy-schema.json"
       }
     }
   },

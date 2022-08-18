@@ -1,0 +1,54 @@
+{
+  "title": "JobTemplate used by Workflows",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.JobTemplateUsedBy",
+  "type": "object",
+  "required": [
+    "path"
+  ],
+  "properties": {
+    "name": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "path": {
+      "$ref": "../common/path-schema.json"
+    },
+    "hash": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "workflows": {
+    	"type": "array",
+    	"items": {
+    		"type": "object",
+      		"javaType": "com.sos.joc.model.jobtemplate.JobTemplateUsedByWorkflow",
+      		"required": [
+    			"path"
+  	  		],
+      		"properties": {
+       			"name": {
+      				"$ref": "../common/string255-schema.json"
+    			},
+    			"path": {
+      				"$ref": "../common/path-schema.json"
+    			},
+    			"deployed": {
+      				"type": "boolean",
+      				"default": false
+    			},
+    			"state": {
+      				"$ref": "jobTemplateWorkflowState-schema.json"
+    			},
+    			"jobs": {
+    				"type": "object",
+    				"javaType": "com.sos.joc.model.jobtemplate.JobTemplateUsedByJobs",
+    				"additionalProperties": {
+  						"$ref": "jobTemplateState-schema.json"
+  					}	
+    			}
+      		},
+      		"additionalProperties": false
+    	}
+    }
+  },
+  "additionalProperties": false
+}

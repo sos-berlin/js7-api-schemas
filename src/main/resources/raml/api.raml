@@ -2929,6 +2929,26 @@ traits:
       schema200: !include api/schemas/jobTemplate/jobTemplates-schema.json
       example: " "
       example200: " "
+  
+  /used:
+    type:
+      postJSONWithoutJSId:
+        description: Gets workflows that use released job templates
+        description1: !include api/documentation/jobTemplate/filteredByJobTemplatePaths.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: !include api/documentation/common/folders.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/jobTemplate/jobTemplatesFilter-schema.json
+        schema200: !include api/schemas/jobTemplate/usedBys-schema.json
+        example: " "
+        example200: !include api/examples/jobTemplate/usedby-example.json
 
 /jobs/overview/summary:
   type:
