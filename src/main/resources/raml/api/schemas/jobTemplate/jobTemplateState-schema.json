@@ -1,0 +1,27 @@
+{
+  "title": "JobTemplate state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.JobTemplateState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "6=IN_SYNC, 5=NOT_IN_SYNC, 11=DELETED, 2=UNKNOWN",
+      "type": "integer"
+    },
+    "_text": {
+      	"javaType": "com.sos.joc.model.jobtemplate.JobTemplateStateText",
+  		"type": "string",
+  		"enum": [
+      		"IN_SYNC",
+      		"NOT_IN_SYNC",
+      		"DELETED",
+      		"UNKNOWN"
+  		]
+    }
+  },
+  "additionalProperties": false
+}

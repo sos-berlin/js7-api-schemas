@@ -1,0 +1,27 @@
+{
+    "deliveryDate": "2022-08-18T10:19:16.929+00:00",
+    "jobTemplates": [
+        {
+            "name": "jtTest",
+            "path": "/example/jtTest",
+            "hash": "120479e815c0350a3c1be6cd0b8cd116f6642eee4a2a96ffebd12fd01ed50b5b",
+            "workflows": [
+                {
+                    "name": "wJobTemplate",
+                    "path": "/example/wJobTemplate",
+                    "deployed": false,
+                    "state": {
+                        "severity": 5,
+                        "_text": "NOT_IN_SYNC"
+                    },
+                    "jobs": {
+                        "job1": {
+                            "severity": 5,
+                            "_text": "NOT_IN_SYNC"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
