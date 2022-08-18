@@ -1,0 +1,14 @@
+{
+  	"title": "JobTemplate",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"type": "object",
+  	"javaType": "com.sos.controller.model.jobtemplate.JobTemplateRef",
+	"extends" : {
+    	"$ref": "../../../inventory/schemas/job/jobTemplateRef-schema.json"
+  	},
+	"additionalProperties": false,
+	"required": [
+		"name",
+		"hash"
+	]
+}
