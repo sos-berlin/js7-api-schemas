@@ -1,0 +1,16 @@
+{
+  "title": "Compatibility Level of JS7 components",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.CompatibilityLevel",
+  "type": "string",
+  "enum": [
+    "COMPATIBLE",
+    "PARTIALLY_COMPATIBLE",
+    "NOT_COMPATIBLE"
+  ],
+  "javaEnumNames": [
+    "COMPATIBLE",
+    "PARTIALLY_COMPATIBLE",
+    "NOT_COMPATIBLE"
+  ]
+}
