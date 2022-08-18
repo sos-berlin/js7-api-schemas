@@ -1,0 +1,19 @@
+{
+	"title": "JobTemplateStateFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.jobtemplate.JobTemplateStateFilter",
+	"type": "object",
+	"extends" : {
+    	"$ref": "jobTemplateFilter-schema.json"
+  	},
+  	"required": [
+		"jobTemplatePath",
+		"hash"
+	],
+	"properties": {
+		"hash": {
+			"$ref": "../common/string255required-schema.json"
+		}
+	},
+  	"additionalProperties": false
+}
