@@ -3,16 +3,12 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.jobtemplate.JobTemplateStateFilter",
 	"type": "object",
-	"extends" : {
-    	"$ref": "jobTemplateFilter-schema.json"
-  	},
-  	"required": [
-		"jobTemplatePath",
-		"hash"
+	"required": [
+		"jobTemplate"
 	],
 	"properties": {
-		"hash": {
-			"$ref": "../common/string255required-schema.json"
+		"jobTemplate": {
+			"$ref": "../../../controller/schemas/jobTemplate/jobTemplateRef-schema.json"
 		}
 	},
   	"additionalProperties": false
