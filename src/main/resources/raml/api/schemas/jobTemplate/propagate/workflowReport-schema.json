@@ -1,0 +1,25 @@
+{
+  "title": "JobTemplate propagate Workflow report",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.propagate.WorkflowReport",
+  "type": "object",
+  "required": [
+  	"workflowName"	
+  ],
+  "properties": {
+    "workflowPath": {
+      	"$ref": "../../common/path-schema.json"
+    },
+    "state": {
+    	"$ref": "reportState-schema.json"
+    },
+    "jobs": {
+    	"type": "object",
+    	"javaType": "com.sos.joc.model.jobtemplate.propagate.JobReports",
+    	"additionalProperties": {
+  			"$ref": "jobReport-schema.json"
+  		}	
+    }
+  },
+  "additionalProperties": false
+}

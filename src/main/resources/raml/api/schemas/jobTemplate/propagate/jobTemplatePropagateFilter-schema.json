@@ -1,0 +1,21 @@
+{
+  "title": "JobTemplate propagate filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.propagate.JobTemplatePropagateFilter",
+  "type": "object",
+  "required": [
+    "path"
+  ],
+  "properties": {
+    "path": {
+      "$ref": "../../common/string255required-schema.json"
+    },
+    "workflows": {
+    	"type": "array",
+    	"items": {
+    		"$ref": "../../common/string255required-schema.json"
+    	}
+    }
+  },
+  "additionalProperties": false
+}

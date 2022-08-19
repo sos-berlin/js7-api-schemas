@@ -1,0 +1,26 @@
+{
+  	"title": "JobTemplate propagate Job report",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"javaType": "com.sos.joc.model.jobtemplate.propagate.JobReportState",
+  	"type": "object",
+    "properties": {
+    	"severity": {
+    		"$ref": "../../common/nonNegativeInteger-schema.json" 	
+    	},
+    	"_text": {
+    		"javaType": "com.sos.joc.model.jobtemplate.propagate.JobReportStateText",
+    		"type": "string",
+    		"enum": [
+    			"SKIPPED",
+    			"UPTODATE",
+    			"CONFLICT",
+    			"CHANGED",
+    			"PERMISSION_DENIED"	
+    		]	
+    	},
+    	"message": {
+    		"$ref": "../../common/string255-schema.json"
+    	}	
+    },
+    "additionalProperties": false
+}
