@@ -1,0 +1,22 @@
+{
+	"jobTemplates": [
+		{
+			"path": "jt3",
+			"workflows": [
+				"w1",
+				"w2",
+				"wJobTemplate",
+				"/oh/w3"
+			]
+		},
+		{
+			"path": "jt1",
+			"workflows": [
+				"w3",
+				"w2",
+				"wJobTemplate",
+				"wTest"
+			]
+		}
+	]
+}
