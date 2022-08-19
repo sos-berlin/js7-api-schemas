@@ -20,6 +20,9 @@
     },
     "version": {
       "$ref": "../common/string255-schema.json"
+    },
+    "compatibility" : {
+      "$ref": "compatibilityLevel-schema.json"
     }
   }
 }
