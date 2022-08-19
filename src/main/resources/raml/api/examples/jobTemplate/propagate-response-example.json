@@ -1,0 +1,125 @@
+{
+    "deliveryDate": "2022-08-19T14:16:28.382+00:00",
+    "workflows": [
+        {
+            "workflowPath": "/oh/w1",
+            "state": {
+                "severity": 6,
+                "_text": "SKIPPED"
+            },
+            "jobs": {
+                "job1": {
+                    "state": {
+                        "severity": 6,
+                        "_text": "SKIPPED",
+                        "message": "Job 'job1' is not created from a job template"
+                    }
+                },
+                "job2": {
+                    "state": {
+                        "severity": 6,
+                        "_text": "SKIPPED",
+                        "message": "Job 'job2' is not created from a job template"
+                    }
+                }
+            }
+        },
+        {
+            "workflowPath": "/path/without/folder/permissions/wTest",
+            "state": {
+                "severity": 2,
+                "_text": "PERMISSION_DENIED"
+            },
+            "jobs": {
+            }
+        },
+		{
+            "workflowPath": "/oh/w2",
+            "state": {
+                "severity": 6,
+                "_text": "UPTODATE"
+            },
+            "jobs": {
+                "job1": {
+                    "state": {
+                        "severity": 6,
+                        "_text": "SKIPPED",
+                        "message": "Job 'job1' is not created from the job templates [jt1, jt3]"
+                    }
+                },
+                "job2": {
+                    "jobTemplatePath": "/oh/jt1",
+                    "state": {
+                        "severity": 6,
+                        "_text": "UPTODATE",
+                        "message": "Job 'job2' is created from the job template 'jt1'. Updating the job is not necessary because version is up to date."
+                    }
+                }
+            }
+        },
+        {
+            "workflowPath": "/oh/w3",
+            "state": {
+                "severity": 2,
+                "_text": "CONFLICT"
+            },
+            "jobs": {
+                "job1": {
+                    "state": {
+                        "severity": 6,
+                        "_text": "SKIPPED",
+                        "message": "Job 'job1' is not created from a job template"
+                    }
+                },
+                "job2": {
+                    "jobTemplatePath": "/oh/jt1",
+                    "state": {
+                        "severity": 6,
+                        "_text": "UPTODATE",
+                        "message": "Job 'job2' is created from the job template 'jt1'. Updating the job is not necessary because version is up to date."
+                    }
+                },
+                "job3": {
+                    "jobTemplatePath": "/oh/jt3",
+                    "state": {
+                        "severity": 2,
+                        "_text": "CONFLICT",
+                        "message": "Job 'job3' is a Shell job and the job template 'jt3' specifies a JITL job"
+                    }
+                }
+            }
+        },
+        {
+            "workflowPath": "/oh2/wJobTemplate",
+            "state": {
+                "severity": 5,
+                "_text": "CHANGED"
+            },
+            "jobs": {
+                "job1": {
+					"jobTemplatePath": "/oh/jt1",
+                    "state": {
+                        "severity": 6,
+                        "_text": "UPTODATE",
+                        "message": "Job 'job1' is created from the job template 'jt1'. Updating the job is not necessary because version is up to date."
+                    }
+                },
+                "job2": {
+                    "jobTemplatePath": "/oh/jt1",
+                    "state": {
+                        "severity": 5,
+                        "_text": "CHANGED"
+                    },
+                    "actions": {
+                        "addRequiredArguments": {
+                            "source_file": "\"\""
+                        },
+						"deleteArguments": {
+                            "hello": "\"world\""
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

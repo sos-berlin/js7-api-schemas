@@ -4,6 +4,9 @@
   "javaType": "com.sos.joc.model.jobtemplate.propagate.JobReport",
   "type": "object",
   "properties": {
+    "jobTemplatePath": {
+    	"$ref": "../../common/string255required-schema.json"
+    },
     "state": {
     	"$ref": "reportState-schema.json"
     },
