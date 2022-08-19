@@ -1,0 +1,21 @@
+{
+  "title": "JobTemplate propagate change",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.propagate.Change",
+  "type": "object",
+  "required": [
+  	"key"
+  ],
+  "properties": {
+  	"key": {
+  		"$ref": "../../common/string255required-schema.json"
+  	},
+    "oldValue": {
+      	"$ref": "../../common/string255required-schema.json"
+    },
+    "currentValue": {
+    	"$ref": "../../common/string255required-schema.json"	
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.4.0
+version: 2.4.1
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -2913,7 +2913,7 @@ traits:
   /state:
     type:
       postJSONWithoutJSId:
-        description: Gets workflows that use released job templates
+        description: Gets state of a used released job template
         description1: !include api/documentation/jobTemplate/jobTemplateRef.md
         description2: " "
         description3: " "
@@ -2950,6 +2950,26 @@ traits:
       example: " "
       example200: " "
   
+  /propagate:
+    type:
+      postJSONWithoutJSId:
+        description: Updates workflows that use released job templates
+        description1: !include api/documentation/jobTemplate/propagateFilter.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: !include api/documentation/audit/auditLog.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/jobTemplate/propagate/jobTemplatesPropagateFilter-schema.json
+        schema200: !include api/schemas/jobTemplate/propagate/report-schema.json
+        example: " "
+        example200: " "
+        
   /used:
     type:
       postJSONWithoutJSId:

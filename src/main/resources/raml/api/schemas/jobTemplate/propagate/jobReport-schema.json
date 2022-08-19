@@ -1,0 +1,25 @@
+{
+  "title": "JobTemplate propagate Job report",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.propagate.JobReport",
+  "type": "object",
+  "properties": {
+    "state": {
+    	"$ref": "reportState-schema.json"
+    },
+    "actions": {
+    	"type": "object",
+    	"javaType": "com.sos.joc.model.jobtemplate.propagate.Actions",
+    	"properties": {
+    		"addRequiredArguments": {
+    			"$ref": "../../../../inventory/schemas/job/env-schema.json"
+    		},
+    		"deleteArguments": {
+    			"$ref": "../../../../inventory/schemas/job/env-schema.json"
+    		}	
+    	},
+    	"additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
