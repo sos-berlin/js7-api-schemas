@@ -1,61 +1,59 @@
 {
     "agentVersions": [
         {
-            "agentId": "standaloneAgentID",
-            "uri": "http://localhost:3333"
-            "version": "2.4.0"
-        },
-        {
             "agentId": "primaryAgentID",
             "uri": "https://sp:22222"
-            "version": "2.3.0"
+        },
+        {
+            "agentId": "standaloneAgentID",
+            "compatibility": "COMPATIBLE",
+            "uri": "http://localhost:3333",
+            "version": "2.4.1-beta.20220816"
         },
         {
             "agentId": "agent_cluster_001",
             "uri": "https://diragent-2-0-primary:4443"
-            "version": "2.4.0"
         },
         {
             "agentId": "agent_cluster_001",
             "subagentId": "director_primary_001",
             "uri": "https://diragent-2-0-primary:4443"
-            "version": "2.4.0"
         },
         {
             "agentId": "agent_cluster_001",
             "subagentId": "subagent_primary_001",
             "uri": "https://subagent-2-0-primary:4443"
-            "version": "2.4.0"
         },
         {
             "agentId": "agent_cluster_001",
             "subagentId": "subagent_third_001",
             "uri": "https://subagent-2-0-third:4443"
-            "version": "2.4.0"
         },
         {
             "agentId": "agent_cluster_001",
             "subagentId": "subagent_secondary_001",
             "uri": "https://subagent-2-0-secondary:4443"
-            "version": "2.4.0"
         }
     ],
     "controllerVersions": [
         {
+            "compatibility": "NOT_COMPATIBLE",
             "controllerId": "controller",
             "uri": "https://sp.sos:11111",
             "version": "2.3.0"
         },
         {
+            "compatibility": "NOT_COMPATIBLE",
             "controllerId": "controller",
             "uri": "https://sp.sos:11112",
             "version": "2.3.0"
         },
         {
+            "compatibility": "COMPATIBLE",
             "controllerId": "standalone",
             "uri": "http://localhost:1113",
-            "version": "2.4.0"
+            "version": "2.4.1-beta.20220816"
         }
     ],
-    "jocVersion": "2.4.1"
+    "jocVersion": "2.4.1-SNAPSHOT"
 }
