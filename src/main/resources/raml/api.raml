@@ -2889,6 +2889,26 @@ traits:
           }
         schema200: !include api/schemas/wizard/wizard-job-schema.json
         example200: !include api/examples/inventory/jitljob-example.json
+        
+  /workflows/update:
+    type:
+      postJSONWithoutJSId:
+        description: Updates workflows from job templates
+        description1: !include api/documentation/inventory/folder.md
+        description2: !include api/documentation/common/recursive.md
+        description3: !include api/documentation/jobTemplate/overwrite.md
+        description4: " "
+        description5: !include api/documentation/audit/auditLog.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/jobTemplate/propagate/folderPropagateFilter-schema.json
+        example: " "
+        schema200: !include api/schemas/jobTemplate/propagate/report-schema.json
+        example200: " "
 
 /job_template:
   type:
@@ -2955,7 +2975,7 @@ traits:
       postJSONWithoutJSId:
         description: Updates workflows that use released job templates
         description1: !include api/documentation/jobTemplate/propagateFilter.md
-        description2: " "
+        description2: !include api/documentation/jobTemplate/overwrite.md
         description3: " "
         description4: " "
         description5: !include api/documentation/audit/auditLog.md
