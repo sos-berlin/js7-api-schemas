@@ -1,1 +1,1 @@
-<tr><td>``folder``</td><td>required, string</td><td>Folder</td><td></td><td></td></tr>
+<tr><td>``folder``</td><td>required, string</td><td>Absolute path of a folder</td><td></td><td></td></tr>

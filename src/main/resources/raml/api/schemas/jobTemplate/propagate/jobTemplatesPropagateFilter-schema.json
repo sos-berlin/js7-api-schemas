@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.jobtemplate.propagate.JobTemplatesPropagateFilter",
   "type": "object",
+  "extends": {
+  	"$ref": "jobTemplatesPropagateBaseFilter-schema.json"
+  },
   "required": [
     "jobTemplates"
   ],
@@ -12,17 +15,6 @@
       "items": {
         "$ref": "jobTemplatePropagateFilter-schema.json"
       }
-    },
-    "overwriteNotification": {
-    	"type": "boolean",
-    	"default": false	
-    },
-    "overwriteAdmissionTime": {
-    	"type": "boolean",
-    	"default": false	
-    },
-    "auditLog": {
-    	"$ref": "../../audit/auditParams-schema.json"
     }
   },
   "additionalProperties": false

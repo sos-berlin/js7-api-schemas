@@ -1,0 +1,20 @@
+{
+  "title": "JobTemplates propagate filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.propagate.JobTemplatesPropagateBaseFilter",
+  "type": "object",
+  "properties": {
+    "overwriteNotification": {
+    	"type": "boolean",
+    	"default": false	
+    },
+    "overwriteAdmissionTime": {
+    	"type": "boolean",
+    	"default": false	
+    },
+    "auditLog": {
+    	"$ref": "../../audit/auditParams-schema.json"
+    }
+  },
+  "additionalProperties": false
+}
