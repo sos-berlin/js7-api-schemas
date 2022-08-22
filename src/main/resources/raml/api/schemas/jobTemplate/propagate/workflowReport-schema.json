@@ -7,7 +7,7 @@
   	"workflowName"	
   ],
   "properties": {
-    "workflowPath": {
+    "path": {
       	"$ref": "../../common/path-schema.json"
     },
     "state": {
