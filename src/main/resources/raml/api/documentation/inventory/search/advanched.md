@@ -13,3 +13,4 @@
 <tr><td style="padding-left:20px;">``schedule``</td><td>optional, string</td><td></td><td></td><td></td></tr>
 <tr><td style="padding-left:20px;">``includeScript``</td><td>optional, string</td><td></td><td></td><td></td></tr>
 <tr><td style="padding-left:20px;">``jobResource``</td><td>optional, string</td><td></td><td></td><td></td></tr>
+<tr><td style="padding-left:20px;">``jobTemplate``</td><td>optional, string</td><td></td><td></td><td></td></tr>

@@ -2,7 +2,7 @@
     "deliveryDate": "2022-08-19T14:16:28.382+00:00",
     "workflows": [
         {
-            "workflowPath": "/oh/w1",
+            "path": "/oh/w1",
             "state": {
                 "severity": 6,
                 "_text": "SKIPPED"
@@ -25,7 +25,7 @@
             }
         },
         {
-            "workflowPath": "/path/without/folder/permissions/wTest",
+            "path": "/path/without/folder/permissions/wTest",
             "state": {
                 "severity": 2,
                 "_text": "PERMISSION_DENIED"
@@ -34,7 +34,7 @@
             }
         },
 		{
-            "workflowPath": "/oh/w2",
+            "path": "/oh/w2",
             "state": {
                 "severity": 6,
                 "_text": "UPTODATE"
@@ -58,7 +58,7 @@
             }
         },
         {
-            "workflowPath": "/oh/w3",
+            "path": "/oh/w3",
             "state": {
                 "severity": 2,
                 "_text": "CONFLICT"
@@ -90,7 +90,7 @@
             }
         },
         {
-            "workflowPath": "/oh2/wJobTemplate",
+            "path": "/oh2/wJobTemplate",
             "state": {
                 "severity": 5,
                 "_text": "CHANGED"
