@@ -3,9 +3,9 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.order.OrderHistoryFilter",
   "type": "object",
-  "required": [
-    "controllerId",
-    "historyId"
+  "anyOf": [
+  	{"required": [ "controllerId", "historyId" ]},
+  	{"required": [ "controllerId", "orderId" ]}
   ],
   "properties": {
     "controllerId": {
@@ -13,6 +13,9 @@
     },
     "historyId": {
       "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "orderId": {
+      "$ref": "../common/string255required-schema.json"
     }
   }
 }
