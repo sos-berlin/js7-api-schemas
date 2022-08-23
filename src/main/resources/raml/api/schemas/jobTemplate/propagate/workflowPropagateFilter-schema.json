@@ -1,15 +1,18 @@
 {
   "title": "Filter for Workflows updates from JobTemplates in specified folder",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.jobtemplate.propagate.FolderPropagateFilter",
+  "javaType": "com.sos.joc.model.jobtemplate.propagate.WorkflowPropagateFilter",
   "type": "object",
   "extends": {
   		"$ref": "jobTemplatesPropagateBaseFilter-schema.json"
   },
-  "required": [
-    	"folder"
-  ],
   "properties": {
+  		"workflowPaths": {
+  			"type": "array",
+  			"items": {
+  				"$ref": "../../common/string255required-schema.json"
+  			}	
+  		},
     	"folder": {
 			"$ref": "../../common/path-schema.json"
 		},
