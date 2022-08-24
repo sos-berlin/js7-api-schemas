@@ -15,6 +15,7 @@
     			"UPTODATE",
     			"CONFLICT",
     			"CHANGED",
+    			"TEMPLATE_REFERENCE_DELETED",
     			"PERMISSION_DENIED"	
     		]	
     	},
