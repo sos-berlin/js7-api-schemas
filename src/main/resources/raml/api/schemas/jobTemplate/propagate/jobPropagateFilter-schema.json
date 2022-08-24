@@ -1,0 +1,22 @@
+{
+  "title": "Filter for Job updates from JobTemplates",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.jobtemplate.propagate.JobPropagateFilter",
+  "type": "object",
+  "extends": {
+  		"$ref": "jobTemplatesPropagateBaseFilter-schema.json"
+  },
+  "required": [
+  		"workflowPath",
+  		"jobName"
+  ],
+  "properties": {
+  		"workflowPath": {
+  			"$ref": "../../common/string255required-schema.json"	
+  		},
+    	"jobName": {
+  			"$ref": "../../common/string255required-schema.json"	
+  		}
+  },
+  "additionalProperties": false
+}

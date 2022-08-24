@@ -2269,6 +2269,27 @@ traits:
         schema: !include api/schemas/publish/importFilter-schema.json
         example: !include api/examples/publish/publishImport-example.json
 
+  /job/update:
+    type:
+      postJSONWithoutJSId:
+        description: Updates a job from job templates
+        description1: !include api/documentation/jobTemplate/filteredByJob.md
+        description2: " "
+        description3: " "
+        description4: !include api/documentation/jobTemplate/overwrite.md
+        description5: !include api/documentation/audit/auditLog.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+#        description200: !include api/documentation/jobTemplate/report.md
+        schema: !include api/schemas/jobTemplate/propagate/jobPropagateFilter-schema.json
+        example: " "
+        schema200: !include api/schemas/jobTemplate/propagate/jobReport-schema.json
+        example200: " "
+        
   /path:
     type:
       postJSONWithoutJSId:
