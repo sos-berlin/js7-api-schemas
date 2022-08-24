@@ -61,7 +61,7 @@
             "path": "/oh/w3",
             "state": {
                 "severity": 2,
-                "_text": "CONFLICT"
+                "_text": "UPTODATE"
             },
             "jobs": {
                 "job1": {
@@ -77,14 +77,6 @@
                         "severity": 6,
                         "_text": "UPTODATE",
                         "message": "Job 'job2' is created from the job template 'jt1'. Updating the job is not necessary because version is up to date."
-                    }
-                },
-                "job3": {
-                    "jobTemplatePath": "/oh/jt3",
-                    "state": {
-                        "severity": 2,
-                        "_text": "CONFLICT",
-                        "message": "Job 'job3' is a Shell job and the job template 'jt3' specifies a JITL job"
                     }
                 }
             }
