@@ -19,6 +19,12 @@
     		},
     		"deleteArguments": {
     			"$ref": "../../../../inventory/schemas/job/env-schema.json"
+    		},
+    		"changes": {
+    			"type": "array",
+    			"items": {
+    				"$ref": "../../common/string255required-schema.json"	
+    			}
     		}	
     	},
     	"additionalProperties": false
