@@ -4,11 +4,15 @@
 	"javaType": "com.sos.joc.model.order.OrderHistoryItemChildren",
 	"type": "object",
 	"required": [
-		"deliveryDate"
+		"deliveryDate",
+		"historyId"
 	],
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../common/timestamp-schema.json"
+		},
+		"historyId": {
+			"$ref": "../common/nonNegativeLong-schema.json"
 		},
 		"states": {
 			"type": "array",
