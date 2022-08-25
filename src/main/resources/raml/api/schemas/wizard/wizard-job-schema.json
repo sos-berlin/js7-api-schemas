@@ -26,6 +26,10 @@
 		"javaClass": {
 			"$ref": "../common/string255-schema.json"
 		},
+    	"hasRequiredArguments": {
+      		"type": "boolean",
+      		"default": false
+    	},
 		"params": {
 			"description": "deprecated: use 'arguments'",
 			"type": "array",
@@ -52,5 +56,6 @@
 		"arguments": {
 			"$ref": "../../../inventory/schemas/jobTemplate/parameters-schema.json"
 		}
-	}
+	},
+  	"additionalProperties": false
 }

@@ -12,6 +12,10 @@
     },
     "path": {
       "$ref": "../../../api/schemas/common/path-schema.json"
+    },
+    "hasRequiredArguments": {
+      "type": "boolean",
+      "default": false
     }
   },
   "additionalProperties": false
