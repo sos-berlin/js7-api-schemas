@@ -1,0 +1,18 @@
+{
+	"title": "Identiy Providers",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.identityservice.IdentityProviders",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"identityServiceItems": {
+			"type": "array",
+			"items": {
+				"$ref": "identityProvider-schema.json"
+			}
+		} 
+	},
+	"additionalProperties": false
+}

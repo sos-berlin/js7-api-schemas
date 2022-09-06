@@ -1,0 +1,22 @@
+{
+	"title": "Openid Connect Properties",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.properties.oidc.OidcProperties",
+	"type": "object",
+	"properties": {
+		"iamOidcdUrl": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamOidcClientId": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamOidcName": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamOidcClientSecret": {
+			"$ref": "../../../common/string255-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    

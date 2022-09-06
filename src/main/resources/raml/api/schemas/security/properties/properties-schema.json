@@ -19,6 +19,9 @@
 		"keycloak": {
 			"$ref": "keycloak/keycloak-properties-schema.json"
 		},
+		"oidc": {
+			"$ref": "oidc/oidc-properties-schema.json"
+		},
 		"ldap": {
 			"$ref": "ldap/ldap-properties-schema.json"
 		}

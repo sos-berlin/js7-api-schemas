@@ -12,6 +12,7 @@
     "KEYCLOAK-JOC",
     "LDAP",
     "LDAP-JOC",
+    "OPENID-CONNECT",
     "JOC" 
   ]
 }
