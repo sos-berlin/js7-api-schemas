@@ -3,12 +3,13 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.permissions.SOSPermissions",
 	"type": "object",
- 
 	"properties": {
-		"SOSPermissions": {
-			"$ref": "sospermission-schema.json"
+		"sosPermissions": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
 		}
-		
 	},
 	"additionalProperties": false
 }
