@@ -1,0 +1,14 @@
+{
+	"title": "SOSPermissions",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.permissions.SOSPermissions",
+	"type": "object",
+ 
+	"properties": {
+		"SOSPermissions": {
+			"$ref": "sospermission-schema.json"
+		}
+		
+	},
+	"additionalProperties": false
+}
