@@ -4,10 +4,7 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.identityservice.IdentityProvider",
 	"type": "object",
-	"required": [
-		"identityServiceName",
-		"serviceAuthenticationScheme"
-	],
+	 
 	"properties": {
 		"identityServiceName": {
 			"$ref": "../../common/string255required-schema.json"
@@ -15,10 +12,7 @@
 		"iamOidcName": {
 			"$ref": "../../common/string255-schema.json"
 		},
-        "iamOidcdUrl": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"iamOidcClientId": {
+        "iamOidcdAuthenticationUrl": {
 			"$ref": "../../common/string255-schema.json"
 		} 
 	},

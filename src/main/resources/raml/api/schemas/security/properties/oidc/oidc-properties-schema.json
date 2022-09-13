@@ -4,7 +4,7 @@
 	"javaType": "com.sos.joc.model.security.properties.oidc.OidcProperties",
 	"type": "object",
 	"properties": {
-		"iamOidcdUrl": {
+		"iamOidcAuthenticationUrl": {
 			"$ref": "../../../common/string255-schema.json"
 		},
 		"iamOidcClientId": {
@@ -15,7 +15,52 @@
 		},
 		"iamOidcClientSecret": {
 			"$ref": "../../../common/string255-schema.json"
-		}
+		},
+        "iamOidcTokenVerificationUrl": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+        "iamOidcLogoutUrl": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+        "iamOidcProfileInformationUrl": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+        "iamOidcSessionRenewalUrl": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+        "iamOidcCertificateUrl": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamOidcPublicKeyField": {
+			"$ref": "../../../common/string255-schema.json"
+		}, 
+        "iamOidcCertificateIssuer": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+        "iamOidcCertificateExpirationDate": {
+			"$ref": "../../../common/string255-schema.json"
+		},		
+		"iamOidcIsJwtToken": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamOidcJwtEmailField": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamOidcJwtClientIdField": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamOidcJwtUrlField": {
+			"$ref": "../../../common/string255-schema.json"
+		}, 
+		"iamOidcJwtAlgorithmField": {
+			"$ref": "../../../common/string255-schema.json"
+		}, 
+		"iamOidcJwtPublicKeyField": {
+			"$ref": "../../../common/string255-schema.json"
+		}, 
+		"iamOidcJwtExpiredField": {
+			"$ref": "../../../common/string255-schema.json"
+		} 		
 	},
 	"additionalProperties": false
 }
