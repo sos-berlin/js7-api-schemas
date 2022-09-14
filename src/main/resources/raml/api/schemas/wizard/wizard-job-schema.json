@@ -30,29 +30,6 @@
       		"type": "boolean",
       		"default": false
     	},
-		"params": {
-			"description": "deprecated: use 'arguments'",
-			"type": "array",
-			"items": {
-				"type": "object",
-				"javaType": "com.sos.joc.model.wizard.Param",
-				"properties": {
-					"name": {
-						"$ref": "../common/string255-schema.json"
-					},
-					"required": {
-						"type": "boolean"
-					},
-					"defaultValue": {
-						"type": "string"
-					},
-					"description": {
-						"description": "string in html format",
-						"type": "string"
-					}
-				}
-			}
-		},
 		"arguments": {
 			"$ref": "../../../inventory/schemas/jobTemplate/parameters-schema.json"
 		}

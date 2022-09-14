@@ -4,7 +4,6 @@
 <li>IN_SYNC</li>
 <li>NOT_IN_SYNC</li>
 <li>SUSPENDED</li>
-<li>SUSPENDING</li>
-<li>RESUMING</li>
+<li>OUTSTANDING</li>
 </ul>
-</td><td>["SUSPENDED", "SUSPENDING"]</td><td></td></tr>
+</td><td>["SUSPENDED"]</td><td></td></tr>
