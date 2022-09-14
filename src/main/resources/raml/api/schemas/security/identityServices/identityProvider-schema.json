@@ -14,7 +14,7 @@
 		"iamOidcName": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"iamOidcdAuthenticationUrl": {
+		"iamOidcAuthenticationUrl": {
 			"$ref": "../../common/string255-schema.json"
 		}
 	},
