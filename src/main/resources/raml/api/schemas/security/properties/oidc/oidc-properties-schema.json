@@ -30,16 +30,16 @@
 		},
         "iamOidcCertificateUrl": {
 			"$ref": "../../../common/string255-schema.json"
-		},
-		"iamOidcPublicKeyField": {
-			"$ref": "../../../common/string255-schema.json"
-		}, 
+		},		
         "iamOidcCertificateIssuer": {
 			"$ref": "../../../common/string255-schema.json"
 		},
         "iamOidcCertificateExpirationDate": {
 			"$ref": "../../../common/string255-schema.json"
 		},		
+		"iamOidcExpiresInField": {
+			"$ref": "../../../common/string255-schema.json"
+		},		 		
 		"iamOidcIsJwtToken": {
 			"$ref": "../../../common/string255-schema.json"
 		},
@@ -58,9 +58,9 @@
 		"iamOidcJwtPublicKeyField": {
 			"$ref": "../../../common/string255-schema.json"
 		}, 
-		"iamOidcJwtExpiredField": {
+		"iamOidcJwtExpirationField": {
 			"$ref": "../../../common/string255-schema.json"
-		} 		
+		} 
 	},
 	"additionalProperties": false
 }

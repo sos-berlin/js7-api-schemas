@@ -11,6 +11,9 @@
 		"iamOidcClientId": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"iamOidcClientSecret": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"iamOidcName": {
 			"$ref": "../../common/string255-schema.json"
 		},
