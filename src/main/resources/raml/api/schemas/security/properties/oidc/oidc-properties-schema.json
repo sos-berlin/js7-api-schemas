@@ -19,9 +19,6 @@
         "iamOidcTokenVerificationUrl": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-        "iamOidcLogoutUrl": {
-			"$ref": "../../../common/string255-schema.json"
-		},
         "iamOidcProfileInformationUrl": {
 			"$ref": "../../../common/string255-schema.json"
 		},
