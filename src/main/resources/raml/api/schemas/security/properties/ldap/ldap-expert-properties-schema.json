@@ -48,6 +48,12 @@
 		"iamLdapSecurityProtocol": {
 			"$ref": "../../../common/string255-schema.json"
 		},
+		"iamLdapSystemUser": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamLdapSystemPassword": {
+			"$ref": "../../../common/string255-schema.json"
+		},
 		"iamLdapGroupRolesMap": {
 			"$ref": "ldap-group-roles-mapping-schema.json"
 		}
