@@ -16,48 +16,27 @@
 		"iamOidcClientSecret": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-        "iamOidcTokenVerificationUrl": {
+		"iamOidcSessionRenewalUrl": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-        "iamOidcProfileInformationUrl": {
+		"iamOidcCertificateUrl": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-        "iamOidcSessionRenewalUrl": {
+		"iamOidcCertificateIssuer": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-        "iamOidcCertificateUrl": {
-			"$ref": "../../../common/string255-schema.json"
-		},		
-        "iamOidcCertificateIssuer": {
+		"iamOidcCertificateExpirationDate": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-        "iamOidcCertificateExpirationDate": {
-			"$ref": "../../../common/string255-schema.json"
-		},		
-		"iamOidcExpiresInField": {
-			"$ref": "../../../common/string255-schema.json"
-		},		 		
-		"iamOidcIsJwtToken": {
+		"iamOidcTruststorePath": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-		"iamOidcJwtEmailField": {
+		"iamOidcTruststorePassword": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-		"iamOidcJwtClientIdField": {
+		"iamOidcTruststoreType": {
 			"$ref": "../../../common/string255-schema.json"
-		},
-		"iamOidcJwtUrlField": {
-			"$ref": "../../../common/string255-schema.json"
-		}, 
-		"iamOidcJwtAlgorithmField": {
-			"$ref": "../../../common/string255-schema.json"
-		}, 
-		"iamOidcJwtPublicKeyField": {
-			"$ref": "../../../common/string255-schema.json"
-		}, 
-		"iamOidcJwtExpirationField": {
-			"$ref": "../../../common/string255-schema.json"
-		} 
+		}
 	},
 	"additionalProperties": false
 }
