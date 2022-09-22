@@ -19,9 +19,6 @@
 		},
 		"iamOidcAuthenticationUrl": {
 			"$ref": "../../common/string255-schema.json"
-		},
-		"iamOidcLogoutUrl": {
-			"$ref": "../../common/string255-schema.json"
 		}
 	},
 	"additionalProperties": false
