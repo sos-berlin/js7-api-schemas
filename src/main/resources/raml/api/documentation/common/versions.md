@@ -76,14 +76,69 @@
 		* <a href="../../../2.4.0/raml-doc/JOC-API/resource/workflows/suspend.html" target="newtab240">./workflows/suspend</a>
 	* *CHANGED*
 		* <a href="../../../2.4.0/raml-doc/JOC-API/resource/agents.html" target="newtab240">./agents</a> - Response: each agent has the ``version`` in addition and the ``state`` can contain a ``_reason``. "RESET" is not longer a state. It is a reason for the new state "INITIALSED"
-		* <a href="../../../2.4.0/raml-doc/JOC-API/resource/controller/register.html" target="newtab240">./controller/register</a> - Request field ``clusterWatcher.asStandaloneAgent`` and ``clusterWatcher.primaryDirectorId`` are added
+		* <a href="../../../2.4.0/raml-doc/JOC-API/resource/controller/register.html" target="newtab240">./controller/register</a> - Request fields ``clusterWatcher.asStandaloneAgent`` and ``clusterWatcher.primaryDirectorId`` are added
 		* <a href="../../../2.4.0/raml-doc/JOC-API/resource/daily_plan/orders/modify.html" target="newtab240">./daily_plan/orders/modify</a>- Request fields ``startPosition`` and ``endPositions`` are added
 		* <a href="../../../2.4.0/raml-doc/JOC-API/resource/orders/add.html" target="newtab240">./orders/add</a> - Request field ``orders`` has ``startPosition`` and ``endPositions`` in addition
 		* <a href="../../../2.4.0/raml-doc/JOC-API/resource/orders/resume/positions.html" target="newtab240">./orders/resume/positions</a> - Response items of the field ``positions`` contain ``type`` and optionally ``label`` in addition
 		* <a href="../../../2.4.0/raml-doc/JOC-API/resource/workflows.html" target="newtab240">./workflows</a>  - Request field ``states`` is added
 		
+* [JOC API 2.3.2](../../../2.3.2/raml-doc/JOC-API/index.html)
+	* *NEW*
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/agents/cluster/ordering.html" target="newtab232">./agents/cluster/ordering</a>
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/agents/inventory/cluster/ordering.html" target="newtab232">./agents/inventory/cluster/ordering</a>
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/agents/inventory/cluster/subagents/ordering.html" target="newtab232">./agents/inventory/cluster/subagents/ordering</a>
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/agents/inventory/ordering.html" target="newtab232">./agents/inventory/ordering</a>
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/joc/license.html" target="newtab232">./joc/license</a>
+	* *CHANGED*
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/iam/accounts.html" target="newtab232">./iam/accounts</a> - Request field ``enabled`` is added 
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/iam/accounts/delete.html" target="newtab232">./iam/accounts/delete</a> - Request field ``enabled`` is added 
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/orders/history.html" target="newtab232">./orders/history</a> - Request ...
+		* <a href="../../../2.3.2/raml-doc/JOC-API/resource/tasks/history.html" target="newtab232">./tasks/history</a> - Request ...
+			
 * [JOC API 2.3.1](../../../2.3.1/raml-doc/JOC-API/index.html)
+	* *CHANGED*
+		* <a href="../../../2.3.1/raml-doc/JOC-API/resource/yade/transfers.html" target="newtab231">./yade/transfers</a> - Request field ``transferIds`` is deleted, ``sourceFiles`` replaces ``sourceFile``, ``targetFiles`` replaces ``targetFile`` and ``workflowNames`` is added
+		* <a href="../../../2.3.1/raml-doc/JOC-API/resource/yade/files.html" target="newtab231">./yade/files</a> - Request field ``sourceFiles`` replaces ``sourceFile`` and ``targetFiles`` replaces ``targetFile``
+		
 * [JOC API 2.3.0](../../../2.3.0/raml-doc/JOC-API/index.html)
+	* *REPLACED*
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agent/delete.html" target="newtab230">./agent/delete</a> replaces _./agent/remove_
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/reassign.html" target="newtab230">./agents/inventory/reassign</a> replaces _./agent/reassign_
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/subagents/delete.html" target="newtab230">./agents/inventory/cluster/subagents/delete</a> replaces _./agent/subagents/remove_
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/subagents/store.html" target="newtab230">./agents/inventory/cluster/subagents/store</a> replaces _./agent/subagents/store_
+	* *NEW*
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/cluster.html" target="newtab230">./agents/cluster</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/cluster/revoke.html" target="newtab230">./agents/cluster/revoke</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/cluster/delete.html" target="newtab230">./agents/cluster/delete</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory.html" target="newtab230">./agents/inventory</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster.html" target="newtab230">./agents/inventory/cluster</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/deploy.html" target="newtab230">./agents/inventory/cluster/deploy</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/revoke.html" target="newtab230">./agents/inventory/cluster/revoke</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/subagent.html" target="newtab230">./agents/inventory/cluster/subagent</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/subagent/reset.html" target="newtab230">./agents/inventory/cluster/subagent/reset</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/subagents/disable.html" target="newtab230">./agents/inventory/cluster/subagents/disable</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/subagents/enable.html" target="newtab230">./agents/inventory/cluster/subagents/enable</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/cluster/store.html" target="newtab230">./agents/inventory/cluster/store</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/deploy.html" target="newtab230">./agents/inventory/deploy</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/disable.html" target="newtab230">./agents/inventory/disable</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/enable.html" target="newtab230">./agents/inventory/enable</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/revoke.html" target="newtab230">./agents/inventory/revoke</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory/store.html" target="newtab230">./agents/inventory/store</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/agents/inventory.html" target="newtab230">./agents/inventory</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/add.html" target="newtab230">./inventory/repository/git/add</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/ckeckout.html" target="newtab230">./inventory/repository/git/ckeckout</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/clone.html" target="newtab230">./inventory/repository/git/clone</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/commit.html" target="newtab230">./inventory/repository/git/commit</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/credentials.html" target="newtab230">./inventory/repository/git/credentials</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/credentials/add.html" target="newtab230">./inventory/repository/git/credentials/add</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/credentials/remove.html" target="newtab230">./inventory/repository/git/credentials/remove</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/pull.html" target="newtab230">./inventory/repository/git/pull</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/push.html" target="newtab230">./inventory/repository/git/push</a>
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/repository/git/pull.html" target="newtab230">./inventory/repository/git/pull</a>
+	* *CHANGED*
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/inventory/read/configuration.html" target="newtab230">./inventory/read/configuration</a> - Request field ``commitId`` is added
+		* <a href="../../../2.3.0/raml-doc/JOC-API/resource/yade/files.html" target="newtab230">./yade/files</a> - Request field ``integrityHash`` is added
+			
 * [JOC API 2.2.2](../../../2.2.2/raml-doc/JOC-API/index.html)
 * [JOC API 2.2.1&nbsp;&nbsp;(same as 2.2.0)](../../../2.2.0/raml-doc/JOC-API/index.html)
 * [JOC API 2.2.0](../../../2.2.0/raml-doc/JOC-API/index.html)
