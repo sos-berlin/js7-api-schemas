@@ -1,0 +1,6 @@
+{
+    "folders": ["/test"],
+    "controllerId":"standalone",
+    "states": ["IN_SYNC", "SUSPENDED"],
+    "instructionStates": ["SKIPPED", "STOPPED"]
+}

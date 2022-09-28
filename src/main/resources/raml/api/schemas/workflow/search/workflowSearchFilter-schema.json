@@ -1,0 +1,27 @@
+{
+	"title": "Filter workflow search",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.workflow.search.DeployedWorkflowSearchFilter",
+	"type": "object",
+	"extends" : {
+  		"$ref": "../../inventory/search/request-search-filter-schema.json"
+  	},
+	"required": [
+		"controllerId"
+	],
+	"properties": {
+		"states": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../../controller/schemas/common/syncStateText-schema.json"
+			}
+		},
+		"instructionStates": {
+			"type": "array",
+			"items": {
+				"$ref": "instructionStateText-schema.json"
+			}
+		}
+	},
+  	"additionalProperties": false
+}

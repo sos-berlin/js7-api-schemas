@@ -4306,8 +4306,8 @@ traits:
       postJSON:
         description: Searches deployed workflows
         description1: !include api/documentation/inventory/search/search-folders.md
-        description2: " "
-        description3: " "
+        description2: !include api/documentation/workflow/state.md
+        description3: !include api/documentation/workflow/instructionState.md
         description4: " "
         description5: " "
         description6: !include api/documentation/inventory/search/advanched.md
@@ -4316,8 +4316,8 @@ traits:
         description9: !include api/documentation/inventory/search/advanched-noticeboard.md
         description10: !include api/documentation/inventory/search/advanched-calendar.md
         description200: " "
-        schema: !include api/schemas/inventory/search/request-deployed-search-filter-schema.json
-        example: TODO
+        schema: !include api/schemas/workflow/search/workflowBaseSearchFilter-schema.json
+        example: !include api/examples/workflow/workflowSearch-example.json
         schema200: !include api/schemas/inventory/search/response-search-schema.json
         example200: TODO
         
