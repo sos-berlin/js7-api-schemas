@@ -73,38 +73,41 @@
 			},
 			"additionalProperties": false
 		},
-		"lock": {
-			"type": "object",
-			"javaType": "com.sos.joc.model.history.order.Lock",
-			"required": [
-				"lockName",
-				"limit"
-			],
-			"properties": {
-				"lockName": {
-				 	"alias": "lockId,lockPath",
-					"type": "string"
-				},
-				"limit": {
-					"type": "integer",
-					"minimum": 0,
-					"default": 1
-				},
-				"count": {
-					"type": "integer"
-				},
-				"lockState": {
-					"type": "object",
-					"javaType": "com.sos.joc.model.history.order.LockState",
-					"properties": {
-						"orderIds": {
-							"type": "string"
-						},
-						"queuedOrderIds": {
-							"type": "string"
-						}
+		"locks": {
+			"type": "array",
+			"items" : {
+				"type": "object",
+				"javaType": "com.sos.joc.model.history.order.Lock",
+				"required": [
+					"lockName",
+					"limit"
+				],
+				"properties": {
+					"lockName": {
+				 		"alias": "lockId,lockPath",
+						"type": "string"
 					},
-					"additionalProperties": false
+					"limit": {
+						"type": "integer",
+						"minimum": 0,
+						"default": 1
+					},
+					"count": {
+						"type": "integer"
+					},
+					"lockState": {
+						"type": "object",
+						"javaType": "com.sos.joc.model.history.order.LockState",
+						"properties": {
+							"orderIds": {
+								"type": "string"
+							},
+							"queuedOrderIds": {
+								"type": "string"
+							}
+						},
+						"additionalProperties": false
+					}
 				}
 			},
 			"additionalProperties": false

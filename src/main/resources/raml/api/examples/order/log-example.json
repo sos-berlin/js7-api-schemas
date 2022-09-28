@@ -53,24 +53,24 @@
 	},
 	{
 		"controllerDatetime": "2021-04-16 20:12:10.289+0000",
-		"lock": {
+		"locks": [{
 			"count": 5,
 			"limit": 12,
-			"lockId": "demo1-pdlLockBig"
-		},
-		"logEvent": "OrderLockAcquired",
+			"lockName": "demo1-pdlLockBig"
+		}],
+		"logEvent": "OrderLocksAcquired",
 		"logLevel": "DETAIL",
 		"orderId": "#2021-04-16#P0000000004-schedule24|bigLock",
 		"position": "1/fork+bigLock:0/lock:0"
 	},
 	{
 		"controllerDatetime": "2021-04-16 20:12:10.289+0000",
-		"lock": {
+		"locks": [{
 			"count": 2,
 			"limit": 2,
-			"lockId": "demo1-pdlLockSmall"
-		},
-		"logEvent": "OrderLockAcquired",
+			"lockName": "demo1-pdlLockSmall"
+		}],
+		"logEvent": "OrderLocksAcquired",
 		"logLevel": "DETAIL",
 		"orderId": "#2021-04-16#P0000000004-schedule24|smallLock",
 		"position": "1/fork+smallLock:0/lock:0"
@@ -158,11 +158,11 @@
 	},
 	{
 		"controllerDatetime": "2021-04-16 20:12:30.642+0000",
-		"lock": {
+		"locks": [{
 			"limit": 2,
-			"lockId": "demo1-pdlLockSmall"
-		},
-		"logEvent": "OrderLockReleased",
+			"lockName": "demo1-pdlLockSmall"
+		}],
+		"logEvent": "OrderLocksReleased",
 		"logLevel": "DETAIL",
 		"orderId": "#2021-04-16#P0000000004-schedule24|smallLock",
 		"position": "1/fork+smallLock:1"
@@ -203,11 +203,11 @@
 	},
 	{
 		"controllerDatetime": "2021-04-16 20:12:40.873+0000",
-		"lock": {
+		"locks": [{
 			"limit": 12,
-			"lockId": "demo1-pdlLockBig"
-		},
-		"logEvent": "OrderLockReleased",
+			"lockName": "demo1-pdlLockBig"
+		}],
+		"logEvent": "OrderLocksReleased",
 		"logLevel": "DETAIL",
 		"orderId": "#2021-04-16#P0000000004-schedule24|bigLock",
 		"position": "1/fork+bigLock:1"

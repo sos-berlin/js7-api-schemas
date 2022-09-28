@@ -14,6 +14,12 @@
 		"historyId": {
 			"$ref": "../common/nonNegativeLong-schema.json"
 		},
+		"orderId": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"workflow": {
+			"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+		},
 		"states": {
 			"type": "array",
 			"items": {
