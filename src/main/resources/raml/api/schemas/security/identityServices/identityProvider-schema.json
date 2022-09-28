@@ -19,6 +19,9 @@
 		},
 		"iamOidcAuthenticationUrl": {
 			"$ref": "../../common/string255-schema.json"
+		},
+		"iamIconUrl": {
+			"$ref": "../../common/string255-schema.json"
 		}
 	},
 	"additionalProperties": false

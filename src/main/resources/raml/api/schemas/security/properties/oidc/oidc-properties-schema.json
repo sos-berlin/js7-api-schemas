@@ -16,21 +16,6 @@
 		"iamOidcClientSecret": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-		"iamOidcSessionRenewalUrl": {
-			"$ref": "../../../common/string255-schema.json"
-		},
-		"iamOidcTokenVerificationUrl": {
-			"$ref": "../../../common/string255-schema.json"
-		},
-		"iamOidcCertificateUrl": {
-			"$ref": "../../../common/string255-schema.json"
-		},
-		"iamOidcCertificateIssuer": {
-			"$ref": "../../../common/string255-schema.json"
-		},
-		"iamOidcCertificateExpirationDate": {
-			"$ref": "../../../common/string255-schema.json"
-		},
 		"iamOidcTruststorePath": {
 			"$ref": "../../../common/string255-schema.json"
 		},
