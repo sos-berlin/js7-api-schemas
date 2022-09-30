@@ -1,0 +1,16 @@
+{
+	"title": "Locker Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.locker.LockerFilter",
+	"type": "object",
+	"required": [
+		"key"
+	],
+	"properties": {
+		"key": {
+			"$ref": "../../common/string255required-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+ 
