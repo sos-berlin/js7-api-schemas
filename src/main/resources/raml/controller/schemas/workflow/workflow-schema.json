@@ -46,6 +46,12 @@
     },
     "hasAddOrderDependencies": {
       "type": "boolean"
+    },
+    "numOfStoppedInstructions": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "numOfSkippedInstructions": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
     }
   },
   "additionalProperties": false

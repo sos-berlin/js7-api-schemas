@@ -28,6 +28,12 @@
 			"$ref": "../../../controller/schemas/common/syncStateText-schema.json"
 		}
 	},
+	"instructionStates": {
+		"type": "array",
+		"items": {
+			"$ref": "search/instructionStateText-schema.json"
+		}
+	},
     "regex": {
       "$ref": "../common/regexFilter-schema.json"
     }
