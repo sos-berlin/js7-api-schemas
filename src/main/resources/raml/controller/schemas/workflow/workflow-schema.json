@@ -44,6 +44,9 @@
     "hasPostNoticeBoards": {
       "type": "boolean"
     },
+    "hasConsumeNoticeBoards": {
+      "type": "boolean"
+    },
     "hasAddOrderDependencies": {
       "type": "boolean"
     },

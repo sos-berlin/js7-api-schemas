@@ -7,6 +7,9 @@
     "$ref": "workflow-schema.json"
   },
   "properties": {
+    "consumeNoticeBoards": {
+    	"$ref": "boardWorkflows-schema.json"
+    },
     "expectedNoticeBoards": {
     	"$ref": "boardWorkflows-schema.json"
     },
