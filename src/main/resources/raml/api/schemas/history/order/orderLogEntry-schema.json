@@ -111,6 +111,26 @@
 				}
 			},
 			"additionalProperties": false
+		},
+		"expectNotices": {
+			"type": "object",
+			"javaType": "com.sos.joc.model.history.order.ExpectNotices",
+			"properties": {
+				"expression": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"postNotice": {
+			"type": "object",
+			"javaType": "com.sos.joc.model.history.order.PostNotice",
+			"properties": {
+				"boardName": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
 		}
 	},
 	"additionalProperties": false
