@@ -37,7 +37,9 @@
 		"OrderFinished",
 		"OrderLocksAcquired",
 		"OrderLocksQueued",
-		"OrderLocksReleased"
+		"OrderLocksReleased",
+		"OrderNoticePosted",
+		"OrderNoticesRead"
 	],
 	"javaEnumNames": [
 		"VersionAdded",
@@ -73,6 +75,8 @@
 		"OrderFinished",
 		"OrderLocksAcquired",
 		"OrderLocksQueued",
-		"OrderLocksReleased"
+		"OrderLocksReleased",
+		"OrderNoticePosted",
+		"OrderNoticesRead"
 	]
 }
