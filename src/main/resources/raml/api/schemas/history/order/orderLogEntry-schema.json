@@ -75,7 +75,7 @@
 		},
 		"locks": {
 			"type": "array",
-			"items" : {
+			"items": {
 				"type": "object",
 				"javaType": "com.sos.joc.model.history.order.Lock",
 				"required": [
@@ -84,7 +84,7 @@
 				],
 				"properties": {
 					"lockName": {
-				 		"alias": "lockId,lockPath",
+						"alias": "lockId,lockPath",
 						"type": "string"
 					},
 					"limit": {
@@ -115,9 +115,41 @@
 		"expectNotices": {
 			"type": "object",
 			"javaType": "com.sos.joc.model.history.order.ExpectNotices",
+			"oneOf": [
+				{
+					"required": [
+						"exists"
+					]
+				},
+				{
+					"required": [
+						"notExists"
+					]
+				}
+			],
 			"properties": {
-				"expression": {
+				"exists": {
 					"type": "string"
+				},
+				"notExists": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"javaType": "com.sos.joc.model.history.order.ExpectNotice",
+						"required": [
+							"boardName",
+							"id"
+						],
+						"properties": {
+							"boardName": {
+								"type": "string"
+							},
+							"id": {
+								"type": "string"
+							}
+						}
+					},
+					"additionalProperties": false
 				}
 			},
 			"additionalProperties": false
@@ -125,8 +157,19 @@
 		"postNotice": {
 			"type": "object",
 			"javaType": "com.sos.joc.model.history.order.PostNotice",
+			"required": [
+				"boardName",
+				"id",
+				"endOfLife"
+			],
 			"properties": {
 				"boardName": {
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"endOfLife": {
 					"type": "string"
 				}
 			},
