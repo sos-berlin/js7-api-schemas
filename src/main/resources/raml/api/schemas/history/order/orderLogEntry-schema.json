@@ -118,20 +118,20 @@
 			"oneOf": [
 				{
 					"required": [
-						"exists"
+						"consumed"
 					]
 				},
 				{
 					"required": [
-						"notExists"
+						"waitingFor"
 					]
 				}
 			],
 			"properties": {
-				"exists": {
+				"consumed": {
 					"type": "string"
 				},
-				"notExists": {
+				"waitingFor": {
 					"type": "array",
 					"items": {
 						"type": "object",
