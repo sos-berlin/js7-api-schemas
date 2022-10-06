@@ -14,5 +14,6 @@
     "_text": {
       "$ref": "syncStateText-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

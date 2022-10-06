@@ -25,6 +25,7 @@
 		"ldap": {
 			"$ref": "ldap/ldap-properties-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }
     

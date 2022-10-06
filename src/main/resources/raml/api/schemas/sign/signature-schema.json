@@ -14,5 +14,6 @@
     "signatureString": {
       "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

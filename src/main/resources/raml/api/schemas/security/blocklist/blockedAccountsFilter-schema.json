@@ -22,5 +22,6 @@
 			"type": "integer",
 			"default": 10000
 		}
-	}
+	},
+	"additionalProperties": false
 }

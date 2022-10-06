@@ -29,5 +29,6 @@
     "keyAlgorithm" : {
       "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

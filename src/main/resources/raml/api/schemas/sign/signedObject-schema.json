@@ -14,5 +14,6 @@
     "signature": {
       "$ref": "signature-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

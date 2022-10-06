@@ -18,5 +18,6 @@
       "description" : "reason for WAITING state",
       "$ref": "../order/orderWaitingReason-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }
