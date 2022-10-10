@@ -184,6 +184,19 @@
 				}
 			},
 			"additionalProperties": false
+		},
+		"caught": {
+			"type": "object",
+			"javaType": "com.sos.joc.model.history.order.Caught",
+			"required": [
+				"cause"
+			],
+			"properties": {
+				"cause": {
+					"$ref": "orderLogEntry-caughtCause-schema.json"
+				}
+			},
+			"additionalProperties": false
 		}
 	},
 	"additionalProperties": false
