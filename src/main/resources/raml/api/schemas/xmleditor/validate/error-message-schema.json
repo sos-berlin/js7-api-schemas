@@ -25,5 +25,6 @@
 		"fatal": {
 			"type": "boolean"
 		}
-	}
+	},
+	"additionalProperties": false
 }

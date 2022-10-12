@@ -1,0 +1,19 @@
+{
+  	"title": "release notification",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"javaType": "com.sos.joc.model.notification.ReleaseNotificationFilter",
+  	"type": "object",
+  	"description": "Request Filter to release a notification",
+  	"properties": {
+		"configuration": {
+			"$ref": "../common/noScript-schema.json"
+		},
+		"configurationJson": {
+			"$ref": "../common/noScript-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

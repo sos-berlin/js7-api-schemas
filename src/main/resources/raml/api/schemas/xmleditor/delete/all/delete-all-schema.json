@@ -5,18 +5,19 @@
 	"type": "object",
 	"description": "",
 	"required": [
-		"controllerId",
 		"objectTypes"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../../../common/controllerId-schema.json"
-		},
 		"objectTypes": {
 		    "type": "array",
+		    "minItems": 1,
 			"items": {
         		"$ref": "../../common/object-type-schema.json"
       		}
-		}	
-	}
+		},
+    	"auditLog": {
+      		"$ref": "../../../audit/auditParams-schema.json"
+    	}	
+	},
+	"additionalProperties": false
 }

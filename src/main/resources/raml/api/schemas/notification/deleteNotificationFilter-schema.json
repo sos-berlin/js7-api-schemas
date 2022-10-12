@@ -4,18 +4,14 @@
   "javaType": "com.sos.joc.model.notification.DeleteNotificationFilter",
   "type": "object",
   "description": "Request Filter to delete a notification",
-  "required": [
-    "controllerId"
-  ],
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerIdRequired-schema.json"
-    },
     "release": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

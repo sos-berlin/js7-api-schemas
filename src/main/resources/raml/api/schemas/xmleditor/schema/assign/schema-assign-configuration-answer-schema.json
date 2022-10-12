@@ -11,5 +11,6 @@
 		"schemaIdentifier": {
 			"type": "string"
 		}
-	}
+	},
+	"additionalProperties": false
 }

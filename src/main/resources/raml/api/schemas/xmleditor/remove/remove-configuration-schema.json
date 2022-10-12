@@ -5,21 +5,21 @@
 	"type": "object",
 	"description": "id only for OTHER and YADE, release only for NOTIFICATION",
 	"required": [
-		"controllerId",
 		"objectType"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
-		},
 		"objectType": {
 			"$ref": "../common/object-type-schema.json"
 		},
 		"id": {
-			"type": "integer"
+			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"release": {
 			"type": "boolean"
-		}
-	}
+		},
+    	"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
+	},
+	"additionalProperties": false
 }

@@ -1,28 +1,24 @@
 {
-  "title": "store notification filter",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.notification.StoreNotificationFilter",
-  "type": "object",
-  "description": "Request Filter to store a notification.",
-  "required": [
-    "controllerId",
-    "configuration"
-  ],
-  "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerIdRequired-schema.json"
-    },
-    "configuration": {
-      "$ref": "../common/noScript-schema.json"
-    },
-    "configurationJson": {
-      "$ref": "../common/noScript-schema.json"
-    },
-    "name": {
-      "$ref": "../common/string255required-schema.json"
-    },
-    "auditLog": {
-      "$ref": "../audit/auditParams-schema.json"
-    }
-  }
+  	"title": "store notification filter",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"javaType": "com.sos.joc.model.notification.StoreNotificationFilter",
+  	"type": "object",
+  	"description": "Request Filter to store a notification.",
+  	"required": [
+    	"configuration"
+  	],
+  	"properties": {
+    	"configuration": {
+      		"type": "string",
+			"minLength": 1,
+  			"pattern": "^(?s)((?!<script( |>)|<svg/on).)*$"
+    	},
+    	"configurationJson": {
+      		"$ref": "../common/noScript-schema.json"
+    	},
+    	"auditLog": {
+      		"$ref": "../audit/auditParams-schema.json"
+    	}
+  	},
+  	"additionalProperties": false
 }

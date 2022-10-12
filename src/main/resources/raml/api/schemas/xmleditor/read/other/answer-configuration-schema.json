@@ -9,7 +9,7 @@
 	],
 	"properties": {
 		"id" : {
-		  "type" : "integer"
+		  "$ref": "../../../common/nonNegativeLong-schema.json"
 		},
 		"name": {
 			"type": "string"
@@ -35,5 +35,6 @@
 		"modified": {
 			"$ref": "../../../common/timestamp-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }

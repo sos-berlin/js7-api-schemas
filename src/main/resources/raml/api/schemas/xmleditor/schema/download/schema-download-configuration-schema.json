@@ -5,13 +5,9 @@
 	"type": "object",
 	"description": "schemaIdentifier only for OTHER",
 	"required": [
-		"controllerId",
 		"objectType"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../../../common/controllerId-schema.json"
-		},
 		"objectType": {
 			"$ref": "../../common/object-type-schema.json"
 		},
@@ -21,5 +17,6 @@
 		"schemaIdentifier": {
 			"$ref": "../../../common/string255-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }

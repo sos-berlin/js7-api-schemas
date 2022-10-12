@@ -5,14 +5,9 @@
 	"type": "object",
 	"description": "id, name, schemaIdentifier only for objectType=YADE/OTHER",
 	"required": [
-		"controllerId",
-		"objectType",
-		"configuration"
+		"objectType"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
-		},
 		"objectType": {
 			"$ref": "../common/object-type-schema.json"
 		},
@@ -20,7 +15,7 @@
 			"$ref": "../../common/noScript-schema.json"
 		},
 		"id": {
-			"type": "integer"
+			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"name": {
 			"$ref": "../../common/string255-schema.json"
@@ -28,5 +23,6 @@
 		"schemaIdentifier": {
 			"$ref": "../../common/string255-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }

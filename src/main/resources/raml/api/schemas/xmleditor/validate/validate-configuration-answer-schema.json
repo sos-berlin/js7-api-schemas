@@ -11,5 +11,6 @@
 		"validationError": {
 			"$ref": "error-message-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }

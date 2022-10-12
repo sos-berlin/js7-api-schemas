@@ -5,13 +5,9 @@
 	"type": "object",
 	"description": "",
 	"required": [
-		"controllerId",
 		"objectType"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../../../common/controllerId-schema.json"
-		},
 		"objectType": {
 			"$ref": "../../common/object-type-schema.json"
 		},
@@ -24,5 +20,6 @@
 		"fileContent": {
 			"$ref": "../../../common/noScript-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }

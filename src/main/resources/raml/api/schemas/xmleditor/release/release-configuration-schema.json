@@ -5,18 +5,17 @@
 	"type": "object",
 	"description": "",
 	"required": [
-		"controllerId",
-		"objectType"
+		"objectType",
+		"configuration"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
-		},
 		"objectType": {
 			"$ref": "../common/object-type-schema.json"
 		},
 		"configuration": {
-			"$ref": "../../common/noScript-schema.json"
+			"type": "string",
+			"minLength": 1,
+  			"pattern": "^(?s)((?!<script( |>)|<svg/on).)*$"
 		},
 		"configurationJson": {
 			"$ref": "../../common/noScript-schema.json"
@@ -24,5 +23,6 @@
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }

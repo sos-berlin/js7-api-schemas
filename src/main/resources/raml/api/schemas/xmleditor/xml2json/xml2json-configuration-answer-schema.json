@@ -8,5 +8,6 @@
 		"configurationJson": {
 			"type": "string"
 		}
-	}
+	},
+	"additionalProperties": false
 }

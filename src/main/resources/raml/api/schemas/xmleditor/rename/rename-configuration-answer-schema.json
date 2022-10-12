@@ -6,10 +6,11 @@
 	"description": "",
 	"properties": {
 		"id": {
-			"type": "integer"
+			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"modified": {
 			"$ref": "../../common/timestamp-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }

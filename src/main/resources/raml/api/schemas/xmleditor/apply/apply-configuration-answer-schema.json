@@ -6,7 +6,7 @@
 	"description": "state,released,hasReleases only for objectType=NOTIFICATION",
 	"properties": {
 		"id": {
-			"type": "integer"
+			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"name": {
 			"type": "string"
@@ -38,5 +38,6 @@
 		"hasReleases": {
 			"type": "boolean"
 		}
-	}
+	},
+	"additionalProperties": false
 }

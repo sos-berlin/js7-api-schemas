@@ -4,18 +4,11 @@
   "javaType": "com.sos.joc.model.notification.ReadNotificationFilter",
   "type": "object",
   "description": "Request Filter to read a notification",
-  "required": [
-    "controllerId"
-  ],
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerIdRequired-schema.json"
-    },
-    "name": {
-      "$ref": "../common/string255required-schema.json"
-    },
     "forceRelease": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
-  }
+  },
+  "additionalProperties": false
 }

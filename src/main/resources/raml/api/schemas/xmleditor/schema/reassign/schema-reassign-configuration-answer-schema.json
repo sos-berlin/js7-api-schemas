@@ -17,5 +17,6 @@
 		"recreateJson": {
 			"type": "boolean"
 		}
-	}
+	},
+	"additionalProperties": false
 }

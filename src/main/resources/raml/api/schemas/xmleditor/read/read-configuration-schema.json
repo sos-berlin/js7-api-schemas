@@ -5,21 +5,18 @@
 	"type": "object",
 	"description": "id only for OTHER, forceRelease for notification ",
 	"required": [
-		"controllerId",
 		"objectType"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
-		},
 		"objectType": {
 			"$ref": "../common/object-type-schema.json"
 		},
 		"id": {
-			"type": "integer"
+			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"forceRelease": {
 			"type": "boolean"
 		}
-	}
+	},
+	"additionalProperties": false
 }

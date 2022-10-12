@@ -5,24 +5,27 @@
 	"type": "object",
 	"description": "id, name, schemaIdentifier only for OTHER",
 	"required": [
-		"controllerId",
-		"objectType"
+		"objectType",
+		"id",
+		"name",
+		"schemaIdentifier"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
-		},
 		"objectType": {
 			"$ref": "../common/object-type-schema.json"
 		},
 		"id": {
-			"type": "integer"
+			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"name": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"schemaIdentifier": {
-			"$ref": "../../common/string255-schema.json"
-		}
-	}
+			"$ref": "../../common/string255required-schema.json"
+		},
+    	"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
+	},
+	"additionalProperties": false
 }
