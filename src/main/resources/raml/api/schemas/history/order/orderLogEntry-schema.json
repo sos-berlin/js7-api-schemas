@@ -54,6 +54,9 @@
 			"type": "number",
 			"format": "utc-millisec"
 		},
+		"msg": {
+			"type": "string"
+		},
 		"error": {
 			"type": "object",
 			"javaType": "com.sos.joc.model.history.order.OrderLogEntryError",
