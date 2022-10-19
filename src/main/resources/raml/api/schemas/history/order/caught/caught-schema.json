@@ -1,0 +1,15 @@
+{
+	"title": "Caught",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.caught.Caught",
+	"type": "object",
+	"required": [
+		"cause"
+	],
+	"properties": {
+		"cause": {
+			"$ref": "caught-cause-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

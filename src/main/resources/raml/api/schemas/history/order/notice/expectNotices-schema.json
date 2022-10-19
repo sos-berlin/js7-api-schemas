@@ -1,0 +1,31 @@
+{
+	"title": "ExpectNotices",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.notice.ExpectNotices",
+	"type": "object",
+	"oneOf": [
+		{
+			"required": [
+				"consumed"
+			]
+		},
+		{
+			"required": [
+				"waitingFor"
+			]
+		}
+	],
+	"properties": {
+		"consumed": {
+			"type": "string"
+		},
+		"waitingFor": {
+			"type": "array",
+			"items": {
+				"$ref": "baseNotice-schema.json"
+			},
+			"additionalProperties": false
+		}
+	},
+	"additionalProperties": false
+}

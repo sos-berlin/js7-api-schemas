@@ -1,0 +1,19 @@
+{
+	"title": "BaseNotice",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.notice.BaseNotice",
+	"type": "object",
+	"required": [
+		"boardName",
+		"id"
+	],
+	"properties": {
+		"boardName": {
+			"type": "string"
+		},
+		"id": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

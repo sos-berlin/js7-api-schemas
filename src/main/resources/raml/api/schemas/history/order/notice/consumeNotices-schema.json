@@ -1,0 +1,31 @@
+{
+	"title": "ConsumeNotices",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.notice.ConsumeNotices",
+	"type": "object",
+	"oneOf": [
+		{
+			"required": [
+				"consumed"
+			]
+		},
+		{
+			"required": [
+				"consuming"
+			]
+		}
+	],
+	"properties": {
+		"consumed": {
+			"type": "boolean"
+		},
+		"consuming": {
+			"type": "array",
+			"items": {
+				"$ref": "baseNotice-schema.json"
+			},
+			"additionalProperties": false
+		}
+	},
+	"additionalProperties": false
+}

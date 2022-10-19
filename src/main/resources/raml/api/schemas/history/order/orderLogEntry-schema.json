@@ -116,90 +116,19 @@
 			"additionalProperties": false
 		},
 		"expectNotices": {
-			"type": "object",
-			"javaType": "com.sos.joc.model.history.order.ExpectNotices",
-			"oneOf": [
-				{
-					"required": [
-						"consumed"
-					]
-				},
-				{
-					"required": [
-						"waitingFor"
-					]
-				}
-			],
-			"properties": {
-				"consumed": {
-					"type": "string"
-				},
-				"waitingFor": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"javaType": "com.sos.joc.model.history.order.ExpectNotice",
-						"required": [
-							"boardName",
-							"id"
-						],
-						"properties": {
-							"boardName": {
-								"type": "string"
-							},
-							"id": {
-								"type": "string"
-							}
-						}
-					},
-					"additionalProperties": false
-				}
-			},
-			"additionalProperties": false
+			"$ref": "notice/expectNotices-schema.json"
+		},
+		"consumeNotices": {
+			"$ref": "notice/consumeNotices-schema.json"
 		},
 		"postNotice": {
-			"type": "object",
-			"javaType": "com.sos.joc.model.history.order.PostNotice",
-			"required": [
-				"boardName",
-				"id",
-				"endOfLife"
-			],
-			"properties": {
-				"boardName": {
-					"type": "string"
-				},
-				"id": {
-					"type": "string"
-				},
-				"endOfLife": {
-					"type": "string"
-				}
-			},
-			"additionalProperties": false
+			"$ref": "notice/postNotice-schema.json"
 		},
 		"retrying": {
-			"type": "object",
-			"javaType": "com.sos.joc.model.history.order.Retrying",
-			"properties": {
-				"delayedUntil": {
-					"type": "string"
-				}
-			},
-			"additionalProperties": false
+			"$ref": "retry/retrying-schema.json"
 		},
 		"caught": {
-			"type": "object",
-			"javaType": "com.sos.joc.model.history.order.Caught",
-			"required": [
-				"cause"
-			],
-			"properties": {
-				"cause": {
-					"$ref": "orderLogEntry-caughtCause-schema.json"
-				}
-			},
-			"additionalProperties": false
+			"$ref": "caught/caught-schema.json"
 		}
 	},
 	"additionalProperties": false

@@ -1,0 +1,12 @@
+{
+	"title": "Retrying",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.retry.Retrying",
+	"type": "object",
+	"properties": {
+		"delayedUntil": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

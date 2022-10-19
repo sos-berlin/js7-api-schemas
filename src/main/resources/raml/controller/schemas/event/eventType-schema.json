@@ -39,6 +39,8 @@
 		"OrderLocksAcquired",
 		"OrderLocksQueued",
 		"OrderLocksReleased",
+		"OrderNoticesConsumed",
+		"OrderNoticesConsumptionStarted",
 		"OrderNoticesRead",
 		"OrderNoticesExpected",
 		"OrderNoticePosted"		
@@ -79,6 +81,8 @@
 		"OrderLocksAcquired",
 		"OrderLocksQueued",
 		"OrderLocksReleased",
+		"OrderNoticesConsumed",
+		"OrderNoticesConsumptionStarted",		
 		"OrderNoticesRead",
 		"OrderNoticesExpected",
 		"OrderNoticePosted"	
