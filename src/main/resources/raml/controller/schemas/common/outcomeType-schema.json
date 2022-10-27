@@ -9,7 +9,10 @@
     "Disrupted",
     "Cancelled",
     "Killed",
-    "TimedOut"
+    "TimedOut",
+    "ProcessLost",
+    "JobSchedulerRestarted",
+    "Other"
   ],
   "javaEnumNames": [
     "Succeeded",
@@ -17,6 +20,9 @@
     "Disrupted",
     "Cancelled",
     "Killed",
-    "TimedOut"
+    "TimedOut",
+    "ProcessLost",
+    "JobSchedulerRestarted",
+    "Other"
   ]
 }
