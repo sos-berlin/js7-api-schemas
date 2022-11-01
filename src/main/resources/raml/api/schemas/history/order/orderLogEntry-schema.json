@@ -21,7 +21,7 @@
 			"type": "string"
 		},
 		"logLevel": {
-			"type": "string"
+			"$ref": "orderLogEntry-logLevel-schema.json"
 		},
 		"logEvent": {
 			"$ref": "../../../../controller/schemas/event/eventType-schema.json"

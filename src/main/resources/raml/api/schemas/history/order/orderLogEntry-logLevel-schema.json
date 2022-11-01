@@ -1,0 +1,20 @@
+{
+	"title": "order history log entry log level",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.OrderLogEntryLogLevel",
+	"type": "string",
+	"enum": [
+		"MAIN",
+		"DETAIL",
+		"INFO",
+		"ERROR",
+		"SUCCESS"
+	],
+	"javaEnumNames": [
+		"MAIN",
+		"DETAIL",
+		"INFO",
+		"ERROR",
+		"SUCCESS"
+	]
+}
