@@ -1,5 +1,5 @@
 {
-	"title": "Retrying",
+	"title": "Moved Skip Reason",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.history.order.moved.MovedSkippedReason",
 	"type": "string",

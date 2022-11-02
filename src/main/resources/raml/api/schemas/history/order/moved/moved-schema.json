@@ -1,11 +1,14 @@
 {
-	"title": "Retrying",
+	"title": "Moved",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.history.order.moved.Moved",
 	"type": "object",
+	"required": [
+		"to"
+	],
 	"properties": {
-		"toPosition": {
-			"type": "string"
+		"to": {
+			"$ref": "moved-to-schema.json"
 		},
 		"skipped": {
 			"$ref": "moved-skipped-schema.json"

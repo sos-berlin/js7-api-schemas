@@ -1,0 +1,12 @@
+{
+	"title": "Mover To",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.moved.MovedTo",
+	"type": "object",
+	"properties": {
+		"position": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
