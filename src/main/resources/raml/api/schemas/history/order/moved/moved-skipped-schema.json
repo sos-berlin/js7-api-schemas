@@ -1,0 +1,18 @@
+{
+	"title": "Retrying",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.moved.MovedSkipped",
+	"type": "object",
+	"required": [
+		"reason"
+	],
+	"properties": {
+		"jobName": {
+			"type": "string"
+		},
+		"reason": {
+			"$ref": "moved-skipped-reason-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

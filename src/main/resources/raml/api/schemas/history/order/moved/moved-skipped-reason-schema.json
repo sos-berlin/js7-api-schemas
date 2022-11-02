@@ -1,0 +1,16 @@
+{
+	"title": "Retrying",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.moved.MovedSkippedReason",
+	"type": "string",
+	"enum": [
+		"Unknown",
+		"SkippedDueToWorkflowPathControl",
+		"NoAdmissionPeriodStart"
+	],
+	"javaEnumNames": [
+		"Unknown",
+		"SkippedDueToWorkflowPathControl",
+		"NoAdmissionPeriodStart"
+	]
+}

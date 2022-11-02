@@ -1,0 +1,15 @@
+{
+	"title": "Retrying",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.moved.Moved",
+	"type": "object",
+	"properties": {
+		"toPosition": {
+			"type": "string"
+		},
+		"skipped": {
+			"$ref": "moved-skipped-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

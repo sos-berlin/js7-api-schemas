@@ -129,6 +129,9 @@
 		},
 		"caught": {
 			"$ref": "caught/caught-schema.json"
+		},
+		"moved": {
+			"$ref": "moved/moved-schema.json"
 		}
 	},
 	"additionalProperties": false
