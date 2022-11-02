@@ -132,6 +132,12 @@
 		},
 		"moved": {
 			"$ref": "moved/moved-schema.json"
+		},
+		"arguments": {
+			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
+		},
+		"returnValues": {
+			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
 		}
 	},
 	"additionalProperties": false
