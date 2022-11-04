@@ -54,6 +54,9 @@
 			"type": "number",
 			"format": "utc-millisec"
 		},
+		"returnMessage": {
+			"type": "string"
+		},
 		"msg": {
 			"type": "string"
 		},
