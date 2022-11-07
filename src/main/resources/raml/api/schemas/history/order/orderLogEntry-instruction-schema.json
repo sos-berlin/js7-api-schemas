@@ -1,0 +1,27 @@
+{
+	"title": "order history log entry",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.OrderLogEntryInstruction",
+	"type": "object",
+	"oneOf": [
+		{
+			"required": [
+				"instruction"
+			]
+		},
+		{
+			"required": [
+				"job"
+			]
+		}
+	],
+	"properties": {
+		"instruction": {
+			"type": "string"
+		},
+		"job": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

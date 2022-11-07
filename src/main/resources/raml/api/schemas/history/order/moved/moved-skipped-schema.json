@@ -4,11 +4,12 @@
 	"javaType": "com.sos.joc.model.history.order.moved.MovedSkipped",
 	"type": "object",
 	"required": [
+		"instruction",
 		"reason"
 	],
 	"properties": {
-		"job": {
-			"type": "string"
+		"instruction": {
+			"$ref": "../orderLogEntry-instruction-schema.json"
 		},
 		"reason": {
 			"$ref": "moved-skipped-reason-schema.json"

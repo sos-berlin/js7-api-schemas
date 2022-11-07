@@ -137,7 +137,10 @@
 			"$ref": "moved/moved-schema.json"
 		},
 		"stopped": {
-			"$ref": "suspended/suspended-schema.json"
+			"$ref": "orderLogEntry-instruction-schema.json"
+		},
+		"resumed": {
+			"$ref": "orderLogEntry-instruction-schema.json"
 		},
 		"arguments": {
 			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
