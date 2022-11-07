@@ -136,6 +136,9 @@
 		"moved": {
 			"$ref": "moved/moved-schema.json"
 		},
+		"stopped": {
+			"$ref": "suspended/suspended-schema.json"
+		},
 		"arguments": {
 			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
 		},

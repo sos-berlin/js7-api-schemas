@@ -1,17 +1,14 @@
 {
-	"title": "Moved Skipped",
+	"title": "Suspended (stopped)",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.history.order.moved.MovedSkipped",
+	"javaType": "com.sos.joc.model.history.order.suspended.Suspended",
 	"type": "object",
 	"required": [
-		"reason"
+		"job"
 	],
 	"properties": {
 		"job": {
 			"type": "string"
-		},
-		"reason": {
-			"$ref": "moved-skipped-reason-schema.json"
 		}
 	},
 	"additionalProperties": false
