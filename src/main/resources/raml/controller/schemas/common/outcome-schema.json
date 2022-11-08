@@ -11,6 +11,9 @@
   		"description": "Succeeded, Failed, Disrupted, Cancelled, Killed, TimedOut",
   		"type": "string"
   	},
+  	"message": {
+  		"type": "string"
+  	},
   	"namedValues": {
   		"$ref": "../../../inventory/schemas/common/variables-schema.json"
   	},
