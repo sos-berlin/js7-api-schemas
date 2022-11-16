@@ -17,6 +17,27 @@
   	"namedValues": {
   		"$ref": "../../../inventory/schemas/common/variables-schema.json"
   	},
+  	"reason": {
+  		"type": "object",
+  		"javaType": "com.sos.controller.model.common.OutcomeReason",
+  		"properties": {
+  			"TYPE": {
+  				"description": "Succeeded, Failed, Disrupted, Cancelled, Killed, TimedOut",
+  				"type": "string"
+  			},
+  			"problem": {
+  				"type": "object",
+  				"javaType": "com.sos.controller.model.common.OutcomeReasonProblem",
+  				"properties": {
+  					"message": {
+  						"type": "string"	
+  					}
+  				},
+  				"additionalProperties": false
+  			}
+  		},
+  		"additionalProperties": false
+  	},
   	"outcome": {
   		"$ref": "outcome-schema.json"
   	}
