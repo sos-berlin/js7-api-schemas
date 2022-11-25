@@ -637,7 +637,28 @@ traits:
         schema200: !include api/schemas/agent/agentReports-schema.json
         example: " "
         example200: " "
-
+  
+  /reset:
+    type:
+      postJSONWithOkResponse:
+        description: |
+          Resets Agents<h5>
+          Any currently running orders are continued. Workflows and other deployable objects are withdrawn.
+          The Agents drop its journal and restart. Then the Controller tries to reconnect to the Agents,
+          deploys workflows etc. and submits orders to the Agents.
+          </h5>
+        description1: !include api/documentation/agent/agentIdsRequired.md
+        description2: !include api/documentation/agent/force.md
+        description3: !include api/documentation/audit/auditLog.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/agent/resetAgents-schema.json
+        example: " "
 
 /audit_log:
   type:
