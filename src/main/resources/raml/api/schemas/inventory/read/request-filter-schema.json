@@ -6,6 +6,19 @@
 	"extends" : {
     	"$ref": "../common/request-filter-schema.json"
   	},
+  	"anyOf": [
+        {
+            "required": [
+                "id"
+            ]
+        },
+        {
+            "required": [
+                "path",
+                "objectType"
+            ]
+        }
+    ],
 	"properties": {
 		"commitId": {
 			"$ref": "../../common/string255-schema.json"

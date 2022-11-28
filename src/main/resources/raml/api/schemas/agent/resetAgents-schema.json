@@ -1,0 +1,20 @@
+{
+  "title": "reset agents",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.ResetAgents",
+  "type": "object",
+  "extends" : {
+  	"$ref": "deployAgents-schema.json"
+  },
+  "required": [
+  	"controllerId",
+  	"agentIds"
+  ],
+  "properties": {
+    "force": {
+    	"type": "boolean",
+    	"default": false
+    }
+  },
+  "additionalProperties": false
+}

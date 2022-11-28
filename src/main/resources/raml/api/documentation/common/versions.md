@@ -1,4 +1,10 @@
 * [JOC API 2.5.0](../../../2.5.0/raml-doc/JOC-API/index.html)
+	* *NEW*
+		* <a href="../../../2.5.0/raml-doc/JOC-API/resource/notification/release.html" target="newtab250">./notification/release</a>
+	* *CHANGED*
+		* <a href="../../../2.5.0/raml-doc/JOC-API/resource/workflows.html" target="newtab250">./workflows</a> - Request field ``instructionStates`` is added
+		* <a href="../../../2.5.0/raml-doc/JOC-API/resource/workflows/search.html" target="newtab250">./workflows/search</a> - Request fields ``states`` and``instructionStates`` are added
+		
 * [JOC API 2.4.1](../../../2.4.1/raml-doc/JOC-API/index.html)
 	* *NEW*
 		* <a href="../../../2.4.1/raml-doc/JOC-API/resource/agents/export.html" target="newtab241">./agents/export</a>
