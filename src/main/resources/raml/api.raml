@@ -759,7 +759,7 @@ traits:
   type:
     postJSONWithoutJSId:
       description: Gets dates of a calendar
-      description1: !include api/documentation/calendar/calendarIdPath.md
+      description1: !include api/documentation/calendar/calendarPathOrObject.md
       description2: " "
       description3: !include api/documentation/calendar/dateFrom.md
       description4: !include api/documentation/calendar/dateTo.md
@@ -780,7 +780,7 @@ traits:
     postJSONWithoutJSId:
       description: Gets released calendars
       description1: !include api/documentation/calendar/filteredByCalendarPaths.md
-      description2: !include api/documentation/calendar/filteredByCalendarIds.md
+      description2: " "
       description3: !include api/documentation/common/compact.md
       description4: !include api/documentation/common/regex.md
       description5: !include api/documentation/common/folders.md
@@ -814,27 +814,6 @@ traits:
         example: TODO
         schema200: !include api/schemas/inventory/search/response-search-schema.json
         example200: TODO
-
-#  /used:
-#    type:
-#      postJSON:
-#        description: Sends compact collection of calendar items with objects that use it
-#        description1: " "
-#        description2: !include api/documentation/common/regex.md
-#        description3: !include api/documentation/common/folders.md
-#        description4: !include api/documentation/calendar/calendarType.md
-#        description5: " "
-#        description6: !include api/documentation/calendar/filteredByCalendarPaths.md
-#        description7: !include api/documentation/calendar/filteredByCalendarIds.md
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: !include api/documentation/calendar/calendar.md
-#        schema: !include api/schemas/calendar/calendarsFilter-schema.json
-#        schema200: !include api/schemas/calendar/calendars-schema.json
-#        example: " "
-#        example200: " "
-
 
 /controller:
   type:
@@ -1933,7 +1912,7 @@ traits:
     type:
       postJSONWithoutJSId:
         description: Gets dates of a calendar
-        description1: !include api/documentation/calendar/calendarIdPath.md
+        description1: !include api/documentation/calendar/calendarPathOrObject.md
         description2: " "
         description3: !include api/documentation/calendar/dateFrom.md
         description4: !include api/documentation/calendar/dateTo.md

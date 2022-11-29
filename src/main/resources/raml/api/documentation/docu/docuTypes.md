@@ -7,6 +7,7 @@ Supported types are
 	<li>"xml"</li>
 	<li>"xsl"</li>
 	<li>"xsd"</li>
+	<li>"svg"</li>
 	<li>"javascript"</li>
 	<li>"json"</li>
 	<li>"css"</li>
@@ -14,6 +15,7 @@ Supported types are
 	<li>"gif"</li>
 	<li>"jpeg"</li>
 	<li>"png"</li>
+	<li>"icon"</li>
 </ul>
 	</td>
 <td> [

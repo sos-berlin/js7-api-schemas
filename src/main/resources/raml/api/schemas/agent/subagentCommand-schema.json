@@ -9,7 +9,7 @@
   ],
   "properties": {
     "controllerId": {
-    	"$ref": "../common/controllerId-schema.json"
+    	"$ref": "../common/controllerIdRequired-schema.json"
     },
     "subagentId": {
     	"$ref": "../common/string255required-schema.json"

@@ -7,17 +7,17 @@
   "anyOf": [
         {
             "required": [
-                "id"
-            ]
-        },
-        {
-            "required": [
                 "path"
             ]
         },
         {
             "required": [
                 "calendar"
+            ]
+        },
+        {
+            "required": [
+                "id"
             ]
         }
   ],
@@ -29,7 +29,7 @@
       "$ref": "../common/nonNegativeLong-schema.json"
     },
     "path": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/string255required-schema.json"
     },
     "dateFrom": {
       "$ref": "../common/date-schema.json"

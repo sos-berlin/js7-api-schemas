@@ -4,21 +4,14 @@
   "javaType": "com.sos.joc.model.agent.DeployClusterAgents",
   "type": "object",
   "required": [
-  	"controllerId"
+  	"controllerId",
+  	"clusterAgentIds"
   ],
   "properties": {
     "controllerId": {
     	"$ref": "../common/controllerIdRequired-schema.json"
     },
     "clusterAgentIds": {
-    	"type": "array",
-    	"minItems": 1,
-    	"uniqueItems": true,
-    	"items": {
-    		"$ref": "../common/string255required-schema.json"
-    	}
-    },
-    "subagentClusterIds": {
     	"type": "array",
     	"minItems": 1,
     	"uniqueItems": true,

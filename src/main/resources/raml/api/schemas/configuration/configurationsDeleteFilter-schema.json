@@ -14,7 +14,9 @@
 			"type": "array",
 			"minItems": 1,
 			"items": {
-				"type": "string"
+				"type": "string",
+				"maxLength": 255,
+  				"minLength": 1
 			}
 		}
 	}
