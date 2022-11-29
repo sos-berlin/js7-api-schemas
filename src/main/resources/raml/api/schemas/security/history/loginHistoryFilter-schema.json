@@ -14,13 +14,7 @@
       "$ref": "../../common/dateFromTo-schema.json"
     },
     "timeZone": {
-      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-      "$ref": "../../common/string255-schema.json"
-    },
-    "limit": {
-      "description": "restricts the number of responsed records; -1=unlimited",
-      "type": "integer",
-      "default": 10000
+      "$ref": "../../common/timezone-schema.json"
     }
   },
   "additionalProperties": false

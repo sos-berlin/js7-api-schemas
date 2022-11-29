@@ -2,10 +2,10 @@
 <td>``exportFile``</td>
 <td>required, object</td>
 <td>This objects describes the export file with ``filename`` and ``format``.</td>
-<td><div style="padding-left:10px;">"exportFile" : {</div>
+<td><div>"exportFile" : {</div>
     <div style="padding-left:10px;">"filename" : "test_export_folder.zip",</div>
     <div style="padding-left:10px;">"format" : "ZIP"</div>
-    <div style="padding-left:10px;">}</div></td>
+    <div>}</div></td>
 <td></td>
 </tr>
 <tr>
@@ -17,10 +17,10 @@
 </tr>
 <tr>
 <td style="padding-left:20px;">``format``</td>
-<td>required, enum</td>
-<td>The desired ``format`` of the export archive file. The enum archiveFormat for the value consist of ZIP and TAR_GZ</td>
+<td>optional, enum</td>
+<td>The desired ``format`` of the export archive file. Possible values are "ZIP" and "TAR_GZ"</td>
 <td>"format" : "ZIP"</td>
-<td></td>
+<td>ZIP</td>
 </tr>
 <tr>
 <td>``forSigning``</td>

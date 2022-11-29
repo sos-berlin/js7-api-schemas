@@ -1,26 +1,22 @@
 {
-  "title": "store/deploy sub agents",
+  "title": "deploy subagent clusters",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.agent.StoreSubAgents",
+  "javaType": "com.sos.joc.model.agent.DeploySubagentClusters",
   "type": "object",
   "required": [
   	"controllerId",
-  	"agentId",
-  	"subagents"
+  	"subagentClusterIds"
   ],
   "properties": {
     "controllerId": {
-      "$ref": "../common/controllerIdRequired-schema.json"
+    	"$ref": "../common/controllerIdRequired-schema.json"
     },
-    "agentId": {
-    	"$ref": "../common/string255required-schema.json"
-    },
-    "subagents": {
+    "subagentClusterIds": {
     	"type": "array",
-    	"uniqueItems": true,
     	"minItems": 1,
+    	"uniqueItems": true,
     	"items": {
-    		"$ref": "subagent-schema.json"
+    		"$ref": "../common/string255required-schema.json"
     	}
     },
     "auditLog": {

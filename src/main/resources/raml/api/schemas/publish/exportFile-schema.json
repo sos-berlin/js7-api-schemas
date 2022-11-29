@@ -4,12 +4,11 @@
   "javaType": "com.sos.joc.model.publish.ExportFile",
   "type": "object",
   "required": [
-      "filename",
-      "format"
+      "filename"
   ],
   "properties": {
     "filename": {
-      "$ref": "../common/filename255-schema.json"
+      "$ref": "../common/filename255Required-schema.json"
     },
     "format": {
       "$ref": "archiveFormat-schema.json"
