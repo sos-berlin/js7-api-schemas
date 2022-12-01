@@ -12,6 +12,7 @@
   "properties": {
     "jobTemplates": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "$ref": "jobTemplatePropagateFilter-schema.json"
       }

@@ -9,10 +9,10 @@
 	],
 	"properties": {
 		"controllerId": {
-			"$ref": "../common/controllerId-schema.json"
+			"$ref": "../common/controllerIdRequired-schema.json"
 		},
 		"lockPath": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../common/string255required-schema.json"
 		},
 		"compact": {
 			"$ref": "../common/compactParam-schema.json"

@@ -10,20 +10,20 @@
 	],
 	"properties": {
 		"controllerId": {
-			"$ref": "../common/controllerId-schema.json"
+			"$ref": "../common/controllerIdRequired-schema.json"
 		},
 		"noticeBoardPath": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../common/string255required-schema.json"
 		},
 		"noticeId": {
-			"type": "string"
+			"type": "string",
+			"minLength": 1
 		},
 		"endOfLife": {
 			"$ref": "../common/dateFromTo-schema.json"
 		},
 		"timeZone": {
-			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../common/timezone-schema.json"
 		},
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"

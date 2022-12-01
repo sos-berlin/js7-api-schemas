@@ -7,7 +7,7 @@
     "jobTemplatePaths": {
       "type": "array",
       "items": {
-        "$ref": "../common/string255-schema.json"
+        "$ref": "../common/string255required-schema.json"
       }
     },
     "folders": {
