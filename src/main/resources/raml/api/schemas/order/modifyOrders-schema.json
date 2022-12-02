@@ -8,7 +8,7 @@
 	],
 	"properties": {
 		"controllerId": {
-			"$ref": "../common/controllerId-schema.json"
+			"$ref": "../common/controllerIdRequired-schema.json"
 		},
 		"orderIds": {
 			"type": "array",

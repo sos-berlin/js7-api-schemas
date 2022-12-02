@@ -8,7 +8,7 @@
 	],
 	"properties": {
 		"controllerId": {
-			"$ref": "../common/controllerId-schema.json"
+			"$ref": "../common/controllerIdRequired-schema.json"
 		},
 		"orderIds": {
 			"type": "array",
@@ -19,22 +19,6 @@
 		},
 		"dailyPlanDate": {
 			"$ref": "../common/date-schema.json"
-		},
-		"workflowIds": {
-			"type": "array",
-			"items": {
-				"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
-			}
-		},
-		"orderType": {
-			"$ref": "../../../controller/schemas/order/orderModeType-schema.json"
-		},
-		"kill": {
-			"type": "boolean",
-			"default": false
-		},
-		"arguments": {
-			"$ref": "../../../inventory/schemas/common/variables-schema.json"
 		},
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"

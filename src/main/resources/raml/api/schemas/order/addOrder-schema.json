@@ -12,7 +12,7 @@
       "maxLength": 30
     },
     "workflowPath": {
-      "$ref": "../common/path-schema.json"
+      "$ref": "../common/string255required-schema.json"
     },
     "scheduledFor": {
       "$ref": "../common/timestampWithNow-schema.json"
