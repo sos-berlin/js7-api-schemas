@@ -16,7 +16,7 @@ post:
     <tr><th>Name</th><th>Type</th><th>Description</th><th>Example</th><th>Default</th>
     </thead><tbody>
     <tr><td>``controllerId``</td><td>required, string</td><td>Controller ID</td><td>myController</td><td></td></tr>
-    <tr><td>``orderIds``</td><td>required, array</td>
+    <tr><td>``orderIds``</td><td>optional, array</td>
     <td>Specified the order ids which should be modified.<br/>
       If this parameter is specified then the parameters ``workflowIds``, ``folders`` and ``states`` where applicable are ignored.</td>
     <td> [
@@ -33,7 +33,7 @@ post:
     <td></td>
     </tr>
     <tr><td style="padding-left:20px;">``path``</td><td>required, string</td><td>Field for each item in ``workflowIds`` to specify the path of a workflow</td><td></td><td></td></tr>
-    <tr><td style="padding-left:20px;">``version``</td><td>required, string</td><td>Field for each in ``workflowIds`` to specify the version of a workflow</td><td></td><td></td></tr>
+    <tr><td style="padding-left:20px;">``version``</td><td>optional, string</td><td>Field for each in ``workflowIds`` to specify the version of a workflow</td><td></td><td></td></tr>
     <tr><td>``folders``</td><td>optional, array[object]</td><td>Limits the result to a collection of folders</td>
     <td> [{
         <div style="padding-left:10px;">"folder": "/sos",</div>

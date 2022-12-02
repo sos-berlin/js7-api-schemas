@@ -8,7 +8,7 @@
   ],
   "properties": {
     "path": {
-	  "$ref": "../../../api/schemas/common/string255-schema.json"
+	  "$ref": "../../../api/schemas/common/string255required-schema.json"
 	},
 	"versionId": {
 	  "$ref": "../../../api/schemas/common/string255-schema.json"

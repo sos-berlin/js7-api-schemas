@@ -10,7 +10,7 @@
   	],
   	"properties": {
   		"controllerId": {
-      		"$ref": "../common/controllerId-schema.json"
+      		"$ref": "../common/controllerIdRequired-schema.json"
     	},
     	"workflowPath": {
         	"$ref": "../common/string255required-schema.json"

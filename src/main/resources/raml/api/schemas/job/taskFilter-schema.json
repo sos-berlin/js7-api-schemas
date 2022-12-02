@@ -9,7 +9,7 @@
   ],
   "properties": {
     "controllerId": {
-      "type": "string"
+      "$ref": "../common/controllerIdRequired-schema.json"
     },
     "taskId": {
       "type": "number",

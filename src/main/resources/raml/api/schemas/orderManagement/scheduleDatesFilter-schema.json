@@ -3,9 +3,6 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.order.ScheduleDatesFilter",
 	"type": "object",
-	"required": [
-		"timeZone"
-	],
 	"properties": {
 		"calendars": {
 			"$ref": "../../../inventory/schemas/calendar/calendars-list-schema.json"
