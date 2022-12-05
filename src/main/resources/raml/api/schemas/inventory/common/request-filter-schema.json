@@ -6,13 +6,13 @@
 	"anyOf": [
         {
             "required": [
-                "id"
+                "path",
+                "objectType"
             ]
         },
         {
             "required": [
-                "path",
-                "objectType"
+                "id"
             ]
         }
     ],
@@ -24,7 +24,7 @@
 			"$ref": "../../common/nonNegativeLong-schema.json"
 		},
 		"path": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"objectType": {
 			"$ref": "../common/configurationType-schema.json"
