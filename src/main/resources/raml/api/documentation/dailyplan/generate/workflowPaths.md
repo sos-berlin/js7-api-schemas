@@ -1,6 +1,6 @@
 <tr><td>``workflowPaths``</td>
 	
-<td>optional; object</td>
+<td>optional, object</td>
 	
 <td>Generate orders for the given daily plan based on the schedules that are assigned to the workflows located in the given folder(s) or based on the selected single workflow(s).</td>
 	

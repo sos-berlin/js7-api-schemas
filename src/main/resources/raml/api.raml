@@ -974,7 +974,7 @@ traits:
       postOnlyAccessToken:
         description: Deploys current daily plan calendar to Controllers
         description200: |
-          **Confirm <span style="text-transform: capitalize;">deploy</span> successfully**
+          **Confirm <span style="text-transform: capitalize">deploy</span> successfully**
         schema200: ok
         example200: |
           {
@@ -1006,15 +1006,15 @@ traits:
       postJSON:
         description: Gets orders from the daily plan
         description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
-        description2: !include api/documentation/dailyplan/dailyPlanDate.md
-        description3: !include api/documentation/dailyplan/orders/schedules.md
-        description4: !include api/documentation/dailyplan/orders/folders.md
-        description5: !include api/documentation/dailyplan/orders/workflowPaths.md
-        description6: !include api/documentation/dailyplan/orders/late.md
-        description7: !include api/documentation/dailyplan/orders/states.md
-        description8: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
-        description9: !include api/documentation/dailyplan/orders/controllerIds.md
-        description10: !include api/documentation/dailyplan/orders/orderIds.md
+        description2: !include api/documentation/dailyplan/orders/dailyPlanFilterBase.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: !include api/documentation/dailyplan/orders/controllerIds.md
+        description8: !include api/documentation/dailyplan/orders/orderIds.md
+        description9: !include api/documentation/dailyplan/orders/late.md
+        description10: !include api/documentation/dailyplan/orders/states.md
         description200: " "
         schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
         schema200: !include api/schemas/orderManagement/dailyplan/plannedOrders-schema.json
@@ -1025,7 +1025,7 @@ traits:
       type:
         postJSONWithOkResponse:
           description: Generates orders for a given daily plan
-          description1: !include api/documentation/dailyplan/dailyPlanDate.md
+          description1: !include api/documentation/dailyplan/generate/dailyPlanDate.md
           description2: !include api/documentation/dailyplan/generate/schedulePaths.md
           description3: !include api/documentation/dailyplan/generate/workflowPaths.md
           description4: !include api/documentation/dailyplan/generate/overwrite.md
@@ -1042,15 +1042,15 @@ traits:
         postJSONWithOkResponse:
           description: Submits planned orders for a given daily plan
           description1: !include api/documentation/dailyplan/submit/dailyPlanOrdersFilterDef.md
-          description2: !include api/documentation/dailyplan/dailyPlanDate.md
-          description3: !include api/documentation/dailyplan/orders/schedules.md
-          description4: !include api/documentation/dailyplan/orders/folders.md
-          description5: !include api/documentation/dailyplan/orders/workflowPaths.md
-          description6: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
+          description2: !include api/documentation/dailyplan/orders/dailyPlanFilterBase.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
           description7: !include api/documentation/dailyplan/submit/controllerIds.md
           description8: !include api/documentation/dailyplan/orders/orderIds.md
-          description9: !include api/documentation/audit/auditLog.md
-          description10: " "
+          description9: " "
+          description10: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
           example: " "
     /delete:
@@ -1058,14 +1058,14 @@ traits:
         postJSONWithOkResponse:
           description: Deletes planned orders for a given daily plan
           description1: !include api/documentation/dailyplan/delete/dailyPlanOrdersFilterDef.md
-          description2: !include api/documentation/dailyplan/dailyPlanDate.md
-          description3: !include api/documentation/dailyplan/orders/schedules.md
-          description4: !include api/documentation/dailyplan/orders/folders.md
-          description5: !include api/documentation/dailyplan/orders/workflowPaths.md
-          description6: !include api/documentation/dailyplan/orders/late.md
-          description7: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
-          description8: !include api/documentation/dailyplan/orders/controllerIds.md
-          description9: !include api/documentation/dailyplan/orders/orderIds.md
+          description2: !include api/documentation/dailyplan/orders/dailyPlanFilterBase.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: !include api/documentation/dailyplan/orders/controllerIds.md
+          description8: !include api/documentation/dailyplan/orders/orderIds.md
+          description9: !include api/documentation/dailyplan/orders/late.md
           description10: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
           example: " "
@@ -1098,14 +1098,14 @@ traits:
         postJSON:
           description: Gets summary order counts for the daily plan
           description1: !include api/documentation/dailyplan/summary/dailyPlanOrdersFilterDef.md
-          description2: !include api/documentation/dailyplan/dailyPlanDate.md
-          description3: !include api/documentation/dailyplan/orders/schedules.md
-          description4: !include api/documentation/dailyplan/orders/folders.md
-          description5: !include api/documentation/dailyplan/orders/workflowPaths.md
-          description6: !include api/documentation/dailyplan/orders/late.md
-          description7: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
-          description8: !include api/documentation/dailyplan/orders/controllerIds.md
-          description9: !include api/documentation/dailyplan/orders/orderIds.md
+          description2: !include api/documentation/dailyplan/orders/dailyPlanFilterBase.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: !include api/documentation/dailyplan/orders/controllerIds.md
+          description8: !include api/documentation/dailyplan/orders/orderIds.md
+          description9: " "
           description10:
           description200: " "
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json

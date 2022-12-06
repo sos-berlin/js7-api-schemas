@@ -4,10 +4,12 @@
 	"javaType": "com.sos.webservices.order.initiator.model.ScheduleSelector",
 	"type": "object",
 	"description": "The filter for the list of order template for scheduling orders to Controller",
-	 
+	"required": [
+    	"controllerId"
+	],
 	"properties": {
        	"controllerId": {
-			"type": "string"
+			"$ref": "../../common/controllerIdRequired-schema.json"
 		},
 		"selector": {
 			"$ref": "schedulesSelectorDef-schema.json"

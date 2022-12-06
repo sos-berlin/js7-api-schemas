@@ -1,8 +1,8 @@
 <tr>
 	
-<td>``orderIds``</td>
+<td style="padding-left:20px;">``orderIds``</td>
 	
-<td>optional; array[string]</td>
+<td>optional, array[string]</td>
 	
 <td>Filters all orders in the given daily plan that have one of the order IDs in the given list of orderIds. </td>
 	

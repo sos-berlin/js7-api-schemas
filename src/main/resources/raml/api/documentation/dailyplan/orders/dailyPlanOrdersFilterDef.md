@@ -3,7 +3,7 @@
 <td>
 Specifies the elements to filter the orders that should be considered.
 All filter elements will be combined with "and".
-The values of the schedulePaths, folders, workflowPaths elements will be combined with "or".
+The elements in the lists schedulePaths, scheduleFolders, workflowPaths, workflowFolders will be combined with "or".
 
 
 The filter elements are
@@ -25,19 +25,19 @@ workflowPaths
 workflowFolders
 </li>
 <li>
-late
-</li>
-<li>
-states
-</li>
-<li>
 submissionHistoryIds
+</li>
+<li>
+controllerIds
 </li>
 <li>
 orderIds
 </li>
 <li>
-controllerIds
+late
+</li>
+<li>
+states
 </li>
 </ul> 
 

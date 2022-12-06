@@ -1,8 +1,8 @@
 <tr>
 	
-<td>``states``</td>
+<td style="padding-left:20px;">``states``</td>
 	
-<td>optional; array[string]</td>
+<td>optional, array[string]</td>
 	
 <td>Filters all orders that have one of the states specified in this list of states.
 Possible values are:
