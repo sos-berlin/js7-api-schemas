@@ -10,7 +10,6 @@
   <td>required, string</td>
   <td>String representation of the ``objectType`` from the enum ConfigurationType. The Enum consist of:
     <ul>
-      <li>"FOLDER"</li>
       <li>"WORKFLOW"</li>
       <li>"JOBRESOURCE"</li>
       <li>"NOTICEBOARD"</li>

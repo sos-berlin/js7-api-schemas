@@ -12,14 +12,13 @@
 			"type": "string",
 			"pattern": "^(/|(/[^/\\\\<>?:\"|*]+)+)$",
 			"maxLength": 255,
-			"minLength": 1,
 			"default": "/"
 		},
 		"calendarName": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"agentName": {
-			"$ref": "../../common/string100-schema.json"
+			"$ref": "../../common/string255-schema.json"
 		},
 		"subagentClusterId": {
 			"$ref": "../../common/string255-schema.json"

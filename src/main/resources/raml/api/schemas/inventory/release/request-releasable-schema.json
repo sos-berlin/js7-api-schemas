@@ -10,13 +10,13 @@
 	"anyOf": [
         {
             "required": [
-                "id"
+                "path",
+                "objectType"
             ]
         },
         {
             "required": [
-                "path",
-                "objectType"
+                "id"
             ]
         }
     ],

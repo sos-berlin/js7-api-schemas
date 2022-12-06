@@ -1,8 +1,9 @@
 <tr>
 <td>``filter``</td><td>required</td>
 <td>
-Specify the filters elements to filter the orders that should be considered. Only planned orders will be considered and submitted to the Controller.
-All filter elements will be combined with "and". The elements in the lists schedulePaths, folders, workflowPaths, states will be combined with "or"
+Specifies the filters elements to filter the orders that should be considered. Only planned orders will be considered and submitted to the Controller.
+All filter elements will be combined with "and". 
+The elements in the lists schedulePaths, scheduleFolders, workflowPaths, workflowFolders will be combined with "or"
 
 The filter elements are
 
@@ -14,19 +15,22 @@ dailyPlanDate
 schedulePaths
 </li>
 <li>
-folders
+scheduleFolders
 </li>
 <li>
 workflowPaths
 </li>
 <li>
+workflowFolders
+</li>
+<li>
 submissionHistoryIds
 </li>
 <li>
-orderIds
+controllerIds
 </li>
 <li>
-controllerIds
+orderIds
 </li>
 </ul> 
 

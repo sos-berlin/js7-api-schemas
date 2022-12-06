@@ -11,7 +11,7 @@
 	
 	"properties": {
 		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
+			"$ref": "../../common/controllerIdRequired-schema.json"
 		},
 		"overwrite": {
 			"$ref": "overwriteParam-schema.json"

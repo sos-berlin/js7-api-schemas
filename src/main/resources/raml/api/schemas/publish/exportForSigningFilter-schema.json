@@ -3,16 +3,16 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.publish.ExportForSigning",
 	"type": "object",
-  "required": [
-      "controllerId",
-      "deployables"
-  ],
+	"required": [
+    	"controllerId",
+    	"deployables"
+	],
  	"properties": {
-    "controllerId": {
-      "$ref": "../common/string255-schema.json"
-    },
-    "deployables": {
-        "$ref": "deployablesValidFilter-schema.json"
-    }
+    	"controllerId": {
+    		"$ref": "../common/controllerIdRequired-schema.json"
+		},
+		"deployables": {
+        	"$ref": "deployablesValidFilter-schema.json"
+    	}
 	}
 }

@@ -8,8 +8,7 @@
   ],
   "properties": {
     "validUntil": {
-      "type": "string",
-      "format": "date-time"
+      "$ref": "../common/timestamp-schema.json"
     },
     "keyAlgorithm" : {
       "type" : "string"

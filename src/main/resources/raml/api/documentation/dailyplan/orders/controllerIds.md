@@ -1,6 +1,6 @@
-<tr><td>``controllerIds``</td>
+<tr><td style="padding-left:20px;">``controllerIds``</td>
 	
-<td>optional; array[string]</td>
+<td>optional, array[string]</td>
 	
 <td>Filters orders that have been generated for the Controller IDs that are in the list controllerIds
 

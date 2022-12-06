@@ -1,8 +1,9 @@
 <tr>
 <td>``filter``</td><td>required</td>
 <td>
-Specify the filters elements to filter the orders that should be considered.
-All filter elements will be combined with "and". The elements in the lists schedulePaths, folders, workflowPaths, states will be combined with "or"
+Specifies the filters elements to filter the orders that should be considered.
+All filter elements will be combined with "and". 
+The elements in the lists schedulePaths, scheduleFolders, workflowPaths, workflowPaths will be combined with "or"
 
 The filter elements are
 

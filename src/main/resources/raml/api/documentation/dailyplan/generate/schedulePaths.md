@@ -1,6 +1,6 @@
 <tr><td>``schedulePaths``</td>
 	
-<td>optional; object</td>
+<td>optional, object</td>
 	
 <td>Generate orders for the given daily plan based on the schedules located in the given folder(s) or based on the selected single schedule(s).</td>
 	
