@@ -11,7 +11,7 @@
       "$ref": "../common/controllerId-schema.json"
     },
     "url": {
-      "$ref": "../common/uri-schema.json"
+      "$ref": "../common/string255required-schema.json"
     }
   }
 }
