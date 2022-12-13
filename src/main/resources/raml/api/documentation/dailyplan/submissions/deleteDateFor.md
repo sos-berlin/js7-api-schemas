@@ -1,4 +1,4 @@
-<tr><td>filter ``dateFor``</td>
+<tr><td style="padding-left:20px;">``dateFor``</td>
 	
 <td>optional, string</td>
 

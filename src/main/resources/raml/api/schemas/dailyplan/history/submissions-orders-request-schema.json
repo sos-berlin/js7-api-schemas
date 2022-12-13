@@ -10,7 +10,7 @@
 	],
 	"properties": {
 		"controllerId": {
-			"$ref": "../../common/controllerId-schema.json"
+			"$ref": "../../common/controllerIdRequired-schema.json"
 		},
 		"date": {
 			"$ref": "../../common/date-schema.json"

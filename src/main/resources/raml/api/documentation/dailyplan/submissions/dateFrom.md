@@ -1,4 +1,4 @@
-<tr><td>filter ``dateFrom``</td>
+<tr><td style="padding-left:20px;">``dateFrom``</td>
 	
 <td>optional, string</td>
 

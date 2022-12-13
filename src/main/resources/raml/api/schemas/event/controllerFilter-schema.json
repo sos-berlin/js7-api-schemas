@@ -13,5 +13,6 @@
     "eventId": {
       "$ref": "../common/nonNegativeLong-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }
