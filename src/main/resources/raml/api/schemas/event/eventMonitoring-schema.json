@@ -25,7 +25,7 @@
     "subCategory": {
       	"$ref": "../common/string255-schema.json"
     },
-    "caller": {
+    "request": {
       	"type": "string"
     },
     "timestamp": {
