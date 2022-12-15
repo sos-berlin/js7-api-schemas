@@ -17,5 +17,6 @@
     "deliveryDate": {
       "$ref": "../common/timestamp-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

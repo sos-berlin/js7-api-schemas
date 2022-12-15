@@ -1,0 +1,39 @@
+{
+  "title": "event from monitoring",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.event.EventMonitoring",
+  "type": "object",
+  "required": [
+    	"level",
+    	"category",
+    	"subCategory",
+    	"timestamp"
+  ],
+  "javaInterfaces" : [
+    	"com.sos.joc.model.common.IEventObject"
+  ],
+  "properties": {
+    "eventId": {
+      	"$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "level": {
+      	"$ref": "../common/monitoringNotificationTypeText-schema.json"
+    },
+    "category": {
+      	"$ref": "../common/string100-schema.json"
+    },
+    "subCategory": {
+      	"$ref": "../common/string255-schema.json"
+    },
+    "request": {
+      	"type": "string"
+    },
+    "timestamp": {
+      	"$ref": "../common/timestamp-schema.json"
+    },
+    "message": {
+    	"type": "string"
+    }
+  },
+  "additionalProperties": false
+}

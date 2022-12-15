@@ -7,6 +7,9 @@
     "eventType",
     "objectType"
   ],
+  "javaInterfaces" : [
+    "com.sos.joc.model.common.IEventObject"
+  ],
   "properties": {
     "path": {
       "$ref": "../common/path-schema.json"
@@ -33,5 +36,6 @@
     "message": {
       "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

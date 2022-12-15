@@ -1,6 +1,6 @@
 <tr>
 	
-<td>filter ``dateTo``</td>
+<td style="padding-left:20px;"> ``dateTo``</td>
 	
 <td>required, string</td>
 <td>This date specifies the end of interval that it used look up submissions.

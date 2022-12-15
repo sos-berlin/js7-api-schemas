@@ -1,7 +1,7 @@
 {
 	"title": "notification type text",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.common.MonitoringNotificationTypeText",
+	"javaType": "com.sos.monitoring.notification.NotificationType",
 	"type": "string",
 	"enum": [
 		"SUCCESS",
