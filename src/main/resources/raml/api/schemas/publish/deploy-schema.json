@@ -28,6 +28,9 @@
 		"delete": {
 			"$ref": "deployDelete-schema.json"
 		},
+		"ordersCancelFrom" : {
+		  "$ref": "../common/string255-schema.json"
+		},
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}

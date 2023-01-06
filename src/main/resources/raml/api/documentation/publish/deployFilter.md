@@ -9,6 +9,13 @@
 <td></td>
 </tr>
 <tr>
+<td>``ordersCancelFrom``</td>
+<td>optional, string</td>
+<td>Sets the starting date for planned or submitted orders to be canceled. The API accepts a date in UTC or the string 'now' to indicate to remove all orders from the time of deployment.</td>
+<td> "ordersCancelFrom" : "now"</td>
+<td></td>
+</tr>
+<tr>
 <td>``store``</td>
 <td>required anyOf(``store``, ``delete``), object</td>
 <td>Filter collection of deployable objects to add or update, specified by their paths and object types.</td>
