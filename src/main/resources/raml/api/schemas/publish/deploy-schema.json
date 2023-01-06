@@ -28,7 +28,7 @@
 		"delete": {
 			"$ref": "deployDelete-schema.json"
 		},
-		"ordersCancelFrom" : {
+		"addOrdersDateFrom" : {
 		  "$ref": "../common/string255-schema.json"
 		},
 		"auditLog": {

@@ -9,10 +9,10 @@
 <td></td>
 </tr>
 <tr>
-<td>``ordersCancelFrom``</td>
+<td>``addOrdersDateFrom``</td>
 <td>optional, string</td>
-<td>Sets the starting date for planned or submitted orders to be canceled. The API accepts a date in UTC or the string 'now' to indicate to remove all orders from the time of deployment.</td>
-<td> "ordersCancelFrom" : "now"</td>
+<td>Sets the starting date for orders to be added to the daily plan. The API accepts a date in UTC or the string 'now' to indicate to add orders starting from the time of deployment. Previously planned or submitted orders will be canceled.</td>
+<td> "addOrdersDateFrom" : "now"</td>
 <td></td>
 </tr>
 <tr>
