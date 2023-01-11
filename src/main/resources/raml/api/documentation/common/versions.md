@@ -1,3 +1,18 @@
+* [JOC API 2.5.2](../../../2.5.2/raml-doc/JOC-API/index.html)
+	* *NEW*
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/daily_plan/orders/cancel.html" target="newtab252">./daily_plan/orders/cancel</a>
+	* *DELETED*
+		* ./orders/daily_plan/cancel - Is replaced by <a href="../../../2.5.2/raml-doc/JOC-API/resource/daily_plan/orders/cancel.html" target="newtab252">./daily_plan/orders/cancel</a>
+	* *CHANGED*
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/daily_plan/orders.html" target="newtab252">./daily_plan/orders</a> - Request field ``dailyPlanDate`` is replaced by ``dailyPlanDateFrom`` and ``dailyPlanDateTo``
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/daily_plan/orders/submit.html" target="newtab252">./daily_plan/orders/submit</a> - Request field ``dailyPlanDate`` is replaced by ``dailyPlanDateFrom`` and ``dailyPlanDateTo``
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/daily_plan/orders/delete.html" target="newtab252">./daily_plan/orders/delete</a> - Request field ``dailyPlanDate`` is replaced by ``dailyPlanDateFrom`` and ``dailyPlanDateTo``
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/daily_plan/orders/summary.html" target="newtab252">./daily_plan/orders/summary</a> - Request field ``dailyPlanDate`` is replaced by ``dailyPlanDateFrom`` and ``dailyPlanDateTo``
+	
+* [JOC API 2.5.1](../../../2.5.1/raml-doc/JOC-API/index.html)
+	* *NEW*
+		* <a href="../../../2.5.1/raml-doc/JOC-API/resource/agents/reset.html" target="newtab251">./agents/reset</a>
+	
 * [JOC API 2.5.0](../../../2.5.0/raml-doc/JOC-API/index.html)
 	* *NEW*
 		* <a href="../../../2.5.0/raml-doc/JOC-API/resource/notification/release.html" target="newtab250">./notification/release</a>

@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.5.1
+version: 2.5.2
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -1003,28 +1003,46 @@ traits:
         example200: " "
   /orders:
     type:
-      postJSON:
+      postJSONWithoutJSId:
         description: Gets orders from the daily plan
         description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
-        description2: !include api/documentation/dailyplan/orders/dailyPlanFilterBase.md
+        description2: " "
         description3: " "
         description4: " "
         description5: " "
-        description6: " "
-        description7: !include api/documentation/dailyplan/orders/controllerIds.md
-        description8: !include api/documentation/dailyplan/orders/orderIds.md
-        description9: !include api/documentation/dailyplan/orders/late.md
-        description10: !include api/documentation/dailyplan/orders/states.md
+        description6: !include api/documentation/dailyplan/orders/controllerIds.md
+        description7: !include api/documentation/dailyplan/orders/orderIds.md
+        description8: !include api/documentation/dailyplan/orders/late.md
+        description9: !include api/documentation/dailyplan/orders/states.md
+        description10: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
         description200: " "
-        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
+        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
         schema200: !include api/schemas/orderManagement/dailyplan/plannedOrders-schema.json
         example: " "
         example200: " "
 
+    /cancel:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Cancels submitted orders for a daily plan interval
+          description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: !include api/documentation/dailyplan/orders/controllerIds.md
+          description8: !include api/documentation/dailyplan/orders/orderIds.md
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
+          example: " "
+    
     /generate:
       type:
         postJSONWithOkResponse:
-          description: Generates orders for a given daily plan
+          description: Generates orders for a daily plan interval
           description1: !include api/documentation/dailyplan/generate/dailyPlanDate.md
           description2: !include api/documentation/dailyplan/generate/schedulePaths.md
           description3: !include api/documentation/dailyplan/generate/workflowPaths.md
@@ -1039,35 +1057,37 @@ traits:
 
     /submit:
       type:
-        postJSONWithOkResponse:
-          description: Submits planned orders for a given daily plan
-          description1: !include api/documentation/dailyplan/submit/dailyPlanOrdersFilterDef.md
-          description2: !include api/documentation/dailyplan/orders/dailyPlanFilterBase.md
+        postJSONWithOkWithoutJSId:
+          description: Submits planned orders for a daily plan interval
+          description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
+          description2: " "
           description3: " "
           description4: " "
           description5: " "
           description6: " "
           description7: !include api/documentation/dailyplan/submit/controllerIds.md
           description8: !include api/documentation/dailyplan/orders/orderIds.md
-          description9: " "
-          description10: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
+          description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
           example: " "
     /delete:
       type:
-        postJSONWithOkResponse:
-          description: Deletes planned orders for a given daily plan
-          description1: !include api/documentation/dailyplan/delete/dailyPlanOrdersFilterDef.md
-          description2: !include api/documentation/dailyplan/orders/dailyPlanFilterBase.md
+        postJSONWithOkWithoutJSId:
+          description: Deletes planned orders for a daily plan interval
+          description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
+          description2: " "
           description3: " "
           description4: " "
           description5: " "
-          description6: " "
-          description7: !include api/documentation/dailyplan/orders/controllerIds.md
-          description8: !include api/documentation/dailyplan/orders/orderIds.md
-          description9: !include api/documentation/dailyplan/orders/late.md
-          description10: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
+          description6: !include api/documentation/dailyplan/orders/controllerIds.md
+          description7: !include api/documentation/dailyplan/orders/orderIds.md
+          description8: !include api/documentation/dailyplan/orders/late.md
+          description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
           example: " "
     /modify:
       type:
@@ -1095,20 +1115,20 @@ traits:
 
     /summary:
       type:
-        postJSON:
+        postJSONWithoutJSId:
           description: Gets summary order counts for the daily plan
-          description1: !include api/documentation/dailyplan/summary/dailyPlanOrdersFilterDef.md
-          description2: !include api/documentation/dailyplan/orders/dailyPlanFilterBase.md
+          description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
+          description2: " "
           description3: " "
           description4: " "
           description5: " "
           description6: " "
           description7: !include api/documentation/dailyplan/orders/controllerIds.md
           description8: !include api/documentation/dailyplan/orders/orderIds.md
-          description9: " "
+          description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
           description10:
           description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
           schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanOrderSummary-schema.json
           example: " "
           example200: " "
@@ -3615,25 +3635,6 @@ traits:
         positionParam: " "
         variablesParam: " "
         audit: !include api/documentation/audit/auditLog.md
-  /daily_plan/cancel:
-    type:
-      postJSON:
-        description: Cancels orders
-        description1: !include api/documentation/order/cancelOrderIds.md
-        description2: !include api/documentation/order/dailyPlanDate.md
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description8: " "
-        description9: " "
-        description10: !include api/documentation/audit/auditLog.md
-        description200:
-        schema: !include api/schemas/order/cancelDailyPlanOrders-schema.json
-        schema200: !include api/schemas/common/ok-schema.json
-        example:
-        example200:
 
   /history:
     type:

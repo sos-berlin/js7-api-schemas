@@ -1,6 +1,6 @@
 <tr>
 	
-<td style="padding-left:20px;">``orderIds``</td>
+<td>``orderIds``</td>
 	
 <td>optional, array[string]</td>
 	

@@ -1,6 +1,6 @@
 <tr>
 	
-<td style="padding-left:20px;">``states``</td>
+<td>``states``</td>
 	
 <td>optional, array[string]</td>
 	

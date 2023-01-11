@@ -20,8 +20,12 @@
 		"dailyPlanDate": {
 			"$ref": "../common/date-schema.json"
 		},
+		"dailyPlanDateFrom": {
+			"$ref": "../common/date-schema.json"
+		},
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }
