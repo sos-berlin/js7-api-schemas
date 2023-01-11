@@ -1,11 +1,11 @@
 {
-	"title": "Daily Plan  Order Filter Definition",
+	"title": "Daily Plan Order Filter Definition",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderFilterDef",
 	"type": "object",
-	"description": "Define the filter To get orders from the daily plan",
+	"description": "Define the filter to get orders from the daily plan",
 	"required": [
-	  "dailyPlanDate"
+		"dailyPlanDateFrom"
 	],
 	"properties": {
 		"submissionHistoryIds": {
@@ -53,11 +53,17 @@
 		"late": {
 			"type": "boolean"
 		},
-		"dailyPlanDate": {
+		"dailyPlanDateFrom": {
 			"$ref": "../../common/date-schema.json"
 		},
-		"schedulesFolder": {
-			"$ref": "../../common/path-schema.json"
+		"dailyPlanDateTo": {
+			"$ref": "../../common/date-schema.json"
+		},
+		"expandCycleOrders": {
+			"$ref": "expandCycleOrdersParam-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
 		}
 	}
 }
