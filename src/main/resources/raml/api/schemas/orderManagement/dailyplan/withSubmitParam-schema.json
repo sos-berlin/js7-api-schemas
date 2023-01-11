@@ -1,7 +1,0 @@
-{
-  "title": "withSubmit parameter",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "controls if the order should be submitted to the controller",
-  "type": "boolean",
-  "default": true
-}

@@ -35,7 +35,7 @@
 		"orderIds": {
 			"type": "array",
 			"items": {
-				"type": "string"
+				"$ref": "../../common/string255-schema.json"
 			}
 		},
 		"controllerIds": {
@@ -60,7 +60,9 @@
 			"$ref": "../../common/date-schema.json"
 		},
 		"expandCycleOrders": {
-			"$ref": "expandCycleOrdersParam-schema.json"
+			"description": "for internal use only: controls if the cycle order should be expanded in the answer",
+  			"type": "boolean",
+  			"default": false
 		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"

@@ -1004,7 +1004,7 @@ traits:
   /orders:
     type:
       postJSONWithoutJSId:
-        description: Gets orders from the daily plan
+        description: Gets orders from a daily plan interval
         description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
         description2: " "
         description3: " "
@@ -1042,7 +1042,7 @@ traits:
     /generate:
       type:
         postJSONWithOkResponse:
-          description: Generates orders for a daily plan interval
+          description: Generates orders for a given daily plan
           description1: !include api/documentation/dailyplan/generate/dailyPlanDate.md
           description2: !include api/documentation/dailyplan/generate/schedulePaths.md
           description3: !include api/documentation/dailyplan/generate/workflowPaths.md
@@ -1116,7 +1116,7 @@ traits:
     /summary:
       type:
         postJSONWithoutJSId:
-          description: Gets summary order counts for the daily plan
+          description: Gets summary order counts from a daily plan interval
           description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
           description2: " "
           description3: " "

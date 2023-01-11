@@ -1,7 +1,0 @@
-{
-  "title": "expandCycleOrders parameter",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "controls if the cycle order should be expanded in the answer",
-  "type": "boolean",
-  "default": false
-}
