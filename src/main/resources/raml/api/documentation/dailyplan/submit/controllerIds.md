@@ -1,4 +1,4 @@
-<tr><td style="padding-left:20px;">``controllerIds``</td>
+<tr><td>``controllerIds``</td>
 	
 <td>optional; array[string]</td>
 	

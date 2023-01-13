@@ -1,6 +1,6 @@
 <tr>
 	
-<td style="padding-left:20px;">``late``</td>
+<td>``late``</td>
 	
 <td>optional, boolean</td>
 	
