@@ -1,27 +1,32 @@
 {
-	"title": "release",
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.inventory.release.ReleaseFilter",
-	"type": "object",
-	"anyOf": [
-		{ "required": [ "update" ] },
-		{ "required": [ "delete" ] }
-	],
-	"properties": {
-		"update": {
-			"type": "array",
-			"items": {
-				"$ref": "../common/request-filter-schema.json"
-			}
-		},
-		"delete": {
-      		"type": "array",
-      		"items": {
-        		"$ref": "../common/request-filter-schema.json"
-      		}
-    	},
-    	"auditLog": {
-      		"$ref": "../../audit/auditParams-schema.json"
-    	}
-  	}
+  "title": "release",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.release.ReleaseFilter",
+  "type": "object",
+  "anyOf": [{
+      "required": ["update"]
+    }, {
+      "required": ["delete"]
+    }
+  ],
+  "properties": {
+    "update": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/request-filter-schema.json"
+      }
+    },
+    "delete": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/request-filter-schema.json"
+      }
+    },
+    "addOrdersDateFrom": {
+      "$ref": "../../common/string255-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../../audit/auditParams-schema.json"
+    }
+  }
 }
