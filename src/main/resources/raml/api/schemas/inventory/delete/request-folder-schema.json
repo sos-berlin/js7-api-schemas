@@ -1,0 +1,17 @@
+{
+	"title": "Filter of a folder",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.delete.RequestFolder",
+	"type": "object",
+  "extends" : {
+    "$ref": "../common/request-folder-schema.json"
+  },
+	"required": [
+		"path"
+	],
+	"properties": {
+    "cancelOrdersDateFrom": {
+      "$ref": "../../common/string255-schema.json"
+    }
+	}
+}

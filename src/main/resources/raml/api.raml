@@ -2463,12 +2463,12 @@ traits:
       postJSONWithOkWithoutJSId:
         description: Removes configurations of inventory objects
         description1: !include api/documentation/inventory/idsOrPathsAndTypes.md
-        description2: " "
+        description2: !include api/documentation/inventory/cancelOrdersDate.md
         description3: " "
         description4: " "
         description5: " "
         audit: !include api/documentation/audit/auditLog.md
-        schema: !include api/schemas/inventory/common/request-filters-schema.json
+        schema: !include api/schemas/inventory/delete/request-filters-schema.json
         example: !include api/examples/inventory/pathsTypes-example.json
 
   /remove/folder:
@@ -2476,12 +2476,12 @@ traits:
       postJSONWithOkWithoutJSId:
         description: Removes folder of inventory objects
         description1: !include api/documentation/inventory/path.md
-        description2: " "
+        description2: !include api/documentation/inventory/cancelOrdersDate.md
         description3: " "
         description4: " "
         description5: " "
         audit: !include api/documentation/audit/auditLog.md
-        schema: !include api/schemas/inventory/common/request-folder-schema.json
+        schema: !include api/schemas/inventory/delete/request-folder-schema.json
         example: TODO
 
   /rename:
