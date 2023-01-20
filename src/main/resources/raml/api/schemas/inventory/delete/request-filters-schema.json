@@ -1,0 +1,17 @@
+{
+	"title": "common inventory request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.delete.RequestFilters",
+	"type": "object",
+  "extends" : {
+    "$ref": "../common/request-filters-schema.json"
+  },
+	"required": [
+	  "objects"
+	],
+	"properties": {
+    "cancelOrdersDateFrom": {
+      "$ref": "../../common/string255-schema.json"
+    }
+	}
+}

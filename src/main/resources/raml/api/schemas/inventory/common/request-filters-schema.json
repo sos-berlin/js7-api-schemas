@@ -8,15 +8,15 @@
 	],
 	"properties": {
 	  "objects" : {
-		"type": "array",
-		"uniqueItems": true,
-		"minItems": 1,
-		"items": {
-		  "$ref": "request-filter-schema.json"
-		}
+  		"type": "array",
+  		"uniqueItems": true,
+  		"minItems": 1,
+  		"items": {
+  		  "$ref": "request-filter-schema.json"
+  		}
 	  },
-      "auditLog": {
-      	"$ref": "../../audit/auditParams-schema.json"
-      }
+    "auditLog": {
+    	"$ref": "../../audit/auditParams-schema.json"
+    }
 	}
 }
