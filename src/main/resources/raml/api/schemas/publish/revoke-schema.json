@@ -20,6 +20,9 @@
 				"$ref": "config-schema.json"
 			}
 		},
+    "cancelOrdersDateFrom" : {
+      "$ref": "../common/string255-schema.json"
+    },
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}
