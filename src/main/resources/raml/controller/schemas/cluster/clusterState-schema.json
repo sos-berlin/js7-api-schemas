@@ -37,6 +37,9 @@
         	"$ref": "clusterWatcher-schema.json"
           }
         },
+        "clusterWatchId": {
+        	"type": "string"
+        },
         "timing": {
           "type": "object",
       	  "javaType": "com.sos.controller.model.cluster.ClusterTiming",
