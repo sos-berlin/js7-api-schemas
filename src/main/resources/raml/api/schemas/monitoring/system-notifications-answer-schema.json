@@ -1,0 +1,22 @@
+{
+  "title": "monitoring collection of notifications",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "javaType": "com.sos.joc.model.monitoring.SystemNotificationsAnswer",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "notifications"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "notifications": {
+      "type": "array",
+      "items": {
+        "$ref": "items/system-notification-item-schema.json"
+      }
+    }
+  }
+}
