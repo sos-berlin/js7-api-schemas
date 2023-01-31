@@ -1,0 +1,10 @@
+{
+	"title": "notification type text",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.monitoring.notification.SystemNotificationCategory",
+	"type": "string",
+	"enum": [
+		"JOC",
+		"SYSTEM"
+	]
+}
