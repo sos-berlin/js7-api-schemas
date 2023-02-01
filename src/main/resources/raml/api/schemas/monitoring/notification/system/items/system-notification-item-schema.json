@@ -10,7 +10,6 @@
 		"hasMonitors",
 		"section",
 		"notifier",
-		"time",
 		"created"
 	],
 	"properties": {
@@ -31,9 +30,6 @@
 		},
 		"notifier": {
 			"type": "string"
-		},
-		"time": {
-			"$ref": "../../../../common/timestamp-schema.json"
 		},
 		"message": {
 			"type": "string"
