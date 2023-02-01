@@ -1,20 +1,16 @@
 {
 	"title": "notification filter with notification id",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.monitoring.NotificationAcknowledgeFilter",
+	"javaType": "com.sos.joc.model.monitoring.notification.system.SystemNotificationAcknowledgeFilter",
 	"type": "object",
 	"required": [
-		"controllerId",
 		"notificationIds"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../common/controllerIdRequired-schema.json"
-		},
 		"notificationIds": {
 			"type": "array",
 			"items": {
-				"$ref": "../common/nonNegativeLong-schema.json"
+				"$ref": "../../../common/nonNegativeLong-schema.json"
 			}
 		},
 		"comment": {
@@ -22,7 +18,7 @@
 			"maxLength": 2000
 		},
 		"auditLog": {
-      		"$ref": "../audit/auditParams-schema.json"
+      		"$ref": "../../../audit/auditParams-schema.json"
     	}
 	}
 }

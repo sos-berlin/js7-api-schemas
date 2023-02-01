@@ -1,7 +1,7 @@
 {
 	"title": "order object in history collection",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.monitoring.NotificationItemJobItem",
+	"javaType": "com.sos.joc.model.monitoring.notification.order.items.OrderNotificationJobItem",
 	"type": "object",
 	"required": [
 		"job",
@@ -17,28 +17,28 @@
 			"type": "string"
 		},
 		"startTime": {
-			"$ref": "../../common/timestamp-schema.json"
+			"$ref": "../../../../common/timestamp-schema.json"
 		},
 		"endTime": {
-			"$ref": "../../common/timestamp-schema.json"
+			"$ref": "../../../../common/timestamp-schema.json"
 		},
 		"position": {
 			"type": "string"
 		},
 		"state": {
-			"$ref": "../../common/historyState-schema.json"
+			"$ref": "../../../../common/historyState-schema.json"
 		},
 		"criticality": {
 			"type": "string"
 		},
 		"taskId": {
-			"$ref": "../../common/nonNegativeLong-schema.json"
+			"$ref": "../../../../common/nonNegativeLong-schema.json"
 		},
 		"agentUrl": {
 			"type": "string"
 		},
 		"exitCode": {
-			"$ref": "../../common/nonNegativeInteger-schema.json"
+			"$ref": "../../../../common/nonNegativeInteger-schema.json"
 		}
 	}
 }
