@@ -1,14 +1,14 @@
 {
 	"title": "notifications filter",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.monitoring.NotificationsFilter",
+	"javaType": "com.sos.joc.model.monitoring.notification.order.OrderNotificationsFilter",
 	"type": "object",
 	"properties": {
 		"controllerId": {
-			"$ref": "../common/controllerId-schema.json"
+			"$ref": "../../../common/controllerId-schema.json"
 		},
 		"dateFrom": {
-			"$ref": "../common/dateFromTo-schema.json"
+			"$ref": "../../../common/dateFromTo-schema.json"
 		},
 		"timeZone": {
 			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
@@ -22,13 +22,13 @@
 		"types": {
 			"type": "array",
 			"items": {
-				"$ref": "../common/monitoringNotificationTypeText-schema.json"
+				"$ref": "../../../common/monitoringNotificationTypeText-schema.json"
 			}
 		},
 		"notificationIds": {
 			"type": "array",
 			"items": {
-				"$ref": "../common/nonNegativeLong-schema.json"
+				"$ref": "../../../common/nonNegativeLong-schema.json"
 			}
 		}
 	}

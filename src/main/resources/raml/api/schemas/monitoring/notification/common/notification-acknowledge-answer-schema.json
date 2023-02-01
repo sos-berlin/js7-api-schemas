@@ -2,7 +2,7 @@
 	"title": "notification collection of monitors",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"description": "",
-	"javaType": "com.sos.joc.model.monitoring.NotificationAcknowledgeAnswer",
+	"javaType": "com.sos.joc.model.monitoring.notification.common.NotificationAcknowledgeAnswer",
 	"type": "object",
 	"required": [
 		"deliveryDate",
@@ -10,10 +10,10 @@
 	],
 	"properties": {
 		"deliveryDate": {
-			"$ref": "../common/timestamp-schema.json"
+			"$ref": "../../../common/timestamp-schema.json"
 		},
 		"acknowledgement": {
-			"$ref": "items/notification-item-acknowledgement-item-schema.json"
+			"$ref": "acknowledgement-item-schema.json"
 		}
 	}
 }

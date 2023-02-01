@@ -1,7 +1,7 @@
 {
 	"title": "order object in history collection",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.monitoring.MonitorItem",
+	"javaType": "com.sos.joc.model.monitoring.notification.common.MonitorItem",
 	"type": "object",
 	"required": [
 		"type",
@@ -13,7 +13,7 @@
 	],
 	"properties": {
 		"type": {
-			"$ref": "../../common/monitoringMonitorTypeText-schema.json"
+			"$ref": "../../../common/monitoringMonitorTypeText-schema.json"
 		},
 		"name": {
 			"type": "string"
@@ -28,7 +28,7 @@
 			"type": "string"
 		},
 		"created": {
-			"$ref": "../../common/timestamp-schema.json"
+			"$ref": "../../../common/timestamp-schema.json"
 		}
 	}
 }

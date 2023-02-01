@@ -1,0 +1,38 @@
+{
+	"title": "notifications filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.notification.system.SystemNotificationsFilter",
+	"type": "object",
+	"properties": {
+		"dateFrom": {
+			"$ref": "../../../common/dateFromTo-schema.json"
+		},
+		"timeZone": {
+			"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+			"type": "string"
+		},
+		"limit": {
+			"description": "to restrict the number of responsed records; -1=unlimited",
+			"type": "integer",
+			"default": 10000
+		},
+		"types": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../common/monitoringNotificationTypeText-schema.json"
+			}
+		},
+		"categories": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../common/monitoringSystemNotificationCategoryText-schema.json"
+			}
+		},
+		"notificationIds": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../common/nonNegativeLong-schema.json"
+			}
+		}
+	}
+}

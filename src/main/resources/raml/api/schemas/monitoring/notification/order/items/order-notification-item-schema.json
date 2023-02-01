@@ -1,7 +1,7 @@
 {
 	"title": "notification object in monitoring notifications collection",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.monitoring.NotificationItem",
+	"javaType": "com.sos.joc.model.monitoring.notification.order.items.OrderNotificationItem",
 	"type": "object",
 	"required": [
 		"notificationId",
@@ -14,16 +14,16 @@
 	],
 	"properties": {
 		"notificationId": {
-			"$ref": "../../common/nonNegativeLong-schema.json"
+			"$ref": "../../../../common/nonNegativeLong-schema.json"
 		},
 		"recoveredNotificationId": {
-			"$ref": "../../common/nonNegativeLong-schema.json"
+			"$ref": "../../../../common/nonNegativeLong-schema.json"
 		},
 		"type": {
-			"$ref": "../../common/monitoringNotificationTypeText-schema.json"
+			"$ref": "../../../../common/monitoringNotificationTypeText-schema.json"
 		},
 		"created": {
-			"$ref": "../../common/timestamp-schema.json"
+			"$ref": "../../../../common/timestamp-schema.json"
 		},
 		"hasMonitors": {
 			"type": "boolean"
@@ -35,16 +35,16 @@
 			"type": "string"
 		},
 		"workflow": {
-			"$ref": "../../common/path-schema.json"
+			"$ref": "../../../../common/path-schema.json"
 		},
 		"message": {
 			"type": "string"
 		},
 		"job": {
-			"$ref": "notification-item-job-item-schema.json"
+			"$ref": "order-notification-job-item-schema.json"
 		},
 		"acknowledgement": {
-			"$ref": "notification-item-acknowledgement-item-schema.json"
+			"$ref": "../../common/acknowledgement-item-schema.json"
 		}
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"title": "notification object in monitoring notifications collection",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.monitoring.SystemNotificationItem",
+	"javaType": "com.sos.joc.model.monitoring.notification.system.items.SystemNotificationItem",
 	"type": "object",
 	"required": [
 		"notificationId",
@@ -15,13 +15,13 @@
 	],
 	"properties": {
 		"notificationId": {
-			"$ref": "../../common/nonNegativeLong-schema.json"
+			"$ref": "../../../../common/nonNegativeLong-schema.json"
 		},
 		"type": {
-			"$ref": "../../common/monitoringNotificationTypeText-schema.json"
+			"$ref": "../../../../common/monitoringNotificationTypeText-schema.json"
 		},
 		"category": {
-			"$ref": "../../common/monitoringSystemNotificationCategoryText-schema.json"
+			"$ref": "../../../../common/monitoringSystemNotificationCategoryText-schema.json"
 		},
 		"hasMonitors": {
 			"type": "boolean"
@@ -33,7 +33,7 @@
 			"type": "string"
 		},
 		"time": {
-			"$ref": "../../common/timestamp-schema.json"
+			"$ref": "../../../../common/timestamp-schema.json"
 		},
 		"message": {
 			"type": "string"
@@ -42,10 +42,10 @@
 			"type": "string"
 		},
 		"created": {
-			"$ref": "../../common/timestamp-schema.json"
+			"$ref": "../../../../common/timestamp-schema.json"
 		},
 		"acknowledgement": {
-			"$ref": "notification-item-acknowledgement-item-schema.json"
+			"$ref": "../../common/acknowledgement-item-schema.json"
 		}
 	}
 }
