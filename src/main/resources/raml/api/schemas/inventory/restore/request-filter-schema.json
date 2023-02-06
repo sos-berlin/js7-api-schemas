@@ -7,15 +7,15 @@
     	"$ref": "../common/request-filter-schema.json"
   	},
 	"anyOf": [
-        {
+		{
             "required": [
-                "id"
+                "path",
+                "objectType"
             ]
         },
         {
             "required": [
-                "path",
-                "objectType"
+                "id"
             ]
         }
     ],
