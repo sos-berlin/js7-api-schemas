@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum SystemNotificationCategory {
 
-    JOC(0), SYSTEM(1);
+    SYSTEM(0), JOC(1), CONTROLLER(2), AGENT(3);
 
     private final Integer intValue;
     private final static Map<String, SystemNotificationCategory> CONSTANTS = new HashMap<String, SystemNotificationCategory>();
