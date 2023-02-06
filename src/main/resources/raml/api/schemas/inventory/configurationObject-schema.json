@@ -4,15 +4,15 @@
 	"javaType": "com.sos.joc.model.inventory.ConfigurationObject",
 	"type": "object",
 	"anyOf": [
-        {
+		{
             "required": [
-                "id"
+                "path",
+                "objectType"
             ]
         },
         {
             "required": [
-                "path",
-                "objectType"
+                "id"
             ]
         }
     ],
