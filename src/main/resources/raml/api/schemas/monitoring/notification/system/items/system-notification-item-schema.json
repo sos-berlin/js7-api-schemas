@@ -7,9 +7,9 @@
 		"notificationId",
 		"type",
 		"category",
-		"hasMonitors",
-		"section",
+		"source",
 		"notifier",
+		"hasMonitors",
 		"created"
 	],
 	"properties": {
@@ -22,10 +22,7 @@
 		"category": {
 			"$ref": "../../../../common/monitoringSystemNotificationCategoryText-schema.json"
 		},
-		"hasMonitors": {
-			"type": "boolean"
-		},
-		"section": {
+		"source": {
 			"type": "string"
 		},
 		"notifier": {
@@ -36,6 +33,9 @@
 		},
 		"exception": {
 			"type": "string"
+		},
+		"hasMonitors": {
+			"type": "boolean"
 		},
 		"created": {
 			"$ref": "../../../../common/timestamp-schema.json"

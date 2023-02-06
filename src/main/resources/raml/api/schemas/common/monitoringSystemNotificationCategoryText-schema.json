@@ -4,7 +4,9 @@
 	"javaType": "com.sos.monitoring.notification.SystemNotificationCategory",
 	"type": "string",
 	"enum": [
+		"SYSTEM",
 		"JOC",
-		"SYSTEM"
+		"CONTROLLER",
+		"AGENT"
 	]
 }
