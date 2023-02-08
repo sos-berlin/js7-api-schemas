@@ -1,0 +1,38 @@
+{
+	"title": "delete/post notice",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.board.ModifyNotices",
+	"type": "object",
+	"required": [
+		"controllerId",
+		"noticeBoardPath",
+		"noticeIds"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/controllerIdRequired-schema.json"
+		},
+		"noticeBoardPath": {
+			"$ref": "../common/string255required-schema.json"
+		},
+		"noticeIds": {
+			"type": "array",
+			"uniqueItems": true,
+			"minItems": 1,
+			"items": {
+				"type": "string",
+			    "minLength": 1
+			}
+		},
+		"endOfLife": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"timeZone": {
+			"$ref": "../common/timezone-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
