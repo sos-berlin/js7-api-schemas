@@ -1,0 +1,14 @@
+{
+	"title": "JS7 Deployment Descriptor Edit configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.descriptor.DeploymentDescriptorEdit",
+	"type": "object",
+	"extends": {
+		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+	},
+	"properties": {
+		"configuration": {
+			"$ref": "../../../inventory/schemas/deploymentDescriptor/deploymentDescriptor-schema.json"
+		}
+	}
+}
