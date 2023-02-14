@@ -60,7 +60,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     @JsonSubTypes.Type(value = com.sos.joc.model.calendar.NonWorkingDaysCalendarEdit.class, name = "NONWORKINGDAYSCALENDAR"),
     @JsonSubTypes.Type(value = com.sos.webservices.order.initiator.model.ScheduleEdit.class, name = "SCHEDULE"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.script.ScriptEdit.class, name = "INCLUDESCRIPT"),
-    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.folder.FolderEdit.class, name = "FOLDER")})
+    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.folder.FolderEdit.class, name = "FOLDER"),
+    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.descriptor.DeploymentDescriptorEdit.class, name = "DEPLOYMENTDESCRIPTOR")})
 public class ConfigurationObject {
 
     /**
