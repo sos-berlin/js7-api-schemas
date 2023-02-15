@@ -25,10 +25,16 @@
         "$ref": "eventSnapshot-schema.json"
       }
     },
-    "eventsFromMonitoring": {
+    "eventsFromSystemMonitoring": {
       "type": "array",
       "items": {
         "$ref": "eventMonitoring-schema.json"
+      }
+    },
+    "eventsFromOrderMonitoring": {
+      "type": "array",
+      "items": {
+        "$ref": "eventOrderMonitoring-schema.json"
       }
     },
     "deliveryDate": {

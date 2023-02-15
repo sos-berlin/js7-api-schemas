@@ -1,12 +1,11 @@
 {
-  "title": "event from monitoring",
+  "title": "event from order monitoring",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.event.EventMonitoring",
+  "javaType": "com.sos.joc.model.event.EventOrderMonitoring",
   "type": "object",
   "required": [
     	"level",
-    	"category",
-    	"source",
+    	"workflowName",
     	"timestamp"
   ],
   "javaInterfaces" : [
@@ -19,14 +18,14 @@
     "level": {
       	"$ref": "../common/monitoringNotificationTypeText-schema.json"
     },
-    "category": {
-      	"$ref": "../common/string100-schema.json"
-    },
-    "source": {
+    "workflowName": {
       	"$ref": "../common/string255-schema.json"
     },
-    "request": {
-      	"type": "string"
+    "orderId": {
+      	"$ref": "../common/string255-schema.json"
+    },
+    "jobName": {
+      	"$ref": "../common/string255-schema.json"
     },
     "timestamp": {
       	"$ref": "../common/timestamp-schema.json"
