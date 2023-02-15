@@ -19,7 +19,8 @@
         "ActiveNodeIsNotReady",
         "SwitchedOver",
         "FailedOver",
-        "ActiveShutDown" 
+        "ActiveShutDown",
+        "NodeLossToBeConfirmed"
       ]
     },
     "setting": {
