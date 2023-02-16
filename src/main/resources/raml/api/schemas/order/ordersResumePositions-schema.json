@@ -21,6 +21,10 @@
     "disabledPositionChange": {
     	"$ref": "positionChange-schema.json"
     },
+    "constants": {
+      "description": "order arguments; only if one orderId is set",
+      "$ref": "../../../inventory/schemas/common/variables-schema.json"
+    },
     "variables": {
       "description": "variables of the current position; only if one orderId is set",
       "$ref": "../../../inventory/schemas/common/variables-schema.json"

@@ -852,6 +852,14 @@ traits:
         failover: " "
         audit: !include api/documentation/audit/auditLog.md
 
+  /cluster/confirm_node_loss:
+    type:
+      postWithOkResponse:
+        description: Confirms a loss node of the Controller Cluster is really lost
+        urlparam: " "
+        failover: " "
+        audit: !include api/documentation/audit/auditLog.md
+        
   /cluster/switchover:
     type:
       postWithOkResponse:
@@ -3508,6 +3516,10 @@ traits:
         schema200: !include api/schemas/order/orderHistoryItemChildren-schema.json
         example: " "
         example200: !include api/examples/order/response-orderHistoryItemChilds-example.json
+    post:
+      responses:
+        434:
+     
   /log:
     type:
       postJSON:
