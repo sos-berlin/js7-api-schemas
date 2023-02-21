@@ -1,0 +1,30 @@
+{
+  "title": "filter for descriptor copy",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.descriptor.copy.RequestFilter",
+  "type": "object",
+  "extends": {
+    "$ref": "../common/request-filter-schema.json"
+  },
+  "required": [
+    "path",
+    "objectType",
+    "newPath"
+  ],
+  "properties": {
+    "newPath": {
+      "$ref": "../../common/string255required-schema.json"
+    },
+    "objectType": {
+      "$ref": "../../inventory/common/configurationType-schema.json"
+    },
+    "suffix": {
+      "description": "default: '-copy<number>'",
+      "$ref": "../../common/string100-schema.json"
+    },
+    "prefix": {
+      "description": "default: empty",
+      "$ref": "../../common/string100-schema.json"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Filter of a descriptor folder",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.descriptor.common.RequestFolder",
+  "type": "object",
+  "required": [
+    "path"
+  ],
+  "properties": {
+    "path": {
+      "$ref": "../../common/path-schema.json"
+    },
+    "recursive": {
+      "type": "boolean",
+      "default": false
+    },
+    "onlyValidObjects": {
+      "type": "boolean",
+      "default": false
+    },
+    "auditLog": {
+      "$ref": "../../audit/auditParams-schema.json"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "filter for descriptor restore",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.descriptor.restore.RequestFilter",
+  "type": "object",
+  "extends": {
+    "$ref": "../common/request-filter-schema.json"
+  },
+  "required": [
+    "path",
+    "objectType"
+  ],
+  "properties": {
+    "newPath": {
+      "$ref": "../../common/string255-schema.json"
+    },
+    "objectType": {
+      "$ref": "../../inventory/common/configurationType-schema.json"
+    },
+    "suffix": {
+      "description": "default: '-copy<number>'",
+      "$ref": "../../common/string100-schema.json"
+    },
+    "prefix": {
+      "description": "default: empty",
+      "$ref": "../../common/string100-schema.json"
+    }
+  }
+}

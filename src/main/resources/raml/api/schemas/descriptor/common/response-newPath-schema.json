@@ -1,0 +1,19 @@
+{
+  "title": "path of copied, restored or renamed object/folder",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.descriptor.common.ResponseRenamed",
+  "type": "object",
+  "description": "response of copy-, rename- and restore requests",
+  "required": [
+    "deliveryDate",
+    "path"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../../common/timestamp-schema.json"
+    },
+    "path": {
+      "$ref": "../../common/string255-schema.json"
+    }
+  }
+}

@@ -1241,6 +1241,223 @@ traits:
           example: " "
           example200: " "
 
+/descriptor:
+  description: This is not an API call. Use its children!!
+  /copy:
+    type:
+      postJSONWithoutJSId:
+        description: copies deployment descriptor object
+        description1: !include api/documentation/descriptor/path.md
+        description2: !include api/documentation/descriptor/newPath.md
+        description3: !include api/documentation/inventory/suffixPrefix4copy.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        description200: " "
+        schema: !include api/schemas/descriptor/copy/request-filter-schema.json
+        example: !include api/examples/inventory/rename-example.json
+        schema200: !include api/schemas/inventory/common/response-newPath-schema.json
+        example200: " "
+
+  /read:
+    type:
+      postJSONWithoutJSId:
+        description: Reads configuration of a deployment descriptor object
+        description1: !include api/documentation/descriptor/path.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/descriptor/common/request-filter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/configurationObject-schema.json
+        example200: TODO
+
+  /read/folder:
+    type:
+      postJSONWithoutJSId:
+        description: Reads deployment descriptors folder content
+        description1: !include api/documentation/descriptor/folderpath.md
+        description2: !include api/documentation/common/recursive.md
+        description3: !include api/documentation/inventory/onlyValidObjects.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/descriptor/common/request-folder-schema.json
+        example: TODO
+        schema200: !include api/schemas/descriptor/common/response-folder-schema.json
+        example200: TODO
+        
+  /remove:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Removes deployment descriptor objects
+        description1: !include api/documentation/descriptor/paths.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/descriptor/remove/request-filters-schema.json
+        example: !include api/examples/descriptor/paths-example.json
+
+  /remove/folder:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Removes folder of inventory objects
+        description1: !include api/documentation/descriptor/folderpath.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/descriptor/common/request-folder-schema.json
+        example: TODO
+
+  /rename:
+    type:
+      postJSONWithoutJSId:
+        description: Renames/Moves inventory object
+        description1: !include api/documentation/descriptor/path.md
+        description2: !include api/documentation/descriptor/newPath.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        description200: " "
+        schema: !include api/schemas/descriptor/rename/request-filter-schema.json
+        example: !include api/examples/descriptor/rename-example.json
+        schema200: !include api/schemas/descriptor/common/response-newPath-schema.json
+        example200: " "
+
+  /store:
+    type:
+      postJSONWithoutJSId:
+        description: Stores inventory object
+        description1: !include api/documentation/descriptor/path.md
+        description2: !include api/documentation/descriptor/configuration-request.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        description200: 
+        schema: !include api/schemas/inventory/configurationObject-schema.json
+        example: " "
+        schema200: !include api/schemas/inventory/configurationObject-schema.json
+        example200: !include api/examples/descriptor/store-response-example.json
+
+  /trash:
+    description: This is not an API call. Use its children!!
+
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes discarded deployment descriptors
+          description1: !include api/documentation/descriptor/paths.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/descriptor/remove/request-filters-schema.json
+          example: !include api/examples/descriptor/paths-example.json
+
+    /delete/folder:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes folder of discarded deployment descriptor
+          description1: !include api/documentation/descriptor/folderpath.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/descriptor/common/request-folder-schema.json
+          example: TODO
+
+    /read:
+      type:
+        postJSONWithoutJSId:
+          description: Reads configuration of a discarded deployment descriptor
+          description1: !include api/documentation/descriptor/path.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/descriptor/common/request-filter-schema.json
+          example: TODO
+          schema200: !include api/schemas/inventory/configurationObject-schema.json
+          example200: TODO
+
+    /read/folder:
+      type:
+        postJSONWithoutJSId:
+          description: Reads folder content
+          description1: !include api/documentation/descriptor/folderpath.md
+          description2: !include api/documentation/common/recursive.md
+          description3: !include api/documentation/inventory/onlyValidObjects.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/descriptor/common/request-folder-schema.json
+          example: TODO
+          schema200: !include api/schemas/descriptor/common/response-folder-schema.json
+          example200: TODO
+
+    /restore:
+      type:
+        postJSONWithoutJSId:
+          description: Restore a discarded inventory object
+          description1: !include api/documentation/descriptor/path.md
+          description2: !include api/documentation/descriptor/newRestorePath.md
+          description3: !include api/documentation/inventory/suffixPrefix4restore.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: !include api/documentation/audit/auditLog.md
+          description200: 
+          schema: !include api/schemas/descriptor/restore/request-filter-schema.json
+          example: !include api/examples/descriptor/path-example.json
+          schema200: !include api/schemas/descriptor/common/response-newPath-schema.json
+          example200: " "
+
 /documentation:
   description: This is not an API call. Use its children!!
 
@@ -2342,7 +2559,7 @@ traits:
     type:
       postJSONWithoutJSId:
         description: Reads configuration of an inventory object
-        description1: !include api/documentation/inventory/idOrPathAndTypeOrNameAndType.md
+        description1: !include api/documentation/inventory/idOrPathAndType.md
         description2: !include api/documentation/inventory/commitId.md
         description3: !include api/documentation/inventory/controllerId.md
         description4: " "

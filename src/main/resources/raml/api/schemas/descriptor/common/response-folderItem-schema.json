@@ -1,0 +1,28 @@
+{
+  "title": "folder item",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.descriptor.common.ResponseFolderItem",
+  "type": "object",
+  "required": [
+    "name",
+    "path",
+    "objectType"
+  ],
+  "properties": {
+    "path": {
+      "$ref": "../../common/path-schema.json"
+    },
+    "name": {
+      "$ref": "../../common/string255-schema.json"
+    },
+    "title": {
+      "$ref": "../../common/string255-schema.json"
+    },
+    "valid": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    }
+  }
+}

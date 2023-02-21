@@ -1,0 +1,22 @@
+{
+  "title": "common descriptor request filters",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.descriptor.remove.RequestFilters",
+  "type": "object",
+  "required": [
+    "objects"
+  ],
+  "properties": {
+    "paths" : {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "$ref": "../common/request-filter-schema.json"
+      }
+    },
+    "auditLog": {
+      "$ref": "../../audit/auditParams-schema.json"
+    }
+  }
+}
