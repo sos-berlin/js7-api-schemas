@@ -42,14 +42,20 @@
 			"$ref": "../../common/date-schema.json"
 		},
 		"startPosition": {
-     		"$ref": "../../../../controller/schemas/common/position-schema.json"
-    	},
+			"anyOf": [
+				{"$ref": "../../../../controller/schemas/common/position-schema.json"},
+				{"$ref": "../../common/string255required-schema.json"}
+			]
+		},
 		"endPositions": {
 			"type": "array",
 			"items": {
-     			"$ref": "../../../../controller/schemas/common/position-schema.json"
-     		}
-    	},
+				"anyOf": [
+					{"$ref": "../../../../controller/schemas/common/position-schema.json"},
+					{"$ref": "../../common/string255required-schema.json"}
+				]
+			}
+		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
