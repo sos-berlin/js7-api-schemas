@@ -1,0 +1,22 @@
+{
+  "title": "filter for descriptor rename",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.descriptor.rename.RequestFilter",
+  "type": "object",
+  "extends": {
+    "$ref": "../common/request-filter-schema.json"
+  },
+  "required": [
+    "path",
+    "objectType",
+    "newPath"
+  ],
+  "properties": {
+    "newPath": {
+      "$ref": "../../common/string255required-schema.json"
+    },
+    "objectType": {
+      "$ref": "../../inventory/common/configurationType-schema.json"
+    }
+  }
+}

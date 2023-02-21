@@ -1,0 +1,25 @@
+{
+  "title": "folder content",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.common.ResponseFolder",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "path"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../../common/timestamp-schema.json"
+    },
+    "path": {
+      "$ref": "../../common/path-schema.json"
+    },
+    "deploymentDescriptors": {
+      "type": "array",
+      "items": {
+        "$ref": "response-folderItem-schema.json"
+      },
+      "uniqueItems": true
+    }
+  }
+}

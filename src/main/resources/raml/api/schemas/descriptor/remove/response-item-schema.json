@@ -1,0 +1,23 @@
+{
+	"title": "delete descriptor response",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.descriptor.remove.ResponseItem",
+	"type": "object",
+	"properties": {
+		"deliveryDate": {
+        	"$ref": "../../common/timestamp-schema.json"
+    	},
+		"updated": {
+			"type": "array",
+			"items": {
+			  "$ref": "../common/request-filter-schema.json"
+			}
+		},
+		"deleted": {
+		    "type": "array",
+			"items": {
+			  "$ref": "../common/request-filter-schema.json"
+			}
+		}
+	}
+}
