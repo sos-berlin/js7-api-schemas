@@ -26,16 +26,16 @@
     },
     "startPosition": {
 		"anyOf": [
-			{"$ref": "../../../../controller/schemas/common/position-schema.json"},
-			{"$ref": "../../common/string255required-schema.json"}
+			{"$ref": "../../../controller/schemas/common/position-schema.json"},
+			{"$ref": "../common/string255required-schema.json"}
 		]
     },
     "endPositions": {
 		"type": "array",
 		"items": {
 			"anyOf": [
-				{"$ref": "../../../../controller/schemas/common/position-schema.json"},
-				{"$ref": "../../common/string255required-schema.json"}
+				{"$ref": "../../../controller/schemas/common/position-schema.json"},
+				{"$ref": "../common/string255required-schema.json"}
 			]
 		}
     }
