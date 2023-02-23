@@ -1,0 +1,15 @@
+{
+  "title": "Descriptor Folder Edit configuration",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.folder.DescriptorFolderEdit",
+  "type": "object",
+  "extends": {
+    "javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+  },
+  "properties": {
+    "configuration": {
+      "$ref": "folder-schema.json"
+    }
+  }
+}
+

@@ -4,7 +4,7 @@
   "javaType": "com.sos.joc.model.descriptor.remove.RequestFilters",
   "type": "object",
   "required": [
-    "objects"
+    "paths"
   ],
   "properties": {
     "paths" : {
