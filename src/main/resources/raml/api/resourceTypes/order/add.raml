@@ -44,8 +44,10 @@ post:
       "myNumber": 3.14,
       "myBoolean": true
     }</pre></td><td></td></tr>
-    <tr><td style="padding-left:20px;">``startPosition``</td><td>optional, array<br/>field of each ``orders`` item</td><td>The order starts with the first instruction per default<td>[0]</td><td></td></tr>
-    <tr><td style="padding-left:20px;">``endPositions``</td><td>optional, array[array]<br/>field of each ``orders`` item</td><td>The order ends on one of these positions<td>[[1]]</td><td></td></tr>
+    <tr><td style="padding-left:20px;">``startPosition``</td><td>optional, array or string<br/>field of each ``orders`` item</td><td>The order starts with the first instruction per default.<br/>
+    	The position can also be specified by the label of the instuction.<td>[0] or "job1"</td><td></td></tr>
+    <tr><td style="padding-left:20px;">``endPositions``</td><td>optional, array[array or string]<br/>field of each ``orders`` item</td><td>The order ends on one of these positions<br/>
+        The position can also be specified by the label of the instuction.<td>[[1]] or ["lastJob"]</td><td></td></tr>
     <<audit>>
     </tbody></table>
 
