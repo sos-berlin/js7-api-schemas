@@ -31,6 +31,14 @@
 		"forInventoryTrash": {
 			"type": "boolean",
 			"default": false
+		},
+		"forDescriptors": {
+			"type": "boolean",
+			"default": false
+		},
+		"forDescriptorsTrash": {
+			"type": "boolean",
+			"default": false
 		}
 	}
 }
