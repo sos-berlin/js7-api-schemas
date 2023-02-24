@@ -12,7 +12,7 @@
       "uniqueItems": true,
       "minItems": 1,
       "items": {
-        "$ref": "../common/request-filter-schema.json"
+        "$ref": "request-filter-schema.json"
       }
     },
     "auditLog": {

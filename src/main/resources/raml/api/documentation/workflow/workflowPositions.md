@@ -1,2 +1,3 @@
-<tr><td>``positions``</td><td>optional, array[array]</td><td>Positions of the Workflow instructions<td>[[1]]</td><td></td></tr>
+<tr><td>``positions``</td><td>optional, array[array or string]</td>
+<td>Positions of the Workflow instructions<br/>The position can also be specified by the label of the instuction.<td>[[1]] or ["myJob"]</td><td></td></tr>
     
