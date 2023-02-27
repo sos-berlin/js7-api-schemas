@@ -7,6 +7,7 @@
 		"notificationId",
 		"type",
 		"category",
+		"jocId",
 		"source",
 		"notifier",
 		"hasMonitors",
@@ -21,6 +22,9 @@
 		},
 		"category": {
 			"$ref": "../../../../common/monitoringSystemNotificationCategoryText-schema.json"
+		},
+		"jocId": {
+			"$ref": "../../../../common/jocId-schema.json"
 		},
 		"source": {
 			"type": "string"
