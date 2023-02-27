@@ -4494,6 +4494,23 @@ traits:
         example: !include api/examples/workflow/workflowFilter-example.json
         example200: " "
         
+  /transition:
+    type:
+      postJSONWithOkResponse:
+        description: transitions orders from an older workflow version to the latest workflow
+        description1: !include api/documentation/workflow/workflowIdRequired.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/workflow/modifyWorkflow-schema.json
+        example: " "
+        
   /unskip:
     type:
       postJSONWithOkResponse:
