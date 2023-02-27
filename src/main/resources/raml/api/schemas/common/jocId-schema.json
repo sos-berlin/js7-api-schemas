@@ -2,5 +2,7 @@
   "title": "jocId",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "string",
-  "maxLength": 13
+  "maxLength": 13,
+  "minLength": 3,
+  "pattern": "^.+#[1-9]?[0-9]$"
 }
