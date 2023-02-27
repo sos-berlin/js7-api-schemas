@@ -3,19 +3,16 @@
   	"$schema": "http://json-schema.org/draft-04/schema#",
   	"javaType": "com.sos.joc.model.workflow.ModifyWorkflowPositions",
   	"type": "object",
-  	"required": [
+  	"extends" : {
+  		"$ref": "modifyWorkflow-schema.json"
+  	},
+	"required": [
     	"controllerId",
     	"workflowId",
     	"positions"
   	],
   	"properties": {
-  		"controllerId": {
-      		"$ref": "../common/controllerIdRequired-schema.json"
-    	},
-    	"workflowId": {
-      		"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
-    	},
-        "positions": {
+  		"positions": {
         	"type": "array",
       		"minItems": 1,
       		"items": {
@@ -24,10 +21,7 @@
 					{"$ref": "../common/string255required-schema.json"}
 				]
       		}
-        },
-      	"auditLog": {
-			"$ref": "../audit/auditParams-schema.json"
-		}
+        }
     },
   	"additionalProperties": false
 }

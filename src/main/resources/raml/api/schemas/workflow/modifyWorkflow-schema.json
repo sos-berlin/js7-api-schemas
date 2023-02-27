@@ -1,0 +1,22 @@
+{
+  	"title": "Modify Workflow (transition)",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"javaType": "com.sos.joc.model.workflow.ModifyWorkflow",
+  	"type": "object",
+  	"required": [
+    	"controllerId",
+    	"workflowId"
+  	],
+  	"properties": {
+  		"controllerId": {
+      		"$ref": "../common/controllerIdRequired-schema.json"
+    	},
+    	"workflowId": {
+      		"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
+    	},
+      	"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+    },
+  	"additionalProperties": false
+}
