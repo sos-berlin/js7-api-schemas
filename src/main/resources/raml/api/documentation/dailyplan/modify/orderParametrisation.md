@@ -19,6 +19,6 @@ Variables specified by their keys will be removed.
   "myBoolean"
 }</pre></td><td></td></tr>
 
-<tr><td>``startPosition``</td><td>optional, array</td><td>The order starts with the first instruction per default<td>[0]</td><td></td></tr>
-<tr><td>``endPositions``</td><td>optional, array[array]</td><td>The order ends on one of these positions<td>[[1]]</td><td></td></tr>
+<tr><td>``startPosition``</td><td>optional, array or string</td><td>The order starts with the first instruction per default. The position can also be specified by the label of the instruction.<td>[0]</td><td></td></tr>
+<tr><td>``endPositions``</td><td>optional, array[array or string]</td><td>The order ends on one of these positions. The position can also be specified by the label of the instruction.<td>[[1]]</td><td></td></tr>
 
