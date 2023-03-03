@@ -4,6 +4,9 @@
 	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderFilterDef",
 	"type": "object",
 	"description": "Define the filter to get orders from the daily plan",
+	"required": [
+		"dailyPlanDateFrom"
+	],
 	"properties": {
 		"submissionHistoryIds": {
 			"type": "array",
