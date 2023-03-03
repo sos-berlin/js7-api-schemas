@@ -4,8 +4,7 @@
   "javaType": "com.sos.joc.model.order.OrdersPositions",
   "type": "object",
   "required": [
-  	"deliveryDate",
-    "orders"
+  	"deliveryDate"
   ],
   "properties": {
     "deliveryDate": {

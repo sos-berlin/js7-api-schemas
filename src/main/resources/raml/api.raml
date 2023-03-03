@@ -1013,7 +1013,7 @@ traits:
     type:
       postJSONWithoutJSId:
         description: Gets orders from a daily plan interval
-        description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
+        description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDefRequired.md
         description2: " "
         description3: " "
         description4: " "
@@ -1024,7 +1024,7 @@ traits:
         description9: !include api/documentation/dailyplan/orders/states.md
         description10: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
         description200: " "
-        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
+        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDefRequired-schema.json
         schema200: !include api/schemas/orderManagement/dailyplan/plannedOrders-schema.json
         example: " "
         example200: " "
@@ -1084,7 +1084,7 @@ traits:
       type:
         postJSONWithOkWithoutJSId:
           description: Deletes planned orders for a daily plan interval
-          description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
+          description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDefRequired.md
           description2: " "
           description3: " "
           description4: " "
@@ -1095,7 +1095,7 @@ traits:
           description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
           description10: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDefRequired-schema.json
           example: " "
     /modify:
       type:
@@ -1125,7 +1125,7 @@ traits:
       type:
         postJSONWithoutJSId:
           description: Gets summary order counts from a daily plan interval
-          description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDef.md
+          description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDefRequired.md
           description2: " "
           description3: " "
           description4: " "
@@ -1136,7 +1136,7 @@ traits:
           description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
           description10:
           description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDefRequired-schema.json
           schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanOrderSummary-schema.json
           example: " "
           example200: " "
