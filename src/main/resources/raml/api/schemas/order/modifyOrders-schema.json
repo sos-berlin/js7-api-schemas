@@ -55,6 +55,9 @@
 		"variables": {
 			"$ref": "../../../inventory/schemas/common/variables-schema.json"
 		},
+		"cycleEndTime": {
+			"$ref": "../common/nonNegativeLong-schema.json"
+		},
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}
