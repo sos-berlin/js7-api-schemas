@@ -32,6 +32,10 @@
     "variablesNotSettable": {
       "description": "only relevant for resuming a single order. Occurs if order starts from the beginning in its scope",
       "type": "boolean"
+    },
+    "withCyclePosition": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
