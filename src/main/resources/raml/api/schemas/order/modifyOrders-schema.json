@@ -36,8 +36,7 @@
       		"$ref": "../common/dateFromTo-schema.json"
     	},
     	"timeZone": {
-      		"description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-      		"type": "string"
+      		"$ref": "../common/timezone-schema.json"
     	},
 		"orderType": {
 			"$ref": "../../../controller/schemas/order/orderModeType-schema.json"
@@ -56,9 +55,9 @@
 			"$ref": "../../../inventory/schemas/common/variables-schema.json"
 		},
 		"cycleEndTime": {
-			"$ref": "../common/nonNegativeLong-schema.json"
-		},
-		"auditLog": {
+      		"$ref": "../common/timestampWithNow-schema.json"
+    	},
+    	"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}
 	}

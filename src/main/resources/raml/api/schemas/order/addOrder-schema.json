@@ -18,8 +18,7 @@
       "$ref": "../common/timestampWithNow-schema.json"
     },
     "timeZone": {
-      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/timezone-schema.json"
     },
     "arguments": {
       "$ref": "../../../inventory/schemas/common/variables-schema.json"
