@@ -12,6 +12,10 @@
     	"type": "boolean",
     	"default": false	
     },
+    "deleteUnknownNodeProperties": {
+    	"type": "boolean",
+    	"default": false	
+    },
     "auditLog": {
     	"$ref": "../../audit/auditParams-schema.json"
     }
