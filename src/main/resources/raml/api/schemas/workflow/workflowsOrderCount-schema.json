@@ -28,6 +28,9 @@
       	},
   		"additionalProperties": false
       }
+    },
+    "numOfAllOrders": {
+      "$ref": "../order/ordersSummary-schema.json" 
     }
   },
   "additionalProperties": false
