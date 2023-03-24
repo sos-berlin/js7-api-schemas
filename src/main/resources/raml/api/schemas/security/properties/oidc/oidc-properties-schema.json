@@ -16,6 +16,9 @@
 		"iamOidcClientSecret": {
 			"$ref": "../../../common/string255-schema.json"
 		},
+		"iamOidcUserAttribute": {
+			"$ref": "../../../common/string255-schema.json"
+		},
 		"iamOidcTruststorePath": {
 			"$ref": "../../../common/string255-schema.json"
 		},
