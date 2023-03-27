@@ -41,6 +41,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "released",
     "hasDeployments",
     "hasReleases",
+    "isReferencedBy",
     "syncState",
     "deployments",
     "configurationDate",
@@ -121,6 +122,8 @@ public class ConfigurationObject {
     private Boolean hasDeployments;
     @JsonProperty("hasReleases")
     private Boolean hasReleases;
+    @JsonProperty("isReferencedBy")
+    private IsReferencedBy isReferencedBy;
     /**
      * sync state
      * <p>
@@ -330,6 +333,16 @@ public class ConfigurationObject {
         return hasReleases;
     }
     
+    @JsonProperty("isReferencedBy")
+    public IsReferencedBy getIsReferencedBy() {
+        return isReferencedBy;
+    }
+
+    @JsonProperty("isReferencedBy")
+    public void setIsReferencedBy(IsReferencedBy isReferencedBy) {
+        this.isReferencedBy = isReferencedBy;
+    }
+    
     /**
      * sync state
      * <p>
@@ -445,7 +458,7 @@ public class ConfigurationObject {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("id", id).append("path", path).append("objectType", objectType).append("configuration", configuration).append("state", state).append("valid", valid).append("invalidMsg", invalidMsg).append("deleted", deleted).append("deployed", deployed).append("released", released).append("hasReleases", hasReleases).append("syncState", syncState).append("hasDeployments", hasDeployments).append("deployments", deployments).append("configurationDate", configurationDate).append("deliveryDate", deliveryDate).toString();
+        return new ToStringBuilder(this).append("id", id).append("path", path).append("objectType", objectType).append("configuration", configuration).append("state", state).append("valid", valid).append("invalidMsg", invalidMsg).append("deleted", deleted).append("deployed", deployed).append("released", released).append("hasReleases", hasReleases).append("isReferencedBy", isReferencedBy).append("syncState", syncState).append("hasDeployments", hasDeployments).append("deployments", deployments).append("configurationDate", configurationDate).append("deliveryDate", deliveryDate).toString();
     }
 
     @Override

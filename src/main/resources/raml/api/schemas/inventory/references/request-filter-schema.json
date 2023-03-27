@@ -1,0 +1,21 @@
+{
+	"title": "filter for references",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.references.RequestFilter",
+	"type": "object",
+	"required": [
+       "path"
+    ],
+	"properties": {
+		"path": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"objectTypes": {
+		    "type": "array",
+		    "items": {
+				"$ref": "../common/configurationType-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}
