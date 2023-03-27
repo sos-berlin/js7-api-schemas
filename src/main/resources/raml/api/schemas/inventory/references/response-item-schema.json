@@ -1,0 +1,33 @@
+{
+	"title": "references",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.references.ResponseItems",
+	"type": "object",
+	"required": [
+		"deliveryDate"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"workflows": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../../controller/schemas/workflow/workflow-schema.json"
+			}
+		},
+		"fileOrderSources": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../../controller/schemas/fileordersource/fileOrderSource-schema.json"
+			}
+		},
+		"schedules": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../../inventory/schemas/schedule/schedule-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}

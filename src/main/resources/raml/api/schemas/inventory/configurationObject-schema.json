@@ -58,6 +58,12 @@
 		"hasReleases": {
 			"type": "boolean"
 		},
+		"isReferencedBy": {
+			"type": "object",
+			"additionalProperties": {
+				"$ref": "../common/nonNegativeInteger-schema.json"
+			}
+		},
 		"syncState": {
 			"$ref": "../../../controller/schemas/common/syncState-schema.json"
 		},
@@ -77,5 +83,6 @@
     	"auditLog": {
       		"$ref": "../audit/auditParams-schema.json"
     	}
-	}
+	},
+	"additionalProperties": false
 }
