@@ -1,0 +1,36 @@
+{
+  "title": "revalidate report",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.validate.Report",
+  "type": "object",
+  "required": [
+  	"deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+        "$ref": "../../common/timestamp-schema.json"
+    },
+    "validObjs" : {
+    	"type": "array",
+    	"uniqueItems": true,
+    	"items": {
+    		"$ref": "response-item-schema.json"	
+    	}	
+    },
+    "invalidObjs" : {
+    	"type": "array",
+    	"uniqueItems": true,
+    	"items": {
+    		"$ref": "response-item-schema.json"	
+    	}	
+    },
+    "erroneousObjs" : {
+    	"type": "array",
+    	"uniqueItems": true,
+    	"items": {
+    		"$ref": "response-item-schema.json"	
+    	}	
+    }
+  },
+  "additionalProperties": false
+}
