@@ -1,0 +1,36 @@
+{
+    "title": "revalidate report",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.validate.ReportItem",
+    "type": "object",
+    "required": [
+		"name",
+		"path",
+		"objectType"
+	],
+	"properties": {
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"name": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/configurationType-schema.json"
+		},
+		"title": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"valid": {
+			"type": "boolean"
+		},
+		"invalidMsg": {
+			"type": "string"
+		},
+		"error": {
+			"$ref": "../../common/error-schema.json"
+		}
+		
+	},
+    "additionalProperties": false
+}
