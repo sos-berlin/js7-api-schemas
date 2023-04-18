@@ -41,10 +41,6 @@
     },
     "runningTasks": {
     	"$ref": "../common/nonNegativeInteger-schema.json"
-    },
-    "isClusterWatcher": {
-    	"type": "boolean",
-    	"default": false
     }
   },
   "additionalProperties": false

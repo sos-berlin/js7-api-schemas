@@ -28,10 +28,6 @@
     "url": {
     	"$ref": "../common/string255required-schema.json"
     },
-    "isClusterWatcher": {
-    	"type": "boolean",
-    	"default": false
-    },
     "title": {
     	"$ref": "../common/string255-schema.json"
     },

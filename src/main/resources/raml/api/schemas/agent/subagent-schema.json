@@ -35,10 +35,6 @@
     	"type": "boolean",
     	"default": false
     },
-    "isClusterWatcher": {
-    	"type": "boolean",
-    	"default": false
-    },
     "withGenerateSubagentCluster": {
     	"type": "boolean",
     	"default": false
