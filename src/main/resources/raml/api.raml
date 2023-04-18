@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.5.3
+version: 2.6.0
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -843,9 +843,8 @@ traits:
     type:
       postWithOkResponse:
         description: |
-          Re-establish Controller Cluster roles and assign cluster-watching Agent<h5>
+          Re-establish Controller Cluster roles<h5>
           * Primary and secondary Controller instances are assigned the active and standby roles.
-          * In addition an Agent is assigned the cluster-watching role. This information is persistent when registering a Controller.
           * The resource can be used to re-establish the roles in a cluster, e.g. in case that Controller journals are renewed.
           </h5>
         urlparam: " "
