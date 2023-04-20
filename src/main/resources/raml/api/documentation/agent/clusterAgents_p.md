@@ -10,4 +10,3 @@ Contains collection of Cluster Agents where each Agent following fields
 	* syncState
 	* disabled
 	* isDirector (NO_DIRECTOR, PRIMARY_DIRECTOR, SECONDARY_DIRECTOR)
-	* isClusterWatcher

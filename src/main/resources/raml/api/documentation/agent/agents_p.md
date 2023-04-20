@@ -6,4 +6,3 @@ Contains collection of Standalone Agents where each Agent has following fields
 * url
 * title (optional)
 * syncState
-* isClusterWatcher

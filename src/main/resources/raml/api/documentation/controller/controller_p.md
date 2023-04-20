@@ -16,4 +16,3 @@ and each Agent has fields such as
 * agentName
 * agentNameAliases
 * url
-* isClusterWatcher

@@ -6,7 +6,6 @@ Contains collection of Agents where each Agent has the fields
 * version (only for standalone agent)
 * hidden
 * disabled (only for standalone agent)
-* isClusterWatcher
 * state (only for standalone agent; COUPLED, COUPLINGFAILED, INITIALISED, RESETTING, SHUTDOWN, UNKNOWN)
 	* reason (for state INITIALISED: FRESH, RESET, RESTARTED)
 * healthstate (ALL\_SUBAGENTS\_ARE\_COUPLED\_AND\_ENABLED, ONLY\_SOME\_SUBAGENTS\_ARE\_COUPLED\_AND\_ENABLED, NO\_SUBAGENTS\_ARE\_COUPLED\_AND\_ENABLED, UNKNOWN)
