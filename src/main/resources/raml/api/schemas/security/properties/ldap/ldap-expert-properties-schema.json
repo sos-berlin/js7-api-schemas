@@ -7,6 +7,12 @@
 		"iamLdapServerUrl": {
 			"$ref": "../../../common/string255-schema.json"
 		},
+		"iamLdapReadTimeout": {
+			"$ref": "../../../common/nonNegativeInteger-schema.json"
+		},
+		"iamLdapConnectTimeout": {
+			"$ref": "../../../common/nonNegativeInteger-schema.json"
+		},
 		"iamLdapUserDnTemplate": {
 			"$ref": "../../../common/string255-schema.json"
 		},
