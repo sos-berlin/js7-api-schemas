@@ -1,0 +1,12 @@
+{
+  "title": "Fido2 User Verification",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.security.properties.fido2.Fido2Userverification",
+  "type": "string",
+  "enum": [
+    "PREFERRED", 
+    "DISCOURAGE",
+    "REQUIRED"
+  ]
+}
+    

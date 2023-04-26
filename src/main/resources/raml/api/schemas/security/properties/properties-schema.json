@@ -22,6 +22,9 @@
 		"oidc": {
 			"$ref": "oidc/oidc-properties-schema.json"
 		},
+		"fido2": {
+			"$ref": "fido2/fido2-properties-schema.json"
+		},
 		"ldap": {
 			"$ref": "ldap/ldap-properties-schema.json"
 		}
