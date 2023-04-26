@@ -147,6 +147,9 @@
 		},
 		"returnValues": {
 			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
+		},
+		"question": {
+			"type": "string"
 		}
 	},
 	"additionalProperties": false
