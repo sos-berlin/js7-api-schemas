@@ -3,6 +3,9 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.inventory.search.ResponseSearchItem",
 	"type": "object",
+	"extends" : {
+  		"$ref": "response-base-search-item-schema.json"
+  	},
 	"required": [
 		"name",
 		"path",
@@ -11,15 +14,6 @@
 	"properties": {
 		"id": {
 			"$ref": "../../common/nonNegativeLong-schema.json"
-		},
-		"path": {
-			"$ref": "../../common/path-schema.json"
-		},
-		"name": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"objectType": {
-			"$ref": "../common/configurationType-schema.json"
 		},
 		"title": {
 			"$ref": "../../common/string255-schema.json"
@@ -48,5 +42,6 @@
 		"permitted": {
 			"type": "boolean"
 		}
-	}
+	},
+  	"additionalProperties": false
 }

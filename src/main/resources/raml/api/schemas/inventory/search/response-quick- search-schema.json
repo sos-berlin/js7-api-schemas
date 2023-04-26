@@ -1,19 +1,25 @@
 {
 	"title": "Inventory search response",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.inventory.search.ResponseSearch",
+	"javaType": "com.sos.joc.model.inventory.search.ResponseQuickSearch",
 	"type": "object",
 	"required": [
-		"deliveryDate"
+		"deliveryDate",
+		"token"
 	],
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
+		"token": {
+			"type": "string",
+			"pattern": "^[0-9a-fA-F]*$",
+  			"maxLength": 64
+		},
 		"results": {
 			"type": "array",
 			"items": {
-				"$ref": "response-search-item-schema.json"
+				"$ref": "response-base-search-item-schema.json"
 			}
 		}
 	},

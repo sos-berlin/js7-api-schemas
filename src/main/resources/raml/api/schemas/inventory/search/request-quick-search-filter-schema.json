@@ -1,0 +1,28 @@
+{
+	"title": "Filter Inventory search",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.search.RequestQuickSearchFilter",
+	"type": "object",
+	"required": [
+		"search"
+	],
+	"description": "returnType can only be set with starting a new search, i. e. empty token",
+	"properties": {
+		"search": {
+			"$ref": "../../common/glob-schema.json"
+		},
+		"returnType": {
+			"$ref": "request-search-returnType-schema.json"
+		},
+		"token": {
+			"type": "string",
+			"pattern": "^[0-9a-fA-F]*$",
+  			"maxLength": 64
+		},
+		"quit": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+  	"additionalProperties": false
+}
