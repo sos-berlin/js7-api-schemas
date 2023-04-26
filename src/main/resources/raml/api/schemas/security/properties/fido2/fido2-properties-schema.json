@@ -1,0 +1,25 @@
+{
+	"title": "Openid Connect Properties",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.properties.fido2.Fido2Properties",
+	"type": "object",
+	"properties": {
+		"iamFido2RpName": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamFido2UserVerification": {
+			"$ref": "fido2UserVerification-schema.json"
+		},
+		"iamFido2Timeout": {
+			"$ref": "../../../common/nonNegativeInteger-schema.json"
+		},
+		"iamFido2Attestation": {
+			"$ref": "fido2Attestation-schema.json"
+		},
+		"iamFido2Transports": {
+			"$ref": "fido2Transports-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    

@@ -1,8 +1,8 @@
  
 {
-	"title": "Identity Provider",
+	"title": "OIDC Identity Provider",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.identityservice.IdentityProvider",
+	"javaType": "com.sos.joc.model.security.identityservice.OidcIdentityProvider",
 	"type": "object",
 	"properties": {
 		"identityServiceName": {
