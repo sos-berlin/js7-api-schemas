@@ -28,7 +28,7 @@
 		"OrderDetachable",
 		"OrderDetached",
 		"OrderOutcomeAdded",
-		"OrderFailedinFork",		
+		"OrderFailedinFork",
 		"OrderFailed",
 		"OrderStopped",
 		"OrderCatched",
@@ -47,7 +47,9 @@
 		"OrderNoticesConsumptionStarted",
 		"OrderNoticesRead",
 		"OrderNoticesExpected",
-		"OrderNoticePosted"		
+		"OrderNoticePosted",
+		"OrderPrompted",
+		"OrderPromptAnswered"
 	],
 	"javaEnumNames": [
 		"VersionAdded",
@@ -63,6 +65,7 @@
 		"OrderStderrWritten",
 		"OrderProcessed",
 		"OrderResumed",
+		"OrderResumeMarked",
 		"OrderResumptionMarked",
 		"OrderForked",
 		"OrderJoined",
@@ -73,13 +76,14 @@
 		"OrderDetachable",
 		"OrderDetached",
 		"OrderOutcomeAdded",
-		"OrderFailedinFork",		
+		"OrderFailedinFork",
 		"OrderFailed",
 		"OrderStopped",
 		"OrderCatched",
 		"OrderCaught",
 		"OrderAwoke",
 		"OrderSuspended",
+		"OrderSuspendMarked",
 		"OrderSuspensionMarked",
 		"OrderBroken",
 		"OrderCancelled",
@@ -88,9 +92,11 @@
 		"OrderLocksQueued",
 		"OrderLocksReleased",
 		"OrderNoticesConsumed",
-		"OrderNoticesConsumptionStarted",		
+		"OrderNoticesConsumptionStarted",
 		"OrderNoticesRead",
 		"OrderNoticesExpected",
-		"OrderNoticePosted"	
+		"OrderNoticePosted",
+		"OrderPrompted",
+		"OrderPromptAnswered"
 	]
 }
