@@ -1,0 +1,45 @@
+ 
+{
+	"title": "Fido2 Registration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.fido2.Fido2Registration",
+	"type": "object",
+	"required": [
+		"identityServiceName",
+		"accountName"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"accountName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"email": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"rpName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"publicKey": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"approved": {
+			"$ref": "approvedParam-schema.json"
+		},
+		"rejected": {
+			"$ref": "rejectedParam-schema.json"
+		},
+		"confirmed": {
+			"$ref": "confirmedParam-schema.json"
+		},
+		"accessToken": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    
