@@ -1,0 +1,38 @@
+{
+	"title": "Fido2 Registrations Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.fido2.Fido2RegistrationsFilter",
+	"type": "object",
+	"required": [
+		"accountNames",
+		"identityServiceName"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"accountNames": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
+		},
+		"approved": {
+			"type": "boolean",
+  			"default": false
+		},
+		"rejected": {
+			"type": "boolean",
+  			"default": false
+		},
+		"confirmed": {
+			"type": "boolean",
+  			"default": false
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+  
