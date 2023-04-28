@@ -18,9 +18,6 @@
 		"email": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"rpName": {
-			"$ref": "../../common/string255required-schema.json"
-		},
 		"publicKey": {
 			"$ref": "../../common/string255required-schema.json"
 		},

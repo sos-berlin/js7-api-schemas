@@ -11,9 +11,6 @@
 		"identityServiceName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"rpName": {
-			"$ref": "../../common/string255required-schema.json"
-		},
 		"accountName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
