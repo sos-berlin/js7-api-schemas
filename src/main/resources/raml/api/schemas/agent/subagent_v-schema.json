@@ -13,6 +13,9 @@
   "properties": {
   	"isDirector": {
     	"$ref": "subagentDirectorType-schema.json"
+    },
+    "clusterNodeState": {
+      "$ref": "../controller/clusterNodeState-schema.json"
     }
   },
   "additionalProperties": false
