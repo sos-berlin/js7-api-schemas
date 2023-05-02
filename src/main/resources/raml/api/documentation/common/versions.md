@@ -1,6 +1,29 @@
+* [JOC API 2.5.4](../../../2.5.4/raml-doc/JOC-API/index.html)
+	* *NEW*
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/inventory/quick/search.html" target="newtab254">./inventory/quick/search</a>
+
+* [JOC API 2.5.3](../../../2.5.3/raml-doc/JOC-API/index.html)
+	* *NEW*
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/inventory/workflow/references.html" target="newtab253">./inventory/workflow/references</a>
+	* *CHANGED*
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/orders/resume.html" target="newtab253">./orders/resume</a> - Request field ``cycleEndTime`` is added
+		
 * [JOC API 2.5.2](../../../2.5.2/raml-doc/JOC-API/index.html)
 	* *NEW*
 		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/daily_plan/orders/cancel.html" target="newtab252">./daily_plan/orders/cancel</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/copy.html" target="newtab252">./descriptor/copy</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/read.html" target="newtab252">./descriptor/read</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/read/folder.html" target="newtab252">./descriptor/read/folder</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/remove.html" target="newtab252">./descriptor/remove</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/remove/folder.html" target="newtab252">./descriptor/remove/folder</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/rename.html" target="newtab252">./descriptor/rename</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/store.html" target="newtab252">./descriptor/store</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/trash/delete.html" target="newtab252">./descriptor/trash/delete</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/trash/delete/folder.html" target="newtab252">./descriptor/trash/delete/folder</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/trash/read.html" target="newtab252">./descriptor/trash/read</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/trash/read/folder.html" target="newtab252">./descriptor/trash/read/folder</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/descriptor/trash/restore.html" target="newtab252">./descriptor/trash/restore</a>
+		* <a href="../../../2.5.2/raml-doc/JOC-API/resource/workflow/transition.html" target="newtab252">./workflow/transition</a>
 	* *DELETED*
 		* ./orders/daily_plan/cancel - Is replaced by <a href="../../../2.5.2/raml-doc/JOC-API/resource/daily_plan/orders/cancel.html" target="newtab252">./daily_plan/orders/cancel</a>
 	* *CHANGED*
