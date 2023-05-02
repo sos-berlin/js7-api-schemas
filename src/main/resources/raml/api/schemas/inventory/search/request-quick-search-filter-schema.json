@@ -11,8 +11,11 @@
 		"search": {
 			"$ref": "../../common/glob-schema.json"
 		},
-		"returnType": {
-			"$ref": "request-search-returnType-schema.json"
+		"returnTypes": {
+			"type": "array",
+			"items": {
+				"$ref": "request-search-returnType-schema.json"
+			}
 		},
 		"token": {
 			"type": "string",
