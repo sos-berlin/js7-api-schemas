@@ -1,0 +1,6 @@
+{
+  "title": "Second Factory",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Identity Service is used as a second factor",
+  "type": "boolean"
+}

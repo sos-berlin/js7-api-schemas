@@ -1,0 +1,6 @@
+{
+  "title": "disabled filter parameter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "returns disabled objects",
+  "type": "boolean"
+}

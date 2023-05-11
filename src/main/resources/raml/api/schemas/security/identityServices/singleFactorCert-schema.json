@@ -1,7 +1,0 @@
-{
-  "title": "Single Factory Cert",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Identity Service allows logon via certificate",
-  "type": "boolean",
-  "default": false
-}

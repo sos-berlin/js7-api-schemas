@@ -1,7 +1,7 @@
 {
   "title": "disabled parameter",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "true if the account is disabled",
+  "description": "controls if the object is disabled",
   "type": "boolean",
   "default": false
 }
