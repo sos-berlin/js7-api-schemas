@@ -1,0 +1,20 @@
+ 
+{
+	"title": "Fido2 Email Settings",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.properties.fido2.Fido2EmailSettings",
+	"type": "object",
+	"properties": {
+		"url": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"body": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"subject": {
+			"$ref": "../../../common/string255required-schema.json"
+		} 
+	},
+	"additionalProperties": false
+}
+    

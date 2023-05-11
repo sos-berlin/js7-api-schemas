@@ -1,7 +1,0 @@
-{
-  "title": "Single Factory Pwd",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Identity Service allows login via user account/password",
-  "type": "boolean",
-  "default": false
-}

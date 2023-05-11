@@ -25,6 +25,9 @@
 		},
 		"iamIconUrl": {
 			"$ref": "../../common/string255-schema.json"
+		},
+		"iamCipherType": {
+			"$ref": "../fido2/cipherTypes-schema.json"
 		}
 	},
 	"additionalProperties": false

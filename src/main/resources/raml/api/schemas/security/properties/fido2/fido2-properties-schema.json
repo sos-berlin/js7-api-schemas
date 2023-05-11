@@ -1,12 +1,9 @@
 {
-	"title": "Openid Connect Properties",
+	"title": "FIDO2 Connect Properties",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.properties.fido2.Fido2Properties",
 	"type": "object",
 	"properties": {
-		"iamFido2RpName": {
-			"$ref": "../../../common/string255-schema.json"
-		},
 		"iamFido2UserVerification": {
 			"$ref": "fido2UserVerification-schema.json"
 		},
@@ -18,6 +15,16 @@
 		},
 		"iamFido2Transports": {
 			"$ref": "fido2Transports-schema.json"
+		},
+		"iamFido2EmailSettings": {
+			"$ref": "fido2EmailSettings-schema.json"
+		},
+		"iamFido2IsSecondFactor": {
+			"type": "boolean",
+			"default": false
+		},
+		"iamFido2CipherType": {
+			"$ref": "../../fido2/cipherTypes-schema.json"
 		}
 	},
 	"additionalProperties": false

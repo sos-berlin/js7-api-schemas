@@ -21,6 +21,9 @@
 		"publicKey": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"cipherType":{
+			"$ref": "cipherTypes-schema.json"
+		},
 		"approved": {
 			"$ref": "approvedParam-schema.json"
 		},
@@ -32,7 +35,7 @@
 		},
 		"accessToken": {
 			"$ref": "../../common/string255required-schema.json"
-		},
+		},	
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}

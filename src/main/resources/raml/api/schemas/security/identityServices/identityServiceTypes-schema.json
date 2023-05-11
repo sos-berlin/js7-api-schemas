@@ -14,7 +14,8 @@
     "LDAP-JOC",
     "OIDC",
     "FIDO2",
-    "JOC" 
+    "JOC",
+    "CERTIFICATE" 
   ]
 }
     

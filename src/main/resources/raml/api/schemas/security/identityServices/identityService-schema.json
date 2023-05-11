@@ -24,11 +24,11 @@
 		"disabled": {
 			"$ref": "../disabledParam-schema.json"
 		},
-		"singleFactorCert": {
-			"$ref": "singleFactorCert-schema.json"
+		"secondFactor": {
+			"$ref": "secondFactorParam-schema.json"
 		},
-		"singleFactorPwd": {
-			"$ref": "singleFactorPwd-schema.json"
+		"secondFactorIdentityServiceName": {
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"required": {
 			"$ref": "requiredParam-schema.json"

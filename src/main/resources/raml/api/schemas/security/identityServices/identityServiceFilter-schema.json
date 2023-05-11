@@ -7,6 +7,15 @@
 		"identityServiceName": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"identityServiceType": {
+			"$ref": "identityServiceTypes-schema.json"
+		},
+		"disabled": {
+			"$ref": "disabledFilterParam-schema.json"
+		},
+		"secondFactor": {
+			"$ref": "secondFactorFilterParam-schema.json"
+		},		
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
