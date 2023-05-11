@@ -5,6 +5,7 @@
 	"javaType": "com.sos.joc.model.joc.Cockpit",
 	"required": [
 		"id",
+		"instanceId",
 		"memberId",
 		"version",
 		"current",
@@ -18,8 +19,11 @@
     	"id": {
       		"$ref": "../common/nonNegativeLong-schema.json"
     	},
+    	"instanceId": {
+      		"$ref": "../common/string255required-schema.json"
+    	},
     	"memberId": {
-      		"type": "string"
+      		"$ref": "../common/string255required-schema.json"
     	},
     	"title": {
       		"type": "string"
@@ -40,6 +44,10 @@
     	"version": {
 			"type": "string"
 		},
+		"isApiServer": {
+			"type": "boolean",
+			"default": false
+		},
 		"connectionState": {
 			"$ref": "connectionState-schema.json"
 		},
@@ -50,6 +58,7 @@
 			"$ref": "clusterNodeState-schema.json"
 		},
 		"controllerConnectionStates": {
+			"description": "not relevant for JOC as API server only",
 			"type": "array",
 			"items": {
 				"type": "object",
@@ -65,7 +74,8 @@
 					"state": {
 						"$ref": "connectionState-schema.json"
 					}
-				}
+				},
+				"additionalProperties": false
 			}
 		},
     	"os": {
@@ -77,5 +87,6 @@
     	"lastHeartbeat": {
       		"$ref": "../common/timestamp-schema.json"
     	}
-	}
+	},
+	"additionalProperties": false
 }

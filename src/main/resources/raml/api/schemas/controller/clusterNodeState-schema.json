@@ -7,9 +7,10 @@
     "severity",
     "_text"
   ],
+  "description": "not relevant for JOC as API server only",
   "properties": {
     "severity": {
-      "description": "0=active, 1=inactive, 3=unknown",
+      "description": "0=active, 1=inactive, 1=API-server, 3=unknown",
       "type": "integer"
     },
     "_text": {
@@ -18,11 +19,13 @@
       "enum": [
         "active",
         "inactive",
+        "api-server",
         "unknown" 
       ],
       "javaEnumNames": [
         "active",
         "inactive",
+        "api-server",
         "unknown" 
       ]
     }
