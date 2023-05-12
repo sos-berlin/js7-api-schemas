@@ -17,11 +17,7 @@
 				"$ref": "../../common/string255-schema.json"
 			}
 		},
-		"approved": {
-			"type": "boolean",
-  			"default": false
-		},
-		"rejected": {
+		"deferred": {
 			"type": "boolean",
   			"default": false
 		},

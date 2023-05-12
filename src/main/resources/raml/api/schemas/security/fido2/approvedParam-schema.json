@@ -1,8 +1,0 @@
-{
-  "title": "approved parameter",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "true if the registration is approved",
-  "type": "boolean",
-  "default": false
-  
-}
