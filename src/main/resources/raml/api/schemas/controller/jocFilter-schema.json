@@ -1,0 +1,17 @@
+{
+	"title": "joc cockpit request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.joc.CockpitFilter",
+	"type": "object",
+	"properties": {
+		"onlyApiServer": {
+			"type": "boolean",
+			"default": false
+		},
+		"onlyNonApiServer": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"additionalProperties": false
+}

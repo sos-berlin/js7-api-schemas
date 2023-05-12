@@ -3462,7 +3462,26 @@ traits:
         schema200: !include api/schemas/joc/versionResponse-schema.json
         example: !include api/examples/joc/versionsFilter-example.json
         example200: !include api/examples/joc/versionsResponse-example.json
-        
+
+/jocs:
+  type:
+    postJSONWithoutJSId:
+      description: Gets JOC Cockpit instances
+      description1: !include api/documentation/joc/jocFilter.md
+      description2: " "
+      description3: " "
+      description4: " "
+      description5: " "
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: " "
+      schema: !include api/schemas/controller/jocFilter-schema.json
+      schema200: !include api/schemas/controller/jocs-schema.json
+      example: TODO
+      example200: TODO        
       
 /lock:
   type:

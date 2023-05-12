@@ -1,0 +1,22 @@
+{
+  "title": "components",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.Cockpits",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "jocs"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "jocs": {
+      "type": "array",
+      "items": {
+        "$ref": "joc-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
