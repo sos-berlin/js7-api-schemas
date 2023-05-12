@@ -2,5 +2,7 @@
   "title": "confirmed parameter",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "true if the registration is confirmed",
-  "type": "boolean"
+  "type": "boolean",
+  "default": false
+  
 }
