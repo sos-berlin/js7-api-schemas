@@ -21,21 +21,15 @@
 		"publicKey": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"cipherType":{
+		"cipherType": {
 			"$ref": "cipherTypes-schema.json"
 		},
-		"approved": {
-			"$ref": "approvedParam-schema.json"
-		},
-		"rejected": {
-			"$ref": "rejectedParam-schema.json"
+		"deferred": {
+			"$ref": "deferredParam-schema.json"
 		},
 		"confirmed": {
 			"$ref": "confirmedParam-schema.json"
 		},
-		"accessToken": {
-			"$ref": "../../common/string255required-schema.json"
-		},	
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}

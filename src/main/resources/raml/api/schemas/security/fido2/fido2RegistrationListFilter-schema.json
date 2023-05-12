@@ -13,11 +13,7 @@
 		"identityServiceName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"approved": {
-			"type": "boolean",
-  			"default": false
-		},
-		"rejected": {
+		"deferred": {
 			"type": "boolean",
   			"default": false
 		},

@@ -15,6 +15,9 @@
 		"accountName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"email": {
+			"$ref": "../../common/string255required-schema.json"
+		},
 		"password": {
 			"type": "string"
 		},
