@@ -1,0 +1,13 @@
+{
+	"title": "Fido2 Confirmation Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.fido2.Fido2ConfirmationFilter",
+	"type": "object",
+	"properties": {
+		"token": {
+			"$ref": "../../common/string255required-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+  

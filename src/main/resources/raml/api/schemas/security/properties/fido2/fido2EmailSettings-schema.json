@@ -5,9 +5,6 @@
 	"javaType": "com.sos.joc.model.security.properties.fido2.Fido2EmailSettings",
 	"type": "object",
 	"properties": {
-		"url": {
-			"$ref": "../../../common/string255required-schema.json"
-		},
 		"body": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
