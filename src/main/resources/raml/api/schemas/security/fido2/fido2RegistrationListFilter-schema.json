@@ -14,12 +14,10 @@
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"deferred": {
-			"type": "boolean",
-  			"default": false
+			"$ref": "deferredParam-schema.json"
 		},
 		"confirmed": {
-			"type": "boolean",
-  			"default": false
+			"$ref": "confirmedParam-schema.json"
 		}
 	},
 	"additionalProperties": false

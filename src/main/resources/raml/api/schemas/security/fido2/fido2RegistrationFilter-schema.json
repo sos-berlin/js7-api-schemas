@@ -14,6 +14,9 @@
 		"accountName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"token": {
+			"$ref": "../../common/string255required-schema.json"
+		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
