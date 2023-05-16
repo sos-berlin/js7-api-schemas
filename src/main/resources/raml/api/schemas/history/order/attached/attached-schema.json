@@ -1,18 +1,9 @@
 {
 	"title": "Moved",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.history.order.moved.Moved",
+	"javaType": "com.sos.joc.model.history.order.attached.Attached",
 	"type": "object",
-	"required": [
-		"to"
-	],
 	"properties": {
-		"to": {
-			"$ref": "moved-to-schema.json"
-		},
-		"skipped": {
-			"$ref": "moved-skipped-schema.json"
-		},
 		"waitingForAdmission": {
 			"$ref": "../common/waitingForAdmission-schema.json"
 		}

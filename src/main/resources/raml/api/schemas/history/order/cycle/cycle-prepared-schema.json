@@ -1,0 +1,15 @@
+{
+	"title": "Moved",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.cycle.CyclePrepared",
+	"type": "object",
+	"properties": {
+		"next": {
+			"type": "string"
+		},
+		"end": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
