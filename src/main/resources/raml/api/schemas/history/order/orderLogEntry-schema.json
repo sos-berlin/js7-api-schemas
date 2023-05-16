@@ -136,6 +136,9 @@
 		"moved": {
 			"$ref": "moved/moved-schema.json"
 		},
+		"attached": {
+			"$ref": "attached/attached-schema.json"
+		},
 		"stopped": {
 			"$ref": "orderLogEntry-instruction-schema.json"
 		},
@@ -150,6 +153,9 @@
 		},
 		"question": {
 			"type": "string"
+		},
+		"cycle": {
+			"$ref": "cycle/cycle-schema.json"
 		}
 	},
 	"additionalProperties": false

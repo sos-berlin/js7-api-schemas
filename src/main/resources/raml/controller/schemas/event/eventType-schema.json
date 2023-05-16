@@ -10,6 +10,7 @@
 		"AgentReady",
 		"OrderAdded",
 		"OrderAttachable",
+		"OrderAttached",
 		"OrderStarted",
 		"OrderTransferredToAgent",
 		"OrderProcessingStarted",
@@ -49,7 +50,8 @@
 		"OrderNoticesExpected",
 		"OrderNoticePosted",
 		"OrderPrompted",
-		"OrderPromptAnswered"
+		"OrderPromptAnswered",
+		"OrderCyclingPrepared"
 	],
 	"javaEnumNames": [
 		"VersionAdded",
@@ -58,6 +60,7 @@
 		"AgentReady",
 		"OrderAdded",
 		"OrderAttachable",
+		"OrderAttached",
 		"OrderStarted",
 		"OrderTransferredToAgent",
 		"OrderProcessingStarted",
@@ -97,6 +100,7 @@
 		"OrderNoticesExpected",
 		"OrderNoticePosted",
 		"OrderPrompted",
-		"OrderPromptAnswered"
+		"OrderPromptAnswered",
+		"OrderCyclingPrepared"
 	]
 }
