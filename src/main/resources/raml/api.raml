@@ -2540,7 +2540,7 @@ traits:
       postJSONWithoutJSId:
         description: Searches inventory objects
         description1: !include api/documentation/inventory/search/quick-search.md
-        description2: " "
+        description2: !include api/documentation/inventory/search/returnTypes.md
         description3: " "
         description4: " "
         description5: " "
@@ -4648,6 +4648,26 @@ traits:
         schema200: !include api/schemas/workflow/workflowsOrderCount-schema.json
         example: !include api/examples/workflow/orderCount-example.json
         example200: !include api/examples/workflow/orderCount-response-example.json
+        
+  /quick/search:
+    type:
+      postJSON:
+        description: Searches deployed objects
+        description1: !include api/documentation/inventory/search/quick-search.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/workflow/search/workflowQuickSearchFilter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
+        example200: TODO
         
   /search:
     type:
