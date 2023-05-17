@@ -21,8 +21,11 @@
 		"publicKey": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"cipherType": {
-			"$ref": "cipherTypes-schema.json"
+		"credentialId": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"clientDataJSON": {
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"deferred": {
 			"$ref": "deferredParam-schema.json"
