@@ -49,6 +49,12 @@
 			"$ref": "../../../controller/schemas/order/expectedNotice-schema.json"
 		}	
 	},
+	"label": {
+		"description": "a label is only in the response if the request restricts the orders to one workflow",
+     	"type": "string",
+  		"pattern": "^[^<>]*$",
+  		"maxLength": 255
+    },
 	"position": {
      	"$ref": "../../../controller/schemas/common/position-schema.json"
     },
