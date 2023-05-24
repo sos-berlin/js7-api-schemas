@@ -2959,6 +2959,17 @@ traits:
           schema: !include api/schemas/publish/repository/updateFromRepositoryFilter-schema.json
           example: !include api/examples/publish/repository/updateFromFilter_files-example.json
 
+# IN PROGRESS
+#  /revalidate:
+#    type:
+#      postWithoutJSONandJSId:
+#      description: revalidates all configuration objects
+#      description1: !include api/documentation/audit/auditLog.md
+#      description2: " "
+#      description200: reports changed objects in lists of valid and invalid ones
+#      schema200: !include api/schemas/inventory/revalidate/response-schema.json
+#      example200: " "
+
   /search:
     type:
       postJSONWithOptionalJSId:
