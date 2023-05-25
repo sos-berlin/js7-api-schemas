@@ -8,9 +8,6 @@
 		"identityServiceName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"iamFido2RpName": {
-			"$ref": "../../common/string255-schema.json"
-		},
 		"iamFido2UserVerification": {
 			"$ref": "../properties/fido2/fido2UserVerification-schema.json"
 		},
@@ -25,9 +22,6 @@
 		},
 		"iamIconUrl": {
 			"$ref": "../../common/string255-schema.json"
-		},
-		"iamCipherType": {
-			"$ref": "../fido2/cipherTypes-schema.json"
 		}
 	},
 	"additionalProperties": false
