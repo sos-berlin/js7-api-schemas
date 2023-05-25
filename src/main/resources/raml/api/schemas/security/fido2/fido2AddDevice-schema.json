@@ -1,0 +1,28 @@
+ 
+{
+	"title": "Fido2 Add Device",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.fido2.Fido2AddDevice",
+	"type": "object",
+	"required": [
+		"identityServiceName",
+		"accountName",
+		"publicKey"
+	],
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"accountName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"publicKey": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    
