@@ -1,0 +1,50 @@
+{
+	"erroneousObjs": [],
+	"invalidObjs": [
+		{
+			"invalidMsg": "$.instructions[0].branches[0].instructions[0].agentName: Missing assigned Agent: agent_cluster_002",
+			"name": "agentClusterRoundRobinParallel",
+			"objectType": "WORKFLOW",
+			"path": "/my/agentClusterRoundRobinParallel",
+			"title": "x",
+			"valid": false
+		},
+		{
+			"invalidMsg": "Missing assigned Calendars: [Everyday]",
+			"name": "everyDaySchedule",
+			"objectType": "SCHEDULE",
+			"path": "/my/everyDaySchedule",
+			"title": "Optimiert die Verteilung der Daten in den Speicherstufen in allen mehrstufigen Speicherplätzen im System.",
+			"valid": false
+		},
+		{
+			"invalidMsg": "$.instructions[1].jobName: Spaces are not allowed in 'jobName': 'job0 k'",
+			"name": "testJob",
+			"objectType": "WORKFLOW",
+			"path": "/my/testJob",
+			"valid": false
+		},
+		{
+			"invalidMsg": "$.orderPreparation.parameters['yade_bin'].default: Error in expression: Parsing failed at position 1 “❓/var/sos-b…” · Expected one of \"“''”, “'''”, “JobResource:”, “argument”, “catchCount”, “false”, “missing”, “null”, “true”, “variable”\" · Expected properly terminated '…'-quoted string without non-printable characters (except \\r and \\n) · Expected identifer · Expected a character out of [!\"$'(-0123456789[`{]",
+			"name": "transferFiles",
+			"objectType": "WORKFLOW",
+			"path": "/my/transferFiles",
+			"valid": false
+		},
+		{
+			"invalidMsg": "$.jobs['こんにちは世界'].executable.env['こんにちは']: only characters 'a-zA-Z0-9_' are allowed in the variable name.",
+			"name": "こんにちは世界",
+			"objectType": "WORKFLOW",
+			"path": "/my/こんにちは世界",
+			"valid": false
+		}
+	],
+	"validObjs": [
+		{
+			"name": "periodic",
+			"objectType": "SCHEDULE",
+			"path": "/my/periodic",
+			"valid": true
+		}
+	]
+}
