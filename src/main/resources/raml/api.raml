@@ -2959,16 +2959,24 @@ traits:
           schema: !include api/schemas/publish/repository/updateFromRepositoryFilter-schema.json
           example: !include api/examples/publish/repository/updateFromFilter_files-example.json
 
-# IN PROGRESS
-#  /revalidate:
-#    type:
-#      postWithoutJSONandJSId:
-#      description: revalidates all configuration objects
-#      description1: !include api/documentation/audit/auditLog.md
-#      description2: " "
-#      description200: reports changed objects in lists of valid and invalid ones
-#      schema200: !include api/schemas/inventory/revalidate/response-schema.json
-#      example200: " "
+  /revalidate/folder:
+    type:
+      postJSONWithoutJSId:
+        description: revalidates the configuration objects
+        description1: !include api/documentation/inventory/path.md
+        description2: !include api/documentation/common/recursive.md
+        description3: !include api/documentation/audit/auditLog.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: reports changed objects in lists of valid and invalid ones
+        schema: !include api/schemas/inventory/revalidate/request-folder-schema.json
+        schema200: !include api/schemas/inventory/revalidate/response-schema.json
+        example200: !include api/examples/inventory/revalidate-example.json
 
   /search:
     type:

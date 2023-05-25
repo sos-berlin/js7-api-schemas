@@ -1,0 +1,21 @@
+{
+	"title": "Filter of a folder",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.validate.RequestFolder",
+	"type": "object",
+	"required": [
+		"path"
+	],
+	"properties": {
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"recursive": {
+			"type": "boolean",
+			"default": false
+		},
+    	"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
+	}
+}
