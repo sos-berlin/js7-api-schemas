@@ -8,15 +8,18 @@
 		"identityServiceName"
 	],
 	"properties": {
-		"credentialId": {
-			"$ref": "../../common/string255required-schema.json"
+		"credentialIds": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255required-schema.json"
+			}
 		},
 		"challenge": {
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"fido2Properties": {
 			"$ref": "../properties/fido2/fido2-properties-schema.json"
-		} 
+		}
 	},
 	"additionalProperties": false
 }

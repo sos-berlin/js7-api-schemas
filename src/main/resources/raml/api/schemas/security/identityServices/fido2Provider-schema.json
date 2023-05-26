@@ -18,7 +18,10 @@
 			"$ref": "../properties/fido2/fido2Attestation-schema.json"
 		},
 		"iamFido2Transports": {
-			"$ref": "../properties/fido2/fido2Transports-schema.json"
+			"type": "array",
+			"items": {
+				"$ref": "../properties/fido2/fido2Transports-schema.json"
+			}
 		},
 		"iamIconUrl": {
 			"$ref": "../../common/string255-schema.json"
