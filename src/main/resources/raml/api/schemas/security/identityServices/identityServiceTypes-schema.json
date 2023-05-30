@@ -13,7 +13,7 @@
     "LDAP",
     "LDAP-JOC",
     "OIDC",
-    "FIDO2",
+    "FIDO",
     "JOC",
     "CERTIFICATE" 
   ]

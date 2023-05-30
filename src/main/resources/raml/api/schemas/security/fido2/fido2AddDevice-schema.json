@@ -20,6 +20,9 @@
 		"publicKey": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"jwk": {
+			"$ref": "../../common/string255required-schema.json"
+		},
 		"credentialId": {
 			"$ref": "../../common/string255required-schema.json"
 		},
