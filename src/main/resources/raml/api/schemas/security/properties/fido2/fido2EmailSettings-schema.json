@@ -5,10 +5,28 @@
 	"javaType": "com.sos.joc.model.security.properties.fido2.Fido2EmailSettings",
 	"type": "object",
 	"properties": {
-		"body": {
+		"bodyRegistration": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
-		"subject": {
+		"subjectRegistration": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"bodyAccess": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"subjectAccess": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"contentType": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"charset": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"encoding": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"priority": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
 		"nameOfJobResource": {
