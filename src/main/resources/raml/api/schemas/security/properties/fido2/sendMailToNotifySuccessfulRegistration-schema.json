@@ -1,6 +1,6 @@
 {
-  "title": "sendMailToConfirm parameter",
+  "title": "Successful Registration parameter",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "true if the confirmation email should be sent",
+  "description": "true if the email for successful registration should be sent",
   "type": "boolean"
 }
