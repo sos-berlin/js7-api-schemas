@@ -17,6 +17,12 @@
 		"subjectAccess": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
+		"sendMailToConfirm": {
+			"$ref": "sendMailToConfirm-schema.json"
+		},
+		"sendMailToNotifySuccessfulRegistration": {
+			"$ref": "sendMailToNotifySuccessfulRegistration-schema.json"
+		},
 		"contentType": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
@@ -28,7 +34,7 @@
 		},
 		"priority": {
 			"$ref": "../../../common/string255required-schema.json"
-		},
+		},		
 		"nameOfJobResource": {
 			"$ref": "../../../common/string255required-schema.json"
 		} 
