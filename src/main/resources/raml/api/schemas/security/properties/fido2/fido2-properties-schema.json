@@ -16,7 +16,7 @@
 			"$ref": "fido2Attestation-schema.json",
 			"default":"DIRECT"
 		},
-		"iamFido2ResidenKey": {
+		"iamFido2ResidentKey": {
 			"$ref": "fido2ResidentKey-schema.json",
 			"default":"DIRECT"
 		},
