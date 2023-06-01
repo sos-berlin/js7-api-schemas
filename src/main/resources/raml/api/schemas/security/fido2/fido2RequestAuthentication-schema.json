@@ -4,7 +4,6 @@
 	"javaType": "com.sos.joc.model.security.fido2.Fido2RequestAuthentication",
 	"type": "object",
 	"required": [
-		"accountName",
 		"identityServiceName"
 	],
 	"properties": {
