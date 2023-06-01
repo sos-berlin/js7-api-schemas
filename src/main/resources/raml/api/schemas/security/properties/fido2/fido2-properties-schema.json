@@ -17,8 +17,7 @@
 			"default":"DIRECT"
 		},
 		"iamFido2ResidentKey": {
-			"$ref": "fido2ResidentKey-schema.json",
-			"default":"DIRECT"
+			"$ref": "fido2ResidentKey-schema.json"
 		},
 		"iamFido2Transports": {
 			"type": "array",
