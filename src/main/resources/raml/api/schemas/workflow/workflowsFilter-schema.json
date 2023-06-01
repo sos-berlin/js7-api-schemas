@@ -36,6 +36,12 @@
 	},
     "regex": {
       "$ref": "../common/regexFilter-schema.json"
+    },
+    "agentNames": {
+    	"type": "array",
+		"items": {
+			"$ref": "../common/string255required-schema.json"
+		}
     }
   }
 }
