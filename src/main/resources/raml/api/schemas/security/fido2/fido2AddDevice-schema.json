@@ -7,7 +7,8 @@
 	"required": [
 		"identityServiceName",
 		"accountName",
-		"publicKey"
+		"publicKey",
+		"credentialId"
 	],
 	"properties": {
 		"identityServiceName": {
@@ -17,6 +18,12 @@
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"publicKey": {
+			"$ref": "../../common/string1024required-schema.json"
+		},
+		"jwk": {
+			"$ref": "../../common/string1024-schema.json"
+		},
+		"credentialId": {
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"auditLog": {

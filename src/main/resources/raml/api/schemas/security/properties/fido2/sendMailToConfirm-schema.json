@@ -1,0 +1,6 @@
+{
+  "title": "sendMailTo Confirm parameter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "true if the confirmation email should be sent",
+  "type": "boolean"
+}

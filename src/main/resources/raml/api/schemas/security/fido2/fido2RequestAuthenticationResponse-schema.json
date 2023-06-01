@@ -3,20 +3,19 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.fido2.Fido2RequestAuthenticationResponse",
 	"type": "object",
-	"required": [
-		"accountName",
-		"identityServiceName"
-	],
 	"properties": {
-		"credentialId": {
-			"$ref": "../../common/string255required-schema.json"
+		"credentialIds": {
+			"type": "array",
+			"items": {
+				"$ref": "../../common/string255required-schema.json"
+			}
 		},
 		"challenge": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"fido2Properties": {
-			"$ref": "../properties/fido2/fido2-properties-schema.json"
-		} 
+		"requestId": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		}
 	},
 	"additionalProperties": false
 }

@@ -5,17 +5,26 @@
 	"type": "object",
 	"properties": {
 		"iamFido2UserVerification": {
-			"$ref": "fido2UserVerification-schema.json"
+			"$ref": "fido2UserVerification-schema.json",
+			"default":"PREFERRED"
 		},
 		"iamFido2Timeout": {
-			"$ref": "../../../common/nonNegativeInteger-schema.json"
+			"$ref": "../../../common/nonNegativeInteger-schema.json",
+			"default":60
 		},
 		"iamFido2Attestation": {
-			"$ref": "fido2Attestation-schema.json"
+			"$ref": "fido2Attestation-schema.json",
+			"default":"DIRECT"
+		},
+		"iamFido2ResidentKey": {
+			"$ref": "fido2ResidentKey-schema.json"
 		},
 		"iamFido2Transports": {
+			"type": "array",
+			"items": {
 			"$ref": "fido2Transports-schema.json"
-		},
+			}
+		},		
 		"iamFido2EmailSettings": {
 			"$ref": "fido2EmailSettings-schema.json"
 		}
