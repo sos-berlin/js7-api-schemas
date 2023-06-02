@@ -28,7 +28,7 @@
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"clientDataJSON": {
-			"$ref": "../../common/string255required-schema.json"
+			"type": "string"
 		},
 		"deferred": {
 			"$ref": "deferredParam-schema.json"
