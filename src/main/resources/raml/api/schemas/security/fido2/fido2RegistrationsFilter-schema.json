@@ -4,7 +4,7 @@
 	"javaType": "com.sos.joc.model.security.fido2.Fido2RegistrationsFilter",
 	"type": "object",
 	"required": [
-		"accountNames",
+		"accounts",
 		"identityServiceName"
 	],
 	"properties": {
