@@ -11,10 +11,10 @@
 		"identityServiceName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"accountNames": {
+		"accounts": {
 			"type": "array",
 			"items": {
-				"$ref": "../../common/string255-schema.json"
+				"$ref": "fido2RegistrationAccount-schema.json"
 			}
 		},
 		"deferred": {

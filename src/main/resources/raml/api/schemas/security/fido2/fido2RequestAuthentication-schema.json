@@ -13,6 +13,9 @@
 		"accountName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"origin": {
+			"$ref": "../../common/string255required-schema.json"
+		},
 		"challenge": {
 			"$ref": "../../common/string255required-schema.json"
 		},

@@ -1,0 +1,20 @@
+{
+	"title": "Fido2 Registration Account",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.fido2.Fido2RegistrationAccount",
+	"type": "object",
+	"required": [
+		"accountName",
+		"origin"
+	],
+	"properties": {
+		"accountName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"origin": {
+			"$ref": "../../common/string255required-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    

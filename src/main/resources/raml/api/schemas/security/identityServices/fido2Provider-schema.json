@@ -20,6 +20,10 @@
 		"iamFido2ResidentKey": {
 			"$ref": "../properties/fido2/fido2ResidentKey-schema.json"
 		},
+		"iamFido2RequireAccount": {
+			"type": "boolean",
+			"default":false
+		},
 		"iamFido2Transports": {
 			"type": "array",
 			"items": {

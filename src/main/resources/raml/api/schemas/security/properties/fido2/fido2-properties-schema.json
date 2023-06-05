@@ -25,6 +25,10 @@
 			"$ref": "fido2Transports-schema.json"
 			}
 		},		
+		"requireAccount": {
+			"type": "boolean",
+  			"default": false
+		},
 		"iamFido2EmailSettings": {
 			"$ref": "fido2EmailSettings-schema.json"
 		}

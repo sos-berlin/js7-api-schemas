@@ -18,6 +18,9 @@
 		"email": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"origin": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"publicKey": {
 			"$ref": "../../common/string1024required-schema.json"
 		},

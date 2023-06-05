@@ -14,7 +14,7 @@
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"requestId": {
-			"$ref": "../../common/nonNegativeLong-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		}
 	},
 	"additionalProperties": false
