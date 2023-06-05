@@ -8,6 +8,7 @@
 		"identityServiceName",
 		"accountName",
 		"publicKey",
+		"origin",
 		"credentialId"
 	],
 	"properties": {
@@ -24,6 +25,9 @@
 			"$ref": "../../common/string1024-schema.json"
 		},
 		"credentialId": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"origin": {
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"auditLog": {
