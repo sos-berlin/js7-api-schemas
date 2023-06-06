@@ -11,16 +11,40 @@
 		"subjectRegistration": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
+		"ccRegistration": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"bccRegistration": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
 		"bodyAccess": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
 		"subjectAccess": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
+		"ccAccess": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"bccAccess": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"bodyConfirmed": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"subjectConfirmed": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"receiptConfirmed": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
 		"sendMailToConfirm": {
 			"$ref": "sendMailToConfirm-schema.json"
 		},
 		"sendMailToNotifySuccessfulRegistration": {
+			"$ref": "sendMailToNotifySuccessfulRegistration-schema.json"
+		},
+		"sendMailToNotifyConfirmationReceived": {
 			"$ref": "sendMailToNotifySuccessfulRegistration-schema.json"
 		},
 		"contentType": {
@@ -34,10 +58,10 @@
 		},
 		"priority": {
 			"$ref": "../../../common/string255required-schema.json"
-		},		
+		},
 		"nameOfJobResource": {
 			"$ref": "../../../common/string255required-schema.json"
-		} 
+		}
 	},
 	"additionalProperties": false
 }
