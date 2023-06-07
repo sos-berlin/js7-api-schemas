@@ -35,6 +35,12 @@
 		"subjectConfirmed": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
+		"ccConfirmed": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
+		"bccConfirmed": {
+			"$ref": "../../../common/string255required-schema.json"
+		},
 		"receiptConfirmed": {
 			"$ref": "../../../common/string255required-schema.json"
 		},
