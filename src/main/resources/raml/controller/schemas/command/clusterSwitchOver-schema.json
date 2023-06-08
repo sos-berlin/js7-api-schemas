@@ -1,10 +1,15 @@
 {
-  "title": "ClusterSwitchOver",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.controller.model.command.ClusterSwitchOver",
-  "type": "object",
-  "extends" : {
-    "javaType": "Command"
-  },
-  "additionalProperties": false
+  	"title": "ClusterSwitchOver",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"javaType": "com.sos.controller.model.command.ClusterSwitchOver",
+  	"type": "object",
+  	"extends" : {
+    	"javaType": "Command"
+  	},
+  	"properties": {
+		"agentId": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
 }
