@@ -47,6 +47,9 @@
     	"alias": "position",
     	"type": "integer",
     	"minimum": 1
+    },
+    "version": {
+    	"$ref": "../common/string255-schema.json"
     }
   },
   "additionalProperties": false
