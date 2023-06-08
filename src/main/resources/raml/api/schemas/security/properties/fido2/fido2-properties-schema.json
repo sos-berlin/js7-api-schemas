@@ -1,5 +1,5 @@
 {
-	"title": "FIDO2 Connect Properties",
+	"title": "FIDO2 Properties",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.properties.fido2.Fido2Properties",
 	"type": "object",
@@ -14,6 +14,9 @@
 		},
 		"iamFido2ResidentKey": {
 			"$ref": "fido2ResidentKey-schema.json"
+		},
+		"iamFido2Attachment": {
+			"$ref": "fido2Attachment-schema.json"
 		},
 		"iamFido2Transports": {
 			"type": "array",
