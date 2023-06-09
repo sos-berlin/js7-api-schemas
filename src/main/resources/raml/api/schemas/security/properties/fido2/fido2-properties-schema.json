@@ -12,6 +12,9 @@
 			"$ref": "../../../common/nonNegativeInteger-schema.json",
 			"default":60
 		},
+		"iamFidoProtocolType": {
+			"$ref": "fidoProtocolType-schema.json"
+		},
 		"iamFido2ResidentKey": {
 			"$ref": "fido2ResidentKey-schema.json"
 		},
@@ -24,7 +27,7 @@
 			"$ref": "fido2Transports-schema.json"
 			}
 		},		
-		"requireAccount": {
+		"iamFido2requireAccount": {
 			"type": "boolean",
   			"default": false
 		},

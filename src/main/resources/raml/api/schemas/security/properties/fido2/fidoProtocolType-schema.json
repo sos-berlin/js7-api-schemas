@@ -1,0 +1,12 @@
+{
+  "title": "Fido Protocol Type",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.security.properties.fido2.FidoProtocolType",
+  "type": "string",
+  "enum": [
+    "FIDO2",
+    "U2F", 
+    "PASSKEY"
+  ]
+}
+    
