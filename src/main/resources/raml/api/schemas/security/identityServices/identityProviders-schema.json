@@ -13,6 +13,12 @@
 				"$ref": "oidcProvider-schema.json"
 			}
 		},
+		"fido2ndFactorServiceItems": {
+			"type": "array",
+			"items": {
+				"$ref": "fido2Provider-schema.json"
+			}
+		},
 		"fido2ServiceItems": {
 			"type": "array",
 			"items": {
