@@ -7,7 +7,7 @@
     	"javaType": "Command"
   	},
   	"properties": {
-		"agentId": {
+		"agentPath": {
 			"type": "string"
 		}
 	},
