@@ -1,7 +1,7 @@
 {
-  "title": "Fido2 Attachment",
+  "title": "Fido Attachment",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.security.properties.fido2.Fido2Attachment",
+  "javaType": "com.sos.joc.model.security.properties.fido.FidoAttachment",
   "type": "string",
   "enum": [
     "PLATFORM", 

@@ -1,8 +1,8 @@
  
 {
-	"title": "Fido2 Authentication Start Response",
+	"title": "Fido Authentication Start Response",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.fido2.Fido2AuthenticationStartResponse",
+	"javaType": "com.sos.joc.model.security.fido.FidoAuthenticationStartResponse",
 	"type": "object",
 	"properties": {
 		"challenge": {
@@ -11,8 +11,8 @@
 		"credentialId": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"fido2Properties": {
-			"$ref": "../properties/fido2/fido2-properties-schema.json"
+		"fidoProperties": {
+			"$ref": "../properties/fido/fido-properties-schema.json"
 		}
 	},
 	"additionalProperties": false

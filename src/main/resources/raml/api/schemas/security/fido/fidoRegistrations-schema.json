@@ -1,7 +1,7 @@
 {
 	"title": "Accounts",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.fido2.Fido2Registrations",
+	"javaType": "com.sos.joc.model.security.fido.FidoRegistrations",
 	"type": "object",
 	"properties": {
 		"deliveryDate": {
@@ -10,10 +10,10 @@
 		"identityServiceName": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"fido2RegistrationItems": {
+		"fidoRegistrationItems": {
 			"type": "array",
 			"items": {
-				"$ref": "fido2Registration-schema.json"
+				"$ref": "fidoRegistration-schema.json"
 			}
 		}
 	},

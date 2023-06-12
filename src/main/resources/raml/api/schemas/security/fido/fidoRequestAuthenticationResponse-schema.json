@@ -1,7 +1,7 @@
 {
 	"title": "Fido2 Request Authentication Response",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.fido2.Fido2RequestAuthenticationResponse",
+	"javaType": "com.sos.joc.model.security.fido.FidoRequestAuthenticationResponse",
 	"type": "object",
 	"properties": {
 		"credentialIds": {

@@ -1,7 +1,7 @@
 {
-	"title": "Fido2 Registrations Filter",
+	"title": "Fido Registrations Filter",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.fido2.Fido2RegistrationsFilter",
+	"javaType": "com.sos.joc.model.security.fido.FidoRegistrationsFilter",
 	"type": "object",
 	"required": [
 		"accounts",
@@ -14,7 +14,7 @@
 		"accounts": {
 			"type": "array",
 			"items": {
-				"$ref": "fido2RegistrationAccount-schema.json"
+				"$ref": "fidoRegistrationAccount-schema.json"
 			}
 		},
 		"deferred": {

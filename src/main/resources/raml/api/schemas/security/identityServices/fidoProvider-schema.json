@@ -1,0 +1,39 @@
+ 
+{
+	"title": "FIDO Identity Provider",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.identityservice.FidoIdentityProvider",
+	"type": "object",
+	"properties": {
+		"identityServiceName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"iamFidoUserVerification": {
+			"$ref": "../properties/fido/fidoUserVerification-schema.json"
+		},
+		"iamFidoTimeout": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
+		"iamFido2Attachment": {
+			"$ref": "../properties/fido/fidoAttachment-schema.json"
+		},
+		"iamFidoResidentKey": {
+			"$ref": "../properties/fido/fidoResidentKey-schema.json"
+		},
+		"iamFidoRequireAccount": {
+			"type": "boolean",
+			"default":false
+		},
+		"iamFidoTransports": {
+			"type": "array",
+			"items": {
+				"$ref": "../properties/fido/fidoTransports-schema.json"
+			}
+		},
+		"iamIconUrl": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    
