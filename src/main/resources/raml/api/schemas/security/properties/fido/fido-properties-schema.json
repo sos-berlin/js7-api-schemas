@@ -1,0 +1,40 @@
+{
+	"title": "FIDO Properties",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.properties.fido.FidoProperties",
+	"type": "object",
+	"properties": {
+		"iamFidoUserVerification": {
+			"$ref": "fidoUserVerification-schema.json",
+			"default":"PREFERRED"
+		},
+		"iamFidoTimeout": {
+			"$ref": "../../../common/nonNegativeInteger-schema.json",
+			"default":60
+		},
+		"iamFidoProtocolType": {
+			"$ref": "fidoProtocolType-schema.json"
+		},
+		"iamFidoResidentKey": {
+			"$ref": "fidoResidentKey-schema.json"
+		},
+		"iamFidoAttachment": {
+			"$ref": "fidoAttachment-schema.json"
+		},
+		"iamFidoTransports": {
+			"type": "array",
+			"items": {
+			"$ref": "fidoTransports-schema.json"
+			}
+		},		
+		"iamFidoRequireAccount": {
+			"type": "boolean",
+  			"default": false
+		},
+		"iamFidoEmailSettings": {
+			"$ref": "fidoEmailSettings-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    

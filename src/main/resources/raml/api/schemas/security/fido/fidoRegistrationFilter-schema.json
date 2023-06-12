@@ -1,13 +1,12 @@
- 
 {
-	"title": "Fido2 Remove Devices",
+	"title": "Fido Registration Filter",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.fido2.Fido2RemoveDevices",
+	"javaType": "com.sos.joc.model.security.fido.FidoRegistrationFilter",
 	"type": "object",
 	"required": [
-		"identityServiceName",
-		"accountName"
-	],
+		"accountName",
+		"identityServiceName"
+			],
 	"properties": {
 		"identityServiceName": {
 			"$ref": "../../common/string255required-schema.json"
@@ -15,10 +14,13 @@
 		"accountName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
+		"origin": {
+			"$ref": "../../common/string255-schema.json"
+		},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
 	},
 	"additionalProperties": false
 }
-    
+  

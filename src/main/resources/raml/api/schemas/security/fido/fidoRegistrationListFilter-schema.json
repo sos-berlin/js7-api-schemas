@@ -1,7 +1,7 @@
 {
-	"title": "Fido2 Registration List Filter",
+	"title": "Fido Registration List Filter",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.fido2.Fido2RegistrationListFilter",
+	"javaType": "com.sos.joc.model.security.fido.FidoRegistrationListFilter",
 	"type": "object",
 	"required": [
 		"identityServiceName"

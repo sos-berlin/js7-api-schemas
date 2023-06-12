@@ -1,10 +1,15 @@
+ 
 {
-	"title": "Fido2 Request Authentication",
+	"title": "Fido2 Add Device",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.fido2.Fido2RequestAuthentication",
+	"javaType": "com.sos.joc.model.security.fido.FidoAddDevice",
 	"type": "object",
 	"required": [
-		"identityServiceName"
+		"identityServiceName",
+		"accountName",
+		"publicKey",
+		"origin",
+		"credentialId"
 	],
 	"properties": {
 		"identityServiceName": {
@@ -13,10 +18,16 @@
 		"accountName": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"origin": {
+		"publicKey": {
+			"$ref": "../../common/string1024required-schema.json"
+		},
+		"jwk": {
+			"$ref": "../../common/string1024-schema.json"
+		},
+		"credentialId": {
 			"$ref": "../../common/string255required-schema.json"
 		},
-		"challenge": {
+		"origin": {
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"auditLog": {
@@ -25,4 +36,4 @@
 	},
 	"additionalProperties": false
 }
-  
+    

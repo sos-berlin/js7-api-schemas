@@ -1,7 +1,7 @@
 {
   "title": "Fido Protocol Type",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.security.properties.fido2.FidoProtocolType",
+  "javaType": "com.sos.joc.model.security.properties.fido.FidoProtocolType",
   "type": "string",
   "enum": [
     "FIDO2",

@@ -1,8 +1,8 @@
  
 {
-	"title": "Fido2 Email Settings",
+	"title": "Fido Email Settings",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.properties.fido2.Fido2EmailSettings",
+	"javaType": "com.sos.joc.model.security.properties.fido.FidoEmailSettings",
 	"type": "object",
 	"properties": {
 		"bodyRegistration": {

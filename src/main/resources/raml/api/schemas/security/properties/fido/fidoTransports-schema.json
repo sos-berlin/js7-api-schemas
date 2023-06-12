@@ -1,7 +1,7 @@
 {
-  "title": "Fido2 Transports",
+  "title": "Fido Transports",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.security.properties.fido2.Fido2Transports",
+  "javaType": "com.sos.joc.model.security.properties.fido.FidoTransports",
   "type": "string",
   "enum": [
     "BLE", 

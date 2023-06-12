@@ -16,13 +16,13 @@
 		"fido2ndFactorServiceItems": {
 			"type": "array",
 			"items": {
-				"$ref": "fido2Provider-schema.json"
+				"$ref": "fidoProvider-schema.json"
 			}
 		},
-		"fido2ServiceItems": {
+		"fidoServiceItems": {
 			"type": "array",
 			"items": {
-				"$ref": "fido2Provider-schema.json"
+				"$ref": "fidoProvider-schema.json"
 			}
 		}  
 	},

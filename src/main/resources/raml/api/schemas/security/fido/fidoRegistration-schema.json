@@ -1,8 +1,8 @@
  
 {
-	"title": "Fido2 Registration",
+	"title": "Fido Registration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.fido2.Fido2Registration",
+	"javaType": "com.sos.joc.model.security.fido.FidoRegistration",
 	"type": "object",
 	"required": [
 		"identityServiceName",
