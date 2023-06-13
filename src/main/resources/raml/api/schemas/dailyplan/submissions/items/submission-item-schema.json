@@ -17,7 +17,7 @@
 			"$ref": "../../../common/nonNegativeLong-schema.json"
 		},
 		"dailyPlanDate": {
-			"$ref": "../../../common/timestamp-schema.json"
+			"$ref": "../../../common/date-schema.json"
 		},
 		"submissionTime": {
 			"$ref": "../../../common/timestamp-schema.json"
