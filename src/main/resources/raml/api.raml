@@ -3580,6 +3580,26 @@ traits:
       example: TODO
       example200: !include api/examples/lock/locks.json
       
+  /quick/search:
+    type:
+      postJSON:
+        description: Searches deployed locks
+        description1: !include api/documentation/inventory/search/quick-search.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/common/quickSearchFilter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
+        example200: TODO
+        
   /search:
     type:
       postJSON:
