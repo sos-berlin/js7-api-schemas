@@ -1,0 +1,19 @@
+{
+	"title": "Filter deployed objects search",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.common.DeployedObjectQuickSearchFilter",
+	"type": "object",
+	"extends" : {
+  		"$ref": "../inventory/search/request-base-quick-search-filter-schema.json"
+  	},
+	"required": [
+		"search",
+		"controllerId"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "controllerIdRequired-schema.json"
+		}
+	},
+  	"additionalProperties": false
+}

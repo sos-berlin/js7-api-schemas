@@ -795,6 +795,25 @@ traits:
       example: " "
       example200: " "
       
+  /quick/search:
+    type:
+      postJSONWithoutJSId:
+        description: Searches released calendars
+        description1: !include api/documentation/inventory/search/quick-search.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/common/quickSearchFilter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
+        example200: TODO
   /search:
     type:
       postJSONWithoutJSId:
@@ -1523,6 +1542,25 @@ traits:
       schema200: !include api/schemas/docu/documentations-schema.json
       example: " "
       example200: " "
+  /delete:
+    type:
+      postJSONWithoutJSId:
+        description: Deletes Documentations
+        description1: !include api/documentation/docu/delete.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        description200: " "
+        schema: !include api/schemas/docu/documentationsDeleteFilter-schema.json
+        schema200: ok
+        example: " "
+        example200: " "
   /export:
     get:
     type:
@@ -1559,11 +1597,11 @@ traits:
     type:
       postForUpload:
         description: Imports Documentations
-  /delete:
+  /quick/search:
     type:
       postJSONWithoutJSId:
-        description: Deletes Documentations
-        description1: !include api/documentation/docu/delete.md
+        description: Searches documentations
+        description1: !include api/documentation/inventory/search/quick-search.md
         description2: " "
         description3: " "
         description4: " "
@@ -1572,12 +1610,12 @@ traits:
         description7: " "
         description8: " "
         description9: " "
-        description10: !include api/documentation/audit/auditLog.md
+        description10: " "
         description200: " "
-        schema: !include api/schemas/docu/documentationsDeleteFilter-schema.json
-        schema200: ok
-        example: " "
-        example200: " "
+        schema: !include api/schemas/common/quickSearchFilter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
+        example200: TODO
 
 /iam:
   description: This is not an API call. Use its children!!
@@ -3626,6 +3664,25 @@ traits:
         example: !include api/examples/noticeBoard/boards-request-example.json
         example200: !include api/examples/noticeBoard/boards-response-example.json
         
+    /quick/search:
+      type:
+        postJSON:
+          description: Searches deployed notice boards
+          description1: !include api/documentation/inventory/search/quick-search.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/common/quickSearchFilter-schema.json
+          example: TODO
+          schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
+          example200: TODO
     /search:
       type:
         postJSON:
@@ -4671,7 +4728,7 @@ traits:
   /quick/search:
     type:
       postJSON:
-        description: Searches deployed objects
+        description: Searches deployed workflows
         description1: !include api/documentation/inventory/search/quick-search.md
         description2: " "
         description3: " "
@@ -4683,7 +4740,7 @@ traits:
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/workflow/search/workflowQuickSearchFilter-schema.json
+        schema: !include api/schemas/common/quickSearchFilter-schema.json
         example: TODO
         schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
         example200: TODO
