@@ -7,7 +7,7 @@
 		"javaType": "Command"
 	},
 	"required": [
-		"orderId"
+		"orderIds"
 	],
 	"propertyOrder": [
     	"TYPE",

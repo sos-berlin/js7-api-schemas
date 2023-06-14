@@ -1,1 +1,2 @@
 <tr><td>``kill``</td><td>optional, boolean</td><td>without a signal(false) or with SIGTERM(true)</td><td></td><td>without a signal(false)</td></tr>
+<tr><td>``deep``</td><td>optional, boolean</td><td>if true then child orders are also processed</td><td></td><td>false</td></tr>
