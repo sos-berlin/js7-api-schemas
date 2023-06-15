@@ -94,6 +94,10 @@
     },
 	"cyclicOrder": {
 		"$ref": "../orderManagement/dailyplan/cyclicOrder-schema.json"
+	},
+	"hasChildOrders": {
+		"type": "boolean",
+		"default": false	
 	}
   },
   "additionalProperties": false
