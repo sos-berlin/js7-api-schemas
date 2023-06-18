@@ -21,6 +21,12 @@
     },
     "agentId" : {
       "type" : "string"
+    },
+    "jocConfs" : {
+      "type" : "array",
+      "items" : {
+        "$ref": "rolloutJocItem-schema.json"
+      }
     }
   }
 }
