@@ -1,0 +1,17 @@
+{
+  "title": "JOC Conf for rollout",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.rollout.items.JocConf",
+  "type": "object",
+  "properties": {
+    "url" : {
+      "type" : "string"
+    },
+    "DN": {
+      "type": "string"
+    },
+    "jocId" : {
+      "type" : "string"
+    }
+  }
+}
