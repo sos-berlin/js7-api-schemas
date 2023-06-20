@@ -4375,24 +4375,44 @@ traits:
       example200: !include api/examples/orderManagement/runtime200-example.json
 
 /schedules:
+  type:
+    postJSON:
+      description: Lists schedules for a given controller
+      description1: !include api/documentation/dailyplan/schedules/dailyPlanSchedulesSelectorDef.md
+      description2: !include api/documentation/dailyplan/schedules/folders.md
+      description3: !include api/documentation/dailyplan/schedules/schedules.md
+      description4: !include api/documentation/dailyplan/schedules/workflowPaths.md
+      description5: !include api/documentation/dailyplan/schedules/controllerIds.md
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: " "
+      schema: !include api/schemas/orderManagement/orders/schedulesSelector-schema.json
+      schema200: !include api/schemas/orderManagement/orders/schedulesList-schema.json
+      example: " "
+      example200: " "
+        
+  /quick/search:
     type:
-      postJSON:
-        description: Lists schedules for a given controller
-        description1: !include api/documentation/dailyplan/schedules/dailyPlanSchedulesSelectorDef.md
-        description2: !include api/documentation/dailyplan/schedules/folders.md
-        description3: !include api/documentation/dailyplan/schedules/schedules.md
-        description4: !include api/documentation/dailyplan/schedules/workflowPaths.md
-        description5: !include api/documentation/dailyplan/schedules/controllerIds.md
+      postJSONWithoutJSId:
+        description: Searches released schedules
+        description1: !include api/documentation/inventory/search/quick-search.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
         description6: " "
         description7: " "
         description8: " "
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/orderManagement/orders/schedulesSelector-schema.json
-        schema200: !include api/schemas/orderManagement/orders/schedulesList-schema.json
-        example: " "
-        example200: " "
+        schema: !include api/schemas/common/quickSearchFilter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
+        example200: TODO
 
 /settings:
   type:
