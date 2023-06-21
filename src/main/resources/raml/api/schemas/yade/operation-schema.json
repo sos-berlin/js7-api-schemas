@@ -1,15 +1,17 @@
 {
-  "title": " yade operation",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.yade.Operation",
-  "type": "string",
-  "enum": [
-    "COPY",
-    "MOVE",
-    "GETLIST",
-    "RENAME",
-    "COPYTOINTERNET",
-    "COPYFROMINTERNET",
-    "UNKNOWN"
-  ]
+	"title": " yade operation",
+	"description": "must have the same entries as com.sos.yade.commons.Yade.TransferOperation",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.yade.Operation",
+	"type": "string",
+	"enum": [
+		"UNKNOWN",
+		"COPY",
+		"MOVE",
+		"GETLIST",
+		"RENAME",
+		"COPYTOINTERNET",
+		"COPYFROMINTERNET",
+		"REMOVE"
+	]
 }
