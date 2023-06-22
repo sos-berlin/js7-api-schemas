@@ -40,6 +40,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
         @JsonSubTypes.Type(value = ReplaceRepo.class, name = "ReplaceRepo"),
         @JsonSubTypes.Type(value = UpdateRepo.class, name = "UpdateRepo"),
         @JsonSubTypes.Type(value = ClusterSwitchOver.class, name = "ClusterSwitchOver"),
+        @JsonSubTypes.Type(value = ConfirmAgentClusterNodeLoss.class, name = "ConfirmClusterNodeLoss"),
         @JsonSubTypes.Type(value = ClusterAppointNodes.class, name = "ClusterAppointNodes"),
         @JsonSubTypes.Type(value = ReleaseEvents.class, name = "ReleaseEvents"),
         @JsonSubTypes.Type(value = ResetAgent.class, name = "ResetAgent"),

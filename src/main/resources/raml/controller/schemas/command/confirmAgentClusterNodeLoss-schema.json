@@ -1,0 +1,21 @@
+{
+  	"title": "ConfirmAgentClusterNodeLoss",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"javaType": "com.sos.controller.model.command.ConfirmAgentClusterNodeLoss",
+  	"type": "object",
+  	"extends" : {
+    	"javaType": "Command"
+  	},
+  	"properties": {
+		"agentPath": {
+			"type": "string"
+		},
+		"lostNodeId": {
+			"type": "string"
+		},
+  		"confirmer": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

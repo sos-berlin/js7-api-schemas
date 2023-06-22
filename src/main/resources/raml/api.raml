@@ -100,7 +100,22 @@ traits:
         description10: " "
         schema: !include api/schemas/agent/agentCommand-schema.json
         example: " "
-        
+  /cluster/confirm_node_loss:
+    type:
+      postJSONWithOkResponse:
+        description: Switches over Agent Director Cluster
+        description1: !include api/documentation/agent/agentId.md
+        description2: !include api/documentation/agent/lostDirector.md
+        description3: !include api/documentation/audit/auditLog.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/agent/agentCommand-schema.json
+        example: " "      
   /delete:
     type:
       postJSONWithOkResponse:

@@ -19,6 +19,14 @@
     	"type": "boolean",
     	"default": false
     },
+    "lostDirector": {
+    	"description": "only relevant for /agent/cluster/confirm_node_loss",
+		"type": "string",
+		"enum": [
+      		"PRIMARY_DIRECTOR",
+      		"SECONDARY_DIRECTOR"
+  		]
+	},
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }

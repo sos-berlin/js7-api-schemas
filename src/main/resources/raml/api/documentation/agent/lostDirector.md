@@ -1,0 +1,1 @@
+<tr><td>``lostDirector``</td><td>optional, string</td><td>Possible values: PRIMARY_DIRECTOR, SECONDARY_DIRECTOR</td><td></td><td></td></tr>
