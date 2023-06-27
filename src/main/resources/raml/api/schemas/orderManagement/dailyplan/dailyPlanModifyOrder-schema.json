@@ -56,9 +56,14 @@
 				]
 			}
 		},
+    	"forceJobAdmission": {
+    		"type": "boolean",
+    		"default": false	
+    	},
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }
  

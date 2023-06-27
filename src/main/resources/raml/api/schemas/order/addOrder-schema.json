@@ -37,6 +37,11 @@
 				{"$ref": "../common/string255required-schema.json"}
 			]
 		}
+    },
+    "forceJobAdmission": {
+    	"type": "boolean",
+    	"default": false	
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -22,6 +22,10 @@
     },
     "positions": {
      	"$ref": "../../../inventory/schemas/schedule/positions-schema.json"
+    },
+    "forceJobAdmission": {
+     	"type": "boolean",
+    	"default": false
     }
   },
   "additionalProperties": false
