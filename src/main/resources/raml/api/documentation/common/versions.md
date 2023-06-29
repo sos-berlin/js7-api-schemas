@@ -1,7 +1,20 @@
 * [JOC API 2.5.4](../../../2.5.4/raml-doc/JOC-API/index.html)
 	* *NEW*
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/jocs.html" target="newtab254">./jocs</a>
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/inventory/revalidate/folder.html" target="newtab254">./inventory/revalidate/folder</a>
 		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/inventory/quick/search.html" target="newtab254">./inventory/quick/search</a>
-
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/documentations/quick/search.html" target="newtab254">./documentations/quick/search</a>
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/schedules/quick/search.html" target="newtab254">./schedules/quick/search</a>
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/locks/quick/search.html" target="newtab254">./locks/quick/search</a>
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/notice/boards/quick/search.html" target="newtab254">./notice/boards/quick/search</a>
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/workflows/quick/search.html" target="newtab254">./workflows/quick/search</a>
+		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/workflow/references.html" target="newtab254">./workflow/references</a>
+	* *CHANGED*
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/daily_plan/orders/modify.html" target="newtab253">./daily_plan/orders/modify</a> - Request field ``forceJobAdmission`` is added
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/orders/add.html" target="newtab253">./orders/add</a> - Request field ``forceJobAdmission`` is added
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/orders.html" target="newtab253">./orders</a> - Request field ``stateDateFrom`` and ``stateDateTo`` are added
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/workflows.html" target="newtab253">./workflows</a> - Request field ``agentNames`` is added
+		
 * [JOC API 2.5.3](../../../2.5.3/raml-doc/JOC-API/index.html)
 	* *NEW*
 		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/inventory/workflow/references.html" target="newtab253">./inventory/workflow/references</a>
