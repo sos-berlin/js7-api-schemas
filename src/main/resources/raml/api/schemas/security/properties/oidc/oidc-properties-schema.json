@@ -13,6 +13,12 @@
 		"iamOidcName": {
 			"$ref": "../../../common/string255-schema.json"
 		},
+		"iamOidcGroupClaims": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../common/string255-schema.json"
+			}
+		},
 		"iamOidcClientSecret": {
 			"$ref": "../../../common/string255-schema.json"
 		},
@@ -27,6 +33,9 @@
 		},
 		"iamOidcTruststoreType": {
 			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamOidcGroupRolesMap": {
+			"$ref": "oidc-group-roles-mapping-schema.json"
 		}
 	},
 	"additionalProperties": false
