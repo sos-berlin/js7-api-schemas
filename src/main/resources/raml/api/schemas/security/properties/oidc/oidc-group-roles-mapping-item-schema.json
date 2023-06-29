@@ -1,0 +1,18 @@
+{
+	"title": "OIDC Group Roles Mapping",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.properties.oidc.OidcGroupRolesMappingItem",
+	"type": "object",
+	"properties": {
+		"oidcGroup": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"roles": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../common/string255-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}
