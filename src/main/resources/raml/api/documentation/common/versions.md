@@ -10,10 +10,10 @@
 		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/workflows/quick/search.html" target="newtab254">./workflows/quick/search</a>
 		* <a href="../../../2.5.4/raml-doc/JOC-API/resource/workflow/references.html" target="newtab254">./workflow/references</a>
 	* *CHANGED*
-		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/daily_plan/orders/modify.html" target="newtab253">./daily_plan/orders/modify</a> - Request field ``forceJobAdmission`` is added
-		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/orders/add.html" target="newtab253">./orders/add</a> - Request field ``forceJobAdmission`` is added
-		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/orders.html" target="newtab253">./orders</a> - Request field ``stateDateFrom`` and ``stateDateTo`` are added
-		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/workflows.html" target="newtab253">./workflows</a> - Request field ``agentNames`` is added
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/daily_plan/orders/modify.html" target="newtab254">./daily_plan/orders/modify</a> - Request fields ``forceJobAdmission`` and ``blockPosition`` are added
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/orders/add.html" target="newtab254">./orders/add</a> - Request fields ``forceJobAdmission`` and ``blockPosition`` are added
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/orders.html" target="newtab254">./orders</a> - Request field ``stateDateFrom`` and ``stateDateTo`` are added
+		* <a href="../../../2.5.3/raml-doc/JOC-API/resource/workflows.html" target="newtab254">./workflows</a> - Request field ``agentNames`` is added
 		
 * [JOC API 2.5.3](../../../2.5.3/raml-doc/JOC-API/index.html)
 	* *NEW*

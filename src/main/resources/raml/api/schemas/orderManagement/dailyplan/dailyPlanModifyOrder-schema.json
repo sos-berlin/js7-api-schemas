@@ -56,6 +56,12 @@
 				]
 			}
 		},
+    	"blockPosition": {
+    		"anyOf": [
+    			{"$ref": "../../../../controller/schemas/common/blockPosition-schema.json"},
+    			{"$ref": "../../common/string255required-schema.json"}
+    		]
+    	},
     	"forceJobAdmission": {
     		"type": "boolean",
     		"default": false	

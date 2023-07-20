@@ -1,0 +1,21 @@
+{
+  	"title": "available positions for a resume",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"type": "object",
+  	"javaType": "com.sos.joc.model.order.Position",
+  	"properties": {
+    	"position": {
+     		"$ref": "../../../controller/schemas/common/position-schema.json"
+    	},
+		"positionString": {
+     		"$ref": "../common/string255-schema.json"
+    	},
+		"type": {
+     		"$ref": "../common/string255-schema.json"
+    	},
+		"label": {
+			"$ref": "../common/string255-schema.json"
+    	}
+	},
+    "additionalProperties": false
+}
