@@ -21,4 +21,5 @@ Variables specified by their keys will be removed.
 
 <tr><td>``startPosition``</td><td>optional, array or string</td><td>The order starts with the first instruction per default. The position can also be specified by the label of the instruction.<td>[0]</td><td></td></tr>
 <tr><td>``endPositions``</td><td>optional, array[array or string]</td><td>The order ends on one of these positions. The position can also be specified by the label of the instruction.<td>[[1]]</td><td></td></tr>
+<tr><td>``blockPosition``</td><td>optional, array or string</td><td>The order runs only inside the specified block instruction. The position can also be specified by the label of the instruction.<td>[1, "lock"]</td><td></td></tr>
 

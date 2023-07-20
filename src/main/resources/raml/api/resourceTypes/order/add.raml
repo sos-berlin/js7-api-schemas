@@ -48,6 +48,7 @@ post:
     	The position can also be specified by the label of the instruction.<td>[0] or "job1"</td><td></td></tr>
     <tr><td style="padding-left:20px;">``endPositions``</td><td>optional, array[array or string]<br/>field of each ``orders`` item</td><td>The order ends on one of these positions<br/>
         The position can also be specified by the label of the instruction.<td>[[1]] or ["lastJob"]</td><td></td></tr>
+    <tr><td style="padding-left:20px;">``blockPosition``</td><td>optional, array or string</td><td>The order runs only inside the specified block instruction. The position can also be specified by the label of the block instruction.<td>[1, "lock"]</td><td></td></tr>
     <tr><td style="padding-left:20px;">``forceJobAdmission``</td><td>optional, boolean<br/>field of each ``orders`` item</td><td>If true then any admission times at a Job instruction will be ignored</td><td></td><td>false</td></tr>
     <<audit>>
     </tbody></table>
