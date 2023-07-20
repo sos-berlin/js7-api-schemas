@@ -59,7 +59,7 @@
     	"blockPosition": {
     		"anyOf": [
     			{"$ref": "../../../../controller/schemas/common/blockPosition-schema.json"},
-    			{"$ref": "../../common/string255Required-schema.json"}
+    			{"$ref": "../../common/string255required-schema.json"}
     		]
     	},
     	"forceJobAdmission": {
