@@ -1,0 +1,19 @@
+{
+  	"title": "available positions for an add order",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"type": "object",
+  	"javaType": "com.sos.joc.model.order.BlockPosition",
+  	"extends" : {
+    	"$ref": "orderPosition-schema.json"
+  	},
+  	"properties": {
+    	"positions": {
+     		"type": "array",
+     		"uniqueItems": true,
+     		"items": {
+     			"$ref": "orderPosition-schema.json"
+     		}
+    	}
+	},
+    "additionalProperties": false
+}

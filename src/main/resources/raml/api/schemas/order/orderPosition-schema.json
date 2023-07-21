@@ -1,5 +1,5 @@
 {
-  	"title": "available positions for a resume",
+  	"title": "available positions for a resume/add order",
   	"$schema": "http://json-schema.org/draft-04/schema#",
   	"type": "object",
   	"javaType": "com.sos.joc.model.order.Position",
