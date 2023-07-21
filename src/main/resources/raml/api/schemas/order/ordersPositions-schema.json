@@ -27,7 +27,7 @@
      	"type": "array",
      	"uniqueItems": true,
      	"items": {
-     		"$ref": "orderPosition-schema.json"
+     		"$ref": "blockPosition-schema.json"
      	}
     }
   },
