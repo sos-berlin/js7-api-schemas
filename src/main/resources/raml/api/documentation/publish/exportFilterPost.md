@@ -23,6 +23,13 @@
 <td>ZIP</td>
 </tr>
 <tr>
+<td>``useShortPath``</td>
+<td>optional, boolean</td>
+<td>Determines if the desired objects are exported to the archive with a shortened path, e.g. if set to true the object /a/b/c/myWorkflow will be exported as /c/myWorkflow. </td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
 <td>``forSigning``</td>
 <td>required oneOf(``forSigning``, ``shallowCopy``), object</td>
 <td>Object consists of a ``controllerId`` and a ``deployables`` object.</td>
