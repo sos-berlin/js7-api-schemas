@@ -4,6 +4,9 @@
 	"javaType": "com.sos.joc.model.security.properties.ldap.LdapGroupRolesMapping",
 	"type": "object",
 	"properties": {
+    	"iamLdapDisableNestedGroupSearch": {
+		"type": "boolean"
+		},
 		"items": {
 			"type": "array",
 			"items": {
