@@ -16,10 +16,6 @@
     }
   ],
  	"properties": {
- 	  "useShortPath" : {
- 	    "type": "boolean",
-      "default": false
- 	  },
     "forSigning": {
       "$ref": "exportForSigningFilter-schema.json"
     },
