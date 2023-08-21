@@ -106,6 +106,10 @@
       "type": "boolean",
       "default": false
     },
+    "allowUndeclaredVariables": {
+      "type": "boolean",
+      "default": false
+    },
     "clusterLicense": {
       "type": "boolean",
       "default": false
