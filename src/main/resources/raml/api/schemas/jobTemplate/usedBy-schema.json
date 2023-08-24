@@ -18,9 +18,10 @@
     },
     "workflows": {
     	"type": "array",
+    	"uniqueItems": true,
     	"items": {
     		"type": "object",
-      		"javaType": "com.sos.joc.model.jobtemplate.JobTemplateUsedByWorkflow",
+    		"javaType": "com.sos.joc.model.jobtemplate.JobTemplateUsedByWorkflow",
       		"required": [
     			"path"
   	  		],
