@@ -1,0 +1,21 @@
+{
+	"title": "daily plan submissions response",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.projections.ProjectionsResponse",
+	"type": "object",
+	"required": [
+		"deliveryDate"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"meta": {
+			"$ref": "items/meta/meta-item-schema.json"
+		},
+		"years": {
+			"$ref": "items/year/years-item-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
