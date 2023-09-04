@@ -1,9 +1,9 @@
 {
 	"title": "daily plan projection",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.dailyplan.projection.items.MonthsItem",
+	"javaType": "com.sos.joc.model.dailyplan.projections.items.meta.MetaItem",
 	"type": "object",
 	"additionalProperties": {
-		"$ref": "month-item-schema.json"
+		"$ref": "schedule-info-item-schema.json"
 	}
 }

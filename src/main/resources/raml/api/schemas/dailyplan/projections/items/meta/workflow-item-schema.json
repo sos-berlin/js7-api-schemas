@@ -1,0 +1,12 @@
+{
+	"title": "daily plan projection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.projections.items.meta.WorkflowItem",
+	"type": "object",
+	"properties": {
+		"avg": {
+			"$ref": "../../../../common/nonNegativeLong-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
