@@ -1,0 +1,17 @@
+{
+	"title": "daily plan projection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.projection.items.DatePeriodItem",
+	"type": "object",
+	"required": [
+		"schedule"
+	],
+	"properties": {
+		"schedule": {
+			"$ref": "../../../common/string255-schema.json"
+		},
+		"period": {
+			"$ref": "../../../../../inventory/schemas/calendar/period-schema.json"
+		}
+	}
+}
