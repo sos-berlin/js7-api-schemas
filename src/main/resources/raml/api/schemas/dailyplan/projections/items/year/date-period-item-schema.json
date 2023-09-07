@@ -4,7 +4,8 @@
 	"javaType": "com.sos.joc.model.dailyplan.projections.items.year.DatePeriodItem",
 	"type": "object",
 	"required": [
-		"schedule"
+		"schedule",
+		"period"
 	],
 	"properties": {
 		"schedule": {
