@@ -1,0 +1,9 @@
+{
+	"title": "daily plan projection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.projections.items.meta.ControllerInfoItem",
+	"type": "object",
+	"additionalProperties": {
+		"$ref": "schedule-info-item-schema.json"
+	}
+}

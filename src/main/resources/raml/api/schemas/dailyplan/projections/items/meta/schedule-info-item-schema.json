@@ -1,0 +1,19 @@
+{
+	"title": "daily plan projection",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.projections.items.meta.ScheduleInfoItem",
+	"type": "object",
+	"required": [
+		"totalOrders",
+		"workflows"
+	],
+	"properties": {
+		"totalOrders": {
+			"$ref": "../../../../common/nonNegativeLong-schema.json"
+		},
+		"workflows": {
+			"$ref": "workflows-item-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
