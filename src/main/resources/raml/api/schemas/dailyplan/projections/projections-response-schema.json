@@ -1,5 +1,5 @@
 {
-	"title": "daily plan submissions response",
+	"title": "daily plan projections response",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.dailyplan.projections.ProjectionsResponse",
 	"type": "object",

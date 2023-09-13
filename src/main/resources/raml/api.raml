@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.5.5
+version: 2.5.6
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -1008,7 +1008,67 @@ traits:
             "deliveryDate":"2021-12-05T21:13:35Z",
             "ok":true
           }
+  
+  /history:
+    type:
+      postJSONWithOptionalJSId:
+        description: Gets daily plan dates history
+        description1: !include api/documentation/dailyplan/history/dateFrom.md
+        description2: !include api/documentation/dailyplan/history/dateTo.md
+        description3: !include api/documentation/dailyplan/history/submitted.md
+        description4: !include api/documentation/dailyplan/history/limit.md
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/dailyplan/history/main-request-schema.json
+        schema200: !include api/schemas/dailyplan/history/main-response-schema.json
+        example: " "
+        example200: " "
 
+    /submissions:
+      type:
+        postJSON:
+          description: Gets daily plan date submission times history
+          description1: !include api/documentation/dailyplan/history/date.md
+          description2: !include api/documentation/dailyplan/history/submitted.md
+          description3: !include api/documentation/dailyplan/history/limit.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10:
+          description200: " "
+          schema: !include api/schemas/dailyplan/history/submissions-request-schema.json
+          schema200: !include api/schemas/dailyplan/history/submissions-response-schema.json
+          example: " "
+          example200: " "
+
+      /orders:
+        type:
+          postJSON:
+            description: Gets daily plan submission time orders history
+            description1: !include api/documentation/dailyplan/history/date.md
+            description2: !include api/documentation/dailyplan/history/submissionTime.md
+            description3: !include api/documentation/dailyplan/history/submitted.md
+            description4: !include api/documentation/dailyplan/history/limit.md
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description9: " "
+            description10:
+            description200: " "
+            schema: !include api/schemas/dailyplan/history/submissions-orders-request-schema.json
+            schema200: !include api/schemas/dailyplan/history/submissions-orders-response-schema.json
+            example: " "
+            example200: " "
+  
   /order/variables:
     type:
       postJSON:
@@ -1153,73 +1213,41 @@ traits:
           description7: !include api/documentation/dailyplan/orders/controllerIds.md
           description8: !include api/documentation/dailyplan/orders/orderIds.md
           description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
-          description10:
+          description10: " "
           description200: " "
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDefRequired-schema.json
           schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanOrderSummary-schema.json
           example: " "
           example200: " "
 
-  /history:
+  /projections:
     type:
-      postJSONWithOptionalJSId:
-        description: Gets daily plan dates history
-        description1: !include api/documentation/dailyplan/history/dateFrom.md
-        description2: !include api/documentation/dailyplan/history/dateTo.md
-        description3: !include api/documentation/dailyplan/history/submitted.md
-        description4: !include api/documentation/dailyplan/history/limit.md
+      postJSONWithoutJSId:
+        description: Gets daily plan projections
+        description1: !include api/documentation/dailyplan/projections/projectionsFilter.md
+        description2: " "
+        description3: " "
+        description4: " "
         description5: " "
         description6: " "
-        description7: " "
+        description7: !include api/documentation/dailyplan/orders/controllerIds.md
         description8: " "
         description9: " "
         description10: " "
         description200: " "
-        schema: !include api/schemas/dailyplan/history/main-request-schema.json
-        schema200: !include api/schemas/dailyplan/history/main-response-schema.json
+        schema: !include api/schemas/dailyplan/projections/projections-request-schema.json
+        schema200: !include api/schemas/dailyplan/projections/projections-response-schema.json
         example: " "
         example200: " "
-
-    /submissions:
+      
+    /recreate:
       type:
-        postJSON:
-          description: Gets daily plan date submission times history
-          description1: !include api/documentation/dailyplan/history/date.md
-          description2: !include api/documentation/dailyplan/history/submitted.md
-          description3: !include api/documentation/dailyplan/history/limit.md
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: " "
-          description10:
+        postWithoutJSONandJSId:
+          description: (Re)creates daily plan projections
           description200: " "
-          schema: !include api/schemas/dailyplan/history/submissions-request-schema.json
-          schema200: !include api/schemas/dailyplan/history/submissions-response-schema.json
-          example: " "
+          schema200: ok
           example200: " "
-
-      /orders:
-        type:
-          postJSON:
-            description: Gets daily plan submission time orders history
-            description1: !include api/documentation/dailyplan/history/date.md
-            description2: !include api/documentation/dailyplan/history/submissionTime.md
-            description3: !include api/documentation/dailyplan/history/submitted.md
-            description4: !include api/documentation/dailyplan/history/limit.md
-            description5: " "
-            description6: " "
-            description7: " "
-            description8: " "
-            description9: " "
-            description10:
-            description200: " "
-            schema: !include api/schemas/dailyplan/history/submissions-orders-request-schema.json
-            schema200: !include api/schemas/dailyplan/history/submissions-orders-response-schema.json
-            example: " "
-            example200: " "
-
+      
   /submissions:
     type:
       postJSON:
@@ -3462,11 +3490,7 @@ traits:
     type:
       postWithoutJSONandJSId:
         description: shows information about the currently used SOS JS7 License
-        description1: " "
-        description2: " "
-        schema: !include api/examples/publish/emptyBody-example.json
         schema200: !include api/schemas/joc/js7LicenseInfo-schema.json
-        example: !include api/examples/publish/emptyBody-example.json
         example200: !include api/examples/joc/js7LicenseInfo-example.json
   /log:
     type:
@@ -4200,11 +4224,7 @@ traits:
     type:
       postWithoutJSONandJSId:
         description: gets the stored CAs ECDSA private key and X509 certificate
-        description1: " "
-        description2: " "
-        schema: !include api/examples/publish/emptyBody-example.json
         schema200: !include api/schemas/sign/jocKeyPair-schema.json
-        example: !include api/examples/publish/emptyBody-example.json
         example200: !include api/examples/publish/showKey-example.json
 
     /generate:
@@ -4246,22 +4266,14 @@ traits:
     type:
       postWithoutJSONandJSId:
         description: gets the stored public key or certificate (SecurityLevel HIGH) or the public key/certificate and private key (SecurityLevel LOW and MEDIUM)
-        description1: " "
-        description2: " "
-        schema: !include api/examples/publish/emptyBody-example.json
         schema200: !include api/schemas/sign/jocKeyPair-schema.json
-        example: !include api/examples/publish/emptyBody-example.json
         example200: !include api/examples/publish/showKey-example.json
 
     /ca:
       type:
         postWithoutJSONandJSId:
           description: gets the stored signing CAs X509 certificate
-          description1: " "
-          description2: " "
-          schema: !include api/examples/publish/emptyBody-example.json
           schema200: !include api/schemas/sign/jocKeyPair-schema.json
-          example: !include api/examples/publish/emptyBody-example.json
           example200: !include api/examples/publish/showKey-example.json
 
       /import:
@@ -4401,8 +4413,6 @@ traits:
   type:
     postWithoutJSONandJSId:
       description: reads the global settings
-      description1: " "
-      description2: " "
       description200: " "
       schema200: !include api/schemas/configuration/configuration200-schema.json
       example200: " "
