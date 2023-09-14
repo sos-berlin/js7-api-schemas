@@ -17,7 +17,15 @@
 			"type": "boolean",
 			"default": false
 		},
-		"returnType": {
+        "undeployedOrUnreleased": {
+            "type": "boolean",
+            "default": false
+        },
+        "valid": {
+            "description": "considered only if 'undeployedOrUnreleased' is true",
+            "type": "boolean"
+        },
+        "returnType": {
 			"$ref": "request-search-returnType-schema.json"
 		}
 	},
