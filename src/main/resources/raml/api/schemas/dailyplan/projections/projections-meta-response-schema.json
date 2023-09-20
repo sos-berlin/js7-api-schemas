@@ -1,0 +1,22 @@
+{
+	"title": "daily plan projections response",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.projections.ProjectionsMetaResponse",
+	"type": "object",
+	"required": [
+		"deliveryDate",
+		"surveyDate"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"surveyDate": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "meta": {
+			"$ref": "items/meta/meta-item-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
