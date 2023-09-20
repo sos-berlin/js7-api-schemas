@@ -1,0 +1,30 @@
+{
+	"title": "daily plan projections request",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.projections.ProjectionsScheduleRequest",
+	"type": "object",
+	"required": [
+	   "schedulePath"    
+    ],
+	"properties": {
+		"dateFrom": {
+            "$ref": "../../common/date-schema.json"
+        },
+        "dateTo": {
+            "$ref": "../../common/date-schema.json"
+        },
+        "surveyDate": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "controllerIds": {
+            "type": "array",
+            "items": {
+                "$ref": "../../common/controllerId-schema.json"
+            }
+        },
+        "schedulePath": {
+            "$ref": "../../common/string255-schema.json"
+        }
+	},
+	"additionalProperties": false
+}

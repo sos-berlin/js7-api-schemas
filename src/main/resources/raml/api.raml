@@ -285,6 +285,7 @@ traits:
           
 
 
+
   /export:
     type:
       postForExport:
@@ -1255,26 +1256,47 @@ traits:
           example200: " "
 
   /projections:
-    type:
-      postJSONWithoutJSId:
-        description: Gets daily plan projections
-        description1: !include api/documentation/dailyplan/projections/projectionsFilter.md
-        description2: " "
-        description3: " "
+    description: This is not an API call. Use its children!!
+    /calendar:
+      type:
+        postJSONWithoutJSId:
+          description: Gets the days of the daily plan projections that have start times
+          description1: !include api/documentation/dailyplan/projections/projectionsFilter.md
+          description2: " "
+          description3: " "
 
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: !include api/documentation/dailyplan/orders/controllerIds.md
-        description8: " "
-        description9: " "
-        description10: " "
-        description200: " "
-        schema: !include api/schemas/dailyplan/projections/projections-request-schema.json
-        schema200: !include api/schemas/dailyplan/projections/projections-response-schema.json
-        example: " "
-        example200: " "
-      
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: !include api/documentation/dailyplan/orders/controllerIds.md
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/dailyplan/projections/projections-request-schema.json
+          schema200: !include api/schemas/dailyplan/projections/projections-calendar-response-schema.json
+          example: " "
+          example200: " "
+    /date:
+      type:
+        postJSONWithoutJSId:
+          description: Gets the start times of one day of the daily plan projections
+          description1: !include api/documentation/dailyplan/projections/projectionsDayFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: !include api/documentation/dailyplan/orders/controllerIds.md
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/dailyplan/projections/projections-day-request-schema.json
+          schema200: !include api/schemas/dailyplan/projections/projections-day-response-schema.json
+          example: " "
+          example200: " "
+
     /recreate:
       type:
         postWithoutJSONandJSId:
@@ -1283,6 +1305,43 @@ traits:
           description200: " "
           schema200: ok
 
+    /schedules:
+      type:
+        postJSONWithoutJSId:
+          description: Gets the schedules of the daily plan projections that have start times
+          description1: !include api/documentation/dailyplan/projections/projectionsFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: !include api/documentation/dailyplan/orders/controllerIds.md
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/dailyplan/projections/projections-request-schema.json
+          schema200: !include api/schemas/dailyplan/projections/projections-schedules-response-schema.json
+          example: " "
+          example200: " "
+    /schedule:
+      type:
+        postJSONWithoutJSId:
+          description: Gets the days of a schedule of the daily plan projections that have start times
+          description1: !include api/documentation/dailyplan/projections/projectionsScheduleFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: !include api/documentation/dailyplan/orders/controllerIds.md
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/dailyplan/projections/projections-schedule-request-schema.json
+          schema200: !include api/schemas/dailyplan/projections/projections-schedule-response-schema.json
+          example: " "
           example200: " "
       
   /submissions:

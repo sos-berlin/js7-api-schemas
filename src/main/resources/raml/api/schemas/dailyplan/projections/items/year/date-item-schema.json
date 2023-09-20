@@ -3,13 +3,13 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.dailyplan.projections.items.year.DateItem",
 	"type": "object",
-	"required": [
-		"periods"
-	],
 	"properties": {
 		"planned": {
 			"type": "boolean"
 		},
+        "numOfPeriods": {
+            "$ref": "../../../../common/nonNegativeInteger-schema.json"
+        },
 		"periods": {
 			"type": "array",
 			"items": {
