@@ -10,9 +10,6 @@
 		"date": {
             "$ref": "../../common/date-schema.json"
         },
-        "surveyDate": {
-            "$ref": "../../common/timestamp-schema.json"
-        },
         "controllerIds": {
             "type": "array",
             "items": {
@@ -24,6 +21,18 @@
             "items": {
                 "$ref": "../../common/string255-schema.json"
             }
+        },
+        "scheduleFolders": {
+            "$ref": "../../common/folders-schema.json"
+        },
+        "workflowPaths": {
+            "type": "array",
+            "items": {
+                "$ref": "../../common/string255-schema.json"
+            }
+        },
+        "workflowFolders": {
+            "$ref": "../../common/folders-schema.json"
         }
 	},
 	"additionalProperties": false
