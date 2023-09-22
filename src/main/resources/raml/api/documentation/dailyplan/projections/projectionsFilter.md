@@ -2,7 +2,7 @@
 <td colspan="4">
 Following elements filter the projections.<br/>
 All filter elements will be combined with "and".<br/>
-The elements in the lists schedulePaths and controllerIds will be combined with "or".
+The elements in the lists schedulePaths, scheduleFolders, workflowPaths, workflowFolders and controllerIds will be combined with "or".
 </td>
 </tr>
 
