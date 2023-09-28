@@ -3,6 +3,7 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.dailyplan.projections.ProjectionsCalendarResponse",
 	"type": "object",
+	"description": "meta only for ./dates API",
 	"required": [
 		"deliveryDate",
 		"surveyDate"
@@ -16,7 +17,10 @@
         },
         "years": {
 			"$ref": "items/year/years-item-schema.json"
-		}
+		},
+        "meta": {
+            "$ref": "items/meta/meta-item-schema.json"
+        }
 	},
 	"additionalProperties": false
 }

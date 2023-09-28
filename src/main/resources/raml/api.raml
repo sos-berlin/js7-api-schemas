@@ -1227,7 +1227,7 @@ traits:
         postJSONWithoutJSId:
           description: Gets the days of the daily plan projections that have start times
           description1: !include api/documentation/dailyplan/projections/projectionsFilter.md
-          description2: " "
+          description2: !include api/documentation/dailyplan/projections/projectionsCommonFilter.md
           description3: " "
           description4: " "
           description5: " "
@@ -1246,7 +1246,7 @@ traits:
         postJSONWithoutJSId:
           description: Gets the start times of one day of the daily plan projections
           description1: !include api/documentation/dailyplan/projections/projectionsDayFilter.md
-          description2: " "
+          description2: !include api/documentation/dailyplan/projections/projectionsCommonFilter.md
           description3: " "
           description4: " "
           description5: " "
@@ -1260,6 +1260,32 @@ traits:
           schema200: !include api/schemas/dailyplan/projections/projections-day-response-schema.json
           example: " "
           example200: " "
+    /dates:
+      type:
+        postJSONWithoutJSId:
+          description: Gets the start times of date range of the daily plan projections
+          description1: !include api/documentation/dailyplan/projections/projectionsFilter.md
+          description2: !include api/documentation/dailyplan/projections/projectionsCommonFilter.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: !include api/documentation/dailyplan/orders/controllerIds.md
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/dailyplan/projections/projections-request-schema.json
+          schema200: !include api/schemas/dailyplan/projections/projections-calendar-response-schema.json
+          example: " "
+          example200: " "
+      post:
+        headers:
+          Accept-Encoding:
+            description: If 'gzip' -> Content-Encoding of response is 'gzip'; recommended because of big response
+            type: string
+            required: false
+            example: gzip
     /recreate:
       type:
         postWithoutJSONandJSId:

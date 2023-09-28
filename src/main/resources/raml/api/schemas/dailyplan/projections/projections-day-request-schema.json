@@ -33,6 +33,10 @@
         },
         "workflowFolders": {
             "$ref": "../../common/folders-schema.json"
+        },
+        "withoutStartTime": {
+            "type": "boolean",
+            "default": false
         }
 	},
 	"additionalProperties": false
