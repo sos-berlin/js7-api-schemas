@@ -3,7 +3,7 @@
 <td>required, array</td>
 <td>Array of releasable objects to recall (unrelease).</td>
 <td><div style="padding-left:10px;">"releasables" : [{</div>
-    <div style="padding-left:20px;">"name" : "mySchedule",</div>
+    <div style="padding-left:20px;">"path" : "mySchedule",</div>
     <div style="padding-left:20px;">"objectType" : "SCHEDULE"</div>
     <div style="padding-left:10px;">}]</div></td>
 <td></td>

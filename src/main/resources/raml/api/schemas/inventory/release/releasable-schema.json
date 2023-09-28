@@ -9,7 +9,7 @@
     "objectType"
   ],
   "properties": {
-    "name": {
+    "path": {
       "$ref": "../../common/string255-schema.json"
     },
     "objectType": {
