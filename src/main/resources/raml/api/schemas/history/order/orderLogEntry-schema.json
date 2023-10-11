@@ -29,6 +29,9 @@
 		"position": {
 			"type": "string"
 		},
+		"label": {
+			"type": "string"
+		},
 		"agentId": {
 			"alias": "agentPath",
 			"type": "string"
