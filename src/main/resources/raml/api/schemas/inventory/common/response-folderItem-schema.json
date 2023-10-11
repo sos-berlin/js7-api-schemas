@@ -43,6 +43,9 @@
 		"released": {
 			"type": "boolean"
 		},
+        "modified": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
 		"hasDeployments": {
 			"type": "boolean"
 		},
