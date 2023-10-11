@@ -26,6 +26,9 @@
 		"job": {
 			"type": "string"
 		},
+		"label": {
+			"type": "string"
+		},
 		"workflow": {
 			"type": "string"
 		},
