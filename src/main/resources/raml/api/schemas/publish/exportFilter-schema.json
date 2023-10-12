@@ -16,6 +16,13 @@
     }
   ],
  	"properties": {
+    "useShortPath" : {
+      "type": "boolean",
+      "default": false
+    },
+    "startFolder" : {
+      "$ref": "../common/string255-schema.json"
+    },
     "forSigning": {
       "$ref": "exportForSigningFilter-schema.json"
     },
