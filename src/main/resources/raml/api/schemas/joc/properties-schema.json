@@ -12,6 +12,7 @@
     "defaultProfileAccount",
     "apiVersion",
     "inventoryVersion",
+    "displayFoldersInViews"
     "jocVersion"
   ],
   "properties": {
@@ -93,6 +94,10 @@
           "type": "boolean"
         }
       }
+    },
+    "displayFoldersInViews":  {
+      "type": "boolean",
+      "default": true
     },
     "welcomeDoNotRemindMe": {
       "type": "boolean",
