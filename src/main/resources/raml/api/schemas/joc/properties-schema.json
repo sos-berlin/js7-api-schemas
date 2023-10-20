@@ -12,7 +12,7 @@
     "defaultProfileAccount",
     "apiVersion",
     "inventoryVersion",
-    "displayFoldersInViews"
+    "displayFoldersInViews",
     "jocVersion"
   ],
   "properties": {
