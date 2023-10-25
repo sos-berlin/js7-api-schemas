@@ -1,0 +1,18 @@
+{
+	"title": "filter for rename",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.tag.rename.RequestFilter",
+	"type": "object",
+	"extends" : {
+        "$ref": "../common/request-filter-schema.json"
+    },
+    "required": [
+        "name",
+        "newName"
+    ],
+	"properties": {
+	    "newName": {
+			"$ref": "../../common/string255required-schema.json"
+		}
+	}
+}

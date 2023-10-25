@@ -1,0 +1,1 @@
+<tr><td>``tags``</td><td>optional, array[string]</td><td>Tags to be assigned to the workflow</td><td></td><td></td></tr>
