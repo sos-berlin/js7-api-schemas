@@ -1,0 +1,26 @@
+{
+	"title": "tag content",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.ResponseTag",
+	"type": "object",
+	"required": [
+		"deliveryDate",
+		"path"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"tag": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"workflows": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		}
+	},
+    "additionalProperties": false
+}

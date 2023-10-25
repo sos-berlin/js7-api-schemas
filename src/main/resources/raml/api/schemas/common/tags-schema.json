@@ -1,0 +1,9 @@
+{
+  "title": "tags",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "$ref": "string255-schema.json"
+  }
+}

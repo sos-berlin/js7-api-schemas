@@ -1,0 +1,21 @@
+{
+    "title": "filter for tagging",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.tag.tagging.RequestFilter",
+    "type": "object",
+    "extends" : {
+        "$ref": "../common/request-workflow-schema.json"
+    },
+    "required": [
+        "path"
+    ],
+    "properties": {
+        "tags": {
+            "$ref": "../../common/tags-schema.json"
+        },
+        "auditLog": {
+            "$ref": "../../audit/auditParams-schema.json"
+        }
+    },
+    "additionalProperties": false
+}
