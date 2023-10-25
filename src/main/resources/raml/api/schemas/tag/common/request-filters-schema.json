@@ -1,0 +1,17 @@
+{
+	"title": "common tag request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.tag.common.RequestFilters",
+	"type": "object",
+	"required": [
+        "tags"
+    ],
+	"properties": {
+		"tags": {
+			"$ref": "../../common/tags-schema.json"
+		},
+		"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
+	}
+}

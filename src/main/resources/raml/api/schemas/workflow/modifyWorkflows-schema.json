@@ -19,6 +19,9 @@
     	"folders": {
         	"$ref": "../common/folders-schema.json"
       	},
+        "tags": {
+            "$ref": "../common/tags-schema.json"
+        },
     	"all": {
         	"type": "boolean",
         	"default": false

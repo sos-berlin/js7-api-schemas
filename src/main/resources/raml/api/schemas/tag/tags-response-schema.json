@@ -1,0 +1,22 @@
+{
+  "title": "tags",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.tag.Tags",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "tags"
+  ],
+  "properties": {
+    "deliveryDate": {
+        "$ref": "../common/timestamp-schema.json"
+    },
+    "tags": {
+        "type": "array",
+        "items": {
+            "$ref": "../common/string255required-schema.json"
+        }     
+    }
+  },
+  "additionalProperties": false
+}

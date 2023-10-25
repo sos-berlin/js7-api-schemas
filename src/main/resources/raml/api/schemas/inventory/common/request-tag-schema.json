@@ -1,0 +1,21 @@
+{
+	"title": "Filter of a tag",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.RequestTag",
+	"type": "object",
+	"required": [
+		"path"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
+		"tag": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"onlyValidObjects": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}
