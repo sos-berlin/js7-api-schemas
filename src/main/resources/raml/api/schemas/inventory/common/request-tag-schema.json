@@ -4,7 +4,7 @@
 	"javaType": "com.sos.joc.model.inventory.common.RequestTag",
 	"type": "object",
 	"required": [
-		"path"
+		"tag"
 	],
 	"properties": {
 		"controllerId": {
