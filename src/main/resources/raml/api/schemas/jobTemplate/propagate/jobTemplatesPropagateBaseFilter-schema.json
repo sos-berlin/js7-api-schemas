@@ -12,6 +12,14 @@
     	"type": "boolean",
     	"default": false	
     },
+    "overwriteValues": {
+        "type": "boolean",
+        "default": false    
+    },
+    "propagateOptionalArguments": {
+        "type": "boolean",
+        "default": false    
+    },
     "deleteUnknownNodeProperties": {
     	"type": "boolean",
     	"default": false	
