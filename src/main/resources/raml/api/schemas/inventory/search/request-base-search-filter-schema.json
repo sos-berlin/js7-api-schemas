@@ -13,7 +13,13 @@
 				"$ref": "../../common/path-schema.json"
 			}
 		},
-		"advanced": {
+		"tags": {
+            "type": "array",
+            "items": {
+                "$ref": "../../common/string255required-schema.json"
+            }
+        },
+        "advanced": {
 			"$ref": "request-search-advanced-item-schema.json"
 		}
 	},
