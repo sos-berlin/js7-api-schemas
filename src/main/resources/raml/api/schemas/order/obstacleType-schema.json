@@ -7,12 +7,16 @@
     "OrderNotExisting",
     "WaitingForAdmission",
     "JobParallelismLimitReached",
+    "JobProcessLimitReached",
+    "AgentProcessLimitReached",
     "WorkflowIsSuspended"
   ],
   "javaEnumNames": [
     "OrderNotExisting",
     "WaitingForAdmission",
     "JobParallelismLimitReached",
+    "JobProcessLimitReached",
+    "AgentProcessLimitReached",
     "WorkflowIsSuspended"
   ]
 }

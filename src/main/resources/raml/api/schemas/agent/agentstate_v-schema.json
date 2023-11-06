@@ -28,6 +28,9 @@
     "version": {
     	"type": "string"
     },
+    "processLimit": {
+        "$ref": "../common/nonNegativeInteger-schema.json"
+    },
     "state": {
     	"$ref": "agentState-schema.json"
     },

@@ -31,6 +31,9 @@
     "title": {
     	"$ref": "../common/string255-schema.json"
     },
+    "processLimit": {
+        "$ref": "../common/nonNegativeInteger-schema.json"
+    },
     "hidden": {
     	"type": "boolean",
     	"default": false
