@@ -39,6 +39,9 @@
   			"additionalProperties": false
     	}
     },
+    "processLimit": {
+        "$ref": "../common/nonNegativeInteger-schema.json"
+    },
     "runningTasks": {
     	"$ref": "../common/nonNegativeInteger-schema.json"
     }
