@@ -5,5 +5,6 @@ Contains collection of Standalone Agents where each Agent has following fields
 * agentNameAliases
 * url
 * title (optional)
+* processLimit (optional)
 * syncState
 * isClusterWatcher

@@ -3,6 +3,7 @@ Contains collection of Agents where each Agent has the fields
 * agentId
 * agentName
 * url (only for standalone agent)
+* processLimit (optional)
 * version (only for standalone agent)
 * hidden
 * disabled (only for standalone agent)

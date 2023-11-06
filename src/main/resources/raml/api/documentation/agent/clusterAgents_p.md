@@ -3,6 +3,7 @@ Contains collection of Cluster Agents where each Agent following fields
 * agentId
 * agentName
 * agentNameAliases
+* processLimit (optional)
 * subagents where each Subagent has following fields
 	* subagentId
 	* url
