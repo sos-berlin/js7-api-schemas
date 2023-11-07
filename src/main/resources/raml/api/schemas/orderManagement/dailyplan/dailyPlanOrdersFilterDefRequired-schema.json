@@ -32,6 +32,9 @@
 				"$ref": "../../common/string255-schema.json"
 			}
 		},
+		"tags": {
+            "$ref": "../../common/tags-schema.json"
+        },
 		"orderIds": {
 			"type": "array",
 			"items": {

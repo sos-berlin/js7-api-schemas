@@ -1093,7 +1093,7 @@ traits:
       postJSONWithoutJSId:
         description: Gets orders from a daily plan interval
         description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDefRequired.md
-        description2: " "
+        description2: !include api/documentation/inventory/tags.md
         description3: " "
         description4: " "
         description5: " "
@@ -4999,7 +4999,26 @@ traits:
       modifyWorkflow:
         description: Suspend workflows
         audit: !include api/documentation/audit/auditLog.md
-
+  
+  /tag/search:
+    type:
+      postJSON:
+        description: Searches tags that have deployed workflows
+        description1: !include api/documentation/inventory/search/quick-search.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/common/quickSearchFilter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
+        example200: TODO
 
 /yade:
   description: This is not an API call. Use its children!!
