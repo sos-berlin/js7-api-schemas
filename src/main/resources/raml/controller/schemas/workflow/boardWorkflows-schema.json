@@ -6,7 +6,7 @@
   "additionalProperties": {
   	"type": "array",
  	"items": {
-    	"$ref": "workflow-schema.json"
+    	"$ref": "workflowId-schema.json"
    	}
   }
 }
