@@ -10,6 +10,7 @@ public enum FavoriteType {
 
     FACET(1),
     AGENT(2);
+    TAG(3);
     private final Integer intValue;
     private final static Map<String, FavoriteType> CONSTANTS = new HashMap<String, FavoriteType>();
     private final static Map<Integer, FavoriteType> INTCONSTANTS = new HashMap<Integer, FavoriteType>();
