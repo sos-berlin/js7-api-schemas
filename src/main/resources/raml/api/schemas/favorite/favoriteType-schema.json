@@ -5,6 +5,7 @@
   "type": "string",
   "enum": [
     "FACET",
-    "AGENT"
+    "AGENT",
+    "TAG"
   ]
 }
