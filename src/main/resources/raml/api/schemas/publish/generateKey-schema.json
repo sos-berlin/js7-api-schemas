@@ -13,6 +13,13 @@
     "keyAlgorithm" : {
       "type" : "string"
     },
+    "dn": {
+      "type": "string"
+    },
+    "useSslCa": {
+      "type": "boolean",
+      "default": false
+    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }
