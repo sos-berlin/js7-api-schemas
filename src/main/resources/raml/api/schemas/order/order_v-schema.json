@@ -98,7 +98,11 @@
 	"hasChildOrders": {
 		"type": "boolean",
 		"default": false	
-	}
+	},
+    "canLeave": {
+        "description": "only relevant for state COMPLETED",
+        "type": "boolean"  
+    }
   },
   "additionalProperties": false
 }
