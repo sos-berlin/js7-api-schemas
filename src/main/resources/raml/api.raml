@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.5.6
+version: 2.5.7
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -4403,8 +4403,8 @@ traits:
       type:
         postForGenerateKey:
           description: generates and stores a new private key (only for SecurityLevel LOW and MEDIUM)
-          description1: !include api/documentation/publish/generateKeyValidUntil.md
-          description2: !include api/documentation/publish/keyAlgorithm.md
+          description1: !include api/documentation/publish/generateKey.md
+          description2: " "
           audit: !include api/documentation/audit/auditLog.md
           description200: " "
           schema200: !include api/schemas/sign/jocKeyPair-schema.json
