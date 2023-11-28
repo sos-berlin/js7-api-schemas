@@ -4377,6 +4377,13 @@ traits:
           schema200: !include api/schemas/sign/jocKeyPair-schema.json
           example200: !include api/examples/publish/showKey-example.json
 
+      /delete:
+        type:
+          postWithoutJSONandJSId:
+            description: deletes the active CA Certificate from the Signature Key Management of the current profile
+            schema200: !include api/examples/publish/emptyBody-example.json
+            example200: !include api/examples/publish/emptyBody-example.json
+
       /import:
         type:
           postForUploadSignedRootCa:
@@ -4385,13 +4392,6 @@ traits:
               and stores the file content
             schema: !include api/schemas/publish/importRootCaFilter-schema.json
             example: " "
-
-      /delete
-        type:
-          postWithoutJSONandJSId:
-            description: deletes the active CA Certificate from the Signature Key Management of the current profile
-            schema200: " "
-            example200: " "
 
       /store:
         type:
@@ -4410,8 +4410,8 @@ traits:
       type:
         postWithoutJSONandJSId:
           description: deletes the Key and Certificate from the Signature Key Management of the current profile
-          schema200: " "
-          example200: " "
+          schema200: !include api/examples/publish/emptyBody-example.json
+          example200: !include api/examples/publish/emptyBody-example.json
 
     /generate:
       type:
