@@ -1,0 +1,11 @@
+{
+  "title": "set generate Key filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.DeleteKeyFilter",
+  "type": "object",
+  "properties": {
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

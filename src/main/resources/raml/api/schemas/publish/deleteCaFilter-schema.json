@@ -1,0 +1,11 @@
+{
+  "title": "delete CA filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.DeleteCaFilter",
+  "type": "object",
+  "properties": {
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

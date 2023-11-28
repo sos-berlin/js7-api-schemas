@@ -28,7 +28,7 @@
 <td>optional, boolean</td>
 <td>In general the published CA certificate for the <i>Signature Key Management</i> is used for signature validation only. 
 This property determines if the CA in the <i>SSL Key Management</i>, which is used to generate auth keys and certificates, should also be used for the key and certificate generation in the <i>Signature Key Management</i>. 
-<ul><li>If set to true:</li><ul><li>Requires that a CA is already configured for the <i>SSL Key Management</i>.</li><li>Creates a private key for the account and a <i>CA signed</i> certificate.</li>
+<ul><li>Not available for ``keyAlgorithm`` PGP (private/public key only). Only usable with RSA and ECDSA (private key/X509 certificate).</li><li>If set to true:</li><ul><li>Requires that a CA is already configured for the <i>SSL Key Management</i>.</li><li>Creates a private key for the account and a <i>CA signed</i> certificate.</li>
 <li>Replaces an already uploaded CA certificate for signature validation in the <i>Signature Key Management</i> with the certificate of the existing <i>SSL Key Management</i> CA.</li></ul>
 <li>If set to false:</li><ul><li>The CA in the <i>Signature Key Management</i> will be used for signature validation only.</li><li>Creates a private key for the account and a <i>self signed</i> certificate.</li>
 </td>
