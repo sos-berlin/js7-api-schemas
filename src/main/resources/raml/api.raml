@@ -4386,6 +4386,13 @@ traits:
             schema: !include api/schemas/publish/importRootCaFilter-schema.json
             example: " "
 
+      /delete
+        type:
+          postWithoutJSONandJSId:
+            description: deletes the active CA Certificate from the Signature Key Management of the current profile
+            schema200: " "
+            example200: " "
+
       /store:
         type:
           postJSONWithOkWithoutJSId:
@@ -4398,6 +4405,13 @@ traits:
             audit: !include api/documentation/audit/auditLog.md
             schema: !include api/schemas/publish/setRootCaForSigning-schema.json
             example: !include api/examples/publish/setRootCaForSigning-example.json
+
+    /delete:
+      type:
+        postWithoutJSONandJSId:
+          description: deletes the Key and Certificate from the Signature Key Management of the current profile
+          schema200: " "
+          example200: " "
 
     /generate:
       type:
