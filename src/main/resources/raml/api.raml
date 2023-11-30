@@ -3382,6 +3382,18 @@ traits:
             audit: !include api/documentation/audit/auditLog.md
             schema: !include api/schemas/tag/tagging/request-filter-schema.json
             example: TODO
+        /folder:
+          type:
+            postJSONWithOkWithoutJSId:
+              description: Sets tags for all workflows of a folder
+              description1: !include api/documentation/common/folders.md
+              description2: !include api/documentation/tag/modifyTags.md
+              description3: " "
+              description4: " "
+              description5: " "
+              audit: !include api/documentation/audit/auditLog.md
+              schema: !include api/schemas/tag/tagging/request-modify-filter-schema.json
+              example: TODO
   
   /workflows/update:
     type:
@@ -4619,6 +4631,24 @@ traits:
         audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/tag/common/request-filters-schema.json
         example: " "
+  /used:
+    type:
+      postJSONWithoutJSId:
+        description: Gets a list of worflows for each tag that is used
+        description1: !include api/documentation/common/folders.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/tag/common/request-folder-schema.json
+        schema200: !include api/schemas/tag/tags-used-response-schema.json
+        example: " "
+        example200: " "
       
 /task/log:
   type:

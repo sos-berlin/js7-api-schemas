@@ -1,16 +1,15 @@
 {
-    "title": "filter for tagging",
+    "title": "filter for bulk tagging",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "javaType": "com.sos.joc.model.tag.tagging.RequestModifyFilter",
     "type": "object",
-    "extends" : {
-        "$ref": "../../common/folder-schema.json"
-    },
     "required": [
-        "folder"
+        "folders"
     ],
-    "description": "A tag that is item of 'addTags' and 'deleteTags' won't be processed",
     "properties": {
+        "folders": {
+            "$ref": "../../common/folders-schema.json"
+        },
         "addTags": {
             "$ref": "../../common/tags-schema.json"
         },
