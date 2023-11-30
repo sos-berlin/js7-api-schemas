@@ -14,5 +14,6 @@
 	    "newName": {
 			"$ref": "../../common/string255required-schema.json"
 		}
-	}
+	},
+    "additionalProperties": false
 }

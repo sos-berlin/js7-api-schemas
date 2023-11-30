@@ -1,0 +1,25 @@
+{
+    "title": "filter for tagging",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.tag.tagging.RequestModifyFilter",
+    "type": "object",
+    "extends" : {
+        "$ref": "../../common/folder-schema.json"
+    },
+    "required": [
+        "folder"
+    ],
+    "description": "A tag that is item of 'addTags' and 'deleteTags' won't be processed",
+    "properties": {
+        "addTags": {
+            "$ref": "../../common/tags-schema.json"
+        },
+        "deleteTags": {
+            "$ref": "../../common/tags-schema.json"
+        },
+        "auditLog": {
+            "$ref": "../../audit/auditParams-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,12 @@
+{
+	"title": "common tag request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.tag.common.RequestFolder",
+	"type": "object",
+	"properties": {
+		"folders": {
+            "$ref": "../../common/folders-schema.json"
+        }
+	},
+    "additionalProperties": false
+}
