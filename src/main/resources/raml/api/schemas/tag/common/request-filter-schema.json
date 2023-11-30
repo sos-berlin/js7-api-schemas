@@ -13,5 +13,6 @@
 		"auditLog": {
       		"$ref": "../../audit/auditParams-schema.json"
     	}
-	}
+	},
+    "additionalProperties": false
 }

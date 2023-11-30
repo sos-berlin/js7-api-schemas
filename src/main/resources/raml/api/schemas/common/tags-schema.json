@@ -4,6 +4,6 @@
   "type": "array",
   "uniqueItems": true,
   "items": {
-    "$ref": "string255-schema.json"
+    "$ref": "string255required-schema.json"
   }
 }
