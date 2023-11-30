@@ -1,0 +1,20 @@
+{
+  "title": "used tags",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.tag.TagsUsedBy",
+  "type": "object",
+  "required": [
+    "deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+        "$ref": "../common/timestamp-schema.json"
+    }
+  },
+  "additionalProperties": {
+    "type": "array",
+    "items": {
+        "$ref": "../common/path-schema.json"
+    }
+  }
+}
