@@ -1,0 +1,28 @@
+{
+  "title": "Send Mail",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.utilities.SendMail",
+  "type": "object",
+  "properties": {
+     
+    "jobResourceName": {
+			"$ref": "../common/string255required-schema.json"
+    },
+    "subject": {
+			"$ref": "../common/string255-schema.json"
+    },
+    "charset": {
+			"$ref": "../common/string255-schema.json"
+    },
+    "encoding": {
+			"$ref": "../common/string255-schema.json"
+    },
+    "contentType": {
+			"$ref": "../common/string255-schema.json"
+    },
+    "recipient": {
+			"$ref": "../common/string255required-schema.json"
+    }
+  },
+  "additionalProperties": false
+}
