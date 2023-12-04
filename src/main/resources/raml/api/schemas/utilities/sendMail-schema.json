@@ -11,15 +11,6 @@
     "subject": {
 			"$ref": "../common/string255-schema.json"
     },
-    "charset": {
-			"$ref": "../common/string255-schema.json"
-    },
-    "encoding": {
-			"$ref": "../common/string255-schema.json"
-    },
-    "contentType": {
-			"$ref": "../common/string255-schema.json"
-    },
     "recipient": {
 			"$ref": "../common/string255required-schema.json"
     }
