@@ -22,6 +22,9 @@
 		"iamOidcClientSecret": {
 			"$ref": "../../../common/string255-schema.json"
 		},
+		"iamOidcFlowType": {
+			"$ref": "oidc-flowtypes-schema.json"
+		},
 		"iamOidcUserAttribute": {
 			"$ref": "../../../common/string255-schema.json"
 		},
