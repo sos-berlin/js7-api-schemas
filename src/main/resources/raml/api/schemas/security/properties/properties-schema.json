@@ -13,9 +13,6 @@
 		"sessionTimeout": {
 			"$ref": "../../common/nonNegativeInteger-schema.json"
 		},
-		"vault": {
-			"$ref": "vault/vault-properties-schema.json"
-		},
 		"keycloak": {
 			"$ref": "keycloak/keycloak-properties-schema.json"
 		},
