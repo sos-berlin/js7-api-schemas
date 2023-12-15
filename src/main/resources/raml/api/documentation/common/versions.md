@@ -1,3 +1,34 @@
+* [JOC API 2.6.4](../../../2.6.4/raml-doc/JOC-API/index.html)
+    * *NEW*
+        * <a href="../../../2.6.4/raml-doc/JOC-API/resource/inventory/workflow/tags/store/folder.html" target="newtab264">./inventory/workflow/tags/store/folder</a>
+        * <a href="../../../2.6.4/raml-doc/JOC-API/resource/profile/key/ca/delete.html" target="newtab264">./profile/key/ca/delete</a>
+        * <a href="../../../2.6.4/raml-doc/JOC-API/resource/profile/key/delete.html" target="newtab264">./profile/key/delete</a>
+        * <a href="../../../2.6.4/raml-doc/JOC-API/resource/tags/used.html" target="newtab264">./tags/used</a>
+    * *CHANGED*
+        * <a href="../../../2.6.4/raml-doc/JOC-API/resource/profile/key/generate.html" target="newtab264">./profile/key/generate</a> - Request fields ``dn`` and ``useSslCa`` are added
+
+* [JOC API 2.5.7&nbsp;&nbsp;(same as 2.6.4)](../../../2.6.4/raml-doc/JOC-API/index.html)
+* [JOC API 2.6.3](../../../2.6.3/raml-doc/JOC-API/index.html)
+    * *NEW*
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/daily_plan/projections/calendar.html" target="newtab263">./daily_plan/projections/calendar</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/daily_plan/projections/date.html" target="newtab263">./daily_plan/projections/date</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/daily_plan/projections/dates.html" target="newtab263">./daily_plan/projections/dates</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/daily_plan/projections/recreate.html" target="newtab263">./daily_plan/projections/recreate</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/inventory/read/tag.html" target="newtab263">./inventory/read/tag</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/inventory/workflow/tags.html" target="newtab263">./inventory/workflow/tags</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/inventory/workflow/tags/store.html" target="newtab263">./inventory/workflow/tags/store</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/tag/rename.html" target="newtab263">./tag/rename</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/tags.html" target="newtab263">./tags</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/tags/add.html" target="newtab263">./tags/add</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/tags/delete.html" target="newtab263">./tags/delete</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/tags/ordering.html" target="newtab263">./tags/ordering</a>
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/workflows/tag/search.html" target="newtab263">./workflows/tag/search</a>
+    * *CHANGED*
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/daily_plan/orders.html" target="newtab263">./daily_plan/orders</a> - Request fields ``tags``is added 
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/workflows.html" target="newtab263">./workflows</a> - Request fields ``tags``is added 
+        * <a href="../../../2.6.3/raml-doc/JOC-API/resource/workflows/search.html" target="newtab263">./workflows/search</a> - Request fields ``tags``is added 
+        
+* [JOC API 2.5.6&nbsp;&nbsp;(same as 2.6.3)](../../../2.6.3/raml-doc/JOC-API/index.html)
 * [JOC API 2.6.2&nbsp;&nbsp;(same as 2.5.4)](../../../2.5.4/raml-doc/JOC-API/index.html)
 * [JOC API 2.6.1&nbsp;&nbsp;(same as 2.5.4)](../../../2.5.4/raml-doc/JOC-API/index.html)
 * [JOC API 2.6.0&nbsp;&nbsp;(same as 2.5.4)](../../../2.5.4/raml-doc/JOC-API/index.html)
