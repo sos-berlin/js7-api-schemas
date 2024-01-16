@@ -15,7 +15,7 @@
 		"scheduledFor": {
 			"description": "ISO format yyyy-mm-dd[ HH:MM[:SS]] or now or now + HH:MM[:SS] or now + SECONDS or empty",
             "type": "string",
-            "pattern": "^(now(\\s*\\+\\s*(\\d{1,2}:\\d{1,2}(:\\d{1,2})?|\\d+)?)?||never|\\d{4}-\\d{2}-\\d{2}(\\s\\d{1,2}:\\d{1,2}(:\\d{1,2})?)?)$"
+            "pattern": "^(now(\\s*\\+\\s*(\\d{1,2}:\\d{1,2}(:\\d{1,2})?|\\d+)?)?|cur\\s*[-+]\\s*(\\d{1,2}:\\d{1,2}(:\\d{1,2})?|\\d+)||never|\\d{4}-\\d{2}-\\d{2}(\\s\\d{1,2}:\\d{1,2}(:\\d{1,2})?)?)$"
 		},
 		"cycle": {
 			"$ref": "cycle-schema.json"
