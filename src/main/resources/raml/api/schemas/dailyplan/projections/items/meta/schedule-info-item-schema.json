@@ -14,14 +14,17 @@
 		"workflows": {
 			"$ref": "workflows-item-schema.json"
 		},
-        "workflowPaths": {
-            "description": "this property is only used for a shorter response of ./projections/day API",
-            "type": "array",
-            "uniqueItems": true,
-            "items": {
-                "$ref": "../../../../common/path-schema.json"   
-            }
-        }
+		"workflowPaths": {
+			"description": "this property is only used for a shorter response of ./projections/day API",
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"$ref": "../../../../common/path-schema.json"
+			}
+		},
+		"excludedFromProjection": {
+			"type": "boolean"
+		}
 	},
 	"additionalProperties": false
 }
