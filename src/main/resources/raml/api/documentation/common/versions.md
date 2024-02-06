@@ -1,3 +1,8 @@
+* [JOC API 2.6.5](../../../2.6.5/raml-doc/JOC-API/index.html)
+    * *CHANGED*
+        * <a href="../../../2.6.5/raml-doc/JOC-API/resource/daily_plan/orders/modify.html" target="newtab265">./daily_plan/orders/modify</a> - Request field ``scheduledFor`` accepts the date without time and a new time relative to the current start time using 'cur &#xB1; ...'
+
+* [JOC API 2.5.8&nbsp;&nbsp;(same as 2.6.5)](../../../2.6.5/raml-doc/JOC-API/index.html)
 * [JOC API 2.6.4](../../../2.6.4/raml-doc/JOC-API/index.html)
     * *NEW*
         * <a href="../../../2.6.4/raml-doc/JOC-API/resource/inventory/workflow/tags/store/folder.html" target="newtab264">./inventory/workflow/tags/store/folder</a>
