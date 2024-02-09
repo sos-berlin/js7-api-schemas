@@ -1,0 +1,17 @@
+{
+  "title": "dateFrom filter for loading of reporting data",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.reporting.LoadFilter",
+  "type": "object",
+  "required": [
+        "dateFrom"    
+  ],
+  "properties": {
+        "dateFrom": {
+            "description": "A month in the format YYYY-MM",
+            "type": "string",
+            "pattern": "\\d{4}-(0[1-9]|1[012])"
+        }
+  },
+  "additionalProperties": false
+}

@@ -4511,7 +4511,7 @@ traits:
           example: !include api/examples/publish/setKey-example.json
     
 /profiles:
- type:
+  type:
     postJSON:
       description: Provide the list of profiles including the last login time. A profile is listed, when changed preferences, git credentials, favorites or signatures/keys are found.
       description1: !include api/documentation/security/identityServices/identityServiceName.md
@@ -4519,13 +4519,30 @@ traits:
       schema200: !include api/schemas/profile/profiles-schema.json        
 
 /profiles/delete:
-    type:
-      postJSONWithOkResponse:
-        description: Deletes the profile for the accounts
-        description1: !include api/documentation/security/account/delete/accountNames.md 
-        description2: !include api/documentation/profile/complete.md
-        schema: !include api/schemas/profile/profilesFilter-schema.json          
+  type:
+    postJSONWithOkResponse:
+      description: Deletes the profile for the accounts
+      description1: !include api/documentation/security/account/delete/accountNames.md 
+      description2: !include api/documentation/profile/complete.md
+      schema: !include api/schemas/profile/profilesFilter-schema.json          
 
+/reporting:
+  /data/load:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Loads the data for reports
+        description1: !include api/documentation/reporting/dateFrom.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/reporting/load-schema.json
+        example: " "
 
 /schedule/runtime:
   type:
