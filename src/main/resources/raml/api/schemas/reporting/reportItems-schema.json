@@ -1,0 +1,18 @@
+{
+  "title": "reports",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.reporting.ReportItems",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+      	"$ref": "reportItem-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

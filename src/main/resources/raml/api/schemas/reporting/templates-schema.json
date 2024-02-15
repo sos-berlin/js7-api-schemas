@@ -1,0 +1,18 @@
+{
+  "title": "templates",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.reporting.Templates",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "templates": {
+      "type": "array",
+      "items": {
+      	"$ref": "template-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,37 @@
+{
+    "title": "template",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.Template",
+    "type": "object",
+    "required": [
+        "id"    
+    ],
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "data": {
+            "type": "object",
+            "javaType": "com.sos.joc.model.reporting.TemplateData",
+            "required": [
+                "chartType",
+                "groupBy"
+            ],
+            "properties": {
+                "chartType": {
+                    "description": "BAR, HORIZONTAL_BAR, LINE",
+                    "type": "string"
+                },
+                "groupBy": {
+                    "description": "START_TIME, ORDER_ID, JOB_NAME, WORKFLOW_NAME",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": false
+}

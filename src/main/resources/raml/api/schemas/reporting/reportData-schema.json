@@ -1,0 +1,7 @@
+{
+    "title": "data",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.ReportData",
+    "type": "object",
+    "additionalProperties": true
+}

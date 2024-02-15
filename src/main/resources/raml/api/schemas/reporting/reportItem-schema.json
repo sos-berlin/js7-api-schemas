@@ -1,0 +1,44 @@
+{
+    "title": "template",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.ReportItem",
+    "type": "object",
+    "required": [
+        "templateId",
+        "frequency",
+        "size",
+        "dateFrom",
+        "dateTo",
+        "data"   
+    ],
+    "properties": {
+        "id": {
+            "$ref": "../common/nonNegativeLong-schema.json"
+        },
+        "title": {
+            "type": "string"
+        },
+        "templateId": {
+            "$ref": "../common/nonNegativeInteger-schema.json"
+        },
+        "frequency": {
+            "$ref": "frequency-schema.json"
+        },
+        "size": {
+            "$ref": "../common/nonNegativeInteger-schema.json"
+        },
+        "dateFrom": {
+            "$ref": "../common/date-schema.json"
+        },
+        "dateTo": {
+            "$ref": "../common/date-schema.json"
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "$ref": "reportData-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}
