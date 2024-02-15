@@ -4,6 +4,7 @@
     "javaType": "com.sos.joc.model.reporting.ReportItem",
     "type": "object",
     "required": [
+        "runId",
         "templateId",
         "frequency",
         "size",
@@ -15,8 +16,11 @@
         "id": {
             "$ref": "../common/nonNegativeLong-schema.json"
         },
+        "runId": {
+            "$ref": "../common/nonNegativeLong-schema.json"
+        },
         "title": {
-            "type": "string"
+            "$ref": "../common/string255-schema.json"
         },
         "templateId": {
             "$ref": "../common/nonNegativeInteger-schema.json"
