@@ -1,0 +1,18 @@
+{
+  "title": "reports",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.reporting.RunItems",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "runs": {
+      "type": "array",
+      "items": {
+      	"$ref": "runHistoryItem-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

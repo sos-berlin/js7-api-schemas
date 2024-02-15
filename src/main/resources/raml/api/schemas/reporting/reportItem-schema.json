@@ -37,6 +37,9 @@
         "dateTo": {
             "$ref": "../common/date-schema.json"
         },
+        "created": {
+            "$ref": "../common/timestamp-schema.json"
+        },
         "data": {
             "type": "array",
             "items": {
