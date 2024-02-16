@@ -7,11 +7,11 @@
         "id"    
     ],
     "properties": {
-        "id": {
-            "type": "string"
+        "templateId": {
+            "$ref": "../common/nonNegativeInteger-schema.json"
         },
         "title": {
-            "type": "string"
+            "$ref": "../common/string255-schema.json"
         },
         "data": {
             "type": "object",

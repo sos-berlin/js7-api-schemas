@@ -19,6 +19,9 @@
         "runId": {
             "$ref": "../common/nonNegativeLong-schema.json"
         },
+        "name": {
+            "$ref": "../common/string255-schema.json"
+        },
         "title": {
             "$ref": "../common/string255-schema.json"
         },
