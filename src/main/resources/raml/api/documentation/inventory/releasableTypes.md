@@ -3,5 +3,7 @@
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"SCHEDULE"</li>
     <li>"JOBTEMPLATE"</li>
-    <li>"INCLUDESCRIPT"</li></ul>
+    <li>"INCLUDESCRIPT"</li>
+    <li>"REPORT"</li>
+    </ul>
 </td><td>["WORKINGDAYSCALENDAR", "NONWORKINGDAYSCALENDAR"]</td><td></td></tr>

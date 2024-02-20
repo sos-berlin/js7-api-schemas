@@ -9,5 +9,6 @@
 	<li><a href="../../../../inventory/schemas/schedule/schedule-schema.json" target="order">Schedule JSON schema</a></li>
 	<li><a href="../../../../inventory/schemas/calendar/calendar-schema.json" target="calendar">Calendar JSON schema</a></li>
 	<li><a href="../../../../inventory/schemas/script/script-schema.json" target="script">IncludeScript JSON schema</a></li>
+	<li><a href="../../../../inventory/schemas/report/report-schema.json" target="report">Report JSON schema</a></li>
 </ul>
 </td><td></td><td></td></tr>

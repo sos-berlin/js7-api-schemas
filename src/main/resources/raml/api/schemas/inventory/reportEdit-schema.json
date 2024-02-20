@@ -1,0 +1,15 @@
+{
+	"title": "Report Edit configuration",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.report.ReportEdit",
+	"type": "object",
+	"extends": {
+		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+	},
+	"properties": {
+		"configuration": {
+			"$ref": "../../../inventory/schemas/report/report-schema.json"
+		}
+	}
+}
+

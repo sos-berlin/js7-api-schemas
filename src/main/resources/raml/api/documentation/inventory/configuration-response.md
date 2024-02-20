@@ -12,6 +12,7 @@
     	* <a href="../../../../../inventory/schemas/schedule/schedule-schema.json" target="order">Schedule JSON schema</a>
     	* <a href="../../../../../inventory/schemas/calendar/calendar-schema.json" target="calendar">Calendar JSON schema</a>
     	* <a href="../../../../../inventory/schemas/script/script-schema.json" target="script">IncludeScript JSON schema</a>
-    	* EMPTY in case of a folder
+    	* <a href="../../../../../inventory/schemas/report/report-schema.json" target="report">Report JSON schema</a>
+        * EMPTY in case of a folder
     * valid
     * syncState if controllerId is specified in the request

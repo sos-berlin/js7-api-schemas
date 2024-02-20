@@ -92,6 +92,9 @@
         },
         "monitor": {
           "type": "boolean"
+        },
+        "report": {
+          "type": "boolean"
         }
       }
     },

@@ -12,5 +12,6 @@ the tupel (``path`` and ``objectType``).</td><td></td><td></td></tr>
     <li>"SCHEDULE"</li>
     <li>"JOBTEMPLATE"</li>
     <li>"INCLUDESCRIPT"</li>
+    <li>"REPORT"</li>
     </ul>
 </td><td></td><td></td></tr>

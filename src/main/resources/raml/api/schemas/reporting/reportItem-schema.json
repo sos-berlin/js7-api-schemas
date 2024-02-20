@@ -29,7 +29,7 @@
             "$ref": "../common/nonNegativeInteger-schema.json"
         },
         "frequency": {
-            "$ref": "frequency-schema.json"
+            "$ref": "../../../inventory/schemas/report/frequency-schema.json"
         },
         "size": {
             "type": "integer",

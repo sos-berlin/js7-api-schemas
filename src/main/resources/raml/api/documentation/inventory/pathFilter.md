@@ -20,6 +20,7 @@
       <li>"SCHEDULE"</li>
       <li>"JOBTEMPLATE"</li>
       <li>"INCLUDESCRIPT"</li>
+      <li>"REPORT"</li>
     </ul>
   </td>
   <td>"objectType" : "WORKFLOW"</td>

@@ -226,6 +226,23 @@
 					},
 					"additionalProperties": false
 				},
+                "reports": {
+                    "javaType": "com.sos.joc.model.security.configuration.permissions.joc.Reports",
+                    "type": "object",
+                    "properties": {
+                        "view": {
+                            "description": "show resource tab 'reports'",
+                            "type": "boolean",
+                            "default" : false
+                        },
+                        "manage": {
+                            "description": "run report",
+                            "type": "boolean",
+                            "default" : false
+                        }
+                    },
+                    "additionalProperties": false
+                },
 				"others": {
 					"javaType": "com.sos.joc.model.security.configuration.permissions.joc.Others",
 					"type": "object",

@@ -20,6 +20,7 @@ public enum ObjectType {
     JOBRESOURCE(10),
     NOTICEBOARD(11),
     INCLUDESCRIPT(12),
+    REPORT(15),
     DOCUMENTATION(20),
     ORDER(99);
     private final Integer intValue;

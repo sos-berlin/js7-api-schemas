@@ -12,6 +12,7 @@
     "SCHEDULE",
     "INCLUDESCRIPT",
     "JOBTEMPLATE",
+    "REPORT",
     "FOLDER",
     "JOBSCHEDULER",
     "DAILYPLAN",

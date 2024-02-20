@@ -9,6 +9,7 @@
     <li>"SCHEDULE"</li>
     <li>"INCLUDESCRIPT"</li>
     <li>"JOBTEMPLATE"</li>
+    <li>"REPORT"</li>
     <li>"DOCUMENTATION"</li>
     <li>"ORDER"</li>
 </ul>

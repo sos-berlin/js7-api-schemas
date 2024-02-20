@@ -15,6 +15,7 @@
     "SCHEDULE",
     "INCLUDESCRIPT",
     "JOBTEMPLATE",
+    "REPORT",
     "DOCUMENTATION",
     "ORDER"
   ]

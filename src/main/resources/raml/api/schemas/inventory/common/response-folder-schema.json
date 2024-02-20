@@ -84,6 +84,14 @@
 			},
 			"uniqueItems": true
 		},
+        "reports": {
+            "type": "array",
+            "items": {
+                "$ref": "response-folderItem-schema.json"
+            },
+            "uniqueItems": true
+        },
+        
     "deploymentDescriptors": {
       "type": "array",
       "items": {

@@ -10,6 +10,7 @@
 	<li><a href="../../../../../inventory/schemas/calendar/calendar-schema.json" target="calendar">Calendar JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/jobTemplate/jobTemplate-schema.json" target="jobTemplate">Job Template JSON schema</a></li>
 	<li><a href="../../../../../inventory/schemas/script/script-schema.json" target="script">IncludeScript JSON schema</a></li>
+	<li><a href="../../../../../inventory/schemas/report/report-schema.json" target="report">Report JSON schema</a></li>
 </ul>
 </p>
 <p>The URL parameter has to be the corresponding objectType (case insensitive)
@@ -24,5 +25,6 @@
     <li>"NONWORKINGDAYSCALENDAR"</li>
     <li>"JOBTEMPLATE"</li>
     <li>"INCLUDESCRIPT"</li>
+    <li>"REPORT"</li>
 </ul>
 </p>

@@ -10,5 +10,6 @@
     <li>"SCHEDULE"</li>
     <li>"JOBTEMPLATE"</li>
     <li>"INCLUDESCRIPT"</li>
+    <li>"REPORT"</li>
     </ul>
 </td><td>["WORKINGDAYSCALENDAR", "NONWORKINGDAYSCALENDAR"]</td><td></td></tr>

@@ -63,7 +63,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.script.ScriptEdit.class, name = "INCLUDESCRIPT"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.folder.FolderEdit.class, name = "FOLDER"),
     @JsonSubTypes.Type(value = com.sos.joc.model.inventory.descriptor.DeploymentDescriptorEdit.class, name = "DEPLOYMENTDESCRIPTOR"),
-    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.folder.DescriptorFolderEdit.class, name = "DESCRIPTORFOLDER")})
+    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.folder.DescriptorFolderEdit.class, name = "DESCRIPTORFOLDER"),
+    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.report.ReportEdit.class, name = "REPORT")})
 public class ConfigurationObject {
 
     /**

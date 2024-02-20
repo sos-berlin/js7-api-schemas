@@ -43,6 +43,9 @@
     },
     "numOfJobTemplates": {
       "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfReports": {
+      "$ref": "../common/nonNegativeLong-schema.json"
     }
   }
 }

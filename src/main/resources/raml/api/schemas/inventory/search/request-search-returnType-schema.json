@@ -12,6 +12,7 @@
 		"LOCK",
 		"SCHEDULE",
 		"INCLUDESCRIPT",
-		"CALENDAR"
+		"CALENDAR",
+		"REPORT"
 	]
 }

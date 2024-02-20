@@ -9,6 +9,7 @@
   <li>JOBTEMPLATE</li>
   <li>INCLUDESCRIPT</li>
   <li>CALENDAR</li>
+  <li>REPORT</li>
 </ul></td><td></td><td></td></tr>
 
 <tr><td>``deployedOrReleased``</td><td>optional, boolean</td><td></td><td></td><td>false</td></tr>
