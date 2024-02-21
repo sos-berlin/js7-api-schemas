@@ -33,7 +33,11 @@
 		},
 		"iamKeycloakRealm": {
 			"$ref": "../../../common/string255-schema.json"
+		},
+		"iamKeycloakCompatibility": {
+			"$ref": "../../../common/string255-schema.json"
 		}
+		
 	},
 	"additionalProperties": false
 }
