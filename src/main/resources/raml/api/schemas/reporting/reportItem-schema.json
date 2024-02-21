@@ -1,5 +1,5 @@
 {
-    "title": "template",
+    "title": "report item from REPORT_HISTORY",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "javaType": "com.sos.joc.model.reporting.ReportItem",
     "type": "object",
@@ -7,7 +7,7 @@
         "runId",
         "templateId",
         "frequency",
-        "size",
+        "hits",
         "dateFrom",
         "dateTo",
         "data"   
@@ -31,7 +31,7 @@
         "frequency": {
             "$ref": "../../../inventory/schemas/report/frequency-schema.json"
         },
-        "size": {
+        "hits": {
             "type": "integer",
             "minimum": 1,
             "maximum": 100

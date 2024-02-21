@@ -1,17 +1,17 @@
 {
     "title": "parameter for a report run",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "javaType": "com.sos.joc.model.reporting.RunItem",
+    "javaType": "com.sos.joc.model.reporting.Reports",
     "type": "object",
-    "extends": {
-        "$ref": "report-schema.json"
-    },
     "properties": {
-        "id": {
-            "$ref": "../common/nonNegativeLong-schema.json"
-        },
-        "created": {
+        "deliveryDate": {
             "$ref": "../common/timestamp-schema.json"
+        },
+        "reports": {
+            "type": "array",
+                "items": {
+                "$ref": "report-schema.json"
+            }
         }
     },
     "additionalProperties": false

@@ -1,0 +1,15 @@
+{
+    "title": "report conficuration",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.Report",
+    "type": "object",
+    "extends": {
+        "$ref": "../../../inventory/schemas/report/report-schema.json"
+    },
+    "properties": {
+        "path": {
+            "$ref": "../../../api/schemas/common/path-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

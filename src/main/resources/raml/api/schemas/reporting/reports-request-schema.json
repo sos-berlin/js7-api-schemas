@@ -1,0 +1,15 @@
+{
+    "title": "parameter for a report run",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.ReportsFilter",
+    "type": "object",
+    "extends": {
+        "$ref": "reportPaths-schema.json"
+    },
+    "properties": {
+        "folders": {
+            "$ref": "../common/folders-schema.json"
+        }
+    },
+    "additionalProperties": false
+}
