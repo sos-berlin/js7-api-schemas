@@ -1,5 +1,5 @@
 {
-  "title": "dateFrom filter for loading of reporting data",
+  "title": "report history",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.reporting.ReportHistoryFilter",
   "type": "object",
@@ -13,6 +13,12 @@
         },
         "compact": {
             "$ref": "../common/compactParam-schema.json"
+        },
+        "dateFrom": {
+            "$ref": "../common/date-schema.json"
+        },
+        "dateTo": {
+            "$ref": "../common/date-schema.json"
         }
   },
   "additionalProperties": false

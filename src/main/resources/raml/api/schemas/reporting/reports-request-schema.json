@@ -1,5 +1,5 @@
 {
-    "title": "parameter for a report run",
+    "title": "reports request",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "javaType": "com.sos.joc.model.reporting.ReportsFilter",
     "type": "object",

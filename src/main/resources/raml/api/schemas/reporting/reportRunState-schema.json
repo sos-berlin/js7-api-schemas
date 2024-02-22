@@ -1,0 +1,20 @@
+{
+  "title": "report run state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.reporting.ReportRunState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "0=SUCCESSFUL, 1=FAILED, 2=IN_PROGRESS, 3=UNKNOWN",
+      "type": "integer"
+    },
+    "_text": {
+      "$ref": "reportRunStateText-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

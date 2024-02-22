@@ -1,5 +1,5 @@
 {
-  "title": "reports",
+  "title": "reports from REPORT_HISTORY",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.reporting.ReportItems",
   "type": "object",

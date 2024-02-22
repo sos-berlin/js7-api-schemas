@@ -4,6 +4,7 @@
     "javaType": "com.sos.joc.model.reporting.ReportItem",
     "type": "object",
     "required": [
+        "id",
         "runId",
         "templateId",
         "frequency",
@@ -19,7 +20,7 @@
         "runId": {
             "$ref": "../common/nonNegativeLong-schema.json"
         },
-        "name": {
+        "path": {
             "$ref": "../common/string255-schema.json"
         },
         "title": {
@@ -43,6 +44,9 @@
             "$ref": "../common/date-schema.json"
         },
         "created": {
+            "$ref": "../common/timestamp-schema.json"
+        },
+        "modified": {
             "$ref": "../common/timestamp-schema.json"
         },
         "data": {

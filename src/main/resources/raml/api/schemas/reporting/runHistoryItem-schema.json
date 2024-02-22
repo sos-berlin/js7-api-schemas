@@ -1,5 +1,5 @@
 {
-    "title": "parameter for a report run",
+    "title": "report run",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "javaType": "com.sos.joc.model.reporting.RunItem",
     "type": "object",
@@ -10,7 +10,13 @@
         "id": {
             "$ref": "../common/nonNegativeLong-schema.json"
         },
-        "created": {
+        "state": {
+            "$ref": "reportRunState-schema.json"
+        },
+        "errorText": {
+            "type": "string"
+        },
+        "modified": {
             "$ref": "../common/timestamp-schema.json"
         }
     },

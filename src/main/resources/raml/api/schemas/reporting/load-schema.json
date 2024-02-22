@@ -4,10 +4,15 @@
   "javaType": "com.sos.joc.model.reporting.LoadFilter",
   "type": "object",
   "required": [
-        "dateFrom"    
+        "monthFrom"    
   ],
   "properties": {
-        "dateFrom": {
+        "monthFrom": {
+            "description": "A month in the format YYYY-MM",
+            "type": "string",
+            "pattern": "\\d{4}-(0[1-9]|1[012])"
+        },
+        "monthTo": {
             "description": "A month in the format YYYY-MM",
             "type": "string",
             "pattern": "\\d{4}-(0[1-9]|1[012])"
