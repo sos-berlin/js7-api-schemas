@@ -6,7 +6,7 @@
     "required": [
         "id",
         "runId",
-        "templateId",
+        "templateName",
         "frequency",
         "hits",
         "dateFrom",
@@ -26,8 +26,8 @@
         "title": {
             "$ref": "../common/string255-schema.json"
         },
-        "templateId": {
-            "$ref": "../common/nonNegativeInteger-schema.json"
+        "templateName": {
+            "$ref": "../../../inventory/schemas/report/templateId-schema.json"
         },
         "frequency": {
             "$ref": "../../../inventory/schemas/report/frequency-schema.json"
