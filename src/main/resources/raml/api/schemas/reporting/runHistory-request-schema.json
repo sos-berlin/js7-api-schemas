@@ -1,0 +1,26 @@
+{
+    "title": "run history filter",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.RunHistoryFilter",
+    "type": "object",
+    "extends": {
+        "$ref": "reportPaths-schema.json"
+    },
+    "properties": {
+        "templateNames": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../../../inventory/schemas/report/templateId-schema.json"
+            }
+        },
+        "states": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "reportRunStateText-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}
