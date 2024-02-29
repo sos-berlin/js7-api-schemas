@@ -1,0 +1,15 @@
+{
+    "title": "run reports",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.RunReports",
+    "type": "object",
+    "extends": {
+        "$ref": "reportPaths-schema.json"
+    },
+    "properties": {
+        "auditLog": {
+            "$ref": "../audit/auditParams-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

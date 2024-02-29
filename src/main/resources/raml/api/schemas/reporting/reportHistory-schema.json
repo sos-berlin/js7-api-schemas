@@ -1,10 +1,13 @@
 {
-  "title": "report history",
+  "title": "generated reports",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.reporting.ReportHistoryFilter",
   "type": "object",
+  "extends": {
+        "$ref": "reportPaths-schema.json"
+  },
   "properties": {
-        "ids": {
+        "runIds": {
             "type": "array",
             "uniqueItems": true,
             "items": {
@@ -19,6 +22,13 @@
         },
         "dateTo": {
             "$ref": "../common/date-schema.json"
+        },
+        "templateNames": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../../../inventory/schemas/report/templateId-schema.json"
+            }
         }
   },
   "additionalProperties": false
