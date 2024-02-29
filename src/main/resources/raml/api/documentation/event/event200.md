@@ -91,6 +91,11 @@ Different events trigger the following different actions:
 * Update ``DailyPlan View``: for each following event 
 	* **DailyPlanUpdated**
 		* It contains the changed date in the "message" field
+* Update ``Reporting View - Report Run History tab``: for each following event 
+    * **ReportRunsUpdated**
+    * **ReportsUpdated**
+* Update ``Reporting View - Generated Reports tab``: 
+    * **ReportsUpdated**
 * Alert ``Problem``: for each following event
 	* **ProblemEvent** 
 		* It contains a message in the "message" field

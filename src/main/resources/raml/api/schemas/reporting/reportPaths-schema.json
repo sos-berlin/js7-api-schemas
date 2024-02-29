@@ -3,9 +3,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "javaType": "com.sos.joc.model.reporting.ReportPaths",
     "type": "object",
-    "required": [
-        "reportPaths"
-    ],
     "properties": {
         "reportPaths": {
             "type": "array",
