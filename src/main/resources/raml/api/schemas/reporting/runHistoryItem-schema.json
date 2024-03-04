@@ -13,6 +13,9 @@
         "state": {
             "$ref": "reportRunState-schema.json"
         },
+        "numOfReports": {
+            "$ref": "../common/nonNegativeLong-schema.json"
+        },
         "errorText": {
             "type": "string"
         },
