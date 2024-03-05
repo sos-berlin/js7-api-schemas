@@ -32,7 +32,10 @@
 		"folders": {
         	"$ref": "../common/folders-schema.json"
       	},
-    	"dateTo": {
+    	"dateFrom": {
+            "$ref": "../common/dateFromTo-schema.json"
+        },
+        "dateTo": {
       		"$ref": "../common/dateFromTo-schema.json"
     	},
     	"timeZone": {
@@ -45,7 +48,11 @@
 			"type": "boolean",
 			"default": false
 		},
-		"position": {
+		"deep": {
+            "type": "boolean",
+            "default": false
+        },
+        "position": {
 			"anyOf": [
 				{"$ref": "../../../controller/schemas/common/position-schema.json"},
 				{"$ref": "../common/string255required-schema.json"}
