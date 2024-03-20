@@ -7,9 +7,6 @@
 		"iamKeycloakUrl": {
 			"$ref": "../../../common/string255-schema.json"
 		},
-		"iamKeycloakAuthenticationMethodPath": {
-			"$ref": "../../../common/string255-schema.json"
-		},
 		"iamKeycloakTruststorePath": {
 			"$ref": "../../../common/string255-schema.json"
 		},
