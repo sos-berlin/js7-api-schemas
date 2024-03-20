@@ -4158,8 +4158,9 @@ traits:
     type:
       modifyOrder:
         description: Cancel orders
-        dateToParam: !include api/documentation/calendar/dateTo.md
-        timeZoneParam: !include api/documentation/orderManagement/timeZone.md
+        dateFromParam: !include api/documentation/common/dateFrom.md
+        dateToParam: !include api/documentation/common/dateTo.md
+        timeZoneParam: !include api/documentation/common/timeZone.md
         signalParam: !include api/documentation/order/kill.md
         positionParam: " "
         variablesParam: " "
@@ -4169,6 +4170,7 @@ traits:
     type:
       modifyOrder:
         description: Confirm prompting orders
+        dateFromParam: " "
         dateToParam: " "
         timeZoneParam: " "
         signalParam: " "
@@ -4265,6 +4267,7 @@ traits:
     type:
       modifyOrder:
         description: Remove orders when terminated
+        dateFromParam: " "
         dateToParam: " "
         timeZoneParam: " "
         signalParam: " "
@@ -4276,6 +4279,7 @@ traits:
     type:
       modifyOrder:
         description: Resume orders when suspended or failed
+        dateFromParam: " "
         dateToParam: " "
         timeZoneParam: " "
         signalParam: " "
@@ -4306,8 +4310,9 @@ traits:
     type:
       modifyOrder:
         description: Suspend orders
-        dateToParam: !include api/documentation/calendar/dateTo.md
-        timeZoneParam: !include api/documentation/orderManagement/timeZone.md
+        dateFromParam: !include api/documentation/common/dateFrom.md
+        dateToParam: !include api/documentation/common/dateTo.md
+        timeZoneParam: !include api/documentation/common/timeZone.md
         signalParam: !include api/documentation/order/kill.md
         positionParam: " "
         variablesParam: " "
