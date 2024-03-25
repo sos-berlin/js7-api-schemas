@@ -27,6 +27,11 @@
 		"withSubmit": {
 			"$ref": "../common/withSubmit-schema.json"
 		},
+        "includeNonAutoPlannedOrders": {
+            "description": "includes non-automatically planned orders iff true",
+            "type": "boolean",
+            "default": false
+        },
 		"auditLog": {
 			"$ref": "../../audit/auditParams-schema.json"
 		}
