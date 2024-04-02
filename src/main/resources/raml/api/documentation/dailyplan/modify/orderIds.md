@@ -4,7 +4,7 @@
 	
 <td>required; array[string]</td>
 	
-<td>Filters all orders in the given daily plan that have one of the order IDs in the given list of orderIds. </td>
+<td>Orders that are to be processed </td>
 	
 <td>["#2020-09-15#P0000000046-myOrderName"]</td>
 	
