@@ -1165,6 +1165,30 @@ traits:
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
           example: " "
     
+    /copy:
+      type:
+        postJSON:
+          description: Copy Orders
+          description1: !include api/documentation/dailyplan/modify/orderIds.md
+          description2: !include api/documentation/dailyplan/modify/startTime.md
+          description3: !include api/documentation/dailyplan/modify/cycle.md
+          description4: " "
+          description5: !include api/documentation/dailyplan/modify/forceJobAdmission.md
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: !include api/documentation/audit/auditLog.md
+          description200: |
+            A map in the form <br/>  ``"oldOrderId": "newOrderId"``<br/>is returned.
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanCopyOrder-schema.json
+          schema200: !include api/schemas/order/orderIdMap-schema.json
+          example: " "
+          example200: !include api/examples/order/modify-example.json
+      post:
+        responses:
+          419:
+          
     /generate:
       type:
         postJSONWithOkResponse:
@@ -1230,7 +1254,7 @@ traits:
           description9: " "
           description10: !include api/documentation/audit/auditLog.md
           description200: |
-            This API changes the OrderId. For ad hoc orders, a map in the form <br/>  ``"oldOrderId": "newOrderId"``<br/>is returned.
+            This API changes the OrderId. A map in the form <br/>  ``"oldOrderId": "newOrderId"``<br/>is returned.
           schema: !include api/schemas/orderManagement/dailyplan/dailyPlanModifyOrder-schema.json
           schema200: !include api/schemas/order/orderIdMap-schema.json
           example: " "
