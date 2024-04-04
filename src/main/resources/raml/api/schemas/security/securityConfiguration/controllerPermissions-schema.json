@@ -65,7 +65,12 @@
 						"type": "boolean",
 						"default" : false
 					},
-					"modify": {
+					"resumeFailed": {
+                        "description": "resume failed orders",
+                        "type": "boolean",
+                        "default" : false
+                    },
+                    "modify": {
 						"type": "boolean",
 						"default" : true
 					},
