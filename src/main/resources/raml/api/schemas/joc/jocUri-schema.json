@@ -1,0 +1,18 @@
+{
+	"title": "joc cockpit uri",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.joc.CockpitURI",
+	"required": [
+		"url"
+	],
+	"properties": {
+    	"instanceId": {
+      		"$ref": "../common/string255-schema.json"
+    	},
+    	"url": {
+      		"$ref": "../common/string255required-schema.json"
+    	}
+	},
+	"additionalProperties": false
+}
