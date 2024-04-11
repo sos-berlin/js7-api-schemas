@@ -102,6 +102,9 @@
     "canLeave": {
         "description": "only relevant for state COMPLETED",
         "type": "boolean"  
+    },
+    "isContinuable": {
+        "type": "boolean"  
     }
   },
   "additionalProperties": false
