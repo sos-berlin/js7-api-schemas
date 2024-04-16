@@ -4616,6 +4616,23 @@ traits:
         schema200: !include api/schemas/reporting/reports-response-schema.json
         example:  " "
         example200: " "
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes generated reports
+          description1: !include api/documentation/reporting/reportIds.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/reporting/delete-request-schema.json
+          example:  " "
     /generated:
       type:
         postJSONWithoutJSId:

@@ -1,0 +1,23 @@
+{
+    "title": "delete reports",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.DeleteReports",
+    "type": "object",
+    "required": [
+    	"reportIds"
+    ],
+    "properties": {
+        "reportIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+            	"$ref": "../common/nonNegativeLong-schema.json"	
+            }
+        },
+    	"auditLog": {
+      		"$ref": "../audit/auditParams-schema.json"
+    	}
+    },
+    "additionalProperties": false
+}
