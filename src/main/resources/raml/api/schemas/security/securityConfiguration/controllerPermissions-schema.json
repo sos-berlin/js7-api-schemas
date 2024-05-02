@@ -78,7 +78,12 @@
 						"description": "skip, unskip, stop, unstop workflow jobs and add/modify order with special start-/endposition",
 						"type": "boolean",
 						"default" : true
-					}
+					},
+                    "confirm": {
+                        "description": "confirm prompt to continue prompting order",
+                        "type": "boolean",
+                        "default" : false
+                    }
 				},
 				"additionalProperties": false
 			},
