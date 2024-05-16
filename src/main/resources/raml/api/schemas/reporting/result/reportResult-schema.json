@@ -1,0 +1,23 @@
+{
+   "title":"report result",
+   "$schema":"http://json-schema.org/draft-04/schema#",
+   "javaType":"com.sos.joc.model.reporting.result.ReportResult",
+   "type":"object",
+   "properties":{
+      "title":{
+         "$ref":"../../common/string255-schema.json"
+      },
+      "type":{
+         "$ref":"../../common/string255-schema.json"
+      },
+      
+       "data":{
+            "type":"array",
+            "items":{
+             "$ref":"reportResultData-schema.json"
+            }
+         }      
+        
+   },
+   "additionalProperties":false
+}

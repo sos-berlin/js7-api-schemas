@@ -1,0 +1,28 @@
+{
+    "title": "report result data item",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.result.ReportResultDataItem",
+    "type": "object",
+    
+    "properties": {
+        "workflow_name": {
+            "$ref": "../../common/string255-schema.json"
+        },
+        "start_time": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "end_time": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "order_state": {
+            "$ref": "../../common/nonNegativeLong-schema.json"
+        },
+        "state": {
+            "$ref": "../../common/nonNegativeLong-schema.json"
+        },
+        "duration": {
+            "$ref": "../../common/nonNegativeLong-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

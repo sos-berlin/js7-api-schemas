@@ -1,0 +1,23 @@
+{
+    "title": "report result data item",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.reporting.result.ReportResultData",
+    "type": "object",
+    
+    "properties": {
+         "workflow_name":{
+            "$ref":"../../common/string255-schema.json"
+         },
+         "count":{
+            "$ref":"../../common/nonNegativeLong-schema.json"
+         },
+         "data":{
+            "type":"array",
+            "items":{
+               "$ref":"reportResultDataItem-schema.json"
+            }
+         }
+         
+    },
+    "additionalProperties": false
+}
