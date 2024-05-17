@@ -5,16 +5,19 @@
     "type": "object",
     
     "properties": {
-        "workflow_name": {
+        "jobName": {
             "$ref": "../../common/string255-schema.json"
         },
-        "start_time": {
+        "workflowName": {
+            "$ref": "../../common/string255-schema.json"
+        },
+        "startTime": {
             "$ref": "../../common/timestamp-schema.json"
         },
-        "end_time": {
+        "endTime": {
             "$ref": "../../common/timestamp-schema.json"
         },
-        "order_state": {
+        "orderState": {
             "$ref": "../../common/nonNegativeLong-schema.json"
         },
         "state": {
