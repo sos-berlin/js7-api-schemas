@@ -4596,117 +4596,117 @@ traits:
       description2: !include api/documentation/profile/complete.md
       schema: !include api/schemas/profile/profilesFilter-schema.json          
 
-#/reporting:
-#  /reports:
-#    type:
-#      postJSONWithoutJSId:
-#        description: Returns released report configurations
-#        description1: !include api/documentation/reporting/reportPaths.md
-#        description2: " "
-#        description3: !include api/documentation/common/folders.md
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/reporting/reports-request-schema.json
-#        schema200: !include api/schemas/reporting/reports-response-schema.json
-#        example:  " "
-#        example200: " "
-#    /delete:
-#      type:
-#        postJSONWithOkWithoutJSId:
-#          description: Deletes generated reports
-#          description1: !include api/documentation/reporting/reportIds.md
-#          description2: " "
-#          description3: " "
-#          description4: " "
-#          description5: " "
-#          description6: " "
-#          description7: " "
-#          description8: " "
-#          description9: " "
-#          description10: " "
-#          audit: !include api/documentation/audit/auditLog.md
-#          schema: !include api/schemas/reporting/delete-request-schema.json
-#          example:  " "
-#    /generated:
-#      type:
-#        postJSONWithoutJSId:
-#          description: Returns generated reports
-#          description1: !include api/documentation/reporting/reportPaths.md
-#          description2: !include api/documentation/reporting/templateNames.md
-#          description3: !include api/documentation/reporting/runIds.md
-#          description4: !include api/documentation/reporting/dateFromTo.md
-#          description5: " "
-#          description6: " "
-#          description7: " "
-#          description8: " "
-#          description9: " "
-#          description10: " "
-#          description200: " "
-#          schema: !include api/schemas/reporting/reportHistory-schema.json
-#          schema200: !include api/schemas/reporting/reportItems-schema.json
-#          example:  " "
-#          example200: " "
-#    /run:
-#      type:
-#        postJSONWithOkWithoutJSId:
-#          description: Generates reports
-#          description1: !include api/documentation/reporting/reportPathsRequired.md
-#          description2: " "
-#          description3: " "
-#          description4: " "
-#          description5: " "
-#          description6: " "
-#          description7: " "
-#          description8: " "
-#          description9: " "
-#          description10: " "
-#          audit: !include api/documentation/audit/auditLog.md
-#          schema: !include api/schemas/reporting/run-reports-schema.json
-#          example: " "
-#  /run/history:
-#    type:
-#      postJSONWithoutJSId:
-#        description: Returns report runs
-#        description1: !include api/documentation/reporting/reportPaths.md
-#        description2: !include api/documentation/reporting/templateNames.md
-#        description3: !include api/documentation/reporting/states.md
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/reporting/runHistory-request-schema.json
-#        schema200: !include api/schemas/reporting/runHistoryItems-schema.json
-#        example:  " "
-#        example200: " "
-#  /search:
-#    type:
-#      postJSONWithoutJSId:
-#        description: Searches released report configurations
-#        description1: !include api/documentation/inventory/search/search-folders.md
-#        description2: " "
-#        description3: " "
-#        description4: " "
-#        description5: " "
-#        description6: " "
-#        description7: " "
-#        description8: " "
-#        description9: " "
-#        description10: " "
-#        description200: " "
-#        schema: !include api/schemas/inventory/search/request-base-search-filter-schema.json
-#        example: TODO
-#        schema200: !include api/schemas/inventory/search/response-search-schema.json
-#        example200: TODO
+/reporting:
+  /reports:
+    type:
+      postJSONWithoutJSId:
+        description: Returns released report configurations
+        description1: !include api/documentation/reporting/reportPaths.md
+        description2: " "
+        description3: !include api/documentation/common/folders.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/reporting/reports-request-schema.json
+        schema200: !include api/schemas/reporting/reports-response-schema.json
+        example:  " "
+        example200: " "
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes generated reports
+          description1: !include api/documentation/reporting/reportIds.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/reporting/delete-request-schema.json
+          example:  " "
+    /generated:
+      type:
+        postJSONWithoutJSId:
+          description: Returns generated reports
+          description1: !include api/documentation/reporting/reportPaths.md
+          description2: !include api/documentation/reporting/templateNames.md
+          description3: !include api/documentation/reporting/runIds.md
+          description4: !include api/documentation/reporting/dateFromTo.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/reporting/reportHistory-schema.json
+          schema200: !include api/schemas/reporting/reportItems-schema.json
+          example:  " "
+          example200: " "
+    /run:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Generates reports
+          description1: !include api/documentation/reporting/reportPathsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/reporting/run-reports-schema.json
+          example: " "
+  /run/history:
+    type:
+      postJSONWithoutJSId:
+        description: Returns report runs
+        description1: !include api/documentation/reporting/reportPaths.md
+        description2: !include api/documentation/reporting/templateNames.md
+        description3: !include api/documentation/reporting/states.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/reporting/runHistory-request-schema.json
+        schema200: !include api/schemas/reporting/runHistoryItems-schema.json
+        example:  " "
+        example200: " "
+  /search:
+    type:
+      postJSONWithoutJSId:
+        description: Searches released report configurations
+        description1: !include api/documentation/inventory/search/search-folders.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/search/request-base-search-filter-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/search/response-search-schema.json
+        example200: TODO
 
 /schedule/runtime:
   type:
