@@ -1,0 +1,24 @@
+{
+  "title": "stores a certificate for encipherment",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.encipherment.StoreCertificateRequestFilter",
+  "type": "object",
+  "required": [
+    "certAlias",
+    "certificate"
+  ],
+  "properties": {
+    "certAlias": {
+      "type" : "string"
+    },
+    "certificate": {
+      "type" : "string"
+    },
+    "privateKeyPath": {
+      "type" : "string"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}

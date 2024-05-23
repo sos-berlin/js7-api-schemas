@@ -1,9 +1,12 @@
 {
-  "title": "delete Key filter",
+  "title": "delete certificate filter",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.publish.DeleteKeyFilter",
+  "javaType": "com.sos.joc.model.encipherment.DeleteCertificateRequestFilter",
   "type": "object",
   "properties": {
+    "certAlias": {
+      "type" : "string"
+    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }

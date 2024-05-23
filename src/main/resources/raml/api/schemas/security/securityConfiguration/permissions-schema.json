@@ -226,6 +226,18 @@
 					},
 					"additionalProperties": false
 				},
+        "encipherment": {
+          "javaType": "com.sos.joc.model.security.configuration.permissions.joc.Encipherment",
+          "type": "object",
+          "properties": {
+            "encrypt": {
+              "description": "configuration tab",
+              "type": "boolean",
+              "default" : false
+            }
+          },
+          "additionalProperties": false
+        },
                 "reports": {
                     "javaType": "com.sos.joc.model.security.configuration.permissions.joc.Reports",
                     "type": "object",

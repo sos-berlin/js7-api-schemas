@@ -1,0 +1,35 @@
+{
+  "title": "encrypt",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.encipherment.EncryptRequestFilter",
+  "type": "object",
+  "anyOf": [{
+    "required": [
+        "toEncrypt",
+        "certAlias"
+      ]
+    }, {
+      "required": [
+        "toEncrypt",
+        "certificate"
+      ]
+    }
+  ],
+  "properties": {
+    "toEncrypt": {
+      "type" : "string"
+    },
+    "certAlias": {
+      "type" : "string"
+    },
+    "certificate": {
+      "type" : "string"
+    },
+    "jobResourceName": {
+      "type" : "string"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
+}
