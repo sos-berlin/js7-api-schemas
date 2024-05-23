@@ -25,6 +25,13 @@
 		"orderId": {
 			"type": "string"
 		},
+    	"tags": {
+     		"type": "array",
+    		"uniqueItems": true,
+    		"items": {
+    			"$ref": "../common/string255Required-schema.json"	
+    		}
+    	},
 		"workflow": {
 			"$ref": "../common/path-schema.json"
 		},
