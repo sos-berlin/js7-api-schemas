@@ -1,7 +1,7 @@
 {
-  "title": "delete Key filter",
+  "title": "imports a certificate for encipherment",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.publish.DeleteKeyFilter",
+  "javaType": "com.sos.joc.model.encipherment.ImportCertificateRequestFilter",
   "type": "object",
   "properties": {
     "auditLog": {
