@@ -5,24 +5,27 @@
   "type": "object",
   "anyOf": [{
     "required": [
-        "value",
+        "toEncrypt",
         "certAlias"
       ]
     }, {
       "required": [
-        "value",
+        "toEncrypt",
         "certificate"
       ]
     }
   ],
   "properties": {
-    "value": {
+    "toEncrypt": {
       "type" : "string"
     },
     "certAlias": {
       "type" : "string"
     },
     "certificate": {
+      "type" : "string"
+    },
+    "jobResourceName": {
       "type" : "string"
     },
     "auditLog": {
