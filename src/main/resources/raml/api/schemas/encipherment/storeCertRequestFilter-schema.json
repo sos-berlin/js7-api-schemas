@@ -16,6 +16,9 @@
     },
     "privateKeyPath": {
       "type" : "string"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
     }
   }
 }

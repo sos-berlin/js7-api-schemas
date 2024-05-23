@@ -3,7 +3,16 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.encipherment.ImportCertificateRequestFilter",
   "type": "object",
+  "required": [
+    "certAlias"
+  ],
   "properties": {
+    "certAlias": {
+      "type" : "string"
+    },
+    "privateKeyPath": {
+      "type" : "string"
+    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }
