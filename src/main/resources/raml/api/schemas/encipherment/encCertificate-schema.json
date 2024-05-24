@@ -1,0 +1,17 @@
+{
+  "title": "certificate and additional credetials for encipherment",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.encipherment.EncCertificate",
+  "type": "object",
+  "properties": {
+    "certAlias": {
+      "type" : "string"
+    },
+    "certificate": {
+      "type" : "string"
+    },
+    "privateKeyPath": {
+      "type" : "string"
+    }
+  }
+}

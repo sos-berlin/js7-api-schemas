@@ -1,0 +1,14 @@
+{
+  "title": "shows all certificates",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.encipherment.ShowCertificateResponse",
+  "type": "object",
+  "properties": {
+    "certificates": {
+      "type" : "array",
+      "items" : {
+        "$href" : "encCertificate-schema.json"
+        }
+    }
+  }
+}
