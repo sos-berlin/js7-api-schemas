@@ -35,6 +35,7 @@
     		"default": false	
     	},
         "stickDailyPlanDate": {
+        	"alias": "stickToDailyPlanDate",
             "type": "boolean",
             "default": false    
         },
