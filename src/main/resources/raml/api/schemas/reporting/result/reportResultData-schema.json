@@ -17,6 +17,9 @@
          "count":{
             "$ref":"../../common/nonNegativeLong-schema.json"
          },
+         "period": {
+            "$ref": "../../common/string255-schema.json"
+        },
          "startTime": {
             "$ref": "../../common/timestamp-schema.json"
         },
