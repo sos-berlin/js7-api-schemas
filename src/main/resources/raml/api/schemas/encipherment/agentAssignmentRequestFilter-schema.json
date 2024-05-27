@@ -1,0 +1,18 @@
+{
+  "title": "filter for an assignment of a certificate to an agent for encipherment",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.encipherment.AgentAssignmentRequestFilter",
+  "type": "object",
+  "required": [
+    "agentId",
+    "certAlias"
+  ],
+  "properties": {
+    "agentId": {
+      "type" : "string"
+    },
+    "certAlias": {
+      "type" : "string"
+    }
+  }
+}
