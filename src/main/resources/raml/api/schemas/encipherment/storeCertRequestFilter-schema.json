@@ -17,6 +17,9 @@
     "privateKeyPath": {
       "type" : "string"
     },
+    "jobResourceFolder": {
+      "type" : "string"
+    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }
