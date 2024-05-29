@@ -25,9 +25,6 @@
     "certificate": {
       "type" : "string"
     },
-    "jobResourceName": {
-      "type" : "string"
-    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }

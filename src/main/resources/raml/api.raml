@@ -72,6 +72,7 @@ resourceTypes:
   - postForImportDeploy: !include api/resourceTypes/publish/postForImportDeploy.raml
   - postForShowDepHistory: !include api/resourceTypes/publish/postForShowDepHistory.raml
   - postForUploadAgents: !include api/resourceTypes/agent/transfer/postForUploadAgents.raml
+  - postForImportEnciphermentCert: !include api/resourceTypes/encipherment/postForImportCert.raml
 
 
 traits:
@@ -1758,6 +1759,140 @@ traits:
         schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
         example200: TODO
 
+/encipherment:
+  description: This is not an API call. Use its children!!
+  /assignment:
+    type:
+      postJSONWithoutJSId:
+        description: returns a collection of certificate assignments to agents
+        description1: !include api/documentation/encipherment/certAssignmentAgentIds.md
+        description2: !include api/documentation/encipherment/certAssignmentsCertAliases.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/encipherment/showAgentAssignmentsRequestFilter-schema.json
+        schema200: !include api/schemas/encipherment/showAgentAssignmentsResponse-schema.json
+        example: " "
+        example200: " "
+    /add:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: assigns a certificate to a specific agent
+          description1: !include api/documentation/encipherment/assignCertificateAgentId.md
+          description2: !include api/documentation/encipherment/assignCertificateCertAlias.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/encipherment/agentAssignmentRequestFilter-schema.json
+          example: " "
+    /remove:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: removes an assignment of a certificate to an agent
+          description1: !include api/documentation/encipherment/assignCertificateAgentId.md
+          description2: !include api/documentation/encipherment/assignCertificateCertAlias.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/encipherment/agentAssignmentRequestFilter-schema.json
+          example: " "
+  /certificate:
+    type:
+      postJSONWithoutJSId:
+        description: returns one or a collection of certificate(s)
+        description1: !include api/documentation/encipherment/certAssignmentAgentIds.md
+        description2: !include api/documentation/encipherment/certAssignmentsCertAliases.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/encipherment/showCertificateRequestFilter-schema.json
+        schema200: !include api/schemas/encipherment/showCertificatesResponse-schema.json
+        example: " "
+        example200: " "
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: stores a new certificate
+          description1: !include api/documentation/encipherment/assignCertificateCertAlias.md
+          description2: !include api/documentation/encipherment/certificate.md
+          description3: !include api/documentation/encipherment/privateKeyPath.md
+          description4: !include api/documentation/encipherment/jobResourceFolder.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/encipherment/storeCertRequestFilter-schema.json
+          example: " "
+    /import:
+      type:
+        postForImportEnciphermentCert:
+          description: stores a new certificate
+          schema: !include api/schemas/encipherment/importCertRequestFilter-schema.json
+          example: " "
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: deletes a certificate and any of its assignments
+          description1: !include api/documentation/encipherment/assignCertificateCertAlias.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/encipherment/importCertRequestFilter-schema.json
+          example: " "
+  /encrypt:
+    type:
+      postJSONWithoutJSId:
+        description: encrypts a value and returns the encrypted value
+        description1: !include api/documentation/encipherment/toEncrypt.md
+        description2: !include api/documentation/encipherment/certAliasForEncrypt.md
+        description3: !include api/documentation/encipherment/certificateForEncrypt.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/encipherment/encryptRequestFilter-schema.json
+        schema200: !include api/schemas/encipherment/encryptResponse-schema.json
+        example: " "
+        example200: " "
+    
 /iam:
   description: This is not an API call. Use its children!!
   /accounts:

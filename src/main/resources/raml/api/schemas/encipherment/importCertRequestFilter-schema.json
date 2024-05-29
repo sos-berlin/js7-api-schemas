@@ -4,7 +4,8 @@
   "javaType": "com.sos.joc.model.encipherment.ImportCertificateRequestFilter",
   "type": "object",
   "required": [
-    "certAlias"
+    "certAlias",
+    "jobResourceFolder"
   ],
   "properties": {
     "certAlias": {

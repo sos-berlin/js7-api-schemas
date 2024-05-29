@@ -1,0 +1,56 @@
+type: error
+post:
+  description: |
+    <h2><<description>></h2>
+    ___
+  body:
+    multipart/form-data:
+      formParameters:
+        file:
+          description: The file to be uploaded
+          required: true
+          type: file
+        accessToken:
+          required: false
+          type: string
+          description: is required if the header doesn't contain ``X-Access-Token``
+          example: 550e8400-e29b-11d4-a716-446655440000
+        certAlias:
+          required: true
+          type: string
+          description: specifies the certificate alias with which the certificate can be found.
+          default: /
+        privateKeyPath:
+          required: false
+          type: string
+          description: the path to the private key file on an agent needed for decryption.
+          default: /
+        jobResourceFolder:
+          required: true
+          type: string
+          description: the path to the inventory folder the newly generated JobResource should be stored to.
+          default: /
+        comment:
+          description: for auditLog
+          required: false
+          type: string
+        timeSpent:
+          description: for auditLog
+          required: false
+          type: string
+        ticketLink:
+          description: for auditLog
+          required: false
+          type: string  
+  responses:
+    200:
+      description: |
+        **Confirm <span style="text-transform: capitalize;"><<resourcePathName>></span> successfully**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate":"2016-05-05T21:13:35Z",
+              "ok":true
+            }
+          schema: ok
