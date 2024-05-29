@@ -1,13 +1,13 @@
 {
   "title": "filter to show assignments of a certificate to one or more agents for encipherment",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.encipherment.ShowAgentAssignmentsRequestFilter",
+  "javaType": "com.sos.joc.model.encipherment.ShowAgentAssignmentsResponse",
   "type": "object",
   "properties": {
-    "agentIds": {
+    "mappings": {
       "type" : "array",
       "items" : {
-        "type" : "string"
+        "$ref" : "agentAssignments-schema.json"
       }
     }
   }
