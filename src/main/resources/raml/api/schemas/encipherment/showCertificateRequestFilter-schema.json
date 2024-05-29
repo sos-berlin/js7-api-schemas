@@ -3,13 +3,12 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.encipherment.ShowCertificateRequestFilter",
   "type": "object",
-  "required": [
-    "value",
-    "certAlias"
-  ],
   "properties": {
-    "certAlias": {
-      "type" : "string"
+    "certAliases": {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
     }
   }
 }
