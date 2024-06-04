@@ -26,11 +26,23 @@
         "title": {
             "$ref": "../common/string255-schema.json"
         },
+        "controllerId": {
+            "$ref": "../common/string255-schema.json"
+        },
         "templateName": {
             "$ref": "../../../inventory/schemas/report/templateId-schema.json"
         },
         "frequency": {
             "$ref": "../../../inventory/schemas/report/frequency-schema.json"
+        },
+        "sort": {
+            "$ref": "../../../inventory/schemas/report/sort-schema.json"
+        },
+        "periodLength": {
+            "$ref": "../common/nonNegativeLong-schema.json"
+        },
+        "periodStep": {
+            "$ref": "../common/nonNegativeLong-schema.json"
         },
         "hits": {
             "type": "integer",
