@@ -56,11 +56,7 @@
   		"maxLength": 255
     },
     "tags": {
-     	"type": "array",
-    	"uniqueItems": true,
-    	"items": {
-    		"$ref": "../common/string255required-schema.json"	
-    	}
+     	"$ref": "../common/tags-schema.json"
     },
 	"position": {
      	"$ref": "../../../controller/schemas/common/position-schema.json"

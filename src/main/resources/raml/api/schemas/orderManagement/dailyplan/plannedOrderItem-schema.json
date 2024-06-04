@@ -31,11 +31,7 @@
 			"$ref": "../../common/string255-schema.json"
 		},
 		"tags": {
-     		"type": "array",
-    		"uniqueItems": true,
-    		"items": {
-    			"$ref": "../../common/string255required-schema.json"	
-    		}
+     		"$ref": "../../common/tags-schema.json"
     	},
 		"cyclicOrder": {
 			"$ref": "cyclicOrder-schema.json"

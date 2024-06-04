@@ -32,7 +32,10 @@
 				"$ref": "../../common/string255-schema.json"
 			}
 		},
-		"tags": {
+		"workflowTags": {
+            "$ref": "../../common/tags-schema.json"
+        },
+		"orderTags": {
             "$ref": "../../common/tags-schema.json"
         },
 		"orderIds": {

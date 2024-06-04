@@ -26,11 +26,7 @@
 			"type": "string"
 		},
     	"tags": {
-     		"type": "array",
-    		"uniqueItems": true,
-    		"items": {
-    			"$ref": "../common/string255required-schema.json"	
-    		}
+     		"$ref": "../common/tags-schema.json"
     	},
 		"workflow": {
 			"$ref": "../common/path-schema.json"
