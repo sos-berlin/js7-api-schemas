@@ -27,7 +27,7 @@
             "$ref": "../common/string255-schema.json"
         },
         "controllerId": {
-            "$ref": "../common/string255-schema.json"
+            "$ref": "../common/controllerId-schema.json"
         },
         "templateName": {
             "$ref": "../../../inventory/schemas/report/templateId-schema.json"
@@ -39,10 +39,10 @@
             "$ref": "../../../inventory/schemas/report/reportOrder-schema.json"
         },
         "periodLength": {
-            "$ref": "../common/nonNegativeLong-schema.json"
+            "$ref": "../common/nonNegativeInteger-schema.json"
         },
         "periodStep": {
-            "$ref": "../common/nonNegativeLong-schema.json"
+            "$ref": "../common/nonNegativeInteger-schema.json"
         },
         "hits": {
             "type": "integer",
