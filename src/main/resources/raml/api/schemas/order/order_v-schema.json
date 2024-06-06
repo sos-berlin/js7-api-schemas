@@ -102,6 +102,12 @@
     "canLeave": {
         "description": "only relevant for state COMPLETED",
         "type": "boolean"  
+    },
+    "isResumable": {
+        "type": "boolean"  
+    },
+    "isSuspendible": {
+        "type": "boolean"  
     }
   },
   "additionalProperties": false
