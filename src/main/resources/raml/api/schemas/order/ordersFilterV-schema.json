@@ -39,6 +39,12 @@
     "folders": {
       "$ref": "../common/folders-schema.json"
     },
+    "orderTags": {
+      "$ref": "../common/tags-schema.json"
+    },
+    "workflowTags": {
+      "$ref": "../common/tags-schema.json"
+    },
     "dateTo": {
       "$ref": "../common/dateFromTo-schema.json"
     },

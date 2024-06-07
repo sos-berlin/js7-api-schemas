@@ -22,7 +22,10 @@
     "folders": {
       "$ref": "../common/folders-schema.json"
     },
-    "tags": {
+    "workflowTags": {
+      "$ref": "../common/tags-schema.json"
+    },
+    "orderTags": {
       "$ref": "../common/tags-schema.json"
     },
 	"states": {
