@@ -17,6 +17,9 @@
     "timeZone": {
       "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
       "type": "string"
+    },
+    "orderTags": {
+      "$ref": "../common/tags-schema.json"
     }
   },
   "additionalProperties": false
