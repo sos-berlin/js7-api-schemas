@@ -1,0 +1,15 @@
+{
+  "title": "schedule",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.schedule.Schedule",
+  "type": "object",
+  "extends" : {
+    "$ref": "../../../inventory/schemas/schedule/schedule-schema.json"
+  },
+  "properties": {
+    "valid": {
+      "type": "boolean"	
+    }
+  },
+  "additionalProperties": false
+}

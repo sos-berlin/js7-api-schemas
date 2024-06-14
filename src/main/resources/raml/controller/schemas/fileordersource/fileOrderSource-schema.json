@@ -15,6 +15,9 @@
     },
     "state": {
       "$ref": "../common/syncState-schema.json"
+    },
+    "valid": {
+      "type": "boolean"	
     }
   },
   "additionalProperties": false
