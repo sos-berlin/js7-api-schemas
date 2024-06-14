@@ -55,6 +55,9 @@
     },
     "numOfSkippedInstructions": {
       "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "valid": {
+      "type": "boolean"	
     }
   },
   "additionalProperties": false
