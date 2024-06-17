@@ -17,6 +17,10 @@
 		"cycleState": {
 			"$ref": "orderCycleState-schema.json"
 		},
+        "until": {
+            "description": "set if state == DelayedAfterError",
+            "$ref": "../common/timestamp-schema.json"
+        },
 		"subagentId": {
 			"type": "string"
 		}
