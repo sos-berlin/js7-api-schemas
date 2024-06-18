@@ -42,7 +42,10 @@
 	"cycleState": {
 		"$ref": "../../../controller/schemas/order/orderCycleState-schema.json"
 	},
-	"expectedNotices": {
+	"retryState": {
+        "$ref": "../../../controller/schemas/order/orderRetryState-schema.json"
+    },
+    "expectedNotices": {
 		"description": "if state._reason == EXPECTING_NOTICES",
 		"type": "array",
 		"items": {
