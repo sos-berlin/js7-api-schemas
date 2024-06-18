@@ -118,6 +118,9 @@
       "type": "boolean",
       "default": false
     },
+    "numOfTagsDisplayedAsOrderId": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
     "clusterLicense": {
       "type": "boolean",
       "default": false
