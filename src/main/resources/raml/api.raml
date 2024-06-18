@@ -3838,6 +3838,19 @@ traits:
         schema200: !include api/schemas/joc/properties-schema.json
         example200: !include api/examples/joc/properties-example.json
   
+  /proxies/restart:
+    type:
+      postOnlyAccessToken:
+        description: Restarts the Proxy instances for all registered Controllers
+        description200: |
+          **Confirm Restart successfully**
+        schema200: ok
+        example200: |
+          {
+            "deliveryDate":"2024-06-18T21:00:00Z",
+            "ok":true
+          }
+  
   /url:
     type:
       postJSONWithOkWithoutJSId:
