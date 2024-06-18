@@ -1,0 +1,18 @@
+{
+  	"title": "OrderRetryState",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"type": "object",
+	"javaType": "com.sos.controller.model.order.OrderRetryState",
+	"description": "set if state == DelayedAfterError",
+	"properties": {
+		"next": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"attempt": {
+			"type": "integer",
+            "minimum": 1
+		}
+	},
+	"additionalProperties": false
+}
+ 
