@@ -74,6 +74,12 @@
 			"items": {
 				"$ref": "../common/nonNegativeLong-schema.json"
 			}
-		}
+		},
+    	"workflowTags": {
+      		"$ref": "../common/tags-schema.json"
+    	},
+    	"orderTags": {
+      		"$ref": "../common/tags-schema.json"
+    	}
 	}
 }
