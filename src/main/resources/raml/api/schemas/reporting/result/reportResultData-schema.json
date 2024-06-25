@@ -23,6 +23,9 @@
          "startTime": {
             "$ref": "../../common/timestamp-schema.json"
         },
+         "endTime": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
         "duration": {
             "$ref": "../../common/nonNegativeLong-schema.json"
         },
