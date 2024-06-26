@@ -7,7 +7,7 @@
     "certificates": {
       "type" : "array",
       "items" : {
-        "$href" : "encCertificate-schema.json"
+        "$ref" : "encCertificate-schema.json"
         }
     }
   }
