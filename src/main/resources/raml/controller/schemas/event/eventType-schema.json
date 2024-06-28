@@ -51,7 +51,8 @@
 		"OrderNoticePosted",
 		"OrderPrompted",
 		"OrderPromptAnswered",
-		"OrderCyclingPrepared"
+		"OrderCyclingPrepared",
+		"OrderOrderAdded"
 	],
 	"javaEnumNames": [
 		"VersionAdded",
@@ -101,6 +102,7 @@
 		"OrderNoticePosted",
 		"OrderPrompted",
 		"OrderPromptAnswered",
-		"OrderCyclingPrepared"
+		"OrderCyclingPrepared",
+		"OrderOrderAdded"
 	]
 }
