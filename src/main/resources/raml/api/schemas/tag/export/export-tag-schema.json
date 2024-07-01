@@ -1,0 +1,18 @@
+{
+  "title": "Ex-/Import schema for tags",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.tag.ExportedTags",
+  "type": "object",
+  "required": [
+    "tags"
+  ],
+  "properties": {
+    "tags": {
+        "type": "array",
+        "items": {
+            "$ref": "export-tagitem-schema.json"
+        }     
+    }
+  },
+  "additionalProperties": false
+}
