@@ -159,6 +159,9 @@
 		},
 		"cycle": {
 			"$ref": "cycle/cycle-schema.json"
+		},
+		"orderAdded": {
+			"$ref": "added/orderAdded-schema.json"
 		}
 	},
 	"additionalProperties": false

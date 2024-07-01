@@ -1,0 +1,22 @@
+{
+	"title": "OrderOrderAdded event - AddOrder instruction",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.added.OrderAdded",
+	"type": "object",
+	"required": [
+		"workflowPath",
+		"orderId"
+	],
+	"properties": {
+		"workflowPath": {
+			"type": "string"
+		},
+		"orderId": {
+			"type": "string"
+		},
+		"arguments": {
+			"$ref": "../../../../../inventory/schemas/common/variables-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
