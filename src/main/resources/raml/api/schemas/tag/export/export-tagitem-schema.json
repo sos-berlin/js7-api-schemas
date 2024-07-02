@@ -4,12 +4,14 @@
   "javaType": "com.sos.joc.model.tag.ExportedTagItem",
   "type": "object",
   "required": [
-    "name",
-    "type"
+    "name"
   ],
   "properties": {
     "name": {
         "$ref": "../../common/string255required-schema.json"
+    },
+    "ordering": {
+      "$ref": "../../common/nonNegativeInteger-schema.json"
     },
     "usedBy" : {
         "type": "array",
