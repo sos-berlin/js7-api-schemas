@@ -1,0 +1,2 @@
+<tr><td>``noticeBoardPaths``</td><td>required, array[string]</td><td>Paths of the notice board</td><td></td><td></td></tr>
+<tr><td>``noticeId``</td><td>required, string</td><td>ID of the notice</td><td></td><td></td></tr>
