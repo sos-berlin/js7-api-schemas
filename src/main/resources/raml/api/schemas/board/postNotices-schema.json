@@ -1,0 +1,38 @@
+{
+	"title": "post notices",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.board.PostNotices",
+	"type": "object",
+	"required": [
+		"controllerId",
+		"noticeBoardPaths",
+		"noticeId"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../common/controllerIdRequired-schema.json"
+		},
+		"noticeBoardPaths": {
+			"type": "array",
+			"uniqueItems": true,
+			"minItems": 1,
+			"items": {
+				"$ref": "../common/string255required-schema.json"
+			}
+		},
+		"noticeId": {
+			"type": "string",
+			"minLength": 1
+		},
+		"endOfLife": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"timeZone": {
+			"$ref": "../common/timezone-schema.json"
+		},
+		"auditLog": {
+			"$ref": "../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}

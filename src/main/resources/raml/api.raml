@@ -3917,7 +3917,8 @@ traits:
         schema: !include api/schemas/board/modifyNotice-schema.json
         example: " "
 
-/notices/delete:
+/notices
+  /delete:
     type:
       postJSONWithOkResponse:
         description: Deletes Notices
@@ -3932,6 +3933,23 @@ traits:
         description9: " "
         description10: " "
         schema: !include api/schemas/board/modifyNotices-schema.json
+        example: " "
+
+  /post:
+    type:
+      postJSONWithOkResponse:
+        description: Posts Notice for several boards
+        description1: !include api/documentation/board/postNotices.md
+        description2: !include api/documentation/board/endOfLife.md
+        description3: !include api/documentation/audit/auditLog.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/board/postNotices-schema.json
         example: " "
 
 /notification:
