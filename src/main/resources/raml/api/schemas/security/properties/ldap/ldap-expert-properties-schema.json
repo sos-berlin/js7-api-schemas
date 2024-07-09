@@ -16,6 +16,9 @@
 		"iamLdapUserDnTemplate": {
 			"$ref": "../../../common/string255-schema.json"
 		},
+		"iamLdapSysemUserDnTemplate": {
+			"$ref": "../../../common/string255-schema.json"
+		},
 		"iamLdapSearchBase": {
 			"$ref": "../../../common/string255-schema.json"
 		},
