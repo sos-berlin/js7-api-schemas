@@ -1,38 +1,37 @@
 {
-	"title": "deploy",
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.publish.DeployFilter",
-	"type": "object",
-  "anyOf": [{
-    "required": [
-        "controllerIds",
-        "store"
-      ]
+  "title": "deploy",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.DeployFilter",
+  "type": "object",
+  "anyOf": [
+    {
+      "required": ["controllerIds","store"]
     }, {
-      "required": [
-        "controllerIds",
-        "delete"
-      ]
+      "required": ["controllerIds","delete"]
     }
   ],
-	"properties": {
-		"controllerIds": {
-		  "type" : "array",
-	    "items": {
-        "type":  "string"
+  "properties": {
+    "controllerIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
       }
-		},
-		"store": {
-			"$ref": "deployablesValidFilter-schema.json"
-		},
-		"delete": {
-			"$ref": "deployDelete-schema.json"
-		},
-		"addOrdersDateFrom" : {
-		  "$ref": "../common/string255-schema.json"
-		},
-		"auditLog": {
-			"$ref": "../audit/auditParams-schema.json"
-		}
-	}
+    },
+    "store": {
+      "$ref": "deployablesValidFilter-schema.json"
+    },
+    "delete": {
+      "$ref": "deployDelete-schema.json"
+    },
+    "addOrdersDateFrom": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "includeLate": {
+      "type": "boolean",
+      "default": false
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
 }

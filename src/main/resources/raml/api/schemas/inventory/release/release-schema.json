@@ -25,6 +25,10 @@
     "addOrdersDateFrom": {
       "$ref": "../../common/string255-schema.json"
     },
+    "includeLate": {
+      "type": "boolean",
+      "default" : false
+    },
     "auditLog": {
       "$ref": "../../audit/auditParams-schema.json"
     }
