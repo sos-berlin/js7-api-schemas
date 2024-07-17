@@ -16,6 +16,13 @@
 <td></td>
 </tr>
 <tr>
+<td>``includeLate``</td>
+<td>optional, boolean</td>
+<td>Determines if late orders from the current daily plan date should be updated, too.</td>
+<td> "includeLate" : "true"</td>
+<td>false</td>
+</tr>
+<tr>
 <td>``store``</td>
 <td>required anyOf(``store``, ``delete``), object</td>
 <td>Filter collection of deployable objects to add or update, specified by their paths and object types.</td>
