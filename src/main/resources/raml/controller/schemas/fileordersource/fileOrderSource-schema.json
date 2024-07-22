@@ -18,6 +18,9 @@
     },
     "valid": {
       "type": "boolean"	
+    },
+    "deployed": {
+      "type": "boolean"	
     }
   },
   "additionalProperties": false
