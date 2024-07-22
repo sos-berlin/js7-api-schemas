@@ -10,6 +10,9 @@
 		"deliveryDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
+		"isRenamed": {
+			"type": "boolean"
+		},
 		"workflows": {
 			"type": "array",
 			"items": {
