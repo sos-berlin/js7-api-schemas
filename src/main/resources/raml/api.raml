@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.6.6
+version: 2.6.7
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -283,6 +283,7 @@ traits:
           schema: !include api/schemas/agent/storeSubagentClusters-schema.json
           example: " "
           
+
 
 
 
@@ -2734,6 +2735,26 @@ traits:
         schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
         example200: TODO
   
+  /noticeboard/references:
+    type:
+      postJSONWithoutJSId:
+        description: Gets workflows that referenced a notice board
+        description1: !include api/documentation/inventory/noticeboard-references.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/references/request-filter-schema.json
+        example: " "
+        schema200: !include api/schemas/inventory/references/response-item-schema.json
+        example200: TODO
+          
   /path:
     type:
       postJSONWithoutJSId:
@@ -3399,7 +3420,7 @@ traits:
       type:
         postJSONWithoutJSId:
           description: Gets references of a workflow
-          description1: !include api/documentation/inventory/references.md
+          description1: !include api/documentation/inventory/workflow-references.md
           description2: " "
           description3: " "
           description4: " "
@@ -3959,7 +3980,7 @@ traits:
         schema: !include api/schemas/board/modifyNotice-schema.json
         example: " "
 
-/notices
+/notices:
   /delete:
     type:
       postJSONWithOkResponse:
