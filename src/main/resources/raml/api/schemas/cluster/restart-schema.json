@@ -15,14 +15,16 @@
 				"history",
 				"dailyplan",
 				"cleanup",
-				"monitor"
+				"monitor",
+				"syslog"
 			],
 			"javaEnumNames": [
 				"cluster",
 				"history",
 				"dailyplan",
 				"cleanup",
-				"monitor"
+				"monitor",
+				"syslog"
 			]
 		}
 	}
