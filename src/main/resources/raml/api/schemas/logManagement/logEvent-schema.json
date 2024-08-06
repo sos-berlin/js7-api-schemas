@@ -1,0 +1,71 @@
+{
+	"title": "log event",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.log.LogEvent",
+	"type": "object",
+	"required": [
+        "host",
+        "timestamp",
+        "product",
+		"level",
+		"logger"
+    ],
+	"properties": {
+		"timestamp": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"host": {
+			"$ref": "../common/string255required-schema.json"
+		},
+		"product": {
+			"javaType": "com.sos.joc.model.log.Product",
+			"type": "string",
+			"enum": [
+				"CONTROLLER",
+				"AGENT"
+			]
+		},
+		"clusterId": {
+			"alias": "controllerId,agentId",
+			"type": "string",
+			"pattern": "^[^<>]*$",
+			"maxLength": 255,
+			"minLength": 1
+		},
+		"instanceId": {
+			"alias": "nodeId,subagentId,jocId",
+			"type": "string",
+			"pattern": "^[^<>]*$",
+			"maxLength": 255,
+			"minLength": 1
+		},
+		"role": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"thread": {
+			"$ref": "../common/string255-schema.json"
+		},
+		"level": {
+			"javaType": "com.sos.joc.model.log.Level",
+			"type": "string",
+			"enum": [
+				"FATAL",
+				"ERROR",
+				"WARN",
+				"INFO",
+				"DEBUG",
+				"TRACE"
+			]
+		},
+		"logger": {
+			"$ref": "../common/string255required-schema.json"
+		},
+		"message": {
+			"type": "string"
+		},
+		"thrown": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

@@ -16,7 +16,7 @@
 				"dailyplan",
 				"cleanup",
 				"monitor",
-				"syslog"
+				"lognotification"
 			],
 			"javaEnumNames": [
 				"cluster",
@@ -24,7 +24,7 @@
 				"dailyplan",
 				"cleanup",
 				"monitor",
-				"syslog"
+				"lognotification"
 			]
 		}
 	}
