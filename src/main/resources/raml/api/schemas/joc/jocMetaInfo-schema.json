@@ -17,6 +17,9 @@
     },
     "apiVersion": {
       "type": "string"
+    },
+    "versionId": {
+      "type": "string"
     }
   }
 }
