@@ -1,0 +1,35 @@
+{
+  "title": "dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.dependencies.ReferencedConfiguration",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "name",
+    "type"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../../common/timestamp-schema.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "../configurationObject-schema.json"
+      }
+    },
+    "referencedBy": {
+      "type": "array",
+      "items": {
+        "$ref": "../configurationObject-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

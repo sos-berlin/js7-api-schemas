@@ -1,36 +1,60 @@
 {
-	"title": "references",
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.inventory.references.ResponseItems",
-	"type": "object",
-	"required": [
-		"deliveryDate"
-	],
-	"properties": {
-		"deliveryDate": {
-			"$ref": "../../common/timestamp-schema.json"
-		},
-		"isRenamed": {
-			"type": "boolean"
-		},
-		"workflows": {
-			"type": "array",
-			"items": {
-				"$ref": "../../../../controller/schemas/workflow/workflow-schema.json"
-			}
-		},
-		"fileOrderSources": {
-			"type": "array",
-			"items": {
-				"$ref": "../../../../controller/schemas/fileordersource/fileOrderSource-schema.json"
-			}
-		},
-		"schedules": {
-			"type": "array",
-			"items": {
-				"$ref": "../../../../inventory/schemas/schedule/schedule-schema.json"
-			}
-		}
-	},
-	"additionalProperties": false
+  "title": "references",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.references.ResponseItems",
+  "type": "object",
+  "required": [
+    "deliveryDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../../common/timestamp-schema.json"
+    },
+    "isRenamed": {
+      "type": "boolean"
+    },
+    "workflows": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../controller/schemas/workflow/workflow-schema.json"
+      }
+    },
+    "fileOrderSources": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../controller/schemas/fileordersource/fileOrderSource-schema.json"
+      }
+    },
+    "boards": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../controller/schemas/board/board-schema.json"
+      }
+    },
+    "locks": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../controller/schemas/lock/lock-schema.json"
+      }
+    },
+    "jobResources": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../controller/schemas/jobresource/jobResource-schema.json"
+      }
+    },
+    "schedules": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../inventory/schemas/schedule/schedule-schema.json"
+      }
+    },
+    "calendars": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../inventory/schemas/calendar/calendar-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
 }

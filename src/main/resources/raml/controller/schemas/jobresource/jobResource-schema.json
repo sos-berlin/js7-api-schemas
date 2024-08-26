@@ -1,0 +1,21 @@
+{
+  "title": "delete JobResourcePath",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.jobresource.JobResource",
+  "type": "object",
+  "extends" : {
+    "$ref": "../../../inventory/schemas/jobresource/jobresource-schema.json"
+  },
+  "properties": {
+    "path": {
+      "$ref": "../../../api/schemas/common/path-schema.json"
+    },
+    "valid": {
+      "type": "boolean" 
+    },
+    "deployed": {
+      "type": "boolean" 
+    }
+  },
+  "additionalProperties": false
+}
