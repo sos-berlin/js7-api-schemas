@@ -43,6 +43,12 @@
         "$ref": "../../../../controller/schemas/jobresource/jobResource-schema.json"
       }
     },
+    "jobTemplates": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../controller/schemas/jobTemplate/jobTemplate-schema.json"
+      }
+    },
     "schedules": {
       "type": "array",
       "items": {
