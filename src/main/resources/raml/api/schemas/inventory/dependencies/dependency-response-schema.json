@@ -1,7 +1,7 @@
 {
   "title": "dependencies",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.inventory.dependencies.ReferencedConfiguration",
+  "javaType": "com.sos.joc.model.inventory.dependencies.GetDepenenciesResponse",
   "type": "object",
   "required": [
     "deliveryDate",

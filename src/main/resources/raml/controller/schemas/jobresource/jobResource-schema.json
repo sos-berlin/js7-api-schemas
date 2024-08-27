@@ -4,7 +4,7 @@
   "javaType": "com.sos.controller.model.jobresource.JobResource",
   "type": "object",
   "extends" : {
-    "$ref": "../../../inventory/schemas/jobresource/jobresource-schema.json"
+    "$ref": "../../../inventory/schemas/jobresource/jobResource-schema.json"
   },
   "properties": {
     "path": {
