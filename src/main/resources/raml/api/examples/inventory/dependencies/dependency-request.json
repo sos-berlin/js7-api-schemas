@@ -1,0 +1,23 @@
+{   
+    "configurations" : [
+        {
+            "name":"lock_test",
+            "type":"LOCK"
+        },{
+            "name":"wf_test",
+            "type":"WORKFLOW"
+        },{
+            "name":"jt_test",
+            "type":"JOBTEMPLATE"
+        },{
+            "name":"wf_total_test",
+            "type":"WORKFLOW"
+        },{
+            "name":"sched_test",
+            "type":"SCHEDULE"
+        },{
+            "name":"wf_aoi_test",
+            "type":"WORKFLOW"
+        }
+    ]
+}
