@@ -2548,6 +2548,26 @@ traits:
         schema200: !include api/schemas/inventory/delete/response-item-schema.json
         example200: !include api/examples/inventory/deleteDraft-response-example.json
 
+  /dependencies:
+    type:
+      postJSONWithoutJSId:
+        description: Shows existing dependencies for the given configurations
+        description1: !include api/documentation/inventory/dependencies/request.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/dependencies/dependency-request-schema.json
+        example: !include api/examples/inventory/dependencies/dependency-request.json
+        schema200: !include api/schemas/inventory/dependencies/dependency-response-schema.json
+        example200: !include api/examples/inventory/dependencies/dependency-response.json
+
   /deployable:
     type:
       postJSONWithoutJSId:
