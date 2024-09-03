@@ -19,7 +19,7 @@
     	"folders": {
         	"$ref": "../common/folders-schema.json"
       	},
-        "tags": {
+        "workflowTags": {
             "$ref": "../common/tags-schema.json"
         },
     	"all": {

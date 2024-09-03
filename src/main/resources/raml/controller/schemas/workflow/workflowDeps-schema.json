@@ -19,13 +19,13 @@
     "addOrderToWorkflows": {
     	"type": "array",
  		"items": {
-    		"$ref": "workflowId-schema.json"
+    		"$ref": "workflowIdAndTags-schema.json"
    		}
     },
     "addOrderFromWorkflows": {
     	"type": "array",
  		"items": {
-    		"$ref": "workflowId-schema.json"
+    		"$ref": "workflowIdAndTags-schema.json"
    		}
     }
   },

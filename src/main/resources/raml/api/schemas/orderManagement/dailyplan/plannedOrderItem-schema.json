@@ -21,6 +21,9 @@
 		"workflowPath": {
 			"$ref": "../../common/string255-schema.json"
 		},
+		"workflowTags": {
+     		"$ref": "../../common/tags-schema.json"
+    	},
 		"schedulePath": {
 			"$ref": "../../common/string255-schema.json"
 		},
@@ -30,7 +33,7 @@
 		"orderName": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"tags": {
+		"orderTags": {
      		"$ref": "../../common/tags-schema.json"
     	},
 		"cyclicOrder": {

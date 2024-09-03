@@ -58,7 +58,10 @@
   		"pattern": "^[^<>]*$",
   		"maxLength": 255
     },
-    "tags": {
+    "orderTags": {
+     	"$ref": "../common/tags-schema.json"
+    },
+    "workflowTags": {
      	"$ref": "../common/tags-schema.json"
     },
 	"position": {

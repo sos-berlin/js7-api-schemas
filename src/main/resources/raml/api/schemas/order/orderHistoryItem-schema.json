@@ -25,11 +25,14 @@
 		"orderId": {
 			"type": "string"
 		},
-    	"tags": {
+    	"orderTags": {
      		"$ref": "../common/tags-schema.json"
     	},
 		"workflow": {
 			"$ref": "../common/path-schema.json"
+		},
+		"workflowTags": {
+			"$ref": "../common/tags-schema.json"
 		},
 		"startTime": {
 			"$ref": "../common/timestamp-schema.json"

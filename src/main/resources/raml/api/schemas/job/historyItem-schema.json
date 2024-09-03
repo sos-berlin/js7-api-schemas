@@ -32,9 +32,15 @@
 		"workflow": {
 			"type": "string"
 		},
+    	"workflowTags": {
+     		"$ref": "../common/tags-schema.json"
+    	},
 		"orderId": {
 			"type": "string"
 		},
+    	"orderTags": {
+     		"$ref": "../common/tags-schema.json"
+    	},
 		"startTime": {
 			"$ref": "../common/timestamp-schema.json"
 		},
@@ -70,9 +76,6 @@
 		},
 		"arguments": {
 			"$ref": "../../../inventory/schemas/common/variables-schema.json"
-		},
-    	"tags": {
-     		"$ref": "../common/tags-schema.json"
-    	}
+		}
 	}
 }

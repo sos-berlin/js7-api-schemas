@@ -1,0 +1,15 @@
+{
+  "title": "workflowIdAndTags",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.WorkflowIdAndTags",
+  "type": "object",
+  "extends" : {
+    "$ref": "workflowId-schema.json"
+  },
+  "properties": {
+    "workflowTags": {
+	  "$ref": "../../../api/schemas/common/tags-schema.json"
+	}
+  },
+  "additionalProperties": false
+}
