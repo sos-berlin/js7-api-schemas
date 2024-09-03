@@ -11,7 +11,7 @@
       "$ref": "../../../api/schemas/common/path-schema.json"
     },
     "workflowTags": {
-     	"$ref": "../common/tags-schema.json"
+     	"$ref": "../../../api/schemas/common/tags-schema.json"
     },
     "isCurrentVersion": {
       "type": "boolean",
