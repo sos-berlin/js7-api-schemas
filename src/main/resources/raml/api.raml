@@ -2548,6 +2548,34 @@ traits:
         schema200: !include api/schemas/inventory/delete/response-item-schema.json
         example200: !include api/examples/inventory/deleteDraft-response-example.json
 
+  /dependencies:
+    type:
+      postJSONWithoutJSId:
+        description: Shows existing dependencies for the given configurations
+        description1: !include api/documentation/inventory/dependencies/request.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/dependencies/dependency-request-schema.json
+        example: !include api/examples/inventory/dependencies/dependency-request.json
+        schema200: !include api/schemas/inventory/dependencies/dependency-response-schema.json
+        example200: !include api/examples/inventory/dependencies/dependency-response.json
+    
+    /update:
+      type:
+        postWithoutJSONandJSId:
+          description: Updates the dependencies for all stored configurations from the inventory
+          schema200: !include api/schemas/common/ok-schema.json
+          example200: !include api/examples/common/ok-example.json
+        
+    
   /deployable:
     type:
       postJSONWithoutJSId:
@@ -3822,11 +3850,9 @@ traits:
     type:
       postWithoutJSONandJSId:
         description: shows information about the currently used SOS JS7 License
-
-
         schema200: !include api/schemas/joc/js7LicenseInfo-schema.json
-
         example200: !include api/examples/joc/js7LicenseInfo-example.json
+
   /log:
     type:
       postWithPlainResponse:
@@ -4618,10 +4644,7 @@ traits:
     type:
       postWithoutJSONandJSId:
         description: gets the stored CAs ECDSA private key and X509 certificate
-
-
         schema200: !include api/schemas/sign/jocKeyPair-schema.json
-
         example200: !include api/examples/publish/showKey-example.json
 
     /generate:
@@ -4663,20 +4686,14 @@ traits:
     type:
       postWithoutJSONandJSId:
         description: gets the stored public key or certificate (SecurityLevel HIGH) or the public key/certificate and private key (SecurityLevel LOW and MEDIUM)
-
-
         schema200: !include api/schemas/sign/jocKeyPair-schema.json
-
         example200: !include api/examples/publish/showKey-example.json
 
     /ca:
       type:
         postWithoutJSONandJSId:
           description: gets the stored signing CAs X509 certificate
-
-
           schema200: !include api/schemas/sign/jocKeyPair-schema.json
-
           example200: !include api/examples/publish/showKey-example.json
 
       /delete:
@@ -4941,10 +4958,10 @@ traits:
   type:
     postWithoutJSONandJSId:
       description: reads the global settings
-
       description200: " "
       schema200: !include api/schemas/configuration/configuration200-schema.json
       example200: " "
+
   /store:
     type:
       postJSONWithOkWithoutJSId:

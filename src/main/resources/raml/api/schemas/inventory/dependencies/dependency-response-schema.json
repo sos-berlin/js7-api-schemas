@@ -1,0 +1,22 @@
+{
+  "title": "dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.dependencies.GetDependenciesResponse",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "dependencies"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../../common/timestamp-schema.json"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "$ref": "responseItem-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

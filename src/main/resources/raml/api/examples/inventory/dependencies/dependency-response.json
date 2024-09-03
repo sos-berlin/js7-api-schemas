@@ -1,0 +1,497 @@
+{
+    "deliveryDate": "2024-08-29T13:11:55.695+00:00",
+    "dependencies": [
+        {
+            "name": "lock_test",
+            "type": "LOCK",
+            "references": [],
+            "referencedBy": [
+                {
+                    "path": "/2024/misc/wf_lock_test",
+                    "objectType": "WORKFLOW",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "instructions": [
+                            {
+                                "TYPE": "Lock",
+                                "lockedWorkflow": {
+                                    "instructions": [
+                                        {
+                                            "TYPE": "Execute.Named",
+                                            "jobName": "job",
+                                            "label": "job"
+                                        }
+                                    ]
+                                },
+                                "demands": [
+                                    {
+                                        "lockName": "lock_test"
+                                    }
+                                ]
+                            }
+                        ],
+                        "jobs": {
+                            "job": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "echo 'it works!'",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "title": "t",
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "state": "DEPLOYMENT_NOT_EXIST",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "hasDeployments": false,
+                    "hasReleases": false,
+                    "isReferencedBy": {
+                        "fileOrderSources": 0,
+                        "schedules": 0,
+                        "workflows": 0
+                    },
+                    "configurationDate": "2024-08-29T10:49:30.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.696+00:00"
+                },
+                {
+                    "path": "/2024/misc/wf_total_test",
+                    "objectType": "WORKFLOW",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "jobResourceNames": [
+                            "jr_test"
+                        ],
+                        "instructions": [
+                            {
+                                "TYPE": "Execute.Named",
+                                "jobName": "job1",
+                                "label": "job"
+                            },
+                            {
+                                "TYPE": "Lock",
+                                "lockedWorkflow": {
+                                    "instructions": [
+                                        {
+                                            "TYPE": "Execute.Named",
+                                            "jobName": "job2",
+                                            "label": "job2"
+                                        }
+                                    ]
+                                },
+                                "demands": [
+                                    {
+                                        "lockName": "lock_test"
+                                    }
+                                ]
+                            }
+                        ],
+                        "jobs": {
+                            "job1": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "echo 'job1'",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "jobResourceNames": [
+                                    "testJobResource1"
+                                ],
+                                "isNotRestartable": false
+                            },
+                            "job2": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "echo 'job2'",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "jobResourceNames": [
+                                    "testJobResource2"
+                                ],
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "state": "DEPLOYMENT_NOT_EXIST",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "hasDeployments": false,
+                    "hasReleases": false,
+                    "isReferencedBy": {
+                        "fileOrderSources": 0,
+                        "schedules": 0,
+                        "workflows": 0
+                    },
+                    "configurationDate": "2024-08-29T09:22:42.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.857+00:00"
+                }
+            ]
+        },
+        {
+            "name": "wf_test",
+            "type": "WORKFLOW",
+            "references": [
+                {
+                    "path": "/2024/misc/nb_test",
+                    "objectType": "NOTICEBOARD",
+                    "configuration": {
+                        "TYPE": "Board",
+                        "postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+                        "endOfLife": "$js7EpochMilli + 1 * 60 * 1000",
+                        "expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+                        "version": "1.0.0"
+                    },
+                    "state": "DRAFT_NOT_EXIST",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": true,
+                    "released": false,
+                    "hasDeployments": true,
+                    "hasReleases": false,
+                    "configurationDate": "2024-08-06T07:06:50.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.889+00:00"
+                }
+            ],
+            "referencedBy": [
+                {
+                    "path": "/2024/misc/sched_test",
+                    "objectType": "SCHEDULE",
+                    "configuration": {
+                        "version": "1.0.0",
+                        "workflowNames": [
+                            "wf_test"
+                        ],
+                        "submitOrderToControllerWhenPlanned": true,
+                        "planOrderAutomatically": true,
+                        "calendars": [
+                            {
+                                "calendarName": "working-days",
+                                "timeZone": "Europe/Berlin",
+                                "periods": [
+                                    {
+                                        "singleStart": "20:00:00",
+                                        "whenHoliday": "SUPPRESS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "orderParameterisations": []
+                    },
+                    "state": "RELEASE_NOT_EXIST",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "hasDeployments": false,
+                    "hasReleases": false,
+                    "configurationDate": "2024-08-19T10:30:08.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.864+00:00"
+                }
+            ]
+        },
+        {
+            "name": "jt_test",
+            "type": "JOBTEMPLATE",
+            "references": [
+                {
+                    "path": "/2024/misc/jr_test",
+                    "objectType": "JOBRESOURCE",
+                    "configuration": {
+                        "TYPE": "JobResource",
+                        "version": "1.0.0",
+                        "arguments": {
+                            "testArg1": "\"testVal1\""
+                        },
+                        "title": "jr title"
+                    },
+                    "state": "DRAFT_IS_NEWER",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "hasDeployments": true,
+                    "hasReleases": false,
+                    "configurationDate": "2024-08-19T10:45:48.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.897+00:00"
+                }
+            ],
+            "referencedBy": []
+        },
+        {
+            "name": "wf_total_test",
+            "type": "WORKFLOW",
+            "references": [
+                {
+                    "path": "/2024/misc/lock_test",
+                    "objectType": "LOCK",
+                    "configuration": {
+                        "TYPE": "Lock",
+                        "version": "1.0.0",
+                        "limit": 1,
+                        "title": "t"
+                    },
+                    "state": "DRAFT_IS_NEWER",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "hasDeployments": true,
+                    "hasReleases": false,
+                    "configurationDate": "2024-08-29T10:49:53.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.899+00:00"
+                }
+            ],
+            "referencedBy": []
+        },
+        {
+            "name": "sched_test",
+            "type": "SCHEDULE",
+            "references": [
+                {
+                    "path": "/2024/misc/wf_test",
+                    "objectType": "WORKFLOW",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "title": "just a changed title",
+                        "jobResourceNames": [
+                            "jr_test"
+                        ],
+                        "instructions": [
+                            {
+                                "TYPE": "Execute.Named",
+                                "jobName": "job",
+                                "label": "job1"
+                            },
+                            {
+                                "TYPE": "PostNotices",
+                                "noticeBoardNames": [
+                                    "nb_test"
+                                ],
+                                "label": "post_nb"
+                            },
+                            {
+                                "TYPE": "Execute.Named",
+                                "jobName": "job2",
+                                "label": "job2"
+                            }
+                        ],
+                        "jobs": {
+                            "job": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "echo 'step 1'\n",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "isNotRestartable": false
+                            },
+                            "job2": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "#include('si_test')\necho 'step 2'\n",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "state": "DRAFT_IS_NEWER",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "hasDeployments": true,
+                    "hasReleases": false,
+                    "isReferencedBy": {
+                        "fileOrderSources": 0,
+                        "schedules": 1,
+                        "workflows": 1
+                    },
+                    "configurationDate": "2024-08-19T13:13:35.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.900+00:00"
+                }
+            ],
+            "referencedBy": []
+        },
+        {
+            "name": "wf_aoi_test",
+            "type": "WORKFLOW",
+            "references": [
+                {
+                    "path": "/2024/misc/wf_test",
+                    "objectType": "WORKFLOW",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "title": "just a changed title",
+                        "jobResourceNames": [
+                            "jr_test"
+                        ],
+                        "instructions": [
+                            {
+                                "TYPE": "Execute.Named",
+                                "jobName": "job",
+                                "label": "job1"
+                            },
+                            {
+                                "TYPE": "PostNotices",
+                                "noticeBoardNames": [
+                                    "nb_test"
+                                ],
+                                "label": "post_nb"
+                            },
+                            {
+                                "TYPE": "Execute.Named",
+                                "jobName": "job2",
+                                "label": "job2"
+                            }
+                        ],
+                        "jobs": {
+                            "job": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "echo 'step 1'\n",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "isNotRestartable": false
+                            },
+                            "job2": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "#include('si_test')\necho 'step 2'\n",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "state": "DRAFT_IS_NEWER",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "hasDeployments": true,
+                    "hasReleases": false,
+                    "isReferencedBy": {
+                        "fileOrderSources": 0,
+                        "schedules": 1,
+                        "workflows": 1
+                    },
+                    "configurationDate": "2024-08-19T13:13:35.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.905+00:00"
+                },
+                {
+                    "path": "/2024/misc/wf_test_2_expect",
+                    "objectType": "WORKFLOW",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "instructions": [
+                            {
+                                "TYPE": "ExpectNotices",
+                                "noticeBoardNames": "'nb_test'"
+                            },
+                            {
+                                "TYPE": "Execute.Named",
+                                "jobName": "job3",
+                                "label": "job"
+                            }
+                        ],
+                        "jobs": {
+                            "job3": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "echo 'step 3'",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "state": "DRAFT_NOT_EXIST",
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": true,
+                    "released": false,
+                    "hasDeployments": true,
+                    "hasReleases": false,
+                    "isReferencedBy": {
+                        "fileOrderSources": 0,
+                        "schedules": 0,
+                        "workflows": 1
+                    },
+                    "configurationDate": "2024-08-06T07:05:00.000+00:00",
+                    "deliveryDate": "2024-08-29T13:11:55.909+00:00"
+                }
+            ],
+            "referencedBy": []
+        }
+    ]
+}

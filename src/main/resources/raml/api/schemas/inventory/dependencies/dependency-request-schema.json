@@ -1,0 +1,18 @@
+{
+  "title": "dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.dependencies.GetDependenciesRequest",
+  "type": "object",
+  "required": [
+    "configurations"
+  ],
+  "properties": {
+    "configurations": {
+        "type": "array",
+        "items": {
+        "$ref": "requestitem-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
