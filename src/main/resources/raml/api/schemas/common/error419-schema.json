@@ -19,5 +19,6 @@
     "path": {
       "$ref": "../common/path-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

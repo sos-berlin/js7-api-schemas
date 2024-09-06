@@ -17,6 +17,10 @@
       "items": {
         "$ref": "orderHistoryItem-schema.json"
       }
+    },
+    "workflowTagsPerWorkflow": {
+      "$ref": "../common/workflowTags-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

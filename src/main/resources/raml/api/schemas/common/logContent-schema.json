@@ -11,5 +11,6 @@
     "html": {
       "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

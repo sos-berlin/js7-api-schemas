@@ -9,10 +9,10 @@
 	],
 	"properties": {
 		"path": {
-			"$ref": "../../../../inventory/schemas/common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"versionId": {
-			"$ref": "../../../../inventory/schemas/common/string255-schema.json"
+			"$ref": "../../common/string255required-schema.json"
 		},
 		"ordersHoldingLocks": {
 			"type": "array",

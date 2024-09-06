@@ -61,9 +61,6 @@
     "orderTags": {
      	"$ref": "../common/tags-schema.json"
     },
-    "workflowTags": {
-     	"$ref": "../common/tags-schema.json"
-    },
 	"position": {
      	"$ref": "../../../controller/schemas/common/position-schema.json"
     },

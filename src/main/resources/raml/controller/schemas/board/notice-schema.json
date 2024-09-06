@@ -20,6 +20,9 @@
         "$ref": "../../../api/schemas/order/order_v-schema.json"
       }
     },
+    "workflowTagsPerWorkflow": {
+    	"$ref": "../../../api/schemas/common/workflowTags-schema.json"
+    },
     "state": {
       "$ref": "noticeState-schema.json"
     }

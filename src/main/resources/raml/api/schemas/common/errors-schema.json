@@ -17,5 +17,6 @@
         "$ref": "../common/error419-schema.json"
       }
     }
-  }
+  },
+  "additionalProperties": false
 }

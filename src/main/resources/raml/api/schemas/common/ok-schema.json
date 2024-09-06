@@ -17,5 +17,6 @@
     "ok": {
       "type": "boolean"
     }
-  }
+  },
+  "additionalProperties": false
 }

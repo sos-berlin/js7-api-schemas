@@ -15,5 +15,6 @@
     "_text": {
       "$ref": "historyStateText-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

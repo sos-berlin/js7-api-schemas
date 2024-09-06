@@ -17,5 +17,6 @@
     "error": {
       "$ref": "error-schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

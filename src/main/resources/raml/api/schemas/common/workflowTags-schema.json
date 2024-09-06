@@ -1,0 +1,10 @@
+{
+  "title": "workflow tags",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "a map of workflowName -> tags-array",
+  "javaType": "com.sos.joc.model.common.WorkflowTags",
+  "type": "object",
+  "additionalProperties": {
+     "$ref": "tags-schema.json"
+  }
+}

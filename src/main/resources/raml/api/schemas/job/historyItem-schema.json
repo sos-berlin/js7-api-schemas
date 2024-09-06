@@ -32,9 +32,6 @@
 		"workflow": {
 			"type": "string"
 		},
-    	"workflowTags": {
-     		"$ref": "../common/tags-schema.json"
-    	},
 		"orderId": {
 			"type": "string"
 		},

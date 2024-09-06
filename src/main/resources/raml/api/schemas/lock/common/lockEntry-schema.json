@@ -27,7 +27,10 @@
 			"items": {
 				"$ref": "lockWorkflow-schema.json"
 			}
-		}
+		},
+    	"workflowTagsPerWorkflow": {
+     		"$ref": "../../common/workflowTags-schema.json"
+    	}
 	},
 	"additionalProperties": false
 }
