@@ -58,7 +58,7 @@
   		"pattern": "^[^<>]*$",
   		"maxLength": 255
     },
-    "orderTags": {
+    "tags": {
      	"$ref": "../common/tags-schema.json"
     },
 	"position": {

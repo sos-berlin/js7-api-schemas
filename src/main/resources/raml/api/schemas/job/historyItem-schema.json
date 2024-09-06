@@ -35,7 +35,7 @@
 		"orderId": {
 			"type": "string"
 		},
-    	"orderTags": {
+    	"tags": {
      		"$ref": "../common/tags-schema.json"
     	},
 		"startTime": {

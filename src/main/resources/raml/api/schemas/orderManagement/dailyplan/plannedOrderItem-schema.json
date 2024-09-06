@@ -30,7 +30,7 @@
 		"orderName": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"orderTags": {
+		"tags": {
      		"$ref": "../../common/tags-schema.json"
     	},
 		"cyclicOrder": {

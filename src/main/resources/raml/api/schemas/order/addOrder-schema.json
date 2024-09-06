@@ -48,7 +48,7 @@
     	"type": "boolean",
     	"default": false	
     },
-    "orderTags": {
+    "tags": {
     	"$ref": "../common/tags-schema.json"	
     }
   },
