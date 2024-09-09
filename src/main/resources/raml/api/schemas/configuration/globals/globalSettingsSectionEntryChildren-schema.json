@@ -1,0 +1,10 @@
+{
+	"title": "cluster setting",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"description": "a map for arbitrary key-value pairs (String, GlobalSettingsSectionEntry)",
+	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSectionEntryChildren",
+	"type": "object",
+	"additionalProperties": {
+		"$ref": "globalSettingsSectionEntry-schema.json"
+	}
+}

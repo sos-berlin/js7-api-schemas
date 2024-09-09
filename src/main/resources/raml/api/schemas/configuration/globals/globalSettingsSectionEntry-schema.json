@@ -22,6 +22,9 @@
 		},
 		"ordering": {
 			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
+		"children": {
+			"$ref": "globalSettingsSectionEntryChildren-schema.json"
 		}
 	}
 }
