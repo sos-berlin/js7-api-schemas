@@ -1,0 +1,16 @@
+{
+	"title": "JOC cluster states",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.cluster.common.state.JocClusterServiceTaskState",
+	"type": "string",
+	"enum": [
+		"UNKNOWN",
+		"COMPLETED",
+		"UNCOMPLETED"
+	],
+	"javaEnumNames": [
+		"UNKNOWN",
+		"COMPLETED",
+		"UNCOMPLETED"
+	]
+}

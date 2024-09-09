@@ -1,0 +1,38 @@
+{
+	"title": "JOC cluster states",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.cluster.common.state.JocClusterState",
+	"type": "string",
+	"enum": [
+		"STARTED",
+		"RUNNING",
+		"STOPPED",
+		"RESTARTED",
+		"ALREADY_STARTED",
+		"ALREADY_RUNNING",
+		"ALREADY_STOPPED",
+		"SWITCH",
+		"MISSING_CONFIGURATION",
+		"MISSING_HANDLERS",
+		"MISSING_LICENSE",
+		"ERROR",
+		"COMPLETED",
+		"UNCOMPLETED"
+	],
+	"javaEnumNames": [
+		"STARTED",
+		"RUNNING",
+		"STOPPED",
+		"RESTARTED",
+		"ALREADY_STARTED",
+		"ALREADY_RUNNING",
+		"ALREADY_STOPPED",
+		"SWITCH",
+		"MISSING_CONFIGURATION",
+		"MISSING_HANDLERS",
+		"MISSING_LICENSE",
+		"ERROR",
+		"COMPLETED",
+		"UNCOMPLETED"
+	]
+}
