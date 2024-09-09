@@ -1,0 +1,14 @@
+{
+	"title": "Immediately run JOC services such as dailyplan,cleanup",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.cluster.ClusterServiceRun",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"$ref": "common/joc-cluster-service-type-schema.json"
+		}
+	}
+}

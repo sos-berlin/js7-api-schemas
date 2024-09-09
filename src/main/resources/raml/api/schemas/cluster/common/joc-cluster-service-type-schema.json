@@ -1,0 +1,22 @@
+{
+	"title": "JOC cluster services",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.cluster.common.ClusterServices",
+	"type": "string",
+	"enum": [
+		"cluster",
+		"history",
+		"dailyplan",
+		"cleanup",
+		"monitor",
+		"lognotification"
+	],
+	"javaEnumNames": [
+		"cluster",
+		"history",
+		"dailyplan",
+		"cleanup",
+		"monitor",
+		"lognotification"
+	]
+}

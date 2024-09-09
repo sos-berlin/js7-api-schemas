@@ -3813,25 +3813,37 @@ traits:
       type:
         postJSONWithOkWithoutJSId:
           description: Restarts JOC services such as cluster, history, dailyplan, cleanup
-          description1: !include api/documentation/cluster/restart.md
+          description1: !include api/documentation/cluster/jocClusterRestart.md
           description2: " "
           description3: " "
           description4: " "
           description5: " "
           audit: " "
-          schema: !include api/schemas/cluster/restart-schema.json
+          schema: !include api/schemas/cluster/joc-cluster-restart-schema.json
+          example: " "
+    /run:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Immediately run JOC services such as dailyplan,cleanup
+          description1: !include api/documentation/cluster/jocClusterServiceRun.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: " "
+          schema: !include api/schemas/cluster/joc-cluster-restart-schema.json
           example: " "
     /switch_member:
       type:
         postJSONWithOkWithoutJSId:
           description: Switches to an inactive JOC cluster member
-          description1: !include api/documentation/cluster/switch.md
+          description1: !include api/documentation/cluster/jocClusterSwitchMember.md
           description2: " "
           description3: " "
           description4: " "
           description5: " "
           audit: " "
-          schema: !include api/schemas/cluster/switch-schema.json
+          schema: !include api/schemas/cluster/joc-cluster-switch-member-schema.json
           example: " "
 
   /is_active:
