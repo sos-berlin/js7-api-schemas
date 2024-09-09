@@ -3801,13 +3801,13 @@ traits:
           description: |
             Deletes a JOC cluster member from the Inventory
             <h5>The member has to be inactive and the last heartbeat has to be older than 1 minute</h5>
-          description1: !include api/documentation/cluster/switch.md
+          description1: !include api/documentation/cluster/jocClusterSwitchMember.md
           description2: " "
           description3: " "
           description4: " "
           description5: " "
           audit: " "
-          schema: !include api/schemas/cluster/switch-schema.json
+          schema: !include api/schemas/cluster/joc-cluster-switch-member-schema.json
           example: " "
     /restart:
       type:
