@@ -5,6 +5,6 @@
 	"javaType": "com.sos.joc.model.configuration.globals.GlobalSettingsSectionEntryChildren",
 	"type": "object",
 	"additionalProperties": {
-		"$ref": "globalSettingsSectionEntry-schema.json"
+		"description": "globalSettingsSectionEntry-schema.json"
 	}
 }
