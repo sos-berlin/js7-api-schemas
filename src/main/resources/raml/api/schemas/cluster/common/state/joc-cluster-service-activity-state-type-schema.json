@@ -1,15 +1,13 @@
 {
-	"title": "JOC cluster states",
+	"title": "JOC cluster service activity states",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.cluster.common.state.JocClusterServiceState",
+	"javaType": "com.sos.joc.model.cluster.common.state.JocClusterServiceActivityState",
 	"type": "string",
 	"enum": [
-		"UNKNOWN",
 		"BUSY",
 		"RELAX"
 	],
 	"javaEnumNames": [
-		"UNKNOWN",
 		"BUSY",
 		"RELAX"
 	]

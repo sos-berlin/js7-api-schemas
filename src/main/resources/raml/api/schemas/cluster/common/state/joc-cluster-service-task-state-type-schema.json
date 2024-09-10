@@ -4,12 +4,10 @@
 	"javaType": "com.sos.joc.model.cluster.common.state.JocClusterServiceTaskState",
 	"type": "string",
 	"enum": [
-		"UNKNOWN",
 		"COMPLETED",
 		"UNCOMPLETED"
 	],
 	"javaEnumNames": [
-		"UNKNOWN",
 		"COMPLETED",
 		"UNCOMPLETED"
 	]
