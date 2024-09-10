@@ -67,6 +67,11 @@
       "description": "-1=unlimited",
       "type": "integer",
       "default": 10000
+    },
+    "withoutWorkflowTags": {
+      "description": "if true then response doesn't contain 'workflowsTagPerWorkflow'",
+      "type": "boolean",
+      "default": false
     }
   }
 }

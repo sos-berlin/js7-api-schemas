@@ -16,6 +16,11 @@
     },
     "compact": {
       "$ref": "../common/compactParam-schema.json"
+    },
+    "withoutWorkflowTags": {
+      "description": "if true then response doesn't contain 'workflowsTagPerWorkflow'",
+      "type": "boolean",
+      "default": false
     }
   }
 }
