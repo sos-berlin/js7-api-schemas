@@ -3811,8 +3811,8 @@ traits:
           example: " "
     /restart:
       type:
-        postJSONWithOkWithoutJSId:
-          description: Restarts JOC services such as cluster, history, dailyplan, cleanup
+        postJSONWithoutJSId:
+          description: Restarts JOC services such as cluster, history, dailyplan, cleanup, monitor, lognotification
           description1: !include api/documentation/cluster/jocClusterRestart.md
           description2: " "
           description3: " "
@@ -3820,10 +3820,11 @@ traits:
           description5: " "
           audit: " "
           schema: !include api/schemas/cluster/joc-cluster-restart-schema.json
+          schema200: !include api/schemas/cluster/joc-cluster-response-schema.json
           example: " "
     /run:
       type:
-        postJSONWithOkWithoutJSId:
+        postJSONWithoutJSId:
           description: Immediately run JOC services such as dailyplan,cleanup
           description1: !include api/documentation/cluster/jocClusterServiceRun.md
           description2: " "
@@ -3831,11 +3832,12 @@ traits:
           description4: " "
           description5: " "
           audit: " "
-          schema: !include api/schemas/cluster/joc-cluster-restart-schema.json
+          schema: !include api/schemas/cluster/joc-cluster-service-run-schema.json
+          schema200: !include api/schemas/cluster/joc-cluster-response-schema.json
           example: " "
     /switch_member:
       type:
-        postJSONWithOkWithoutJSId:
+        postJSONWithoutJSId:
           description: Switches to an inactive JOC cluster member
           description1: !include api/documentation/cluster/jocClusterSwitchMember.md
           description2: " "
@@ -3844,6 +3846,7 @@ traits:
           description5: " "
           audit: " "
           schema: !include api/schemas/cluster/joc-cluster-switch-member-schema.json
+          schema200: !include api/schemas/cluster/joc-cluster-response-schema.json
           example: " "
 
   /is_active:
