@@ -1,0 +1,15 @@
+{
+    "title": "changes",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.StoreChangesRequest",
+    "type": "object",
+    "required": [
+        "change"
+    ],
+    "properties": {
+        "change": {
+            "$ref": "changes-requestitem-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

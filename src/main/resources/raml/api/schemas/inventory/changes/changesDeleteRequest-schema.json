@@ -1,0 +1,19 @@
+{
+  "title": "changes",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.changes.DeleteChangesRequest",
+  "type": "object",
+  "required": [
+    "changes"
+  ],
+  "properties": {
+    "changes": {
+        "type": "array",
+        "minItems" : 1,
+        "items": {
+        "$ref": "changes-requestitem-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
