@@ -5,11 +5,15 @@
 	"type": "object",
 	"required": [
 		"deliveryDate",
+		"type",
 		"state"
 	],
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../common/timestamp-schema.json"
+		},
+		"type": {
+			"$ref": "common/joc-cluster-service-type-schema.json"
 		},
 		"state": {
 			"$ref": "common/state/joc-cluster-state-type-schema.json"
