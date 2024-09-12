@@ -1,0 +1,17 @@
+{
+    "title": "time span to restrict the time period",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.common.Timespan",
+    "type": "object",
+    "required": [
+        "from"
+    ],
+    "properties": {
+        "from": {
+            "$ref": "../../../common/timestampWithNow-schema.json"
+        },"to": {
+            "$ref": "../../../common/timestampWithNow-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

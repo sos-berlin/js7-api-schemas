@@ -1,0 +1,19 @@
+{
+    "title": "dependencies",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.common.ChangeItem",
+    "type": "object",
+    "properties": {
+        "name": {
+            "$ref": "../../../common/string255-schema.json"
+        },
+        "objectType": {
+            "$ref": "../../common/configurationType-schema.json"
+        },
+        "hasDependencies" : {
+            "type" : "boolean",
+            "default" : false
+        }
+    },
+    "additionalProperties": false
+}
