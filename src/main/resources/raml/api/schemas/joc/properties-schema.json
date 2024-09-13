@@ -121,6 +121,9 @@
     "numOfTagsDisplayedAsOrderId": {
       "$ref": "../common/nonNegativeInteger-schema.json"
     },
+    "numOfWorkflowTagsDisplayed": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
     "clusterLicense": {
       "type": "boolean",
       "default": false
