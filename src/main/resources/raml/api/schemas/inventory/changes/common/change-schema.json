@@ -1,0 +1,42 @@
+{
+    "title": "dependencies",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.common.Change",
+    "type": "object",
+    "required": [
+        "name"
+    ],
+    "properties": {
+        "name": {
+            "$ref": "../../../common/string100-schema.json"
+        },
+        "title": {
+            "$ref": "../../../common/string255-schema.json"
+        },
+        "state": {
+            "$ref": "change-state-schema.json"
+        },
+        "created": {
+            "$ref": "../../../common/timestamp-schema.json"
+        },
+        "modified": {
+            "$ref": "../../../common/timestamp-schema.json"
+        },
+        "closed": {
+            "$ref": "../../../common/timestamp-schema.json"
+        },
+        "owner": {
+            "$ref": "../../../common/string255-schema.json"
+        },
+        "lastPublishedBy": {
+            "$ref": "../../../common/string255-schema.json"
+        },
+        "configurations": {
+            "type": "array",
+            "items": {
+                "$ref": "change-item-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}

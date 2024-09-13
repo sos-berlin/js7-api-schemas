@@ -1,0 +1,17 @@
+{
+  "title": "state of a change",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.changes.common.ChangeState",
+  "type": "integer",
+  "enum": [
+    0,
+    1,
+    2
+  ],
+  "javaEnumNames": [
+    "OPEN",
+    "CLOSED",
+    "PUBLISHED"
+  ],
+  "default": 0
+}

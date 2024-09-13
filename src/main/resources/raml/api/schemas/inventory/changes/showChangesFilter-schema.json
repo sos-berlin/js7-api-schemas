@@ -1,0 +1,36 @@
+{
+    "title": "changes",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.ShowChangesFilter",
+    "type": "object",
+    "required": [
+        "changes"
+    ],
+    "properties": {
+        "names": {
+            "type": "array",
+            "items": {
+                "$ref": "../../common/string100-schema.json"
+            }
+        },
+        "state": {
+            "$ref": "common/change-state-schema.json"
+        },
+        "owner": {
+            "$ref": "../../common/string255-schema.json"
+        },
+        "lastPublishedBy": {
+            "$ref": "../../common/string255-schema.json"
+        },
+        "created": {
+            "$ref": "common/time-span-schema.json"
+        },
+        "modified": {
+            "$ref": "common/time-span-schema.json"
+        },
+        "closed": {
+            "$ref": "common/time-span-schema.json"
+        }
+    },
+    "additionalProperties": false
+}
