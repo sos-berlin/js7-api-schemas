@@ -9,7 +9,7 @@
     ],
     "properties": {
         "change": {
-            "$ref": "common/change-schema.json"
+            "$ref": "common/change-identifier-schema.json"
         },
         "add": {
             "type": "array",

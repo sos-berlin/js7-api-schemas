@@ -12,6 +12,5 @@
     "OPEN",
     "CLOSED",
     "PUBLISHED"
-  ],
-  "default": 0
+  ]
 }

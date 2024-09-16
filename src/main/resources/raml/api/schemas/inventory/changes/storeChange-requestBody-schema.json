@@ -8,7 +8,7 @@
     ],
     "properties": {
         "store": {
-            "$ref": "common/change-schema.json"
+            "$ref": "common/change-identifier-schema.json"
         }
     },
     "additionalProperties": false

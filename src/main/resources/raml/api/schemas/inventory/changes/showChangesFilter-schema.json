@@ -13,8 +13,11 @@
                 "$ref": "../../common/string100-schema.json"
             }
         },
-        "state": {
-            "$ref": "common/change-state-schema.json"
+        "states": {
+            "type": "array",
+            "items": {
+                "$ref": "common/change-state-schema.json"
+            }
         },
         "owner": {
             "$ref": "../../common/string255-schema.json"

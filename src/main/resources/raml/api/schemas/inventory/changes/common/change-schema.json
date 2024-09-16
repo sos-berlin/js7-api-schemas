@@ -3,19 +3,13 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "javaType": "com.sos.joc.model.inventory.changes.common.Change",
     "type": "object",
+    "extends": {
+        "$ref": "change-identifier-schema.json"
+    },
     "required": [
         "name"
     ],
     "properties": {
-        "name": {
-            "$ref": "../../../common/string100-schema.json"
-        },
-        "title": {
-            "$ref": "../../../common/string255-schema.json"
-        },
-        "state": {
-            "$ref": "change-state-schema.json"
-        },
         "created": {
             "$ref": "../../../common/timestamp-schema.json"
         },

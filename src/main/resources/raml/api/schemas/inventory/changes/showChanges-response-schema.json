@@ -1,0 +1,18 @@
+{
+    "title": "changes",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.ShowChangesResponse",
+    "type": "object",
+    "properties": {
+        "deliveryDate": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "changes": {
+            "type": "array",
+            "items": {
+                "$ref": "common/change-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}

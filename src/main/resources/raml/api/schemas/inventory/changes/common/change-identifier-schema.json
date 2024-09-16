@@ -1,0 +1,21 @@
+{
+    "title": "dependencies",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.common.ChangeIdentifier",
+    "type": "object",
+    "required": [
+        "name"
+    ],
+    "properties": {
+        "name": {
+            "$ref": "../../../common/string100-schema.json"
+        },
+        "title": {
+            "$ref": "../../../common/string255-schema.json"
+        },
+        "state": {
+            "$ref": "change-state-schema.json"
+        }
+    },
+    "additionalProperties": false
+}
