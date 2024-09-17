@@ -33,6 +33,10 @@
         },
         "closed": {
             "$ref": "common/time-span-schema.json"
+        },
+        "details" : {
+            "type" : "boolean",
+            "default" : false
         }
     },
     "additionalProperties": false

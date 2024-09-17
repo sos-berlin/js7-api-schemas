@@ -1,0 +1,31 @@
+{   
+    "change" : {
+        "name":"myFirstChange"
+    },
+    "add": [{
+        "name" :"wf_aoi_test",
+        "objectType": "WORKFLOW"
+        },{
+        "name" :"wf_fos_test",
+        "objectType": "WORKFLOW"
+        },{
+        "name" :"wf_jt_job",
+        "objectType": "WORKFLOW"
+        },{
+        "name" :"wf_jt_test",
+        "objectType": "WORKFLOW"
+        },{
+        "name" :"wf_lock_test",
+        "objectType": "WORKFLOW"
+        },{
+        "name" :"wf_test",
+        "objectType": "WORKFLOW"
+        },{
+        "name" :"wf_test_2_expect",
+        "objectType": "WORKFLOW"
+        },{
+        "name" :"wf_total_test",
+        "objectType": "WORKFLOW"
+        }
+    ]
+}

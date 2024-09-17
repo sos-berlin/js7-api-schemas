@@ -1,0 +1,15 @@
+{   
+    "change" : {
+        "name":"myFirstChange"
+    },
+    "remove": [{
+        "name" : "wf_test_2_expect",
+        "objectType" : "WORKFLOW"
+    },{
+        "name" : "wf_lock_test",
+        "objectType" : "WORKFLOW"
+    },{
+        "name" : "not_available",
+        "objectType" : "WORKFLOW"
+    }]
+}
