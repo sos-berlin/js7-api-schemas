@@ -6,12 +6,14 @@
     "properties": {
         "names": {
             "type": "array",
+            "uniqueItems": true,
             "items": {
                 "$ref": "../../common/string100-schema.json"
             }
         },
         "states": {
             "type": "array",
+            "uniqueItems": true,
             "items": {
                 "$ref": "common/change-state-schema.json"
             }

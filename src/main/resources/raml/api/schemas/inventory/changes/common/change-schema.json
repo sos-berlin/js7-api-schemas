@@ -27,6 +27,7 @@
         },
         "configurations": {
             "type": "array",
+            "uniqueItems": true,
             "items": {
                 "$ref": "change-item-schema.json"
             }
