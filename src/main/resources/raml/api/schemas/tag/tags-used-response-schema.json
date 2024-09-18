@@ -13,6 +13,7 @@
   },
   "additionalProperties": {
     "type": "array",
+    "uniqueItems": true,
     "items": {
         "$ref": "../common/path-schema.json"
     }
