@@ -3053,6 +3053,26 @@ traits:
         schema200: !include api/schemas/inventory/common/response-folder-schema.json
         example200: TODO
         
+  /read/job/tag:
+    type:
+      postJSONWithoutJSId:
+        description: Reads job tag content
+        description1: !include api/documentation/inventory/tagName.md
+        description2: " "
+        description3: " "
+        description4: !include api/documentation/inventory/onlyValidObjects.md
+        description5: !include api/documentation/inventory/controllerId.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/common/request-tag-schema.json
+        example: TODO
+        schema200: !include api/schemas/inventory/common/response-tag-schema.json
+        example200: TODO
+        
   /read/order/positions:
     type:
       postJSONWithoutJSId:
@@ -3837,6 +3857,80 @@ traits:
         example: " "
         example200: !include api/examples/jobTemplate/usedby-example.json
 
+/job:
+  /tags:
+    type:
+      postOnlyAccessToken:
+        description: Gets all job tags
+        schema200: !include api/schemas/tag/tags-response-schema.json
+        example200: TODO
+    /add:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Adds job tag
+          description1: !include api/documentation/tag/tagsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/common/request-filters-schema.json
+          example: " "
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes job tag
+          description1: !include api/documentation/tag/tagsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/common/request-filters-schema.json
+          example: " "
+    /ordering:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Change the order of the job tags
+          description1: !include api/documentation/tag/tagsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/common/request-filters-schema.json
+          example: " "
+    /used:
+      type:
+        postJSONWithoutJSId:
+          description: Gets a list of workflows for each tag used in a job of the workflow
+          description1: !include api/documentation/common/folders.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/tag/common/request-folder-schema.json
+          schema200: !include api/schemas/tag/tags-used-response-schema.json
+          example: " "
+          example200: " "
+
 /jobs/overview/summary:
   type:
     postJSONWithOptionalJSId:
@@ -3999,6 +4093,12 @@ traits:
         description5: " "
         schema: !include api/schemas/joc/jocUri-schema.json
         example: " "
+  /version:
+    type:
+      postOnlyAccessToken:
+        description: Get JOC's version
+        schema200: !include api/schemas/joc/version-schema.json
+        example200: !include api/examples/joc/version-example.json
   /versions:
     type:
       postJSONWithoutJSId:
