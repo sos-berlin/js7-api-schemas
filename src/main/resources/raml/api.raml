@@ -2488,6 +2488,81 @@ traits:
         schema200: !include api/schemas/calendar/dates-schema.json
         example200: TODO
 
+  /change:
+    description: This is not an API call. Use its children!!
+    
+    /add:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: adds Inventory objects to a given change
+          description1: !include api/documentation/inventory/changes/addToChangeRequest.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/inventory/changes/addToChange-requestBody-schema.json
+          example: !include api/examples/inventory/changes/addToChangeRequest-example.json
+
+    /remove:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: removes Inventory objects from a given change
+          description1: !include api/documentation/inventory/changes/removeFromChangeRequest.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/inventory/changes/removeFromChange-requestBody-schema.json
+          example: !include api/examples/inventory/changes/removeFromChangeRequest-example.json
+
+  /changes:
+    type:
+      postJSONWithoutJSId:
+        description: shows one or more changes
+        description1: !include api/documentation/inventory/changes/showChangesFilter.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/inventory/changes/showChangesFilter-schema.json
+        example: !include api/examples/inventory/changes/showChangesFilter-example.json
+        schema200: !include api/schemas/inventory/changes/showChanges-response-schema.json
+        example200: !include api/examples/inventory/changes/showChangesResponse-example.json
+
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: stores a given change
+          description1: !include api/documentation/inventory/changes/storeChangeRequest.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/inventory/changes/storeChange-requestBody-schema.json
+          example: !include api/examples/inventory/changes/storeChangeRequest-example.json
+
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: deletes a set of changes
+          description1: !include api/documentation/inventory/changes/deleteChangesRequest.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/inventory/changes/deleteChanges-requestBody-schema.json
+          example: !include api/examples/inventory/changes/deleteChangesRequest-example.json
+
   /copy:
     type:
       postJSONWithoutJSId:
