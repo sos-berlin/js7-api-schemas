@@ -8,9 +8,9 @@
 </tr>
 <tr>
 <td>``states``</td>
-<td>optional, integer</td>
+<td>optional, array</td>
 <td>The states to filter the results. If no states are set all states will be considered.</td>
-<td>"states" : [0,1]</td>
+<td>"states" : ["OPEN","CLOSED"]</td>
 <td></td>
 </tr>
 <tr>
@@ -73,7 +73,7 @@
 <tr>
 <td>``closed``</td>
 <td>optional, object</td>
-<td>filter for changes being modified in the specified timespan.</td>
+<td>filter for changes being closed in the specified timespan.</td>
 <td></td>
 <td></td>
 </tr>
