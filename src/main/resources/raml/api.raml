@@ -3104,7 +3104,19 @@ traits:
           description4: " "
           description5: " "
           schema: !include api/schemas/inventory/release/releasableRecallFilter-schema.json
-          example: !include api/examples/inventory/releasableRecallFilter-example.json 
+          example: !include api/examples/inventory/releasableRecallFilter-example.json
+          
+      /folder:
+        type:
+          postJSONWithOkWithoutJSId:
+            description: Recalls already released objects from a folder
+            description1: !include api/documentation/inventory/path.md
+            description2: !include api/documentation/inventory/releasableTypes.md
+            description3: !include api/documentation/common/recursive.md
+            description4: " "
+            description5: " " 
+            schema: !include api/schemas/inventory/common/request-folder-schema.json
+            example: " " 
         
   /remove:
     type:

@@ -13,7 +13,7 @@
       "$ref": "../../common/string255-schema.json"
     },
     "objectType": {
-      "$ref": "../common/configurationType-schema.json"
+      "$ref": "../common/configurationTypeReleasables-schema.json"
     }
   }
 }

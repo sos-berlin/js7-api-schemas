@@ -1,0 +1,20 @@
+{
+  "title": "configuration types",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.common.ConfigurationType",
+  "type": "string",
+  "enum": [
+    "WORKFLOW",
+    "JOBCLASS",
+    "JOBRESOURCE",
+    "LOCK",
+    "NOTICEBOARD",
+    "FILEORDERSOURCE",
+    "WORKINGDAYSCALENDAR", 
+    "NONWORKINGDAYSCALENDAR",
+    "SCHEDULE",
+    "INCLUDESCRIPT",
+    "JOBTEMPLATE",
+    "REPORT"
+  ]
+}
