@@ -1,0 +1,24 @@
+{
+	"title": "post notices",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"javaType": "com.sos.joc.model.board.NoticeIdsPerBoard",
+	"required": [
+		"noticeBoardPath",
+		"noticeIds"
+	],
+	"properties": {
+		"noticeBoardPath": {
+			"$ref": "../common/string255required-schema.json"
+		},
+		"noticeIds": {
+			"type": "array",
+			"uniqueItems": true,
+			"minItems": 1,
+			"items": {
+				"$ref": "../common/string255required-schema.json"
+			}	
+		}
+	},
+	"additionalProperties": false
+}

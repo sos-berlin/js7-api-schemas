@@ -1,7 +1,7 @@
 {
-	"title": "post notices",
+	"title": "delete notices",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.board.PostNotices",
+	"javaType": "com.sos.joc.model.board.DeleteNotices",
 	"type": "object",
 	"extends" : {
 		"$ref": "modifyNotices-schema.json"
@@ -16,29 +16,23 @@
         {
             "required": [
                 "controllerId",
-				"noticeBoardPaths",
-				"noticeId"
+				"noticeBoardPath",
+				"noticeIds"
             ]
         }
     ],
 	"properties": {
-		"noticeBoardPaths": {
+		"noticeBoardPath": {
+			"$ref": "../common/string255required-schema.json"
+		},
+		"noticeIds": {
 			"type": "array",
 			"uniqueItems": true,
 			"minItems": 1,
 			"items": {
-				"$ref": "../common/string255required-schema.json"
+				"type": "string",
+			    "minLength": 1
 			}
-		},
-		"noticeId": {
-			"type": "string",
-			"minLength": 1
-		},
-		"endOfLife": {
-			"$ref": "../common/dateFromTo-schema.json"
-		},
-		"timeZone": {
-			"$ref": "../common/timezone-schema.json"
 		}
 	},
 	"additionalProperties": false
