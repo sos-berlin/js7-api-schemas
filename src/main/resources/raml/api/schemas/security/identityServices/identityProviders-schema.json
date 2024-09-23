@@ -25,11 +25,11 @@
 				"$ref": "fidoProvider-schema.json"
 			}
 		},
-		"needAccountPasswordItems": {
-			"type": "array",
-			"items": {
-				"$ref": "identityServiceTypes-schema.json"
-			}
+		"needAccountPassword": {
+            "description": "if true then at least one identity service needs account/password",
+            "type": "boolean",
+            "default": false		
+            }
 		}  
 	},
 	"additionalProperties": false
