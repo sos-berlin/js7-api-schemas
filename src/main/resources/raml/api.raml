@@ -4401,6 +4401,23 @@ traits:
         description10: " "
         schema: !include api/schemas/board/postNotices-schema.json
         example: " "
+        
+    /expected:
+      type:
+        postJSONWithOkResponse:
+          description: Posts Expecting Notices for several boards based on Workflows
+          description1: !include api/documentation/board/postExpectedNotices.md
+          description2: !include api/documentation/board/endOfLife.md
+          description3: !include api/documentation/audit/auditLog.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/board/postExpectedNotices-schema.json
+          example: " "
 
 /notification:
   type:

@@ -34,9 +34,9 @@
 							"$ref": "../common/string255required-schema.json"
 						}	
 					}			
-				}
-			},
-			"additionalProperties": false
+				},
+				"additionalProperties": false
+			}
 		},
 		"endOfLife": {
 			"$ref": "../common/dateFromTo-schema.json"
