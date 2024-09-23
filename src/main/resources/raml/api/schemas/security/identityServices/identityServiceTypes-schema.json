@@ -5,9 +5,6 @@
   "type": "string",
   "enum": [
     "UNKNOWN", 
-    "VAULT",
-    "VAULT-JOC",
-    "VAULT-JOC-ACTIVE",    
     "KEYCLOAK",
     "KEYCLOAK-JOC",
     "LDAP",
