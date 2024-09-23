@@ -24,6 +24,12 @@
 			"items": {
 				"$ref": "fidoProvider-schema.json"
 			}
+		},
+		"needAccountPasswordItems": {
+			"type": "array",
+			"items": {
+				"$ref": "identityServiceTypes-schema.json"
+			}
 		}  
 	},
 	"additionalProperties": false

@@ -87,6 +87,9 @@
     "orderTags": {
       "$ref": "../common/tags-schema.json"
     },
+    "orderId":{
+      "$ref": "../common/string255-schema.json"
+    },  
     "withoutWorkflowTags": {
       "description": "if true then response doesn't contain 'workflowsTagPerWorkflow'",
       "type": "boolean",
