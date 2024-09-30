@@ -3724,6 +3724,53 @@ traits:
           example: " "
           schema200: !include api/schemas/tag/tags-response-schema.json
           example200: TODO
+      /job:
+        type:
+          postJSONWithoutJSId:
+            description: Gets tags of the jobs in a workflow
+            description1: !include api/documentation/inventory/workflowPath2.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description9: " "
+            description10: " "
+            description200: " "
+            schema: !include api/schemas/tag/common/request-workflow-jobs-schema.json
+            example: " "
+            schema200: !include api/schemas/tag/jobTags-response-schema.json
+            example200: TODO
+        /rename:
+          type:
+            postJSONWithOkWithoutJSId:
+              description: Renames the job reference for the tags of one job in a workflow
+              description1: !include api/documentation/inventory/workflowPath2.md
+              description2: !include api/documentation/tag/rename.md
+              description3: " "
+              description4: " "
+              description5: " "
+              description6: " "
+              description7: " "
+              description9: " "
+              description10: " "
+              #audit: !include api/documentation/audit/auditLog.md
+              schema: !include api/schemas/tag/rename/request-filter-job-schema.json
+              example: " "
+        /store:
+          type:
+            postJSONWithOkWithoutJSId:
+              description: Sets tags of the jobs in a workflow
+              description1: !include api/documentation/inventory/workflowPath2.md
+              description2: !include api/documentation/inventory/tags.md
+              description3: " "
+              description4: " "
+              description5: " "
+              audit: !include api/documentation/audit/auditLog.md
+              schema: !include api/schemas/tag/tagging/request-filter-jobs-schema.json
+              example: TODO
       /store:
         type:
           postJSONWithOkWithoutJSId:
@@ -3868,80 +3915,6 @@ traits:
         schema200: !include api/schemas/jobTemplate/usedBys-schema.json
         example: " "
         example200: !include api/examples/jobTemplate/usedby-example.json
-
-/job:
-  /tags:
-    type:
-      postOnlyAccessToken:
-        description: Gets all job tags
-        schema200: !include api/schemas/tag/tags-response-schema.json
-        example200: TODO
-    /add:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Adds job tag
-          description1: !include api/documentation/tag/tagsRequired.md
-          description2: " "
-          description3: " "
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description9: " "
-          description10: " "
-          audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/tag/common/request-filters-schema.json
-          example: " "
-    /delete:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Deletes job tag
-          description1: !include api/documentation/tag/tagsRequired.md
-          description2: " "
-          description3: " "
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description9: " "
-          description10: " "
-          audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/tag/common/request-filters-schema.json
-          example: " "
-    /ordering:
-      type:
-        postJSONWithOkWithoutJSId:
-          description: Change the order of the job tags
-          description1: !include api/documentation/tag/tagsRequired.md
-          description2: " "
-          description3: " "
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description9: " "
-          description10: " "
-          audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/tag/common/request-filters-schema.json
-          example: " "
-    /used:
-      type:
-        postJSONWithoutJSId:
-          description: Gets a list of workflows for each tag used in a job of the workflow
-          description1: !include api/documentation/common/folders.md
-          description2: " "
-          description3: " "
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description9: " "
-          description10: " "
-          description200: " "
-          schema: !include api/schemas/tag/common/request-folder-schema.json
-          schema200: !include api/schemas/tag/tags-used-response-schema.json
-          example: " "
-          example200: " "
 
 /jobs/overview/summary:
   type:
@@ -4337,7 +4310,7 @@ traits:
   /delete:
     type:
       postJSONWithOkResponse:
-        description: Deletes Notice
+        description: Deletes notice
         description1: !include api/documentation/board/deleteNotice.md
         description2: !include api/documentation/audit/auditLog.md
         description3: " "
@@ -4353,7 +4326,7 @@ traits:
   /post:
     type:
       postJSONWithOkResponse:
-        description: Posts Notice
+        description: Posts notice
         description1: !include api/documentation/board/deleteNotice.md
         description2: !include api/documentation/board/endOfLife.md
         description3: !include api/documentation/audit/auditLog.md
@@ -4371,7 +4344,7 @@ traits:
   /delete:
     type:
       postJSONWithOkResponse:
-        description: Deletes Notices
+        description: Deletes notices
         description1: !include api/documentation/board/deleteNotices.md
         description2: !include api/documentation/audit/auditLog.md
         description3: " "
@@ -4388,7 +4361,7 @@ traits:
   /post:
     type:
       postJSONWithOkResponse:
-        description: Posts Notice for several boards
+        description: Posts notice for several boards
         description1: !include api/documentation/board/postNotices.md
         description2: !include api/documentation/board/endOfLife.md
         description3: !include api/documentation/audit/auditLog.md
@@ -4405,7 +4378,7 @@ traits:
     /expected:
       type:
         postJSONWithOkResponse:
-          description: Posts Expecting Notices for several boards based on Workflows
+          description: Posts expected notices for several boards based on workflows
           description1: !include api/documentation/board/postExpectedNotices.md
           description2: !include api/documentation/board/endOfLife.md
           description3: !include api/documentation/audit/auditLog.md
@@ -5198,22 +5171,39 @@ traits:
         schema: !include api/schemas/settings/storeSettings-schema.json
         example: !include api/examples/settings/storeSettings-example.json
 
-/tag/rename:
-  type:
-    postJSONWithOkWithoutJSId:
-      description: Renames a tag
-      description1: !include api/documentation/tag/rename.md
-      description2: " "
-      description3: " "
-      description4: " "
-      description5: " "
-      description6: " "
-      description7: " "
-      description9: " "
-      description10: " "
-      audit: !include api/documentation/audit/auditLog.md
-      schema: !include api/schemas/tag/rename/request-filter-schema.json
-      example: " "
+/tag:
+  /job/rename:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Renames a job tag
+        description1: !include api/documentation/tag/rename.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description9: " "
+        description10: " "
+        audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/tag/rename/request-filter-schema.json
+        example: " "
+  /rename:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Renames a tag
+        description1: !include api/documentation/tag/rename.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description9: " "
+        description10: " "
+        audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/tag/rename/request-filter-schema.json
+        example: " "
 
 /tags:
   type:
@@ -5253,6 +5243,170 @@ traits:
         audit: !include api/documentation/audit/auditLog.md
         schema: !include api/schemas/tag/common/request-filters-schema.json
         example: " "
+        
+  /group/rename:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Renames a group
+        description1: !include api/documentation/tag/rename.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description9: " "
+        description10: " "
+        audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/tag/rename/request-filter-schema.json
+        example: " "
+  /group/read:
+      type:
+        postJSONWithoutJSId:
+          description: Get tags of a group
+          description1: !include api/documentation/tag/groupRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/tag/group/request-filter-schema.json
+          schema200: !include api/schemas/tag/group/tags-response-schema.json
+          example: " "
+          example200: " "
+  /groups:
+    type:
+      postOnlyAccessToken:
+        description: Gets all groups
+        schema200: !include api/schemas/tag/group/groups-response-schema.json
+        example200: TODO
+    /add:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Adds group
+          description1: !include api/documentation/tag/groupsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/group/request-filters-schema.json
+          example: " "
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes group
+          description1: !include api/documentation/tag/groupsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/group/request-filters-schema.json
+          example: " "
+    /ordering:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Change the order of the groups
+          description1: !include api/documentation/tag/groupsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/group/request-filters-schema.json
+          example: " "
+    
+        
+  /job:
+    type:
+      postOnlyAccessToken:
+        description: Gets all job tags
+        schema200: !include api/schemas/tag/tags-response-schema.json
+        example200: TODO
+    /add:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Adds job tag
+          description1: !include api/documentation/tag/tagsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/common/request-filters-schema.json
+          example: " "
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Deletes job tag
+          description1: !include api/documentation/tag/tagsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/common/request-filters-schema.json
+          example: " "
+    /ordering:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Change the order of the job tags
+          description1: !include api/documentation/tag/tagsRequired.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/common/request-filters-schema.json
+          example: " "
+    /used:
+      type:
+        postJSONWithoutJSId:
+          description: Gets a list of workflows for each tag used in a job of the workflow
+          description1: !include api/documentation/common/folders.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/tag/common/request-folder-schema.json
+          schema200: !include api/schemas/tag/tags-used-response-schema.json
+          example: " "
+          example200: " "
+          
   /ordering:
     type:
       postJSONWithOkWithoutJSId:
