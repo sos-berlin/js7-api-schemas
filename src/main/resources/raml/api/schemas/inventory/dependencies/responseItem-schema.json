@@ -4,26 +4,24 @@
   "javaType": "com.sos.joc.model.inventory.dependencies.ResponseItem",
   "type": "object",
   "required": [
-    "name",
-    "type"
+    "dependency"
   ],
   "properties": {
-    "name": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string"
+    "dependency": {
+      "$ref": "../configurationObject-schema.json"
     },
     "references": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
-        "$ref": "../configurationObject-schema.json"
+        "$ref": "responseItem-schema.json"
       }
     },
     "referencedBy": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
-        "$ref": "../configurationObject-schema.json"
+        "$ref": "responseItem-schema.json"
       }
     }
   },
