@@ -30,7 +30,13 @@
             "type": "boolean",
             "default": false		
             }
-		}  
+		},
+		"needLoginButton": {
+            "description": "if true then at least one identity service needs the login button",
+            "type": "boolean",
+            "default": false		
+            }
+		}		  
 	},
 	"additionalProperties": false
 }
