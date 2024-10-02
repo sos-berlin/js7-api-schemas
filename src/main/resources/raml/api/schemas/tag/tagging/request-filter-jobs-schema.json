@@ -1,0 +1,25 @@
+{
+    "title": "filter for tagging",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.tag.tagging.RequestJobFilter",
+    "type": "object",
+    "extends" : {
+        "$ref": "../common/request-workflow-schema.json"
+    },
+    "required": [
+        "path"
+    ],
+    "properties": {
+        "jobs": {
+    		"type": "array",
+    		"uniqueItems": true,
+    		"items": {
+    			"$ref": "../common/jobTags-schema.json"
+    		}
+		},
+        "auditLog": {
+            "$ref": "../../audit/auditParams-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

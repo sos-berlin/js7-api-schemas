@@ -1,0 +1,15 @@
+{
+	"title": "common group request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.tag.group.RequestFilter",
+	"type": "object",
+	"required": [
+        "group"
+    ],
+	"properties": {
+		"group": {
+			"$ref": "../../common/string255required-schema.json"
+		}
+	},
+    "additionalProperties": false
+}

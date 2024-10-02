@@ -1,0 +1,23 @@
+{
+	"title": "for rename a job",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.tag.rename.RequestJobFilter",
+	"type": "object",
+	"extends" : {
+        "$ref": "../common/request-workflow-schema.json"
+    },
+    "required": [
+        "path",
+        "jobName",
+        "newJobName"
+    ],
+	"properties": {
+	    "jobName": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"newJobName": {
+			"$ref": "../../common/string255required-schema.json"
+		}
+	},
+    "additionalProperties": false
+}

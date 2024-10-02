@@ -1,0 +1,22 @@
+{
+	"title": "common job tag request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.tag.common.RequestWorkflowJobFilter",
+	"type": "object",
+	"extends" : {
+        "$ref": "../common/request-workflow-schema.json"
+    },
+    "required": [
+        "path"
+    ],
+	"properties": {
+		"jobNames": {
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"$ref": "../../common/string255-schema.json"
+			}
+		}
+	},
+    "additionalProperties": false
+}

@@ -7,6 +7,7 @@
 		"name",
 		"path",
 		"objectType"
+		
 	],
 	"properties": {
 		"path": {
@@ -17,6 +18,12 @@
 		},
 		"objectType": {
 			"$ref": "../common/configurationType-schema.json"
+		},
+		"group": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"ordering": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
 		}
 	},
   	"additionalProperties": false
