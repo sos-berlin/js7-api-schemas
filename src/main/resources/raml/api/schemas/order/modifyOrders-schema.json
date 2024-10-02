@@ -45,10 +45,17 @@
 			"$ref": "../../../controller/schemas/order/orderModeType-schema.json"
 		},
 		"kill": {
-			"type": "boolean",
+			"description": "only relevant for 'suspend' and 'cancel'",
+            "type": "boolean",
 			"default": false
 		},
 		"deep": {
+			"description": "only relevant for 'suspend' and 'cancel'",
+            "type": "boolean",
+            "default": false
+        },
+		"reset": {
+			"description": "only relevant for 'suspend'",
             "type": "boolean",
             "default": false
         },
