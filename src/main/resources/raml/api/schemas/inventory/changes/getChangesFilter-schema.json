@@ -1,0 +1,16 @@
+{
+    "title": "changes",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.GetChangesFilter",
+    "type": "object",
+    "properties": {
+        "configurations": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "common/change-item-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}

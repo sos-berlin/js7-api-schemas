@@ -1,0 +1,15 @@
+{
+    "title": "dependencies",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.common.GetChangeResponseItem",
+    "type": "object",
+    "properties": {
+        "searchedItem": {
+            "$ref": "change-item-schema.json"
+        },
+        "change": {
+            "$ref": "change-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

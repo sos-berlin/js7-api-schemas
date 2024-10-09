@@ -3,6 +3,10 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "javaType": "com.sos.joc.model.inventory.changes.common.ChangeItem",
     "type": "object",
+    "required": [
+        "name",
+        "objectType"
+    ],
     "properties": {
         "name": {
             "$ref": "../../../common/string255-schema.json"

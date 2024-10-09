@@ -1,17 +1,26 @@
 {
   "title": "dependencies",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.inventory.dependencies.ResponseItem",
+  "javaType": "com.sos.joc.model.inventory.dependencies.RequestedResponseItem",
   "type": "object",
   "properties": {
-    "requestedItems": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "configuration": {
+      "$ref": "../configurationObject-schema.json"
+    },
+    "references": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "responseRequestItem-schema.json"
+        "$ref": "../configurationObject-schema.json"
       }
     },
-    "affectedItems": {
+    "referencedBy": {
       "type": "array",
       "uniqueItems": true,
       "items": {

@@ -1,0 +1,16 @@
+{
+    "title": "changes",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.inventory.changes.GetChangesResponse",
+    "type": "object",
+    "properties": {
+        "changes": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "common/get-changes-response-item-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}

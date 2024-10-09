@@ -1,7 +1,7 @@
 
 package com.sos.joc.model.inventory.dependencies;
 
-import java.util.LinkedHashSet;
+import java.util.HashSet;
 import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,80 +21,46 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "dependency",
-    "references",
-    "referencedBy"
+    "requestedItems",
+    "affectedItems"
 })
 public class ResponseItem {
 
-    /**
-     * JS Object configuration
-     * <p>
-     * 
-     * (Required)
-     * 
-     */
-    @JsonProperty("dependency")
-    private ConfigurationObject dependency;
-    @JsonProperty("references")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    private Set<ResponseItem> references = new LinkedHashSet<ResponseItem>();
-    @JsonProperty("referencedBy")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    private Set<ResponseItem> referencedBy = new LinkedHashSet<ResponseItem>();
+    @JsonProperty("requestedItems")
+    @JsonDeserialize(as = java.util.HashSet.class)
+    private Set<RequestedResponseItem> requestedItems = new HashSet<RequestedResponseItem>();
+    @JsonProperty("affectedItems")
+    @JsonDeserialize(as = java.util.HashSet.class)
+    private Set<ConfigurationObject> affectedItems = new HashSet<ConfigurationObject>();
 
-    /**
-     * JS Object configuration
-     * <p>
-     * 
-     * (Required)
-     * 
-     */
-    @JsonProperty("dependency")
-    public ConfigurationObject getDependency() {
-        return dependency;
+    @JsonProperty("requestedItems")
+    public Set<RequestedResponseItem> getRequestedItems() {
+        return requestedItems;
     }
 
-    /**
-     * JS Object configuration
-     * <p>
-     * 
-     * (Required)
-     * 
-     */
-    @JsonProperty("dependency")
-    public void setDependency(ConfigurationObject dependency) {
-        this.dependency = dependency;
+    @JsonProperty("requestedItems")
+    public void setRequestedItems(Set<RequestedResponseItem> requestedItems) {
+        this.requestedItems = requestedItems;
     }
 
-    @JsonProperty("references")
-    public Set<ResponseItem> getReferences() {
-        return references;
+    @JsonProperty("affectedItems")
+    public Set<ConfigurationObject> getAffectedItems() {
+        return affectedItems;
     }
 
-    @JsonProperty("references")
-    public void setReferences(Set<ResponseItem> references) {
-        this.references = references;
-    }
-
-    @JsonProperty("referencedBy")
-    public Set<ResponseItem> getReferencedBy() {
-        return referencedBy;
-    }
-
-    @JsonProperty("referencedBy")
-    public void setReferencedBy(Set<ResponseItem> referencedBy) {
-        this.referencedBy = referencedBy;
+    @JsonProperty("affectedItems")
+    public void setAffectedItems(Set<ConfigurationObject> affectedItems) {
+        this.affectedItems = affectedItems;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("dependency", dependency).append("references", references).append("referencedBy", referencedBy).toString();
+        return new ToStringBuilder(this).append("requestedItems", requestedItems).append("affectedItems", affectedItems).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(referencedBy).append(references).append(dependency).toHashCode();
+        return new HashCodeBuilder().append(requestedItems).toHashCode();
     }
 
     @Override
@@ -106,11 +72,7 @@ public class ResponseItem {
             return false;
         }
         ResponseItem rhs = ((ResponseItem) other);
-        return new EqualsBuilder().append(referencedBy, rhs.referencedBy).append(references, rhs.references).append(dependency, rhs.dependency).isEquals();
-    }
-
-    public ResponseItem(ConfigurationObject item) {
-        this.dependency = item;
+        return new EqualsBuilder().append(requestedItems, rhs.requestedItems).isEquals();
     }
 
 }
