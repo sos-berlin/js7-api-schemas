@@ -4,8 +4,7 @@
 	"type": "object",
 	"javaType": "com.sos.joc.model.board.NoticeIdsPerBoard",
 	"required": [
-		"noticeBoardPath",
-		"noticeIds"
+		"noticeBoardPath"
 	],
 	"properties": {
 		"noticeBoardPath": {
@@ -14,7 +13,6 @@
 		"noticeIds": {
 			"type": "array",
 			"uniqueItems": true,
-			"minItems": 1,
 			"items": {
 				"$ref": "../common/string255required-schema.json"
 			}	

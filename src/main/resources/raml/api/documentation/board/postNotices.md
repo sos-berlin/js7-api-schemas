@@ -9,7 +9,8 @@
   ]
 }</pre></td>
 <td></td></tr>
-<tr><td style="padding-left:20px;">``noticeIds``</td><td>required, array[string]</td><td>Collection of notice ids</td><td></td></tr>
+<tr><td style="padding-left:20px;">``noticeIds``</td><td>optional, array[string]</td><td>Collection of notice ids. 
+If no noticeId is specified, all expected notices of the board will be posted</td><td></td></tr>
 
 <tr><td>``noticeBoardPaths``<pre style="color:red"> (deprecated) </pre></td><td>required, array[string]</td><td>Paths of notice boards</td><td></td><td></td></tr>
 <tr><td>``noticeId``<pre style="color:red"> (deprecated) </pre></td><td>required, string</td><td>Id of the notice</td><td></td><td></td></tr>
