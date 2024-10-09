@@ -5,10 +5,14 @@
   "type": "string",
   "enum": [
             "DELAYED_AFTER_ERROR",
+            "DELAYING_RETRY",
             "FORKED",
             "EXPECTING_NOTICES",
             "WAITING_FOR_LOCK",
             "WAITING_FOR_ADMISSION",
+            "JOB_PROCESS_LIMIT_REACHED",
+            "AGENT_PROCESS_LIMIT_REACHED",
+            "WORKFLOW_IS_SUSPENDED",
             "BETWEEN_CYCLES"
   ]
 }
