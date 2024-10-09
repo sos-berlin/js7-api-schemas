@@ -14,7 +14,11 @@
     "priority": {
     	"anyOf": [
 				{"type": "integer"},
-				{"$ref": "../common/string255required-schema.json"}
+				{
+					"type": "string",
+					"maxLength": 255,
+  					"minLength": 1
+				 }
 			]
     }
   },
