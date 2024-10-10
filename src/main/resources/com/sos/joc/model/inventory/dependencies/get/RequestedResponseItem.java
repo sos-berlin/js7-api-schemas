@@ -1,5 +1,5 @@
 
-package com.sos.joc.model.inventory.dependencies;
+package com.sos.joc.model.inventory.dependencies.get;
 
 import java.util.HashSet;
 import java.util.Set;

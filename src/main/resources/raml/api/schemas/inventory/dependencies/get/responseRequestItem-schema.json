@@ -1,7 +1,7 @@
 {
   "title": "dependencies",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.inventory.dependencies.RequestedResponseItem",
+  "javaType": "com.sos.joc.model.inventory.dependencies.get.RequestedResponseItem",
   "type": "object",
   "properties": {
     "name": {
@@ -11,20 +11,20 @@
       "type": "string"
     },
     "configuration": {
-      "$ref": "../configurationObject-schema.json"
+      "$ref": "../../configurationObject-schema.json"
     },
     "references": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "../configurationObject-schema.json"
+        "$ref": "../../configurationObject-schema.json"
       }
     },
     "referencedBy": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "../configurationObject-schema.json"
+        "$ref": "../../configurationObject-schema.json"
       }
     }
   },

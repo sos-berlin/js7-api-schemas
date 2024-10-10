@@ -1,5 +1,5 @@
 
-package com.sos.joc.model.inventory.dependencies;
+package com.sos.joc.model.inventory.dependencies.update;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -25,7 +25,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
     "references",
     "referencedBy"
 })
-public class ResponseItemRecursive {
+public class ResponseItem {
 
     /**
      * JS Object configuration
@@ -38,10 +38,10 @@ public class ResponseItemRecursive {
     private ConfigurationObject dependency;
     @JsonProperty("references")
     @JsonDeserialize(as = java.util.HashSet.class)
-    private Set<ResponseItemRecursive> references = new HashSet<ResponseItemRecursive>();
+    private Set<ResponseItem> references = new HashSet<ResponseItem>();
     @JsonProperty("referencedBy")
     @JsonDeserialize(as = java.util.HashSet.class)
-    private Set<ResponseItemRecursive> referencedBy = new HashSet<ResponseItemRecursive>();
+    private Set<ResponseItem> referencedBy = new HashSet<ResponseItem>();
 
     /**
      * JS Object configuration
@@ -68,22 +68,22 @@ public class ResponseItemRecursive {
     }
 
     @JsonProperty("references")
-    public Set<ResponseItemRecursive> getReferences() {
+    public Set<ResponseItem> getReferences() {
         return references;
     }
 
     @JsonProperty("references")
-    public void setReferences(Set<ResponseItemRecursive> references) {
+    public void setReferences(Set<ResponseItem> references) {
         this.references = references;
     }
 
     @JsonProperty("referencedBy")
-    public Set<ResponseItemRecursive> getReferencedBy() {
+    public Set<ResponseItem> getReferencedBy() {
         return referencedBy;
     }
 
     @JsonProperty("referencedBy")
-    public void setReferencedBy(Set<ResponseItemRecursive> referencedBy) {
+    public void setReferencedBy(Set<ResponseItem> referencedBy) {
         this.referencedBy = referencedBy;
     }
 

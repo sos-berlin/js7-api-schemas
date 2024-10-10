@@ -14,7 +14,7 @@
     "dependencies": {
       "type": "array",
       "items": {
-        "$ref": "responseItem-schema.json"
+        "$ref": "get/responseItem-schema.json"
       }
     }
   },

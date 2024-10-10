@@ -1,7 +1,7 @@
 {
   "title": "dependencies",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.inventory.dependencies.ResponseItem",
+  "javaType": "com.sos.joc.model.inventory.dependencies.get.ResponseItem",
   "type": "object",
   "properties": {
     "requestedItems": {
@@ -15,7 +15,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "../configurationObject-schema.json"
+        "$ref": "../../configurationObject-schema.json"
       }
     }
   },

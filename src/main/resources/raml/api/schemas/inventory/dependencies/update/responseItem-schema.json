@@ -1,27 +1,27 @@
 {
   "title": "dependencies",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.inventory.dependencies.ResponseItemRecursive",
+  "javaType": "com.sos.joc.model.inventory.dependencies.update.ResponseItem",
   "type": "object",
   "required": [
     "dependency"
   ],
   "properties": {
     "dependency": {
-      "$ref": "../configurationObject-schema.json"
+      "$ref": "../../configurationObject-schema.json"
     },
     "references": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "responseItemRecursive-schema.json"
+        "$ref": "responseItem-schema.json"
       }
     },
     "referencedBy": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "responseItemRecursive-schema.json"
+        "$ref": "responseItem-schema.json"
       }
     }
   },
