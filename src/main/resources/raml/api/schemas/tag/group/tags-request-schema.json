@@ -1,0 +1,25 @@
+{
+  "title": "tags of group",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.tag.group.GroupTagsFilter",
+  "type": "object",
+  "required": [
+    "group"
+  ],
+  "properties": {
+    "group": {
+    	"$ref": "../../common/string255required-schema.json"
+    },
+    "tags": {
+    	"type": "array",
+    	"uniqueItems": true,
+    	"items": {
+    		"$ref": "../../common/string255required-schema.json"
+    	}	
+    },
+	"auditLog": {
+    	"$ref": "../../audit/auditParams-schema.json"
+    }
+  },
+  "additionalProperties": false
+}
