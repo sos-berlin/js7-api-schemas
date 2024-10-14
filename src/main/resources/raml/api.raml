@@ -5244,23 +5244,24 @@ traits:
         schema: !include api/schemas/tag/common/request-filters-schema.json
         example: " "
         
-  /group/rename:
-    type:
-      postJSONWithOkWithoutJSId:
-        description: Renames a group
-        description1: !include api/documentation/tag/rename.md
-        description2: " "
-        description3: " "
-        description4: " "
-        description5: " "
-        description6: " "
-        description7: " "
-        description9: " "
-        description10: " "
-        audit: !include api/documentation/audit/auditLog.md
-        schema: !include api/schemas/tag/rename/request-filter-schema.json
-        example: " "
-  /group/read:
+  /group:
+    /rename:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Renames a group
+          description1: !include api/documentation/tag/rename.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/tag/rename/request-filter-schema.json
+          example: " "
+    /read:
       type:
         postJSONWithoutJSId:
           description: Get tags of a group
@@ -5275,6 +5276,24 @@ traits:
           description10: " "
           description200: " "
           schema: !include api/schemas/tag/group/request-filter-schema.json
+          schema200: !include api/schemas/tag/group/tags-response-schema.json
+          example: " "
+          example200: " "
+    /store:
+      type:
+        postJSONWithoutJSId:
+          description: Set tags of a group
+          description1: !include api/documentation/tag/groupRequired.md
+          description2: !include api/documentation/inventory/tags.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description9: " "
+          description10: !include api/documentation/audit/auditLog.md
+          description200: " "
+          schema: !include api/schemas/tag/group/tags-request-schema.json
           schema200: !include api/schemas/tag/group/tags-response-schema.json
           example: " "
           example200: " "
