@@ -15,7 +15,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "../../configurationObject-schema.json"
+        "$ref": "responseAffectedItem-schema.json"
       }
     }
   },

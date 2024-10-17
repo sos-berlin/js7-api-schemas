@@ -31,7 +31,7 @@ public class ResponseItem {
     private Set<RequestedResponseItem> requestedItems = new HashSet<RequestedResponseItem>();
     @JsonProperty("affectedItems")
     @JsonDeserialize(as = java.util.HashSet.class)
-    private Set<ConfigurationObject> affectedItems = new HashSet<ConfigurationObject>();
+    private Set<AffectedResponseItem> affectedItems = new HashSet<AffectedResponseItem>();
 
     @JsonProperty("requestedItems")
     public Set<RequestedResponseItem> getRequestedItems() {
@@ -44,12 +44,12 @@ public class ResponseItem {
     }
 
     @JsonProperty("affectedItems")
-    public Set<ConfigurationObject> getAffectedItems() {
+    public Set<AffectedResponseItem> getAffectedItems() {
         return affectedItems;
     }
 
     @JsonProperty("affectedItems")
-    public void setAffectedItems(Set<ConfigurationObject> affectedItems) {
+    public void setAffectedItems(Set<AffectedResponseItem> affectedItems) {
         this.affectedItems = affectedItems;
     }
 

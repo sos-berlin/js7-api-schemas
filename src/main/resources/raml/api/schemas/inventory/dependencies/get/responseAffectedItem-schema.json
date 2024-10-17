@@ -1,0 +1,16 @@
+{
+  "title": "dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.dependencies.get.AffectedResponseItem",
+  "type": "object",
+  "properties": {
+    "draft": {
+      "type": "boolean",
+      "default": false
+    },
+    "item": {
+      "$ref": "../../configurationObject-schema.json"
+    }
+  },
+  "additionalProperties": false
+}
