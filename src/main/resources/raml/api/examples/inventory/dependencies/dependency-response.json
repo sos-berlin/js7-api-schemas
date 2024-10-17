@@ -1,11 +1,540 @@
 {
-    "deliveryDate": "2024-10-10T10:03:18.813+00:00",
+    "deliveryDate": "2024-10-17T13:10:07.254+00:00",
     "dependencies": {
         "requestedItems": [
             {
-                "name": "JOC-1850-02-sp-copy",
+                "name": "JOC-1850-01-sp-copy",
                 "type": "WORKFLOW",
                 "configuration": {
+                    "id": 7919,
+                    "path": "/2024/JOC-1850/JOC-1850-01-sp-copy",
+                    "objectType": "WORKFLOW",
+                    "name": "JOC-1850-01-sp-copy",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "title": "test store",
+                        "jobResourceNames": [
+                            "JOC-1850-01a-sp-copy"
+                        ],
+                        "instructions": [
+                            {
+                                "TYPE": "Lock",
+                                "lockedWorkflow": {
+                                    "instructions": [
+                                        {
+                                            "TYPE": "Execute.Named",
+                                            "jobName": "job1",
+                                            "label": "job1"
+                                        }
+                                    ]
+                                },
+                                "demands": [
+                                    {
+                                        "lockName": "JOC-1850-01"
+                                    }
+                                ]
+                            },
+                            {
+                                "TYPE": "PostNotices",
+                                "noticeBoardNames": [
+                                    "JOC-1850-02"
+                                ]
+                            },
+                            {
+                                "TYPE": "AddOrder",
+                                "workflowName": "JOC-1850-02-sp-copy",
+                                "remainWhenTerminated": false,
+                                "forceJobAdmission": false
+                            }
+                        ],
+                        "jobs": {
+                            "job1": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "#!/bin/bash\n\necho \"hello\"",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "jobResourceNames": [
+                                    "JOC-1850-01a-sp-copy"
+                                ],
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.355+00:00"
+                },
+                "references": [
+                    {
+                        "id": 7910,
+                        "path": "/2024/JOC-1850/JOC-1850-01",
+                        "objectType": "LOCK",
+                        "name": "JOC-1850-01",
+                        "configuration": {
+                            "TYPE": "Lock",
+                            "version": "1.0.0",
+                            "limit": 1
+                        },
+                        "valid": true,
+                        "deleted": false,
+                        "deployed": false,
+                        "released": false,
+                        "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                        "deliveryDate": "2024-10-17T13:10:07.361+00:00"
+                    },
+                    {
+                        "id": 7921,
+                        "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
+                        "objectType": "WORKFLOW",
+                        "name": "JOC-1850-02-sp-copy",
+                        "configuration": {
+                            "TYPE": "Workflow",
+                            "version": "1.0.0",
+                            "timeZone": "Europe/Berlin",
+                            "title": "title stored again",
+                            "jobResourceNames": [
+                                "JOC-1850-02-sp-copy"
+                            ],
+                            "instructions": [
+                                {
+                                    "TYPE": "ExpectNotices",
+                                    "noticeBoardNames": "'JOC-1850-02'"
+                                },
+                                {
+                                    "TYPE": "Lock",
+                                    "lockedWorkflow": {
+                                        "instructions": [
+                                            {
+                                                "TYPE": "Execute.Named",
+                                                "jobName": "job1",
+                                                "label": "job1"
+                                            }
+                                        ]
+                                    },
+                                    "demands": [
+                                        {
+                                            "lockName": "JOC-1850-02"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "jobs": {
+                                "job1": {
+                                    "agentName": "primaryAgent",
+                                    "withSubagentClusterIdExpr": false,
+                                    "executable": {
+                                        "TYPE": "ShellScriptExecutable",
+                                        "script": "#!/bin/bash\n\necho \"hello 2 u\"",
+                                        "v1Compatible": false
+                                    },
+                                    "skipIfNoAdmissionForOrderDay": false,
+                                    "parallelism": 1,
+                                    "graceTimeout": 1,
+                                    "failOnErrWritten": false,
+                                    "warnOnErrWritten": false,
+                                    "jobResourceNames": [
+                                        "JOC-1850-02-sp-copy"
+                                    ],
+                                    "isNotRestartable": false
+                                }
+                            }
+                        },
+                        "valid": true,
+                        "deleted": false,
+                        "deployed": false,
+                        "released": false,
+                        "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                        "deliveryDate": "2024-10-17T13:10:07.359+00:00"
+                    },
+                    {
+                        "id": 7915,
+                        "path": "/2024/JOC-1850/JOC-1850-01a-sp-copy",
+                        "objectType": "JOBRESOURCE",
+                        "name": "JOC-1850-01a-sp-copy",
+                        "configuration": {
+                            "TYPE": "JobResource",
+                            "version": "1.0.0",
+                            "arguments": {
+                                "a": "\"A\""
+                            },
+                            "env": {
+                                "A": "$a"
+                            }
+                        },
+                        "valid": true,
+                        "deleted": false,
+                        "deployed": false,
+                        "released": false,
+                        "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                        "deliveryDate": "2024-10-17T13:10:07.366+00:00"
+                    },
+                    {
+                        "id": 7912,
+                        "path": "/2024/JOC-1850/JOC-1850-02",
+                        "objectType": "NOTICEBOARD",
+                        "name": "JOC-1850-02",
+                        "configuration": {
+                            "TYPE": "Board",
+                            "postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+                            "endOfLife": "$js7EpochMilli + 1",
+                            "expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+                            "version": "1.0.0"
+                        },
+                        "valid": true,
+                        "deleted": false,
+                        "deployed": false,
+                        "released": false,
+                        "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                        "deliveryDate": "2024-10-17T13:10:07.363+00:00"
+                    }
+                ],
+                "referencedBy": []
+            }
+        ],
+        "affectedItems": [
+            {
+                "draft": true,
+                "item": {
+                    "id": 7918,
+                    "path": "/2024/JOC-1850/JOC-1850-02",
+                    "objectType": "WORKFLOW",
+                    "name": "JOC-1850-02",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "jobResourceNames": [
+                            "JOC-1850-02"
+                        ],
+                        "instructions": [
+                            {
+                                "TYPE": "ExpectNotices",
+                                "noticeBoardNames": "'JOC-1850-02'"
+                            },
+                            {
+                                "TYPE": "Lock",
+                                "lockedWorkflow": {
+                                    "instructions": [
+                                        {
+                                            "TYPE": "Execute.Named",
+                                            "jobName": "job1",
+                                            "label": "job1"
+                                        }
+                                    ]
+                                },
+                                "demands": [
+                                    {
+                                        "lockName": "JOC-1850-02"
+                                    }
+                                ]
+                            }
+                        ],
+                        "jobs": {
+                            "job1": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "#!/bin/bash\n\necho \"hello\"",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "jobResourceNames": [
+                                    "JOC-1850-02"
+                                ],
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-10-15T11:04:35.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.368+00:00"
+                }
+            },
+            {
+                "draft": true,
+                "item": {
+                    "id": 7917,
+                    "path": "/2024/JOC-1850/JOC-1850-02",
+                    "objectType": "JOBRESOURCE",
+                    "name": "JOC-1850-02",
+                    "configuration": {
+                        "TYPE": "JobResource",
+                        "version": "1.0.0",
+                        "arguments": {
+                            "a": "\"A\""
+                        },
+                        "env": {
+                            "A": "$a"
+                        }
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-09-27T06:31:11.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.368+00:00"
+                }
+            },
+            {
+                "draft": true,
+                "item": {
+                    "id": 7911,
+                    "path": "/2024/JOC-1850/JOC-1850-02",
+                    "objectType": "LOCK",
+                    "name": "JOC-1850-02",
+                    "configuration": {
+                        "TYPE": "Lock",
+                        "version": "1.0.0",
+                        "limit": 1
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-09-27T09:33:24.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.367+00:00"
+                }
+            },
+            {
+                "draft": true,
+                "item": {
+                    "id": 7915,
+                    "path": "/2024/JOC-1850/JOC-1850-01a-sp-copy",
+                    "objectType": "JOBRESOURCE",
+                    "name": "JOC-1850-01a-sp-copy",
+                    "configuration": {
+                        "TYPE": "JobResource",
+                        "version": "1.0.0",
+                        "arguments": {
+                            "a": "\"A\""
+                        },
+                        "env": {
+                            "A": "$a"
+                        }
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.367+00:00"
+                }
+            },
+            {
+                "draft": true,
+                "item": {
+                    "id": 7920,
+                    "path": "/2024/JOC-1850/JOC-1850-01",
+                    "objectType": "WORKFLOW",
+                    "name": "JOC-1850-01",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "jobResourceNames": [
+                            "JOC-1850-01"
+                        ],
+                        "instructions": [
+                            {
+                                "TYPE": "Lock",
+                                "lockedWorkflow": {
+                                    "instructions": [
+                                        {
+                                            "TYPE": "Execute.Named",
+                                            "jobName": "job1",
+                                            "label": "job1"
+                                        }
+                                    ]
+                                },
+                                "demands": [
+                                    {
+                                        "lockName": "JOC-1850-01"
+                                    }
+                                ]
+                            },
+                            {
+                                "TYPE": "PostNotices",
+                                "noticeBoardNames": [
+                                    "JOC-1850-02"
+                                ]
+                            },
+                            {
+                                "TYPE": "AddOrder",
+                                "workflowName": "JOC-1850-02",
+                                "remainWhenTerminated": false,
+                                "forceJobAdmission": false
+                            }
+                        ],
+                        "jobs": {
+                            "job1": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "#!/bin/bash\n\necho \"hello\"",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "jobResourceNames": [
+                                    "JOC-1850-01"
+                                ],
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-10-15T11:04:35.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.367+00:00"
+                }
+            },
+            {
+                "draft": true,
+                "item": {
+                    "id": 7912,
+                    "path": "/2024/JOC-1850/JOC-1850-02",
+                    "objectType": "NOTICEBOARD",
+                    "name": "JOC-1850-02",
+                    "configuration": {
+                        "TYPE": "Board",
+                        "postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+                        "endOfLife": "$js7EpochMilli + 1",
+                        "expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
+                        "version": "1.0.0"
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.367+00:00"
+                }
+            },
+            {
+                "draft": true,
+                "item": {
+                    "id": 7919,
+                    "path": "/2024/JOC-1850/JOC-1850-01-sp-copy",
+                    "objectType": "WORKFLOW",
+                    "name": "JOC-1850-01-sp-copy",
+                    "configuration": {
+                        "TYPE": "Workflow",
+                        "version": "1.0.0",
+                        "timeZone": "Europe/Berlin",
+                        "title": "test store",
+                        "jobResourceNames": [
+                            "JOC-1850-01a-sp-copy"
+                        ],
+                        "instructions": [
+                            {
+                                "TYPE": "Lock",
+                                "lockedWorkflow": {
+                                    "instructions": [
+                                        {
+                                            "TYPE": "Execute.Named",
+                                            "jobName": "job1",
+                                            "label": "job1"
+                                        }
+                                    ]
+                                },
+                                "demands": [
+                                    {
+                                        "lockName": "JOC-1850-01"
+                                    }
+                                ]
+                            },
+                            {
+                                "TYPE": "PostNotices",
+                                "noticeBoardNames": [
+                                    "JOC-1850-02"
+                                ]
+                            },
+                            {
+                                "TYPE": "AddOrder",
+                                "workflowName": "JOC-1850-02-sp-copy",
+                                "remainWhenTerminated": false,
+                                "forceJobAdmission": false
+                            }
+                        ],
+                        "jobs": {
+                            "job1": {
+                                "agentName": "primaryAgent",
+                                "withSubagentClusterIdExpr": false,
+                                "executable": {
+                                    "TYPE": "ShellScriptExecutable",
+                                    "script": "#!/bin/bash\n\necho \"hello\"",
+                                    "v1Compatible": false
+                                },
+                                "skipIfNoAdmissionForOrderDay": false,
+                                "parallelism": 1,
+                                "graceTimeout": 1,
+                                "failOnErrWritten": false,
+                                "warnOnErrWritten": false,
+                                "jobResourceNames": [
+                                    "JOC-1850-01a-sp-copy"
+                                ],
+                                "isNotRestartable": false
+                            }
+                        }
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.369+00:00"
+                }
+            },
+            {
+                "draft": true,
+                "item": {
+                    "id": 7910,
+                    "path": "/2024/JOC-1850/JOC-1850-01",
+                    "objectType": "LOCK",
+                    "name": "JOC-1850-01",
+                    "configuration": {
+                        "TYPE": "Lock",
+                        "version": "1.0.0",
+                        "limit": 1
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.367+00:00"
+                }
+            },
+            {
+                "draft": true,
+                "item": {
                     "id": 7921,
                     "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
                     "objectType": "WORKFLOW",
@@ -66,626 +595,59 @@
                     "deleted": false,
                     "deployed": false,
                     "released": false,
-                    "configurationDate": "2024-09-27T09:34:36.000+00:00",
-                    "deliveryDate": "2024-10-10T10:03:18.910+00:00"
-                },
-                "references": [
-                    {
-                        "id": 7921,
-                        "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
-                        "objectType": "WORKFLOW",
-                        "name": "JOC-1850-02-sp-copy",
-                        "configuration": {
-                            "TYPE": "Workflow",
-                            "version": "1.0.0",
-                            "timeZone": "Europe/Berlin",
-                            "title": "title stored again",
-                            "jobResourceNames": [
-                                "JOC-1850-02-sp-copy"
-                            ],
-                            "instructions": [
-                                {
-                                    "TYPE": "ExpectNotices",
-                                    "noticeBoardNames": "'JOC-1850-02'"
-                                },
-                                {
-                                    "TYPE": "Lock",
-                                    "lockedWorkflow": {
-                                        "instructions": [
-                                            {
-                                                "TYPE": "Execute.Named",
-                                                "jobName": "job1",
-                                                "label": "job1"
-                                            }
-                                        ]
-                                    },
-                                    "demands": [
-                                        {
-                                            "lockName": "JOC-1850-02"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "jobs": {
-                                "job1": {
-                                    "agentName": "primaryAgent",
-                                    "withSubagentClusterIdExpr": false,
-                                    "executable": {
-                                        "TYPE": "ShellScriptExecutable",
-                                        "script": "#!/bin/bash\n\necho \"hello 2 u\"",
-                                        "v1Compatible": false
-                                    },
-                                    "skipIfNoAdmissionForOrderDay": false,
-                                    "parallelism": 1,
-                                    "graceTimeout": 1,
-                                    "failOnErrWritten": false,
-                                    "warnOnErrWritten": false,
-                                    "jobResourceNames": [
-                                        "JOC-1850-02-sp-copy"
-                                    ],
-                                    "isNotRestartable": false
-                                }
-                            }
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T09:34:36.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.924+00:00"
-                    },
-                    {
-                        "id": 7910,
-                        "path": "/2024/JOC-1850/JOC-1850-01",
-                        "objectType": "LOCK",
-                        "name": "JOC-1850-01",
-                        "configuration": {
-                            "TYPE": "Lock",
-                            "version": "1.0.0",
-                            "limit": 1
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T06:35:25.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.925+00:00"
-                    },
-                    {
-                        "id": 7915,
-                        "path": "/2024/JOC-1850/JOC-1850-01a-sp-copy",
-                        "objectType": "JOBRESOURCE",
-                        "name": "JOC-1850-01a-sp-copy",
-                        "configuration": {
-                            "TYPE": "JobResource",
-                            "version": "1.0.0",
-                            "arguments": {
-                                "a": "\"A\""
-                            },
-                            "env": {
-                                "A": "$a"
-                            }
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T06:31:11.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.927+00:00"
-                    },
-                    {
-                        "id": 7916,
-                        "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
-                        "objectType": "JOBRESOURCE",
-                        "name": "JOC-1850-02-sp-copy",
-                        "configuration": {
-                            "TYPE": "JobResource",
-                            "version": "1.0.0",
-                            "arguments": {
-                                "a": "\"A\""
-                            },
-                            "env": {
-                                "A": "$a"
-                            }
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T06:31:11.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.928+00:00"
-                    },
-                    {
-                        "id": 7911,
-                        "path": "/2024/JOC-1850/JOC-1850-02",
-                        "objectType": "LOCK",
-                        "name": "JOC-1850-02",
-                        "configuration": {
-                            "TYPE": "Lock",
-                            "version": "1.0.0",
-                            "limit": 1
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T09:33:24.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.925+00:00"
-                    },
-                    {
-                        "id": 7912,
-                        "path": "/2024/JOC-1850/JOC-1850-02",
-                        "objectType": "NOTICEBOARD",
-                        "name": "JOC-1850-02",
-                        "configuration": {
-                            "TYPE": "Board",
-                            "postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
-                            "endOfLife": "$js7EpochMilli + 1",
-                            "expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
-                            "version": "1.0.0"
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T09:33:24.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.926+00:00"
-                    }
-                ],
-                "referencedBy": [
-                    {
-                        "id": 7921,
-                        "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
-                        "objectType": "WORKFLOW",
-                        "name": "JOC-1850-02-sp-copy",
-                        "configuration": {
-                            "TYPE": "Workflow",
-                            "version": "1.0.0",
-                            "timeZone": "Europe/Berlin",
-                            "title": "title stored again",
-                            "jobResourceNames": [
-                                "JOC-1850-02-sp-copy"
-                            ],
-                            "instructions": [
-                                {
-                                    "TYPE": "ExpectNotices",
-                                    "noticeBoardNames": "'JOC-1850-02'"
-                                },
-                                {
-                                    "TYPE": "Lock",
-                                    "lockedWorkflow": {
-                                        "instructions": [
-                                            {
-                                                "TYPE": "Execute.Named",
-                                                "jobName": "job1",
-                                                "label": "job1"
-                                            }
-                                        ]
-                                    },
-                                    "demands": [
-                                        {
-                                            "lockName": "JOC-1850-02"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "jobs": {
-                                "job1": {
-                                    "agentName": "primaryAgent",
-                                    "withSubagentClusterIdExpr": false,
-                                    "executable": {
-                                        "TYPE": "ShellScriptExecutable",
-                                        "script": "#!/bin/bash\n\necho \"hello 2 u\"",
-                                        "v1Compatible": false
-                                    },
-                                    "skipIfNoAdmissionForOrderDay": false,
-                                    "parallelism": 1,
-                                    "graceTimeout": 1,
-                                    "failOnErrWritten": false,
-                                    "warnOnErrWritten": false,
-                                    "jobResourceNames": [
-                                        "JOC-1850-02-sp-copy"
-                                    ],
-                                    "isNotRestartable": false
-                                }
-                            }
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T09:34:36.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.913+00:00"
-                    },
-                    {
-                        "id": 7916,
-                        "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
-                        "objectType": "JOBRESOURCE",
-                        "name": "JOC-1850-02-sp-copy",
-                        "configuration": {
-                            "TYPE": "JobResource",
-                            "version": "1.0.0",
-                            "arguments": {
-                                "a": "\"A\""
-                            },
-                            "env": {
-                                "A": "$a"
-                            }
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T06:31:11.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.921+00:00"
-                    },
-                    {
-                        "id": 7911,
-                        "path": "/2024/JOC-1850/JOC-1850-02",
-                        "objectType": "LOCK",
-                        "name": "JOC-1850-02",
-                        "configuration": {
-                            "TYPE": "Lock",
-                            "version": "1.0.0",
-                            "limit": 1
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T09:33:24.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.915+00:00"
-                    },
-                    {
-                        "id": 7912,
-                        "path": "/2024/JOC-1850/JOC-1850-02",
-                        "objectType": "NOTICEBOARD",
-                        "name": "JOC-1850-02",
-                        "configuration": {
-                            "TYPE": "Board",
-                            "postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
-                            "endOfLife": "$js7EpochMilli + 1",
-                            "expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
-                            "version": "1.0.0"
-                        },
-                        "valid": true,
-                        "deleted": false,
-                        "deployed": false,
-                        "released": false,
-                        "configurationDate": "2024-09-27T09:33:24.000+00:00",
-                        "deliveryDate": "2024-10-10T10:03:18.918+00:00"
-                    }
-                ]
-            }
-        ],
-        "affectedItems": [
-            {
-                "id": 7920,
-                "path": "/2024/JOC-1850/JOC-1850-01",
-                "objectType": "WORKFLOW",
-                "name": "JOC-1850-01",
-                "configuration": {
-                    "TYPE": "Workflow",
-                    "version": "1.0.0",
-                    "timeZone": "Europe/Berlin",
-                    "jobResourceNames": [
-                        "JOC-1850-01"
-                    ],
-                    "instructions": [
-                        {
-                            "TYPE": "Lock",
-                            "lockedWorkflow": {
-                                "instructions": [
-                                    {
-                                        "TYPE": "Execute.Named",
-                                        "jobName": "job1",
-                                        "label": "job1"
-                                    }
-                                ]
-                            },
-                            "demands": [
-                                {
-                                    "lockName": "JOC-1850-01"
-                                }
-                            ]
-                        },
-                        {
-                            "TYPE": "PostNotices",
-                            "noticeBoardNames": [
-                                "JOC-1850-02"
-                            ]
-                        },
-                        {
-                            "TYPE": "AddOrder",
-                            "workflowName": "JOC-1850-02",
-                            "remainWhenTerminated": false,
-                            "forceJobAdmission": false
-                        }
-                    ],
-                    "jobs": {
-                        "job1": {
-                            "agentName": "primaryAgent",
-                            "withSubagentClusterIdExpr": false,
-                            "executable": {
-                                "TYPE": "ShellScriptExecutable",
-                                "script": "#!/bin/bash\n\necho \"hello\"",
-                                "v1Compatible": false
-                            },
-                            "skipIfNoAdmissionForOrderDay": false,
-                            "parallelism": 1,
-                            "graceTimeout": 1,
-                            "failOnErrWritten": false,
-                            "warnOnErrWritten": false,
-                            "jobResourceNames": [
-                                "JOC-1850-01"
-                            ],
-                            "isNotRestartable": false
-                        }
-                    }
-                },
-                "valid": true,
-                "deleted": false,
-                "deployed": false,
-                "released": false,
-                "configurationDate": "2024-09-27T06:31:11.000+00:00",
-                "deliveryDate": "2024-10-10T10:03:18.936+00:00"
+                    "configurationDate": "2024-10-16T20:25:44.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.367+00:00"
+                }
             },
             {
-                "id": 7921,
-                "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
-                "objectType": "WORKFLOW",
-                "name": "JOC-1850-02-sp-copy",
-                "configuration": {
-                    "TYPE": "Workflow",
-                    "version": "1.0.0",
-                    "timeZone": "Europe/Berlin",
-                    "title": "title stored again",
-                    "jobResourceNames": [
-                        "JOC-1850-02-sp-copy"
-                    ],
-                    "instructions": [
-                        {
-                            "TYPE": "ExpectNotices",
-                            "noticeBoardNames": "'JOC-1850-02'"
+                "draft": true,
+                "item": {
+                    "id": 7914,
+                    "path": "/2024/JOC-1850/JOC-1850-01",
+                    "objectType": "JOBRESOURCE",
+                    "name": "JOC-1850-01",
+                    "configuration": {
+                        "TYPE": "JobResource",
+                        "version": "1.0.0",
+                        "arguments": {
+                            "a": "\"A1\""
                         },
-                        {
-                            "TYPE": "Lock",
-                            "lockedWorkflow": {
-                                "instructions": [
-                                    {
-                                        "TYPE": "Execute.Named",
-                                        "jobName": "job1",
-                                        "label": "job1"
-                                    }
-                                ]
-                            },
-                            "demands": [
-                                {
-                                    "lockName": "JOC-1850-02"
-                                }
-                            ]
+                        "env": {
+                            "A": "$a"
                         }
-                    ],
-                    "jobs": {
-                        "job1": {
-                            "agentName": "primaryAgent",
-                            "withSubagentClusterIdExpr": false,
-                            "executable": {
-                                "TYPE": "ShellScriptExecutable",
-                                "script": "#!/bin/bash\n\necho \"hello 2 u\"",
-                                "v1Compatible": false
-                            },
-                            "skipIfNoAdmissionForOrderDay": false,
-                            "parallelism": 1,
-                            "graceTimeout": 1,
-                            "failOnErrWritten": false,
-                            "warnOnErrWritten": false,
-                            "jobResourceNames": [
-                                "JOC-1850-02-sp-copy"
-                            ],
-                            "isNotRestartable": false
-                        }
-                    }
-                },
-                "valid": true,
-                "deleted": false,
-                "deployed": false,
-                "released": false,
-                "configurationDate": "2024-09-27T09:34:36.000+00:00",
-                "deliveryDate": "2024-10-10T10:03:18.937+00:00"
-            },
-            {
-                "id": 7919,
-                "path": "/2024/JOC-1850/JOC-1850-01-sp-copy",
-                "objectType": "WORKFLOW",
-                "name": "JOC-1850-01-sp-copy",
-                "configuration": {
-                    "TYPE": "Workflow",
-                    "version": "1.0.0",
-                    "timeZone": "Europe/Berlin",
-                    "title": "test store",
-                    "jobResourceNames": [
-                        "JOC-1850-01a-sp-copy"
-                    ],
-                    "instructions": [
-                        {
-                            "TYPE": "Lock",
-                            "lockedWorkflow": {
-                                "instructions": [
-                                    {
-                                        "TYPE": "Execute.Named",
-                                        "jobName": "job1",
-                                        "label": "job1"
-                                    }
-                                ]
-                            },
-                            "demands": [
-                                {
-                                    "lockName": "JOC-1850-01"
-                                }
-                            ]
-                        },
-                        {
-                            "TYPE": "PostNotices",
-                            "noticeBoardNames": [
-                                "JOC-1850-02"
-                            ]
-                        },
-                        {
-                            "TYPE": "AddOrder",
-                            "workflowName": "JOC-1850-02-sp-copy",
-                            "remainWhenTerminated": false,
-                            "forceJobAdmission": false
-                        }
-                    ],
-                    "jobs": {
-                        "job1": {
-                            "agentName": "primaryAgent",
-                            "withSubagentClusterIdExpr": false,
-                            "executable": {
-                                "TYPE": "ShellScriptExecutable",
-                                "script": "#!/bin/bash\n\necho \"hello\"",
-                                "v1Compatible": false
-                            },
-                            "skipIfNoAdmissionForOrderDay": false,
-                            "parallelism": 1,
-                            "graceTimeout": 1,
-                            "failOnErrWritten": false,
-                            "warnOnErrWritten": false,
-                            "jobResourceNames": [
-                                "JOC-1850-01a-sp-copy"
-                            ],
-                            "isNotRestartable": false
-                        }
-                    }
-                },
-                "valid": true,
-                "deleted": false,
-                "deployed": false,
-                "released": false,
-                "configurationDate": "2024-09-27T09:33:24.000+00:00",
-                "deliveryDate": "2024-10-10T10:03:18.938+00:00"
-            },
-            {
-                "id": 7918,
-                "path": "/2024/JOC-1850/JOC-1850-02",
-                "objectType": "WORKFLOW",
-                "name": "JOC-1850-02",
-                "configuration": {
-                    "TYPE": "Workflow",
-                    "version": "1.0.0",
-                    "timeZone": "Europe/Berlin",
-                    "jobResourceNames": [
-                        "JOC-1850-02"
-                    ],
-                    "instructions": [
-                        {
-                            "TYPE": "ExpectNotices",
-                            "noticeBoardNames": "'JOC-1850-02'"
-                        },
-                        {
-                            "TYPE": "Lock",
-                            "lockedWorkflow": {
-                                "instructions": [
-                                    {
-                                        "TYPE": "Execute.Named",
-                                        "jobName": "job1",
-                                        "label": "job1"
-                                    }
-                                ]
-                            },
-                            "demands": [
-                                {
-                                    "lockName": "JOC-1850-02"
-                                }
-                            ]
-                        }
-                    ],
-                    "jobs": {
-                        "job1": {
-                            "agentName": "primaryAgent",
-                            "withSubagentClusterIdExpr": false,
-                            "executable": {
-                                "TYPE": "ShellScriptExecutable",
-                                "script": "#!/bin/bash\n\necho \"hello\"",
-                                "v1Compatible": false
-                            },
-                            "skipIfNoAdmissionForOrderDay": false,
-                            "parallelism": 1,
-                            "graceTimeout": 1,
-                            "failOnErrWritten": false,
-                            "warnOnErrWritten": false,
-                            "jobResourceNames": [
-                                "JOC-1850-02"
-                            ],
-                            "isNotRestartable": false
-                        }
-                    }
-                },
-                "valid": true,
-                "deleted": false,
-                "deployed": false,
-                "released": false,
-                "configurationDate": "2024-09-27T06:31:11.000+00:00",
-                "deliveryDate": "2024-10-10T10:03:18.938+00:00"
-            },
-            {
-                "id": 7916,
-                "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
-                "objectType": "JOBRESOURCE",
-                "name": "JOC-1850-02-sp-copy",
-                "configuration": {
-                    "TYPE": "JobResource",
-                    "version": "1.0.0",
-                    "arguments": {
-                        "a": "\"A\""
                     },
-                    "env": {
-                        "A": "$a"
-                    }
-                },
-                "valid": true,
-                "deleted": false,
-                "deployed": false,
-                "released": false,
-                "configurationDate": "2024-09-27T06:31:11.000+00:00",
-                "deliveryDate": "2024-10-10T10:03:18.937+00:00"
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-10-15T11:04:35.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.367+00:00"
+                }
             },
             {
-                "id": 7911,
-                "path": "/2024/JOC-1850/JOC-1850-02",
-                "objectType": "LOCK",
-                "name": "JOC-1850-02",
-                "configuration": {
-                    "TYPE": "Lock",
-                    "version": "1.0.0",
-                    "limit": 1
-                },
-                "valid": true,
-                "deleted": false,
-                "deployed": false,
-                "released": false,
-                "configurationDate": "2024-09-27T09:33:24.000+00:00",
-                "deliveryDate": "2024-10-10T10:03:18.937+00:00"
-            },
-            {
-                "id": 7912,
-                "path": "/2024/JOC-1850/JOC-1850-02",
-                "objectType": "NOTICEBOARD",
-                "name": "JOC-1850-02",
-                "configuration": {
-                    "TYPE": "Board",
-                    "postOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
-                    "endOfLife": "$js7EpochMilli + 1",
-                    "expectOrderToNoticeId": "replaceAll($js7OrderId, '^#([0-9]{4}-[0-9]{2}-[0-9]{2})#.*$', '$1')",
-                    "version": "1.0.0"
-                },
-                "valid": true,
-                "deleted": false,
-                "deployed": false,
-                "released": false,
-                "configurationDate": "2024-09-27T09:33:24.000+00:00",
-                "deliveryDate": "2024-10-10T10:03:18.937+00:00"
+                "draft": true,
+                "item": {
+                    "id": 7916,
+                    "path": "/2024/JOC-1850/JOC-1850-02-sp-copy",
+                    "objectType": "JOBRESOURCE",
+                    "name": "JOC-1850-02-sp-copy",
+                    "configuration": {
+                        "TYPE": "JobResource",
+                        "version": "1.0.0",
+                        "arguments": {
+                            "a": "\"A\""
+                        },
+                        "env": {
+                            "A": "$a"
+                        }
+                    },
+                    "valid": true,
+                    "deleted": false,
+                    "deployed": false,
+                    "released": false,
+                    "configurationDate": "2024-09-27T06:31:11.000+00:00",
+                    "deliveryDate": "2024-10-17T13:10:07.367+00:00"
+                }
             }
         ]
     }
