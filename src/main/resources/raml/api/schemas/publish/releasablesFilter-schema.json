@@ -17,13 +17,13 @@
     "draftConfigurations": {
       "type" : "array",
       "items" : {
-        "$ref": "config-schema.json"
+        "$ref": "configReleasables-schema.json"
       }
     },
     "releasedConfigurations": {
       "type" : "array",
       "items" : {
-        "$ref": "config-schema.json"
+        "$ref": "configReleasables-schema.json"
       }
     },
     "withoutInvalid": {
