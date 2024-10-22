@@ -21,7 +21,10 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "name",
     "path",
-    "objectType"
+    "objectType",
+    "valid",
+    "deployed",
+    "released"
 })
 public class ChangeItem {
 
@@ -29,6 +32,7 @@ public class ChangeItem {
      * string without < and >
      * <p>
      * 
+     * (Required)
      * 
      */
     @JsonProperty("name")
@@ -46,15 +50,23 @@ public class ChangeItem {
      * configuration types
      * <p>
      * 
+     * (Required)
      * 
      */
     @JsonProperty("objectType")
     private ConfigurationType objectType;
+    @JsonProperty("valid")
+    private Boolean valid = false;
+    @JsonProperty("deployed")
+    private Boolean deployed = false;
+    @JsonProperty("released")
+    private Boolean released = false;
 
     /**
      * string without < and >
      * <p>
      * 
+     * (Required)
      * 
      */
     @JsonProperty("name")
@@ -66,6 +78,7 @@ public class ChangeItem {
      * string without < and >
      * <p>
      * 
+     * (Required)
      * 
      */
     @JsonProperty("name")
@@ -99,6 +112,7 @@ public class ChangeItem {
      * configuration types
      * <p>
      * 
+     * (Required)
      * 
      */
     @JsonProperty("objectType")
@@ -110,6 +124,7 @@ public class ChangeItem {
      * configuration types
      * <p>
      * 
+     * (Required)
      * 
      */
     @JsonProperty("objectType")
@@ -117,10 +132,36 @@ public class ChangeItem {
         this.objectType = objectType;
     }
 
-    public void setObjectType(Integer type) {
-        this.objectType = ConfigurationType.fromValue(type);
+    @JsonProperty("valid")
+    public Boolean getValid() {
+        return valid;
     }
-    
+
+    @JsonProperty("valid")
+    public void setValid(Boolean valid) {
+        this.valid = valid;
+    }
+
+    @JsonProperty("deployed")
+    public Boolean getDeployed() {
+        return deployed;
+    }
+
+    @JsonProperty("deployed")
+    public void setDeployed(Boolean deployed) {
+        this.deployed = deployed;
+    }
+
+    @JsonProperty("released")
+    public Boolean getReleased() {
+        return released;
+    }
+
+    @JsonProperty("released")
+    public void setReleased(Boolean released) {
+        this.released = released;
+    }
+
     // default and specific constructors added manually
     public ChangeItem() {
         
@@ -132,14 +173,23 @@ public class ChangeItem {
         this.objectType = ConfigurationType.fromValue(type);
     }
     
+    public ChangeItem(String name, String path, Integer type, Boolean valid, Boolean deployed, Boolean released) {
+        this.name = name;
+        this.path = path;
+        this.objectType = ConfigurationType.fromValue(type);
+        this.valid = valid;
+        this.deployed = deployed;
+        this.released = released;
+    }
+    
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("name", name).append("path", path).append("objectType", objectType).toString();
+        return new ToStringBuilder(this).append("name", name).append("path", path).append("objectType", objectType).append("valid", valid).append("deployed", deployed).append("released", released).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(path).append(objectType).toHashCode();
+        return new HashCodeBuilder().append(path).append(name).append(objectType).toHashCode();
     }
 
     @Override
@@ -151,7 +201,7 @@ public class ChangeItem {
             return false;
         }
         ChangeItem rhs = ((ChangeItem) other);
-        return new EqualsBuilder().append(name, rhs.name).append(path, rhs.path).append(objectType, rhs.objectType).isEquals();
+        return new EqualsBuilder().append(path, rhs.path).append(name, rhs.name).append(objectType, rhs.objectType).isEquals();
     }
 
 }

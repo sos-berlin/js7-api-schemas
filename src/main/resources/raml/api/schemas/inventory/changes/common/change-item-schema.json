@@ -16,6 +16,18 @@
         },
         "objectType": {
             "$ref": "../../common/configurationType-schema.json"
+        },
+        "valid": {
+            "type": "boolean",
+            "default": false
+        },
+        "deployed": {
+            "type": "boolean",
+            "default": false
+        },
+        "released": {
+            "type": "boolean",
+            "default": false
         }
     },
     "additionalProperties": false
