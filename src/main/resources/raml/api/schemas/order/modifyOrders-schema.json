@@ -59,6 +59,16 @@
             "type": "boolean",
             "default": false
         },
+		"force": {
+			"description": "only relevant for 'resume'; force execution of non-startable jobs after kill",
+            "type": "boolean",
+            "default": false
+        },
+        "fromCurrentBlock": {
+			"description": "only relevant for 'resume'",
+            "type": "boolean",
+            "default": false
+        },
         "position": {
 			"anyOf": [
 				{"$ref": "../../../controller/schemas/common/position-schema.json"},
