@@ -12,7 +12,7 @@
       "$ref": "../common/path-schema.json"
     },
     "objectType": {
-      "$ref": "../inventory/common/configurationTypeReleasables-schema.json"
+      "$ref": "../inventory/common/configurationTypeReleasablesWithFolder-schema.json"
     },
     "commitId": {
       "$ref": "../common/string255-schema.json"
