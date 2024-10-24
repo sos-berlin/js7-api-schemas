@@ -1,4 +1,5 @@
 {   
+    "operationType":"DEPLOY",
     "configurations" : [
         {
             "name":"lock_test",

@@ -1,4 +1,19 @@
 <tr>
+<td>``operationType``</td>
+<td>optional, enum</td>
+<td>An enum to set the desired operation the dependencies api is called for. available types are: <ul>
+    <li>"DEPLOY"</li>
+    <li>"RELEASE"</li>
+    <li>"REVOKE"</li>
+    <li>"RECALL"</li>
+    <li>"REMOVE"</li>
+    <li>"EXPORT"</li>
+    <li>"GIT"</li>
+    </ul></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>``configurations``</td>
 <td>required, array</td>
 <td>An array of configuration objects either specified by ``name`` and ``type`` the technical dependencies are shown for.</td>
