@@ -31,11 +31,11 @@
         "$ref": "operation-schema.json"
       }
     },
-     "numOfFilesFrom": {
-      "$ref": "../common/nonNegativeInteger-schema.json"
+    "numOfFilesFrom": {
+      "$ref": "../common/nonNegativeLong-schema.json"
     },
     "numOfFilesTo": {
-      "$ref": "../common/nonNegativeInteger-schema.json"
+      "$ref": "../common/nonNegativeLong-schema.json"
     },
     "dateFrom": {
       "$ref": "../common/dateFromTo-schema.json"
