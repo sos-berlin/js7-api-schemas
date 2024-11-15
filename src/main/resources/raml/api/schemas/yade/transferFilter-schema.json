@@ -31,6 +31,12 @@
         "$ref": "operation-schema.json"
       }
     },
+     "numOfFilesFrom": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "numOfFilesTo": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
     "dateFrom": {
       "$ref": "../common/dateFromTo-schema.json"
     },
