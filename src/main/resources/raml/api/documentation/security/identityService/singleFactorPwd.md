@@ -1,1 +1,0 @@
-<tr><td>``singleFactorPwd``</td><td>optional, boolean</td><td>When the identity service scheme is SINGLE-FACTOR whether a passoword will authenticate the account.</td><td>false</td><td>false</td></tr>

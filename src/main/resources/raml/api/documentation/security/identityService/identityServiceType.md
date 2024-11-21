@@ -1,13 +1,15 @@
 <tr><td>``identityServiceType``</td><td>required, enum</td>
 <td>The type of the idendityService
 <ul>
-<li>SHIRO</li>
-<li>VAULT</li>
-<li>VAULT-JOC</li>
-<li>VAULT-JOC-ACTIVE</li>
+<li>KEYCLOAK</li>
+<li>KEYCLOAK-JOC</li>
 <li>LDAP</li>
 <li>LDAP-JOC</li>
+<li>OIDC</li>
+<li>OIDC-JOC</li>
+<li>FIDO</li>
 <li>JOC</li>
+<li>CERTIFICATE</li>
 </ul>
-</td><td>VAULT</td><td></td></tr>
+</td><td>LDAP</td><td></td></tr>
     

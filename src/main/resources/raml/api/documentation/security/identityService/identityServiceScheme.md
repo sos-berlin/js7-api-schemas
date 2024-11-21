@@ -1,5 +1,5 @@
 <tr><td>``identityServiceScheme``</td><td>required, enum</td>
-<td>The scheme of the idendityService
+<td>Whether a second factor is used when authenticate with this identity service
 <ul>
 <li>SINGLE-FACTOR</li>
 <li>TWO-FACTOR</li>

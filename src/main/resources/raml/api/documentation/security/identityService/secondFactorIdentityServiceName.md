@@ -1,0 +1,1 @@
+<tr><td>``secondFactorIdentityServiceName``</td><td>optional, string</td><td>Then name of the identity service that should be used as the second factor (when identityServiceAuthenticationScheme=TWO-FACTOR)</td><td>myNewIdentityservice</td><td></td></tr>
