@@ -284,14 +284,6 @@ traits:
           schema: !include api/schemas/agent/storeSubagentClusters-schema.json
           example: " "
           
-
-
-
-
-
-
-
-
   /export:
     type:
       postForExport:
@@ -330,6 +322,23 @@ traits:
         example: !include api/examples/controller/controllerParam-example.json
         example200: !include api/examples/agent/agents_p-example.json
         
+    /add:
+      type:
+        postJSONWithOkResponse:
+          description: Adds standalone Agents
+          description1: !include api/documentation/agent/agents.md
+          description2: !include api/documentation/audit/auditLog.md
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/agent/storeParam-schema.json
+          example: !include api/examples/agent/store-example.json
+          
     /cluster:
       type:
         postJSONWithOptionalJSId:
@@ -371,6 +380,23 @@ traits:
       #      schema: !include api/schemas/agent/deployClusterAgents-schema.json
       #      example: " "
 
+      /add:
+        type:
+          postJSONWithOkResponse:
+            description: Add Cluster Agents
+            description1: !include api/documentation/agent/clusterAgents.md
+            description2: " "
+            description3: " "
+            description4: " "
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description9: !include api/documentation/audit/auditLog.md
+            description10: " "
+            schema: !include api/schemas/agent/storeClusterParam-schema.json
+            example: " "
+            
       /deploy:
         type:
           postJSONWithOkResponse:
@@ -442,6 +468,23 @@ traits:
               example: " "
         
       /subagents:
+        /add:
+          type:
+            postJSONWithOkResponse:
+              description: Adds Subagents to a Cluster Agent
+              description1: !include api/documentation/agent/agentId.md
+              description2: !include api/documentation/agent/subAgents.md
+              description3: " "
+              description4: " "
+              description5: " "
+              description6: " "
+              description7: " "
+              description8: " "
+              description9: !include api/documentation/audit/auditLog.md
+              description10: " "
+              schema: !include api/schemas/agent/storeSubagentsParam-schema.json
+              example: " "
+              
         /delete:
           type:
             postJSONWithOkResponse:
