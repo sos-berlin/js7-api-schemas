@@ -4,9 +4,13 @@
   "javaType": "com.sos.joc.model.agent.OrderingSubagentClusters",
   "type": "object",
   "required": [
+  	"controllerid",
   	"subagentClusterId"
   ],
   "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerIdRequired-schema.json"
+    },
     "subagentClusterId": {
       "$ref": "../common/string255required-schema.json"
     },
