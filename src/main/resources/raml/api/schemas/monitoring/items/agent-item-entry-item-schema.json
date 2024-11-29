@@ -16,6 +16,9 @@
 		},
 		"lastKnownTime": {
 			"$ref": "../../common/timestamp-schema.json"
+		},
+		"source": {
+			"$ref": "agent-item-entry-item-source-schema.json"
 		}
 	}
 }

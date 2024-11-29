@@ -1,0 +1,14 @@
+{
+	"title": "origin of item properties",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.AgentItemEntryItemSource",
+	"type": "object",
+	"properties": {
+		"item": {
+			"$ref": "enums/entryItemSource-schema.json"
+		},
+		"totalRunningTime": {
+			"$ref": "enums/totalRunningTimeSource-schema.json"
+		}
+	}
+}

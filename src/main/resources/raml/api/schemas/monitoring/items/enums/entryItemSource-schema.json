@@ -1,0 +1,18 @@
+{
+	"title": "Origin of the entry",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.enums.EntryItemSource",
+	"type": "string",
+	"enum": [
+		"history",
+		"historyNotInInventory",
+		"inventory",
+		"webservice"
+	],
+	"javaEnumNames": [
+		"history",
+		"historyNotInInventory",
+		"inventory",
+		"webservice"
+	]
+}
