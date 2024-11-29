@@ -1,0 +1,22 @@
+{
+	"title": "Origin of the lastKnownTime",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.monitoring.enums.TotalRunningTimeSource",
+	"type": "string",
+	"enum": [
+		"estimated",
+		"dateFrom",
+		"dateTo",		
+		"nextReadyTime",
+		"now",
+		"shutdown"
+	],
+	"javaEnumNames": [
+		"estimated",
+		"dateFrom",
+		"dateTo",		
+		"nextReadyTime",
+		"now",
+		"shutdown"
+	]
+}
