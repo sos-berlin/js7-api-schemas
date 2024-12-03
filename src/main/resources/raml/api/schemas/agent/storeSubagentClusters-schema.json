@@ -14,6 +14,11 @@
     		"$ref": "subagentCluster-schema.json"
     	}
     },
+    "update": {
+      "desription": "if true than agents can only be updated",
+      "type": "boolean",
+      "default": false
+    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }
