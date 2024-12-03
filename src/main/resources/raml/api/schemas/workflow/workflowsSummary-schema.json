@@ -1,0 +1,21 @@
+{
+  "title": "workflow summary",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowsSummary",
+  "type": "object",
+  "properties": {
+    "notSynchronized": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "synchronized": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "suspended": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    },
+    "outstanding": {
+      "$ref": "../common/nonNegativeInteger-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

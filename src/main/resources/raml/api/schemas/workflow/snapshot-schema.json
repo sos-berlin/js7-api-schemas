@@ -1,0 +1,21 @@
+{
+  "title": "workflow overview snapshot",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowsSnapshot",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "surveyDate"
+  ],
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "workflows": {
+      "$ref": "workflowsSummary-schema.json"
+    }
+  }
+}

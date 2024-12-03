@@ -5870,6 +5870,20 @@ traits:
         example: !include api/examples/workflow/orderCount-example.json
         example200: !include api/examples/workflow/orderCount-response-example.json
         
+  /overview/snapshot:
+    type:
+      postOnlyId:
+        description: |
+            Summary with number of<h5>
+            * Not synchronized workflows
+            * Synchronized workflows
+            * Suspended workflows
+            * Outstanding workflows
+            </h5>
+        description200: " "
+        schema200: !include api/schemas/workflow/snapshot-schema.json
+        example200: TODO
+        
   /quick/search:
     type:
       postJSON:
