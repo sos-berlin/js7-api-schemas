@@ -1,0 +1,10 @@
+{
+    "deliveryDate": "2024-12-03T15:50:02.101+00:00",
+    "surveyDate": "2024-12-02T19:26:46.807+00:00",
+    "workflows": {
+        "notSynchronized": 65,
+        "synchronized": 19,
+        "suspended": 1,
+        "outstanding": 0
+    }
+}
