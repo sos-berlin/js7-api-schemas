@@ -19,7 +19,7 @@
     	}
     },
     "update": {
-      "desription": "if true than agents can only be updated", 
+      "description": "if true than agents can only be updated", 
       "type": "boolean",
       "default": false
     },
