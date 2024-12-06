@@ -41,8 +41,9 @@ import com.sos.joc.model.common.IDeployObject;
 	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobclass.JobClassPublish.class, name = "JobClass"),
 	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.jobresource.JobResourcePublish.class, name = "JobResource"),
 	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.lock.LockPublish.class, name = "Lock"),
-	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.board.BoardPublish.class, name = "Board"),
-    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.fileordersource.FileOrderSourcePublish.class, name = "FileWatch")})
+	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.board.BoardPublish.class, name = "PlannableBoard"),
+    @JsonSubTypes.Type(value = com.sos.joc.model.inventory.board.BoardPublish.class, name = "Board"),
+	@JsonSubTypes.Type(value = com.sos.joc.model.inventory.fileordersource.FileOrderSourcePublish.class, name = "FileWatch")})
 public class ControllerObject {
 
     /**
