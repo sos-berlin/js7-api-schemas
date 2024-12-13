@@ -1,7 +1,7 @@
 {
   "title": "Ex-/Import schema for inventory object references for tag items",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.tag.ExportedTagItems",
+  "javaType": "com.sos.joc.model.tag.ExportedTaggedObject",
   "type": "object",
   "required": [
     "name",

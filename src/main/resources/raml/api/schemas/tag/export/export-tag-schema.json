@@ -12,6 +12,12 @@
         "items": {
             "$ref": "export-tagitem-schema.json"
         }     
+    },
+    "jobTags": {
+        "type": "array",
+        "items": {
+            "$ref": "export-jobTagitem-schema.json"
+        }     
     }
   },
   "additionalProperties": false

@@ -1,0 +1,26 @@
+{
+  "title": "Ex-/Import schema for job tags",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.tag.ExportedJobTagItem",
+  "type": "object",
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+        "$ref": "../../common/string255required-schema.json"
+    },
+    "jobs": {
+        "type": "object",
+        "javaType": "com.sos.joc.model.tag.ExportedJobTagItems",
+        "additionalProperties": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"   
+            }   
+        }
+    }
+  },
+  "additionalProperties": false
+}
