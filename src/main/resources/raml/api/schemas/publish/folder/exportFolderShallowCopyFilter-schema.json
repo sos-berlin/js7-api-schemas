@@ -3,13 +3,14 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.publish.folder.ExportFolderShallowCopy",
 	"type": "object",
-  "required": [
+    "required": [
       "objectTypes",
       "folders"
-  ],
- 	"properties": {
+    ],
+	"properties": {
     "objectTypes" : {
       "type" : "array",
+      "uniqueItems": true,
       "items" : {
         "$ref": "../../inventory/common/configurationType-schema.json"
       }
