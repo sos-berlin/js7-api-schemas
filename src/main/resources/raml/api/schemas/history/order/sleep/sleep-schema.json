@@ -1,0 +1,12 @@
+{
+	"title": "sleep",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.history.order.sleep.Sleep",
+	"type": "object",
+	"properties": {
+		"until": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

@@ -165,7 +165,10 @@
 		},
 		"orderAdded": {
 			"$ref": "added/orderAdded-schema.json"
-		}
+		},
+        "sleep": {
+            "$ref": "sleep/sleep-schema.json"
+        }
 	},
 	"additionalProperties": false
 }
