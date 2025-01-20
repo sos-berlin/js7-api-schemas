@@ -1,0 +1,14 @@
+{
+  	"title": "OrderSleepState",
+  	"$schema": "http://json-schema.org/draft-04/schema#",
+  	"type": "object",
+	"javaType": "com.sos.controller.model.order.OrderSleepState",
+	"description": "set if state == OrderSleeping",
+	"properties": {
+		"until": {
+			"$ref": "../common/timestamp-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+ 

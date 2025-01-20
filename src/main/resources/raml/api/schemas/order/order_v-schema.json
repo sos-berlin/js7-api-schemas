@@ -45,6 +45,9 @@
 	"retryState": {
         "$ref": "../../../controller/schemas/order/orderRetryState-schema.json"
     },
+    "sleepState": {
+        "$ref": "../../../controller/schemas/order/orderSleepState-schema.json"
+    },
     "expectedNotices": {
 		"description": "if state._reason == EXPECTING_NOTICES",
 		"type": "array",

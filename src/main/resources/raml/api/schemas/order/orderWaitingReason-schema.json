@@ -13,7 +13,8 @@
             "JOB_PROCESS_LIMIT_REACHED",
             "AGENT_PROCESS_LIMIT_REACHED",
             "WORKFLOW_IS_SUSPENDED",
-            "BETWEEN_CYCLES"
+            "BETWEEN_CYCLES",
+            "SLEEPING"
   ]
 }
 
