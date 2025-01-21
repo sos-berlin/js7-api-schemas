@@ -6,7 +6,7 @@
 	"description": "set if state == DelayedAfterError",
 	"properties": {
 		"next": {
-			"$ref": "../common/timestamp-schema.json"
+			"$ref": "../../../api/schemas/common/timestamp-schema.json"
 		},
 		"attempt": {
 			"type": "integer",

@@ -18,8 +18,8 @@
 			"$ref": "orderCycleState-schema.json"
 		},
         "until": {
-            "description": "set if state == DelayedAfterError",
-            "$ref": "../common/timestamp-schema.json"
+            "description": "set if state == DelayedAfterError or Sleeping",
+            "$ref": "../../../api/schemas/common/timestamp-schema.json"
         },
 		"subagentId": {
 			"type": "string"

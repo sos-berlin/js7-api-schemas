@@ -6,7 +6,7 @@
 	"description": "set if state == OrderSleeping",
 	"properties": {
 		"until": {
-			"$ref": "../common/timestamp-schema.json"
+			"$ref": "../../../api/schemas/common/timestamp-schema.json"
 		}
 	},
 	"additionalProperties": false

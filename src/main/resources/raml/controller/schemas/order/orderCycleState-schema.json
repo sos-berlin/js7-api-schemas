@@ -7,11 +7,11 @@
 	"properties": {
 		"next": {
 			"description": "set if state == BetweenCycles",
-			"$ref": "../common/timestamp-schema.json"
+			"$ref": "../../../api/schemas/common/timestamp-schema.json"
 		},
 		"since": {
 			"description": "set if processing inside a cycle",
-			"$ref": "../common/timestamp-schema.json"
+			"$ref": "../../../api/schemas/common/timestamp-schema.json"
 		},
 		"index": {
 			"type": "integer"
