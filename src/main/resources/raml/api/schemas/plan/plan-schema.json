@@ -1,0 +1,32 @@
+{
+	"title": "Plan",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.plan.Plan",
+	"type": "object",
+	"required": [
+		"planId",
+		"closed"
+	],
+	"properties": {
+		"planId": {
+			"$ref": "planId-schema.json"
+		},
+        "orderIds": {
+            "type": "array",
+            "items": {
+                "$ref": "../common/string255-schema.json"   
+            }
+        },
+        "closed": {
+            "type": "boolean",
+            "default": false
+        },
+        "noticeBoards": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../controller/schemas/board/board-schema.json"
+            }
+        }
+	},
+	"additionalProperties": false
+}

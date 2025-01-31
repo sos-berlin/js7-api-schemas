@@ -5,10 +5,13 @@
   "type": "object",
   "required" : [
     "id",
-    "endOfLife"
+    "key"
   ],
   "properties": {
     "id": {
+      "$ref": "../../../api/schemas/common/string255required-schema.json"
+    },
+    "key": {
       "$ref": "../../../api/schemas/common/string255required-schema.json"
     },
     "endOfLife": {
