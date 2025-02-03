@@ -16,6 +16,22 @@
             "items": {
                 "$ref": "planSchemaId-schema.json"
             }
+        },
+        "planKeys": {
+            "description": "Will be ignored for global schema bacause it has no plan keys",
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../common/string255-schema.json"
+            }
+        },
+        "onlyOpenPlans": {
+            "type": "boolean",
+            "default": false   
+        },
+        "onlyClosedPlans": {
+            "type": "boolean",
+            "default": false   
         }
     },
     "additionalProperties": false
