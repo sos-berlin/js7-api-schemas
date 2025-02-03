@@ -13,7 +13,8 @@
     "apiVersion",
     "inventoryVersion",
     "displayFoldersInViews",
-    "jocVersion"
+    "jocVersion",
+    "kioskRole"
   ],
   "properties": {
     "deliveryDate": {
@@ -136,6 +137,10 @@
     },
     "licenseType": {
       "$ref": "licenseType-schema.json"
+    },
+    "kioskRole": {
+      "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }
