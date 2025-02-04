@@ -1,0 +1,71 @@
+{
+    "deliveryDate": "2025-02-03T14:25:10.945+00:00",
+    "surveyDate": "2025-02-03T10:53:47.004+00:00",
+    "plans": [
+        {
+            "planId": {
+                "planKey": "2025-01-29",
+                "planSchemaId": "DailyPlan"
+            },
+            "orders": [
+                {
+                    "orderId": "#2025-01-29#T15082835302-root",
+                    "workflowId": {
+                        "path": "/JS-2145/wTest",
+                        "versionId": "5ea6d870-d5a8-4531-88a4-f61da3e0de6d"
+                    },
+                    "state": {
+                        "severity": 5,
+                        "_text": "SUSPENDED"
+                    },
+                    "label": "job",
+                    "position": [
+                        0
+                    ],
+                    "positionString": "0",
+                    "scheduledFor": 1738147228353,
+                    "scheduledNever": false,
+                    "isResumable": true
+                },
+                {
+                    "orderId": "#2025-01-29#T14878603101-test1",
+                    "workflowId": {
+                        "path": "/JS-2100/wPlannablePost",
+                        "versionId": "8f284f55-5c42-4be3-91b9-6eb4db3e643f"
+                    },
+                    "state": {
+                        "severity": 5,
+                        "_text": "SUSPENDED"
+                    },
+                    "position": [
+                        1
+                    ],
+                    "positionString": "1",
+                    "scheduledFor": 1738145186031,
+                    "scheduledNever": false,
+                    "isResumable": true
+                }
+            ],
+            "closed": false,
+            "noticeBoards": [
+                {
+                    "path": "/oh/bPlannable1",
+                    "versionDate": "2025-02-03T10:50:42.000+00:00",
+                    "numOfNotices": 1,
+                    "notices": [
+                        {
+                            "id": "DailyPlan╱2025-01-29╱—",
+                            "key": "",
+                            "state": {
+                                "severity": 4,
+                                "_text": "ANNOUNCED"
+                            }
+                        }
+                    ],
+                    "TYPE": "Board",
+                    "boardType": "PLANNABLE"
+                }
+            ]
+        }
+    ]
+}

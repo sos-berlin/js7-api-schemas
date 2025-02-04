@@ -18,7 +18,7 @@
             }
         },
         "planKeys": {
-            "description": "Will be ignored for global schema bacause it has no plan keys",
+            "description": "Will be ignored for global schema because it has no plan keys",
             "type": "array",
             "uniqueItems": true,
             "items": {
