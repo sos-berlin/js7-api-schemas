@@ -39,6 +39,9 @@
 	"subagentId": {
 		"type": "string"
 	},
+    "planId": {
+        "$ref": "../plan/planId-schema.json"
+    },
 	"cycleState": {
 		"$ref": "../../../controller/schemas/order/orderCycleState-schema.json"
 	},

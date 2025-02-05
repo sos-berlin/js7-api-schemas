@@ -4873,14 +4873,33 @@ traits:
         cycleParam: !include api/documentation/order/reset.md
         audit: !include api/documentation/audit/auditLog.md
         
-        
+/plans:
+  type:
+    postJSON:
+      description: Gets plans
+      description1: !include api/documentation/plan/planSchemaIds.md
+      description2: !include api/documentation/plan/planKeys.md
+      description3: !include api/documentation/plan/closed.md
+      description4: " "
+      description5: " "
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: TODO
+      schema: !include api/schemas/plan/plansFilter-schema.json
+      schema200: !include api/schemas/plan/plans-schema.json
+      example: !include api/examples/plan/plans-request-example.json
+      example200: !include api/examples/plan/plans-example.json        
+
 /profile:
   description: This is not an API call. Use child urls instead!
 
   /prefs:
     type:
       postJSON:
-        description: gets the preferences from the profile in JSON format 
+        description: Gets the preferences from the profile in JSON format 
         description1: !include api/documentation/security/account/accountName.md
         schema: !include api/schemas/profile/profileFilter-schema.json
         schema200: !include api/schemas/profile/profile-schema.json
@@ -4895,14 +4914,14 @@ traits:
   /ca:
     type:
       postWithoutJSONandJSId:
-        description: gets the stored CAs ECDSA private key and X509 certificate
+        description: Gets the stored CAs ECDSA private key and X509 certificate
         schema200: !include api/schemas/sign/jocKeyPair-schema.json
         example200: !include api/examples/publish/showKey-example.json
 
     /generate:
       type:
         postForGenerateKey:
-          description: generates and stores a new CA ECDSA private key and a X509 certificate
+          description: Generates and stores a new CA ECDSA private key and a X509 certificate
           description1: !include api/documentation/publish/generateRootCA.md
           description2: " "
           audit: !include api/documentation/audit/auditLog.md
@@ -4924,7 +4943,7 @@ traits:
     /store:
       type:
         postJSONWithOkWithoutJSId:
-          description: stores a new CAs ECDSA private key and/or a X509 certificate (PEM format only)
+          description: Stores a new CAs ECDSA private key and/or a X509 certificate (PEM format only)
           description1: !include api/documentation/publish/setECPrivateKey.md
           description2: !include api/documentation/publish/setRootCaCertificate.md
           description3: " "
@@ -4937,21 +4956,21 @@ traits:
   /key:
     type:
       postWithoutJSONandJSId:
-        description: gets the stored public key or certificate (SecurityLevel HIGH) or the public key/certificate and private key (SecurityLevel LOW and MEDIUM)
+        description: Gets the stored public key or certificate (SecurityLevel HIGH) or the public key/certificate and private key (SecurityLevel LOW and MEDIUM)
         schema200: !include api/schemas/sign/jocKeyPair-schema.json
         example200: !include api/examples/publish/showKey-example.json
 
     /ca:
       type:
         postWithoutJSONandJSId:
-          description: gets the stored signing CAs X509 certificate
+          description: Gets the stored signing CAs X509 certificate
           schema200: !include api/schemas/sign/jocKeyPair-schema.json
           example200: !include api/examples/publish/showKey-example.json
 
       /delete:
         type:
           postWithoutJSONandJSId:
-            description: deletes the active CA Certificate from the Signature Key Management of the current profile
+            description: Deletes the active CA Certificate from the Signature Key Management of the current profile
             schema200: !include api/examples/publish/emptyBody-example.json
             example200: !include api/examples/publish/emptyBody-example.json
 
@@ -4967,7 +4986,7 @@ traits:
       /store:
         type:
           postJSONWithOkWithoutJSId:
-            description: stores a new signing CAs X509 certificate (PEM format only)
+            description: Stores a new signing CAs X509 certificate (PEM format only)
             description1: !include api/documentation/publish/setRootCaCertificate.md
             description2: " "
             description3: " "
@@ -4980,14 +4999,14 @@ traits:
     /delete:
       type:
         postWithoutJSONandJSId:
-          description: deletes the Key and Certificate from the Signature Key Management of the current profile
+          description: Deletes the Key and Certificate from the Signature Key Management of the current profile
           schema200: !include api/examples/publish/emptyBody-example.json
           example200: !include api/examples/publish/emptyBody-example.json
 
     /generate:
       type:
         postForGenerateKey:
-          description: generates and stores a new private key (only for SecurityLevel LOW and MEDIUM)
+          description: Generates and stores a new private key (only for SecurityLevel LOW and MEDIUM)
           description1: !include api/documentation/publish/generateKey.md
           description2: " "
           audit: !include api/documentation/audit/auditLog.md
@@ -5008,7 +5027,7 @@ traits:
     /store:
       type:
         postJSONWithOkWithoutJSId:
-          description: stores a new Public Key, a Certificate or Private key (ASCII format only)
+          description: Stores a new Public Key, a Certificate or Private key (ASCII format only)
           description1: !include api/documentation/publish/setKey.md
           description2: !include api/documentation/publish/setPrivateKey.md
           description3: !include api/documentation/publish/setPublicKey.md
