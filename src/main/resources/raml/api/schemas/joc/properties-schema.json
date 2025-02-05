@@ -14,7 +14,8 @@
     "inventoryVersion",
     "displayFoldersInViews",
     "jocVersion",
-    "kioskRole"
+    "kioskRole",
+    "kioskViews"
   ],
   "properties": {
     "deliveryDate": {
@@ -97,7 +98,8 @@
         "report": {
           "type": "boolean"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "displayFoldersInViews":  {
       "type": "boolean",
@@ -140,6 +142,13 @@
     },
     "kioskRole": {
       "type": "string"
+    },
+    "kioskViews": {
+      "javaType": "com.sos.joc.model.KioskViewProperties",
+      "type": "object",
+      "additionalProperties": {
+          "$ref": "../common/nonNegativeInteger-schema.json"
+      }
     }
   },
   "additionalProperties": false
