@@ -19,10 +19,16 @@
 	"numOfNotices": {
 	  "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
 	},
-	"numOfExpectingOrders": {
-	  "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
-	},
     "numOfAnnouncements": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "numOfPostedNotices": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "numOfExpectedNotices": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "numOfExpectingOrders": {
       "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
     },
     "notices": {

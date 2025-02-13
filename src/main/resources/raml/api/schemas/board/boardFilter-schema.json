@@ -11,6 +11,21 @@
 		"controllerId": {
 			"$ref": "../common/controllerIdRequired-schema.json"
 		},
+        "planSchemaIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../plan/planSchemaId-schema.json"
+            }
+        },
+        "planKeys": {
+            "description": "Will be ignored for global schema because it has no plan keys",
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../common/string255-schema.json"
+            }
+        },
 		"noticeBoardPath": {
 			"$ref": "../common/string255required-schema.json"
 		},

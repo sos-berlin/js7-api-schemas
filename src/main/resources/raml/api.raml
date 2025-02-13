@@ -4292,8 +4292,8 @@ traits:
     type:
       postJSON:
         description: Gets a deployed notice board
-        description1: " "
-        description2: " "
+        description1: !include api/documentation/plan/planSchemaIds.md
+        description2: !include api/documentation/plan/planKeys.md
         description3: !include api/documentation/board/boardPath.md
         description4: !include api/documentation/common/compact.md
         description5: !include api/documentation/board/limit.md
@@ -4302,7 +4302,7 @@ traits:
         description8: " "
         description9: " "
         description10: " "
-        description200: TODO
+        description200: !include api/documentation/board/board-response.md
         schema: !include api/schemas/board/boardFilter-schema.json
         schema200: !include api/schemas/board/board-schema.json
         example: !include api/examples/noticeBoard/board-request-example.json
@@ -4312,8 +4312,8 @@ traits:
     type:
       postJSON:
         description: Gets deployed notice boards
-        description1: " "
-        description2: " "
+        description1: !include api/documentation/plan/planSchemaIds.md
+        description2: !include api/documentation/plan/planKeys.md
         description3: !include api/documentation/common/folders.md
         description4: !include api/documentation/board/boardPaths.md
         description5: !include api/documentation/common/compact.md
@@ -4322,7 +4322,7 @@ traits:
         description8: " "
         description9: " "
         description10: " "
-        description200: TODO
+        description200: !include api/documentation/board/board-response.md
         schema: !include api/schemas/board/boardsFilter-schema.json
         schema200: !include api/schemas/board/boards-schema.json
         example: !include api/examples/noticeBoard/boards-request-example.json

@@ -8,8 +8,11 @@ It depends on the parameter ``compact``.<br/>
         * path
         * numOfNotices
         * numOfExpectingOrders
-        * notices
+        * numOfAnnouncements
+        * numOfPostedNotices
+        * numOfExpectedNotices
+        * notices (compact==false)
             * id
             * state (POSTED, EXPECTED, ANNOUNCED)
-            * expectingOrders (if exist and compact==false)
+            * expectingOrders
     * closed
