@@ -32,6 +32,10 @@
         "onlyClosedPlans": {
             "type": "boolean",
             "default": false   
+        },
+        "compact": {
+            "type": "boolean",
+            "default": false   
         }
     },
     "additionalProperties": false

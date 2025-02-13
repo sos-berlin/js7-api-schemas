@@ -5,12 +5,16 @@
 	"type": "object",
 	"required": [
 		"planId",
+		"numOfOrders",
 		"closed"
 	],
 	"properties": {
 		"planId": {
 			"$ref": "planId-schema.json"
 		},
+        "numOfOrders": {
+            "$ref": "../common/nonNegativeInteger-schema.json"
+        },
         "orders": {
             "type": "array",
             "items": {
