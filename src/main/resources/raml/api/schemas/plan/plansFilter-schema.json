@@ -25,6 +25,13 @@
                 "$ref": "../common/string255-schema.json"
             }
         },
+        "noticeBoardPaths": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../common/string255-schema.json"
+            }
+        },
         "onlyOpenPlans": {
             "type": "boolean",
             "default": false   
@@ -36,6 +43,11 @@
         "compact": {
             "type": "boolean",
             "default": false   
+        },
+        "limit": {
+            "description": "-1=unlimited",
+            "type": "integer",
+            "default": 10000
         }
     },
     "additionalProperties": false

@@ -22,6 +22,9 @@
 	"numOfExpectingOrders": {
 	  "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
 	},
+    "numOfAnnouncements": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
     "notices": {
       "type": "array",
       "items": {
