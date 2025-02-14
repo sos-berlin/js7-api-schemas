@@ -4307,6 +4307,26 @@ traits:
         schema200: !include api/schemas/board/board-schema.json
         example: !include api/examples/noticeBoard/board-request-example.json
         example200: !include api/examples/noticeBoard/board-response-example.json
+        
+    /dependencies:
+      type:
+        postJSON:
+          description: Gets workflows that uses a notice board
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/board/boardPath.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: !include api/documentation/board/board-dependencies-response.md
+          schema: !include api/schemas/board/boardPathFilter-schema.json
+          schema200: !include api/schemas/board/boardDeps-schema.json
+          example: !include api/examples/noticeBoard/board-request-example.json
+          example200: !include api/examples/noticeBoard/board-dependencies-response-example.json
 
   /boards:
     type:

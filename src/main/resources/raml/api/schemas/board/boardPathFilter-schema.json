@@ -1,0 +1,18 @@
+{
+	"title": "notice board request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.board.BoardPathFilter",
+	"type": "object",
+	"required": [
+		"noticeBoardPath"
+	],
+	"properties": {
+		"controllerId": {
+            "$ref": "../common/controllerIdRequired-schema.json"
+        },
+        "noticeBoardPath": {
+			"$ref": "../common/string255required-schema.json"
+		}
+	},
+    "additionalProperties": false
+}

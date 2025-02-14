@@ -1,0 +1,30 @@
+{
+  "title": "board with dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.board.BoardDeps",
+  "type": "object",
+  "extends" : {
+    "$ref": "board-schema.json"
+  },
+  "properties": {
+    "postingWorkflows": {
+    	"type": "array",
+ 		"items": {
+    		"$ref": "../workflow/workflowIdAndTags-schema.json"
+   		}
+    },
+    "expectingWorkflows": {
+        "type": "array",
+        "items": {
+            "$ref": "../workflow/workflowIdAndTags-schema.json"
+        }
+    },
+    "consumingWorkflows": {
+        "type": "array",
+        "items": {
+            "$ref": "../workflow/workflowIdAndTags-schema.json"
+        }
+    }
+  },
+  "additionalProperties": false
+}

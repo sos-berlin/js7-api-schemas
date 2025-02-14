@@ -1,0 +1,18 @@
+{
+  "title": "board dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.board.BoardDeps",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "noticeBoard": {
+      "$ref": "../../../controller/schemas/board/boardDeps-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

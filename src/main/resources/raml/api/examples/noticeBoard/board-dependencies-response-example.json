@@ -1,0 +1,24 @@
+{
+    "deliveryDate": "2025-02-14T16:44:03.547+00:00",
+    "noticeBoard": {
+        "postingWorkflows": [
+            {
+                "path": "/JS-2100/wPlannablePost",
+                "versionId": "37cef534-9d2e-4211-b53a-57695518cf6c"
+            }
+        ],
+        "expectingWorkflows": [],
+        "consumingWorkflows": [
+            {
+                "workflowTags": [
+                    "myTag"
+                ],
+                "path": "/JS-2100/wPlannableConsume",
+                "versionId": "5d116d56-5d21-42d6-a506-827a6946c794"
+            }
+        ],
+        "boardType": "PLANNABLE",
+        "path": "/my/b2",
+        "versionDate": "2024-12-06T16:43:13.000+00:00"
+    }
+}
