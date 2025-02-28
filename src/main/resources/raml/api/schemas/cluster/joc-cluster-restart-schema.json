@@ -9,6 +9,9 @@
 	"properties": {
 		"type": {
 			"$ref": "common/joc-cluster-service-type-schema.json"
-		}
+		},
+        "auditLog": {
+            "$ref": "../audit/auditParams-schema.json"
+        }
 	}
 }

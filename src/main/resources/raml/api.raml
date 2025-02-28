@@ -4016,7 +4016,7 @@ traits:
             Deletes a JOC cluster member from the Inventory
             <h5>The member has to be inactive and the last heartbeat has to be older than 1 minute</h5>
           description1: !include api/documentation/cluster/jocClusterSwitchMember.md
-          description2: " "
+          description2: !include api/documentation/audit/auditLog.md
           description3: " "
           description4: " "
           description5: " "
@@ -4028,7 +4028,7 @@ traits:
         postJSONWithoutJSId:
           description: Restarts JOC services such as cluster, history, dailyplan, cleanup, monitor, lognotification
           description1: !include api/documentation/cluster/jocClusterRestart.md
-          description2: " "
+          description2: !include api/documentation/audit/auditLog.md
           description3: " "
           description4: " "
           description5: " "
@@ -4041,7 +4041,7 @@ traits:
         postJSONWithoutJSId:
           description: Immediately run JOC services such as dailyplan,cleanup
           description1: !include api/documentation/cluster/jocClusterServiceRun.md
-          description2: " "
+          description2: !include api/documentation/audit/auditLog.md
           description3: " "
           description4: " "
           description5: " "
@@ -4054,7 +4054,7 @@ traits:
         postJSONWithoutJSId:
           description: Switches to an inactive JOC cluster member
           description1: !include api/documentation/cluster/jocClusterSwitchMember.md
-          description2: " "
+          description2: !include api/documentation/audit/auditLog.md
           description3: " "
           description4: " "
           description5: " "
@@ -4116,16 +4116,15 @@ traits:
   
   /proxies/restart:
     type:
-      postOnlyAccessToken:
+      postJSONWithOkWithoutJSId:
         description: Restarts the Proxy instances for all registered Controllers
-        description200: |
-          **Confirm Restart successfully**
-        schema200: ok
-        example200: |
-          {
-            "deliveryDate":"2024-06-18T21:00:00Z",
-            "ok":true
-          }
+        description1: !include api/documentation/audit/auditLog.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        schema: !include api/schemas/cluster/joc-cluster-restart-schema.json
+        example: " "
   
   /url:
     type:
