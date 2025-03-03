@@ -4910,7 +4910,27 @@ traits:
       schema: !include api/schemas/plan/plansFilter-schema.json
       schema200: !include api/schemas/plan/plans-schema.json
       example: !include api/examples/plan/plans-request-example.json
-      example200: !include api/examples/plan/plans-example.json        
+      example200: !include api/examples/plan/plans-example.json
+      
+  /ids:
+    type:
+      postJSON:
+        description: Gets plan Ids
+        description1: " "
+        description2: " "
+        description3: " "
+        description4: !include api/documentation/plan/closed.md
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: !include api/documentation/plan/planIds-response.md
+        schema: !include api/schemas/plan/plansOpenCloseFilter-schema.json
+        schema200: !include api/schemas/plan/plans-schema.json
+        example: " "
+        example200: " "        
 
 /profile:
   description: This is not an API call. Use child urls instead!

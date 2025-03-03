@@ -24,6 +24,12 @@
         "items": {
             "$ref": "../workflow/workflowIdAndTags-schema.json"
         }
+    },
+    "predictingOrders": {
+        "type": "array",
+        "items": {
+            "$ref": "../../../api/schemas/order/order_v-schema.json"
+        }
     }
   },
   "additionalProperties": false

@@ -3,21 +3,22 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.plan.PlansFilter",
 	"type": "object",
+	"extends": {
+	    "$ref": "plansOpenCloseFilter-schema.json"
+    },
 	"required": [
         "controllerId"
     ],
     "properties": {
-        "controllerId": {
-            "$ref": "../common/controllerIdRequired-schema.json"
-        },
         "planSchemaIds": {
             "type": "array",
             "uniqueItems": true,
             "items": {
-                "$ref": "planSchemaId-schema.json"
+                "$ref": "../common/string255-schema.json"
             }
         },
-        "planKeys": {
+        "noticeSpaceKeys": {
+            "alias": "planKeys",
             "description": "Will be ignored for global schema because it has no plan keys",
             "type": "array",
             "uniqueItems": true,
@@ -31,14 +32,6 @@
             "items": {
                 "$ref": "../common/string255-schema.json"
             }
-        },
-        "onlyOpenPlans": {
-            "type": "boolean",
-            "default": false   
-        },
-        "onlyClosedPlans": {
-            "type": "boolean",
-            "default": false   
         },
         "compact": {
             "type": "boolean",

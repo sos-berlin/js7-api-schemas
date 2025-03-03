@@ -14,10 +14,11 @@
             "type": "array",
             "uniqueItems": true,
             "items": {
-                "$ref": "../plan/planSchemaId-schema.json"
+                "$ref": "../common/string255-schema.json"
             }
         },
-        "planKeys": {
+        "noticeSpaceKeys": {
+            "alias": "planKeys",
             "description": "Will be ignored for global schema because it has no plan keys",
             "type": "array",
             "uniqueItems": true,

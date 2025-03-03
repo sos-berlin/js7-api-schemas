@@ -1,0 +1,23 @@
+{
+	"title": "PlansOpenCloseFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.plan.PlansOpenCloseFilter",
+	"type": "object",
+	"required": [
+        "controllerId"
+    ],
+    "properties": {
+        "controllerId": {
+            "$ref": "../common/controllerIdRequired-schema.json"
+        },
+        "onlyOpenPlans": {
+            "type": "boolean",
+            "default": false   
+        },
+        "onlyClosedPlans": {
+            "type": "boolean",
+            "default": false   
+        }
+    },
+    "additionalProperties": false
+}
