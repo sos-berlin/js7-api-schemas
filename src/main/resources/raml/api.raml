@@ -5908,6 +5908,14 @@ traits:
       schema200: !include api/schemas/workflow/workflows-schema.json
       example: !include api/examples/workflow/workflowsFilter-example.json
       example200: !include api/examples/workflow/workflows_v-example.json
+  
+  /boards:
+    type:
+      postOnlyId:
+        description200: " "
+        schema200: !include api/schemas/workflow/workflowsBoards-schema.json
+        example200: " "
+  
   /order_count:
     type:
       postJSON:

@@ -1,0 +1,30 @@
+{
+  "title": "WorkflowBoards",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.WorkflowBoards",
+  "type": "object",
+  "extends" : {
+    "$ref": "workflowIdAndTags-schema.json"
+  },
+  "properties": {
+    "postNotices": {
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
+    },
+    "expectNotices": {
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
+    },
+    "consumeNotices": {
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
+	}
+  },
+  "additionalProperties": false
+}
