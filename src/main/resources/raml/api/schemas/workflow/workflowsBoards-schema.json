@@ -1,0 +1,33 @@
+{
+  "title": "workflows with boards",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowsBoards",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+        "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+        "$ref": "../common/timestamp-schema.json"
+    },
+    "postingWorkflows": {
+        "type": "array",
+        "items": {
+            "$ref": "../../../controller/schemas/workflow/workflowBoards-schema.json"
+        }
+    },
+    "expectingWorkflows": {
+        "type": "array",
+        "items": {
+            "$ref": "../../../controller/schemas/workflow/workflowBoards-schema.json"
+        }
+    },
+    "consumingWorkflows": {
+        "type": "array",
+        "items": {
+            "$ref": "../../../controller/schemas/workflow/workflowBoards-schema.json"
+        }
+    }
+  },
+  "additionalProperties": false
+}
