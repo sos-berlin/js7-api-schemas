@@ -4,14 +4,15 @@
 	"javaType": "com.sos.joc.model.plan.PlanId",
 	"type": "object",
 	"required": [
-		"planSchemaId"
+		"planSchemaId",
+		"noticeSpaceKey"
 	],
 	"properties": {
 		"noticeSpaceKey": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../common/string255required-schema.json"
 		},
 		"planSchemaId": {
-			"$ref": "../common/string255-schema.json"
+			"$ref": "../common/string255required-schema.json"
 		}
 	},
 	"additionalProperties": false

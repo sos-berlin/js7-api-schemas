@@ -1,0 +1,24 @@
+{
+	"title": "PlansModifyFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.plan.PlansModifyFilter",
+	"type": "object",
+	"required": [
+        "controllerId",
+        "planIds"
+    ],
+    "properties": {
+        "controllerId": {
+            "$ref": "../common/controllerIdRequired-schema.json"
+        },
+        "planIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+                "$ref": "planId-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}
