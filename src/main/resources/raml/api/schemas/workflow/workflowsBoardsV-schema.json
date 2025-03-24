@@ -1,0 +1,47 @@
+{
+  "title": "workflows with boards",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowsBoardsV",
+  "type": "object",
+  "properties": {
+    "deliveryDate": {
+        "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
+        "$ref": "../common/timestamp-schema.json"
+    },
+    "postingWorkflows": {
+        "type": "array",
+        "items": {
+            "$ref": "../../../controller/schemas/workflow/workflowBoardsV-schema.json"
+        }
+    },
+    "expectingWorkflows": {
+        "type": "array",
+        "items": {
+            "$ref": "../../../controller/schemas/workflow/workflowBoardsV-schema.json"
+        }
+    },
+    "consumingWorkflows": {
+        "type": "array",
+        "items": {
+            "$ref": "../../../controller/schemas/workflow/workflowBoardsV-schema.json"
+        }
+    },
+    "noticeBoards": {
+        "type": "object",
+        "javaType": "com.sos.controller.model.board.PlannedBoards",
+        "additionalProperties": {
+            "$ref": "../../../controller/schemas/board/plannedBoard-schema.json"
+        }
+    },
+    "orders": {
+        "type": "object",
+        "javaType": "com.sos.joc.model.order.OrderIdToOrder",
+        "additionalProperties": {
+            "$ref": "../order/order_v-schema.json"
+        }
+    }
+  },
+  "additionalProperties": false
+}

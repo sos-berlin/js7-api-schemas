@@ -24,6 +24,9 @@
             "type": "boolean",
             "default": false
         },
+        "state": {
+            "$ref": "planState-schema.json"
+        },
         "numOfNoticeBoards": {
             "$ref": "../common/nonNegativeInteger-schema.json"
         },

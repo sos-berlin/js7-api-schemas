@@ -23,6 +23,14 @@
         "$ref": "../../../api/schemas/order/order_v-schema.json"
       }
     },
+    "expectingOrderIds": {
+      "description": "is empty if expectingOrders is filled",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../api/schemas/common/string255required-schema.json"
+      }
+    },
     "workflowTagsPerWorkflow": {
     	"$ref": "../../../api/schemas/common/workflowTags-schema.json"
     },
