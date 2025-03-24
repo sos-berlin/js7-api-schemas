@@ -4912,6 +4912,40 @@ traits:
       example: !include api/examples/plan/plans-request-example.json
       example200: !include api/examples/plan/plans-example.json
       
+  /close:
+    type:
+      postJSONWithOkResponse:
+        description: Closes plans
+        description1: !include api/documentation/plan/planIds-request.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/plan/plansModifyFilter-schema.json
+        example: " "
+        
+  /delete:
+    type:
+      postJSONWithOkResponse:
+        description: Deletes plans
+        description1: !include api/documentation/plan/planIds-request.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/plan/plansModifyFilter-schema.json
+        example: " "
+        
   /ids:
     type:
       postJSON:
@@ -4930,7 +4964,24 @@ traits:
         schema: !include api/schemas/plan/plansOpenCloseFilter-schema.json
         schema200: !include api/schemas/plan/plans-schema.json
         example: " "
-        example200: " "        
+        example200: " "
+        
+  /open:
+    type:
+      postJSONWithOkResponse:
+        description: Opens plans
+        description1: !include api/documentation/plan/planIds-request.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/plan/plansModifyFilter-schema.json
+        example: " "        
 
 /profile:
   description: This is not an API call. Use child urls instead!

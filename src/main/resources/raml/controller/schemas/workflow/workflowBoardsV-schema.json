@@ -1,0 +1,19 @@
+{
+  "title": "WorkflowBoardsV",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.WorkflowBoardsV",
+  "type": "object",
+  "extends" : {
+    "$ref": "workflowBoards-schema.json"
+  },
+  "properties": {
+    "criticalOrderIds": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+            "type": "string"
+        }   
+    }
+  },
+  "additionalProperties": false
+}
