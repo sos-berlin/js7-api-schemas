@@ -7,7 +7,14 @@
     "$ref": "workflowBoards-schema.json"
   },
   "properties": {
-    "dueOrderIds": {
+    "presentDueOrderIds": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+            "type": "string"
+        }   
+    },
+    "futureDueOrderIds": {
         "type": "array",
         "uniqueItems": true,
         "items": {
