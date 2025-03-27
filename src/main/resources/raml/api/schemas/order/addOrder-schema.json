@@ -48,6 +48,9 @@
     	"type": "boolean",
     	"default": false	
     },
+    "planId": {
+        "$ref": "../plan/planId-schema.json"    
+    },
     "tags": {
     	"$ref": "../common/tags-schema.json"	
     }
