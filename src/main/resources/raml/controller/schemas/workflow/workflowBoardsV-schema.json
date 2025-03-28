@@ -32,6 +32,13 @@
     },
     "numOfExpectingOrders": {
       "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "expectingOrderIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../api/schemas/common/string255required-schema.json"
+      }
     }
   },
   "additionalProperties": false
