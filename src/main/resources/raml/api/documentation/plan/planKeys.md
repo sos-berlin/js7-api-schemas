@@ -1,4 +1,4 @@
-<tr><td>``planKeys``</td><td>optional, array[string]</td>
+<tr><td>``noticeSpaceKeys``</td><td>optional, array[string]</td>
 <td>This parameter is ignored for the ‘Global’ schema because it doesn't have a plan key.<br/>
 Plan keys of the 'DailyPlan' schema have the format YYYY-MM-DD.<br/>
 Each string of the array can be a glob pattern of that supports '&#42;' and '?' as wildcards where

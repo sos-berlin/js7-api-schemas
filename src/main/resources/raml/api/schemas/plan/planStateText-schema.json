@@ -1,0 +1,13 @@
+{
+  "title": "plan state text",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.plan.PlanStateText",
+  "type": "string",
+  "enum": [
+    "OPEN",
+    "CLOSED",
+    "FINISHED",
+    "DELETED"
+  ]
+}
+

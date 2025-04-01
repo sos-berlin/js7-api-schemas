@@ -1,0 +1,36 @@
+{
+  "title": "WorkflowBoardsV",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.controller.model.workflow.WorkflowBoardsV",
+  "type": "object",
+  "extends" : {
+    "$ref": "workflowBoards-schema.json"
+  },
+  "properties": {
+    "presentDueOrderIds": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+            "type": "string"
+        }   
+    },
+    "futureDueOrderIds": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+            "type": "string"
+        }   
+    },
+    "numOfExpectingOrders": {
+      "$ref": "../../../api/schemas/common/nonNegativeInteger-schema.json"
+    },
+    "expectingOrderIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../api/schemas/common/string255required-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

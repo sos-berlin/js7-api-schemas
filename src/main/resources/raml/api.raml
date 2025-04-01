@@ -4912,12 +4912,46 @@ traits:
       example: !include api/examples/plan/plans-request-example.json
       example200: !include api/examples/plan/plans-example.json
       
+  /close:
+    type:
+      postJSONWithOkResponse:
+        description: Closes plans
+        description1: !include api/documentation/plan/planIds-request.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/plan/plansModifyFilter-schema.json
+        example: " "
+        
+  /delete:
+    type:
+      postJSONWithOkResponse:
+        description: Deletes plans
+        description1: !include api/documentation/plan/planIds-request.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/plan/plansModifyFilter-schema.json
+        example: " "
+        
   /ids:
     type:
       postJSON:
         description: Gets plan Ids
-        description1: " "
-        description2: " "
+        description1: !include api/documentation/plan/planSchemaIds.md
+        description2: !include api/documentation/plan/planKeys.md
         description3: " "
         description4: !include api/documentation/plan/closed.md
         description5: " "
@@ -4927,10 +4961,27 @@ traits:
         description9: " "
         description10: " "
         description200: !include api/documentation/plan/planIds-response.md
-        schema: !include api/schemas/plan/plansOpenCloseFilter-schema.json
+        schema: !include api/schemas/plan/plansFilter-schema.json
         schema200: !include api/schemas/plan/plans-schema.json
         example: " "
-        example200: " "        
+        example200: " "
+        
+  /open:
+    type:
+      postJSONWithOkResponse:
+        description: Opens plans
+        description1: !include api/documentation/plan/planIds-request.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/plan/plansModifyFilter-schema.json
+        example: " "        
 
 /profile:
   description: This is not an API call. Use child urls instead!
@@ -5912,8 +5963,29 @@ traits:
   /boards:
     type:
       postOnlyId:
+        description: Gets permanent information about notice-board-specific dependencies between workflows
         description200: " "
         schema200: !include api/schemas/workflow/workflowsBoards-schema.json
+        example200: " "
+        
+  /boards/snapshot:
+    type:
+      postJSON:
+        description: Gets volatile information about notice-board-specific dependencies between workflows
+        description1: !include api/documentation/plan/planSchemaIds.md
+        description2: !include api/documentation/plan/planKeys.md
+        description3: " "
+        description4: !include api/documentation/plan/closed.md
+        description5: !include api/documentation/common/compact.md
+        description6: !include api/documentation/common/limit.md
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/plan/plansFilter-schema.json
+        schema200: !include api/schemas/workflow/workflowsBoardsV-schema.json
+        example: " "
         example200: " "
   
   /order_count:
