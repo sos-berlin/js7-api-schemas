@@ -51,6 +51,10 @@
     "planId": {
         "$ref": "../plan/planId-schema.json"    
     },
+    "openClosedPlan": {
+        "type": "boolean",
+        "default": false  
+    },
     "tags": {
     	"$ref": "../common/tags-schema.json"	
     }
