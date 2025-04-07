@@ -1,5 +1,5 @@
 {
-	"title": "PermissionRec",
+	"title": "Permission",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.permissions.Permission",
 	"type": "object",
@@ -11,7 +11,8 @@
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"excluded": {
-			"type": "boolean"
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"additionalProperties": false
