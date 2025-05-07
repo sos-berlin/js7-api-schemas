@@ -72,12 +72,12 @@
                     },
                     "modify": {
 						"type": "boolean",
-						"default" : true
+						"default" : false
 					},
 					"managePositions": {
 						"description": "skip, unskip, stop, unstop workflow jobs and add/modify order with special start-/endposition",
 						"type": "boolean",
-						"default" : true
+						"default" : false
 					},
                     "confirm": {
                         "description": "confirm prompt to continue prompting order",
@@ -106,7 +106,7 @@
 					"view": {
 						"description": "show resource tab 'notice boards'",
 						"type": "boolean",
-						"default" : true
+						"default" : false
 					},
 					"post": {
 						"description": "post notice",
@@ -128,7 +128,7 @@
 					"view": {
 						"description": "show resource tab 'locks'",
 						"type": "boolean",
-						"default" : true
+						"default" : false
 					}
 				},
 				"additionalProperties": false

@@ -1,0 +1,13 @@
+{
+  "title": "requestor state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.security.foureyes.RequestorState",
+  "type": "string",
+  "enum": [
+      "REQUESTED",
+      "WITHDRAWN",
+      "IN_PROGRESS",
+      "SUCCESFUL",
+      "FAILED"
+  ]
+}

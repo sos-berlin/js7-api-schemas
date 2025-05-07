@@ -1,0 +1,11 @@
+{
+  "title": "approver state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.security.foureyes.ApproverState",
+  "type": "string",
+  "enum": [
+      "OPEN",
+      "APPROVED",
+      "REJECTED"
+  ]
+}
