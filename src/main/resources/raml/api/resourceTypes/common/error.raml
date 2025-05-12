@@ -135,6 +135,33 @@ post?:
               "isAuthenticated": false,
               "isPermitted": false
             }
+    433:
+      description: |
+        **4-eyes principle: Forbidden!**<br/>
+        The user needs approval process for '<<resourcePathName>>'
+      body:
+        application/json:
+          schema: fourEyes
+          example: |
+            {
+              "deliveryDate": "2025-05-12T21:13:35Z",
+              "accountName": "user1",
+              "request": "./orders/add",
+              "requestBody": {
+                "controllerId": "standalone",
+                "orders": [
+                  {
+                    "workflowPath": "myWorkflow",
+                    "scheduledFor": "now"
+                  }
+                ]
+              },
+              "category": "CONTROLLER",
+              "objectType": "WORKFLOW"
+              "objectName": "myWorkflow",
+              "numOfObjects": 1,
+              "action": "add orders"
+            }
     434?:
       description: |
         **'<span style="text-transform: capitalize;"><<resourcePathName>></span>' failed!**

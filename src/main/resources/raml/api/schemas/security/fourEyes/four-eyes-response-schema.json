@@ -1,13 +1,17 @@
 {
-	"title": "FourEyesRequest",
+	"title": "FourEyesResponse",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.foureyes.FourEyesRequest",
+	"javaType": "com.sos.joc.model.security.foureyes.FourEyesResponse",
 	"type": "object",
 	"required": [
         "deliveryDate",
         "accountName",
         "requestUrl",
-        "requestBody"  
+        "requestBody",
+        "category",
+        "action",
+        "objectType",
+        "numOfObjects"  
 	],
 	"properties": {
 		"deliveryDate": {
@@ -24,8 +28,20 @@
             "javaType": "com.sos.joc.model.security.foureyes.RequestBody",
             "additionalProperties": true
         },
-        "title": {
+        "category": {
+            "$ref": "../../audit/category-schema.json"
+        },
+        "action": {
             "$ref": "../../common/string255required-schema.json"
+        },
+        "objectType": {
+            "$ref": "../../tree/type-schema.json"
+        },
+        "objectName": {
+            "$ref": "../../common/string255-schema.json"
+        },
+        "numOfObjects": {
+            "$ref": "../../common/nonNegativeInteger-schema.json"
         },
         "message": {
             "$ref": "../../common/string255required-schema.json"

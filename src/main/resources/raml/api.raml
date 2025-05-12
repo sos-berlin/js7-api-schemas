@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.7.4
+version: 2.8.0
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -27,6 +27,7 @@ schemas:
   - modifyWorkflows: !include api/schemas/workflow/modifyWorkflows-schema.json
   - modifyCalendars: !include api/schemas/calendar/calendarsFilter-schema.json
   - security: !include api/schemas/user/security-schema.json
+  - fourEyes: !include api/schemas/security/fourEyes/four-eyes-response-schema.json
   - loginConfiguration: !include api/schemas/configuration/login-schema.json
 
 

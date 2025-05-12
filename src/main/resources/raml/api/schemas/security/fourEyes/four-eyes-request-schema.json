@@ -1,0 +1,29 @@
+{
+	"title": "FourEyesRequest",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.foureyes.FourEyesRequest",
+	"type": "object",
+	"extends": {
+        "$ref": "four-eyes-response-schema.json"
+    },
+	"required": [
+        "accountName",
+        "requestUrl",
+        "requestBody",
+        "category",
+        "action",
+        "objectType",
+        "numOfObjects",
+        "title"  
+    ],
+	"properties": {
+		"title": {
+            "$ref": "../../common/string255required-schema.json"
+        },
+        "reason": {
+			"$ref": "../../common/string255-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+ 

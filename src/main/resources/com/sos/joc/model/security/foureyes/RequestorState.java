@@ -18,7 +18,7 @@ public enum RequestorState {
     private final static Map<Integer, RequestorState> INTCONSTANTS = new HashMap<Integer, RequestorState>();
 
     static {
-        for (RequesterState c: values()) {
+        for (RequestorState c: values()) {
             CONSTANTS.put(c.name(), c);
             INTCONSTANTS.put(c.intValue, c);
         }
@@ -44,7 +44,7 @@ public enum RequestorState {
 
     @JsonCreator
     public static RequestorState fromValue(String value) {
-        RequesterState constant = CONSTANTS.get(value);
+        RequestorState constant = CONSTANTS.get(value);
         if (constant == null) {
             throw new IllegalArgumentException(value);
         } else {
