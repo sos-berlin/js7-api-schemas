@@ -7,15 +7,15 @@
         "$ref": "four-eyes-response-schema.json"
     },
 	"required": [
-        "accountName",
+	    "title",
+        "approver",
+        "requestor",
         "requestUrl",
         "requestBody",
         "category",
         "action",
         "objectType",
-        "numOfObjects",
-        "title",
-        "approver"  
+        "numOfObjects"  
     ],
 	"properties": {
 		"title": {

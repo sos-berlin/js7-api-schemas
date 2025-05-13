@@ -3,21 +3,11 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.foureyes.FourEyesResponse",
 	"type": "object",
-	"required": [
-        "deliveryDate",
-        "accountName",
-        "requestUrl",
-        "requestBody",
-        "category",
-        "action",
-        "objectType",
-        "numOfObjects"  
-	],
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
-		"accountName": {
+		"requestor": {
             "$ref": "../../common/string255required-schema.json"
         },
         "requestUrl": {
