@@ -1,0 +1,33 @@
+{
+	"title": "Approver",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.foureyes.Approver",
+	"type": "object",
+	"required": [
+        "accountName",
+        "firstName",
+        "lastName"  
+	],
+	"properties": {
+		"accountName": {
+            "$ref": "../../common/string255required-schema.json"
+        },
+        "firstName": {
+            "type": "string",
+            "pattern": "^[^<>]*$",
+            "maxLength": 30,
+            "minLength": 1
+        },
+        "lastName": {
+            "type": "string",
+            "pattern": "^[^<>]*$",
+            "maxLength": 30,
+            "minLength": 1
+        },
+        "email": {
+            "$ref": "../../common/string255-schema.json"
+        }
+	},
+	"additionalProperties": false
+}
+ 

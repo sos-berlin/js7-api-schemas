@@ -1,0 +1,23 @@
+{
+	"title": "Approvers",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.foureyes.Approvers",
+	"type": "object",
+	"required": [
+        "deliveryDate",
+        "approvers" 
+	],
+	"properties": {
+		"deliveryDate": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "approvers": {
+            "type": "array",
+            "items": {
+                "$ref": "approver-schema.json"                
+            }
+        }
+	},
+	"additionalProperties": false
+}
+ 

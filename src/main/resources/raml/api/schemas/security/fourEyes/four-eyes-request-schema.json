@@ -14,10 +14,14 @@
         "action",
         "objectType",
         "numOfObjects",
-        "title"  
+        "title",
+        "approver"  
     ],
 	"properties": {
 		"title": {
+            "$ref": "../../common/string255required-schema.json"
+        },
+        "approver": {
             "$ref": "../../common/string255required-schema.json"
         },
         "reason": {
