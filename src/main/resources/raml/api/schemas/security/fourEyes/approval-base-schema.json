@@ -1,0 +1,24 @@
+{
+	"title": "ApprovalBase",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.foureyes.ApprovalBase",
+	"type": "object",
+	"properties": {
+		"requestor": {
+            "$ref": "../../common/string255required-schema.json"
+        },
+        "requestUrl": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+        "requestBody": {
+            "type": "object",
+            "javaType": "com.sos.joc.model.security.foureyes.RequestBody",
+            "additionalProperties": true
+        },
+        "category": {
+            "$ref": "../../audit/category-schema.json"
+        }
+	},
+	"additionalProperties": false
+}
+ 

@@ -1,17 +1,10 @@
 {
-	"title": "FourEyesRequest",
+	"title": "FourEyesRequestEdit",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.foureyes.FourEyesRequest",
+	"javaType": "com.sos.joc.model.security.foureyes.FourEyesRequestEdit",
 	"type": "object",
-	"extends": {
-        "$ref": "approval-base-schema.json"
-    },
 	"required": [
-	    "title",
-        "approver",
-        "requestor",
-        "requestUrl",
-        "requestBody" 
+	    "id"  
     ],
 	"properties": {
 		"id": {

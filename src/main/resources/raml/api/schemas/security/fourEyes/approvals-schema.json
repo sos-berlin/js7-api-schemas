@@ -1,15 +1,21 @@
 {
-	"title": "Approvers",
+	"title": "ApprovalRequests",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.security.foureyes.Approvers",
+	"javaType": "com.sos.joc.model.security.foureyes.ApprovalRequests",
 	"type": "object",
 	"required": [
         "deliveryDate",
-        "approvers" 
-	],
-	"properties": {
-		"deliveryDate": {
+        "requests"  
+    ],
+    "properties": {
+        "deliveryDate": {
             "$ref": "../../common/timestamp-schema.json"
+        },
+        "requests": {
+            "type": "array",
+            "items": {
+                "$ref": "approval-schema.json"
+            }
         },
         "approvers": {
             "type": "array",
@@ -17,7 +23,7 @@
                 "$ref": "approver-schema.json"
             }
         }
-	},
+    },
 	"additionalProperties": false
 }
  

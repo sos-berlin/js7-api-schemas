@@ -130,11 +130,12 @@ traits:
         example200: " "
   
 /approval:
-  /request:
+        
+  /approve:
     type:
       postJSONWithOkWithoutJSId:
-        description: Requests an approval
-        description1: !include api/documentation/security/fourEyes/request.md
+        description: Approves an approval request
+        description1: !include api/documentation/security/fourEyes/id.md
         description2: " "
         description3: " "
         description4: " "
@@ -144,7 +145,94 @@ traits:
         description8: " "
         description9: " "
         description10: " "
+        schema: !include api/schemas/security/fourEyes/four-eyes-request-id-schema.json
+        example: " "
+        
+  /edit:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Edit an approval request
+        description1: !include api/documentation/security/fourEyes/id.md
+        description2: !include api/documentation/security/fourEyes/edit.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/security/fourEyes/four-eyes-request-edit-schema.json
+        example: " "
+          
+  /reject:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Rejects a request
+        description1: !include api/documentation/security/fourEyes/id.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/security/fourEyes/four-eyes-request-id-schema.json
+        example: " "
+    
+  /request:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Requests an approval
+        description1: !include api/documentation/security/fourEyes/request.md
+        description2: !include api/documentation/security/fourEyes/http443response.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
         schema: !include api/schemas/security/fourEyes/four-eyes-request-schema.json
+        example: " "        
+    
+  /requests:
+    type:
+      postJSONWithoutJSId:
+        description: Shows pending approval requests
+        description1: !include api/documentation/security/fourEyes/requests-filter.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema200: !include api/schemas/security/fourEyes/approvals-schema.json
+        schema: !include api/schemas/security/fourEyes/approvals-filter-schema.json
+        example200: " "
+        example: " "
+        
+  /withdraw:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Withdraws a request
+        description1: !include api/documentation/security/fourEyes/id.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/security/fourEyes/four-eyes-request-id-schema.json
         example: " "
        
 /auditlog/comments:

@@ -1,0 +1,37 @@
+{
+	"title": "ApprovalRequest",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.security.foureyes.ApprovalRequest",
+    "type": "object",
+    "extends": {
+        "$ref": "approval-base-schema.json"
+    },
+    "properties": {
+        "id": {
+            "$ref": "../../common/nonNegativeLong-schema.json"
+        },
+        "title": {
+            "$ref": "../../common/string255required-schema.json"
+        },
+        "approver": {
+            "$ref": "../../common/string255required-schema.json"
+        },
+        "unknownApprover": {
+            "description": "An approver was selected for the approval request but is not longer configured as approver",
+            "type": "boolean",
+            "default": false
+        },
+        "approverState": {
+            "$ref": "approverState-schema.json"
+        },
+        "reason": {
+            "$ref": "../../common/string255-schema.json"
+        },
+        "requestorState": {
+            "$ref": "requestorState-schema.json"
+        }
+        
+    },
+    "additionalProperties": false
+}
+ 

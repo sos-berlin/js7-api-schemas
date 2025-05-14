@@ -3,38 +3,21 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.foureyes.FourEyesResponse",
 	"type": "object",
+	"extends": {
+        "$ref": "approval-base-schema.json"
+    },
 	"properties": {
 		"deliveryDate": {
 			"$ref": "../../common/timestamp-schema.json"
 		},
-		"requestor": {
-            "$ref": "../../common/string255required-schema.json"
-        },
-        "requestUrl": {
-			"$ref": "../../common/string255required-schema.json"
-		},
-        "requestBody": {
-            "type": "object",
-            "javaType": "com.sos.joc.model.security.foureyes.RequestBody",
-            "additionalProperties": true
-        },
-        "category": {
-            "$ref": "../../audit/category-schema.json"
-        },
-        "action": {
-            "$ref": "../../common/string255required-schema.json"
-        },
-        "objectType": {
-            "$ref": "../../tree/type-schema.json"
-        },
-        "objectName": {
-            "$ref": "../../common/string255-schema.json"
-        },
-        "numOfObjects": {
-            "$ref": "../../common/nonNegativeInteger-schema.json"
-        },
         "message": {
             "$ref": "../../common/string255required-schema.json"
+        },
+        "approvers": {
+            "type": "array",
+            "items": {
+                "$ref": "approver-schema.json"
+            }
         }
 	},
 	"additionalProperties": false

@@ -1,0 +1,44 @@
+{
+	"title": "ApprovalsFilter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.foureyes.ApprovalsFilter",
+	"type": "object",
+	"required": [
+	    "requestors",
+        "approvers",
+        "requestorStates",
+        "approverStates"
+    ],
+	"properties": {
+		"requestors": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../../common/string255required-schema.json"
+            }
+        },
+        "approvers": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../../common/string255required-schema.json"
+            }
+        },
+        "requestorStates": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "requestorState-schema.json"
+            }
+        },
+        "approverStates": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "approverState-schema.json"
+            }
+        }
+	},
+	"additionalProperties": false
+}
+ 
