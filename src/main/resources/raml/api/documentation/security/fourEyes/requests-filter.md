@@ -37,7 +37,7 @@ Filters all approval requests by the account names of requestors</td>
 <td>optional, array[string]</td>
 <td>Filters all approval requests by the approver states such as
 <ul>
-    <li>OPEN</li>
+    <li>PENDING</li>
     <li>APPROVED</li>
     <li>REJECTED</li>
 </ul>

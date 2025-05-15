@@ -4,7 +4,7 @@
   "javaType": "com.sos.joc.model.security.foureyes.ApproverState",
   "type": "string",
   "enum": [
-      "OPEN",
+      "PENDING",
       "APPROVED",
       "REJECTED"
   ]

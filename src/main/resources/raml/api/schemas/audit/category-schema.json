@@ -1,5 +1,5 @@
 {
-  "title": "Tree object type",
+  "title": "category type",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.audit.CategoryType",
   "type": "string",
@@ -12,6 +12,7 @@
     "CERTIFICATES",
     "IDENTITY",
     "SETTINGS",
-    "MONITORING"
+    "MONITORING",
+    "UNKNOWN"
   ]
 }
