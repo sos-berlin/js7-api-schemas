@@ -1,0 +1,15 @@
+{
+  "title": "Delete Approver Filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.approval.DeleteApproverFilter",
+  "type": "object",
+  "required": [
+        "accountName"
+  ],
+  "properties": {
+    "accountName": {
+            "$ref": "../common/string255required-schema.json"
+        }
+  },
+  "additionalProperties": false
+}

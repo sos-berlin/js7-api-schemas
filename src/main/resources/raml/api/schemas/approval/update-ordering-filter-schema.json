@@ -1,0 +1,18 @@
+{
+  "title": "Update Ordering of Approvers Filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.approval.UpdateOrderingFilter",
+  "type": "object",
+  "required": [
+    "accountNames"
+  ],
+  "properties": {
+    "accountNames": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/string255required-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
