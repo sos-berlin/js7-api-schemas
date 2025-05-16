@@ -23,6 +23,10 @@
     "positions": {
      	"$ref": "../../../inventory/schemas/schedule/positions-schema.json"
     },
+    "priority": {
+        "type": "integer",
+        "default": 0
+    },
     "forceJobAdmission": {
      	"type": "boolean",
     	"default": false
