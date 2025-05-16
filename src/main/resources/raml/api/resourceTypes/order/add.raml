@@ -50,6 +50,7 @@ post:
         The position can also be specified by the label of the instruction.<td>[[1]] or ["lastJob"]</td><td></td></tr>
     <tr><td style="padding-left:20px;">``blockPosition``</td><td>optional, array or string</td><td>The order runs only inside the specified block instruction. The position can also be specified by the label of the block instruction.<td>[1, "lock"]</td><td></td></tr>
     <tr><td style="padding-left:20px;">``forceJobAdmission``</td><td>optional, boolean<br/>field of each ``orders`` item</td><td>If true then any admission times at a Job instruction will be ignored</td><td></td><td>false</td></tr>
+    <tr><td style="padding-left:20px;">``priority``</td><td>optional, integer<br/>field of each ``orders`` item</td><td>Priority of the order</td><td></td><td>0</td></tr>
     <tr><td style="padding-left:20px;">``planId``</td><td>optional, object<br/>field of each ``orders`` item</td><td></td><td rowspan="3"><pre>{
       "planSchemaId": "DailyPlan",
       "noticeSpaceKey": "2025-03-20"   

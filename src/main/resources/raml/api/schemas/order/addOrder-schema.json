@@ -57,6 +57,10 @@
     },
     "tags": {
     	"$ref": "../common/tags-schema.json"	
+    },
+    "priority": {
+        "type": "integer",
+        "default": 0  
     }
   },
   "additionalProperties": false
