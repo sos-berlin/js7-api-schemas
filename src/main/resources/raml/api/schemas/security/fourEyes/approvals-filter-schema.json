@@ -3,12 +3,6 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.foureyes.ApprovalsFilter",
 	"type": "object",
-	"required": [
-	    "requestors",
-        "approvers",
-        "requestorStates",
-        "approverStates"
-    ],
 	"properties": {
 		"requestors": {
             "type": "array",

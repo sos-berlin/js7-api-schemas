@@ -29,6 +29,12 @@
         },
         "requestorState": {
             "$ref": "requestorState-schema.json"
+        },
+        "created": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "modified": {
+            "$ref": "../../common/timestamp-schema.json"
         }
         
     },
