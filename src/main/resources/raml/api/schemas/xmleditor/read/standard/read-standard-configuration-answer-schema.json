@@ -10,6 +10,12 @@
 		"state"
 	],
 	"properties": {
+		"id": {
+			"$ref": "../../../common/nonNegativeLong-schema.json"
+		},
+		"name": {
+			"type": "string"
+		},
 		"configuration": {
 			"type": "string"
 		},
