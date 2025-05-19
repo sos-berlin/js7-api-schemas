@@ -762,6 +762,65 @@ traits:
         schema: !include api/schemas/agent/resetAgents-schema.json
         example: " "
 
+/approval
+  description: This is not an API call. Use child urls instead!
+  /approver
+    description: This is not an API call. Use child urls instead!
+    /delete
+      type:
+        postJSONWithOKWithoutJSId:
+          description: Deletes an Approver if exists.
+          description1: !include api/documentation/approval/delete-approver-request.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/approval/approver-delete-filter-schema.json
+          example: !include api/examples/approval/delete-approver-request.json
+    /store
+      type:
+        postJSONWithOKWithoutJSId:
+          description: Stores a new Approver or updates an existing approver.
+          description1: !include api/documentation/approval/store-approver-request.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/approval/approver-store-filter-schema.json
+          example: !include api/examples/approval/store-approver-request.json
+  /approvers
+    type:
+      postWithoutJSONandJSId:
+        description: Shows all available approvers.
+        schema: !include api/schemas/security/fourEyes/approvers-schema.json
+        example: !include api/documentation/approval/show-approvers-response.json
+    /ordering
+      type:
+        postJSONWithOKWithoutJSId:
+          description: Sorts the stored approvers according to the order of account names in the request.
+          description1: !include api/documentation/approval/update-ordering-request.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          schema: !include api/schemas/approval/update-ordering-filter-schema.json
+          example: !include api/examples/approval/update-ordering-request.json
+    
 /audit_log:
   type:
     postJSONWithOptionalJSId:
