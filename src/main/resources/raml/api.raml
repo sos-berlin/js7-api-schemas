@@ -771,7 +771,7 @@ traits:
     /delete:
       type:
         postJSONWithOkWithoutJSId:
-          description: Deletes an Approver if exists
+          description: deletes an approver if exists
           description1: !include api/documentation/approval/delete-approver-request.md
           schema: !include api/schemas/approval/approver-delete-filter-schema.json
           example: !include api/examples/approval/delete-approver-request.json
@@ -779,7 +779,7 @@ traits:
     /store:
       type:
         postJSONWithOkWithoutJSId:
-          description: Stores a new Approver or updates an existing approver
+          description: stores a new approver or updates an existing one
           description1: !include api/documentation/approval/store-approver-request.md
           description2: " "
           description3: " "
@@ -796,14 +796,14 @@ traits:
   /approvers:
     type:
       postWithoutJSONandJSId:
-        description: Shows all available approvers
+        description: shows all available approvers
         schema200: !include api/schemas/security/fourEyes/approvers-schema.json
         example200: !include api/examples/approval/show-approvers-response.json
 
     /ordering:
       type:
         postJSONWithOkWithoutJSId:
-          description: Sorts the stored approvers according to the order of account names in the request
+          description: reorders the stored approvers according to the order of account names in the request
           description1: !include api/documentation/approval/update-ordering-request.md
           description2: " "
           description3: " "
