@@ -123,6 +123,10 @@
     },
     "isSuspendible": {
         "type": "boolean"  
+    },
+    "priority": {
+        "type": "integer",
+        "default": 0  
     }
   },
   "additionalProperties": false
