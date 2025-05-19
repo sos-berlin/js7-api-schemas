@@ -1,0 +1,31 @@
+{
+  "title": "event from approval notification",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.event.EventApprovalNotification",
+  "type": "object",
+  "required": [
+    	"eventType"
+  ],
+  "javaInterfaces" : [
+    	"com.sos.joc.model.common.IEventObject"
+  ],
+  "properties": {
+    "eventId": {
+      	"$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "eventType": {
+      "description": "ApproverNotification, RequestorNotification",
+      "type": "string"
+    },
+    "approver": {
+      	"$ref": "../common/string255-schema.json"
+    },
+    "requestor": {
+      	"$ref": "../common/string255-schema.json"
+    },
+    "numOfPendingApprovals": {
+      	"$ref": "../common/nonNegativeLong-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

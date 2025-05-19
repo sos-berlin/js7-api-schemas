@@ -37,6 +37,12 @@
         "$ref": "eventOrderMonitoring-schema.json"
       }
     },
+    "eventsFromApprovalRequests": {
+      "type": "array",
+      "items": {
+        "$ref": "eventApproval-schema.json"
+      }
+    },
     "deliveryDate": {
       "$ref": "../common/timestamp-schema.json"
     }
