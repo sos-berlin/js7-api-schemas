@@ -779,7 +779,8 @@ traits:
     /store:
       type:
         postJSONWithOkWithoutJSId:
-          description: stores a new approver or updates an existing one
+          description: |
+            Stores an approver.<br/>If an approver with the same ``accountName`` already exists the credentials of the existing approver will be updated.
           description1: !include api/documentation/approval/store-approver-request.md
           description2: " "
           description3: " "
@@ -790,7 +791,7 @@ traits:
           description8: " "
           description9: " "
           description10: " "
-          schema: !include api/schemas/approval/approver-store-filter-schema.json
+          schema: !include api/schemas/security/fourEyes/approver-schema.json
           example: !include api/examples/approval/store-approver-request.json
 
   /approvers:

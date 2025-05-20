@@ -1,8 +1,6 @@
 {
-  "approver" : {
-    "accountName" : "js",
-    "firstName" : "John",
-    "lastName" : "Smith",
-    "email" : "js@approvers.com"
-  }
+  "accountName" : "js",
+  "firstName" : "John",
+  "lastName" : "Smith",
+  "email" : "js@approvers.com"
 }
