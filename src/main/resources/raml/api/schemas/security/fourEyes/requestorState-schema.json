@@ -7,7 +7,7 @@
       "REQUESTED",
       "WITHDRAWN",
       "IN_PROGRESS",
-      "SUCCESFUL",
+      "SUCCESSFUL",
       "FAILED"
   ]
 }

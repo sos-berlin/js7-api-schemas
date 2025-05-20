@@ -20,11 +20,14 @@
     "approver": {
       	"$ref": "../common/string255-schema.json"
     },
-    "requestor": {
-      	"$ref": "../common/string255-schema.json"
-    },
     "numOfPendingApprovals": {
       	"$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "requestor": {
+        "$ref": "../common/string255-schema.json"
+    },
+    "approverState": {
+        "$ref": "../common/string255-schema.json"
     }
   },
   "additionalProperties": false
