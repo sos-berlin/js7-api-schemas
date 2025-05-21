@@ -15,7 +15,7 @@ public enum CategoryType {
     DAILYPLAN(5),
     //FILETRANSFER(6),
     //NOTIFICATION(7),
-    //OTHERS(8),
+    OTHERS(8),
     DOCUMENTATIONS(9),
     CERTIFICATES(10),
     IDENTITY(11),

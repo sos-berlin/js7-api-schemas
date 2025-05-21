@@ -26,8 +26,6 @@ Filters all approval requests by the account names of requestors</td>
     <li>REQUESTED</li>
     <li>WITHDRAWN</li>
     <li>IN_PROGRESS</li>
-    <li>SUCCESS</li>
-    <li>FAILED</li>
 </ul>
 </td>
 <td></td>

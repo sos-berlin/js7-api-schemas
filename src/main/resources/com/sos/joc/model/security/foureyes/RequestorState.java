@@ -10,9 +10,7 @@ public enum RequestorState {
 
     REQUESTED(0),
     WITHDRAWN(1),
-    IN_PROGRESS(2),
-    SUCCESSFUL(3),
-    FAILED(4);
+    IN_PROGRESS(2);
     private final Integer intValue;
     private final static Map<String, RequestorState> CONSTANTS = new HashMap<String, RequestorState>();
     private final static Map<Integer, RequestorState> INTCONSTANTS = new HashMap<Integer, RequestorState>();
