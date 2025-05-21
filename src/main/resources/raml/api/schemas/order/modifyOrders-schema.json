@@ -75,6 +75,9 @@
 				{"$ref": "../common/string255required-schema.json"}
 			]
 		},
+        "priority": {
+            "type": "integer"
+        },
 		"variables": {
 			"$ref": "../../../inventory/schemas/common/variables-schema.json"
 		},

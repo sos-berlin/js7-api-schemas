@@ -4794,7 +4794,7 @@ traits:
   /cancel:
     type:
       modifyOrder:
-        description: Cancel orders
+        description: Cancels orders
         dateFromParam: !include api/documentation/common/dateFrom.md
         dateToParam: !include api/documentation/common/dateTo.md
         timeZoneParam: !include api/documentation/common/timeZone.md
@@ -4803,10 +4803,22 @@ traits:
         variablesParam: " "
         cycleParam: " "
         audit: !include api/documentation/audit/auditLog.md
+  /change:
+    type:
+      modifyOrder:
+        description: Changes order's priority
+        dateFromParam: " "
+        dateToParam: " "
+        timeZoneParam: " "
+        signalParam: " "
+        positionParam: " "
+        variablesParam: !include api/documentation/order/priority.md
+        cycleParam: " "
+        audit: !include api/documentation/audit/auditLog.md
   /confirm:
     type:
       modifyOrder:
-        description: Confirm prompting orders
+        description: Confirms prompting orders
         dateFromParam: " "
         dateToParam: " "
         timeZoneParam: " "
@@ -4915,7 +4927,7 @@ traits:
   /remove_when_terminated:
     type:
       modifyOrder:
-        description: Remove orders when terminated
+        description: Removes orders when terminated
         dateFromParam: " "
         dateToParam: " "
         timeZoneParam: " "
@@ -4927,7 +4939,7 @@ traits:
   /resume:
     type:
       modifyOrder:
-        description: Resume orders when suspended or failed
+        description: Resumes orders when suspended or failed
         dateFromParam: " "
         dateToParam: " "
         timeZoneParam: !include api/documentation/order/forceAndFromBlock.md
@@ -4958,7 +4970,7 @@ traits:
   /suspend:
     type:
       modifyOrder:
-        description: Suspend orders
+        description: Suspends orders
         dateFromParam: !include api/documentation/common/dateFrom.md
         dateToParam: !include api/documentation/common/dateTo.md
         timeZoneParam: !include api/documentation/common/timeZone.md
