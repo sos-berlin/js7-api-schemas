@@ -31,6 +31,10 @@
             "items": {
                 "$ref": "approverState-schema.json"
             }
+        },
+        "limit": {
+            "type": "integer",
+            "default": 10000
         }
 	},
 	"additionalProperties": false
