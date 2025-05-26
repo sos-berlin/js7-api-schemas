@@ -21,19 +21,19 @@
             "type": "boolean",
             "default": false
         },
+        "reason": {
+            "$ref": "../../common/string255-schema.json"
+        },
         "approverState": {
             "$ref": "approverState-schema.json"
         },
-        "reason": {
-            "$ref": "../../common/string255-schema.json"
+        "approverStateDate": {
+            "$ref": "../../common/timestamp-schema.json"
         },
         "requestorState": {
             "$ref": "requestorState-schema.json"
         },
-        "created": {
-            "$ref": "../../common/timestamp-schema.json"
-        },
-        "modified": {
+        "requestorStateDate": {
             "$ref": "../../common/timestamp-schema.json"
         }
         
