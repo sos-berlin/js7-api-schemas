@@ -6,6 +6,6 @@
   "enum": [
       "REQUESTED",
       "WITHDRAWN",
-      "IN_PROGRESS"
+      "EXECUTED"
   ]
 }

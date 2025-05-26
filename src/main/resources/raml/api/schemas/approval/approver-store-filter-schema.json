@@ -1,0 +1,20 @@
+{
+    "title": "Store Approver Filter",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.approval.StoreApproverFilter",
+    "type": "object",
+    "extends": {
+        "$ref": "../security/fourEyes/approver-schema.json"
+    },  
+    "required": [
+        "accountName",
+        "firstName",
+        "lastName"  
+    ],
+    "properties": {
+        "auditLog": {
+            "$ref": "../audit/auditParams-schema.json"
+        }
+  },
+  "additionalProperties": false
+}

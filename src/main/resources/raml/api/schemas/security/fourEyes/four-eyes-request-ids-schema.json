@@ -1,0 +1,24 @@
+{
+	"title": "FourEyesRequestIds",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.foureyes.FourEyesRequestIds",
+	"type": "object",
+	"required": [
+	    "ids" 
+    ],
+	"properties": {
+		"ids": {
+		    "type": "array",
+		    "uniqueItems": true,
+		    "minItems": 1,
+		    "items": {
+                "$ref": "../../common/nonNegativeLong-schema.json"
+            }
+        },
+        "auditLog": {
+            "$ref": "../../audit/auditParams-schema.json"
+        }
+	},
+	"additionalProperties": false
+}
+ 
