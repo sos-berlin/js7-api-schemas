@@ -1,0 +1,20 @@
+ 
+{
+	"title": "Approval Email Settings",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.foureyes.ReadEmailSettings",
+	"type": "object",
+	"extends": {
+        "$ref": "email-settings-schema.json"
+    },
+    "required": [
+        "deliveryDate"  
+    ],
+    "properties": {
+		"deliveryDate": {
+            "$ref": "../../common/timestamp-schema.json"
+        }
+	},
+	"additionalProperties": false
+}
+    

@@ -817,6 +817,21 @@ traits:
           description10: " "
           schema: !include api/schemas/approval/update-ordering-filter-schema.json
           example: !include api/examples/approval/update-ordering-request.json
+          
+  /email_settings:
+    type:
+      postOnlyAccessToken:
+        description: Reads email settings for approver notification
+        description200: " "
+        schema200: !include api/schemas/security/fourEyes/email-settings-schema.json
+        example200: " "
+    /store:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Stores email settings for approver notification
+          description1: !include api/documentation/security/fourEyes/email-settings.md
+          schema: !include api/schemas/security/fourEyes/email-settings-schema.json
+          example: " "
     
 /audit_log:
   type:

@@ -9,6 +9,8 @@
 		"PROFILE",
 		"SETTING",
 		"GLOBALS",
-		"IAM"
+		"IAM",
+		"GIT",
+        "APPROVAL"
 	]
 }

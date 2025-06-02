@@ -26,8 +26,11 @@
     "requestor": {
         "$ref": "../common/string255-schema.json"
     },
-    "approverState": {
-        "$ref": "../common/string255-schema.json"
+    "numOfApprovedRequests": {
+        "$ref": "../common/nonNegativeLong-schema.json"
+    },
+    "numOfRejectedRequests": {
+        "$ref": "../common/nonNegativeLong-schema.json"
     }
   },
   "additionalProperties": false

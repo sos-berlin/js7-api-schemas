@@ -1,0 +1,62 @@
+ 
+{
+	"title": "Approval Email Settings",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.security.foureyes.EmailSettings",
+	"type": "object",
+	"required": [
+	    "jobResourceName",
+	    "body",
+	    "subject"
+	],
+	"properties": {
+		"body": {
+			"$ref": "../../common/noScript-schema.json"
+		},
+		"subject": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"cc": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"bcc": {
+			"$ref": "../../common/string255-schema.json"
+		},
+		"contentType": {
+			"type": "string",
+            "pattern": "^[^<>]*$",
+            "maxLength": 255,
+            "minLength": 1,
+            "default": "text/html"
+		},
+		"charset": {
+			"type": "string",
+            "pattern": "^[^<>]*$",
+            "maxLength": 255,
+            "minLength": 1,
+            "default": "ISO-8859-1"
+		},
+		"encoding": {
+			"type": "string",
+            "pattern": "^[^<>]*$",
+            "maxLength": 255,
+            "minLength": 1,
+            "default": "7-bit"
+		},
+		"priority": {
+			"type": "string",
+			"javaType": "com.sos.joc.model.security.foureyes.EmailPriority",
+			"enum": [
+			     "HIGH",
+			     "NORMAL",
+			     "LOW"
+			],
+            "default": "NORMAL"
+		},
+		"jobResourceName": {
+			"$ref": "../../common/string255required-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+    
