@@ -9,7 +9,7 @@
 <li>${Reason}: Reason of the approval request</li>
 </ul>
 </td><td></td><td></td></tr>
-<tr><td>``subject``</td><td>optional, string</td><td>Subject of the email. Above placeholders will be replaced too</td><td></td><td></td></tr>
+<tr><td>``subject``</td><td>required, string</td><td>Subject of the email. Above placeholders will be replaced too</td><td></td><td></td></tr>
 <tr><td>``cc``</td><td>optional, string</td><td>Carbon copy of the email</td><td></td><td></td></tr>
 <tr><td>``bcc``</td><td>optional, string</td><td>Blind carbon copy type of the email</td><td></td><td></td></tr>
 <tr><td>``contentType``</td><td>optional, string</td><td>Content type of the email</td><td></td><td>text/html</td></tr>

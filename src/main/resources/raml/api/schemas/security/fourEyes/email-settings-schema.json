@@ -10,10 +10,15 @@
 	],
 	"properties": {
 		"body": {
-			"$ref": "../../common/noScript-schema.json"
+			"type": "string",
+            "pattern": "^(?s)((?!<script( |>)|<svg/on).)*$",
+            "minLength": 1
 		},
 		"subject": {
-			"$ref": "../../common/noScript-schema.json"
+			"type": "string",
+            "pattern": "^(?s)((?!<script( |>)|<svg/on).)*$",
+            "maxLength": 255,
+            "minLength": 1
 		},
 		"cc": {
 			"$ref": "../../common/noScript-schema.json"
