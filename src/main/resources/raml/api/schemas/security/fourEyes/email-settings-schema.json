@@ -5,7 +5,6 @@
 	"javaType": "com.sos.joc.model.security.foureyes.EmailSettings",
 	"type": "object",
 	"required": [
-	    "jobResourceName",
 	    "body",
 	    "subject"
 	],
@@ -14,13 +13,13 @@
 			"$ref": "../../common/noScript-schema.json"
 		},
 		"subject": {
-			"$ref": "../../common/string255required-schema.json"
+			"$ref": "../../common/noScript-schema.json"
 		},
 		"cc": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/noScript-schema.json"
 		},
 		"bcc": {
-			"$ref": "../../common/string255-schema.json"
+			"$ref": "../../common/noScript-schema.json"
 		},
 		"contentType": {
 			"type": "string",
@@ -41,20 +40,26 @@
             "pattern": "^[^<>]*$",
             "maxLength": 255,
             "minLength": 1,
-            "default": "7-bit"
+            "default": "7bit"
 		},
 		"priority": {
 			"type": "string",
 			"javaType": "com.sos.joc.model.security.foureyes.EmailPriority",
 			"enum": [
-			     "HIGH",
+			     "HIGHEST",
+                 "HIGH",
 			     "NORMAL",
-			     "LOW"
+			     "LOW",
+			     "LOWEST"
 			],
             "default": "NORMAL"
 		},
 		"jobResourceName": {
-			"$ref": "../../common/string255required-schema.json"
+			"type": "string",
+            "pattern": "^[^<>]*$",
+            "maxLength": 255,
+            "minLength": 1,
+            "default": "eMailDefault"
 		}
 	},
 	"additionalProperties": false
