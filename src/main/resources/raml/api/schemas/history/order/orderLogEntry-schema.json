@@ -168,6 +168,9 @@
 		},
         "sleep": {
             "$ref": "sleep/sleep-schema.json"
+        },
+        "priority": {
+            "type": "integer"
         }
 	},
 	"additionalProperties": false
