@@ -1396,6 +1396,22 @@ traits:
       post:
         responses:
           419:
+      
+      /priority:
+        type:
+          postJSONWithOkResponse:
+            description: Changes order's priority
+            description1: !include api/documentation/dailyplan/modify/orderIds.md
+            description2: !include api/documentation/order/priority.md
+            description3: " "
+            description4: " "
+            description5: " "
+            description6: " "
+            description7: " "
+            description8: " "
+            description10: !include api/documentation/audit/auditLog.md
+            schema: !include api/schemas/orderManagement/dailyplan/dailyPlanChangePriority-schema.json
+            example: " "
 
     /summary:
       type:

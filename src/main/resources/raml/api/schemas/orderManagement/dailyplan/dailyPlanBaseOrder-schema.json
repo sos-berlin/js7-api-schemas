@@ -1,0 +1,27 @@
+{
+	"title": "Daily Plan base orders filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanBaseOrder",
+	"type": "object",
+	"required": [
+		"controllerId",
+		"orderIds"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerIdRequired-schema.json"
+		},
+		"orderIds": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$ref": "../../common/string255required-schema.json"
+			}
+		},
+		"auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
+ 

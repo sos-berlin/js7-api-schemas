@@ -1,0 +1,21 @@
+{
+	"title": "Daily Plan change priority",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanChangePriority",
+	"type": "object",
+	"extends" : {
+        "$ref": "dailyPlanBaseOrder-schema.json"
+    },
+	"required": [
+		"controllerId",
+		"orderIds",
+		"priority"
+	],
+	"properties": {
+		"priority": {
+			"type": "integer"
+		}
+	},
+	"additionalProperties": false
+}
+ 
