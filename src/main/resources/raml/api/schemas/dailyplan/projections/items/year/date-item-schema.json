@@ -3,29 +3,31 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.dailyplan.projections.items.year.DateItem",
 	"type": "object",
-	"description": "numOfPeriods and numOfNonPeriods are in the ./calendar response, periods and nonPeriods are in the ./dates response",
+	"description": "numOfOrders and numOfNonPeriods are in the ./calendar response, periods and nonPeriods are in the ./dates response",
 	"properties": {
 		"planned": {
 			"type": "boolean"
 		},
-        "numOfPeriods": {
-            "$ref": "../../../../common/nonNegativeInteger-schema.json"
-        },
+		"numOfOrders": {
+			"alias": "numOfPeriods",
+			"type": "integer",
+			"minimum": 0
+		},
 		"numOfNonPeriods": {
-            "$ref": "../../../../common/nonNegativeInteger-schema.json"
-        },
-        "periods": {
+			"$ref": "../../../../common/nonNegativeInteger-schema.json"
+		},
+		"periods": {
 			"type": "array",
 			"items": {
 				"$ref": "date-period-item-schema.json"
 			}
 		},
-        "nonPeriods": {
-            "type": "array",
-            "items": {
-                "$ref": "date-period-item-schema.json"
-            }
-        }
+		"nonPeriods": {
+			"type": "array",
+			"items": {
+				"$ref": "date-period-item-schema.json"
+			}
+		}
 	},
 	"additionalProperties": false
 }
