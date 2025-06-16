@@ -10,6 +10,12 @@
 		"schedule": {
 			"$ref": "../../../../common/string255-schema.json"
 		},
+		"scheduleOrderName": {
+			"$ref": "../../../../common/string255-schema.json"
+		},
+		"workflow": {
+			"$ref": "../../../../common/string255-schema.json"
+		},
 		"period": {
 			"$ref": "../../../../../../inventory/schemas/calendar/period-schema.json"
 		}

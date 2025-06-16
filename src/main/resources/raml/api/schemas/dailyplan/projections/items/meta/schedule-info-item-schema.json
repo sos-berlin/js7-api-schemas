@@ -11,6 +11,14 @@
 		"totalOrders": {
 			"$ref": "../../../../common/nonNegativeLong-schema.json"
 		},
+		"orderNames": {
+			"description": "this property is only set if the schedule defines orders",
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"$ref": "../../../../common/string255-schema.json"
+			}
+		},
 		"workflows": {
 			"$ref": "workflows-item-schema.json"
 		},
