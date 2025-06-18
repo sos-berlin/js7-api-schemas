@@ -17,6 +17,9 @@
     "jobResourceFolder": {
       "type" : "string"
     },
+    "filename": {
+      "type" : "string"
+    },
     "auditLog": {
       "$ref": "../audit/auditParams-schema.json"
     }

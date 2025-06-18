@@ -18,6 +18,9 @@
     "format": {
       "$ref": "archiveFormat-schema.json"
     },
+        "filename": {
+            "type": "string"
+        },
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}

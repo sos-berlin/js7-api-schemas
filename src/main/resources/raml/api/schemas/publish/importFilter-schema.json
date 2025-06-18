@@ -16,6 +16,9 @@
 	    "format": {
 	      "$ref": "archiveFormat-schema.json"
 	    },
+        "filename": {
+            "type": "string"
+        },
 		"suffix": {
 			"description": "default: '-imported<number>'",
 			"$ref": "../common/string100-schema.json"
