@@ -1,0 +1,9 @@
+{
+	"title": "Schedule runtime DailyPlan dates",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.schedule.runtime.items.DailyPlanDates",
+	"type": "object",
+	"additionalProperties": {
+		"$ref": "dailyPlan-date-item-schema.json"
+	}
+}

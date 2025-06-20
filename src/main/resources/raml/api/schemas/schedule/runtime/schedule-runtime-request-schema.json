@@ -1,0 +1,23 @@
+{
+	"title": "Schedule RunTime request",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.schedule.runtime.ScheduleRunTimeRequest",
+	"type": "object",
+	"properties": {
+		"calendars": {
+			"$ref": "../../../../inventory/schemas/calendar/calendars-list-schema.json"
+		},
+		"nonWorkingDayCalendars": {
+			"$ref": "../../../../inventory/schemas/calendar/calendars-list-non-working-day-schema.json"
+		},
+		"dateFrom": {
+			"$ref": "../../common/date-schema.json"
+		},
+		"dateTo": {
+			"$ref": "../../common/date-schema.json"
+		},
+		"timeZone": {
+			"$ref": "../../common/timezone-schema.json"
+		}
+	}
+}
