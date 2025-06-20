@@ -1,0 +1,19 @@
+{
+	"title": "Schedule runtime DailyPlan date",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.schedule.runtime.items.DailyPlanDate",
+	"type": "object",
+	"description": "",
+	"required": [
+		"periods"
+	],
+	"properties": {
+		"periods": {
+			"type": "array",
+			"items": {
+				"$ref": "../../../../../inventory/schemas/calendar/period-schema.json"
+			}
+		}
+	},
+	"additionalProperties": false
+}

@@ -5377,7 +5377,7 @@ traits:
 /schedule/runtime:
   type:
     postJSONWithoutJSId:
-      description: Runtime periods of a Schedule
+      description: DailyPlan dates with periods of a Schedule
       description1: " "
       description2: " "
       description3: !include api/documentation/calendar/dateFrom.md
@@ -5388,11 +5388,11 @@ traits:
       description8: " "
       description9: " "
       description10: " "
-      description200: Send singles starts or repeat intervals in UTC
-      schema: !include api/schemas/orderManagement/scheduleDatesFilter-schema.json
-      schema200: !include inventory/schemas/calendar/period-schema.json
-      example: !include api/examples/orderManagement/runtime-example.json
-      example200: !include api/examples/orderManagement/runtime200-example.json
+      description200: Send DailyPlan dates with periods - singles starts or repeat intervals in UTC
+      schema: !include api/schemas/schedule/runtime/schedule-runtime-request-schema.json
+      schema200: !include api/schemas/schedule/runtime/schedule-runtime-response-schema.json
+      example: !include api/examples/schedule/runtime/runtime-example.json
+      example200: !include api/examples/schedule/runtime/runtime200-example.json
 
 /schedules:
   type:

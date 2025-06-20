@@ -1,0 +1,19 @@
+{
+	"title": "Schedule RunTime response",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.schedule.runtime.ScheduleRunTimeResponse",
+	"type": "object",
+	"required": [
+		"deliveryDate",
+		"dates"
+	],
+	"properties": {
+		"deliveryDate": {
+			"$ref": "../../common/timestamp-schema.json"
+		},
+		"dates": {
+			"$ref": "items/dailyPlan-dates-item-schema.json"
+		}
+	},
+	"additionalProperties": false
+}
