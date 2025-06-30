@@ -1,18 +1,19 @@
 {
-  "title": "protocol",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "javaType": "com.sos.joc.model.yade.Protocol",
-  "type": "string",
-  "enum": [
-    "LOCAL",
-    "FTP",
-    "FTPS",
-    "SFTP",
-    "HTTP",
-    "HTTPS",
-    "WEBDAV",
-    "WEBDAVS",
-    "SMB",
-    "UNKNOWN"
-  ]
+	"title": "protocol",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.yade.Protocol",
+	"type": "string",
+	"enum": [
+		"UNKNOWN",
+		"AZURE_BLOB_STORAGE",
+		"FTP",
+		"FTPS",
+		"HTTP",
+		"HTTPS",
+		"LOCAL",
+		"SFTP",
+		"SMB",
+		"WEBDAV",
+		"WEBDAVS"
+	]
 }
