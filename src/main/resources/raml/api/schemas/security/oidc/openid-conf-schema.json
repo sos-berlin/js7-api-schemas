@@ -4,7 +4,15 @@
 	"javaType": "com.sos.joc.model.security.oidc.OpenIdConfiguration",
 	"type": "object",
 	"properties": {
-		"token_endpoint": {
+		"revocation_endpoint": {
+            "description": "URL for logout request",
+            "type": "string"
+        },
+        "end_session_endpoint": {
+            "description": "alternative URL for logout request",
+            "type": "string"
+        },
+        "token_endpoint": {
 		    "description": "URL for token request",
 			"type": "string"
 		},
