@@ -20,6 +20,9 @@
 		"iamOidcAuthenticationUrl": {
 			"$ref": "../../common/string255-schema.json"
 		},
+        "iamOidcFlowType": {
+            "$ref": "../properties/oidc/oidc-flowtypes-schema.json"
+        },
 		"iamIconUrl": {
 			"$ref": "../../common/string255-schema.json"
 		}
