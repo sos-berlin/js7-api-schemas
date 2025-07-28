@@ -13,6 +13,10 @@
 		},
 		"filter": {
 			"$ref": "submissions-delete-request-filter-schema.json"
-		}
-	}
+		},
+        "auditLog": {
+            "$ref": "../../audit/auditParams-schema.json"
+        }
+	},
+    "additionalProperties": false
 }

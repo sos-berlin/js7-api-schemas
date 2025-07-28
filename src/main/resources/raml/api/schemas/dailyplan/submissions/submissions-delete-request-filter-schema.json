@@ -25,5 +25,6 @@
 		"dateTo": {
 			"$ref": "../../common/date-schema.json"
 		}
-	}
+	},
+    "additionalProperties": false
 }
