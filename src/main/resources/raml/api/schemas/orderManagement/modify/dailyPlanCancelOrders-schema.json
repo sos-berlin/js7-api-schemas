@@ -1,0 +1,16 @@
+{
+	"title": "Daily Plan Order Filter Definition",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanCancelOrders",
+	"type": "object",
+	"extends": {
+        "$ref": "../dailyplan/dailyPlanOrdersFilterBase-schema.json"
+    },
+	"properties": {
+	    "auditLog": {
+			"$ref": "../../audit/auditParams-schema.json"
+		}
+	},
+    "additionalProperties": false
+}
+ 

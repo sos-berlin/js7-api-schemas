@@ -1,0 +1,36 @@
+{
+	"title": "resume orders",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.order.ResumeOrders",
+	"type": "object",
+	"extends" : {
+        "$ref": "../modifyOrdersBase-schema.json"
+    },
+    "required":[
+        "controllerId"
+    ],
+    "properties": {
+    	"force": {
+			"description": "force execution of non-startable jobs after kill",
+            "type": "boolean",
+            "default": false
+        },
+        "fromCurrentBlock": {
+			"type": "boolean",
+            "default": false
+        },
+        "position": {
+			"anyOf": [
+				{"$ref": "../../../../controller/schemas/common/position-schema.json"},
+				{"$ref": "../../common/string255required-schema.json"}
+			]
+		},
+		"variables": {
+			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
+		},
+		"cycleEndTime": {
+      		"$ref": "../../common/nonNegativeLong-schema.json"
+    	}
+	},
+    "additionalProperties": false
+}

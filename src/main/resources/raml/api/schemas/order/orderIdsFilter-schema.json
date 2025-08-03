@@ -1,0 +1,24 @@
+{
+	"title": "orderIds filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.order.OrderIdsFilter",
+	"type": "object",
+	"required": [
+        "controllerId",
+        "orderIds"
+    ],
+	"properties": {
+		"controllerId": {
+            "$ref": "../common/controllerIdRequired-schema.json"
+        },
+        "orderIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+                "$ref": "../common/string255required-schema.json"
+            }
+        }
+	},
+    "additionalProperties": false
+}

@@ -3,25 +3,18 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.order.OrdersFilterV",
   "type": "object",
+  "extends" : {
+    "$ref": "ordersFilterVBase-schema.json"
+  },
   "required": [
     "controllerId"
   ],
   "properties": {
-    "controllerId": {
-      "$ref": "../common/controllerIdRequired-schema.json"
-    },
     "orderIds": {
       "type": "array",
       "uniqueItems": true,
       "items": {
         "$ref": "../common/string255-schema.json"
-      }
-    },
-    "workflowIds": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
       }
     },
     "compact": {
@@ -36,32 +29,17 @@
         "$ref": "orderStateText-schema.json"
       }
     },
-    "folders": {
-      "$ref": "../common/folders-schema.json"
-    },
     "orderTags": {
       "$ref": "../common/tags-schema.json"
     },
     "workflowTags": {
       "$ref": "../common/tags-schema.json"
     },
-    "dateTo": {
-      "$ref": "../common/dateFromTo-schema.json"
-    },
     "stateDateFrom": {
       "$ref": "../common/dateFromTo-schema.json"
     },
     "stateDateTo": {
       "$ref": "../common/dateFromTo-schema.json"
-    },
-    "timeZone": {
-      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-      "type": "string"
-    },
-    "scheduledNever": {
-      "description": "deprecated -> is State.PENDING",
-      "type": "boolean",
-      "default": false
     },
     "limit": {
       "description": "-1=unlimited",
@@ -73,5 +51,6 @@
       "type": "boolean",
       "default": false
     }
-  }
+  },
+  "additionalProperties": false
 }

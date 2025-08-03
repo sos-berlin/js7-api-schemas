@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.8.0
+version: 2.8.1
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -1266,7 +1266,7 @@ traits:
       postJSONWithoutJSId:
         description: Gets orders from a daily plan interval
         description1: !include api/documentation/dailyplan/orders/dailyPlanOrdersFilterDefRequired.md
-        description2: !include api/documentation/inventory/tags.md
+        description2: !include api/documentation/dailyplan/orders/tags.md
         description3: " "
         description4: " "
         description5: " "
@@ -1276,7 +1276,7 @@ traits:
         description9: !include api/documentation/dailyplan/orders/states.md
         description10: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
         description200: " "
-        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDefRequired-schema.json
+        schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilter-schema.json
         schema200: !include api/schemas/orderManagement/dailyplan/plannedOrders-schema.json
         example: " "
         example200: " "
@@ -1296,7 +1296,7 @@ traits:
           description9: " "
           description10: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
+          schema: !include api/schemas/orderManagement/modify/dailyPlanCancelOrders-schema.json
           example: " "
     
     /copy:
@@ -1354,7 +1354,7 @@ traits:
           description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
           description10: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
+          schema: !include api/schemas/orderManagement/modify/dailyPlanSubmitOrders-schema.json
           example: " "
     /delete:
       type:
@@ -1371,7 +1371,7 @@ traits:
           description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
           description10: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDef-schema.json
+          schema: !include api/schemas/orderManagement/modify/dailyPlanDeleteOrders-schema.json
           example: " "
     /modify:
       type:
@@ -1428,7 +1428,7 @@ traits:
           description9: !include api/documentation/dailyplan/orders/submissionHistoryIds.md
           description10: " "
           description200: " "
-          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersFilterDefRequired-schema.json
+          schema: !include api/schemas/orderManagement/dailyplan/dailyPlanOrdersSummaryFilter-schema.json
           schema200: !include api/schemas/orderManagement/dailyplan/dailyPlanOrderSummary-schema.json
           example: " "
           example200: " "
@@ -4834,6 +4834,7 @@ traits:
         variablesParam: " "
         cycleParam: " "
         audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/order/modify/cancelOrders-schema.json
   /change:
     type:
       modifyOrder:
@@ -4846,6 +4847,7 @@ traits:
         variablesParam: !include api/documentation/order/priority.md
         cycleParam: " "
         audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/order/modify/changeOrders-schema.json
   /confirm:
     type:
       modifyOrder:
@@ -4858,6 +4860,7 @@ traits:
         variablesParam: " "
         cycleParam: " "
         audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/order/modifyOrdersBase-schema.json
   /continue:
     type:
       modifyOrder:
@@ -4870,6 +4873,7 @@ traits:
         variablesParam: " "
         cycleParam: " "
         audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/order/modifyOrdersBase-schema.json
 
   /history:
     type:
@@ -4920,7 +4924,7 @@ traits:
           description9: " "
           description10: " "
           description200: " "
-          schema: !include api/schemas/order/ordersFilterV-schema.json
+          schema: !include api/schemas/order/ordersFilterVBase-schema.json
           example: !include api/examples/controller/controllerParam-example.json
           schema200: !include api/schemas/order/snapshot-schema.json
           example200: !include api/examples/order/snapshot-example.json
@@ -4967,6 +4971,7 @@ traits:
         variablesParam: " "
         cycleParam: " "
         audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/order/modifyOrdersBase-schema.json
   /resume:
     type:
       modifyOrder:
@@ -4979,6 +4984,7 @@ traits:
         variablesParam: !include api/documentation/order/variables.md
         cycleParam: !include api/documentation/order/cycleEndTime.md
         audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/order/modify/resumeOrders-schema.json
     /positions:
       type:
         postJSON:
@@ -4995,7 +5001,7 @@ traits:
           description10: " "
           description200: !include api/documentation/order/positions200.md
           schema200: !include api/schemas/order/ordersResumePositions-schema.json
-          schema: modifyOrders
+          schema: !include api/schemas/order/orderIdsFilter-schema.json
           example: !include api/examples/order/request-positions-example.json
           example200: !include api/examples/order/response-positions-example.json
   /suspend:
@@ -5010,6 +5016,7 @@ traits:
         variablesParam: " "
         cycleParam: !include api/documentation/order/reset.md
         audit: !include api/documentation/audit/auditLog.md
+        schema: !include api/schemas/order/modify/suspendOrders-schema.json
         
 /plans:
   type:

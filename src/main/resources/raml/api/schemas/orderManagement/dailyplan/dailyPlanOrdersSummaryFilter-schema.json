@@ -1,0 +1,22 @@
+{
+	"title": "Daily Plan Orders Summary Filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrdersSummaryFilter",
+	"type": "object",
+	"extends": {
+        "$ref": "dailyPlanOrdersFilterBase-schema.json"
+    },
+    "required": [
+        "dailyPlanDateFrom"
+    ],
+    "properties": {
+        "submissionHistoryIds": {
+            "type": "array",
+            "items": {
+                "$ref": "../../common/nonNegativeLong-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}
+ 

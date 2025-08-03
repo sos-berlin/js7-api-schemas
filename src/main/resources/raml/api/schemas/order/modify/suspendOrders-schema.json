@@ -1,0 +1,36 @@
+{
+	"title": "suspend orders",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.order.SuspendOrders",
+	"type": "object",
+	"extends" : {
+        "$ref": "../modifyOrdersBase-schema.json"
+    },
+    "required":[
+        "controllerId"
+    ],
+    "properties": {
+    	"dateFrom": {
+            "$ref": "../../common/dateFromTo-schema.json"
+        },
+        "dateTo": {
+      		"$ref": "../../common/dateFromTo-schema.json"
+    	},
+    	"timeZone": {
+      		"$ref": "../../common/timezone-schema.json"
+    	},
+		"kill": {
+			"type": "boolean",
+			"default": false
+		},
+		"deep": {
+			"type": "boolean",
+            "default": false
+        },
+		"reset": {
+			"type": "boolean",
+            "default": false
+        }
+	},
+    "additionalProperties": false
+}

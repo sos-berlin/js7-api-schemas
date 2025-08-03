@@ -3,36 +3,14 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.order.ModifyOrders",
 	"type": "object",
+	"extends" : {
+        "$ref": "modifyOrdersBase-schema.json"
+    },
 	"required":[
 		"controllerId"
 	],
 	"properties": {
-		"controllerId": {
-			"$ref": "../common/controllerIdRequired-schema.json"
-		},
-		"orderIds": {
-			"type": "array",
-			"uniqueItems": true,
-			"items": {
-				"$ref": "../common/string255-schema.json"
-			}
-		},
-		"workflowIds": {
-			"type": "array",
-			"items": {
-				"$ref": "../../../controller/schemas/workflow/workflowId-schema.json"
-			}
-		},
-    	"states": {
-      		"type": "array",
-      		"items": {
-        		"$ref": "orderStateText-schema.json"
-      		}
-    	},
-		"folders": {
-        	"$ref": "../common/folders-schema.json"
-      	},
-    	"dateFrom": {
+		"dateFrom": {
             "$ref": "../common/dateFromTo-schema.json"
         },
         "dateTo": {
@@ -83,9 +61,7 @@
 		},
 		"cycleEndTime": {
       		"$ref": "../common/nonNegativeLong-schema.json"
-    	},
-    	"auditLog": {
-			"$ref": "../audit/auditParams-schema.json"
-		}
-	}
+    	}
+	},
+    "additionalProperties": false
 }

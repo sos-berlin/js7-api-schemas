@@ -1,0 +1,2 @@
+<tr><td>``workflowTags``</td><td>optional, array[string]</td><td>Tags to be assigned to workflows</td><td></td><td></td></tr>
+<tr><td>``orderTags``</td><td>optional, array[string]</td><td>Tags to be assigned to orders</td><td></td><td></td></tr>

@@ -1,14 +1,17 @@
 {
 	"title": "Daily Plan Order Filter Definition",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderFilterDef",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrdersFilter",
 	"type": "object",
 	"description": "Define the filter to get orders from the daily plan",
 	"extends": {
         "$ref": "dailyPlanOrdersFilterBase-schema.json"
     },
-	"properties": {
-	    "submissionHistoryIds": {
+    "required": [
+        "dailyPlanDateFrom"
+    ],
+    "properties": {
+        "submissionHistoryIds": {
             "type": "array",
             "items": {
                 "$ref": "../../common/nonNegativeLong-schema.json"
@@ -33,11 +36,8 @@
             "description": "for internal use only: controls if the cycle order should be expanded in the answer",
             "type": "boolean",
             "default": false
-        },
-		"auditLog": {
-			"$ref": "../../audit/auditParams-schema.json"
-		}
-	},
+        }
+    },
     "additionalProperties": false
 }
  

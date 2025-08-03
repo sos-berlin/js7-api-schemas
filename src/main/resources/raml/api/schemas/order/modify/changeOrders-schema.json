@@ -1,0 +1,18 @@
+{
+	"title": "change (priority of) orders",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.order.ChangeOrders",
+	"type": "object",
+	"extends" : {
+        "$ref": "../modifyOrdersBase-schema.json"
+    },
+    "required":[
+        "controllerId"
+    ],
+    "properties": {
+    	"priority": {
+            "type": "integer"
+        }
+	},
+    "additionalProperties": false
+}

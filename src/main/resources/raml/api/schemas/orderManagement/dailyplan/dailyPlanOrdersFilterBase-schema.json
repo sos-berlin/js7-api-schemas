@@ -1,19 +1,10 @@
 {
 	"title": "Daily Plan Order Filter Definition",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderFilterDef",
+	"javaType": "com.sos.joc.model.dailyplan.DailyPlanOrderFilterBase",
 	"type": "object",
 	"description": "Define the filter to get orders from the daily plan",
-	"required": [
-		"dailyPlanDateFrom"
-	],
 	"properties": {
-		"submissionHistoryIds": {
-			"type": "array",
-			"items": {
-				"$ref": "../../common/nonNegativeLong-schema.json"
-			}
-		},
 		"scheduleFolders": {
 			"$ref": "../../common/folders-schema.json"
 		},
@@ -32,12 +23,6 @@
 				"$ref": "../../common/string255-schema.json"
 			}
 		},
-		"workflowTags": {
-            "$ref": "../../common/tags-schema.json"
-        },
-		"orderTags": {
-            "$ref": "../../common/tags-schema.json"
-        },
 		"orderIds": {
 			"type": "array",
 			"items": {
@@ -50,29 +35,13 @@
 				"$ref": "../../common/controllerId-schema.json"
 			}
 		},
-		"states": {
-			"type": "array",
-			"items": {
-				"$ref": "dailyPlanOrderStateText-schema.json"
-			}
-		},
-		"late": {
-			"type": "boolean"
-		},
 		"dailyPlanDateFrom": {
 			"$ref": "../../common/date-schema.json"
 		},
 		"dailyPlanDateTo": {
 			"$ref": "../../common/date-schema.json"
-		},
-		"expandCycleOrders": {
-			"description": "for internal use only: controls if the cycle order should be expanded in the answer",
-  			"type": "boolean",
-  			"default": false
-		},
-		"auditLog": {
-			"$ref": "../../audit/auditParams-schema.json"
 		}
-	}
+	},
+    "additionalProperties": false
 }
  
