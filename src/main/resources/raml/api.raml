@@ -3542,6 +3542,32 @@ traits:
             example: !include api/examples/publish/git/commands/commonFilter-example.json
             schema200: !include api/schemas/publish/git/commands/commandResponse-schema.json
             example200: !include api/examples/publish/git/commands/commandResponse-example.json
+    
+    /delete:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: deletes configurations from a local repository in ./resources/joc/repositories
+          description1: !include api/documentation/publish/repository/deleteFromFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/repository/deleteFromRepositoryFilter-schema.json
+          example: !include api/examples/publish/repository/deleteFromFilter_files-example.json
+
+    /link:
+      type:
+        postJSONWithOkWithoutJSId:
+          description: Links an already existing local clone again to an existing JOC folder.
+          description1: !include api/documentation/publish/repository/linkFolderFilter.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          audit: !include api/documentation/audit/auditLog.md
+          schema: !include api/schemas/publish/git/link-folder-schema.json
+          example: !include api/examples/publish/repository/linkFolderFilter-example.json
 
     /read:
       type:
@@ -3571,18 +3597,18 @@ traits:
           schema: !include api/schemas/publish/repository/copyToRepositoryFilter-schema.json
           example: !include api/examples/publish/repository/copyToFilter_files-example.json
 
-    /delete:
+    /unlink:
       type:
         postJSONWithOkWithoutJSId:
-          description: deletes configurations from a local repository in ./resources/joc/repositories
-          description1: !include api/documentation/publish/repository/deleteFromFilter.md
+          description: Unlinks an existing local clone from an git controlled JOC folder.
+          description1: !include api/documentation/publish/repository/unlinkFolderFilter.md
           description2: " "
           description3: " "
           description4: " "
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
-          schema: !include api/schemas/publish/repository/deleteFromRepositoryFilter-schema.json
-          example: !include api/examples/publish/repository/deleteFromFilter_files-example.json
+          schema: !include api/schemas/publish/git/unlink-folder-schema.json
+          example: !include api/examples/publish/repository/unlinkFolderFilter-example.json
 
     /update:
       type:

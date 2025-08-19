@@ -1,0 +1,19 @@
+{
+  "title": "Filter to unlink the connection of a JOC folder to a local repository",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.git.UnlinkFolderFilter",
+  "type": "object",
+  "required": ["folder"],
+  "properties": {
+    "folder": {
+      "$ref": "../../common/string255-schema.json"
+    }, 
+    "deleteRepository": {
+      "type": "boolean",
+      "default" : false
+    },
+    "auditLog": {
+      "$ref": "../../audit/auditParams-schema.json"
+    }
+  }
+}

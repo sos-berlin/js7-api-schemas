@@ -1,0 +1,15 @@
+{
+  "title": "Filter to link a JOC folder to an already existing local repository",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.git.LinkFolderFilter",
+  "type": "object",
+  "required": ["folder"],
+  "properties": {
+    "folder": {
+      "$ref": "../../common/string255-schema.json"
+    }, 
+    "auditLog": {
+      "$ref": "../../audit/auditParams-schema.json"
+    }
+  }
+}
