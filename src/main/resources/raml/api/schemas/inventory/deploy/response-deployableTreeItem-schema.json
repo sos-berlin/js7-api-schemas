@@ -1,39 +1,43 @@
 {
-	"title": "ResponseDeployableTreeItem",
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.inventory.deploy.ResponseDeployableTreeItem",
-	"type": "object",
-	"properties": {
-		"id": {
-			"$ref": "../../common/nonNegativeLong-schema.json"
-		},
-		"folder": {
-			"$ref": "../../common/path-schema.json"
-		},
-		"objectName": {
-			"$ref": "../../common/string255-schema.json"
-		},
-		"objectType": {
-			"$ref": "../common/configurationType-schema.json"
-		},
-		"valid": {
-			"type": "boolean"
-		},
-		"deleted": {
-			"type": "boolean"
-		},
-		"syncState": {
-			"$ref": "../../../../controller/schemas/common/syncState-schema.json"
-		},
-		"deployed": {
-			"type": "boolean"
-		},
-		"deployablesVersions": {
-			"type": "array",
-			"items": {
-				"$ref": "response-deployableVersion-schema.json"
-			},
-			"uniqueItems": true
-		}
-	}
+  "title": "ResponseDeployableTreeItem",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.deploy.ResponseDeployableTreeItem",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "../../common/nonNegativeLong-schema.json"
+    },
+    "folder": {
+      "$ref": "../../common/path-schema.json"
+    },
+    "objectName": {
+      "$ref": "../../common/string255-schema.json"
+    },
+    "objectType": {
+      "$ref": "../common/configurationType-schema.json"
+    },
+    "valid": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "syncState": {
+      "$ref": "../../../../controller/schemas/common/syncState-schema.json"
+    },
+    "deployed": {
+      "type": "boolean"
+    },
+    "deployablesVersions": {
+      "type": "array",
+      "items": {
+        "$ref": "response-deployableVersion-schema.json"
+      },
+      "uniqueItems": true
+    },
+    "forceDependencies": {
+      "type" : "boolean",
+      "default" : false
+    }
+  }
 }
