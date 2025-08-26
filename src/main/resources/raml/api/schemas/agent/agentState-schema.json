@@ -9,7 +9,7 @@
   ],
   "properties": {
     "severity": {
-      "description": "0=COUPLED, 1=RESETTING, 1=RESET, 2=COUPLINGFAILED, 3=UNKNOWN",
+      "description": "0=COUPLED (or color from connection state), 1=RESETTING, 1=RESET, 2=SHUTDOWN, 4=UNKNOWN",
       "type": "integer"
     },
     "_text": {

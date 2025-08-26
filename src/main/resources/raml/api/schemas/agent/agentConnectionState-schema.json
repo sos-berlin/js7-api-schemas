@@ -1,0 +1,23 @@
+{
+  "title": "agent connection state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentConnectionState",
+  "type": "object",
+  "required": [
+    "severity",
+    "_text"
+  ],
+  "properties": {
+    "severity": {
+      "description": "8=WITH_TEMPORARY_ERROR, 2=NODE_LOSS, 2=WITH_PERMANENT_ERROR, 5=NOT_DEDICATED",
+      "type": "integer"
+    },
+    "_text": {
+      "$ref": "agentConnectionStateText-schema.json"
+    },
+    "errorMessage": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

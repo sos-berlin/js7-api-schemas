@@ -1,0 +1,12 @@
+{
+  "title": "agent connection state",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.agent.AgentConnectionStateText",
+  "type": "string",
+  "enum": [
+      "NODE_LOSS",
+      "NOT_DEDICATED",
+      "WITH_PERMANENT_ERROR",
+      "WITH_TEMPORARY_ERROR"
+  ]
+}
