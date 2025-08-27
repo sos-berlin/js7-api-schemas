@@ -1,0 +1,31 @@
+{
+  "title": "synchronize request filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.sync.RequestFilter",
+  "type": "object",
+  "extends": {
+    "$ref": "../common/request-filter-schema.json"
+  },
+  "anyOf": [
+    {
+      "required": [
+        "path",
+        "objectType",
+        "controllerId"
+      ]
+    },
+    {
+      "required": [
+        "id",
+        "controllerId"
+      ]
+    }
+  ],
+  "properties": {
+    "recursive": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}
