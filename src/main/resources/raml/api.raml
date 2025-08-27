@@ -3698,6 +3698,23 @@ traits:
         schema200: !include api/schemas/inventory/configurationObject-schema.json
         example200: !include api/examples/inventory/store-response-example.json
 
+  /synchronize:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Synchronizes the deployment state in the inventory with the information given from the selected controller
+        description1: !include api/documentation/inventory/sychronizeFilter.md
+        description2: !include api/documentation/audit/auditLog.md
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/inventory/sync/request-filter-schema.json
+        example: !include api/examples/inventory/synchronize-request-example.json
+
   /trash:
     description: This is not an API call. Use its children!!
 

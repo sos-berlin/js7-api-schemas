@@ -3,28 +3,23 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.inventory.sync.RequestFilter",
   "type": "object",
-  "extends": {
-    "$ref": "../common/request-filter-schema.json"
-  },
-  "anyOf": [
-    {
-      "required": [
-        "path",
-        "objectType",
-        "controllerId"
-      ]
-    },
-    {
-      "required": [
-        "id",
-        "controllerId"
-      ]
-    }
+  "required": [
+    "folder",
+    "controllerId"
   ],
   "properties": {
     "recursive": {
       "type": "boolean",
       "default": false
+    },
+    "controllerId": {
+      "$ref": "../../common/controllerId-schema.json"
+    },
+    "folder": {
+      "$ref": "../../common/string255required-schema.json"
+    },
+    "auditLog": {
+        "$ref": "../../audit/auditParams-schema.json"
     }
   },
   "additionalProperties": false
