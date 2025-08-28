@@ -4782,6 +4782,25 @@ traits:
       type:
         postOrderLogWithPlainResponse:
           description: Provides order log as download
+    /unsubscribe:
+      type:
+        postJSON:
+          description: Order Log unsubscription
+          description1: !include api/documentation/order/historyId.md
+          description2: " "
+          description3: " "
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: " "
+          schema: !include api/schemas/order/orderHistoryFilter-schema.json
+          schema200: !include api/schemas/common/ok-schema.json
+          example: " "
+          example200: !include api/examples/common/ok-example.json
   /obstacles:
     type:
       postJSON:
@@ -5837,6 +5856,17 @@ traits:
         schema: !include api/schemas/job/runningTaskLogFilter-schema.json
         example: TODO
         example200: " "
+  /unsubscribe:
+    type:
+      postJSON:
+        description: Task Log unsubscription
+        description1: !include api/documentation/job/task.md
+        description2: " "
+        description3: " "
+        schema: !include api/schemas/job/taskFilter-schema.json
+        schema200: !include api/schemas/common/ok-schema.json
+        example: " "
+        example200: !include api/examples/common/ok-example.json
 
 /tasks/history:
   type:
