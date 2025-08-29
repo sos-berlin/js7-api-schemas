@@ -1,0 +1,5 @@
+{
+  "controllerId" : "testsuite",
+  "folder" : "/myWorkflows/myIfElseWorkflow",
+  "recursive" : true
+}

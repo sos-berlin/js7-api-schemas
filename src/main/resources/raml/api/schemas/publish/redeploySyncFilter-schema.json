@@ -1,0 +1,22 @@
+{
+  "title": "redeploy filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.RedeploySyncFilter",
+  "type": "object",
+  "extends" : {
+      "$ref": "redeployFilter-schema.json"
+    },
+  "required": [
+    "controllerId",
+    "folder"
+  ],
+  "properties": {
+    "folder": {
+      "$ref": "../common/string255-schema.json"
+    },
+    "recursive": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

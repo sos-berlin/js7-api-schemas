@@ -1,25 +1,17 @@
 {
-	"title": "redeploy filter",
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.publish.RedeployFilter",
-	"type": "object",
-  	"required": [
-      "controllerId",
-      "folder"
-  	],
-	"properties": {
-		"controllerId": {
-      		"$ref": "../common/controllerIdRequired-schema.json"
-		},
-		"folder": {
-			"$ref": "../common/string255-schema.json"
-		},
-		"recursive": {
-			"type": "boolean",
-			"default" : false
-		},
-		"auditLog": {
-			"$ref": "../audit/auditParams-schema.json"
-		}
-	}
+  "title": "redeploy filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.publish.RedeployFilter",
+  "type": "object",
+  "required": [
+    "controllerId"
+  ],
+  "properties": {
+    "controllerId": {
+      "$ref": "../common/controllerIdRequired-schema.json"
+    },
+    "auditLog": {
+      "$ref": "../audit/auditParams-schema.json"
+    }
+  }
 }
