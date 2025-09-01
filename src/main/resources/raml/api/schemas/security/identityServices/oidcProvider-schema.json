@@ -23,6 +23,12 @@
         "iamOidcFlowType": {
             "$ref": "../properties/oidc/oidc-flowtypes-schema.json"
         },
+        "iamOidcGroupClaims": {
+            "type": "array",
+            "items": {
+                "$ref": "../../common/string255-schema.json"
+            }
+        },
 		"iamIconUrl": {
 			"$ref": "../../common/string255-schema.json"
 		}
