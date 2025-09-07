@@ -16,9 +16,15 @@
 		"iamOidcGroupClaims": {
 			"type": "array",
 			"items": {
-				"$ref": "../../../common/string255-schema.json"
+				"$ref": "../../../common/string255required-schema.json"
 			}
 		},
+        "iamOidcGroupScopes": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../common/string255required-schema.json"
+            }
+        },
 		"iamOidcClientSecret": {
 			"$ref": "../../../common/string255-schema.json"
 		},
