@@ -41,7 +41,6 @@
     	"$ref": "../controller/clusterState-schema.json"
     },
     "errorMessage": {
-    	"description": "if state == couplngFailed or unknown",
     	"type": "string"
     },
     "orders": {

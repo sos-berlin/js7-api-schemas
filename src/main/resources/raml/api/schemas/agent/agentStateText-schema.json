@@ -6,9 +6,7 @@
   "enum": [
       "COUPLED",
       "RESETTING",
-      "RESET",
       "INITIALISED",
-      "COUPLINGFAILED",
       "SHUTDOWN",
       "UNKNOWN"
   ]

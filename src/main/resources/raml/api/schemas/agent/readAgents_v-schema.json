@@ -19,7 +19,16 @@
     "states": {
     	"type": "array",
     	"items": {
-    		"$ref": "agentStateText-schema.json"
+    	    "type": "string",
+    		"javaType": "com.sos.joc.model.agent.AgentStateTextFilter",
+            "enum": [
+                "COUPLED",
+                "RESETTING",
+                "INITIALISED",
+                "COUPLINGFAILED",
+                "SHUTDOWN",
+                "UNKNOWN"
+            ]
     	}
     },
     "onlyVisibleAgents": {
