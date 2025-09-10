@@ -30,9 +30,6 @@
                 "$ref": "../../common/string255required-schema.json"
             }
         },
-        "iamOidcAccountNameClaim": {
-            "$ref": "../../common/string255required-schema.json"
-        },
         "iamOidcGroupScopes": {
             "type": "array",
             "uniqueItems": true,
