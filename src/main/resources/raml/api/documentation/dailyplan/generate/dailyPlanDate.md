@@ -1,10 +1,10 @@
-<tr><td>``dailyPlanDate``</td>
+<tr><td>``dailyPlanDates``</td>
 	
-<td>required, string</td>
-<td>The value has to have the format *YYYY-MM-DD*<br/>
-The day of the daily plan. Depends on the settings for daily plan timezone and daily plan period.</td>
+<td>required, array[string]</td>
+<td>The value of the items has to have the format *YYYY-MM-DD*<br/>
+The days of the daily plan. Depends on the settings for daily plan timezone and daily plan period.</td>
 	
-<td>2020-12-31</td>
+<td>[2025-12-31]</td>
 	
 <td></td>
 	

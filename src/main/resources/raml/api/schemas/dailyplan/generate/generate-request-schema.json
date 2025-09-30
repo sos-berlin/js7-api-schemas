@@ -4,17 +4,37 @@
 	"javaType": "com.sos.joc.model.dailyplan.generate.GenerateRequest",
 	"type": "object",
 	"description": "To generate orders for the daily plan",
-	"required": [
-		"controllerId",
-		"dailyPlanDate"
-	],
+	"anyOf": [
+        {
+            "required": [
+                "controllerId",
+                "dailyPlanDates"
+            ]
+        },
+        {
+            "required": [
+                "controllerId",
+                "dailyPlanDate"
+            ]
+        }
+    ],
 	"properties": {
 		"controllerId": {
 			"$ref": "../../common/controllerIdRequired-schema.json"
 		},
 		"dailyPlanDate": {
-			"$ref": "../../common/date-schema.json"
+		    "description": "deprecated; use dailyPlanDates",
+			"type": "string",
+			"format": "date"
 		},
+        "dailyPlanDates": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "$ref": "../../common/date-schema.json"
+            }
+        },
 		"schedulePaths": {
 			"$ref": "items/path-item-schema.json"
 		},
