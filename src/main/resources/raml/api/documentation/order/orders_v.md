@@ -10,7 +10,6 @@ It depends on the parameter ``compact``.<br/>
     * state
     	* reason (if state is WAITING)
 * The compact view has further optional fields
-    * arguments
     * attachedState
     	* agentRefPath
     * lastOutcome
@@ -19,4 +18,5 @@ It depends on the parameter ``compact``.<br/>
     * scheduledFor
     * requirements if state is PENDING, SCHEDULED, BLOCKED or SUSPENDED
 * The detailed view has the following optional fields in addition to the compact view
+    * arguments
 	* historicOutcome
