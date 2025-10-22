@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.sos.joc.model.inventory.ConfigurationObject;
+import com.sos.joc.model.inventory.common.ConfigurationType;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -32,7 +33,7 @@ public class RequestedResponseItem {
     @JsonProperty("name")
     private String name;
     @JsonProperty("type")
-    private String type;
+    private ConfigurationType type;
     /**
      * JS Object configuration
      * <p>
@@ -59,12 +60,12 @@ public class RequestedResponseItem {
     }
 
     @JsonProperty("type")
-    public String getType() {
+    public ConfigurationType getType() {
         return type;
     }
 
     @JsonProperty("type")
-    public void setType(String type) {
+    public void setType(ConfigurationType type) {
         this.type = type;
     }
 

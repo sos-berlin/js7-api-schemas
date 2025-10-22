@@ -8,7 +8,7 @@
       "type": "string"
     },
     "type": {
-      "type": "string"
+      "$ref": "../../common/configurationType-schema.json"
     },
     "configuration": {
       "$ref": "../../configurationObject-schema.json"
