@@ -12,7 +12,7 @@
       "type": "string"
     },
     "type": {
-      "type": "string"
+      "$ref": "../common/configurationType-schema.json"
     }
   },
   "additionalProperties": false
