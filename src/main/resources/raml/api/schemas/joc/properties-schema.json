@@ -15,7 +15,8 @@
     "displayFoldersInViews",
     "jocVersion",
     "kioskRole",
-    "kioskViews"
+    "kioskViews",
+    "enableLinkChecker"
   ],
   "properties": {
     "deliveryDate": {
@@ -149,6 +150,10 @@
       "additionalProperties": {
           "$ref": "../common/nonNegativeInteger-schema.json"
       }
+    },
+    "enableLinkChecker": {
+      "type": "boolean",
+      "default": false
     }
   },
   "additionalProperties": false
