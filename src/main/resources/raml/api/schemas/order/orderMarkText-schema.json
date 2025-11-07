@@ -6,7 +6,8 @@
   "enum": [
     "CANCELLING",
     "RESUMING",
-    "SUSPENDING"
+    "SUSPENDING",
+    "OUTDATED"
   ]
 }
 
