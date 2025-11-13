@@ -4,7 +4,7 @@
     "javaType": "com.sos.joc.model.note.AddPost",
     "type": "object",
     "extends" : {
-        "$ref": "common/request-modify-filter-schema.json"
+        "$ref": "common/request-modify-schema.json"
     },
     "required": [
         "name",
@@ -17,9 +17,6 @@
         },
         "severity": {
             "$ref": "common/severityType-schema.json"
-        },
-        "displayPreferences": {
-            "$ref": "common/displayPreferences-schema.json"
         }
     },
     "additionalProperties": false

@@ -1,4 +1,4 @@
-<tr><td>``displayPreferences``</td><td>optional, object</td><td>Object that contains ``width`` and ``heigth``.</td>
+<tr><td>``displayPreferences``</td><td>required, object</td><td>Object that contains ``width`` and ``heigth``.</td>
 <td rowspan="3"><pre>{
   "width": 600,
   "heigth": 500

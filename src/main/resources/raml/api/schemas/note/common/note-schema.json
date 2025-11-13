@@ -7,6 +7,9 @@
         "$ref": "identifier-schema.json"
     },
     "properties": {
+        "noteId": {
+            "$ref": "../../common/nonNegativeLong-schema.json" 
+        },
         "metadata": {
             "$ref": "metadata-schema.json"
         },

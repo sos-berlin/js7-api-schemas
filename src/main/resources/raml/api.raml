@@ -4452,7 +4452,7 @@ traits:
         description8: " "
         description9: " "
         description10: !include api/documentation/audit/auditLog.md
-        schema: !include api/schemas/note/common/identifier-schema.json
+        schema: !include api/schemas/note/common/request-modify-schema.json
         example: !include api/examples/note/identifier-example.json
   
   /post:
@@ -4478,7 +4478,7 @@ traits:
           
   /preferences:
     type:
-      postJSONWithOkWithoutJSId:
+      postJSONWithoutJSId:
         description: Sets display preferences (width, height)
         description1: !include api/documentation/note/identifier.md
         description2: !include api/documentation/note/displayPreferences.md
@@ -4491,7 +4491,9 @@ traits:
         description9: " "
         description10: " "
         schema: !include api/schemas/note/request-displayPreferences-schema.json
+        schema200: !include api/schemas/note/response-schema.json
         example: !include api/examples/note/displayPreferences-example.json
+        example200: !include api/examples/note/note-example.json
                  
 /notice:
   /board:
