@@ -1,0 +1,8 @@
+{
+    "name": "myWorkflow",
+    "objectType": "WORKFLOW",
+    "displayPreferences": {
+        "width": 600,
+        "height": 800
+    }
+}

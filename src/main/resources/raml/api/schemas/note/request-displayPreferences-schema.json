@@ -1,0 +1,20 @@
+{
+    "title": "set display preferences",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.DisplayPreferencesRequest",
+    "type": "object",
+    "extends" : {
+        "$ref": "common/identifier-schema.json"
+    },
+    "required": [
+        "name",
+        "objectType",
+        "displayPreferences"
+    ],
+    "properties": {
+        "displayPreferences": {
+            "$ref": "common/displayPreferences-schema.json"
+        }
+    },
+    "additionalProperties": false
+}
