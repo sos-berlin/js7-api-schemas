@@ -13,7 +13,7 @@
     * content
     * severity
     * author
-        *userName
+        * userName
     * posted
 * participants (for each participant)
     * postCount
