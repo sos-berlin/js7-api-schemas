@@ -1,0 +1,15 @@
+{
+  "title": "note/post severity",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.note.common.Severity",
+  "type": "string",
+  "enum": [
+    "CRITICAL",
+    "HIGH",
+    "NORMAL",
+    "LOW",
+    "INFO"
+  ],
+  "default": "NORMAL"
+}
+

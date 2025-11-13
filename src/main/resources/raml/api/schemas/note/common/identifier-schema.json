@@ -1,0 +1,19 @@
+{
+	"title": "common note identifier",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.note.common.NoteIdentifier",
+	"type": "object",
+	"required": [
+        "name",
+        "objectType"
+    ],
+	"properties": {
+		"name": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"objectType": {
+            "$ref": "../../inventory/common/configurationTypeWithoutFolder-schema.json"
+        }
+	},
+    "additionalProperties": false
+}

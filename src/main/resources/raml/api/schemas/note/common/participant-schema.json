@@ -1,0 +1,18 @@
+{
+    "title": "participant/user",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.common.Participant",
+    "type": "object",
+    "extends" : {
+        "$ref": "author-schema.json"
+    },
+    "properties": {
+        "postCount": {
+            "$ref": "../../common/nonNegativeInteger-schema.json"
+        },
+        "modified": {
+            "$ref": "../../common/timestamp-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

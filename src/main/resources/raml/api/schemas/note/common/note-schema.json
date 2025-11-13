@@ -1,0 +1,27 @@
+{
+    "title": "note",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.common.Note",
+    "type": "object",
+    "extends" : {
+        "$ref": "identifier-schema.json"
+    },
+    "properties": {
+        "metadata": {
+            "$ref": "metadata-schema.json"
+        },
+        "posts": {
+            "type": "array",
+            "items": {
+                "$ref": "post-schema.json"
+            }
+        },
+        "participants": {
+            "type": "array",
+            "items": {
+                "$ref": "participant-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}

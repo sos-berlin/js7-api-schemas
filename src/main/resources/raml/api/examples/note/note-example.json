@@ -1,0 +1,50 @@
+{
+    "deliveryDate": "2025-11-13T11:30:46.964+00:00",
+    "name": "myWorkflow",
+    "objectType": "WORKFLOW",
+    "metadata": {
+        "created": "2025-11-12T11:29:06.275+00:00",
+        "createdBy": {
+            "userName": "user1"
+        },
+        "modified": "2025-11-13T11:30:46.964+00:00",
+        "modifiedBy": {
+            "userName": "user2"
+        },
+        "postCount": 2,
+        "participantCount": 2,
+        "severity": "NORMAL"
+    },
+    "posts": [
+        {
+            "postId": 1,
+            "content": "Hello everyone!",
+            "severity": "NORMAL",
+            "author": {
+                "userName": "user1"
+            },
+            "posted": "2025-11-12T11:29:06.275+00:00"
+        },
+        {
+            "postId": 2,
+            "content": "Hello user1!",
+            "severity": "NORMAL",
+            "author": {
+                "userName": "user2"
+            },
+            "posted": "2025-11-13T11:30:46.964+00:00"
+        }
+    ],
+    "participants": [
+        {
+            "postCount": 1,
+            "modified": "2025-11-12T11:29:06.275+00:00",
+            "userName": "user1"
+        },
+        {
+            "postCount": 1,
+            "modified": "2025-11-13T11:30:46.964+00:00",
+            "userName": "user2"
+        }
+    ]
+}

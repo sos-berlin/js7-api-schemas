@@ -1,0 +1,12 @@
+{
+    "title": "author/user",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.common.Author",
+    "type": "object",
+    "properties": {
+        "userName": {
+            "$ref": "../../common/string255required-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

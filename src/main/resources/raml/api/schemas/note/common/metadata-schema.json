@@ -1,0 +1,34 @@
+{
+    "title": "metadata",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.common.Metadata",
+    "type": "object",
+    "properties": {
+        "created": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "createdBy": {
+            "$ref": "author-schema.json"
+        },
+        "modified": {
+            "$ref": "../../common/timestamp-schema.json"
+        },
+        "modifiedBy": {
+            "$ref": "author-schema.json"
+        },
+        "postCount": {
+            "$ref": "../../common/nonNegativeInteger-schema.json"
+        },
+        "participantCount": {
+            "$ref": "../../common/nonNegativeInteger-schema.json"
+        },
+        "severity": {
+            "$ref": "severityType-schema.json"
+        },
+        "displayPreferences": {
+            "$ref": "displayPreferences-schema.json"
+        }
+        
+    },
+    "additionalProperties": false
+}

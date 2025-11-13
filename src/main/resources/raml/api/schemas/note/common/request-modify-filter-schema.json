@@ -1,0 +1,19 @@
+{
+	"title": "common note request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.note.common.RequestModifyFilter",
+	"type": "object",
+	"extends" : {
+        "$ref": "identifier-schema.json"
+    },
+    "required": [
+        "name",
+        "objectType"
+    ],
+	"properties": {
+		"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
+	},
+    "additionalProperties": false
+}

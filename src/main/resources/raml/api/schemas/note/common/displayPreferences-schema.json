@@ -1,0 +1,15 @@
+{
+	"title": "DisplayPreferences",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.note.common.DisplayPreferences",
+	"type": "object",
+	"properties": {
+		"width": {
+			"$ref": "../../common/nonNegativeInteger-schema.json"
+		},
+		"height": {
+            "$ref": "../../common/nonNegativeInteger-schema.json"
+        }
+	},
+    "additionalProperties": false
+}

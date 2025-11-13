@@ -4412,11 +4412,69 @@ traits:
         description11: " "
         description12: " "
         description13: " "
-        description200: TODO
+        description200: " "
         schema: !include api/schemas/monitoring/notification/order/order-notifications-filter-schema.json
         schema200: !include api/schemas/monitoring/notification/order/order-notifications-answer-schema.json
         example: " "
         example200: " "
+
+/note:
+  type:
+    postJSONWithoutJSId:
+      description: Gets a note
+      description1: !include api/documentation/note/identifier.md
+      description2: " "
+      description3: " "
+      description4: " "
+      description5: " "
+      description6: " "
+      description7: " "
+      description8: " "
+      description9: " "
+      description10: " "
+      description200: !include api/documentation/note/note.md
+      schema: !include api/schemas/note/common/identifier-schema.json
+      schema200: !include api/schemas/note/response-schema.json
+      example: !include api/examples/note/identifier-example.json
+      example200: !include api/examples/note/note-example.json
+      
+  /delete:
+    type:
+      postJSONWithOkWithoutJSId:
+        description: Deletes a note
+        description1: !include api/documentation/note/identifier.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        schema: !include api/schemas/note/common/identifier-schema.json
+        example: !include api/examples/note/identifier-example.json
+  /post:
+    /add:
+      type:
+        postJSONWithoutJSId:
+          description: Adds a post to a note and returns the updated note
+          description1: !include api/documentation/note/identifier.md
+          description2: !include api/documentation/note/content.md
+          description3: !include api/documentation/note/severity.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: !include api/documentation/audit/auditLog.md
+          description200: !include api/documentation/note/note.md
+          schema: !include api/schemas/note/addPost-schema.json
+          schema200: !include api/schemas/note/response-schema.json
+          example: !include api/examples/note/addPost-example.json
+          example200: !include api/examples/note/note-example.json
+                 
 /notice:
   /board:
     type:

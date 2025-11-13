@@ -1,0 +1,24 @@
+{
+    "title": "post",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.common.Post",
+    "type": "object",
+    "properties": {
+        "postId": {
+            "$ref": "../../common/nonNegativeInteger-schema.json"
+        },
+        "content": {
+            "$ref": "../../common/noScript-schema.json"
+        },
+        "severity": {
+            "$ref": "severityType-schema.json"
+        },
+        "author": {
+            "$ref": "author-schema.json"
+        },
+        "posted": {
+            "$ref": "../../common/timestamp-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

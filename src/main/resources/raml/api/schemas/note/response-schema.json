@@ -1,0 +1,15 @@
+{
+    "title": "read note",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.NoteResponse",
+    "type": "object",
+    "extends" : {
+        "$ref": "common/note-schema.json"
+    },
+    "properties": {
+        "deliveryDate": {
+            "$ref": "../common/timestamp-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

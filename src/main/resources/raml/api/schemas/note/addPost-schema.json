@@ -1,0 +1,26 @@
+{
+    "title": "add post",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.AddPost",
+    "type": "object",
+    "extends" : {
+        "$ref": "common/request-modify-filter-schema.json"
+    },
+    "required": [
+        "name",
+        "objectType",
+        "content"
+    ],
+    "properties": {
+        "content": {
+            "$ref": "../common/noScriptRequired-schema.json"
+        },
+        "severity": {
+            "$ref": "common/severityType-schema.json"
+        },
+        "displayPreferences": {
+            "$ref": "common/displayPreferences-schema.json"
+        }
+    },
+    "additionalProperties": false
+}
