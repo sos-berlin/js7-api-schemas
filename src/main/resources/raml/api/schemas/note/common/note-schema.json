@@ -10,6 +10,9 @@
         "noteId": {
             "$ref": "../../common/nonNegativeLong-schema.json" 
         },
+        "path": {
+            "$ref": "../../common/path-schema.json"
+        },
         "metadata": {
             "$ref": "metadata-schema.json"
         },
