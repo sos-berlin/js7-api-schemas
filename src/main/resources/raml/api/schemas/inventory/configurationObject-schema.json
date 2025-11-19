@@ -58,7 +58,10 @@
 		"hasReleases": {
 			"type": "boolean"
 		},
-		"isReferencedBy": {
+		"hasNote": {
+            "type": "boolean"
+        },
+        "isReferencedBy": {
 			"type": "object",
 			"additionalProperties": {
 				"$ref": "../common/nonNegativeInteger-schema.json"

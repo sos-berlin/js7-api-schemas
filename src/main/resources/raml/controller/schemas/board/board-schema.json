@@ -36,6 +36,9 @@
       "items": {
         "$ref": "notice-schema.json"
       }
+    },
+    "hasNote": {
+      "type": "boolean"
     }
   },
   "additionalProperties": false

@@ -15,6 +15,9 @@
     },
     "state": {
       "$ref": "../common/syncState-schema.json"
+    },
+    "hasNote": {
+      "type": "boolean"
     }
   },
   "additionalProperties": false

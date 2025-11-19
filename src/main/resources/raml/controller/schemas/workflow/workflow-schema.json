@@ -64,6 +64,9 @@
     },
     "deployed": {
       "type": "boolean" 
+    },
+    "hasNote": {
+      "type": "boolean"
     }
   },
   "additionalProperties": false
