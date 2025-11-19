@@ -11,20 +11,20 @@
       "$ref": "../../common/configurationType-schema.json"
     },
     "configuration": {
-      "$ref": "../../configurationObject-schema.json"
+      "$ref": "enforcedConfigurationObject-schema.json"
     },
     "references": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "../../configurationObject-schema.json"
+        "$ref": "enforcedConfigurationObject-schema.json"
       }
     },
     "referencedBy": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "../../configurationObject-schema.json"
+        "$ref": "enforcedConfigurationObject-schema.json"
       }
     }
   },

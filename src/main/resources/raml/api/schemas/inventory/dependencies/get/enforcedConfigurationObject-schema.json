@@ -1,0 +1,28 @@
+{
+  "title": "JS Object configuration",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.dependencies.get.EnforcedConfigurationObject",
+  "type": "object",
+  "extends": {
+    "javaType": "com.sos.joc.model.inventory.ConfigurationObject"
+  },
+  "anyOf": [
+    {
+      "required": [
+        "path",
+        "objectType"
+      ]
+    },
+    {
+      "required": [
+        "id"
+      ]
+    }
+  ],
+  "properties": {
+    "enforce": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

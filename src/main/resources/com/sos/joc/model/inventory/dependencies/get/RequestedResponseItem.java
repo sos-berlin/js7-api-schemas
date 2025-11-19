@@ -7,7 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.sos.joc.model.inventory.ConfigurationObject;
 import com.sos.joc.model.inventory.common.ConfigurationType;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -41,13 +40,13 @@ public class RequestedResponseItem {
      * 
      */
     @JsonProperty("configuration")
-    private ConfigurationObject configuration;
+    private EnforcedConfigurationObject configuration;
     @JsonProperty("references")
     @JsonDeserialize(as = java.util.HashSet.class)
-    private Set<ConfigurationObject> references = new HashSet<ConfigurationObject>();
+    private Set<EnforcedConfigurationObject> references = new HashSet<EnforcedConfigurationObject>();
     @JsonProperty("referencedBy")
     @JsonDeserialize(as = java.util.HashSet.class)
-    private Set<ConfigurationObject> referencedBy = new HashSet<ConfigurationObject>();
+    private Set<EnforcedConfigurationObject> referencedBy = new HashSet<EnforcedConfigurationObject>();
 
     @JsonProperty("name")
     public String getName() {
@@ -76,7 +75,7 @@ public class RequestedResponseItem {
      * 
      */
     @JsonProperty("configuration")
-    public ConfigurationObject getConfiguration() {
+    public EnforcedConfigurationObject getConfiguration() {
         return configuration;
     }
 
@@ -87,27 +86,27 @@ public class RequestedResponseItem {
      * 
      */
     @JsonProperty("configuration")
-    public void setConfiguration(ConfigurationObject configuration) {
+    public void setConfiguration(EnforcedConfigurationObject configuration) {
         this.configuration = configuration;
     }
 
     @JsonProperty("references")
-    public Set<ConfigurationObject> getReferences() {
+    public Set<EnforcedConfigurationObject> getReferences() {
         return references;
     }
 
     @JsonProperty("references")
-    public void setReferences(Set<ConfigurationObject> references) {
+    public void setReferences(Set<EnforcedConfigurationObject> references) {
         this.references = references;
     }
 
     @JsonProperty("referencedBy")
-    public Set<ConfigurationObject> getReferencedBy() {
+    public Set<EnforcedConfigurationObject> getReferencedBy() {
         return referencedBy;
     }
 
     @JsonProperty("referencedBy")
-    public void setReferencedBy(Set<ConfigurationObject> referencedBy) {
+    public void setReferencedBy(Set<EnforcedConfigurationObject> referencedBy) {
         this.referencedBy = referencedBy;
     }
 
