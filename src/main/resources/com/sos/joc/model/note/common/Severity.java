@@ -51,7 +51,7 @@ public enum Severity {
     public static Severity fromValue(String value) {
         Severity constant = CONSTANTS.get(value);
         if (constant == null) {
-            return NORMAL;
+            throw new IllegalArgumentException(value);
         } else {
             return constant;
         }
@@ -60,10 +60,20 @@ public enum Severity {
     public static Severity fromValue(Integer intValue) {
         Severity constant = INTCONSTANTS.get(intValue);
         if (constant == null) {
-            return NORMAL;
+            throw new IllegalArgumentException(intValue + "");
         } else {
             return constant;
         }
+    }
+    
+    public static Severity fromValueOrNull(Integer intValue) {
+        if (intValue != null) {
+            try {
+                return Severity.fromValue(intValue);
+            } catch (Exception e) {
+            }
+        }
+        return null;
     }
 
 }
