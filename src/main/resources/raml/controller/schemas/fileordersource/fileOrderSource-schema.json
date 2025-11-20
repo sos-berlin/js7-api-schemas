@@ -21,6 +21,9 @@
     },
     "deployed": {
       "type": "boolean"	
+    },
+    "hasNote": {
+      "$ref": "../../../api/schemas/note/common/severityType-schema.json"
     }
   },
   "additionalProperties": false

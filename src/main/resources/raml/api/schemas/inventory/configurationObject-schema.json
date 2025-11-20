@@ -59,7 +59,7 @@
 			"type": "boolean"
 		},
 		"hasNote": {
-            "type": "boolean"
+            "$ref": "../note/common/severityType-schema.json"
         },
         "isReferencedBy": {
 			"type": "object",
