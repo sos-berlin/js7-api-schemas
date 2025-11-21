@@ -1,0 +1,26 @@
+{
+  "title": "dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.dependencies.get.Response",
+  "type": "object",
+  "properties": {
+    "requestedItems": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../common/nonNegativeLong-schema.json"
+      }
+    },
+    "objects": {
+      "javaType": "com.sos.joc.model.inventory.dependencies.get.ResponseObjects",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "responseObject-schema.json"
+      }
+    },
+    "deliveryDate": {
+        "$ref": "../../../common/timestamp-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

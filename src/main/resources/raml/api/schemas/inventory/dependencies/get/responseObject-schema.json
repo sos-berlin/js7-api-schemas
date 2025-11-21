@@ -1,0 +1,40 @@
+{
+  "title": "dependencies",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.dependencies.get.ResponseObject",
+  "type": "object",
+  "extends": {
+    "$ref": "../../configurationObject-schema.json"
+  },
+  "properties": {
+    "references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../common/nonNegativeLong-schema.json"
+      }
+    },
+    "referencedBy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../common/nonNegativeLong-schema.json"
+      }
+    },
+    "enforcedReferences": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../common/nonNegativeLong-schema.json"
+      }
+    },
+    "enforcedReferencedBy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../../../common/nonNegativeLong-schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
