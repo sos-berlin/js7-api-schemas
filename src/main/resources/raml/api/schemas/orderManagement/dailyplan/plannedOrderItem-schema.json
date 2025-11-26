@@ -21,10 +21,16 @@
 		"workflowPath": {
 			"$ref": "../../common/string255-schema.json"
 		},
+        "workflowHasNote": {
+            "$ref": "../../note/common/severityType-schema.json"
+        },
 		"schedulePath": {
 			"$ref": "../../common/string255-schema.json"
 		},
-		"orderId": {
+		"scheduleHasNote": {
+            "$ref": "../../note/common/severityType-schema.json"
+        },
+        "orderId": {
 			"$ref": "../../common/string255-schema.json"
 		},
 		"orderName": {
