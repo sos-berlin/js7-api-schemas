@@ -1,5 +1,5 @@
 {
-  "title": "configuration types",
+  "title": "operation types",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.inventory.dependencies.get.OperationType",
   "type": "string",
@@ -11,5 +11,6 @@
     "REMOVE",
     "EXPORT",
     "GIT"
-  ]
+  ],
+  "default": "DEPLOY" 
 }
