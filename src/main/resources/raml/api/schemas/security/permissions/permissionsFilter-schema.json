@@ -5,7 +5,6 @@
 	"type": "object",
 	"required": [
 		"identityServiceName",
-		"controllerId",
 		"roleName",
 		"permissionPaths"
 	],
