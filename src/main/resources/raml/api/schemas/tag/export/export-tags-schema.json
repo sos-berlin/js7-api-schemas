@@ -1,0 +1,92 @@
+{
+    "title": "Ex-/Import schema for tags",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.tag.ExportedTags",
+    "type": "object",
+    "properties": {
+        "tags": {
+            "type": "array",
+            "items": {
+                "$ref": "export-tagitem-schema.json"
+            }
+        },
+        "jobTags": {
+            "type": "array",
+            "items": {
+                "$ref": "export-jobTagitem-schema.json"
+            }
+        },
+        "orderTags": {
+            "type": "object",
+            "javaType": "com.sos.joc.model.tag.ExportedOrderTags",
+            "properties": {
+                "fileOrderSources": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "javaType": "com.sos.joc.model.tag.FileOrderSourceOrderTags",
+                        "properties": {
+                            "name": {
+                                "$ref": "../../common/string255required-schema.json"
+                            },
+                            "tags": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "items": {
+                                    "$ref": "../../common/string255required-schema.json"   
+                                } 
+                            }    
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "schedules": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "javaType": "com.sos.joc.model.tag.ScheduleOrderTags",
+                        "properties": {
+                            "name": {
+                                "$ref": "../../common/string255required-schema.json"
+                            },
+                            "orderParameterisations": {
+                                "alias": "variableSets",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../../../../inventory/schemas/schedule/orderParameterisation-schema.json"
+                                }
+                            }  
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "workflows": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "javaType": "com.sos.joc.model.tag.AddOrdersOrderTags",
+                        "properties": {
+                            "name": {
+                                "$ref": "../../common/string255required-schema.json"
+                            },
+                            "addOrderInstructions": {
+                                "type": "object",
+                                "javaType": "com.sos.joc.model.tag.AddOrderOrderTags",
+                                "additionalProperties": {
+                                    "type": "array",
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string"   
+                                    } 
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

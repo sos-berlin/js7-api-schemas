@@ -27,8 +27,13 @@
 			"description": "default: empty",
 			"$ref": "../common/string100-schema.json"
 		},
+        "overwriteTags": {
+            "type": "boolean",
+            "default": false
+        },
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}
-	}
+	},
+    "additionalProperties": false
 }

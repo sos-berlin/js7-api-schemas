@@ -355,6 +355,13 @@
 <td>false</td>
 </tr>
 <tr>
+<td style="padding-left:40px;">``inclAllTags``</td>
+<td>optional, boolean</td>
+<td>If false then only Tags and Tag Groups assigned the exported scheduling objects will be added to the export file</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
 <td>``auditLog``</td>
 <td>optional, object</td>
 <td></td>

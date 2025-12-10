@@ -3,34 +3,33 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.publish.folder.ExportFolderFilter",
 	"type": "object",
-  "oneOf": [{
-    "required": [
-        "forSigning",
-        "exportFile"
-      ]
-    }, {
-      "required": [
-        "shallowCopy",
-        "exportFile"
-      ]
-    }
-  ],
+    "oneOf": [{
+            "required": [
+                "forSigning",
+                "exportFile"
+        ]}, {
+            "required": [
+                "shallowCopy",
+                "exportFile"
+        ]}
+    ],
  	"properties": {
-    "useShortPath" : {
-      "type": "boolean",
-      "default": false
-    },
-    "forSigning": {
-      "$ref": "exportFolderForSigningFilter-schema.json"
-    },
-    "shallowCopy": {
-      "$ref": "exportFolderShallowCopyFilter-schema.json"
-    },
-    "exportFile": {
-      "$ref": "../exportFile-schema.json"
-    },
-    "auditLog": {
-      "$ref": "../../audit/auditParams-schema.json"
-    }
-	}
+        "useShortPath" : {
+            "type": "boolean",
+            "default": false
+        },
+        "forSigning": {
+            "$ref": "exportFolderForSigningFilter-schema.json"
+        },
+        "shallowCopy": {
+            "$ref": "exportFolderShallowCopyFilter-schema.json"
+        },
+        "exportFile": {
+            "$ref": "../exportFile-schema.json"
+        },
+        "auditLog": {
+            "$ref": "../../audit/auditParams-schema.json"
+        }
+	},
+    "additionalProperties": false
 }

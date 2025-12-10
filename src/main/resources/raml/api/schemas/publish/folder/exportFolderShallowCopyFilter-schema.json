@@ -40,6 +40,11 @@
     "withoutReleased": {
       "type": "boolean",
       "default": false
+    },
+    "inclAllTags": {
+        "type": "boolean",
+        "default": false
     }
-	}
+	},
+    "additionalProperties": false
 }

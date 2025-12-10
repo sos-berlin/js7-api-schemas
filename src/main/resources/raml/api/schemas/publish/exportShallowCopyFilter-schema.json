@@ -19,6 +19,11 @@
     },
     "releasables": {
         "$ref": "releasablesFilter-schema.json"
+    },
+    "inclAllTags": {
+        "type": "boolean",
+        "default": false
     }
-	}
+	},
+    "aadditionalProperties": false
 }
