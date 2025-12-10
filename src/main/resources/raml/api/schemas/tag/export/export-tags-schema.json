@@ -69,7 +69,7 @@
                             "name": {
                                 "$ref": "../../common/string255required-schema.json"
                             },
-                            "addOrderInstructions": {
+                            "addOrderTags": {
                                 "type": "object",
                                 "javaType": "com.sos.joc.model.tag.AddOrderOrderTags",
                                 "additionalProperties": {
