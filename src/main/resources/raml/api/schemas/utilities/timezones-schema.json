@@ -1,0 +1,15 @@
+{
+  "title": "Available time zones",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.utilities.TimeZones",
+  "type": "object",
+  "properties": {
+    "timezones": {
+        "type": "array",
+        "items": {
+			"$ref": "../common/string255required-schema.json"
+		}
+    }
+  },
+  "additionalProperties": false
+}
