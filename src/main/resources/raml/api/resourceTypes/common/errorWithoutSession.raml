@@ -1,0 +1,34 @@
+get?:
+  responses:
+    420:
+      description: |
+        **<span style="text-transform: capitalize;"><<resourcePathName>></span> failed!**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate": "2016-05-05T21:13:35Z",
+              "surveyDate": "2016-05-05T21:13:33Z",
+              "error": {
+                "code": "JOC-420",
+                "message": "<<resourcePathName>> failed!"
+              }
+            }
+          schema: error420
+post?:
+  responses:
+    420:
+      description: |
+        **'<span style="text-transform: capitalize;"><<resourcePathName>></span>' failed!**
+      body:
+        application/json:
+          example: |
+            {
+              "deliveryDate": "2016-05-05T21:13:35Z",
+              "surveyDate": "2016-05-05T21:13:33Z",
+              "error": {
+                "code": "JOC-420",
+                "message": "<<resourcePathName>>  failed!"
+              }
+            }
+          schema: error420

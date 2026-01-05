@@ -1,6 +1,6 @@
 #%RAML 0.8
 title: JOC API
-version: 2.8.2
+version: 2.8.3
 protocols: [ HTTP, HTTPS ]
 #baseUri: http://test.sos-berlin.com:3001/joc/api
 #mediaType: application/json
@@ -33,6 +33,7 @@ schemas:
 
 resourceTypes:
   - error: !include api/resourceTypes/common/error.raml
+  - errorWithoutSession: !include api/resourceTypes/common/errorWithoutSession.raml
   - postWithPlainResponse: !include api/resourceTypes/joc/postWithPlainResponse.raml
   - postCalendarWithOkResponse: !include api/resourceTypes/calendar/postJSONWithOkResponse.raml
   - postDocuWithOkResponse: !include api/resourceTypes/docu/postJSONWithOkResponse.raml
@@ -6059,8 +6060,24 @@ traits:
             text/plain:
     type:
       error:
-
-
+      
+  /timezones:
+    type: errorWithoutSession
+    get:
+      description: <h2>Gets available time zones</h2>
+      responses:
+        200:
+          body:
+            application/json:
+              schema: !include api/schemas/utilities/timezones-schema.json
+    post:
+      description: <h2>Gets available time zones</h2>
+      responses:
+        200:
+          body:
+            application/json:
+              schema: !include api/schemas/utilities/timezones-schema.json
+ 
 /workflow:
   type:
     postJSON:
