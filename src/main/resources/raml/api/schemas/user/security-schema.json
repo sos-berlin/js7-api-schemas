@@ -1,37 +1,62 @@
 {
-  "title": "authentication",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "required": [
-    "isAuthenticated"
-  ],
-  "properties": {
-    "user": {
-      "type": "string"
-    },
-    "accessToken": {
-      "type": "string"
-    },
-    "message": {
-      "type": "string"
-    },
-    "role": {
-      "type": "string"
-    },
-    "isAuthenticated": {
-      "type": "boolean"
-    },
-    "isPermitted": {
-      "type": "boolean",
-      "default": false
-    },
-    "sessionTimeout": {
-      "type": "integer",
-      "default": 1800
-    },
-    "enableTouch": {
-      "type": "boolean",
-      "default": true
+    "title": "authentication",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "required": [
+        "isAuthenticated"
+    ],
+    "properties": {
+        "accessToken": {
+            "type": "string"
+        },
+        "account": {
+            "type": "string"
+        },
+        "callerHostName": {
+            "type": "string"
+        },
+        "callerIpAddress": {
+            "type": "string"
+        },
+        "enableTouch": {
+            "type": "boolean",
+            "default": true
+        },
+        "forcePasswordChange": {
+            "type": "boolean",
+            "default": false
+        },
+        "hasRole": {
+            "type": "boolean",
+            "default": false
+        },
+        "identityService": {
+            "type": "string"
+        },
+        "isApprovalRequestor": {
+            "type": "boolean",
+            "default": false
+        },
+        "isApprover": {
+            "type": "boolean",
+            "default": false
+        },
+        "isAuthenticated": {
+            "type": "boolean"
+        },
+        "isPermitted": {
+            "type": "boolean",
+            "default": false
+        },
+        "message": {
+            "type": "string"
+        },
+        "role": {
+            "type": "string"
+        },
+        "sessionTimeout": {
+            "type": "integer",
+            "default": 1800
+        }
     }
-  }
 }

@@ -19,13 +19,21 @@ post:
           schema: security
           example: |
             {
-              "user": "root",
               "accessToken": "550e8400-e29b-11d4-a716-446655440000",
-              "role": "all",
+              "account": "root",
+              "callerHostName": "127.0.0.1",
+              "callerIpAddress": "127.0.0.1",
+              "enableTouch": true,
+              "forcePasswordChange": false,
+              "hasRole": true,
+              "identityService": "JOC:JOC",
+              "isApprovalRequestor": false,
+              "isApprover": false,
               "isAuthenticated": true,
               "isPermitted": false,
-              "sessionTimeout": 1800,
-              "enableTouch": true
+              "message": "",
+              "role": "all",
+              "sessionTimeout": 1800
             }
     401:
       description: Unauthorized!
@@ -34,8 +42,15 @@ post:
           schema: security
           example: |
             {
-              "user": "root",
-              "message": "User or password are invalid",
+              "account": "root",
+              "callerHostName": "127.0.0.1",
+              "callerIpAddress": "127.0.0.1",
+              "enableTouch": true,
+              "forcePasswordChange": false,
+              "hasRole": false,
+              "isApprovalRequestor": false,
+              "isApprover": false,
               "isAuthenticated": false,
-              "isPermitted": false
+              "isPermitted": false,
+              "message": "Access denied"
             }
