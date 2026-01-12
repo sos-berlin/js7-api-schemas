@@ -13,7 +13,6 @@
     "apiVersion",
     "inventoryVersion",
     "displayFoldersInViews",
-    "jocVersion",
     "kioskRole",
     "kioskViews",
     "enableLinkChecker"
