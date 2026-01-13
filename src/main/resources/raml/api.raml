@@ -2789,7 +2789,7 @@ traits:
         description200: !include api/documentation/inventory/dependencies/get-response.md
         schema: !include api/schemas/inventory/dependencies/dependency-request-schema.json
         example: !include api/examples/inventory/dependencies/dependency-request.json
-        schema200: !include api/schemas/inventory/dependencies/dependency-response-schema.json
+        schema200: !include api/schemas/inventory/dependencies/get/response-schema.json
         example200: !include api/examples/inventory/dependencies/dependency-response.json
     
     /update:
@@ -2869,7 +2869,7 @@ traits:
     /import_deploy:
       type:
         postForImportDeploy:
-          description: Uploads archive file (*.zip, *.tar.gz) and deploys objects
+          description: Uploads archive file (*.zip, *.tar.gz) and deploys objects. Only available with Security Level HIGH.
           schema: !include api/schemas/publish/importDeployFilter-schema.json
           example: !include api/examples/publish/publishImportDeploy-example.json
 

@@ -1,31 +1,54 @@
 * requestedItems
 
-    a set of <i>requested item</i>s
+    a set of <i>ids</i> representing the items from the request
 
-    A <i>requested item</i> contains the following properties:
+* objects
+
+    a map of all items related to the requested items. The items <i>id</i> is the key of this map.
+
+    Each item of this map contains the following properties:
+    
+* id
+
+    The numeric identifier of this object.
 
 * name
 
-    the <i>name</i> of the inventory object
+    The name of the object.
 
-* type
+* objectType
 
-    the <i>configuration type</i> of the inventory object
+    The type of the object
 
-* configuration
+* path
 
-    the json <i>configuration</i> and meta data of the inventory object
+    The path of the object.
 
-* referencedBy
+* released
 
-    a set of dependend inventory objects the requested inventory object is <i>referenced by</i>
+    A boolean flag that shows if the current state of the object is already released.
+
+* deployed
+
+    A boolean flag that shows if the current state of the object is already deployed.
+
+* valid
+
+    A boolean flag that shows if the current state of the object is valid.
 
 * references
 
-    a set of dependend inventory objects the requested inventory object <i>references</i> itself
+    A set of ids of objects that are referenced by the object.
 
-____________________________________________________________________________________________________________
+* referencedBy
 
-* affectedItems
+    A set of ids of objects that this object is referenced by.
 
-    a set of inventory objects that are related to one or more of the referenced items of the <i>requested items</i>.
+* enforcedReferences
+
+    A set of ids of objects that are referenced by the object and have to be published together with it.
+
+* enforcedReferencedBy
+
+    A set of ids of objects that this object is referenced by and have to be published together with it.
+
