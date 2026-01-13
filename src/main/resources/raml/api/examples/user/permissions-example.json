@@ -1,5 +1,9 @@
 {
+    "roles": [
+        "all"
+    ],
     "joc": {
+        "getLog": true,
         "administration": {
             "accounts": {
                 "view": true,
@@ -16,6 +20,11 @@
             "certificates": {
                 "view": true,
                 "manage": true
+            },
+            "customization": {
+                "view": true,
+                "manage": true,
+                "share": true
             }
         },
         "cluster": {
@@ -48,6 +57,13 @@
             "view": true,
             "manage": true
         },
+        "encipherment": {
+            "encrypt": true
+        },
+        "reports": {
+            "view": true,
+            "manage": true
+        },
         "others": {
             "view": true,
             "manage": true
@@ -57,6 +73,7 @@
         "view": true,
         "restart": true,
         "terminate": true,
+        "getLog": true,
         "switchOver": true,
         "deployments": {
             "view": true,
@@ -67,12 +84,12 @@
             "create": true,
             "cancel": true,
             "suspendResume": true,
-            "modify": true
+            "resumeFailed": true,
+            "modify": true,
+            "managePositions": true,
+            "confirm": true
         },
         "agents": {
-            "view": true
-        },
-        "locks": {
             "view": true
         },
         "noticeBoards": {
@@ -80,41 +97,12 @@
             "post": true,
             "delete": true
         },
+        "locks": {
+            "view": true
+        },
         "workflows": {
             "view": true
         }
     },
-    "controllers": {
-        "standalone": {
-            "view": false,
-            "restart": false,
-            "terminate": false,
-            "switchOver": false,
-            "deployments": {
-                "view": false,
-                "deploy": false
-            },
-            "orders": {
-                "view": false,
-                "create": false,
-                "cancel": false,
-                "suspendResume": false,
-                "modify": false
-            },
-            "agents": {
-                "view": false
-            },
-            "locks": {
-                "view": false
-            },
-        	"noticeBoards": {
-            	"view": false,
-            	"post": false,
-            	"delete": false
-        	},
-            "workflows": {
-                "view": false
-            }
-        }
-    }
+    "controllers": {}
 }
