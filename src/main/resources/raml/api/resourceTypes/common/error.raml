@@ -80,10 +80,17 @@ post?:
           schema: security
           example: |
             {
-              "user": "root",
-              "message": "Oops!",
+              "account": "root",
+              "callerHostName": "127.0.0.1",
+              "callerIpAddress": "127.0.0.1",
+              "enableTouch": true,
+              "forcePasswordChange": false,
+              "hasRole": false,
+              "isApprovalRequestor": false,
+              "isApprover": false,
               "isAuthenticated": false,
-              "isPermitted": false
+              "isPermitted": false,
+              "message": "Access denied"
             }
     403:
       description: |
@@ -94,11 +101,18 @@ post?:
           schema: security
           example: |
             {
-              "user": "root",
-              "message": "You don't have sufficient permissions for ...",
-              "role": "all",
+              "accessToken": "550e8400-e29b-11d4-a716-446655440000",
+              "account": "root",
+              "apiCall": "./lock",
+              "enableTouch": true,
+              "forcePasswordChange": false,
+              "hasRole": true,
+              "isApprovalRequestor": false,
+              "isApprover": false,
               "isAuthenticated": true,
-              "isPermitted": false
+              "isPermitted": false,
+              "message": "Access denied",
+              "role": "no_lock"
             }
     419?:
       description: It returns an array of _error_ items for each failed command at bulk operations.
@@ -129,11 +143,14 @@ post?:
           schema: security
           example: |
             {
-              "user": "root",
-              "message": "Session has expired. Please log in again",
-              "role": "all",
+              "enableTouch": true,
+              "forcePasswordChange": false,
+              "hasRole": false,
+              "isApprovalRequestor": false,
+              "isApprover": false,
               "isAuthenticated": false,
-              "isPermitted": false
+              "isPermitted": false,
+              "message": "SessionNotExistException: Session is broken and no longer valid. New login is neccessary"
             }
     433:
       description: |
