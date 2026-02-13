@@ -9,5 +9,7 @@
   <li>JOBTEMPLATE</li>
   <li>INCLUDESCRIPT</li>
   <li>CALENDAR</li>
+  <li>WORKINGDAYSCALENDAR</li>
+  <li>NONWORKINGDAYSCALENDAR</li>
   <li>REPORT</li>
 </ul></td><td></td><td></td></tr>
