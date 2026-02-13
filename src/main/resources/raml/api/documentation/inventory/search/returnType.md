@@ -8,7 +8,9 @@
   <li>SCHEDULE</li>
   <li>JOBTEMPLATE</li>
   <li>INCLUDESCRIPT</li>
-  <li>CALENDAR</li>
+  <li>CALENDAR (returns both working-day and non-working-day calendars)</li>
+  <li>WORKINGDAYSCALENDAR (returns only working-day calendars)</li>
+  <li>NONWORKINGDAYSCALENDAR (returns only non-working-day calendars)</li>
   <li>REPORT</li>
 </ul></td><td></td><td></td></tr>
 
