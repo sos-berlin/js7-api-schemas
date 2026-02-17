@@ -1,0 +1,23 @@
+{
+    "title": "note notification",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.Notification",
+    "type": "object",
+    "extends" : {
+        "$ref": "common/identifier-schema.json"
+    },
+    "required": [
+        "name",
+        "path",
+        "objectType"
+    ],
+    "properties": {
+        "path": {
+            "$ref": "../common/path-schema.json"
+        },
+        "severity": {
+            "$ref": "common/severityType-schema.json"
+        }
+    },
+    "additionalProperties": false
+}

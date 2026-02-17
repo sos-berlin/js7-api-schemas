@@ -1,0 +1,22 @@
+{
+    "title": "add post",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.Notifications",
+    "type": "object",
+    "required": [
+        "deliveryDate",
+        "notifications"
+    ],
+    "properties": {
+        "deliveryDate": {
+            "$ref": "../common/timestamp-schema.json"
+        },
+        "notifications": {
+            "type": "array",
+            "items": {
+                "$ref": "notification-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}
