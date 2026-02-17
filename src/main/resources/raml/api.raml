@@ -4456,26 +4456,25 @@ traits:
         schema: !include api/schemas/note/common/request-modify-schema.json
         example: !include api/examples/note/identifier-example.json
   
-  /post:
-    /add:
-      type:
-        postJSONWithoutJSId:
-          description: Adds a post to a note and returns the updated note
-          description1: !include api/documentation/note/identifier.md
-          description2: !include api/documentation/note/content.md
-          description3: !include api/documentation/note/severity.md
-          description4: " "
-          description5: " "
-          description6: " "
-          description7: " "
-          description8: " "
-          description9: " "
-          description10: !include api/documentation/audit/auditLog.md
-          description200: !include api/documentation/note/note.md
-          schema: !include api/schemas/note/addPost-schema.json
-          schema200: !include api/schemas/note/response-schema.json
-          example: !include api/examples/note/addPost-example.json
-          example200: !include api/examples/note/note-example.json
+  /post/add:
+    type:
+      postJSONWithoutJSId:
+        description: Adds a post to a note and returns the updated note
+        description1: !include api/documentation/note/identifier.md
+        description2: !include api/documentation/note/content.md
+        description3: !include api/documentation/note/severity.md
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: !include api/documentation/audit/auditLog.md
+        description200: !include api/documentation/note/note.md
+        schema: !include api/schemas/note/addPost-schema.json
+        schema200: !include api/schemas/note/response-schema.json
+        example: !include api/examples/note/addPost-example.json
+        example200: !include api/examples/note/note-example.json
           
   /preferences:
     type:
@@ -4495,6 +4494,13 @@ traits:
         schema200: !include api/schemas/note/response-schema.json
         example: !include api/examples/note/displayPreferences-example.json
         example200: !include api/examples/note/note-example.json
+
+  /notifications:
+    type:
+      postOnlyAccessToken:
+        description: Gets the note notifications of the current account
+        schema200: !include api/schemas/note/notifications-schema.json
+        example200: !include api/examples/note/notifications-example.json
                  
 /notice:
   /board:

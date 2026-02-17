@@ -43,6 +43,12 @@
         "$ref": "eventApproval-schema.json"
       }
     },
+    "eventsFromNotes": {
+      "type": "array",
+      "items": {
+        "$ref": "eventNote-schema.json"
+      }
+    },
     "deliveryDate": {
       "$ref": "../common/timestamp-schema.json"
     }
