@@ -23,7 +23,7 @@
       "type": "boolean"	
     },
     "hasNote": {
-      "$ref": "../../../api/schemas/note/common/severityType-schema.json"
+      "$ref": "../../../api/schemas/note/common/hasNote-schema.json"
     }
   },
   "additionalProperties": false

@@ -16,7 +16,7 @@ import com.sos.joc.model.audit.AuditParams;
 import com.sos.joc.model.common.IConfigurationObject;
 import com.sos.joc.model.inventory.common.ItemStateEnum;
 import com.sos.joc.model.inventory.deploy.ResponseDeployableVersion;
-import com.sos.joc.model.note.common.Severity;
+import com.sos.joc.model.note.common.HasNote;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -43,6 +43,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
     "released",
     "hasDeployments",
     "hasReleases",
+    "hasNote",
     "isReferencedBy",
     "syncState",
     "deployments",
@@ -126,7 +127,7 @@ public class ConfigurationObject {
     @JsonProperty("hasReleases")
     private Boolean hasReleases;
     @JsonProperty("hasNote")
-    private Severity hasNote;
+    private HasNote hasNote;
     @JsonProperty("isReferencedBy")
     private IsReferencedBy isReferencedBy;
     /**
@@ -339,12 +340,12 @@ public class ConfigurationObject {
     }
     
     @JsonProperty("hasNote")
-    public void setHasNote(Severity hasNote) {
+    public void setHasNote(HasNote hasNote) {
         this.hasNote = hasNote;
     }
     
     @JsonProperty("hasNote")
-    public Severity getHasNote() {
+    public HasNote getHasNote() {
         return hasNote;
     }
     

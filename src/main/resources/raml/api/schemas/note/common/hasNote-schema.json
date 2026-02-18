@@ -1,0 +1,15 @@
+{
+    "title": "has note",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.note.common.HasNote",
+    "type": "object",
+    "properties": {
+        "severity": {
+            "$ref": "severityType-schema.json"
+        },
+        "notified": {
+            "type": "boolean"
+        }
+    },
+    "additionalProperties": false
+}

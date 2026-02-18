@@ -7,11 +7,15 @@
         "$ref": "common/identifier-schema.json"
     },
     "required": [
+        "noteId",
         "name",
         "path",
         "objectType"
     ],
     "properties": {
+        "noteId": {
+            "$ref": "../common/nonNegativeLong-schema.json" 
+        },
         "path": {
             "$ref": "../common/path-schema.json"
         },
