@@ -2,7 +2,8 @@
     "deliveryDate": "2026-02-16T15:24:36.434+00:00",
     "notifications": [
         {
-            "path": "/oh/b1",
+            "noteId": 42,
+            "path": "/my/folder/b1",
             "severity": "NORMAL",
             "name": "b1",
             "objectType": "NOTICEBOARD"
