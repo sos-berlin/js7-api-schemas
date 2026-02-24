@@ -4221,6 +4221,26 @@ traits:
         description1: !include api/documentation/joc/filename.md
         description200: Content of JOC Cockpit log (joc.log) for download
         schema: !include api/schemas/joc/filename-schema.json
+        
+    /running:
+      type:
+        postJSONWithoutJSId:
+          description: JOC Cockpit running log events
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/order/runningLog.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description8: " "
+          description9: " "
+          description10: " "
+          description200: !include api/documentation/joc/runningLog.md
+          schema200: !include api/schemas/joc/runningLogEvents-schema.json
+          schema: !include api/schemas/joc/runningLogFilter-schema.json
+          example: !include api/examples/joc/runningLog-request-example.json
+          example200: !include api/examples/joc/runningLog-response-example.json
 
   /logs:
     type: error

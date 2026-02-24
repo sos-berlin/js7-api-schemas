@@ -1,0 +1,48 @@
+{
+	"title": "joc log entry",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.joc.LogEntry",
+	"type": "object",
+	"required": [
+		"timestamp",
+		"logger",
+		"thread",
+        "logLevel",
+        "source",
+		"message"
+	],
+	"properties": {
+		"timestamp": {
+			"$ref": "../common/timestamp-schema.json"
+		},
+		"logger": {
+			"type": "string"
+		},
+		"thread": {
+			"type": "string"
+		},
+		"logLevel": {
+			"type": "string",
+			"javaType": "com.sos.joc.model.joc.LogLevel",
+			"enum": [
+                "FATAL",
+                "ERROR",
+                "WARN",
+                "INFO",
+                "DEBUG",
+                "TRACE"
+            ]
+		},
+		"source": {
+			"description": "main(joc.log), service-cluster, service-history, etc.",
+			"type": "string"
+		},
+		"message": {
+			"type": "string"
+		},
+		"thrown": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

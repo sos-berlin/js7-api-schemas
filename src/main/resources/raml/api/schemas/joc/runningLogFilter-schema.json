@@ -1,0 +1,14 @@
+{
+  "title": "joc running log filter",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.RunningLogFilter",
+  "type": "object",
+  "required": [
+    "eventId"
+  ],
+  "properties": {
+    "eventId": {
+      "$ref": "../common/nonNegativeLong-schema.json"
+    }
+  }
+}

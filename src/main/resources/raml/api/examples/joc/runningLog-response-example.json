@@ -1,0 +1,37 @@
+{
+    "logEvents": [
+        {
+            "timestamp": "2026-02-23T17:55:54.087+00:00",
+            "logger": "com.sos.joc.classes.proxy.ProxyContext",
+            "thread": "JS7 Proxy-1",
+            "logLevel": "INFO",
+            "source": "main",
+            "message": "'testsuite' cluster (http://xxx.xxx.xxx.xxx:5444, http://xxx.xxx.xxx.xxx:5544): ProxyCoupled(1771800956577000)"
+        },
+        {
+            "timestamp": "2026-02-23T17:55:54.397+00:00",
+            "logger": "com.sos.joc.classes.board.PlanSchemas",
+            "thread": "ForkJoinPool.commonPool-worker-4",
+            "logLevel": "INFO",
+            "source": "main",
+            "message": "Plan schema 'DailyPlan' already submitted to 'testsuite' cluster (http://xxx.xxx.xxx.xxx:5444, http://xxx.xxx.xxx.xxx:5544)"
+        },
+        {
+            "timestamp": "2026-02-23T17:56:01.325+00:00",
+            "logger": "com.sos.joc.classes.proxy.ProxyContext",
+            "thread": "JS7 Proxy-1",
+            "logLevel": "INFO",
+            "source": "main",
+            "message": "'standalone' (http://xxx.xxx.xxx.xxx:5344): ProxyCoupled(1771847736191000)"
+        },
+        {
+            "timestamp": "2026-02-23T17:56:01.333+00:00",
+            "logger": "com.sos.joc.classes.board.PlanSchemas",
+            "thread": "ForkJoinPool.commonPool-worker-4",
+            "logLevel": "INFO",
+            "source": "main",
+            "message": "Plan schema 'DailyPlan' already submitted to 'standalone' (http://xxx.xxx.xxx.xxx:5344)"
+        }
+    ],
+    "eventId": 1771869361333
+}

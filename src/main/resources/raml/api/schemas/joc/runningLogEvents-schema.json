@@ -1,0 +1,18 @@
+{
+    "title": "running joc log",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "javaType": "com.sos.joc.model.joc.RunningLogEvents",
+    "type": "object",
+    "extends" : {
+        "$ref": "runningLogFilter-schema.json"
+    },
+    "properties": {
+        "logEvents": {
+            "type": "array",
+            "items": {
+                "$ref": "logEntry-schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}
