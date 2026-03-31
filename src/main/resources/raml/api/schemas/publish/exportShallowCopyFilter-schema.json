@@ -25,5 +25,5 @@
         "default": false
     }
 	},
-    "aadditionalProperties": false
+    "additionalProperties": false
 }
