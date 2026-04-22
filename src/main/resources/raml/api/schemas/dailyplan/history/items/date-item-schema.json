@@ -10,7 +10,7 @@
 	],
 	"properties": {
 		"date": {
-			"$ref": "../../../common/timestamp-schema.json"
+			"$ref": "../../../common/date-schema.json"
 		},
 		"countTotal": {
 			"$ref": "../../../common/nonNegativeLong-schema.json"
