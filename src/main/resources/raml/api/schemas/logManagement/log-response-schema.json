@@ -21,7 +21,7 @@
 		},
 		"token": {
 			"type": "string",
-			"pattern": "[0-9a-f]+",
+			"pattern": "[0-9a-f-]+",
 			"minLength": 36,
 			"maxLength": 36
 		},

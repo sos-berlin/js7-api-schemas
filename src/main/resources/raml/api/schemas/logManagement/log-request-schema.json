@@ -11,6 +11,16 @@
 		"controllerId": {
             "$ref": "../common/controllerIdRequired-schema.json"
         },
+        "level": {
+            "javaType": "com.sos.joc.model.log.RequestLevel",
+            "type": "string",
+            "enum": [
+                "ERROR",
+                "INFO",
+                "DEBUG"
+            ],
+            "default": "INFO"
+        },
         "dateFrom": {
 			"$ref": "../common/dateFromTo-schema.json"
 		},
