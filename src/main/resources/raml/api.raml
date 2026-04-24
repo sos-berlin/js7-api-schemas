@@ -1079,9 +1079,23 @@ traits:
               example: !include api/examples/controller/ids-example.json
   /log:
     type:
-      postURLWithPlainResponse:
-        description: Provides Controller log (controller.log) for download in gzip format
-        description200: Snapshot of current controller.log for download in gzip format
+      postJSON:
+        description: Gets Controller log
+        description1: !include api/documentation/controller/roleClusterRequired.md
+        description2: !include api/documentation/common/dateFromRequired.md
+        description3: !include api/documentation/common/dateTo.md
+        description4: !include api/documentation/common/timeZone.md
+        description5: !include api/documentation/common/log/numOfLines.md
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/logManagement/controller-log-request-schema.json
+        schema200: !include api/schemas/logManagement/log-response-schema.json
+        example: " "
+        example200: " "
 
   /p:
     type:

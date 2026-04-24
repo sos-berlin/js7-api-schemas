@@ -1,0 +1,19 @@
+{
+	"title": "controller log filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.log.ControllerLogRequest",
+	"type": "object",
+	"extends" : {
+        "$ref": "log-request-schema.json"
+    },
+    "required": [
+	    "controllerId",
+        "dateFrom"
+	],
+	"properties": {
+		"role": {
+			"$ref": "../controller/cluster-role-schema.json"
+		}
+	},
+    "additionalProperties": false
+}

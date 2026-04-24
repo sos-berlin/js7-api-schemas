@@ -1,0 +1,35 @@
+{
+	"title": "log response",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.log.LogResponse",
+	"type": "object",
+	"required": [
+	    "logLines",
+	    "timeZone",
+	    "token",
+	    "isComplete"
+	],
+    "properties": {
+        "logLines": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "timeZone": {
+			"$ref": "../common/timezone-schema.json"
+		},
+		"token": {
+			"type": "string",
+			"pattern": "[0-9a-f]+",
+			"minLength": 36,
+			"maxLength": 36
+		},
+        "isComplete": {
+            "type": "boolean",
+            "default": false
+        }
+        
+	},
+    "additionalProperties": false
+}

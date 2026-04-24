@@ -1,0 +1,29 @@
+{
+	"title": "log base filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.log.LogBaseRequest",
+	"type": "object",
+	"required": [
+	    "controllerId",
+	    "dateFrom"
+	],
+	"properties": {
+		"controllerId": {
+            "$ref": "../common/controllerIdRequired-schema.json"
+        },
+        "dateFrom": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"dateTo": {
+			"$ref": "../common/dateFromTo-schema.json"
+		},
+		"timeZone": {
+			"$ref": "../common/timezone-schema.json"
+		},
+		"numOfLines": {
+			"type": "number",
+            "format": "utc-millisec"
+		}
+	},
+    "additionalProperties": false
+}
