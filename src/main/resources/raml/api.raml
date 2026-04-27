@@ -1096,6 +1096,19 @@ traits:
         schema200: !include api/schemas/logManagement/log-response-schema.json
         example: " "
         example200: " "
+        
+    /download:
+      type:
+        postForDownload:
+          description: Provides Controller log as download
+          description1: !include api/documentation/controller/roleClusterRequired.md
+          description2: !include api/documentation/common/log/requestLevel.md
+          description3: !include api/documentation/common/dateFromRequired.md
+          description4: !include api/documentation/common/dateTo.md
+          description5: !include api/documentation/common/timeZone.md
+          description6: !include api/documentation/common/log/numOfLines.md
+          schema: !include api/schemas/logManagement/controller-log-request-schema.json
+          example: " "
 
   /p:
     type:
