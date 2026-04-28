@@ -135,6 +135,41 @@ traits:
         description10: " "
         schema: !include api/schemas/agent/agentCommand-schema.json
         example: " "
+        
+  /log:
+    type:
+      postJSON:
+        description: Gets Agent log (standalone Agent or Director-Agent)
+        description1: !include api/documentation/agent/agentId.md
+        description2: !include api/documentation/agent/subagentIdOfDirector.md
+        description3: !include api/documentation/common/log/requestLevel.md
+        description4: !include api/documentation/common/dateFromRequired.md
+        description5: !include api/documentation/common/dateTo.md
+        description6: !include api/documentation/common/timeZone.md
+        description7: !include api/documentation/common/log/numOfLines.md
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/logManagement/agent-log-request-schema.json
+        schema200: !include api/schemas/logManagement/log-response-schema.json
+        example: " "
+        example200: " "
+        
+    /download:
+      type:
+        postForDownload:
+          description: Provides Agent log (standalone Agent or Director-Agent) as download
+          description1: !include api/documentation/agent/agentId.md
+          description2: !include api/documentation/agent/subagentIdOfDirector.md
+          description3: !include api/documentation/common/log/requestLevel.md
+          description4: !include api/documentation/common/dateFromRequired.md
+          description5: !include api/documentation/common/dateTo.md
+          description6: !include api/documentation/common/timeZone.md
+          description7: !include api/documentation/common/log/numOfLines.md
+          schema: !include api/schemas/logManagement/agent-log-request-schema.json
+          example: " "
+          
   /reset:
     type:
       postJSONWithOkResponse:
