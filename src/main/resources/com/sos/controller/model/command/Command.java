@@ -121,7 +121,7 @@ public abstract class Command
             return false;
         }
         Command rhs = ((Command) other);
-        return new EqualsBuilder().appendSuper(super.equals(other)).append(tYPE, rhs.tYPE).isEquals();
+        return new EqualsBuilder().append(tYPE, rhs.tYPE).isEquals();
     }
 
 }
