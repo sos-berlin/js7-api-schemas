@@ -16,4 +16,4 @@
 
 <tr><td>``deployedOrReleased``</td><td>optional, boolean</td><td></td><td></td><td>false</td></tr>
 <tr><td>``undeployedOrUnreleased``</td><td>optional, boolean</td><td></td><td></td><td>false</td></tr>
-<tr><td>``valid``</td><td>optional, boolean</td><td>considered only if ``undeployedOrUnreleased`` is true</td><td></td><td>false</td></tr>
+<tr><td>``valid``</td><td>optional, boolean</td><td>Considered only if ``undeployedOrUnreleased`` is true</td><td></td><td>false</td></tr>
