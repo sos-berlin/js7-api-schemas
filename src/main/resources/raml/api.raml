@@ -147,7 +147,7 @@ traits:
         description5: !include api/documentation/common/dateTo.md
         description6: !include api/documentation/common/timeZone.md
         description7: !include api/documentation/common/log/numOfLines.md
-        description8: " "
+        description8: !include api/documentation/common/log/limit.md
         description9: " "
         description10: " "
         description200: " "
@@ -169,6 +169,23 @@ traits:
           description7: !include api/documentation/common/log/numOfLines.md
           schema: !include api/schemas/logManagement/agent-log-request-schema.json
           example: " "
+          
+    /running:
+      type:
+        postJSONWithoutJSId:
+          description: Gets next chunk of the Agent log
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description200: " "
+          schema: !include api/schemas/logManagement/running-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
           
   /reset:
     type:
@@ -1122,7 +1139,7 @@ traits:
         description4: !include api/documentation/common/dateTo.md
         description5: !include api/documentation/common/timeZone.md
         description6: !include api/documentation/common/log/numOfLines.md
-        description7: " "
+        description7: !include api/documentation/common/log/limit.md
         description8: " "
         description9: " "
         description10: " "
@@ -1144,6 +1161,23 @@ traits:
           description6: !include api/documentation/common/log/numOfLines.md
           schema: !include api/schemas/logManagement/controller-log-request-schema.json
           example: " "
+    
+    /running:
+      type:
+        postJSONWithoutJSId:
+          description: Gets next chunk of the Controller log
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: " "
+          description5: " "
+          description6: " "
+          description7: " "
+          description200: " "
+          schema: !include api/schemas/logManagement/running-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
 
   /p:
     type:

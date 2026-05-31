@@ -31,9 +31,11 @@
 			"$ref": "../common/timezone-schema.json"
 		},
 		"numOfLines": {
-			"type": "number",
-            "format": "utc-millisec"
-		}
+			"$ref": "../common/nonNegativeLong-schema.json"
+		},
+        "limit": {
+            "$ref": "../common/nonNegativeLong-schema.json"
+        }
 	},
     "additionalProperties": false
 }
