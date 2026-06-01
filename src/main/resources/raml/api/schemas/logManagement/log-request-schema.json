@@ -13,9 +13,11 @@
         },
         "level": {
             "javaType": "com.sos.joc.model.log.RequestLevel",
+            "description": "ERROR: WARN + ERROR | WARN: WARN + ERROR | INFO: INFO + WARN + ERROR | DEBUG: all (incl. TRACE)",
             "type": "string",
             "enum": [
                 "ERROR",
+                "WARN",
                 "INFO",
                 "DEBUG"
             ],

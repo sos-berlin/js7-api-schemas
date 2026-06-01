@@ -3,6 +3,6 @@
 <ul>
 <li>DEBUG</li>
 <li>INFO</li>
-<li>ERROR</li>
+<li>WARN</li>
 </ul>
 </td><td>DEBUG</td><td>INFO</td></tr>
