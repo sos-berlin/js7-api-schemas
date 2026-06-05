@@ -3,12 +3,20 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.security.locker.Locker",
 	"type": "object",
+	"required": [
+	    "key",
+	    "content"  
+	],
 	"properties": {
 		"key": {
 			"$ref": "../../common/string255required-schema.json"
 		},
 		"content": {
-			"$ref": "../../../../inventory/schemas/common/variables-schema.json"
+			"type": "object",
+			"javaType": "com.sos.joc.model.security.locker.Variables",
+			"additionalProperties": {
+			    "type": "string"
+			}
 		}
 	},
 	"additionalProperties": false
