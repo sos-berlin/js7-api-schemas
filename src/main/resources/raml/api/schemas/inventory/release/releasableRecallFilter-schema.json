@@ -14,6 +14,10 @@
         "$ref": "releasable-schema.json"
       }
     },
+    "keepOrders" : {
+      "type" : "boolean",
+      "default" : false
+    },
     "auditLog": {
       "$ref": "../../audit/auditParams-schema.json"
     }
