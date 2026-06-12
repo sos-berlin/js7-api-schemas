@@ -1,0 +1,19 @@
+{
+  "title": "filter to recall already released configurations from a folder",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.inventory.release.ReleasableRecallFolderFilter",
+  "type": "object",
+  "description": "",
+    "extends" : {
+    "$ref": "../common/request-folder-schema.json"
+  },
+  "required": [
+    "path"
+  ],
+  "properties": {
+    "keepOrders" : {
+      "type" : "boolean",
+      "default" : false
+    }
+  }
+}
