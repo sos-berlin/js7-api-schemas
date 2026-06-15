@@ -139,7 +139,7 @@ traits:
   /log:
     type:
       postJSON:
-        description: Gets Agent log (standalone Agent or Director-Agent)
+        description: Gets Agent log
         description1: !include api/documentation/agent/agentId.md
         description2: !include api/documentation/agent/subagentIdOfDirector.md
         description3: !include api/documentation/common/log/requestLevel.md
@@ -159,7 +159,7 @@ traits:
     /download:
       type:
         postForDownload:
-          description: Provides Agent log (standalone Agent or Director-Agent) as download
+          description: Provides Agent log as download
           description1: !include api/documentation/agent/agentId.md
           description2: !include api/documentation/agent/subagentIdOfDirector.md
           description3: !include api/documentation/common/log/requestLevel.md
