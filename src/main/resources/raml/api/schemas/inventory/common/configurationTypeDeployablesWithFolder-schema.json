@@ -5,7 +5,6 @@
   "type": "string",
   "enum": [
     "WORKFLOW",
-    "JOBCLASS",
     "JOBRESOURCE",
     "LOCK",
     "NOTICEBOARD",
