@@ -8,13 +8,13 @@
       "$ref": "../common/string255-schema.json"
     },
     "path": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/path-schema.json"
     },
     "folder": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/path-schema.json"
     },
     "controllerId": {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../common/controllerId-schema.json"
     },
     "commitId" : {
       "$ref": "../common/string255-schema.json"
@@ -23,24 +23,22 @@
       "$ref": "../common/string255-schema.json"
     },
     "deployType" : {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "../inventory/common/configurationTypeDeployables-schema.json"
     },
     "operation" : {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "operationType-schema.json"
     },
     "state" : {
-      "$ref": "../common/string255-schema.json"
+      "$ref": "deploymentState-schema.json"
     },
     "errorMessage" : {
       "type": "string"
     },
     "deploymentDate": {
-      "type": "string",
-      "format": "date-time"
+      "$ref": "../common/timestamp-schema.json"
     },
     "deleteDate": {
-      "type": "string",
-      "format": "date-time"
+      "$ref": "../common/timestamp-schema.json"
     },
     "invConfigurationId" : {
         "$ref": "../common/nonNegativeLong-schema.json"

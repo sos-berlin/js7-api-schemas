@@ -5,34 +5,34 @@
   "type": "object",
   "properties": {
     "account": {
-      "type": "string"
+      "$ref": "../common/string255-schema.json"
     },
     "path": {
-      "type": "string"
+      "$ref": "../common/path-schema.json"
     },
     "folder": {
-      "type": "string"
+      "$ref": "../common/path-schema.json"
     },
     "controllerId": {
-      "type": "string"
+      "$ref": "../common/controllerId-schema.json"
     },
     "commitId" : {
-      "type": "string"
+      "$ref": "../common/string255-schema.json"
     },
     "auditlogId" : {
-      "type": "string"
+      "$ref": "../common/nonNegativeLong-schema.json"
     },
     "version" : {
-      "type": "string"
+      "$ref": "../common/string255-schema.json"
     },
     "deployType" : {
-      "type": "string"
+      "$ref": "../inventory/common/configurationTypeDeployables-schema.json"
     },
     "operation" : {
-      "type": "string"
+      "$ref": "operationType-schema.json"
     },
     "state" : {
-      "type": "string"
+      "$ref": "deploymentState-schema.json"
     },
     "deploymentDate": {
       "$ref": "../common/timestamp-schema.json"
@@ -47,8 +47,7 @@
       "$ref": "../common/dateFromTo-schema.json"
     },
     "timeZone": {
-      "description": "see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
-      "type": "string"
+      "$ref": "../common/timezone-schema.json"
     }, 
     "limit": {
         "description": "Limits the number of resulting items; -1=unlimited",
