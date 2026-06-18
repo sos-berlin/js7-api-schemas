@@ -178,7 +178,7 @@
   <div style="padding-left:10px;">"limit": "5000"</div>
   <div>}</div>
 </td>
-<td>10000</td>
+<td>5000</td>
 </tr>    
 <tr>
 <td>``detailFilter``</td>
@@ -318,5 +318,5 @@
 <td>optional, integer</td>
 <td>see above.</td>
 <td></td>
-<td>10000</td>
+<td>5000</td>
 </tr>
