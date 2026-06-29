@@ -18,11 +18,10 @@
 <tr>
 <td style="padding-left:20px;">``configuration``</td>
 <td>required, object</td>
-<td>An deployed configuration specified by its ``path``, ``objectType`` and ``commitId`` OR a folder specified by ``path`` and ``objectType`` only. If deployed configurations are specified by a folder, all latest deployments of the items from the folder will be processed.</td>
+<td>An deployed configuration specified by its ``path`` and ``objectType``.</td>
 <td><div style="padding-left:10px;">"configuration" : {</div>
 <div style="padding-left:20px;">"path" : "/myWorkflows/ifElseWorkflow/workflow_12",</div>
 <div style="padding-left:20px;">"objectType" : "WORKFLOW",</div>
-<div style="padding-left:20px;">"commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"</div>
 <div style="padding-left:10px;">}</div>
 </td>
 <td></td>
@@ -39,13 +38,6 @@
 <td>required, enum</td>
 <td>Subset of deployable objects from the enum ConfigurationType. The subset consist of WORKFLOW, NOTICEBOARD, LOCK, FILEORDERSOURCE and FOLDER.</td>
 <td>"objectType" : "WORKFLOW"</td>
-<td></td>
-</tr>
-<tr>
-<td style="padding-left:40px;">``commitId``</td>
-<td>required, string</td>
-<td>The ``commitId`` of the deployment of the deployed configuration. If no commitId is set the latest deployment of the configuration will be processed.</td>
-<td>"commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"</td>
 <td></td>
 </tr>
 <tr>
