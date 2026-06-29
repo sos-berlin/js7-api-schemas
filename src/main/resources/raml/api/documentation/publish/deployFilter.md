@@ -167,13 +167,6 @@
 <td></td>
 </tr>
 <tr>
-<td style="padding-left:60px;">``commitId``</td>
-<td>required, string</td>
-<td>see above.</td>
-<td>"commitId" : "4273b6c6-c354-4fcd-afdb-2758088abe4a"</td>
-<td></td>
-</tr>
-<tr>
 <td style="padding-left:60px;">``recursive``</td>
 <td>optional, boolean</td>
 <td>see above.</td>

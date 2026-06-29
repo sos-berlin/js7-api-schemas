@@ -10,7 +10,7 @@
     "deployConfigurations": {
       "type" : "array",
       "items" : {
-        "$ref": "configDeployables-schema.json"
+        "$ref": "configDeployablesWithoutCommitId-schema.json"
       }
     }
   }
