@@ -2455,7 +2455,7 @@ traits:
           example: " "
     /rename:
       type:
-        postJSONWithOkWithoutJSId:
+        postJSONWithoutJSId:
           description: Renames an Identity Service
           description1: !include api/documentation/security/identityService/identityserviceoldname.md
           description2: !include api/documentation/security/identityService/identityservicenewname.md
@@ -2464,6 +2464,7 @@ traits:
           description5: " "
           audit: !include api/documentation/audit/auditLog.md
           schema: !include api/schemas/security/identityServices/identityServiceRename-schema.json
+          schema200: !include api/schemas/security/identityServices/identityServiceRename-schema.json
           example: " "
   /permissions:
     type:
