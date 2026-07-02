@@ -10,6 +10,10 @@
     "controllerId": {
       "$ref": "../common/controllerId-schema.json"
     },
+    "requireFailoverConfirmation": {
+        "type": "boolean",
+        "default": false
+    },
     "controllers": {
       "type": "array",
       "minItems": 1,

@@ -63,6 +63,9 @@
     },
     "clusterNodeState": {
       "$ref": "clusterNodeState-schema.json"
+    },
+    "requireFailoverConfirmation": {
+        "type": "boolean"
     }
   }
 }
