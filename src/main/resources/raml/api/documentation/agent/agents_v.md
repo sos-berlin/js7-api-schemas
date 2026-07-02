@@ -5,7 +5,7 @@ Contains collection of Agents where each Agent has the fields
 * url (only for standalone agent)
 * processLimit (optional)
 * version (only for standalone agent)
-* requireFailoverConfirmation (applies only to an Agent in a cluster)
+* requireFailoverConfirmation (optional; applies only to an Agent in a cluster)
 * hidden
 * disabled (only for standalone agent)
 * state (only for standalone agent; COUPLED, COUPLINGFAILED, INITIALISED, RESETTING, SHUTDOWN, UNKNOWN)
