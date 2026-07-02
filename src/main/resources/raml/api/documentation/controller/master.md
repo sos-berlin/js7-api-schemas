@@ -21,3 +21,4 @@
 	* active
 	* inactive
 	* unknown
+* requireFailoverConfirmation (applies only to a Controller in a cluster)

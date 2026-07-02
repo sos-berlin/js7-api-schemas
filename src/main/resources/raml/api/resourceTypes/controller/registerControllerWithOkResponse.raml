@@ -22,6 +22,7 @@ post:
     <tr><td style="padding-left:20px;">``clusterUrl``</td><td>optional, string</td><td>Only for a Cluster: A URL that the Controller instances use to connect to each other</td><td></td><td>``url``</td></tr>
     <tr><td style="padding-left:20px;">``role``</td><td>required, string</td><td>Role (STANDALONE, PRIMARY or BACKUP) of the Controller</td><td></td><td></td></tr>
     <tr><td style="padding-left:20px;">``title``</td><td>optional, string</td><td>A title that is used when displaying the Controller in JOC Cockpit</td><td></td><td></td></tr>
+    <tr><td>``forceFailoverConfirmation``</td><td>optional, boolean</td><td>If this value is true a confirmation will be required in case of a fail-over (applies only to the Controller cluster)</td><td></td><td>false</td></tr>
     <<audit>>
     </tbody></table>
   body:
