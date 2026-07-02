@@ -17,6 +17,10 @@
     	"items": {
     		"$ref": "subagent-schema.json"
     	}
+    },
+    "requireFailoverConfirmation": {
+        "type": "boolean",
+        "default": false
     }
   },
   "additionalProperties": false
