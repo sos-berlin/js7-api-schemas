@@ -4,7 +4,7 @@ Contains collection of Cluster Agents where each Agent following fields
 * agentName
 * agentNameAliases
 * processLimit (optional)
-* requireFailoverConfirmation
+* forceFailoverConfirmation
 * subagents where each Subagent has following fields
 	* subagentId
 	* url

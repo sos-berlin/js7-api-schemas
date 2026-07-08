@@ -49,7 +49,7 @@
     "timeZone": {
       "type": "string"
     },
-    "requireFailoverConfirmation": {
+    "forceFailoverConfirmation": {
         "type": "boolean"
     }
   }

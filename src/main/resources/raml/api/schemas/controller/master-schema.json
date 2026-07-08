@@ -64,7 +64,7 @@
     "clusterNodeState": {
       "$ref": "clusterNodeState-schema.json"
     },
-    "requireFailoverConfirmation": {
+    "forceFailoverConfirmation": {
         "type": "boolean"
     }
   }

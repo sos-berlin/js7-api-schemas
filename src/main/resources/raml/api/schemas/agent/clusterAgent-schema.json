@@ -18,7 +18,7 @@
     		"$ref": "subagent-schema.json"
     	}
     },
-    "requireFailoverConfirmation": {
+    "forceFailoverConfirmation": {
         "type": "boolean",
         "default": false
     }
