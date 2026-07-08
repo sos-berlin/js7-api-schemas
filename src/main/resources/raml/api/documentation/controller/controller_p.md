@@ -9,7 +9,7 @@ Contains collection of Controllers and Agents where each Controller has fields s
 * operating system
     * name
     * architecture
-* requireFailoverConfirmation (optional; applies only to a Controller in a cluster)
+* forceFailoverConfirmation (optional; applies only to a Controller in a cluster)
 
 and each Agent has fields such as
 * controllerId
