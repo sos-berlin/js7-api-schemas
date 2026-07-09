@@ -6,7 +6,8 @@
   "required": [
     "eventId",
     "eventSnapshots",
-    "deliveryDate"
+    "deliveryDate",
+    "surveyDate"
   ],
   "properties": {
     "controllerId": {
@@ -50,6 +51,9 @@
       }
     },
     "deliveryDate": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "surveyDate": {
       "$ref": "../common/timestamp-schema.json"
     }
   },
