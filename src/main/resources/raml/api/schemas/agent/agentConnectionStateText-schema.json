@@ -5,6 +5,7 @@
   "type": "string",
   "enum": [
       "NODE_LOSS",
+      "UNCONFIRMED_FAILOVER",
       "NOT_DEDICATED",
       "WITH_PERMANENT_ERROR",
       "WITH_TEMPORARY_ERROR"
