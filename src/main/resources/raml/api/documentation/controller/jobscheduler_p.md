@@ -8,3 +8,4 @@
 * operating system
     * name
     * architecture
+* forceFailoverConfirmation (optional; applies only to a Controller in a cluster)

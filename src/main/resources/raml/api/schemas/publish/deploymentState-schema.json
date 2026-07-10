@@ -2,12 +2,8 @@
   "title": "deployment state",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "javaType": "com.sos.joc.model.publish.DeploymentState",
-  "type": "integer",
+  "type": "string",
   "enum": [
-    0,
-    1
-  ],
-  "javaEnumNames": [
     "DEPLOYED",
     "NOT_DEPLOYED"
   ]

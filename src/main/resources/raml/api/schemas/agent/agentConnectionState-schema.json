@@ -9,7 +9,7 @@
   ],
   "properties": {
     "severity": {
-      "description": "8=WITH_TEMPORARY_ERROR, 2=NODE_LOSS, 2=WITH_PERMANENT_ERROR, 5=NOT_DEDICATED",
+      "description": "8=WITH_TEMPORARY_ERROR, 2=NODE_LOSS, 2=UNCONFIRMED_FAILOVER, 2=WITH_PERMANENT_ERROR, 5=NOT_DEDICATED",
       "type": "integer"
     },
     "_text": {

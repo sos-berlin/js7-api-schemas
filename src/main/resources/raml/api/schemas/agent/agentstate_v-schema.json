@@ -55,6 +55,9 @@
     "disabled": {
     	"type": "boolean",
     	"default": false
+    },
+    "forceFailoverConfirmation": {
+        "type": "boolean"
     }
   },
   "additionalProperties": false

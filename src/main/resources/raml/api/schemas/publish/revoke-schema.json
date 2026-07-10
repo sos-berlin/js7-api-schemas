@@ -17,7 +17,7 @@
 		"deployConfigurations": {
 			"type": "array",
 			"items": {
-				"$ref": "config-schema.json"
+				"$ref": "configDeployablesWithoutCommitId-schema.json"
 			}
 		},
     "cancelOrdersDateFrom" : {

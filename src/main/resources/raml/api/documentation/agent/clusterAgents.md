@@ -6,6 +6,7 @@
     <tr><td style="padding-left:20px;">``title``</td><td>optional, string</td><td></td><td></td><td></td></tr>
     <tr><td style="padding-left:20px;">``processLimit``</td><td>optional, integer</td><td>Limits the number max. processes that are started by the Agent</td><td></td><td></td></tr>
     <!-- tr><td style="padding-left:20px;">``ordering``</td><td>optional, integer</td><td></td><td></td><td></td></tr -->
+    <tr><td style="padding-left:20px;">``forceFailoverConfirmation``</td><td>optional, boolean</td><td>If this value is true a confirmation will be required in case of a fail-over</td><td></td><td>false</td></tr>
     <tr><td style="padding-left:20px;">``subagents``</td><td>required, array[object]</td><td>Collection of Subagents
     	<br/>each Subagent has the following fields where one of them has to be a primary director and another optionally a standby director</td><td></td><td></td></tr>
     	<tr><td style="padding-left:40px;">``subagentId``</td><td>required, string</td><td>The ``subagentId`` is the name that is used in the Controller to identify a Subagent. This value is set once and cannot be overwritten</td><td></td><td></td></tr>

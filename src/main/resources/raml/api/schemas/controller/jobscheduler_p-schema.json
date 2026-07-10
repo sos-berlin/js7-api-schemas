@@ -48,6 +48,9 @@
     },
     "timeZone": {
       "type": "string"
+    },
+    "forceFailoverConfirmation": {
+        "type": "boolean"
     }
   }
 }
