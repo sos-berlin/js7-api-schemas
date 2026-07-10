@@ -26,6 +26,9 @@
     "addOrdersDateFrom": {
       "$ref": "../common/string255-schema.json"
     },
+    "transactionId": {
+      "$ref": "../common/string100-schema.json"
+    },
     "includeLate": {
       "type": "boolean",
       "default": false
