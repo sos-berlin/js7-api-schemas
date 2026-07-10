@@ -23,6 +23,9 @@
     "cancelOrdersDateFrom" : {
       "$ref": "../common/string255-schema.json"
     },
+    "transactionId": {
+      "$ref": "../common/string100-schema.json"
+    },
 		"auditLog": {
 			"$ref": "../audit/auditParams-schema.json"
 		}

@@ -18,6 +18,9 @@
       "type" : "boolean",
       "default" : false
     },
+    "transactionId": {
+      "$ref": "../../common/string100-schema.json"
+    },
     "auditLog": {
       "$ref": "../../audit/auditParams-schema.json"
     }
