@@ -170,6 +170,40 @@ traits:
           schema: !include api/schemas/logManagement/agent-log-request-schema.json
           example: " "
           
+    /next:
+      type:
+        postJSONWithoutJSId:
+          description: Gets next chunk of the Agent log
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: !include api/documentation/common/log/runningLimit.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description200: " "
+          schema: !include api/schemas/logManagement/next-prev-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
+    
+    /prev:
+      type:
+        postJSONWithoutJSId:
+          description: Gets previous chunk of the Agent log
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: !include api/documentation/common/log/runningLimit.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description200: " "
+          schema: !include api/schemas/logManagement/next-prev-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
+          
     /running:
       type:
         postJSONWithoutJSId:
@@ -182,7 +216,7 @@ traits:
           description6: " "
           description7: " "
           description200: " "
-          schema: !include api/schemas/logManagement/running-log-request-schema.json
+          schema: !include api/schemas/logManagement/next-prev-log-request-schema.json
           schema200: !include api/schemas/logManagement/log-response-schema.json
           example: " "
           example200: " "
@@ -1162,6 +1196,40 @@ traits:
           schema: !include api/schemas/logManagement/controller-log-request-schema.json
           example: " "
     
+    /next:
+      type:
+        postJSONWithoutJSId:
+          description: Gets next chunk of the Controller log
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: !include api/documentation/common/log/runningLimit.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description200: " "
+          schema: !include api/schemas/logManagement/next-prev-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
+          
+    /prev:
+      type:
+        postJSONWithoutJSId:
+          description: Gets previous chunk of the Controller log
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: !include api/documentation/common/log/runningLimit.md
+          description5: " "
+          description6: " "
+          description7: " "
+          description200: " "
+          schema: !include api/schemas/logManagement/next-prev-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
+          
     /running:
       type:
         postJSONWithoutJSId:
@@ -1174,7 +1242,7 @@ traits:
           description6: " "
           description7: " "
           description200: " "
-          schema: !include api/schemas/logManagement/running-log-request-schema.json
+          schema: !include api/schemas/logManagement/next-prev-log-request-schema.json
           schema200: !include api/schemas/logManagement/log-response-schema.json
           example: " "
           example200: " "

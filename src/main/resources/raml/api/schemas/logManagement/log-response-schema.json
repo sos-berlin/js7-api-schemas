@@ -13,7 +13,17 @@
         "logLines": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": "object",
+                "javaType": "com.sos.joc.model.log.LogLine",
+                "properties": {
+                    "key": {
+                        "$ref": "../common/string100-schema.json"
+                    },
+                    "line": {
+                        "type": "string"
+                    } 
+                },
+                "additionalProperties": false
             }
         },
         "timeZone": {
@@ -25,9 +35,21 @@
 			"minLength": 36,
 			"maxLength": 36
 		},
-        "isComplete": {
-            "type": "boolean",
-            "default": false
+        "dateToReached": {
+            "description": "Is true if 'dateTo' is reached",
+            "type": "boolean"
+        },
+        "numOfLinesReached": {
+            "description": "Is true if 'numOfLines' is reached",
+            "type": "boolean"
+        },
+        "lastLogLineReached": {
+            "description": "Is sent with ./log and ./log/next api if currently no more further log lines are available but neither 'dateTo' nor 'numOfLines' are reached",
+            "type": "boolean"
+        },
+        "firstLogLineReached": {
+            "description": "It sent with ./log/prev api if the first line from the 'dateTo' parameter is reached",
+            "type": "boolean"
         }
         
 	},
