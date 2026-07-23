@@ -1,5 +1,5 @@
 {
-	"title": "next or previous log chunk",
+	"title": "previous log chunk",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.log.KeyedLogRequest",
 	"type": "object",

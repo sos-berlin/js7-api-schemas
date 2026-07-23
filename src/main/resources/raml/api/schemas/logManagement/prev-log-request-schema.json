@@ -1,0 +1,21 @@
+{
+	"title": "next log chunk",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.log.NextLogRequest",
+	"type": "object",
+	"extends" : {
+        "$ref": "next-prev-log-request-schema.json"
+    },
+	"required": [
+	    "key",
+	    "logToken"
+	],
+	"properties": {
+		"force": {
+		    "description": "if true then a next chunk is sent even 'dateTo' or 'numOfLines' are reached",
+            "type": "boolean",
+            "default": false
+        }
+	},
+    "additionalProperties": false
+}

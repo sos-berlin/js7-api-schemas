@@ -3,18 +3,20 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"javaType": "com.sos.joc.model.log.RunningLogRequest",
 	"type": "object",
+	"extends" : {
+        "$ref": "prev-log-request-schema.json"
+    },
 	"required": [
-	    "logToken"
-	],
+        "key",
+        "logToken"
+    ],
 	"properties": {
-		"logToken": {
-            "type": "string",
-            "pattern": "[0-9a-f-]+",
-            "minLength": 36,
-            "maxLength": 36
-        },
-        "limit": {
-            "$ref": "../common/nonNegativeLong-schema.json"
+		"timeout": {
+		    "description": "the result is sent when the 'timeout' (in seconds) or the 'limit' is reached.",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 57,
+            "default": 57
         }
 	},
     "additionalProperties": false
