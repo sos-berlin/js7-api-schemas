@@ -4,7 +4,7 @@
 	"javaType": "com.sos.joc.model.log.RunningLogRequest",
 	"type": "object",
 	"extends" : {
-        "$ref": "prev-log-request-schema.json"
+        "$ref": "next-log-request-schema.json"
     },
 	"required": [
         "key",
