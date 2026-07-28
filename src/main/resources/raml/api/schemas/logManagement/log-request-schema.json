@@ -4,14 +4,10 @@
 	"javaType": "com.sos.joc.model.log.LogBaseRequest",
 	"type": "object",
 	"required": [
-	    "controllerId",
 	    "dateFrom"
 	],
 	"properties": {
-		"controllerId": {
-            "$ref": "../common/controllerIdRequired-schema.json"
-        },
-        "level": {
+		"level": {
             "javaType": "com.sos.joc.model.log.RequestLevel",
             "description": "ERROR: WARN + ERROR | WARN: WARN + ERROR | INFO: INFO + WARN + ERROR | DEBUG: all (incl. TRACE)",
             "type": "string",

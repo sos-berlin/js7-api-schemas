@@ -11,7 +11,10 @@
         "dateFrom"
 	],
 	"properties": {
-		"role": {
+		"controllerId": {
+            "$ref": "../common/controllerIdRequired-schema.json"
+        },
+        "role": {
 			"$ref": "../controller/cluster-role-schema.json"
 		}
 	},

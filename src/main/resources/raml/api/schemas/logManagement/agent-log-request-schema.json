@@ -12,7 +12,10 @@
         "dateFrom"
 	],
 	"properties": {
-		"agentId": {
+		"controllerId": {
+            "$ref": "../common/controllerIdRequired-schema.json"
+        },
+        "agentId": {
 			"$ref": "../common/string255required-schema.json"
 		},
         "subagentId": {
