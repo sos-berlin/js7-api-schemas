@@ -160,13 +160,14 @@ traits:
       type:
         postForDownload:
           description: Provides Agent log as download
-          description1: !include api/documentation/agent/agentId.md
-          description2: !include api/documentation/agent/subagentIdOfDirector.md
-          description3: !include api/documentation/common/log/requestLevel.md
-          description4: !include api/documentation/common/dateFromRequired.md
-          description5: !include api/documentation/common/dateTo.md
-          description6: !include api/documentation/common/timeZone.md
-          description7: !include api/documentation/common/log/numOfLines.md
+          description1: !include api/documentation/common/log/controllerId.md
+          description2: !include api/documentation/agent/agentId.md
+          description3: !include api/documentation/agent/subagentIdOfDirector.md
+          description4: !include api/documentation/common/log/requestLevel.md
+          description5: !include api/documentation/common/dateFromRequired.md
+          description6: !include api/documentation/common/dateTo.md
+          description7: !include api/documentation/common/timeZone.md
+          description8: !include api/documentation/common/log/numOfLines.md
           schema: !include api/schemas/logManagement/agent-log-request-schema.json
           example: " "
           
@@ -1187,12 +1188,13 @@ traits:
       type:
         postForDownload:
           description: Provides Controller log as download
-          description1: !include api/documentation/controller/roleClusterRequired.md
-          description2: !include api/documentation/common/log/requestLevel.md
-          description3: !include api/documentation/common/dateFromRequired.md
-          description4: !include api/documentation/common/dateTo.md
-          description5: !include api/documentation/common/timeZone.md
-          description6: !include api/documentation/common/log/numOfLines.md
+          description1: !include api/documentation/common/log/controllerId.md
+          description2: !include api/documentation/controller/roleClusterRequired.md
+          description3: !include api/documentation/common/log/requestLevel.md
+          description4: !include api/documentation/common/dateFromRequired.md
+          description5: !include api/documentation/common/dateTo.md
+          description6: !include api/documentation/common/timeZone.md
+          description7: !include api/documentation/common/log/numOfLines.md
           schema: !include api/schemas/logManagement/controller-log-request-schema.json
           example: " "
     
@@ -4381,31 +4383,88 @@ traits:
 
   /log:
     type:
-      postWithPlainResponse:
-        description: Provides JOC Cockpit log (joc.log) as download
-        description1: !include api/documentation/joc/filename.md
-        description200: Content of JOC Cockpit log (joc.log) for download
-        schema: !include api/schemas/joc/filename-schema.json
+      postJSONWithoutJSId:
+        description: Gets JOC log or the service logs
+        description1: " "
+        description2: !include api/documentation/common/log/serviceId.md
+        description3: !include api/documentation/common/log/requestLevel.md
+        description4: !include api/documentation/common/dateFromRequired.md
+        description5: !include api/documentation/common/dateTo.md
+        description6: !include api/documentation/common/timeZone.md
+        description7: !include api/documentation/common/log/numOfLines.md
+        description8: !include api/documentation/common/log/limit.md
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/logManagement/joc-log-request-schema.json
+        schema200: !include api/schemas/logManagement/log-response-schema.json
+        example: " "
+        example200: " "
         
-    /running:
+    /download:
+      type:
+        postForDownload:
+          description: Provides JOC log or the service logs as download
+          description1: " "
+          description2: !include api/documentation/common/log/serviceId.md
+          description3: !include api/documentation/common/log/requestLevel.md
+          description4: !include api/documentation/common/dateFromRequired.md
+          description5: !include api/documentation/common/dateTo.md
+          description6: !include api/documentation/common/timeZone.md
+          description7: !include api/documentation/common/log/numOfLines.md
+          schema: !include api/schemas/logManagement/joc-log-request-schema.json
+          example: " "
+          
+    /next:
       type:
         postJSONWithoutJSId:
-          description: JOC Cockpit running log events
+          description: Gets next chunk of the JOC log or the service log
           description1: " "
           description2: " "
-          description3: !include api/documentation/order/runningLog.md
-          description4: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: !include api/documentation/common/log/runningLimit.md
+          description5: !include api/documentation/common/log/force.md
+          description6: " "
+          description7: " "
+          description200: " "
+          schema: !include api/schemas/logManagement/next-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
+    
+    /prev:
+      type:
+        postJSONWithoutJSId:
+          description: Gets previous chunk of the JOC log or the service log
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: !include api/documentation/common/log/runningLimit.md
           description5: " "
           description6: " "
           description7: " "
-          description8: " "
-          description9: " "
-          description10: " "
-          description200: !include api/documentation/joc/runningLog.md
-          schema200: !include api/schemas/joc/runningLogEvents-schema.json
-          schema: !include api/schemas/joc/runningLogFilter-schema.json
-          example: !include api/examples/joc/runningLog-request-example.json
-          example200: !include api/examples/joc/runningLog-response-example.json
+          description200: " "
+          schema: !include api/schemas/logManagement/next-prev-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
+          
+    /running:
+      type:
+        postJSONWithoutJSId:
+          description: Gets next chunk of the JOC log or the service log
+          description1: " "
+          description2: " "
+          description3: !include api/documentation/common/log/logToken.md
+          description4: !include api/documentation/common/log/runningLimit.md
+          description5: !include api/documentation/common/log/force.md
+          description6: !include api/documentation/common/log/timeout.md
+          description7: " "
+          description200: " "
+          schema: !include api/schemas/logManagement/running-log-request-schema.json
+          schema200: !include api/schemas/logManagement/log-response-schema.json
+          example: " "
+          example200: " "
 
   /logs:
     type: error
