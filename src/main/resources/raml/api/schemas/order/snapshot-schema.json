@@ -16,6 +16,10 @@
     },
     "orders": {
       "$ref": "../order/ordersSummary-schema.json"
+    },
+    "proxyIsCoupled": {
+      "type": "boolean"
     }
-  }
+  },
+  "additionalProperties": false
 }
