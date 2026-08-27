@@ -17,7 +17,7 @@
 		"objectTypes": {
 			"type": "array",
 			"items": {
-				"$ref": "../common/configurationType-schema.json"
+				"$ref": "../common/configurationTypeReleasables-schema.json"
 			}
 		},
 		"onlyValidObjects": {

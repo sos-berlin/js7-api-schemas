@@ -1,0 +1,36 @@
+{
+	"title": "common inventory request filter",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.RequestFilter",
+	"type": "object",
+	"anyOf": [
+        {
+            "required": [
+                "path",
+                "objectType"
+            ]
+        },
+        {
+            "required": [
+                "id"
+            ]
+        }
+    ],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
+		"id": {
+			"$ref": "../../common/nonNegativeLong-schema.json"
+		},
+		"path": {
+			"$ref": "../../common/string255required-schema.json"
+		},
+		"objectType": {
+			"$ref": "../common/configurationTypeReleasables-schema.json"
+		},
+    	"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
+	}
+}

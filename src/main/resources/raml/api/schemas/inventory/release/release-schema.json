@@ -13,13 +13,13 @@
     "update": {
       "type": "array",
       "items": {
-        "$ref": "../common/request-filter-schema.json"
+        "$ref": "request-filter-schema.json"
       }
     },
     "delete": {
       "type": "array",
       "items": {
-        "$ref": "../common/request-filter-schema.json"
+        "$ref": "request-filter-schema.json"
       }
     },
     "addOrdersDateFrom": {

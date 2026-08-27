@@ -5,7 +5,7 @@
 	"type": "object",
 	"description": "",
   	"extends" : {
-    	"$ref": "../common/request-filter-schema.json"
+    	"$ref": "request-filter-schema.json"
   	},
 	"anyOf": [
         {

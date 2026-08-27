@@ -5,7 +5,7 @@
   "type": "object",
   "description": "",
     "extends" : {
-    "$ref": "../common/request-folder-schema.json"
+    "$ref": "request-folder-schema.json"
   },
   "required": [
     "path"

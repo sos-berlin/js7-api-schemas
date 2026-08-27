@@ -1,0 +1,34 @@
+{
+	"title": "Filter of a folder",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"javaType": "com.sos.joc.model.inventory.common.RequestFolder",
+	"type": "object",
+	"required": [
+		"path"
+	],
+	"properties": {
+		"controllerId": {
+			"$ref": "../../common/controllerId-schema.json"
+		},
+		"path": {
+			"$ref": "../../common/path-schema.json"
+		},
+		"recursive": {
+			"type": "boolean",
+			"default": false
+		},
+		"objectTypes": {
+		    "type": "array",
+		    "items": {
+				"$ref": "../common/configurationTypeReleasables-schema.json"
+			}
+		},
+		"onlyValidObjects": {
+			"type": "boolean",
+			"default": false
+		},
+    	"auditLog": {
+      		"$ref": "../../audit/auditParams-schema.json"
+    	}
+	}
+}
