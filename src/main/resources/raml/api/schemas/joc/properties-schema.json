@@ -153,6 +153,19 @@
     "enableLinkChecker": {
       "type": "boolean",
       "default": false
+    },
+    "policies": {
+      "type": "object",
+      "javaType": "com.sos.joc.model.Policies",
+      "properties": {
+          "userNotes": {
+            "$ref": "policy-value-schema.json"  
+          },
+          "linkInObjectTitle": {
+            "$ref": "policy-value-schema.json"  
+          }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

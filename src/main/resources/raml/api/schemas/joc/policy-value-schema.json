@@ -1,0 +1,15 @@
+{
+  "title": "Policy Values",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.joc.PolicyValue",
+  "type": "string",
+  "enum": [
+    "enabled",
+    "disabled"
+  ],
+  "javaEnumNames": [
+    "enabled",
+    "disabled"
+  ],
+  "default": "enabled"
+}
