@@ -9,7 +9,8 @@
 		},
 		"types": {
 			"type": "array",
-  			"items": {
+  			"uniqueItems": true,
+            "items": {
     			"$ref": "type-schema.json"
   			}
 		},

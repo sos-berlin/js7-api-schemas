@@ -27,6 +27,13 @@
     "lockedSince": {
 	  "$ref": "../common/timestamp-schema.json"
 	},
+    "permissions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
 	"folders": {
       "type": "array",
       "items": {
