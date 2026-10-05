@@ -9,6 +9,7 @@
 			"type": "string"
 		},
 		"agentName": {
+		    "alias": "agentPath",
 			"type": "string"
 		}
 	},

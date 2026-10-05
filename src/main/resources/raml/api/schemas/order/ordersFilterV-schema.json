@@ -14,7 +14,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "../common/string255-schema.json"
+        "$ref": "../common/string255required-schema.json"
       }
     },
     "compact": {
@@ -25,8 +25,16 @@
     },
     "states": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "$ref": "orderStateText-schema.json"
+      }
+    },
+    "agentIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "../common/string255required-schema.json"
       }
     },
     "orderTags": {
