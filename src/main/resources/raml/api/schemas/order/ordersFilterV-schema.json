@@ -30,7 +30,7 @@
         "$ref": "orderStateText-schema.json"
       }
     },
-    "agentIds": {
+    "agentNames": {
       "type": "array",
       "uniqueItems": true,
       "items": {
