@@ -24,7 +24,21 @@
         "items": {
             "type": "string"
         }
-	}
+	},
+    "expectNoticesExpressions": {
+        "javaType": "com.sos.controller.model.workflow.WorkflowBoardExpressions",
+        "type": "object",
+        "additionalProperties": {
+            "type": "string"
+        }
+    },
+    "consumeNoticesExpressions": {
+        "javaType": "com.sos.controller.model.workflow.WorkflowBoardExpressions",
+        "type": "object",
+        "additionalProperties": {
+            "type": "string"
+        }
+    }
   },
   "additionalProperties": false
 }
