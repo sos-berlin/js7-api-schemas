@@ -22,6 +22,15 @@
     "validUntil": {
       "$ref": "../common/timestamp-schema.json"
     },
+    "notBefore": {
+      "$ref": "../common/timestamp-schema.json"
+    },
+    "fingerprintSHA1" : {
+      "type": "string"
+    },
+    "fingerprintSHA256" : {
+      "type": "string"
+    },
     "keyType" : {
       "type": "string"
     },
