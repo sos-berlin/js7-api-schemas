@@ -15,6 +15,9 @@
     "_text": {
       "type": "string"
     },
+    "lossNodeId": {
+      "type": "string"
+    },
     "lossNode": {
       "type": "string"
     }
