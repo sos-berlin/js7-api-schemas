@@ -1,14 +1,14 @@
 {
 	"title": "File Transfer Edit configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.inventory.filetransfer.ProxyHttpFragmentEdit",
+	"javaType": "com.sos.joc.model.inventory.filetransfer.SocksProxyFragmentEdit",
 	"type": "object",
 	"extends": {
 		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
 	},
 	"properties": {
 		"configuration": {
-			"$ref": "../../../inventory/schemas/filetransfer/fragments/proxy/proxyHttpFragment-schema.json"
+			"$ref": "../../../inventory/schemas/filetransfer/fragments/proxy/socksProxyFragment-schema.json"
 		}
 	}
 }
