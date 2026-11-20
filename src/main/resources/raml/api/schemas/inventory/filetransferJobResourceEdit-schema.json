@@ -1,14 +1,16 @@
 {
 	"title": "File Transfer Edit configuration",
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"javaType": "com.sos.joc.model.inventory.filetransfer.ProfileEdit",
+	"javaType": "com.sos.joc.model.inventory.filetransfer.FileTransferJobResourceEdit",
 	"type": "object",
 	"extends": {
 		"javaType": "com.sos.joc.model.inventory.ConfigurationObject"
 	},
 	"properties": {
 		"configuration": {
-			"$ref": "../../../inventory/schemas/filetransfer/profile/profile-schema.json"
+			"profile": {
+				"$ref": "../../../inventory/schemas/filetransfer/filetransferJobResource-schema.json"
+			}
 		}
 	}
 }
