@@ -36,6 +36,12 @@
     },
     "keyAlgorithm" : {
       "type": "string"
+    },
+    "issuer" : {
+      "type": "string"
+    },
+    "subject" : {
+      "type": "string"
     }
   },
   "additionalProperties": false
