@@ -13,8 +13,9 @@
   "properties": {
     "controllerIds": {
       "type": "array",
+      "minItems": 1,
       "items": {
-        "type": "string"
+        "$ref": "../common/controllerIdRequired-schema.json"
       }
     },
     "store": {

@@ -6586,6 +6586,12 @@ traits:
         schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
         example200: TODO
         
+  /resume:
+    type:
+      modifyWorkflow:
+        description: Resume workflows
+        audit: !include api/documentation/audit/auditLog.md        
+        
   /search:
     type:
       postJSON:
@@ -6605,12 +6611,6 @@ traits:
         example: !include api/examples/workflow/workflowSearch-example.json
         schema200: !include api/schemas/inventory/search/response-search-schema.json
         example200: TODO
-        
-  /resume:
-    type:
-      modifyWorkflow:
-        description: Resume workflows
-        audit: !include api/documentation/audit/auditLog.md        
         
   /suspend:
     type:
@@ -6636,6 +6636,26 @@ traits:
         schema: !include api/schemas/common/quickSearchFilter-schema.json
         example: TODO
         schema200: !include api/schemas/inventory/search/response-quick-search-schema.json
+        example200: TODO
+        
+  /time_consumption:
+    type:
+      postJSON:
+        description: Retrieves the estimated time required for workflows
+        description1: !include api/documentation/workflow/workflowIds.md
+        description2: " "
+        description3: " "
+        description4: " "
+        description5: " "
+        description6: " "
+        description7: " "
+        description8: " "
+        description9: " "
+        description10: " "
+        description200: " "
+        schema: !include api/schemas/workflow/workflowIdsFilter-schema.json
+        example: TODO
+        schema200: !include api/schemas/workflow/workflowTimeConsumptions-schema.json
         example200: TODO
 
 /yade:

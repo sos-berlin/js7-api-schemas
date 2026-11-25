@@ -1,0 +1,40 @@
+{
+  "title": "estimated time required of a workflow",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowTimeConsumption",
+  "type": "object",
+  "extends": {
+    "$ref": "../../../controller/schemas/workflow/workflowId-schema.json"  
+  },
+  "required": [
+    "path",
+    "versionId",
+    "statistics"
+  ],
+  "properties": {
+    "statistics": {
+        "type": "object",
+        "javaType": "com.sos.joc.model.workflow.WorkflowTimeStatistics",
+        "additionalProperties": false,
+        "required": [
+            "count"
+        ],
+        "description": "Unit of max, min, average is seconds",
+        "properties": {
+            "count": {
+                "$ref": "../common/nonNegativeLong-schema.json"
+            },
+            "max": {
+                "type": "number"
+            },
+            "min": {
+                "type": "number"
+            },
+            "average": {
+                "type": "number"
+            }    
+        }
+    }
+  },
+  "additionalProperties": false
+}
