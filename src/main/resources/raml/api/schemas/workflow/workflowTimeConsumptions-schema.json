@@ -1,0 +1,22 @@
+{
+  "title": "workflow",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "javaType": "com.sos.joc.model.workflow.WorkflowTimeConsumptions",
+  "type": "object",
+  "required": [
+    "deliveryDate",
+    "workflows"
+  ],
+  "properties": {
+    "deliveryDate": {
+        "$ref": "../common/timestamp-schema.json"
+    },
+    "workflows": {
+        "type": "array",
+        "item": {
+            "$ref": "workflowTimeConsumption-schema.json"
+        }
+    }
+  },
+  "additionalProperties": false
+}
