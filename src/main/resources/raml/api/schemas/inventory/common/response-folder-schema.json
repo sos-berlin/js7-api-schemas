@@ -84,20 +84,116 @@
 			},
 			"uniqueItems": true
 		},
-        "reports": {
-            "type": "array",
-            "items": {
-                "$ref": "response-folderItem-schema.json"
-            },
-            "uniqueItems": true
-        },
-        
-    "deploymentDescriptors": {
-      "type": "array",
-      "items": {
-        "$ref": "response-folderItem-schema.json"
-      },
-      "uniqueItems": true
-    }
+		"reports": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"deploymentDescriptors": {
+			"type": "array",
+			"items": {
+				"$ref": "response-folderItem-schema.json"
+			},
+			"uniqueItems": true
+		},
+		"fileTransfer": {
+			"javaType": "com.sos.joc.model.inventory.common.ResponseFolderFileTransfer",
+			"type": "object",
+			"properties": {
+				"credentialStoreFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"decryptionFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"mailFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"httpProxyFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"socksProxyFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"azureBlobStorageFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"ftpFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"httpFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"jumpFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"sftpFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"smbFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"webdavFragments": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				},
+				"profileJobResources": {
+					"type": "array",
+					"items": {
+						"$ref": "response-folderItem-schema.json"
+					},
+					"uniqueItems": true
+				}
+			}
+		}
 	}
 }
