@@ -186,7 +186,7 @@
 					},
 					"uniqueItems": true
 				},
-				"profileJobResources": {
+				"profiles": {
 					"type": "array",
 					"items": {
 						"$ref": "response-folderItem-schema.json"
